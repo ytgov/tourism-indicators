@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Arrivals - Tourism Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Highcharts Library -->
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" height="40" class="d-inline-block align-top" alt="Yukon Logo">
+        </a>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="indicator-container">
+            <!-- Title Section -->
+            <div class="text-center mb-4">
+                <h1 class="indicator-title">Airport Arrivals</h1>
+                <p class="indicator-subtitle">Monthly passengers deplaning from Erik Nielsen Whitehorse International Airport. This dataset provides arrival statistics showing passenger traffic trends.</p>
+            </div>
+
+            <!-- Metrics Cards -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Latest Monthly Arrivals</h5>
+                            <p class="card-text h2" id="latest-monthly">-</p>
+                            <p class="card-text text-muted" id="latest-monthly-date">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Year-to-Date Arrivals</h5>
+                            <p class="card-text h2" id="ytd-amount">-</p>
+                            <p class="card-text text-muted" id="ytd-date-range">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">YTD Change</h5>
+                            <p class="card-text h2" id="ytd-change">-</p>
+                            <p class="card-text text-muted">vs Previous Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs for Data Display -->
+            <div style="width: 100%;">
+                <ul class="nav nav-tabs" id="data-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="true">By Year</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="false">By Month</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="tab-content">
+                    <!-- By Year Content -->
+                    <div class="tab-pane fade show active" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
+                        <div id="by-year-container" class="mb-4 " style="width:100%; margin-top: 20px;">
+                            <div id="yearly-chart" class="card mb-4" style="width:100%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- By Month Content -->
+                    <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
+                        <div id="by-month-container" class="mb-4" style="width:100%; margin-top: 20px;">
+                            <!-- Data by Month goes here -->
+                            <div id="indicator-chart" class="card mb-4 indicator-chart-container" style="width:100%; height:500px;"></div>
+                            <div id="indicator-chart-analysis" class="card mb-4 p-3"></div>
+                            <div id="data-table-container"  class="card mb-4 p-3" data-csv-url="data/vw_kpi_air_arrivals_ytd_summary.csv" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <!-- Data Source -->
+            <div class="data-source mt-4">
+                <p>Data Source: Yukon Government, Department of Highways and Public Works.</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light mt-4">
+        <p>&copy; 2024 Tourism Dashboard</p>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script type="module" src="js/pages/air-traffic.js"></script>
+    <script type="module" src="js/utils/data-table.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimated Visitors</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Highcharts JS -->
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/scrollbar.js"></script>
+    
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" height="40" class="d-inline-block align-top" alt="Yukon Logo">
+        </a>
+    </div>
+</nav>
+
+    <!-- Main Container -->
+    <div class="container mt-4">
+        <div class="indicator-container">
+            <!-- Title Section -->
+            <div class="row">
+                <div class="text-center">
+                    <h1 class="indicator-title">Estimated Visitors to the Yukon</h1>
+                    <p class="indicator-subtitle">
+                        The estimated visitor count for the Yukon is calculated using data from the
+                         Visitor Exit Survey 2022/23, Statistics Canada International Border Crossings,
+                         and Highways and Public Works Air Arrivals.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Metrics Cards -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Latest Monthly Visitors</h5>
+                            <p class="card-text h2" id="latest-monthly">-</p>
+                            <p class="card-text text-muted" id="latest-monthly-date">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Year-to-Date Visitors</h5>
+                            <p class="card-text h2" id="ytd-amount">-</p>
+                            <p class="card-text text-muted" id="ytd-date-range">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Year-to-Date Change</h5>
+                            <p class="card-text h2" id="ytd-change">-</p>
+                            <p class="card-text text-muted">vs Previous Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs for Data Display -->
+            <div style="width: 100%;">
+                <ul class="nav nav-tabs" id="data-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="true">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="false">Methodology</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="tab-content">
+                    <!-- By Year Content -->
+                    <div class="tab-pane fade show active" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
+                        <div class="card mb-4" style="border:0px; margin-top: 20px;">
+                            <!-- Data by Year -->
+                            <div id="visitor-estimates-container" style="width:100%; height:400px;"></div>
+                            <div id="transportation-chart" style="width:100%; height:400px; margin-top: 20px;"></div>
+                            <div id="data-table-container" data-csv-url="/data/vw_kpi_estimated_visitors.csv" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- By Month Content -->
+                    <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
+                        <div class="card mb-4" style="border:0px; margin-top: 20px;">
+                            <!-- Methodology Content -->
+                            <div class="card-body">
+                                <h2>Methodology</h2>
+                                <p><strong>Data Inputs</strong></p>
+                                <p>To estimate the number of visitors to the Yukon, we use three main sources of data:</p>
+                                <ul>
+                                    <li>The Visitor Exit Survey 2022/23, Yukon Bureau of Statistics (VES)</li>
+                                    <li>Statistics Canada International Border Crossings</li>
+                                    <li>Highways and Public Works Air Arrivals</li>
+                                </ul>
+                                <p>The VES is our primary reference, providing detailed monthly visitor counts broken down by transportation type (bus, plane, road, or train). This survey serves as our baseline, or “truth,” for understanding visitor numbers.</p>
+
+                                <p><strong>Methodology</strong></p>
+                                <p>
+                                    Using the VES as a starting point, we compare its monthly visitor data to border crossing figures and air arrival counts. This comparison allows us to calculate a ratio or percentage that represents how the border crossings and air arrival numbers relate to the survey data for each month. For example, if the VES reports 1,000 air visitors for May, and HPW reports 10,000 air arrivals, we calculate a ratio of 10%. This means that approximately 10% of air arrivals for that month are visitors.
+                                </p>
+                                <p>
+                                    These ratios can then be applied to border crossing and air arrival data for future months to estimate visitor numbers when survey data is not available. This method is defendable because it is based on reliable data sources and a clear calculation process. However, it is not fully scientific as it does not account for all factors influencing visitor trends. It is also based on 2022/2023 data, which means it should not be applied into the past and should be updated when the next visitor exit survey comes out.
+                                </p>
+
+                                <p><strong>Validation</strong></p>
+                                <p>
+                                    To test this methodology, we compared the results of this method (490,496) with the visitor survey for 2017/2018 (491,300). This estimate was within 1%. However, when compared against the 2012 VES (317,200), this method significantly overestimated the number of visitors (388,250). Because of this, this method should not be applied into the past.
+                                </p>
+
+                                <p><strong>Limitations</strong></p>
+                                <p>
+                                    While this method is straightforward, it has some limitations. One major gap is that the border crossing data does not capture all road traffic, particularly travelers entering the Yukon via the Alaska Highway, The Stuart Cassiar Highway, or the Dempster Highway.
+                                </p>
+
+                                <p><strong>Next Steps</strong></p>
+                                <p>
+                                    This method is effective at estimating the number of visitors that have come to the Yukon given the data provided. It could also be used to predict annual visitor numbers based on a few months of input. Advanced statistical models, such as regression modeling or time-series analysis, could be implemented to come up with forecasted numbers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Data Source -->
+            <div class="data-source mt-4">
+                <p><strong>Data Sources:</strong></p>
+                <ul>
+                    <li>Air Arrivals: Yukon Government, Department of Highways and Public Works</li>
+                    <li>Statistics Canada, Table 24-10-0053-01</li>
+                    <li>Visitor Exit Survey 2022/23, 2017/18, 2012/13: 2004, 1999, 1994, 1987. Yukon Government, Department of Tourism and Culture.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light mt-4">
+        <p>&copy; 2024 My Dashboard</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/visitor-estimates/visitors-by-month.js"></script>
+    <script src="js/visitor-estimates/visitors-by-year.js"></script>
+    <script src="js/visitor-estimates/visitors-by-transportation.js"></script>
+    <script src="js/utils/data-table.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dataTable = new DataTable('data-table-container');
+            dataTable.initialize();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Dashboard Prototype</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Highcharts Library -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" height="40" class="d-inline-block align-top" alt="Yukon Logo">
+        </a>
+    </div>
+</nav>
+
+
+    <!-- Key Indicators Section -->
+    <div class="container mt-4">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2>Key Tourism Performance Indicators</h2>
+                <p>Year to date metrics used to track how well the tourism industry is performing.</p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <!-- Four Key Indicators -->
+            <a href="visitor-estimates.html" class="key-indicator">
+                <div id="indicator1-content"></div>
+                <div id="indicator1-chart" class="chart-container"></div>
+            </a>
+            <a href="air-arrivals.html" class="key-indicator">
+                <div id="indicator2-content"></div>
+                <div id="indicator2-chart" class="chart-container"></div>
+            </a>
+            <a href="border-crossings.html" class="key-indicator">
+                <div id="indicator3-content"></div>
+                <div id="indicator3-chart" class="chart-container"></div>
+            </a>
+            <a href="indicator4.html" class="key-indicator">
+                <div id="indicator4-content"></div>
+                <div id="indicator4-chart" class="chart-container"></div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Additional Indicators Section -->
+    <div class="container mt-5 pt-4">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="additional-indicators-heading">Additional Indicators</h3>
+            </div>
+        </div>
+        <!-- First Row-->
+        <div class="row mb-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="additional-indicator">
+                    <div id="additional1-content"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="additional-indicator">
+                    <div id="additional2-content"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="additional-indicator">
+                    <div id="additional3-content"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="additional-indicator">
+                    <div id="additional6-content"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="additional-indicator">
+                    <div id="additional7-content"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="additional-indicator">
+                    <div id="additional8-content"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Second Row -->
+         
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <a href="pc-site-visitation.html">
+                    <div class="additional-indicator">                      
+                        <div id="additional9-content"></div>                        
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="visitor-information-centres.html">
+                    <div class="additional-indicator">
+                        <div id="additional4-content"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <div class="additional-indicator">
+                    <div id="additional5-content"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Third Row -->
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light mt-4">
+        <p>&copy; 2024 My Dashboard</p>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/charts.js"></script>
+
+    <!-- Highcharts Configuration -->
+    <script>
+        // Example placeholder values for Key Indicators
+        $('#indicator1-content').text('Loading...');
+        $('#indicator2-content').text('Loading...');
+        $('#indicator3-content').text('Loading...');
+        $('#indicator4-content').text('Loading...');
+
+        // Example of setting up Highcharts in an additional indicator
+        /*Highcharts.chart('additional1', {
+            chart: {
+                type: 'line'
+            },
+            title: {
+                text: 'Example Chart'
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May']
+            },
+            yAxis: {
+                title: {
+                    text: 'Value'
+                }
+            },
+            series: [{
+                name: 'Series 1',
+                data: [1, 3, 2, 4, 6]
+            }]
+        });*/
+    </script>
+</body>
+</html>

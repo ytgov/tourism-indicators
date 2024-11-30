@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yearly Border Crossings</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Highcharts JS -->
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/scrollbar.js"></script>
+    
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" height="40" class="d-inline-block align-top" alt="Yukon Logo">
+        </a>
+    </div>
+</nav>
+
+    <!-- Main Container -->
+    <div class="container mt-4">
+        <div class="indicator-container">
+            <!-- Title Section -->
+            <div class="row">
+                <div class="text-center">
+                    <h1 class="indicator-title">Border Crossings into the Yukon</h1>
+                    <p class="indicator-subtitle">
+                        Excludes travellers entering Yukon via BC on the South Alaska or Stewart-Cassiar Highways,
+                        the NWT on the Dempster Highway or on domestic flights. Total includes Yukoners.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Metrics Cards -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Latest Monthly Crossings</h5>
+                            <p class="card-text h2" id="latest-monthly">-</p>
+                            <p class="card-text text-muted" id="latest-monthly-date">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Year-to-Date Crossings</h5>
+                            <p class="card-text h2" id="ytd-amount">-</p>
+                            <p class="card-text text-muted" id="ytd-date-range">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Year-to-Date Change</h5>
+                            <p class="card-text h2" id="ytd-change">-</p>
+                            <p class="card-text text-muted">vs Previous Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs for Data Display -->
+            <div style="width: 100%;">
+                <ul class="nav nav-tabs" id="data-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="true">By Year</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="false">By Month</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="tab-content">
+                    <!-- By Year Content -->
+                    <div class="tab-pane fade show active" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
+                        <div id="by-year-container" class="card mb-4" style="border:0px; width:100%; margin-top: 20px;">
+                            <!-- Filters Container -->
+                            <div class="d-flex flex-wrap align-items-center mb-4">
+                                <!-- Location Filter -->
+                                <div class="d-flex align-items-center mr-4">
+                                    <label for="geo-filter" class="sr-only">Filter by Location</label>
+                                    <select id="geo-filter" class="form-control">
+                                        <option value="All">All Border Crossings</option>
+                                        <option value="Beaver Creek">Beaver Creek</option>
+                                        <option value="Dawson">Dawson</option>
+                                        <option value="Fraser">Fraser</option>
+                                        <option value="Little Gold Creek">Little Gold Creek</option>
+                                        <option value="Old Crow">Old Crow</option>
+                                        <option value="Pleasant Camp">Pleasant Camp</option>
+                                        <option value="Whitehorse">Whitehorse</option>
+                                    </select>
+                                </div>
+
+                                <!-- Time Filter -->
+                                <div class="d-flex align-items-center mr-4">
+                                    <label for="time-filter" class="sr-only">Filter by Time</label>
+                                    <select id="time-filter" class="form-control">
+                                        <option value="All">All Time</option>
+                                        <option value="5">Last 5 Years</option>
+                                        <option value="10">Last 10 Years</option>
+                                        <option value="15">Last 15 Years</option>
+                                        <option value="20">Last 20 Years</option>
+                                        <option value="25">Last 25 Years</option>
+                                        <option value="30">Last 30 Years</option>
+                                    </select>
+                                </div>
+
+                                <!-- COVID Years Filter -->
+                                <div class="d-flex align-items-center mr-4">
+                                    <label for="covid-filter" class="sr-only">Filter Pandemic Years</label>
+                                    <select id="covid-filter" class="form-control">
+                                        <option value="include">Include Pandemic Years</option>
+                                        <option value="exclude">Exclude Pandemic Years</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Data by Year -->
+                            <div id="ybcbl-container" class="card mb-4" style="width:100%;"></div>
+                            <div id="ybctt-container" class="card mb-4 mt-4" style="width:100%;"></div>
+                            <div id="ybcvt-container" class="card mb-4 mt-4" style="width:100%;"></div>
+                            <div id="ybco-container" class="card mb-4 mt-4" style="width:100%;"></div>
+                            <div id="ybcc-container" class="card mb-4 mt-4" style="width:100%;"></div>
+                            
+                            <!--<div id="ybccountry-container" class="card mb-4" style="width:100%; margin-top: 20px;"></div>-->
+                        </div>
+                    </div>
+
+                    <!-- By Month Content -->
+                    <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
+                        <div id="by-month-container" class="mb-4" style="width:100%; margin-top: 20px;">
+                            <!-- Data by Month goes here -->
+                            <div id="ybcm-container" class="card mb-4" style="width:100%;"></div>
+                            <div id="data-table-container" data-csv-url="data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Source -->
+                <div class="data-source mt-4">
+                    <p>                        Source: Statistics Canada, Tables:
+                        <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005301" target="_blank">24-10-0053-01</a>,
+                        <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005001" target="_blank">24-10-0050-01</a>. Updated Weekly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/border-crossings/yearly-border-crossings-by-location.js"></script>
+    <script src="js/border-crossings/yearly-border-crossings-by-traveller-type.js"></script>
+    <script src="js/border-crossings/yearly-border-crossings-by-origin.js"></script>
+    <script src="js/border-crossings/yearly-border-crossings-by-continent.js"></script>
+    <script src="js/border-crossings/yearly-border-crossings-by-vehicle-type.js"></script>
+    <!--<script src="js/border-crossings/border-crossings-by-country-recent-year.js"></script>-->
+    <script src="js/border-crossings/monthly-border-crossings.js"></script>
+    <script src="js/utils/data-table.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dataTable = new DataTable('data-table-container');
+            dataTable.initialize();
+        });
+    </script>
+</body>
+</html>

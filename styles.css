@@ -1,0 +1,402 @@
+/* styles.css */
+
+/* Container customization */
+.container {
+    max-width: 1140px;  /* Default max-width */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;  /* Wider on larger screens */
+    }
+}
+
+/* Key Indicator Tiles */
+.key-indicator {
+    background-color: #ffffff;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+#indicator1-content {
+    text-align: left;
+    position: relative;
+    height: 100%;
+}
+
+.current-month {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    text-align: left;
+    font-style: italic;
+}
+
+.dataset-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.2rem;
+    text-align: left;
+}
+
+.dataset-subheading {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    text-align: left;
+}
+
+.ytd-total {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* Key Indicator specific styles */
+.key-indicator .ytd-change {
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.key-indicator .ytd-change svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.key-indicator .svg-arrow {
+    stroke-width: 1.5em;
+    stroke: white;
+}
+
+.key-indicator .ytd-change.positive {
+    color: #28a745;
+}
+
+.key-indicator .ytd-change.negative {
+    color: #dc3545;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+
+.chart-container {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    height: 50%;
+}
+
+.key-indicator:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.key-indicator-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.key-indicator-value {
+    font-size: 1.75rem;
+    color: #007bff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    height: 100px;
+}
+
+/* Additional Indicators heading */
+.additional-indicators-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    
+}
+
+/* Additional Indicator Rectangles */
+.additional-indicator {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    margin: 5px;
+    height: 80px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a .additional-indicator {
+    color: inherit;
+}
+
+.additional-indicator .dataset-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 25%;
+}
+
+.additional-indicator .ytd-total {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+}
+
+/* Additional Indicator specific styles */
+.additional-indicator .ytd-change {
+    font-size: 15px;
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-shadow: none;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.additional-indicator .ytd-change.positive {
+    background: linear-gradient(to left, rgba(40, 167, 69, 0), rgba(40, 167, 69, 0.2));
+    color: #28a745;
+    border-radius: 10px;
+}
+
+.additional-indicator .ytd-change.negative {
+    background: linear-gradient(to left, rgba(102, 85, 87, 0), rgba(220, 53, 69, 0.2));
+    color: #dc3545;
+    border-radius: 10px;
+}
+
+.additional-indicator .ytd-change .svg-arrow {
+    width: 28px;
+    height: 28px;
+}
+
+.additional-indicator .ytd-change.positive .svg-arrow {
+    color: #28a745;
+    outline: #28a745;
+    outline-width: 2px;
+}
+
+.additional-indicator .ytd-change.negative .svg-arrow {
+    color: #dc3545;
+    outline: #dc3545;
+    outline-width: 2px;
+}
+
+.additional-indicator .percentage-change {
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.additional-indicator .percentage-change.positive {
+    color: #28a745;
+}
+
+.additional-indicator .percentage-change.negative {
+    color: #dc3545;
+}
+
+.additional-indicator .current-month {
+    font-size: 15px;
+    color: #6c757d;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-style: italic;
+}
+
+.additional-indicator:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.15s ease-in-out;
+}
+
+/* SVG Arrow Styles */
+.svg-arrow {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    width: 12px;
+    height: 12px;
+}
+
+.svg-arrow path {
+    fill: currentColor;
+}
+
+/* Data Container styles */
+.data-container {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.data-container .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.data-container .subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.data-container .chart-area {
+    height: 400px;
+    margin-bottom: 24px;
+}
+
+.data-container .source {
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 16px;
+    font-style: italic;
+}
+
+.data-container .accordion {
+    margin-top: 24px;
+}
+
+.data-container .card-header {
+    background-color: #f8f9fa;
+}
+
+.data-container .btn-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.data-container .btn-link:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Indicator Page Styles */
+.indicator-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.indicator-chart-container {
+    min-height: 600px;
+    margin: 2rem 0;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.indicator-title {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.indicator-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.data-source {
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+/* Accordion Styles */
+.accordion .card-header {
+    background-color: #f8f9fa;
+}
+
+.accordion .btn-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.accordion .btn-link:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Navbar styles */
+.navbar {
+    height: 80px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    height: 60px;
+}
+
+/* Data Table Styles */
+#indicator-chart-table table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+#indicator-chart-table th,
+#indicator-chart-table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card{
+    border-radius: 8px;
+}
