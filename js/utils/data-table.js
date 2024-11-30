@@ -86,6 +86,42 @@ class DataTable {
         }
     }
 
+    //sort table
+    sortTable(table, columnIndex) {
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const sortIndicator = table.querySelectorAll('.sort-indicator');
+    
+        // Determine current sort order (ascending or descending)
+        let ascending = true;
+        if (sortIndicator[columnIndex].classList.contains('sort-asc')) {
+            ascending = false;
+        }
+    
+        // Clear existing sort indicators
+        sortIndicator.forEach(indicator => indicator.classList.remove('sort-asc', 'sort-desc'));
+    
+        // Add the new sort indicator
+        sortIndicator[columnIndex].classList.add(ascending ? 'sort-asc' : 'sort-desc');
+    
+        // Sort rows based on the selected column
+        rows.sort((a, b) => {
+            const cellA = a.children[columnIndex].textContent.trim();
+            const cellB = b.children[columnIndex].textContent.trim();
+    
+            // Try to parse numbers, fallback to string comparison
+            const valueA = parseFloat(cellA.replace(/[^0-9.-]+/g, '')) || cellA;
+            const valueB = parseFloat(cellB.replace(/[^0-9.-]+/g, '')) || cellB;
+    
+            if (valueA < valueB) return ascending ? -1 : 1;
+            if (valueA > valueB) return ascending ? 1 : -1;
+            return 0;
+        });
+    
+        // Re-append rows in the new order
+        rows.forEach(row => tbody.appendChild(row));
+    }
+    
     getMonthName(monthNumber) {
         const monthNames = [
             'January', 'February', 'March', 'April', 'May', 'June',
@@ -202,7 +238,9 @@ class DataTable {
         table.innerHTML = `
             <thead>
                 <tr>
-                    ${headers.map(header => `<th style="width: ${header.width};">${header.text}</th>`).join('')}
+                    ${headers.map((header, index) =>
+                        `<th style="width: ${header.width};" data-column="${index}">${header.text} <span class="sort-indicator"></span></th>`
+                    ).join('')}
                 </tr>
             </thead>
             <tbody>
@@ -210,8 +248,15 @@ class DataTable {
             </tbody>
         `;
     
+        // Add sorting functionality
+        const thElements = table.querySelectorAll('thead th');
+        thElements.forEach(th => {
+            th.addEventListener('click', () => this.sortTable(table, parseInt(th.getAttribute('data-column'), 10)));
+        });
+    
         tableContainer.appendChild(table);
     }
+    
     
     
     createTableRow(row, offset = 0) {

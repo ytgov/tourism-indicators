@@ -400,3 +400,16 @@ a .additional-indicator {
 .card{
     border-radius: 8px;
 }
+
+.sort-indicator::after {
+    content: '';
+    margin-left: 5px;
+}
+
+.sort-asc::after {
+    content: '▲'; /* Up arrow */
+}
+
+.sort-desc::after {
+    content: '▼'; /* Down arrow */
+}

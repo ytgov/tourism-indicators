@@ -705,7 +705,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     const highwayCountsData = await loadHighwayCountsData();
     if (highwayCountsData) {
-        updateKPIContent('additional5-content', highwayCountsData, 'WLWS Northbound Traffic');
+        updateKPIContent('additional5-content', highwayCountsData, 'Highway Counts');
     }
 
     const strOccupancyData = await loadSTROccupancyData();

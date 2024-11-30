@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIC Visitors</title>
+    <title>Highway Traffic Counts</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -35,8 +35,8 @@
         <div class="indicator-container">
             <!-- Title Section -->
             <div class="text-center mb-4">
-                <h1 class="indicator-title">Visitor Information Centre Traffic</h1>
-                <p class="indicator-subtitle">The Yukon Government operates 6 visitor information centres in the Yukon.</p>
+                <h1 class="indicator-title">Highway Traffic Counts</h1>
+                <p class="indicator-subtitle">The department of highways and public works records traffic counts at various locations around the Yukon.  These can be used to get an idea of traffic coming into the Yukon.</p>
             </div>
 
             <!-- Metrics Cards -->
@@ -44,7 +44,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Latest Monthly Visitors</h5>
+                            <h5 class="card-title">Latest Monthly Counts</h5>
                             <p class="card-text h2" id="latest-monthly">-</p>
                             <p class="card-text text-muted" id="latest-monthly-date">-</p>
                         </div>
@@ -53,7 +53,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Year-to-Date Visitors</h5>
+                            <h5 class="card-title">Year-to-Date Counts</h5>
                             <p class="card-text h2" id="ytd-amount">-</p>
                             <p class="card-text text-muted" id="ytd-date-range">-</p>
                         </div>
@@ -96,14 +96,14 @@
                         <div id="by-month-container" class="mb-4" style="width:100%; margin-top: 20px;">
                             <!-- Data by Month goes here -->
                             <div id="indicator-chart" class="card mb-4" style="width:100%;"></div>
-                            <div id="data-table-container" data-csv-url="https://raw.githubusercontent.com/btelliot/tc-public-data/refs/heads/main/vw_kpi_vic_visitors_by_location_ytd_summary.csv" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
+                            <div id="data-table-container" data-csv-url="/data/vw_kpi_wlws_highway_counts_ytd_summary.csv" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Data Source -->
                 <div class="data-source mt-4">
-                    <p>Source: Yukon Government, Department of Tourism and Culture.  Updated Weekly.</p>
+                    <p>Source: Yukon Government, Department of Highways and Public Works.  Updated Weekly.</p>
                 </div>
             </div>
         </div>
@@ -113,8 +113,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="module" src="js/pages/vic-visitors.js"></script>
-    <script type="module" src="js/pages/vic-visitors-yearly.js"></script>
+    <script type="module" src="js/pages/highway-counts.js"></script>
+    <script type="module" src="js/pages/highway-counts-yearly.js"></script>
     <script type="module" src="js/utils/data-table.js"></script>
 
 </body>
