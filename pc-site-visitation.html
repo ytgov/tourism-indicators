@@ -9,11 +9,13 @@
     
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <!-- Highcharts JS -->
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
     <script src="https://code.highcharts.com/modules/treemap.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <script src="https://code.highcharts.com/modules/scrollbar.js"></script> <!-- Include scrollbar module -->
+    <script src="https://code.highcharts.com/modules/scrollbar.js"></script> 
+
 </head>
 <body>
 <!-- Navbar -->
@@ -33,11 +35,35 @@
                 <p class="indicator-subtitle">Yearly data shows the number of visitors to key national parks and historic sites in the Yukon.</p>
             </div>
 
-            <div class="container">
-                <div class="row">
-                    <div id="pc-container" class="card mb-4" style="width:100%;margin-top: 20px;"></div>
+            <!-- Tabs for Data Display -->
+            <div style="width: 100%;">
+                <ul class="nav nav-tabs" id="data-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="true">By Year</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="false">By Month</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="tab-content">
+                    <!-- By Year Content -->
+                    <div class="tab-pane fade show active" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
+                        <div id="by-year-container" class="mb-4 " style="width:100%; margin-top: 20px;">
+                            <div id="pc-container" class="card mb-4" style="width:100%;margin-top: 20px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- By Month Content -->
+                    <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
+                        <div id="by-month-container" class="mb-4" style="width:100%; margin-top: 20px;">
+                            <!-- Data by Month goes here -->
+                            <div id="indicator-chart" class="card mb-4" style="width:100%;"></div>
+                            <div id="data-table-container"  class="card mb-4 p-3" data-csv-url="data/vw_kpi_pc_site_visitation_ytd_summary.csv" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
 
             <!-- Data Source -->
             <div class="data-source mt-4">
@@ -45,7 +71,11 @@
             </div>
         </div>
     </div>
-
-    <script src="js/pages/pc-yearly-site-visitation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="js/pages/pc-yearly-site-visitation.js"></script>
+    <script type="module" src="js/pages/pc-site-visitation.js"></script>
+    <script type="module" src="js/utils/data-table.js"></script>
 </body>
 </html>

@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         text: 'Year'
                     },
                     scrollbar: {
-                        enabled: true
+                        enabled: false
                     }
                 },
                 yAxis: {

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Occupancy Rates</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+<div id="container" style="width: 100%; height: 400px;"></div>
+<script>
+// Parse the CSV data
+const csvData = `
+"date","year","month","monthly_avg_occupancy_rate","prev_year_monthly_avg","monthly_percentage_difference","ytd_avg_occupancy_rate","prev_year_ytd_avg","ytd_percentage_difference","ytd_month_range"
+"2024-07-01",2024,7,67.9,74.5,-8.86,54.9,50.0,9.8,"January - July"
+"2024-08-01",2024,8,73.4,74.8,-1.87,57.2,60.0,-4.67,"January - August"
+"2024-09-01",2024,9,66.2,63.3,4.58,58.2,60.0,-3.0,"January - September"
+"2024-10-01",2024,10,47.3,46.5,1.72,57.1,60.0,-4.83,"January - October"
+`;
+
+const rows = csvData.trim().split("\n").map(row => row.split(",").map(col => col.replace(/"/g, "")));
+
+// Extract the header and data
+const headers = rows[0];
+const dataRows = rows.slice(1);
+
+// Map data into a structure suitable for Highcharts
+const dataByYear = {};
+dataRows.forEach(row => {
+    const year = row[1];
+    const month = row[2];
+    const occupancyRate = parseFloat(row[3]);
+    const monthName = new Date(2024, month - 1).toLocaleString("default", { month: "short" });
+
+    if (!dataByYear[year]) {
+        dataByYear[year] = [];
+    }
+    dataByYear[year].push({ name: monthName, y: occupancyRate });
+});
+
+// Prepare series for Highcharts
+const series = Object.keys(dataByYear).map(year => ({
+    name: year,
+    data: dataByYear[year].map(entry => ({ name: entry.name, y: entry.y }))
+}));
+
+// Generate the chart
+Highcharts.chart('container', {
+    chart: {
+        type: 'line'
+    },
+    title: {
+        text: 'Monthly Hotel Occupancy Rates'
+    },
+    xAxis: {
+        categories: Array.from(new Set(dataRows.map(row => {
+            const month = row[2];
+            return new Date(2024, month - 1).toLocaleString("default", { month: "short" });
+        }))),
+        title: {
+            text: 'Month'
+        }
+    },
+    yAxis: {
+        title: {
+            text: 'Occupancy Rate (%)'
+        }
+    },
+    tooltip: {
+        shared: true,
+        valueSuffix: '%'
+    },
+    series: series
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Performance</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Highcharts JS -->
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/scrollbar.js"></script>
+    
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" height="40" class="d-inline-block align-top" alt="Yukon Logo">
+        </a>
+    </div>
+</nav>
+
+    <!-- Main Container -->
+    <div class="container mt-4">
+        <div class="indicator-container">
+            <!-- Title Section -->
+            <div class="text-center mb-4">
+                <h1 class="indicator-title">Hotel Performance</h1>
+                <p class="indicator-subtitle">Hotel occupancy rates, average daily rates, and revenue per available room
+                     information helps us understand the performance of the hotel sector.</p>
+            </div>
+
+            <!-- Metrics Cards -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Average Occupancy Rate (YTD)</h5>
+                            <p class="card-text h2 mb-0" id="ytd-occupancy">-</p>
+                            <div class="d-flex justify-content-between mt-auto">
+                                <p class="card-text text-muted mt-2 mb-0" id="latest-monthly-date">-</p>
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-occ-change">(-)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Average Daily Room Rate (YTD)</h5>
+                            <p class="card-text h2 mb-0" id="ytd-adr">-</p>
+                            <div class="d-flex justify-content-between mt-auto">
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-adr-date-range">-</p>
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-adr-change"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Average RevPAR (YTD)</h5>
+                            <p class="card-text h2 mb-0" id="ytd-revpar">-</p>
+                            <div class="d-flex justify-content-between mt-auto">
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-rev-date-range">-</p>
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-rev-change"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs for Data Display -->
+            <div style="width: 100%;">
+                <ul class="nav nav-tabs" id="data-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="true">By month</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="false">Historical</a>
+                    </li>
+                </ul>
+
+                
+
+                <div class="tab-content" id="tab-content">
+                    <!-- By month Content -->
+                    <div class="tab-pane fade show active" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
+                        <div id="by-month-container" class="card mb-4" style="border:0px; width:100%; margin-top: 20px;">
+
+                            <!-- Data by month -->
+                             <div class="row">
+                                <div id="monthly-occupancy" class="mb-4 col-md-4" style="height:400px;"></div>
+                                <div id="monthly-adr" class="mb-4 col-md-4" style="height:400px;"></div>
+                                <div id="monthly-revpar" class="mb-4 col-md-4" style="height:400px;"></div>
+                             </div>
+
+                             <div id="data-table-container" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
+
+                        </div>
+                    </div>
+
+                    <!-- By year Content -->
+                    <div class="tab-pane fade" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
+                        <div id="by-year-container" class="mb-4" style="width:100%; margin-top: 20px;">
+                            <!-- Data by year goes here -->
+                            <div id="indicator-chart" class="card mb-4" style="width:100%;"></div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Source -->
+                <div class="data-source mt-4">
+                    <p>Disclaimer: This data is provided by CBRE. With reproduction and use of
+                        information subject to CBRE Disclaimer / Terms of Use as detailed at <a href="https://www.cbre.ca">www.cbre.ca.</a> Data only represents approximately 600 rooms in Yukon and
+                        should not be generalized to the whole accommodation market. Due to increases in CBRE inventory, 2017 and 2018 data is not directly comparable
+                        to previous periods
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="js/pages/hotel-stats.js"></script>
+    <script type="module" src="js/pages/hotel-stats-cards.js"></script>
+    <script type="module" src="js/pages/hotel-monthly-occupancy.js"></script>
+    <script type="module" src="js/pages/hotel-monthly-adr.js"></script>
+    <script type="module" src="js/pages/hotel-monthly-revpar.js"></script>
+    <script type="module" src="js/pages/hotel-data-table.js"></script>
+
+</body>
+</html>

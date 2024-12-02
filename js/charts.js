@@ -477,6 +477,37 @@ async function loadPCVisitorData() {
         const response = await fetch('/data/vw_kpi_pc_site_visitation_ytd_summary.csv');
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
+        const headers = rows[0];
+        const data = rows.slice(1).filter(row => row.length > 1);
+        
+        // Filter for rows where site is 'all'
+        const allSiteData = data.filter(row => row[3].toLowerCase().trim() === 'all');
+        
+        // Get the most recent row from filtered data
+        const mostRecent = allSiteData[allSiteData.length - 1];
+        const date = new Date(mostRecent[0]);
+        
+        return {
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            ytdTotal: parseFloat(mostRecent[7]),  // ytd_total column
+            ytdPercentageChange: parseFloat(mostRecent[9]),  // ytd_percentage_difference column
+            monthlyData: allSiteData.map(row => ({
+                date: new Date(row[0]),
+                value: parseFloat(row[4])  // monthly_total column
+            }))
+        };
+    } catch (error) {
+        console.error('Error loading PC Site Visitation data:', error);
+        return null;
+    }
+}
+
+// Function to load SC Fuel Prices
+async function loadFuelPrices() {
+    try {
+        const response = await fetch('/data/vw_kpi_sc_gas_prices_ytd_summary.csv');
+        const csvText = await response.text();
+        const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
         
         // Get the most recent row
@@ -485,15 +516,15 @@ async function loadPCVisitorData() {
         
         return {
             monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-            ytdTotal: parseFloat(mostRecent[4]),  // Changed index to match new CSV structure
-            ytdPercentageChange: parseFloat(mostRecent[6]),  // Changed index to match new CSV structure
+            ytdTotal: parseFloat(mostRecent[6]) + (' c/L'),  
+            ytdPercentageChange: parseFloat(mostRecent[8]),  
             monthlyData: data.map(row => ({
                 date: new Date(row[0]),
-                value: parseFloat(row[1])  // Changed index to match new CSV structure
+                value: parseFloat(row[1])
             }))
         };
     } catch (error) {
-        console.error('Error loading PC Site Visitation data:', error);
+        console.error('Error loading Fuel Prices data:', error);
         return null;
     }
 }
@@ -727,4 +758,10 @@ document.addEventListener('DOMContentLoaded', async function() {
     if (pcVisitorsData) {
         updateKPIContent('additional9-content', pcVisitorsData, 'Parks Canada Visitors');
     }
+
+    const scFuelPrices = await loadFuelPrices();
+    if (scFuelPrices) {
+        updateKPIContent('additional10-content', scFuelPrices, 'Average Fuel Price');
+    }
+
 });

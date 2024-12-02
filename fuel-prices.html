@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Prices</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Highcharts JS -->
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/scrollbar.js"></script>
+    
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" height="40" class="d-inline-block align-top" alt="Yukon Logo">
+        </a>
+    </div>
+</nav>
+
+    <!-- Main Container -->
+    <div class="container mt-4">
+        <div class="indicator-container">
+            <!-- Title Section -->
+            <div class="text-center mb-4">
+                <h1 class="indicator-title">Motor Fuel Prices</h1>
+                <p class="indicator-subtitle">High gas prices can impact tourism by discouraging people from taking long-distance road trips, leading them to choose destinations
+                     closer to home, and potentially reducing their spending on other aspects of their travel like accommodations and activities due to increased
+                     transporation costs.</p>
+            </div>
+
+            <!-- Metrics Cards -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Latest Monthly Price</h5>
+                            <p class="card-text h2" id="latest-monthly">-</p>
+                            <p class="card-text text-muted" id="latest-monthly-date">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Year-to-Date Average Price</h5>
+                            <p class="card-text h2" id="ytd-amount">-</p>
+                            <p class="card-text text-muted" id="ytd-date-range">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Year-to-Date Change</h5>
+                            <p class="card-text h2" id="ytd-change">-</p>
+                            <p class="card-text text-muted">vs Previous Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs for Data Display -->
+            <div style="width: 100%;">
+                <ul class="nav nav-tabs" id="data-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="true">By Year</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="false">By Month</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="tab-content">
+                    <!-- By Year Content -->
+                    <div class="tab-pane fade show active" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
+                        <div id="by-year-container" class="card mb-4" style="border:0px; width:100%; margin-top: 20px;">
+
+                            <!-- Data by Year -->
+                            <div id="yearly-chart" class="card mb-4" style="width:100%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- By Month Content -->
+                    <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
+                        <div id="by-month-container" class="mb-4" style="width:100%; margin-top: 20px;">
+                            <!-- Data by Month goes here -->
+                            <div id="indicator-chart" class="card mb-4" style="width:100%;height:500px"></div>
+                            <div id="data-table-container" data-csv-url="/data/vw_kpi_sc_gas_prices_ytd_summary.csv" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Source -->
+                <div class="data-source mt-4">
+                    <p>Source: Statistics Canada, Monthly Fuel Prices, 18-10-0001-01.  Updated Monthly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="js/pages/fuel-prices.js"></script>
+    <script type="module" src="js/utils/data-table.js"></script>
+
+</body>
+</html>

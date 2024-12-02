@@ -60,7 +60,7 @@ export class ChartBuilder {
                 }
             }],
             navigator: {
-                enabled: true,
+                enabled: false,
                 series: {
                     fillOpacity: 0.05,
                     lineWidth: 1
@@ -72,7 +72,7 @@ export class ChartBuilder {
                 }
             },
             scrollbar: {
-                enabled: true
+                enabled: false
             }
         };
 

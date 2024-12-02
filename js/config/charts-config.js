@@ -152,6 +152,73 @@ const datasetConfigs = {
         valueFormat: 'number',
         description: 'Monthly visitor counts at Parks Canada sites.'
     },
+    scFuelPrices: {
+        id: 'sc-fuel-prices',
+        title: 'Motor Fuel Prices',
+        dataFile: '/data/vw_kpi_sc_gas_prices_ytd_summary.csv',
+        yAxisTitle: 'Price (c/L)',
+        valueFormat: 'number',
+        description: 'Monthly average prices for regular gasoline.'
+    },
+    hotelStats: {
+        id: 'hotel-stats',
+        title: 'Monthly Occupancy Rate',
+        dataFile: '/data/vw_kpi_cbre_occupancy_rate_ytd_summary.csv',
+        yAxisTitle: 'Occupancy Rate (%)',
+        valueFormat: 'number',
+        description: 'Occupancy rate at select hotels.',
+    },
+    strStats: {
+        id: 'str-stats',
+        title: 'STR Key Performance Indicators',
+        dataFiles: {
+            occupancy: '/data/vw_kpi_str_occupancy_ytd_summary.csv',
+            adr: '/data/vw_kpi_str_adr_ytd_summary.csv',
+            revpar: '/data/vw_kpi_str_revpar_ytd_summary.csv'
+        },
+        series: [
+            {
+                name: 'Occupancy Rate',
+                dataFile: '/data/vw_kpi_str_occupancy_ytd_summary.csv',
+                yAxis: 0, // Left axis
+                tooltip: {
+                    valueSuffix: '%'
+                }
+            },
+            {
+                name: 'ADR',
+                dataFile: '/data/vw_kpi_str_adr_ytd_summary.csv',
+                yAxis: 1, // Right axis
+                tooltip: {
+                    valuePrefix: '$'
+                }
+            },
+            {
+                name: 'RevPAR',
+                dataFile: '/data/vw_kpi_str_revpar_ytd_summary.csv',
+                yAxis: 1, // Right axis
+                tooltip: {
+                    valuePrefix: '$'
+                }
+            }
+        ],
+        yAxes: [
+            {
+                title: {
+                    text: 'Occupancy Rate (%)'
+                },
+                opposite: false // Left axis
+            },
+            {
+                title: {
+                    text: 'ADR and RevPAR ($)'
+                },
+                opposite: true // Right axis
+            }
+        ],
+        description: 'Monthly occupancy rates, ADR, and RevPAR for short-term rentals.'
+    }
+    
     // Add configurations for other datasets...
 };
 

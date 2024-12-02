@@ -151,7 +151,7 @@ class DataTable {
         }
 
         const dropdownContainer = document.createElement('div');
-        dropdownContainer.className = 'mb-4 mt-3 month-select-container col-md-4';
+        dropdownContainer.className = 'mb-4 mt-3 month-select-container col-md-6';
         dropdownContainer.innerHTML = `
             <div class="row align-items-center">
                 <div class="col-auto">
