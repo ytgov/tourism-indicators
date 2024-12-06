@@ -1,75 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hotel Occupancy Rates</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonality Radar Chart</title>
     <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.1/papaparse.min.js"></script>
 </head>
 <body>
-<div id="container" style="width: 100%; height: 400px;"></div>
-<script>
-// Parse the CSV data
-const csvData = `
-"date","year","month","monthly_avg_occupancy_rate","prev_year_monthly_avg","monthly_percentage_difference","ytd_avg_occupancy_rate","prev_year_ytd_avg","ytd_percentage_difference","ytd_month_range"
-"2024-07-01",2024,7,67.9,74.5,-8.86,54.9,50.0,9.8,"January - July"
-"2024-08-01",2024,8,73.4,74.8,-1.87,57.2,60.0,-4.67,"January - August"
-"2024-09-01",2024,9,66.2,63.3,4.58,58.2,60.0,-3.0,"January - September"
-"2024-10-01",2024,10,47.3,46.5,1.72,57.1,60.0,-4.83,"January - October"
-`;
-
-const rows = csvData.trim().split("\n").map(row => row.split(",").map(col => col.replace(/"/g, "")));
-
-// Extract the header and data
-const headers = rows[0];
-const dataRows = rows.slice(1);
-
-// Map data into a structure suitable for Highcharts
-const dataByYear = {};
-dataRows.forEach(row => {
-    const year = row[1];
-    const month = row[2];
-    const occupancyRate = parseFloat(row[3]);
-    const monthName = new Date(2024, month - 1).toLocaleString("default", { month: "short" });
-
-    if (!dataByYear[year]) {
-        dataByYear[year] = [];
-    }
-    dataByYear[year].push({ name: monthName, y: occupancyRate });
-});
-
-// Prepare series for Highcharts
-const series = Object.keys(dataByYear).map(year => ({
-    name: year,
-    data: dataByYear[year].map(entry => ({ name: entry.name, y: entry.y }))
-}));
-
-// Generate the chart
-Highcharts.chart('container', {
-    chart: {
-        type: 'line'
-    },
-    title: {
-        text: 'Monthly Hotel Occupancy Rates'
-    },
-    xAxis: {
-        categories: Array.from(new Set(dataRows.map(row => {
-            const month = row[2];
-            return new Date(2024, month - 1).toLocaleString("default", { month: "short" });
-        }))),
-        title: {
-            text: 'Month'
+    <div id="container" style="width: 100%; height: 600px;"></div>
+    <script>
+        // Load the CSV data
+        function loadCSV(filePath, callback) {
+            Papa.parse(filePath, {
+                download: true,
+                header: true,
+                complete: function(results) {
+                    callback(results.data);
+                },
+                error: function(error) {
+                    console.error("Error loading CSV:", error);
+                }
+            });
         }
-    },
-    yAxis: {
-        title: {
-            text: 'Occupancy Rate (%)'
+
+        // Function to generate a color gradient
+        function generateGradientColors(startColor, endColor, steps) {
+            const start = startColor.match(/\d+/g).map(Number);
+            const end = endColor.match(/\d+/g).map(Number);
+            const gradient = [];
+            for (let i = 0; i < steps; i++) {
+                const r = Math.round(start[0] + (i * (end[0] - start[0])) / (steps - 1));
+                const g = Math.round(start[1] + (i * (end[1] - start[1])) / (steps - 1));
+                const b = Math.round(start[2] + (i * (end[2] - start[2])) / (steps - 1));
+                gradient.push(`rgb(${r},${g},${b})`);
+            }
+            return gradient;
         }
-    },
-    tooltip: {
-        shared: true,
-        valueSuffix: '%'
-    },
-    series: series
-});
-</script>
+
+        // Process CSV and render the chart
+        loadCSV('/data/vw_kpi_air_arrivals_ytd_summary.csv', function(data) {
+
+            // Sort data by date (ascending)
+            data.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+            const months = [
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+            
+            // Group data by year
+            const years = [...new Set(data.map(row => row.year))].sort(); // Ensure chronological order
+            const gradientColors = generateGradientColors("rgb(0,0,255)", "rgb(255,0,0)", years.length);
+
+            const seriesData = years.map(year => {
+                const monthlyTotals = Array(12).fill(0); // Default to 0 for all months
+                data.forEach(row => {
+                    if (row.year === year) {
+                        const monthIndex = parseInt(row.month, 10) - 1; // Convert to 0-based index
+                        monthlyTotals[monthIndex] = parseFloat(row['monthly_total']) || 0;
+                    }
+                });
+                return {
+                    name: year,
+                    data: monthlyTotals,
+                    color: gradientColors[years.indexOf(year)] // Use correct index for color
+                };
+            });
+
+            // Render the polar chart
+            Highcharts.chart('container', {
+                chart: {
+                    polar: true,
+                    type: 'line'
+                },
+                title: {
+                    text: 'Seasonality Radar Chart',
+                    x: -80
+                },
+                pane: {
+                    size: '80%'
+                },
+                xAxis: {
+                    categories: months,
+                    tickmarkPlacement: 'on',
+                    lineWidth: 0
+                },
+                yAxis: {
+                    gridLineInterpolation: 'polygon',
+                    lineWidth: 0,
+                    min: 0
+                },
+                tooltip: {
+                    shared: true,
+                    pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y:.1f}</b><br/>'
+                },
+                legend: {
+                    align: 'right',
+                    verticalAlign: 'top',
+                    y: 70,
+                    layout: 'vertical'
+                },
+                series: seriesData.map(series => ({
+                    ...series,
+                    marker: {
+                        enabled: false // Turn off the knobs
+                    }
+                }))
+            });
+        });
+    </script>
 </body>
 </html>

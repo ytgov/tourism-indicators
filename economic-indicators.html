@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic Indicators</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Highcharts JS -->
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/scrollbar.js"></script>
+    
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" height="40" class="d-inline-block align-top" alt="Yukon Logo">
+        </a>
+    </div>
+</nav>
+
+    <!-- Main Container -->
+    <div class="container mt-4">
+        <div class="indicator-container">
+            <!-- Title Section -->
+            <div class="text-center mb-4">
+                <h1 class="indicator-title">Economic Indicators</h1>
+                <p class="indicator-subtitle">
+                    This section provides an overview of the economic indicators for the Yukon,
+                    such as GDP, Revenue, Jobs, labour income, and visitor spending.
+                </p>
+            </div>
+
+            <!-- Metrics Cards -->
+            <!--<div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Gross Domestic Product</h5>
+                            <p class="card-text h2" id="latest-monthly">-</p>
+                            <p class="card-text text-muted" id="latest-monthly-date">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Year-to-Date Crossings</h5>
+                            <p class="card-text h2" id="ytd-amount">-</p>
+                            <p class="card-text text-muted" id="ytd-date-range">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Year-to-Date Change</h5>
+                            <p class="card-text h2" id="ytd-change">-</p>
+                            <p class="card-text text-muted">vs Previous Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+            <!-- GDP Composition Pie Chart -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- <div id="gdp-pie-chart" style="height: 400px;"></div> -->
+                            
+                             <div class="row">
+                                <div id="revenue-targets" class="col-12"style="height: 400px;"></div>
+                                <div class="data-source mt-4">
+                                    <p class="ml-4">Notes: Target Revenue is from the Yukon Tourism Development Strategy, 2016.
+                                        Actual Revenue comes from Yukon Business Survey, 2014-2022. Estimated and forecast
+                                        revenue is calculated based on monthly spending from LASR.</p>
+                                </div>
+                             </div>
+                             
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <div id="gdp-stats-chart" style="height: 400px;"></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+                <!-- Data Source -->
+                <div class="data-source mt-4">
+                    <p>                        Source: Statistics Canada, Tables:
+                        <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005301" target="_blank">24-10-0053-01</a>,
+                        <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005001" target="_blank">24-10-0050-01</a>. Updated Weekly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script type="module" src="js/economic/gdp-pie-chart.js"></script> -->
+    <script type="module" src="js/economic/gdp-stats-over-time.js"></script>
+    <script type="module" src="js/economic/revenue-targets.js"></script>
+    <!-- <script src="js/utils/data-table.js"></script> -->
+</body>
+</html>

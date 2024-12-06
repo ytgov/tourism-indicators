@@ -8,7 +8,7 @@ export async function loadCSVData(filePath) {
             .map(row => row.replace(/"/g, ''))
             .map(row => row.split(','));
         
-        const headers = rows[0];
+        const headers = rows[0].map(header => header.trim().replace(/\r$/, '')); // Remove any trailing \r
         const data = rows.slice(1).filter(row => row.length > 1);
         
         return {

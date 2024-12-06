@@ -502,6 +502,40 @@ async function loadPCVisitorData() {
     }
 }
 
+// Function to load Campground Visitor Data
+async function loadCampgroundVisitorData() {
+    try {
+        const response = await fetch('/data/vw_kpi_env_campground_visitors_ytd_summary.csv');
+        const csvText = await response.text();
+        const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
+        const headers = rows[0];
+        const data = rows.slice(1).filter(row => row.length > 1);
+        
+        // Filter for rows where site is 'all'
+        const allSiteData = data.filter(row => row[3].toLowerCase().trim() === 'all');
+
+        // Sort data by ref_date (column 0) in ascending order
+        const sortedData = allSiteData.sort((a, b) => new Date(a[0]) - new Date(b[0]));
+        
+        // Get the most recent row from sorted data
+        const mostRecent = sortedData[sortedData.length - 1];
+        const date = new Date(mostRecent[0]);
+        
+        return {
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            ytdTotal: parseFloat(mostRecent[7]),  // ytd_total column
+            ytdPercentageChange: parseFloat(mostRecent[9]),  // ytd_percentage_difference column
+            monthlyData: allSiteData.map(row => ({
+                date: new Date(row[0]),
+                value: parseFloat(row[4])  // monthly_total column
+            }))
+        };
+    } catch (error) {
+        console.error('Error loading Campground Site Visitation data:', error);
+        return null;
+    }
+}
+
 // Function to load SC Fuel Prices
 async function loadFuelPrices() {
     try {
@@ -757,6 +791,11 @@ document.addEventListener('DOMContentLoaded', async function() {
     const pcVisitorsData = await loadPCVisitorData();
     if (pcVisitorsData) {
         updateKPIContent('additional9-content', pcVisitorsData, 'Parks Canada Visitors');
+    }
+
+    const envCampgroundData = await loadCampgroundVisitorData();
+    if (envCampgroundData) {
+        updateKPIContent('additional11-content', envCampgroundData, 'Campground Visitors');
     }
 
     const scFuelPrices = await loadFuelPrices();

@@ -401,6 +401,13 @@ a .additional-indicator {
     border-radius: 8px;
 }
 
+.highlights-header {
+    color:white;
+    background-color:#244C5A;
+    padding:10px;
+    text-align:center
+
+}
 .sort-indicator::after {
     content: '';
     margin-left: 5px;
