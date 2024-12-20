@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "https://raw.githubusercontent.com/btelliot/tc-public-data/refs/heads/main/vw_bc_yearly_border_crossings_by_continent.csv";
+    const csvUrl = "./data/vw_bc_yearly_border_crossings_by_continent.csv";
 
     let allData = []; // Store all the fetched CSV data
     let years = []; // Store unique years

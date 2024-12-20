@@ -53,8 +53,6 @@ async function initChart(csvPath) {
     const totalVisitors = Array.from(visitorsByDate.entries())
         .sort((a, b) => a[0] - b[0]);
 
-    console.log('Total visitors data:', totalVisitors);
-
     // Configure the Highcharts chart
     Highcharts.stockChart('indicator-chart', {
         chart: {

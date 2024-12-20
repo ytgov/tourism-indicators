@@ -1,4 +1,20 @@
-"year","measure","sector","value"
+year,measure,sector,value
+2022,Gross revenues attributable to tourism,Total,400.7
+2022,GDP attributable to tourism,Total,156.7
+2020,Gross revenues attributable to tourism,Total,146.2
+2020,GDP attributable to tourism,Total,63.7
+2018,Gross revenues attributable to tourism,Total,367.8
+2018,GDP attributable to tourism,Total,146.1
+2016,Gross revenues attributable to tourism,Total,262.9
+2016,GDP attributable to tourism,Total,117.2
+2014,Gross revenues attributable to tourism,Total,226.9
+2014,GDP attributable to tourism,Total,95.9
+2012,Gross revenues attributable to tourism,Total,249.5
+2012,GDP attributable to tourism,Total,113.8
+2009,Gross revenues attributable to tourism,Total,197.0
+2009,GDP attributable to tourism,Total,92.5
+2008,Gross revenues attributable to tourism,Total,173.5
+2008,GDP attributable to tourism,Total,101.3
 1997,GDP,Total,1709.8
 1998,GDP,Total,1629.8
 1999,GDP,Total,1626.4
@@ -26,25 +42,9 @@
 2021,GDP,Total,3143.9
 2022,GDP,Total,3378.8
 2023,GDP,Total,3438.7
-2008,GDP attributable to tourism,Total,101.3
-2009,GDP attributable to tourism,Total,92.5
-2012,GDP attributable to tourism,Total,113.8
-2014,GDP attributable to tourism,Total,95.9
-2016,GDP attributable to tourism,Total,117.2
-2018,GDP attributable to tourism,Total,146.1
-2020,GDP attributable to tourism,Total,63.7
-2022,GDP attributable to tourism,Total,156.7
-2008,Gross revenues attributable to tourism,Total,173.5
-2009,Gross revenues attributable to tourism,Total,197.0
-2012,Gross revenues attributable to tourism,Total,249.5
-2014,Gross revenues attributable to tourism,Total,226.9
-2016,Gross revenues attributable to tourism,Total,262.9
-2018,Gross revenues attributable to tourism,Total,367.8
-2020,Gross revenues attributable to tourism,Total,146.2
-2022,Gross revenues attributable to tourism,Total,400.7
-2019,Spend from LASR,Total,303.6
-2020,Spend from LASR,Total,109.0
-2021,Spend from LASR,Total,177.9
-2022,Spend from LASR,Total,278.9
-2023,Spend from LASR,Total,329.1
-2024,Spend from LASR,Total,303.5
+2024,Spend from LASR,Total,332.1
+2021,Spend from LASR,Total,163.0
+2022,Spend from LASR,Total,255.7
+2019,Spend from LASR,Total,276.0
+2020,Spend from LASR,Total,105.9
+2023,Spend from LASR,Total,320.8

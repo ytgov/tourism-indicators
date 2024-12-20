@@ -512,7 +512,7 @@ async function loadCampgroundVisitorData() {
         const data = rows.slice(1).filter(row => row.length > 1);
         
         // Filter for rows where site is 'all'
-        const allSiteData = data.filter(row => row[3].toLowerCase().trim() === 'all');
+        const allSiteData = data;
 
         // Sort data by ref_date (column 0) in ascending order
         const sortedData = allSiteData.sort((a, b) => new Date(a[0]) - new Date(b[0]));
@@ -523,11 +523,11 @@ async function loadCampgroundVisitorData() {
         
         return {
             monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-            ytdTotal: parseFloat(mostRecent[7]),  // ytd_total column
-            ytdPercentageChange: parseFloat(mostRecent[9]),  // ytd_percentage_difference column
+            ytdTotal: parseFloat(mostRecent[6]),  // ytd_total column
+            ytdPercentageChange: parseFloat(mostRecent[8]),  // ytd_percentage_difference column
             monthlyData: allSiteData.map(row => ({
                 date: new Date(row[0]),
-                value: parseFloat(row[4])  // monthly_total column
+                value: parseFloat(row[3])  // monthly_total column
             }))
         };
     } catch (error) {

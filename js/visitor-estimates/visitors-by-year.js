@@ -1,5 +1,5 @@
 // Fetch and process visitor data
-fetch('https://raw.githubusercontent.com/btelliot/tc-public-data/refs/heads/main/vw_ve_estimated_visitors_by_year_historic.csv')
+fetch('./data/vw_ve_estimated_visitors_by_year_historic.csv')
     .then(response => response.text())
     .then(data => {
         // Parse CSV data

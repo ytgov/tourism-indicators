@@ -45,59 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
         changeElement.classList.add(ytdChange >= 0 ? 'text-success' : 'text-danger');
     }
     
-
-    function renderChart(data) {
-        Highcharts.chart('monthly-visitors-chart', {
-            chart: {
-                type: 'column'
-            },
-            title: {
-                text: 'Monthly Visitors'
-            },
-            xAxis: {
-                type: 'datetime',
-                title: {
-                    text: 'Month'
-                }
-            },
-            yAxis: {
-                title: {
-                    text: 'Number of Visitors'
-                },
-                labels: {
-                    formatter: function() {
-                        return this.value.toLocaleString();
-                    }
-                }
-            },
-            tooltip: {
-                formatter: function() {
-                    return `<b>${Highcharts.dateFormat('%B %Y', this.x)}</b><br/>
-                            Visitors: <b>${this.y.toLocaleString()}</b>`;
-                }
-            },
-            plotOptions: {
-                column: {
-                    dataLabels: {
-                        enabled: false
-                    }
-                },
-                series: {
-                    pointStart: data[0].date.getTime(),
-                    pointInterval: 30 * 24 * 3600 * 1000 // approximate month in milliseconds
-                }
-            },
-            series: [{
-                name: 'Visitors',
-                data: data.map(d => d.monthlyTotal),
-                color: '#2f7ed8'
-            }],
-            credits: {
-                enabled: false
-            }
-        });
-    }
-
     // Fetch and process data
     fetch(csvUrl)
         .then(response => {
@@ -127,11 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Double check the sort before passing to functions
             data.sort((a, b) => a.date - b.date);
-
-            console.log(data);
             
             updateMetricsCards(data);
-            renderChart(data);
         })
         .catch(error => {
             console.error('Error loading or processing data:', error);

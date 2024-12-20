@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "https://raw.githubusercontent.com/btelliot/tc-public-data/refs/heads/main/vw_bc_border_crossings_by_country_recent_year.csv";
+    const csvUrl = "./data/vw_bc_border_crossings_by_country_recent_year.csv";
 
     fetch(csvUrl)
         .then(response => response.text())

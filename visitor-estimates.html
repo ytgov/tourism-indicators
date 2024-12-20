@@ -12,11 +12,12 @@
     <link href="styles.css" rel="stylesheet">
 
     <!-- Highcharts JS -->
-    <script src="https://code.highcharts.com/stock/highstock.js"></script>
-    <script src="https://code.highcharts.com/modules/treemap.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <script src="https://code.highcharts.com/modules/scrollbar.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/highcharts.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/scrollbar.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/stock.js"></script>
     
 
 </head>
@@ -46,7 +47,7 @@
             </div>
 
             <!-- Metrics Cards -->
-            <div class="row mb-4">
+            <div class="row mb-2">
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
@@ -76,30 +77,60 @@
                 </div>
             </div>
 
+
+
             <!-- Tabs for Data Display -->
             <div style="width: 100%;">
                 <ul class="nav nav-tabs" id="data-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="true">Data</a>
+                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="true">By Year</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="false">Methodology</a>
+                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="false">By Month</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="methodology-tab" data-toggle="tab" href="#methodology" role="tab" aria-controls="methodology" aria-selected="false">Methodology</a>
+                    </li>
+                    
                 </ul>
 
                 <div class="tab-content" id="tab-content">
                     <!-- By Year Content -->
                     <div class="tab-pane fade show active" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
                         <div class="card mb-4" style="border:0px; margin-top: 20px;">
+                                        <!-- Highlights Card -->
+                            <div class="row mb-2">
+                                <div class="card-body" style="width:100%;">
+                                    <h5 class="card-title">Highlights</h5>
+                                    <ul>
+                                        <li>In 2023, Yukon had an estimated 450,500 visits, down 8.3% from the all-time high of 491,300 in 2018. 
+                                            Visitation has rebounded significantly from the pandemic, reflecting renewed interest in travel to the territory.</li>
+                                        <li>It is expected to continue its upward trend as international travel recovers fully, and Yukon strengthens its position as a sought-after destination for its unique wilderness experiences, vibrant cultural offerings, and welcoming communities.</li>
+                                        <li>The visitation figures below show the results of past Visitor Exit Surveys, as well as an estimate based on border crossings and air arrivals.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
                             <!-- Data by Year -->
                             <div id="visitor-estimates-container" style="width:100%; height:400px;"></div>
+                            
+                        </div>
+                    </div>
+
+
+
+                    <!-- By Month Content -->
+                    <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
+                        <div class="card mb-4" style="border:0px; margin-top: 20px;">
+                            <div id="monthly-chart" style="width:100%; height:400px; margin-top: 20px;"></div>
+                            
                             <div id="transportation-chart" style="width:100%; height:400px; margin-top: 20px;"></div>
                             <div id="data-table-container" data-csv-url="/data/vw_kpi_estimated_visitors.csv" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
                         </div>
                     </div>
 
-                    <!-- By Month Content -->
-                    <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
+                    <!-- Methodology Tab -->
+                    <div class="tab-pane fade" id="methodology" role="tabpanel" aria-labelledby="methodology-tab">
                         <div class="card mb-4" style="border:0px; margin-top: 20px;">
                             <!-- Methodology Content -->
                             <div class="card-body">
@@ -166,6 +197,7 @@
     <script src="js/visitor-estimates/visitors-by-month.js"></script>
     <script src="js/visitor-estimates/visitors-by-year.js"></script>
     <script src="js/visitor-estimates/visitors-by-transportation.js"></script>
+    <script src="js/visitor-estimates/visitors-by-month-stacked.js"></script>
     <script src="js/utils/data-table.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {

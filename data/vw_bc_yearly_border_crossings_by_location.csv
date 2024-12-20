@@ -1,372 +1,365 @@
-"year","geo","value"
-1972,Fraser,259335
-1972,Dawson,1557
-1972,Old Crow,1467
-1972,Pleasant Camp,259647
-1972,Beaver Creek,685123
-1972,Whitehorse,65461
-1972,Little Gold Creek,91137
-1973,Old Crow,0
-1973,Dawson,1729
-1973,Whitehorse,64575
-1973,Beaver Creek,767350
-1973,Little Gold Creek,113686
-1973,Pleasant Camp,294109
-1973,Fraser,352937
-1974,Whitehorse,81779
-1974,Beaver Creek,683044
-1974,Pleasant Camp,355750
-1974,Dawson,2322
-1974,Little Gold Creek,91087
-1974,Old Crow,927
-1974,Fraser,360161
-1975,Dawson,3633
-1975,Beaver Creek,729829
-1975,Pleasant Camp,381862
-1975,Old Crow,1332
-1975,Fraser,390943
-1975,Little Gold Creek,109112
-1975,Whitehorse,91519
-1976,Dawson,4689
-1976,Old Crow,942
-1976,Whitehorse,102784
-1976,Beaver Creek,726676
-1976,Fraser,426154
-1976,Little Gold Creek,109916
-1976,Pleasant Camp,326483
-1977,Little Gold Creek,107833
-1977,Pleasant Camp,284826
-1977,Whitehorse,80257
-1977,Dawson,4788
-1977,Beaver Creek,621732
-1977,Fraser,479894
-1977,Old Crow,1343
-1978,Little Gold Creek,136141
-1978,Beaver Creek,823443
-1978,Old Crow,2330
-1978,Pleasant Camp,370715
-1978,Whitehorse,108424
-1978,Dawson,6601
-1978,Fraser,400735
-1979,Dawson,6689
-1979,Whitehorse,103754
-1979,Beaver Creek,763850
-1979,Pleasant Camp,271988
-1979,Old Crow,2126
-1979,Fraser,681225
-1979,Little Gold Creek,104987
-1980,Whitehorse,89163
-1980,Fraser,518678
-1980,Beaver Creek,585390
-1980,Old Crow,1674
-1980,Little Gold Creek,116282
-1980,Pleasant Camp,296829
-1980,Dawson,8376
-1981,Dawson,6660
-1981,Beaver Creek,774073
-1981,Little Gold Creek,126917
-1981,Old Crow,2133
-1981,Fraser,595929
-1981,Whitehorse,88319
-1981,Pleasant Camp,327425
-1982,Dawson,5341
-1982,Little Gold Creek,116486
-1982,Beaver Creek,806048
-1982,Old Crow,1450
-1982,Whitehorse,79510
-1982,Fraser,555703
-1982,Pleasant Camp,329980
-1983,Pleasant Camp,306153
-1983,Fraser,628051
-1983,Little Gold Creek,123335
-1983,Dawson,4248
-1983,Beaver Creek,927175
-1983,Old Crow,2157
-1983,Whitehorse,70165
-1984,Little Gold Creek,116262
-1984,Beaver Creek,1057255
-1984,Old Crow,2377
-1984,Whitehorse,75673
-1984,Pleasant Camp,337777
-1984,Fraser,601349
-1984,Dawson,7732
-1985,Pleasant Camp,303502
-1985,Old Crow,2520
-1985,Dawson,36408
-1985,Little Gold Creek,126686
-1985,Fraser,729807
-1985,Whitehorse,72105
-1985,Beaver Creek,1144300
-1986,Whitehorse,58447
-1986,Fraser,918426
-1986,Little Gold Creek,146892
-1986,Dawson,32915
-1986,Old Crow,3057
-1986,Beaver Creek,1189022
-1986,Pleasant Camp,299464
-1987,Whitehorse,44103
-1987,Pleasant Camp,306915
-1987,Dawson,17285
-1987,Fraser,997349
-1987,Little Gold Creek,183502
-1987,Old Crow,2922
-1987,Beaver Creek,1163525
-1988,Whitehorse,46136
-1988,Fraser,850630
-1988,Pleasant Camp,333847
-1988,Old Crow,3487
-1988,Beaver Creek,1087066
-1988,Dawson,33181
-1988,Little Gold Creek,193133
-1989,Little Gold Creek,164623
-1989,Fraser,854250
-1989,Pleasant Camp,358618
-1989,Whitehorse,45776
-1989,Dawson,37274
-1989,Old Crow,4563
-1989,Beaver Creek,1063756
-1990,Beaver Creek,1062558
-1990,Dawson,64006
-1990,Fraser,869650
-1990,Whitehorse,49382
-1990,Little Gold Creek,160336
-1990,Old Crow,5874
-1990,Pleasant Camp,409813
-1991,Old Crow,2271
-1991,Beaver Creek,1063946
-1991,Pleasant Camp,411920
-1991,Dawson,46342
-1991,Little Gold Creek,166588
-1991,Whitehorse,45926
-1991,Fraser,825325
-1992,Beaver Creek,1264711
-1992,Old Crow,3466
-1992,Fraser,917922
-1992,Dawson,52956
-1992,Whitehorse,42466
-1992,Pleasant Camp,424702
-1992,Little Gold Creek,217214
-1993,Dawson,51455
-1993,Old Crow,3375
-1993,Fraser,974451
-1993,Whitehorse,36973
-1993,Little Gold Creek,185742
-1993,Beaver Creek,1164902
-1993,Pleasant Camp,443016
-1994,Pleasant Camp,424922
-1994,Dawson,41205
-1994,Fraser,1060919
-1994,Beaver Creek,1067910
-1994,Old Crow,3898
-1994,Whitehorse,39691
-1994,Little Gold Creek,235430
-1995,Pleasant Camp,424002
-1995,Whitehorse,39415
-1995,Beaver Creek,1119344
-1995,Little Gold Creek,221768
-1995,Dawson,40700
-1995,Fraser,1160068
-1995,Old Crow,3006
-1996,Dawson,46248
-1996,Old Crow,6675
-1996,Beaver Creek,1015781
-1996,Fraser,1234117
-1996,Pleasant Camp,401190
-1996,Whitehorse,41465
-1996,Little Gold Creek,239848
-1997,Old Crow,3782
-1997,Fraser,1361559
-1997,Beaver Creek,1002560
-1997,Little Gold Creek,195708
-1997,Whitehorse,48550
-1997,Dawson,52132
-1997,Pleasant Camp,388626
-1998,Whitehorse,124888
-1998,Pleasant Camp,408629
-1998,Old Crow,2435
-1998,Dawson,69958
-1998,Fraser,1516979
-1998,Beaver Creek,1119564
-1998,Little Gold Creek,216853
-1999,Old Crow,1931
-1999,Fraser,1625735
-1999,Little Gold Creek,222900
-1999,Pleasant Camp,395096
-1999,Whitehorse,78162
-1999,Dawson,76747
-1999,Beaver Creek,1120974
-2000,Old Crow,837
-2000,Pleasant Camp,378375
-2000,Little Gold Creek,216720
-2000,Beaver Creek,1074462
-2000,Whitehorse,106999
-2000,Dawson,86418
-2000,Fraser,1568438
-2001,Whitehorse,105615
-2001,Dawson,84554
-2001,Fraser,1523122
-2001,Little Gold Creek,208664
-2001,Beaver Creek,1041532
-2001,Old Crow,450
-2001,Pleasant Camp,374258
-2002,Old Crow,1835
-2002,Pleasant Camp,416238
-2002,Fraser,1611626
-2002,Little Gold Creek,185278
-2002,Whitehorse,82380
-2002,Beaver Creek,1029018
-2002,Dawson,76554
-2003,Little Gold Creek,156085
-2003,Old Crow,279
-2003,Pleasant Camp,391905
-2003,Fraser,1741386
-2003,Dawson,81979
-2003,Whitehorse,79217
-2003,Beaver Creek,964100
-2004,Dawson,66847
-2004,Little Gold Creek,127743
-2004,Old Crow,207
-2004,Fraser,1909234
-2004,Pleasant Camp,389606
-2004,Beaver Creek,954249
-2004,Whitehorse,78119
-2005,Dawson,77759
-2005,Old Crow,306
-2005,Pleasant Camp,387325
-2005,Whitehorse,74087
-2005,Beaver Creek,889438
-2005,Little Gold Creek,134617
-2005,Fraser,2068127
-2006,Whitehorse,76046
-2006,Old Crow,414
-2006,Dawson,84189
-2006,Little Gold Creek,129374
-2006,Fraser,2211514
-2006,Pleasant Camp,346792
-2006,Beaver Creek,858794
-2007,Whitehorse,68535
-2007,Pleasant Camp,334102
-2007,Beaver Creek,873905
-2007,Fraser,2381852
-2007,Little Gold Creek,145378
-2007,Old Crow,209
-2007,Dawson,85853
-2008,Little Gold Creek,134706
-2008,Fraser,2357798
-2008,Old Crow,252
-2008,Beaver Creek,714141
-2008,Whitehorse,69742
-2008,Pleasant Camp,295210
-2008,Dawson,80399
-2009,Fraser,2131459
-2009,Beaver Creek,688641
-2009,Little Gold Creek,118312
-2009,Pleasant Camp,262509
-2009,Dawson,37450
-2009,Whitehorse,64561
-2009,Old Crow,369
-2010,Old Crow,207
-2010,Beaver Creek,787856
-2010,Dawson,39697
-2010,Fraser,2424862
-2010,Pleasant Camp,258778
-2010,Little Gold Creek,91097
-2010,Whitehorse,71722
-2011,Beaver Creek,658990
-2011,Fraser,2455624
-2011,Dawson,4402
-2011,Pleasant Camp,256357
-2011,Little Gold Creek,174310
-2011,Whitehorse,66720
-2011,Old Crow,54
-2012,Fraser,2601257
-2012,Old Crow,291
-2012,Beaver Creek,640878
-2012,Little Gold Creek,119437
-2012,Pleasant Camp,244791
-2012,Whitehorse,55763
-2012,Dawson,3588
-2013,Whitehorse,51814
-2013,Dawson,2578
-2013,Old Crow,225
-2013,Little Gold Creek,173930
-2013,Beaver Creek,641625
-2013,Fraser,2872603
-2013,Pleasant Camp,240718
-2014,Old Crow,162
-2014,Dawson,67839
-2014,Fraser,2669342
-2014,Beaver Creek,617308
-2014,Little Gold Creek,114627
-2014,Pleasant Camp,274419
-2014,Whitehorse,56086
-2015,Dawson,74245
-2015,Little Gold Creek,122828
-2015,Fraser,2546575
-2015,Old Crow,206
-2015,Beaver Creek,606916
-2015,Whitehorse,50859
-2015,Pleasant Camp,318465
-2016,Pleasant Camp,350842
-2016,Little Gold Creek,134206
-2016,Beaver Creek,682373
-2016,Dawson,64098
-2016,Old Crow,54
-2016,Whitehorse,52998
-2016,Fraser,2570700
-2017,Little Gold Creek,135910
-2017,Dawson,71506
-2017,Fraser,2623055
-2017,Whitehorse,50575
-2017,Pleasant Camp,335655
-2017,Old Crow,99
-2017,Beaver Creek,781235
-2018,Beaver Creek,802070
-2018,Old Crow,90
-2018,Whitehorse,50572
-2018,Dawson,70250
-2018,Little Gold Creek,137089
-2018,Pleasant Camp,337326
-2018,Fraser,3186844
-2019,Beaver Creek,747090
-2019,Little Gold Creek,118763
-2019,Dawson,63024
-2019,Fraser,3283344
-2019,Whitehorse,52064
-2019,Pleasant Camp,349386
-2019,Old Crow,9
-2020,Little Gold Creek,0
-2020,Fraser,48922
-2020,Old Crow,0
-2020,Pleasant Camp,38198
-2020,Dawson,263
-2020,Whitehorse,3055
-2020,Beaver Creek,231954
+year,geo,value
+1974,Beaver Creek,80014
+1977,Beaver Creek,70294
+1984,Beaver Creek,118563
+1987,Beaver Creek,130035
+1990,Beaver Creek,119142
+1993,Beaver Creek,130498
+2000,Beaver Creek,123106
+2003,Beaver Creek,110952
+2006,Beaver Creek,98460
+2009,Beaver Creek,79431
+2013,Beaver Creek,74017
+2016,Beaver Creek,78643
+2019,Beaver Creek,85702
+2022,Beaver Creek,59175
+1972,Dawson,173
+1975,Dawson,405
+1978,Dawson,749
+1985,Dawson,4200
+1988,Dawson,3941
+1991,Dawson,5422
+1994,Dawson,4727
+2001,Dawson,9732
+2004,Dawson,7749
+2007,Dawson,9767
+2010,Dawson,4551
+2017,Dawson,8164
+2020,Dawson,29
+2023,Dawson,6674
+1974,Fraser,41865
+1977,Fraser,55066
+1981,Fraser,66855
+1984,Fraser,66835
+1987,Fraser,116583
+1990,Fraser,102582
+1997,Fraser,154287
+2000,Fraser,175758
+2003,Fraser,194920
+2006,Fraser,247340
+2013,Fraser,321067
+2016,Fraser,288204
+2019,Fraser,366776
+2022,Fraser,80733
+1973,Little Gold Creek,12638
+1976,Little Gold Creek,12224
+1979,Little Gold Creek,11667
+1982,Little Gold Creek,12990
+1989,Little Gold Creek,18359
+1992,Little Gold Creek,24256
+1995,Little Gold Creek,24848
+1998,Little Gold Creek,24185
+2005,Little Gold Creek,15097
+2008,Little Gold Creek,15098
+2011,Little Gold Creek,19486
+2018,Little Gold Creek,15249
 2021,Little Gold Creek,0
-2021,Whitehorse,3142
-2021,Old Crow,0
+1977,Old Crow,167
+1980,Old Crow,206
+1983,Old Crow,249
+1986,Old Crow,371
+1993,Old Crow,457
+1996,Old Crow,801
+1999,Old Crow,219
+2002,Old Crow,207
+2006,Old Crow,46
+2009,Old Crow,41
+2012,Old Crow,51
+2015,Old Crow,22
+2022,Old Crow,1
+1973,Pleasant Camp,33749
+1976,Pleasant Camp,36923
+1983,Pleasant Camp,34933
+1986,Pleasant Camp,34116
+1989,Pleasant Camp,40074
+1996,Pleasant Camp,45138
+1999,Pleasant Camp,44500
+2002,Pleasant Camp,46602
+2005,Pleasant Camp,43321
+2012,Pleasant Camp,27623
+2015,Pleasant Camp,36017
+2018,Pleasant Camp,38252
+2021,Pleasant Camp,5327
+1976,Whitehorse,12360
+1979,Whitehorse,12148
+1982,Whitehorse,9534
+1985,Whitehorse,8565
+1989,Whitehorse,5476
+1992,Whitehorse,5148
+1995,Whitehorse,4835
+1998,Whitehorse,13344
+2005,Whitehorse,7541
+2008,Whitehorse,6974
+2011,Whitehorse,6570
+2014,Whitehorse,5600
+2021,Whitehorse,410
+1972,Beaver Creek,77639
+1975,Beaver Creek,86595
+1978,Beaver Creek,93105
+1981,Beaver Creek,86969
+1988,Beaver Creek,121462
+1991,Beaver Creek,119240
+1994,Beaver Creek,119932
+1997,Beaver Creek,114026
+2004,Beaver Creek,109519
+2007,Beaver Creek,100413
+2010,Beaver Creek,90630
+2017,Beaver Creek,88803
+2020,Beaver Creek,28220
+2023,Beaver Creek,74983
+1974,Dawson,258
+1981,Dawson,758
+1984,Dawson,906
+1987,Dawson,2073
+1990,Dawson,7430
+1997,Dawson,6040
+2000,Dawson,10020
+2003,Dawson,9529
+2006,Dawson,9681
+2013,Dawson,338
+2016,Dawson,7380
+2019,Dawson,7046
+2022,Dawson,4757
+1973,Fraser,41273
+1980,Fraser,58454
+1983,Fraser,69835
+1986,Fraser,105036
+1993,Fraser,110305
+1996,Fraser,143343
+1999,Fraser,182239
+2002,Fraser,180412
+2009,Fraser,239149
+2012,Fraser,291139
+2015,Fraser,284807
+2018,Fraser,356306
+1972,Little Gold Creek,10261
+1975,Little Gold Creek,12260
+1978,Little Gold Creek,15137
+1985,Little Gold Creek,14090
+1988,Little Gold Creek,21513
+1991,Little Gold Creek,18610
+1994,Little Gold Creek,26306
+2001,Little Gold Creek,23360
+2004,Little Gold Creek,14315
+2007,Little Gold Creek,16306
+2014,Little Gold Creek,12839
+2017,Little Gold Creek,15112
+2020,Little Gold Creek,0
+2023,Little Gold Creek,10455
+1974,Old Crow,103
+1981,Old Crow,253
+1984,Old Crow,279
+1987,Old Crow,344
+1990,Old Crow,690
+1997,Old Crow,428
+2000,Old Crow,93
+2003,Old Crow,31
+2010,Old Crow,23
+2013,Old Crow,25
+2016,Old Crow,6
+2019,Old Crow,1
+1974,Pleasant Camp,40790
+1977,Pleasant Camp,32086
+1980,Pleasant Camp,33831
+1987,Pleasant Camp,34911
+1990,Pleasant Camp,45843
+1993,Pleasant Camp,49992
+2000,Pleasant Camp,42471
+2003,Pleasant Camp,43833
+2006,Pleasant Camp,38832
+2009,Pleasant Camp,29505
+2016,Pleasant Camp,39598
+2019,Pleasant Camp,39366
+2022,Pleasant Camp,25632
+1972,Whitehorse,7263
+1975,Whitehorse,10795
+1978,Whitehorse,12754
+1981,Whitehorse,10499
+1988,Whitehorse,5542
+1991,Whitehorse,5552
+1994,Whitehorse,4923
+2001,Whitehorse,11281
+2004,Whitehorse,8093
+2007,Whitehorse,6847
+2010,Whitehorse,7244
+2017,Whitehorse,4975
+2020,Whitehorse,363
+2023,Whitehorse,3905
+1973,Beaver Creek,86468
+1980,Beaver Creek,65662
+1983,Beaver Creek,104177
+1986,Beaver Creek,133052
+1989,Beaver Creek,119040
+1996,Beaver Creek,115141
+1999,Beaver Creek,127650
+2002,Beaver Creek,118530
+2005,Beaver Creek,101538
+2012,Beaver Creek,73864
+2015,Beaver Creek,70296
+2018,Beaver Creek,90990
+1976,Dawson,537
+1979,Dawson,751
+1982,Dawson,611
+1989,Dawson,4362
+1992,Dawson,6138
+1995,Dawson,4668
+1998,Dawson,8066
+2005,Dawson,8883
+2008,Dawson,9177
+2011,Dawson,524
+2014,Dawson,7767
 2021,Dawson,0
-2021,Pleasant Camp,43001
-2021,Fraser,42822
-2021,Beaver Creek,259028
-2022,Pleasant Camp,224144
-2022,Little Gold Creek,75878
-2022,Dawson,41099
-2022,Old Crow,9
-2022,Fraser,712581
-2022,Whitehorse,37966
-2022,Beaver Creek,507681
-2023,Pleasant Camp,299690
-2023,Dawson,58640
-2023,Beaver Creek,640607
-2023,Old Crow,171
-2023,Whitehorse,39165
-2023,Fraser,3044387
-2023,Little Gold Creek,91787
-2024,Beaver Creek,493329
-2024,Whitehorse,11637
-2024,Old Crow,27
-2024,Pleasant Camp,158279
-2024,Dawson,59885
-2024,Fraser,2876651
-2024,Little Gold Creek,44022
+1972,Fraser,28815
+1975,Fraser,45203
+1978,Fraser,46147
+1985,Fraser,81147
+1988,Fraser,100026
+1991,Fraser,96777
+1994,Fraser,119071
+2001,Fraser,170522
+2004,Fraser,213810
+2007,Fraser,266414
+2010,Fraser,271468
+2017,Fraser,293569
+2020,Fraser,6642
+2023,Fraser,341479
+1977,Little Gold Creek,11989
+1980,Little Gold Creek,12952
+1983,Little Gold Creek,13717
+1986,Little Gold Creek,16336
+1993,Little Gold Creek,20798
+1996,Little Gold Creek,26874
+1999,Little Gold Creek,24920
+2002,Little Gold Creek,20754
+2009,Little Gold Creek,13168
+2012,Little Gold Creek,13341
+2015,Little Gold Creek,13660
+2022,Little Gold Creek,8642
+1973,Old Crow,0
+1976,Old Crow,122
+1979,Old Crow,266
+1982,Old Crow,166
+1989,Old Crow,523
+1992,Old Crow,452
+1995,Old Crow,418
+1998,Old Crow,289
+2005,Old Crow,34
+2008,Old Crow,28
+2011,Old Crow,6
+2018,Old Crow,10
+2021,Old Crow,0
+1972,Pleasant Camp,29775
+1979,Pleasant Camp,30876
+1982,Pleasant Camp,37672
+1985,Pleasant Camp,34612
+1992,Pleasant Camp,48094
+1995,Pleasant Camp,47808
+1998,Pleasant Camp,45989
+2001,Pleasant Camp,41954
+2008,Pleasant Camp,33134
+2011,Pleasant Camp,28993
+2014,Pleasant Camp,31075
+2017,Pleasant Camp,37877
+1973,Whitehorse,7809
+1980,Whitehorse,10599
+1983,Whitehorse,8413
+1986,Whitehorse,6959
+1993,Whitehorse,4523
+1996,Whitehorse,5005
+1999,Whitehorse,8542
+2002,Whitehorse,8786
+2009,Whitehorse,6405
+2012,Whitehorse,5491
+2015,Whitehorse,5003
+2018,Whitehorse,5018
+1976,Beaver Creek,83038
+1979,Beaver Creek,86270
+1982,Beaver Creek,90674
+1985,Beaver Creek,128182
+1992,Beaver Creek,141475
+1995,Beaver Creek,126166
+1998,Beaver Creek,127442
+2001,Beaver Creek,119826
+2008,Beaver Creek,82417
+2011,Beaver Creek,76124
+2014,Beaver Creek,71508
+2021,Beaver Creek,31418
+1973,Dawson,209
+1977,Dawson,532
+1980,Dawson,942
+1983,Dawson,474
+1986,Dawson,3831
+1993,Dawson,5869
+1996,Dawson,5294
+1999,Dawson,8937
+2002,Dawson,8950
+2009,Dawson,4328
+2012,Dawson,434
+2015,Dawson,8465
+2018,Dawson,7994
+1976,Fraser,48770
+1979,Fraser,77007
+1982,Fraser,62327
+1989,Fraser,100690
+1992,Fraser,108358
+1995,Fraser,132204
+1998,Fraser,170621
+2005,Fraser,231493
+2008,Fraser,264146
+2011,Fraser,275210
+2014,Fraser,298382
+2021,Fraser,6006
+1974,Little Gold Creek,10335
+1981,Little Gold Creek,14113
+1984,Little Gold Creek,12922
+1987,Little Gold Creek,20418
+1990,Little Gold Creek,17908
+1997,Little Gold Creek,21928
+2000,Little Gold Creek,24240
+2003,Little Gold Creek,17453
+2006,Little Gold Creek,14482
+2010,Little Gold Creek,10133
+2013,Little Gold Creek,19410
+2016,Little Gold Creek,14930
+2019,Little Gold Creek,13201
+1972,Old Crow,163
+1975,Old Crow,148
+1978,Old Crow,290
+1985,Old Crow,300
+1988,Old Crow,449
+1991,Old Crow,303
+1994,Old Crow,524
+2001,Old Crow,50
+2004,Old Crow,23
+2007,Old Crow,23
+2014,Old Crow,18
+2017,Old Crow,11
+2020,Old Crow,0
+2023,Old Crow,19
+1975,Pleasant Camp,43874
+1978,Pleasant Camp,41745
+1981,Pleasant Camp,37105
+1984,Pleasant Camp,38475
+1988,Pleasant Camp,37709
+1991,Pleasant Camp,46252
+1994,Pleasant Camp,47906
+1997,Pleasant Camp,43670
+2004,Pleasant Camp,43534
+2007,Pleasant Camp,37538
+2010,Pleasant Camp,29470
+2013,Pleasant Camp,27230
+2020,Pleasant Camp,4810
+2023,Pleasant Camp,33786
+1974,Whitehorse,9727
+1977,Whitehorse,9689
+1984,Whitehorse,8935
+1987,Whitehorse,5263
+1990,Whitehorse,5940
+1997,Whitehorse,5718
+2000,Whitehorse,11543
+2003,Whitehorse,8221
+2006,Whitehorse,7708
+2013,Whitehorse,5036
+2016,Whitehorse,5242
+2019,Whitehorse,5280
+2022,Whitehorse,3896

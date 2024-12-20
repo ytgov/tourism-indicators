@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     zoomType: 'x'
                 },
                 title: {
-                    text: 'Visitors by Origin'
+                    text: 'Visits by Origin'
                 },
                 xAxis: {
                     categories: years,
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'Total Visitors'
+                        text: 'Total Visits'
                     },
                     labels: {
                         overflow: 'justify'

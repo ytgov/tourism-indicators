@@ -10,11 +10,12 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Highcharts JS -->
-    <script src="https://code.highcharts.com/stock/highstock.js"></script>
-    <script src="https://code.highcharts.com/modules/treemap.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <script src="https://code.highcharts.com/modules/scrollbar.js"></script> 
+    <script src="https://code.highcharts.com/12.1.0/highcharts.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/scrollbar.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/stock.js"></script> 
 
 </head>
 <body>
@@ -32,7 +33,7 @@
             <!-- Title Section -->
             <div class="text-center mb-4">
                 <h1 class="indicator-title">Visits to Yukon Government Campgrounds</h1>
-                <p class="indicator-subtitle">Yearly data shows the number of visitors to campgrounds managed by the Yukon Government.</p>
+                <p class="indicator-subtitle">Yearly data shows the number of visits to campgrounds managed by the Yukon Government.</p>
             </div>
 
             <!-- Metrics Cards -->
@@ -82,6 +83,7 @@
                     <div class="tab-pane fade show active" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
                         <div id="by-year-container" class="mb-4 " style="width:100%; margin-top: 20px;">
                             <div id="yearly-container" class="card mb-4" style="width:100%;margin-top: 20px;"></div>
+                            <div id="yearly-residency-container" class="card mb-4" style="width:100%;margin-top: 20px;"></div>
 
                             <div class="card mb-4" style="width:100%;">
                                 <div class="card-body">
@@ -126,6 +128,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script type="module" src="js/pages/env-yearly-campground-visitation.js"></script>
     <script type="module" src="js/pages/env-campground-visitation.js"></script>
+    <script type="module" src="js/pages/env-yearly-campground-visitation-residency.js"></script>
     <script type="module" src="js/pages/env-campground-monthly-visits.js"></script>
     <script type="module" src="js/pages/env-campground-yearly-country-origin.js"></script>
     <script type="module" src="js/utils/data-table.js"></script>
