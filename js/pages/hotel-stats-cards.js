@@ -41,7 +41,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // Get YTD change percentage
                 const occChange = parseFloat(latestOccData[8]);
-                const color = occChange >= 0 ? '#28a745' : '#dc3545'; // Green for positive, red for negative
+                let color;
+                if (occChange > -1 && occChange < 1) {
+                    color = '#6c757d';  // Dark grey for neutral changes
+                } else if (occChange > 1) {
+                    color = '#28a745';  // Green for positive changes
+                } else {
+                    color = '#dc3545';  // Red for negative changes
+                }
                 const arrow = createArrowSvg(occChange >= 0);
 
                 // Update occupancy elements
@@ -64,7 +71,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // Get YTD change percentage
                 const adrChange = parseFloat(latestAdrData[8]);
-                const color = adrChange >= 0 ? '#28a745' : '#dc3545'; // Green for positive, red for negative
+                let color;
+                if (adrChange > -1 && adrChange < 1) {
+                    color = '#6c757d';  // Dark grey for neutral changes
+                } else if (adrChange > 1) {
+                    color = '#28a745';  // Green for positive changes
+                } else {
+                    color = '#dc3545';  // Red for negative changes
+                }
                 const arrow = createArrowSvg(adrChange >= 0);
                 
                 adrElement.textContent = ytdTotal;
@@ -84,7 +98,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // Get YTD change percentage
                 const revChange = parseFloat(latestRevparData[8]);
-                const color = revChange >= 0 ? '#28a745' : '#dc3545'; // Green for positive, red for negative
+                let color;
+                if (revChange > -1 && revChange < 1) {
+                    color = '#6c757d';  // Dark grey for neutral changes
+                } else if (revChange > 1) {
+                    color = '#28a745';  // Green for positive changes
+                } else {
+                    color = '#dc3545';  // Red for negative changes
+                }
                 const arrow = createArrowSvg(revChange >= 0);
                 
                 revElement.textContent = ytdTotal;

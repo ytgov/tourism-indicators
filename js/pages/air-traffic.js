@@ -57,7 +57,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             const ytdChangeElement = document.getElementById('ytd-change');
             if (latestData && latestData[8]) {
                 const ytdChangeValue = parseFloat(latestData[8]);
-                const color = ytdChangeValue >= 0 ? '#28a745' : '#dc3545';
+                let color;
+                if (ytdChangeValue >= -1 && ytdChangeValue <= 1) {
+                    color = '#6c757d';  // Dark grey for neutral changes
+                } else if (ytdChangeValue > 1) {
+                    color = '#28a745';  // Green for positive changes
+                } else {
+                    color = '#dc3545';  // Red for negative changes
+                }
                 const arrow = createArrowSvg(ytdChangeValue >= 0);
                 ytdChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdChangeValue.toFixed(1)}%</span>`;
             }
@@ -117,14 +124,31 @@ document.addEventListener('DOMContentLoaded', async () => {
         const currentYear = new Date().getUTCFullYear();
 
         const yearlyData = data.data.reduce((acc, row) => {
-            const year = new Date(row[0]).getUTCFullYear();
+            const date = new Date(row[0]);
+            const year = date.getUTCFullYear();
+            const month = date.getUTCMonth() + 1; // JavaScript months are zero-based (0 = January, 11 = December)
             const arrivals = parseFloat(row[3]);
-            
-            // Exclude the most recent year
-            if (year < currentYear) {
-                acc[year] = (acc[year] || 0) + arrivals;
+        
+            // Check if the year is already being processed
+            if (!acc[year]) {
+                // Check if there is a row for December for this year
+                const hasDecember = data.data.some(r => {
+                    const rDate = new Date(r[0]);
+                    return rDate.getUTCFullYear() === year && rDate.getUTCMonth() === 11; // December
+                });
+        
+                if (!hasDecember) {
+                    // Skip this year if it does not have a December row
+                    return acc;
+                }
+        
+                // Initialize the year in the accumulator
+                acc[year] = 0;
             }
-
+        
+            // Add arrivals to the year
+            acc[year] += arrivals;
+        
             return acc;
         }, {});
 

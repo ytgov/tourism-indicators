@@ -92,7 +92,7 @@ async function generateChart() {
                 }
             },
             title: {
-                text: `Visitors by Region (${selectedYear})`
+                text: `Visits by Region (${selectedYear})`
             },
             xAxis: {
                 categories: categories,

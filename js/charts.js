@@ -641,12 +641,20 @@ function updateKPIContent(containerId, data, title) {
 
     if (isAccommodationIndicator) {
         container.innerHTML = `
-            <div class="ytd-change ${data.ytdPercentageChange >= 0 ? 'positive' : 'negative'}">
-                ${createArrowSvg(data.ytdPercentageChange >= 0)}
+            <div class="ytd-change ${
+                data.ytdPercentageChange >= 1 ? 'positive' :
+                data.ytdPercentageChange <= -1 ? 'negative' : 'neutral'
+            }">
+                ${createArrowSvg(data.ytdPercentageChange >= 0)} <!-- Original logic for SVG arrows -->
             </div>
             <div class="dataset-name">${title}</div>
             <div class="ytd-total">${formattedTotal}</div>
-            <div class="percentage-change ${data.ytdPercentageChange >= 0 ? 'positive' : 'negative'}">${data.ytdPercentageChange < 0 ? '-' : ''}${Math.abs(data.ytdPercentageChange).toFixed(1)}% y/y</div>
+            <div class="percentage-change ${
+                data.ytdPercentageChange >= 1 ? 'positive' :
+                data.ytdPercentageChange <= -1 ? 'negative' : 'neutral'
+            }">
+                ${data.ytdPercentageChange < 0 ? '-' : ''}${Math.abs(data.ytdPercentageChange).toFixed(1)}% y/y
+            </div>
             <div class="current-month">${data.monthYear}</div>
         `;
     } else {
@@ -655,8 +663,12 @@ function updateKPIContent(containerId, data, title) {
             <div class="dataset-name">${title}</div>
             <div class="dataset-subheading">${subheading}</div>
             <div class="ytd-total">${formattedTotal}</div>
-            <div class="ytd-change ${data.ytdPercentageChange >= 0 ? 'positive' : 'negative'}">
-                ${createArrowSvg(data.ytdPercentageChange >= 0)} ${data.ytdPercentageChange < 0 ? '-' : ''}${Math.abs(data.ytdPercentageChange).toFixed(1)}% y/y
+            <div class="ytd-change ${
+                data.ytdPercentageChange >= 1 ? 'positive' :
+                data.ytdPercentageChange <= -1 ? 'negative' : 'neutral'
+            }">
+                ${createArrowSvg(data.ytdPercentageChange >= 0)} <!-- Original logic for SVG arrows -->
+                ${data.ytdPercentageChange < 0 ? '-' : ''}${Math.abs(data.ytdPercentageChange).toFixed(1)}% y/y
             </div>
         `;
     }
@@ -664,7 +676,15 @@ function updateKPIContent(containerId, data, title) {
 
 // Function to create a KPI chart
 function createKPIChart(containerId, data, ytdPercentageChange) {
-    const color = ytdPercentageChange >= 0 ? '#28a745' : '#dc3545';  // Green if positive, red if negative
+    let color;
+    if (ytdPercentageChange > -1 && ytdPercentageChange < 1) {
+        color = '#6c757d';  // Dark grey for neutral changes
+    } else if (ytdPercentageChange > 1) {
+        color = '#28a745';  // Green for positive changes
+    } else {
+        color = '#dc3545';  // Red for negative changes
+    }
+
     const currentDate = new Date();
     const tenYearsAgo = new Date();
     tenYearsAgo.setFullYear(currentDate.getFullYear() - 10);
@@ -765,7 +785,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     const vicVisitorsData = await loadVICVisitorsData();
     if (vicVisitorsData) {
-        updateKPIContent('additional4-content', vicVisitorsData, 'VIC Visitors');
+        updateKPIContent('additional4-content', vicVisitorsData, 'VIC Visits');
     }
 
     const highwayCountsData = await loadHighwayCountsData();
@@ -790,12 +810,12 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     const pcVisitorsData = await loadPCVisitorData();
     if (pcVisitorsData) {
-        updateKPIContent('additional9-content', pcVisitorsData, 'Parks Canada Visitors');
+        updateKPIContent('additional9-content', pcVisitorsData, 'Parks Canada Visits');
     }
 
     const envCampgroundData = await loadCampgroundVisitorData();
     if (envCampgroundData) {
-        updateKPIContent('additional11-content', envCampgroundData, 'Campground Visitors');
+        updateKPIContent('additional11-content', envCampgroundData, 'Campground Visits');
     }
 
     const scFuelPrices = await loadFuelPrices();

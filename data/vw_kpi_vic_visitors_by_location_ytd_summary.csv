@@ -1,9 +1,4 @@
 date,year,month,location,monthly_total_visitors,prev_year_monthly_total,monthly_percentage_difference,ytd_total_visitors,prev_year_ytd_total,ytd_percentage_difference,ytd_month_range
-2013-05-01,2013,5,Airport,468,,,468,0,,May - May
-2013-06-01,2013,6,Airport,1182,,,1650,0,,May - June
-2013-07-01,2013,7,Airport,1296,,,2946,0,,May - July
-2013-08-01,2013,8,Airport,1492,,,4438,0,,May - August
-2013-09-01,2013,9,Airport,677,,,5115,0,,May - September
 2013-05-01,2013,5,Beaver Creek VIC,1359,,,1359,0,,May - May
 2013-06-01,2013,6,Beaver Creek VIC,3979,,,5338,0,,May - June
 2013-07-01,2013,7,Beaver Creek VIC,4378,,,9716,0,,May - July
@@ -37,11 +32,6 @@ date,year,month,location,monthly_total_visitors,prev_year_monthly_total,monthly_
 2013-10-01,2013,10,Whitehorse VIC,2071,,,65685,0,,May - October
 2013-11-01,2013,11,Whitehorse VIC,1227,,,66912,0,,May - November
 2013-12-01,2013,12,Whitehorse VIC,1243,,,68155,0,,May - December
-2014-05-01,2014,5,Airport,659,,,659,0,,May - May
-2014-06-01,2014,6,Airport,1419,,,2078,0,,May - June
-2014-07-01,2014,7,Airport,1754,,,3832,0,,May - July
-2014-08-01,2014,8,Airport,1943,,,5775,0,,May - August
-2014-09-01,2014,9,Airport,1276,,,7051,0,,May - September
 2014-05-01,2014,5,Beaver Creek VIC,968,,,968,0,,May - May
 2014-06-01,2014,6,Beaver Creek VIC,2381,,,3349,0,,May - June
 2014-07-01,2014,7,Beaver Creek VIC,3889,,,7238,0,,May - July
@@ -79,9 +69,6 @@ date,year,month,location,monthly_total_visitors,prev_year_monthly_total,monthly_
 2014-10-01,2014,10,Whitehorse VIC,1961,2071,-5.3,72520,65685,10.4,January - October
 2014-11-01,2014,11,Whitehorse VIC,1564,1227,27.5,74084,66912,10.7,January - November
 2014-12-01,2014,12,Whitehorse VIC,2238,1243,80.0,76322,68155,12.0,January - December
-2015-07-01,2015,7,Airport,958,,,958,0,,July - July
-2015-08-01,2015,8,Airport,1502,,,2460,0,,July - August
-2015-09-01,2015,9,Airport,982,468,109.8,3442,468,635.5,July - September
 2015-05-01,2015,5,Beaver Creek VIC,1011,,,1011,0,,May - May
 2015-06-01,2015,6,Beaver Creek VIC,2548,,,3559,0,,May - June
 2015-07-01,2015,7,Beaver Creek VIC,4142,1359,204.8,7701,1359,466.7,May - July
@@ -119,11 +106,6 @@ date,year,month,location,monthly_total_visitors,prev_year_monthly_total,monthly_
 2015-10-01,2015,10,Whitehorse VIC,3815,1961,94.5,83984,72520,15.8,January - October
 2015-11-01,2015,11,Whitehorse VIC,2175,1564,39.1,86159,74084,16.3,January - November
 2015-12-01,2015,12,Whitehorse VIC,2241,2238,0.1,88400,76322,15.8,January - December
-2016-05-01,2016,5,Airport,80,1182,-93.2,80,1182,-93.2,May - May
-2016-06-01,2016,6,Airport,753,1296,-41.9,833,2478,-66.4,May - June
-2016-07-01,2016,7,Airport,735,1492,-50.7,1568,3970,-60.5,May - July
-2016-08-01,2016,8,Airport,584,677,-13.7,2152,4647,-53.7,May - August
-2016-09-01,2016,9,Airport,194,659,-70.6,2346,5306,-55.8,May - September
 2016-05-01,2016,5,Beaver Creek VIC,1055,4197,-74.9,1055,4197,-74.9,May - May
 2016-06-01,2016,6,Beaver Creek VIC,2943,1121,162.5,3998,5318,-24.8,May - June
 2016-07-01,2016,7,Beaver Creek VIC,3590,968,270.9,7588,6286,20.7,May - July
@@ -161,9 +143,6 @@ date,year,month,location,monthly_total_visitors,prev_year_monthly_total,monthly_
 2016-10-01,2016,10,Whitehorse VIC,2676,3815,-29.9,89668,83984,6.8,January - October
 2016-11-01,2016,11,Whitehorse VIC,2458,2175,13.0,92126,86159,6.9,January - November
 2016-12-01,2016,12,Whitehorse VIC,2915,2241,30.1,95041,88400,7.5,January - December
-2017-06-01,2017,6,Airport,197,1419,-86.1,197,1419,-86.1,June - June
-2017-07-01,2017,7,Airport,361,1754,-79.4,558,3173,-82.4,June - July
-2017-08-01,2017,8,Airport,228,1943,-88.3,786,5116,-84.6,June - August
 2017-05-01,2017,5,Beaver Creek VIC,835,3646,-77.1,835,3646,-77.1,May - May
 2017-06-01,2017,6,Beaver Creek VIC,2883,1215,137.3,3718,4861,-23.5,May - June
 2017-07-01,2017,7,Beaver Creek VIC,3855,1011,281.3,7573,5872,29.0,May - July
@@ -201,9 +180,6 @@ date,year,month,location,monthly_total_visitors,prev_year_monthly_total,monthly_
 2017-10-01,2017,10,Whitehorse VIC,3116,2676,16.4,98477,89668,9.8,January - October
 2017-11-01,2017,11,Whitehorse VIC,2501,2458,1.7,100978,92126,9.6,January - November
 2017-12-01,2017,12,Whitehorse VIC,2548,2915,-12.6,103526,95041,8.9,January - December
-2018-07-01,2018,7,Airport,36,1276,-97.2,36,1276,-97.2,July - July
-2018-08-01,2018,8,Airport,252,958,-73.7,288,2234,-87.1,July - August
-2018-09-01,2018,9,Airport,144,1502,-90.4,432,3736,-88.4,July - September
 2018-05-01,2018,5,Beaver Creek VIC,928,3728,-75.1,928,3728,-75.1,May - May
 2018-06-01,2018,6,Beaver Creek VIC,3267,1437,127.3,4195,5165,-18.8,May - June
 2018-07-01,2018,7,Beaver Creek VIC,4083,1055,287.0,8278,6220,33.1,May - July
@@ -354,10 +330,6 @@ date,year,month,location,monthly_total_visitors,prev_year_monthly_total,monthly_
 2023-07-01,2023,7,Beaver Creek VIC,2821,187,1408.6,5658,4423,27.9,May - July
 2023-08-01,2023,8,Beaver Creek VIC,3233,225,1336.9,8891,4648,91.3,May - August
 2023-09-01,2023,9,Beaver Creek VIC,1715,282,508.2,10606,4930,115.1,May - September
-2023-06-01,2023,6,Carcross public washroom,9226,,,9226,0,,June - June
-2023-07-01,2023,7,Carcross public washroom,17976,,,27202,0,,June - July
-2023-08-01,2023,8,Carcross public washroom,21016,,,48218,0,,June - August
-2023-09-01,2023,9,Carcross public washroom,12188,,,60406,0,,June - September
 2023-05-01,2023,5,Carcross VIC,4409,15302,-71.2,4409,15302,-71.2,May - May
 2023-06-01,2023,6,Carcross VIC,10057,978,928.3,14466,16280,-11.1,May - June
 2023-07-01,2023,7,Carcross VIC,12042,765,1474.1,26508,17045,55.5,May - July
@@ -399,11 +371,6 @@ date,year,month,location,monthly_total_visitors,prev_year_monthly_total,monthly_
 2024-08-01,2024,8,Beaver Creek VIC,3434,1818,88.9,12130,4802,152.6,April - August
 2024-09-01,2024,9,Beaver Creek VIC,1388,1986,-30.1,13518,6788,99.1,April - September
 2024-10-01,2024,10,Beaver Creek VIC,178,735,-75.8,13696,7523,82.1,April - October
-2024-05-01,2024,5,Carcross public washroom,13533,,,13533,0,,May - May
-2024-06-01,2024,6,Carcross public washroom,22242,,,35775,0,,May - June
-2024-07-01,2024,7,Carcross public washroom,23775,,,59550,0,,May - July
-2024-08-01,2024,8,Carcross public washroom,20368,,,79918,0,,May - August
-2024-09-01,2024,9,Carcross public washroom,12927,,,92845,0,,May - September
 2024-04-01,2024,4,Carcross VIC,324,2766,-88.3,324,2766,-88.3,April - April
 2024-05-01,2024,5,Carcross VIC,9944,5252,89.3,10268,8018,28.1,April - May
 2024-06-01,2024,6,Carcross VIC,13821,7194,92.1,24089,15212,58.4,April - June
@@ -440,4 +407,4 @@ date,year,month,location,monthly_total_visitors,prev_year_monthly_total,monthly_
 2024-09-01,2024,9,Whitehorse VIC,7047,6523,8.0,54361,53354,1.9,January - September
 2024-10-01,2024,10,Whitehorse VIC,2600,2536,2.5,56961,55890,1.9,January - October
 2024-11-01,2024,11,Whitehorse VIC,2032,1972,3.0,58993,57862,2.0,January - November
-2024-12-01,2024,12,Whitehorse VIC,1429,2386,-40.1,60422,60248,0.3,January - December
+2024-12-01,2024,12,Whitehorse VIC,2341,2386,-1.9,61334,60248,1.8,January - December

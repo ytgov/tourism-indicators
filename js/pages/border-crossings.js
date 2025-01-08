@@ -136,7 +136,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 let monthlyChange = 'N/A';
                 if (row[5]) {
                     const monthlyChangeValue = parseFloat(row[5]);
-                    const color = monthlyChangeValue >= 0 ? '#28a745' : '#dc3545';
+                    let color;
+                    if (monthlyChangeValue >= -1 && monthlyChangeValue <= 1) {
+                        color = '#6c757d';  // Dark grey for neutral changes
+                    } else if (monthlyChangeValue > 1) {
+                        color = '#28a745';  // Green for positive changes
+                    } else {
+                        color = '#dc3545';  // Red for negative changes
+                    }
                     const arrow = createArrowSvg(monthlyChangeValue >= 0);
                     monthlyChange = `<span style="color: ${color}; font-weight: bold;">${arrow}${monthlyChangeValue.toFixed(1)}%</span>`;
                 }
@@ -148,7 +155,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 let ytdChange = 'N/A';
                 if (row[8]) {
                     const ytdChangeValue = parseFloat(row[8]);
-                    const color = ytdChangeValue >= 0 ? '#28a745' : '#dc3545';
+                    let color;
+                    if (ytdChangeValue >= -1 && ytdChangeValue <= 1) {
+                        color = '#6c757d';  // Dark grey for neutral changes
+                    } else if (ytdChangeValue > 1) {
+                        color = '#28a745';  // Green for positive changes
+                    } else {
+                        color = '#dc3545';  // Red for negative changes
+                    }
                     const arrow = createArrowSvg(ytdChangeValue >= 0);
                     ytdChange = `<span style="color: ${color}; font-weight: bold;">${arrow}${ytdChangeValue.toFixed(1)}%</span>`;
                 }

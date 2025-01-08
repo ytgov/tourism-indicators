@@ -128,7 +128,7 @@ async function initChart(csvPath) {
             height: 500
         },
         title: {
-            text: 'Total Monthly Visitors - All Sites'
+            text: 'Total Monthly Visits - All Sites'
         },
         legend: {
             enabled: false
@@ -139,7 +139,7 @@ async function initChart(csvPath) {
         },
         yAxis: {
             title: {
-                text: 'Monthly Visitors'
+                text: 'Monthly Visits'
             },
             labels: {
                 formatter: function() {

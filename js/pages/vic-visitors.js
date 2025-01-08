@@ -57,7 +57,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             const ytdChangeElement = document.getElementById('ytd-change');
             if (latestData && latestData[8]) {
                 const ytdChangeValue = parseFloat(latestData[8]);
-                const color = ytdChangeValue >= 0 ? '#28a745' : '#dc3545';
+                let color;
+                if (ytdChangeValue > -1 && ytdChangeValue < 1) {
+                    color = '#6c757d';  // Dark grey for neutral changes
+                } else if (ytdChangeValue > 1) {
+                    color = '#28a745';  // Green for positive changes
+                } else {
+                    color = '#dc3545';  // Red for negative changes
+                }
                 const arrow = createArrowSvg(ytdChangeValue >= 0);
                 ytdChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdChangeValue.toFixed(1)}%</span>`;
             }
@@ -96,7 +103,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 type: 'column' // Vertical bar chart
             },
             title: {
-                text: 'YearlyVisitor Information Traffic'
+                text: 'Yearly Visitor Information Traffic'
             },
             xAxis: {
                 type: 'category',
@@ -106,18 +113,18 @@ document.addEventListener('DOMContentLoaded', async () => {
             },
             yAxis: {
                 title: {
-                    text: 'Total Visitors'
+                    text: 'Total Visits'
                 }
             },
             series: [
                 {
-                    name: 'Visitors',
+                    name: 'Visits',
                     data: [],
                     color: '#244c5a'
                 }
             ],
             tooltip: {
-                pointFormat: 'Visitors: <b>{point.y}</b>'
+                pointFormat: 'Visits: <b>{point.y}</b>'
             },
             time: {
                 timezone: 'UTC' // Ensure data uses UTC

@@ -92,7 +92,7 @@ async function generateChart() {
             type: 'line'
         },
         title: {
-            text: 'Monthly Campground Visitors (March to September)'
+            text: 'Monthly vists (March to September)'
         },
         xAxis: {
             categories: displayMonths.map(index => allMonths[index]), // Only show March to September
@@ -116,7 +116,7 @@ async function generateChart() {
                 let tooltip = '<b>' + this.x + '</b><br/>';
                 this.points.forEach(point => {
                     tooltip += point.series.name + ': ' + 
-                        Highcharts.numberFormat(point.y, 0) + ' visitors<br/>';
+                        Highcharts.numberFormat(point.y, 0) + ' campers<br/>';
                 });
                 return tooltip;
             }

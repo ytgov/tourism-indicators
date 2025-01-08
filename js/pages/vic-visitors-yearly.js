@@ -6,12 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Define desired order and colors
     const desiredOrder = [
-        "Airport",
         "Beaver Creek VIC",
         "Watson Lake VIC",
         "Haines Junction VIC",
         "Dawson VIC",
-        "Carcross public washroom",
         "Carcross VIC",
         "Whitehorse VIC"
     ];
@@ -30,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to prepare and render chart based on filtered data
     function renderChart(filteredData) {
         // Summarize data by location and year
+        //console.log(filteredData);
         const seriesData = desiredOrder.map((location, index) => {
             return {
                 name: location,
@@ -50,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 zoomType: 'x'
             },
             title: {
-                text: "Yearly Visitors by Location"
+                text: "Yearly Visits by Location"
             },
             xAxis: {
                 categories: years,
@@ -61,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Total Visitors'
+                    text: 'Total Visits'
                 },
                 labels: {
                     overflow: 'justify'
@@ -69,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             tooltip: {
                 shared: true,
-                valueSuffix: ' visitors'
+                valueSuffix: ' visits'
             },
             plotOptions: {
                 column: {
