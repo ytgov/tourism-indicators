@@ -1,83 +1,49 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "./data/vw_bc_yearly_border_crossings_by_country_of_origin.csv";
+    const csvUrl = "./data/vw_bc_yearly_border_crossings_by_us_can_overseas.csv";
     let globalData = []; // Store parsed CSV data globally
     let barChart; // Store Highcharts bar chart instance globally
 
     const COUNTRY_COLOR_MAP = {
         'Canada': '#F25D1F',
         'United States': '#244C5A',
-        'Austria': '#B5D99C',
-        'Belgium': '#FFD700',
-        'China': '#FF6347',
-        'Czechia': '#98D8D8',
-        'Germany': '#947B89',
-        'Ireland': '#8FB996',
-        'Israel': '#FFCBA4',
-        'Netherlands': '#F5A9D0',
-        'Sweden': '#FFB347',
-        'United Kingdom': '#97C1CD',
-        'Colombia': '#F2A900',
-        'Denmark': '#4682B4',
-        'Hungary': '#DC4405',
-        'Japan': '#7A9A01',
-        'Mexico': '#7CB9E8',
-        'Thailand': '#FFDEAD',
-        'Brazil': '#2E8B57',
-        'France': '#D6A5C0',
-        'Hong Kong': '#A17A74',
-        'Italy': '#DCB6CC',
-        'Korea, South': '#D2691E',
-        'Malaysia': '#B6C390',
-        'New Zealand': '#D4E157',
-        'Philippines': '#00CED1',
-        'Singapore': '#E67350',
-        'Spain': '#FFD700',
-        'Switzerland': '#4682B4',
-        'Taiwan': '#DC4405',
-        'Viet Nam': '#20B2AA',
-        'Australia': '#7A9A01',
-        'India': '#8B4513',
-        'Indonesia': '#F08080',
-        'Latvia': '#7EBDC2'
+        'Overseas': '#F6C21A'
     };
 
     function getCountryColor(countryName) {
         return COUNTRY_COLOR_MAP[countryName] || '#ccc'; // Default to gray if color not found
     }
 
-
     function createBarChart(year) {
 
         const filteredData = globalData.filter(row => {
             const yearMatch = row[0] === year.toString();
-            const excludeCountries = !['United States', 'Canada'].includes(row[1].trim());
-            return yearMatch && excludeCountries; // Exclude Canada and the United States
+            return yearMatch;
         });
 
 
         const barData = filteredData
             .map(row => ({
-                name: row[1].trim(),
-                y: parseInt(row[2], 10),
+                name: row[1].trim(), // Traveller_characteristics
+                y: parseInt(row[2], 10), // value
                 color: getCountryColor(row[1].trim())
             }))
             .sort((a, b) => b.y - a.y);
 
         if (barChart) {
             barChart.update({
-                title: { text: `Border Crossings by Overseas Country (${year})`},
+                title: { text: `Border Crossings by Origin (${year})` },
                 series: [{
                     data: barData,
                     showInLegend: false
                 }]
             });
         } else {
-            barChart = Highcharts.chart('country-bar-container', {
+            barChart = Highcharts.chart('can-us-bar-container', {
                 chart: { type: 'bar' },
-                title: { text: `Border Crossings by Overseas Country (${year})` },
+                title: { text: `Border Crossings by Origin (${year})` },
                 xAxis: {
                     type: 'category',
-                    title: { text: 'Country' }
+                    title: { text: 'Origin' }
                 },
                 yAxis: {
                     title: { text: 'Number of Crossings' }
@@ -99,6 +65,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
                     }
                 }],
+                exporting: {
+                    enabled: true
+                },
                 credits: {
                     enabled: false
                 }
@@ -113,9 +82,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const data = rows.slice(1).filter(row => row.length === 3);
 
             globalData = data.map(row => [
-                row[0].trim(),
-                row[1].trim(),
-                row[2].trim()
+                row[0].trim(), // year
+                row[1].trim(), // Traveller_characteristics
+                row[2].trim()  // value
             ]);
 
             const uniqueYears = [...new Set(globalData.map(row => row[0]))]
@@ -135,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 createBarChart(uniqueYears[0]);
             }
 
-            yearSelect.addEventListener('change', function() {
+            yearSelect.addEventListener('change', function () {
                 const selectedYear = this.value;
                 createBarChart(selectedYear);
             });

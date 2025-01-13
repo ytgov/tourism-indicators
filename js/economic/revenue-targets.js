@@ -18,7 +18,7 @@ async function createGDPStatsChart() {
         data.forEach(row => {
             const [year, value, adjusted_value, type, notes] = row;
             const numYear = parseInt(year);
-            const numValue = parseFloat(value);
+            const numValue = parseFloat(adjusted_value);
             const currentYear = new Date().getFullYear();
 
             // Only include data from 2016 onwards

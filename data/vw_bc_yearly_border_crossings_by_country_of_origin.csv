@@ -1,0 +1,750 @@
+year,Country_of_residence,value
+1974,Germany,655
+1975,Canada,18900
+1976,Canada,18218
+1978,Canada,27122
+1978,Germany,1117
+1979,Switzerland,241
+1980,Australia,243
+1980,United States,131841
+1982,Switzerland,848
+1982,United Kingdom,124
+1983,Austria,107
+1983,Canada,42852
+1983,Switzerland,867
+1984,Australia,830
+1984,Canada,44866
+1984,Germany,2073
+1984,Mexico,109
+1985,Italy,102
+1986,Canada,52176
+1987,Germany,3753
+1987,Netherlands,107
+1988,Australia,1003
+1988,Italy,221
+1988,Netherlands,103
+1988,United Kingdom,759
+1988,United States,203440
+1989,Canada,64668
+1989,France,281
+1989,Netherlands,106
+1989,United Kingdom,1032
+1991,Austria,401
+1991,Canada,64684
+1991,France,656
+1991,Italy,342
+1991,New Zealand,378
+1992,Germany,7537
+1992,Japan,290
+1992,Switzerland,2639
+1992,United States,217099
+1994,Austria,1162
+1994,Canada,67411
+1994,Italy,387
+1994,New Zealand,387
+1994,Switzerland,2777
+1994,United Kingdom,2374
+1995,Belgium,149
+1995,Germany,11248
+1995,Japan,113
+1995,Spain,131
+1996,Switzerland,2786
+1996,United Kingdom,2486
+1996,United States,219408
+1997,Austria,991
+1997,Belgium,142
+1997,Switzerland,2439
+1997,Taiwan,202
+1998,Belgium,119
+1998,Netherlands,1027
+1998,New Zealand,367
+1998,Switzerland,2763
+1999,Belgium,103
+1999,Japan,119
+1999,Mexico,109
+1999,Spain,227
+1999,Switzerland,2850
+2000,Austria,1045
+2000,China,102
+2000,New Zealand,489
+2000,Spain,108
+2001,Australia,2083
+2001,Canada,61523
+2001,France,586
+2001,Germany,11938
+2002,Australia,2160
+2002,Italy,369
+2002,Netherlands,1341
+2002,Spain,107
+2003,Germany,11227
+2003,Italy,240
+2003,Spain,133
+2004,Canada,66811
+2004,France,557
+2004,New Zealand,498
+2004,Spain,129
+2005,France,730
+2005,Germany,11587
+2005,Israel,211
+2005,Mexico,397
+2005,Netherlands,1331
+2005,New Zealand,1018
+2005,Taiwan,117
+2005,United States,294175
+2006,Germany,9970
+2006,Italy,285
+2006,Mexico,368
+2006,Netherlands,1199
+2006,New Zealand,777
+2006,Spain,103
+2006,Switzerland,2501
+2006,United States,307435
+2007,Canada,62798
+2007,China,127
+2007,France,794
+2007,Israel,111
+2007,Italy,291
+2008,China,281
+2008,Czechia,285
+2008,Israel,252
+2008,"Korea, South",123
+2008,Netherlands,1539
+2008,Switzerland,2771
+2009,Canada,65737
+2009,Germany,9899
+2009,India,543
+2009,Italy,464
+2009,Switzerland,2491
+2010,Canada,68957
+2010,China,332
+2010,India,996
+2010,Mexico,370
+2010,Netherlands,1156
+2010,Singapore,152
+2011,Canada,71652
+2011,Czechia,493
+2011,India,986
+2011,Israel,518
+2011,Italy,441
+2011,"Korea, South",685
+2011,Taiwan,331
+2011,United States,283805
+2012,France,886
+2012,United Kingdom,5484
+2013,Brazil,122
+2013,Canada,78328
+2013,China,1832
+2013,Germany,8134
+2013,Indonesia,291
+2013,Italy,171
+2013,Japan,357
+2013,Malaysia,102
+2013,Switzerland,3069
+2014,Australia,8844
+2014,Austria,721
+2014,Belgium,103
+2014,Brazil,301
+2014,China,2779
+2014,Germany,8632
+2014,India,1333
+2014,Israel,386
+2014,Japan,225
+2014,Mexico,964
+2014,Netherlands,1191
+2014,Taiwan,806
+2014,United Kingdom,4372
+2015,Australia,7642
+2015,Belgium,103
+2015,Brazil,343
+2015,China,2985
+2015,Germany,9197
+2015,Hong Kong,143
+2015,India,1458
+2015,Indonesia,394
+2015,New Zealand,1241
+2016,Belgium,132
+2016,Canada,73505
+2016,India,1509
+2016,Japan,295
+2016,Mexico,642
+2016,Switzerland,3068
+2017,Austria,521
+2017,Germany,9965
+2017,Indonesia,316
+2017,Israel,273
+2017,Malaysia,207
+2017,Spain,381
+2017,Taiwan,754
+2018,Canada,85711
+2018,Germany,10337
+1976,Germany,730
+1977,Canada,17426
+1977,France,124
+1977,Germany,813
+1978,Australia,107
+1979,Germany,906
+1980,France,313
+1981,France,168
+1981,United States,152121
+1982,Australia,646
+1982,Canada,44082
+1982,France,284
+1983,Germany,2531
+1983,United Kingdom,315
+1983,United States,176048
+1984,United States,189893
+1985,Canada,46583
+1985,Mexico,271
+1986,Australia,883
+1986,New Zealand,133
+1986,Switzerland,1074
+1986,United Kingdom,510
+1987,Austria,262
+1987,Canada,59882
+1987,France,392
+1987,Italy,139
+1987,United Kingdom,706
+1988,Canada,58285
+1988,Germany,4651
+1988,New Zealand,377
+1989,Germany,4583
+1989,Italy,261
+1989,Japan,103
+1990,Australia,1759
+1990,France,577
+1990,Italy,334
+1990,Netherlands,291
+1990,New Zealand,489
+1991,Australia,1717
+1991,Germany,5582
+1992,Austria,508
+1992,France,599
+1992,Italy,520
+1993,Canada,69845
+1993,Italy,382
+1993,Netherlands,297
+1993,United Kingdom,2379
+1994,Australia,2051
+1994,Germany,10668
+1994,Japan,250
+1995,Austria,1054
+1995,Canada,68302
+1995,France,830
+1995,Italy,533
+1995,Netherlands,608
+1996,Australia,2854
+1996,Germany,12846
+1996,Netherlands,608
+1998,France,993
+1998,Germany,16429
+1998,Japan,275
+1998,United Kingdom,2982
+1999,Canada,67942
+1999,Germany,14051
+1999,Israel,159
+1999,New Zealand,455
+2000,Canada,64401
+2000,Italy,509
+2000,United Kingdom,4370
+2001,Austria,426
+2001,Italy,258
+2001,Mexico,255
+2001,New Zealand,163
+2001,Spain,106
+2001,Switzerland,3947
+2001,United Kingdom,3669
+2001,United States,269835
+2002,Canada,65159
+2002,Czechia,111
+2002,Japan,210
+2002,Mexico,229
+2002,New Zealand,114
+2003,Canada,65332
+2003,France,597
+2003,Mexico,254
+2003,New Zealand,390
+2004,Australia,2955
+2004,Austria,927
+2004,Germany,11836
+2004,Italy,316
+2004,Japan,630
+2004,Taiwan,250
+2004,United Kingdom,3874
+2004,United States,284669
+2005,Belgium,126
+2005,Czechia,117
+2005,Spain,121
+2005,United Kingdom,5587
+2006,Austria,586
+2006,Canada,63445
+2006,Taiwan,157
+2006,United Kingdom,6007
+2007,Germany,10431
+2008,Italy,591
+2008,Mexico,755
+2008,New Zealand,1122
+2008,Spain,365
+2008,Taiwan,295
+2008,United Kingdom,6039
+2009,Israel,269
+2009,Japan,215
+2009,"Korea, South",224
+2009,Taiwan,108
+2010,Austria,743
+2010,France,1052
+2010,Israel,398
+2010,"Korea, South",825
+2010,Taiwan,362
+2010,United Kingdom,4458
+2010,United States,293478
+2011,Austria,588
+2011,Germany,8734
+2011,New Zealand,591
+2011,Spain,303
+2011,United Kingdom,4483
+2012,Australia,6195
+2012,Japan,449
+2012,Philippines,102
+2012,Singapore,407
+2012,Spain,129
+2012,Taiwan,233
+2012,United States,289953
+2013,New Zealand,1185
+2013,Philippines,260
+2013,United Kingdom,4229
+2014,Czechia,501
+2014,France,990
+2014,Italy,397
+2014,New Zealand,1339
+2014,Spain,328
+2014,United States,290428
+2015,Czechia,366
+2015,France,1019
+2015,Israel,146
+2015,"Korea, South",419
+2015,Mexico,975
+2015,Netherlands,1282
+2015,Philippines,160
+2015,Singapore,628
+2016,Czechia,356
+2016,France,1414
+2016,New Zealand,1236
+2016,Spain,350
+2016,Taiwan,483
+2016,United Kingdom,4007
+2017,Brazil,315
+2017,India,1385
+2017,Italy,313
+2017,Netherlands,1282
+2017,New Zealand,1438
+2017,Philippines,220
+2017,Singapore,737
+2017,United Kingdom,4325
+2018,Czechia,474
+2018,India,2146
+2018,Italy,387
+2018,"Korea, South",621
+2018,Mexico,1656
+2018,Switzerland,2957
+2018,Thailand,120
+2018,United Kingdom,5578
+2019,Brazil,543
+2019,Germany,12212
+2019,Hong Kong,250
+1973,Germany,169
+1973,United States,151869
+1975,Germany,766
+1979,Canada,38971
+1979,United States,168346
+1981,Australia,894
+1981,Germany,3869
+1981,Switzerland,1628
+1982,Germany,2948
+1983,France,137
+1985,Australia,755
+1985,Germany,1600
+1985,United Kingdom,333
+1985,United States,212739
+1986,Denmark,103
+1986,United States,226704
+1987,Australia,1047
+1987,United States,221924
+1989,Switzerland,1691
+1989,United States,193846
+1990,Germany,4457
+1990,Japan,105
+1990,Switzerland,1602
+1990,United States,199993
+1991,Netherlands,439
+1991,United States,194640
+1992,Australia,1723
+1992,Netherlands,495
+1992,Spain,145
+1993,France,1069
+1993,Germany,9596
+1993,Japan,325
+1994,Belgium,140
+1994,Israel,143
+1996,Czechia,216
+1996,New Zealand,420
+1997,France,834
+1997,Israel,269
+1997,Italy,538
+1997,Netherlands,833
+1997,New Zealand,556
+1997,United Kingdom,2776
+1998,Canada,75918
+1998,Israel,338
+1998,Italy,517
+1999,Austria,712
+1999,France,830
+1999,Italy,631
+1999,Netherlands,846
+1999,Taiwan,185
+2000,Switzerland,4492
+2000,Taiwan,694
+2001,Belgium,243
+2001,Israel,114
+2001,Japan,455
+2001,Netherlands,1106
+2002,Austria,539
+2002,France,462
+2002,Germany,10393
+2002,Switzerland,2493
+2003,Australia,2381
+2003,Japan,117
+2003,United States,276316
+2004,Singapore,151
+2005,Japan,483
+2005,Switzerland,2716
+2006,Czechia,140
+2007,India,233
+2007,Japan,222
+2007,Mexico,524
+2008,Australia,5488
+2008,Germany,10414
+2008,India,411
+2009,China,280
+2009,Czechia,424
+2009,France,545
+2009,Mexico,280
+2009,Netherlands,1130
+2009,New Zealand,679
+2009,Spain,311
+2010,Belgium,105
+2010,Indonesia,145
+2010,New Zealand,812
+2010,Spain,344
+2010,Switzerland,2935
+2011,Australia,5817
+2011,France,712
+2011,Netherlands,1345
+2011,Singapore,286
+2012,Austria,563
+2012,Germany,7441
+2012,India,1377
+2012,Indonesia,112
+2012,Israel,384
+2012,"Korea, South",620
+2013,Australia,7063
+2013,Czechia,298
+2013,France,1248
+2013,"Korea, South",991
+2013,Mexico,758
+2013,Netherlands,840
+2013,Singapore,462
+2013,Spain,474
+2013,Taiwan,670
+2013,United States,316033
+2014,Hong Kong,218
+2014,"Korea, South",835
+2014,Philippines,138
+2014,Singapore,779
+2014,Switzerland,3089
+2015,Austria,702
+2015,Canada,67906
+2015,Malaysia,128
+2015,Spain,467
+2015,United Kingdom,4019
+2016,Austria,662
+2016,Brazil,212
+2016,China,3406
+2016,Indonesia,243
+2016,Israel,277
+2016,Italy,391
+2016,"Korea, South",635
+2016,Netherlands,1149
+2016,Philippines,369
+2017,Canada,82110
+2017,Japan,285
+2017,Mexico,1364
+2017,Switzerland,3228
+2017,United States,308099
+2018,China,2497
+2018,Israel,273
+2018,New Zealand,1582
+2018,Philippines,391
+2018,Taiwan,751
+2019,Australia,11798
+2019,Austria,1023
+2019,China,2903
+2019,India,2228
+2019,Indonesia,296
+2019,Japan,853
+2019,"Korea, South",617
+2019,Mexico,1968
+2019,Sweden,112
+2019,Switzerland,3600
+2019,United Kingdom,7681
+2021,United States,30745
+2022,United Kingdom,1754
+2023,Australia,8462
+2023,Austria,222
+2023,Canada,89342
+2023,China,2468
+2023,Indonesia,105
+2023,Italy,176
+2023,Japan,859
+2023,Mexico,3943
+2023,New Zealand,1187
+2023,Philippines,835
+2023,Spain,453
+2024,India,3749
+2024,Indonesia,126
+2024,Japan,552
+2024,Malaysia,353
+2024,Switzerland,140
+2024,United Kingdom,8793
+2024,Viet Nam,114
+2018,Netherlands,1270
+2018,Singapore,774
+2018,Spain,374
+2018,United States,365275
+2019,Canada,98525
+2019,France,1666
+2019,Israel,359
+2019,Italy,594
+2019,Malaysia,139
+2019,Singapore,995
+2020,United States,26328
+2021,Canada,2331
+2022,Japan,130
+2022,United States,107224
+2023,Brazil,348
+2023,France,3124
+2023,Ireland,260
+2023,Switzerland,557
+2023,Taiwan,1116
+2023,United Kingdom,6735
+2024,Canada,79512
+2024,China,3073
+2024,Ireland,395
+2024,Israel,345
+2024,Italy,291
+2024,Mexico,3022
+2024,Netherlands,1083
+2024,Philippines,947
+2024,Singapore,2251
+2024,Spain,1073
+2024,Taiwan,1543
+2019,Philippines,371
+2019,Spain,697
+2019,Taiwan,598
+2020,Canada,4113
+2022,Australia,1255
+2022,Canada,50281
+2022,France,225
+2022,India,253
+2022,"Korea, South",267
+2023,Hong Kong,696
+2023,"Korea, South",1301
+2023,United States,316527
+2024,Australia,9743
+2024,Brazil,799
+2024,Hong Kong,696
+2024,United States,344792
+1972,Canada,15614
+1972,Germany,153
+1972,United States,131986
+1973,Canada,18247
+1974,Canada,18894
+1974,United States,144887
+1975,United States,157287
+1976,United States,161755
+1977,United States,151115
+1978,United States,170094
+1980,Canada,38479
+1980,Germany,2179
+1980,Switzerland,539
+1980,United Kingdom,286
+1981,Canada,48331
+1981,United Kingdom,644
+1982,United States,155177
+1983,Australia,892
+1984,Switzerland,792
+1984,United Kingdom,455
+1985,France,109
+1985,Switzerland,617
+1986,France,361
+1986,Germany,3132
+1986,Italy,151
+1987,Mexico,260
+1987,Switzerland,1208
+1988,France,386
+1988,Japan,101
+1988,Mexico,136
+1988,Switzerland,1640
+1989,Australia,1736
+1989,New Zealand,505
+1990,Austria,309
+1990,Canada,66995
+1990,United Kingdom,1113
+1991,Japan,131
+1991,Switzerland,2213
+1991,United Kingdom,1413
+1992,Canada,76945
+1992,United Kingdom,1649
+1993,Australia,1935
+1993,Austria,840
+1993,New Zealand,279
+1993,Switzerland,3083
+1993,United States,218622
+1994,France,837
+1994,Netherlands,538
+1994,United States,222019
+1995,Australia,2326
+1995,Israel,117
+1995,New Zealand,555
+1995,Switzerland,2646
+1995,United Kingdom,2251
+1995,United States,231475
+1996,Austria,1194
+1996,Belgium,167
+1996,Canada,71142
+1996,France,856
+1996,Israel,115
+1996,Italy,419
+1997,Australia,3001
+1997,Canada,69733
+1997,Czechia,145
+1997,Germany,11470
+1997,Japan,268
+1997,United States,232561
+1998,Australia,3121
+1998,Austria,844
+1998,Czechia,143
+1998,Spain,133
+1998,United States,264364
+1999,Australia,2766
+1999,United Kingdom,3995
+1999,United States,282054
+2000,Australia,3146
+2000,Czechia,223
+2000,Denmark,182
+2000,France,743
+2000,Germany,15202
+2000,Netherlands,1520
+2000,United States,270215
+2002,United Kingdom,3732
+2002,United States,276670
+2003,Austria,645
+2003,Czechia,224
+2003,Israel,215
+2003,Netherlands,1187
+2003,Switzerland,3155
+2003,United Kingdom,3975
+2004,Belgium,101
+2004,Czechia,123
+2004,Mexico,335
+2004,Netherlands,1195
+2004,Switzerland,2893
+2005,Australia,4178
+2005,Austria,725
+2005,Canada,66778
+2005,Italy,631
+2006,Australia,4655
+2006,Belgium,123
+2006,France,713
+2007,Australia,4964
+2007,Austria,580
+2007,Netherlands,1222
+2007,New Zealand,964
+2007,Spain,258
+2007,Switzerland,2582
+2007,United Kingdom,5992
+2007,United States,325292
+2008,Austria,797
+2008,Belgium,107
+2008,Canada,64387
+2008,France,931
+2008,United States,294119
+2009,Australia,3978
+2009,Austria,528
+2009,United Kingdom,4674
+2009,United States,260513
+2010,Australia,5441
+2010,Czechia,253
+2010,Germany,9782
+2010,Italy,490
+2011,China,888
+2011,Indonesia,321
+2011,Japan,233
+2011,Mexico,442
+2011,Switzerland,3404
+2012,Canada,72048
+2012,China,1404
+2012,Czechia,327
+2012,Italy,185
+2012,Malaysia,125
+2012,Mexico,726
+2012,Netherlands,731
+2012,New Zealand,1141
+2012,Switzerland,2644
+2013,Austria,746
+2013,India,1290
+2013,Israel,326
+2013,Thailand,114
+2014,Canada,78226
+2014,Indonesia,207
+2014,Malaysia,131
+2015,Italy,485
+2015,Japan,264
+2015,Switzerland,2680
+2015,Taiwan,482
+2015,United States,292962
+2016,Australia,7262
+2016,Germany,9710
+2016,Singapore,404
+2016,United States,301676
+2017,Australia,8423
+2017,Belgium,123
+2017,China,2850
+2017,Czechia,350
+2017,France,1034
+2017,"Korea, South",799
+2018,Australia,8707
+2018,Austria,390
+2018,Brazil,412
+2018,France,1112
+2018,Hong Kong,107
+2018,Indonesia,495
+2018,Japan,175
+2018,Malaysia,420
+2019,Czechia,729
+2019,Denmark,132
+2019,Hungary,184
+2019,Netherlands,1393
+2019,New Zealand,1836
+2019,United States,343822
+2022,Germany,2865
+2022,Mexico,1016
+2022,Switzerland,152
+2023,Colombia,140
+2023,Germany,3911
+2023,India,2258
+2023,Netherlands,901
+2023,Singapore,1166
+2024,Germany,2441
+2024,"Korea, South",1172
+2024,Latvia,107
+2024,New Zealand,1521

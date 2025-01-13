@@ -1,89 +1,76 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "./data/vw_bc_yearly_border_crossings_by_country_of_origin.csv";
+    const csvUrl = "./data/vw_bc_vehicle_arrivals_by_license_plate.csv";
     let globalData = []; // Store parsed CSV data globally
     let barChart; // Store Highcharts bar chart instance globally
 
-    const COUNTRY_COLOR_MAP = {
-        'Canada': '#F25D1F',
-        'United States': '#244C5A',
-        'Austria': '#B5D99C',
-        'Belgium': '#FFD700',
-        'China': '#FF6347',
-        'Czechia': '#98D8D8',
-        'Germany': '#947B89',
-        'Ireland': '#8FB996',
-        'Israel': '#FFCBA4',
-        'Netherlands': '#F5A9D0',
-        'Sweden': '#FFB347',
-        'United Kingdom': '#97C1CD',
-        'Colombia': '#F2A900',
-        'Denmark': '#4682B4',
-        'Hungary': '#DC4405',
-        'Japan': '#7A9A01',
-        'Mexico': '#7CB9E8',
-        'Thailand': '#FFDEAD',
-        'Brazil': '#2E8B57',
-        'France': '#D6A5C0',
-        'Hong Kong': '#A17A74',
-        'Italy': '#DCB6CC',
-        'Korea, South': '#D2691E',
-        'Malaysia': '#B6C390',
-        'New Zealand': '#D4E157',
-        'Philippines': '#00CED1',
-        'Singapore': '#E67350',
-        'Spain': '#FFD700',
-        'Switzerland': '#4682B4',
-        'Taiwan': '#DC4405',
-        'Viet Nam': '#20B2AA',
-        'Australia': '#7A9A01',
-        'India': '#8B4513',
-        'Indonesia': '#F08080',
-        'Latvia': '#7EBDC2'
+    const LICENSE_PLATE_COLOR_MAP = {
+        'Alaska': '#244C5A',
+        'Yukon': '#F25D1F',
+        'British Columbia': '#B5D99C',
+        'Alberta': '#FFD700',
+        'Washington': '#FF6347',
+        'California': '#98D8D8',
+        'Florida': '#947B89',
+        'Arizona': '#8FB996',
+        'Utah': '#FFCBA4',
+        'Texas': '#F5A9D0',
+        'Oregon': '#FFB347',
+        'Colorado': '#97C1CD',
+        'Minnesota': '#F2A900',
+        'Montana': '#4682B4',
+        'Ontario': '#DC4405',
+        'Quebec': '#7A9A01',
+        'Michigan': '#7CB9E8',
+        'Idaho': '#FFDEAD',
+        'Wisconsin': '#2E8B57'
     };
 
-    function getCountryColor(countryName) {
-        return COUNTRY_COLOR_MAP[countryName] || '#ccc'; // Default to gray if color not found
+    function getLicensePlateColor(plate) {
+        return LICENSE_PLATE_COLOR_MAP[plate] || '#ccc'; // Default to gray if color not found
     }
-
 
     function createBarChart(year) {
 
         const filteredData = globalData.filter(row => {
             const yearMatch = row[0] === year.toString();
-            const excludeCountries = !['United States', 'Canada'].includes(row[1].trim());
-            return yearMatch && excludeCountries; // Exclude Canada and the United States
+            return yearMatch;
         });
-
 
         const barData = filteredData
             .map(row => ({
-                name: row[1].trim(),
-                y: parseInt(row[2], 10),
-                color: getCountryColor(row[1].trim())
+                name: row[1].trim(), // Vehicle_licence_plate
+                y: parseInt(row[2], 10), // value
+                color: getLicensePlateColor(row[1].trim())
             }))
             .sort((a, b) => b.y - a.y);
 
         if (barChart) {
             barChart.update({
-                title: { text: `Border Crossings by Overseas Country (${year})`},
+                title: { text: `Vehicle Arrivals by License Plate (${year})` },
                 series: [{
                     data: barData,
                     showInLegend: false
                 }]
             });
         } else {
-            barChart = Highcharts.chart('country-bar-container', {
-                chart: { type: 'bar' },
-                title: { text: `Border Crossings by Overseas Country (${year})` },
+            barChart = Highcharts.chart('license-container', {
+                chart: {
+                    type: 'bar',
+                    scrollablePlotArea: {
+                        minHeight: 500, // Adjust as per the number of bars
+                        scrollPositionY: 0
+                    }
+                },
+                title: { text: `Vehicle Arrivals by License Plate (${year})` },
                 xAxis: {
                     type: 'category',
-                    title: { text: 'Country' }
+                    title: { text: 'License Plate' }
                 },
                 yAxis: {
-                    title: { text: 'Number of Crossings' }
+                    title: { text: 'Number of Arrivals' }
                 },
                 series: [{
-                    name: 'Crossings',
+                    name: 'Arrivals',
                     data: barData,
                     showInLegend: false,
                     dataLabels: {
@@ -91,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         formatter: function () {
                             const total = this.series.data.reduce((sum, point) => sum + point.y, 0);
                             const percentage = ((this.y / total) * 100).toFixed(1);
-                            return `${percentage}%`; // Display percentage with two decimal places
+                            return `${percentage}%`; // Display percentage with one decimal place
                         },
                         style: {
                             fontSize: '12px',
@@ -99,6 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
                     }
                 }],
+                exporting: {
+                    enabled: true
+                },
                 credits: {
                     enabled: false
                 }
@@ -113,16 +103,18 @@ document.addEventListener("DOMContentLoaded", function () {
             const data = rows.slice(1).filter(row => row.length === 3);
 
             globalData = data.map(row => [
-                row[0].trim(),
-                row[1].trim(),
-                row[2].trim()
+                row[0].trim(), // year
+                row[1].trim(), // Vehicle_licence_plate
+                row[2].trim()  // value
             ]);
 
             const uniqueYears = [...new Set(globalData.map(row => row[0]))]
                 .map(Number)
                 .sort((a, b) => b - a);
 
-            const yearSelect = document.getElementById('year-select');
+            const yearSelect = document.getElementById('license-year-filter');
+
+            console.log(uniqueYears);
             uniqueYears.forEach(year => {
                 const option = document.createElement('option');
                 option.value = year;
@@ -135,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 createBarChart(uniqueYears[0]);
             }
 
-            yearSelect.addEventListener('change', function() {
+            yearSelect.addEventListener('change', function () {
                 const selectedYear = this.value;
                 createBarChart(selectedYear);
             });

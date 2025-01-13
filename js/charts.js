@@ -783,15 +783,15 @@ document.addEventListener('DOMContentLoaded', async function() {
         updateKPIContent('additional3-content', revenuePerRoomData, 'Average Revenue Per Room');
     }
 
-    const vicVisitorsData = await loadVICVisitorsData();
+    /*const vicVisitorsData = await loadVICVisitorsData();
     if (vicVisitorsData) {
         updateKPIContent('additional4-content', vicVisitorsData, 'VIC Visits');
-    }
+    }*/
 
-    const highwayCountsData = await loadHighwayCountsData();
+    /*const highwayCountsData = await loadHighwayCountsData();
     if (highwayCountsData) {
         updateKPIContent('additional5-content', highwayCountsData, 'Highway Counts');
-    }
+    }*/
 
     const strOccupancyData = await loadSTROccupancyData();
     if (strOccupancyData) {

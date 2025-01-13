@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             xAxis: {
                 type: 'category',
                 title: {
-                    text: 'Year'
+                    text: 'Year',
                 }
             },
             yAxis: {
