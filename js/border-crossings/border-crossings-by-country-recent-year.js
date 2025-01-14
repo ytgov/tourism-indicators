@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const csvUrl = "./data/vw_bc_yearly_border_crossings_by_country_of_origin.csv";
     let globalData = []; // Store parsed CSV data globally
     let barChart; // Store Highcharts bar chart instance globally
+    let pieChart; // Store Highcharts pie chart instance globally
 
     const COUNTRY_COLOR_MAP = {
         'Canada': '#F25D1F',
@@ -45,15 +46,12 @@ document.addEventListener("DOMContentLoaded", function () {
         return COUNTRY_COLOR_MAP[countryName] || '#ccc'; // Default to gray if color not found
     }
 
-
     function createBarChart(year) {
-
         const filteredData = globalData.filter(row => {
             const yearMatch = row[0] === year.toString();
             const excludeCountries = !['United States', 'Canada'].includes(row[1].trim());
             return yearMatch && excludeCountries; // Exclude Canada and the United States
         });
-
 
         const barData = filteredData
             .map(row => ({
@@ -106,6 +104,66 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    function createPieChart(year) {
+        const filteredData = globalData.filter(row => {
+            const yearMatch = row[0] === year.toString();
+            const excludeCountries = ['United States', 'Canada'].includes(row[1].trim());
+            return yearMatch && !excludeCountries; // Include only overseas countries
+        });
+    
+        const pieData = filteredData
+            .map(row => ({
+                name: row[1].trim(),
+                y: parseInt(row[2], 10),
+                color: getCountryColor(row[1].trim())
+            }))
+            .sort((a, b) => b.y - a.y);
+    
+        // Split into top 10 and "Other"
+        const top10Data = pieData.slice(0, 10);
+        const otherData = pieData.slice(10);
+    
+        const otherTotal = otherData.reduce((sum, item) => sum + item.y, 0);
+    
+        if (otherTotal > 0) {
+            top10Data.push({
+                name: 'Other',
+                y: otherTotal,
+                color: '#CCCCCC' // Default gray color for "Other"
+            });
+        }
+    
+        if (pieChart) {
+            pieChart.update({
+                title: { text: `Overseas Border Crossings Breakdown (${year})` },
+                series: [{
+                    data: top10Data,
+                    showInLegend: true
+                }]
+            });
+        } else {
+            pieChart = Highcharts.chart('country-pie-container', {
+                chart: { type: 'pie' },
+                title: { text: `Overseas Border Crossings Breakdown (${year})` },
+                series: [{
+                    name: 'Crossings',
+                    data: top10Data,
+                    dataLabels: {
+                        enabled: true,
+                        formatter: function () {
+                            return `<b>${this.point.name}</b>: ${Highcharts.numberFormat(this.y, 0)}`; // Format with thousands separator
+                            
+                        }
+                    }
+                }],
+                credits: {
+                    enabled: false
+                }
+            });
+        }
+    }
+    
+
     fetch(csvUrl)
         .then(response => response.text())
         .then(csv => {
@@ -133,11 +191,13 @@ document.addEventListener("DOMContentLoaded", function () {
             if (uniqueYears.length > 0) {
                 yearSelect.value = uniqueYears[0];
                 createBarChart(uniqueYears[0]);
+                createPieChart(uniqueYears[0]);
             }
 
             yearSelect.addEventListener('change', function() {
                 const selectedYear = this.value;
                 createBarChart(selectedYear);
+                createPieChart(selectedYear);
             });
 
         })

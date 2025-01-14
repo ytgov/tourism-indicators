@@ -537,7 +537,7 @@ async function loadCampgroundVisitorData() {
 }
 
 // Function to load SC Fuel Prices
-async function loadFuelPrices() {
+/*async function loadFuelPrices() {
     try {
         const response = await fetch('/data/vw_kpi_sc_gas_prices_ytd_summary.csv');
         const csvText = await response.text();
@@ -559,6 +559,34 @@ async function loadFuelPrices() {
         };
     } catch (error) {
         console.error('Error loading Fuel Prices data:', error);
+        return null;
+    }
+}*/
+
+// Function to load Accommodation Employment
+async function loadAccommodationEmployment() {
+    try {
+        const response = await fetch('/data/vw_kpi_economic_accommodation_and_food_employment.csv');
+        console.log(response);
+        const csvText = await response.text();
+        const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
+        const data = rows.slice(1).filter(row => row.length > 1);
+        
+        // Get the most recent row
+        const mostRecent = data[data.length - 1];
+        const date = new Date(mostRecent[0]);
+        
+        return {
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            ytdTotal: parseFloat(mostRecent[6]),  
+            ytdPercentageChange: parseFloat(mostRecent[8]),  
+            monthlyData: data.map(row => ({
+                date: new Date(row[0]),
+                value: parseFloat(row[1])
+            }))
+        };
+    } catch (error) {
+        console.error('Error loading Accomodation Employment data:', error);
         return null;
     }
 }
@@ -775,12 +803,12 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     const roomRateData = await loadRoomRateData();
     if (roomRateData) {
-        updateKPIContent('additional2-content', roomRateData, 'Average Daily Room Rate');
+        updateKPIContent('additional2-content', roomRateData, 'Avg. Daily Room Rate');
     }
 
     const revenuePerRoomData = await loadRevenuePerRoomData();
     if (revenuePerRoomData) {
-        updateKPIContent('additional3-content', revenuePerRoomData, 'Average Revenue Per Room');
+        updateKPIContent('additional3-content', revenuePerRoomData, 'Avg. Revenue Per Room');
     }
 
     /*const vicVisitorsData = await loadVICVisitorsData();
@@ -800,7 +828,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     const strADRData = await loadSTRADRData();
     if (strADRData) {
-        updateKPIContent('additional7-content', strADRData, 'STR Average Daily Rate');
+        updateKPIContent('additional7-content', strADRData, 'STR Avg. Daily Rate');
     }
 
     const strRevPARData = await loadSTRRevPARData();
@@ -813,14 +841,19 @@ document.addEventListener('DOMContentLoaded', async function() {
         updateKPIContent('additional9-content', pcVisitorsData, 'Parks Canada Visits');
     }
 
+    /*const scFuelPrices = await loadFuelPrices();
+    if (scFuelPrices) {
+        updateKPIContent('additional10-content', scFuelPrices, 'Average Fuel Price');
+    }*/
+
     const envCampgroundData = await loadCampgroundVisitorData();
     if (envCampgroundData) {
         updateKPIContent('additional11-content', envCampgroundData, 'Campground Visits');
     }
 
-    const scFuelPrices = await loadFuelPrices();
-    if (scFuelPrices) {
-        updateKPIContent('additional10-content', scFuelPrices, 'Average Fuel Price');
+    const scAccommodationEmployment = await loadAccommodationEmployment();
+    if (scAccommodationEmployment) {
+        updateKPIContent('additional12-content', scAccommodationEmployment, 'Employment in Accom.');
     }
 
 });

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation Employment and Weekly Earnings</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Highcharts JS -->
+    <script src="https://code.highcharts.com/12.1.0/highcharts.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/scrollbar.js"></script>
+    <script src="https://code.highcharts.com/12.1.0/modules/stock.js"></script>
+    
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" height="40" class="d-inline-block align-top" alt="Yukon Logo">
+        </a>
+    </div>
+</nav>
+
+    <!-- Main Container -->
+    <div class="container mt-4">
+        <div class="indicator-container">
+            <!-- Title Section -->
+            <div class="text-center mb-4">
+                <h2 class="indicator-title">Employment in the Accommodation and Food Services Industry</h2>
+                <p class="indicator-subtitle">Number of people employed in the accommodation and food services industry, and their average weekly earnings.</p>
+            </div>
+
+            <!-- Metrics Cards -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Latest Monthly Employment</h5>
+                            <p class="card-text h2" id="latest-monthly">-</p>
+                            <p class="card-text text-muted" id="latest-monthly-date">-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Avg Monthly Employment (YTD)</h5>
+                            <p class="card-text h2" id="ytd-amount">-</p>
+                            <div class="d-flex justify-content-between mt-auto">
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-date-range">-</p>
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-change"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Average Weekly Earnings (YTD)</h5>
+                            <p class="card-text h2" id="ytd-earn-amount">-</p>
+                            <div class="d-flex justify-content-between mt-auto">
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-earn-date-range">-</p>
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-earn-change"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Highlights Card -->
+            <div class="row mb-2">
+                <div class="card-body" style="width:100%;">
+                    <h5 class="card-title">Highlights</h5>
+                    <ul>
+                        <li>Employment in the accommodation and food services industry has remained relatively consistent over time.</li>
+                        <li>Employment in accommodation and food services have increased since the pandemic, but are still lower than the pre-pandemic peak in 2016 of 2,013.</li>
+                        <li>Weekly earnings have increased 8.2% y/y from January to October 2024, over the same period in 2023.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tabs for Data Display -->
+            <div style="width: 100%;">
+                <ul class="nav nav-tabs" id="data-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="true">By Year</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="false">By month</a>
+                    </li>
+
+                </ul>
+
+                
+
+                <div class="tab-content" id="tab-content">
+                    <!-- By year Content -->
+                    <div class="tab-pane fade show active" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
+                        <div id="by-year-container" class="mb-4" style="width:100%; margin-top: 20px;">
+                            <!-- Data by year goes here -->
+                            <div id="yearly-chart" class="mb-4" style="height:400px;"></div>                          
+                        </div>
+                    </div>
+
+                    <!-- By month Content -->
+                    <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
+                        <div id="by-month-container" class="card mb-4" style="border:0px; width:100%; margin-top: 20px;">
+
+                            <!-- Data by month -->
+                            <div id="indicator-chart" class="card mb-4" style="width:100%;"></div>                               
+                            <div id="data-table-container"  class="card mb-4 p-3" data-csv-url="data/vw_kpi_economic_accommodation_and_food_employment.csv" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
+                            <div id="indicator-chart2" class="card mb-4" style="width:100%;"></div>
+                            
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Data Source -->
+                <div class="data-source mt-4">
+                    <p>Source: Statistics Canada, Employment and average weekly earnings (including overtime) for all employees by province and territory, monthly, seasonally adjusted. 
+                        Earnings data are based on gross payroll before source deductions. 
+                        <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410022301">Table 14-10-0223-01.</a>
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="js/pages/accommodation-employment.js"></script>
+    <script type="module" src="js/utils/data-table.js"></script>
+
+</body>
+</html>
