@@ -128,6 +128,27 @@ const datasetConfigs = {
         valueFormat: 'number',
         description: 'Monthly passengers deplaning from Erik Nielsen Whitehorse International Airport. This dataset provides arrival statistics showing passenger traffic trends.'
     },
+    restaurantSpending: {
+        id: 'restaurant-spending',
+        title: 'Monthly Restaurant Spending',
+        yAxisTitle: 'Spending ($M)',
+        valueFormat: 'number',
+        tooltip: {
+            formatter: function () {
+                return 'Spending: <b>$' + Highcharts.numberFormat(this.y / 1000000, 1) + 'M</b>';
+            }
+        },
+        yAxis: {
+            labels: {
+                formatter: function () {
+                    return '$' + Highcharts.numberFormat(this.value / 1000000, 1) + 'M';
+                }
+            },
+            title: {
+                text: 'Spending ($M)'
+            }
+        }
+    },
     accommodationEmployment: {
         id: 'accommodation-employment',
         title: 'Employment in the Accommodation and Food Services Industry',

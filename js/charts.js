@@ -240,7 +240,7 @@ async function loadRoomRateData() {
             .filter(row => row.length > 1 && row[0].trim())
             .map(row => ({
                 date: new Date(row[0]),
-                value: parseFloat(row[3]),  // monthly_avg_daily_room_rate
+                value: formatCurrency(parseFloat(row[3])),  // monthly_avg_daily_room_rate
                 year: parseInt(row[1]),
                 month: parseInt(row[2])
             }))
@@ -254,7 +254,7 @@ async function loadRoomRateData() {
         
         return {
             monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-            ytdTotal: ytdAverage,
+            ytdTotal: formatCurrency(ytdAverage),
             ytdPercentageChange: parseFloat(rows.find(row => 
                 row[1] === mostRecent.year.toString() && 
                 row[2] === mostRecent.month.toString()
@@ -295,7 +295,7 @@ async function loadRevenuePerRoomData() {
         
         return {
             monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-            ytdTotal: ytdAverage,
+            ytdTotal: formatCurrency(ytdAverage),
             ytdPercentageChange: parseFloat(rows.find(row => 
                 row[1] === mostRecent.year.toString() && 
                 row[2] === mostRecent.month.toString()
@@ -431,7 +431,7 @@ async function loadSTRADRData() {
         
         return {
             monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-            ytdTotal: parseFloat(mostRecent[6]),
+            ytdTotal: formatCurrency(parseFloat(mostRecent[6])),
             ytdPercentageChange: parseFloat(mostRecent[8]),
             monthlyData: data.map(row => ({
                 date: new Date(row[0]),
@@ -537,6 +537,7 @@ async function loadCampgroundVisitorData() {
 }
 
 // Function to load SC Fuel Prices
+//removed by request
 /*async function loadFuelPrices() {
     try {
         const response = await fetch('/data/vw_kpi_sc_gas_prices_ytd_summary.csv');
@@ -567,7 +568,6 @@ async function loadCampgroundVisitorData() {
 async function loadAccommodationEmployment() {
     try {
         const response = await fetch('/data/vw_kpi_economic_accommodation_and_food_employment.csv');
-        console.log(response);
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
@@ -587,6 +587,32 @@ async function loadAccommodationEmployment() {
         };
     } catch (error) {
         console.error('Error loading Accomodation Employment data:', error);
+        return null;
+    }
+}
+
+async function loadRestaurantSpending() {
+    try {
+        const response = await fetch('/data/vw_kpi_economic_restaurant_spending.csv');
+        const csvText = await response.text();
+        const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
+        const data = rows.slice(1).filter(row => row.length > 1);
+        
+        // Get the most recent row
+        const mostRecent = data[data.length - 1];
+        const date = new Date(mostRecent[0]);
+        
+        return {
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            ytdTotal: '$' + (parseFloat(mostRecent[6]) / 1000000).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + 'M CAD',
+            ytdPercentageChange: parseFloat(mostRecent[8]),  
+            monthlyData: data.map(row => ({
+                date: new Date(row[0]),
+                value: parseFloat(row[1])
+            }))
+        };
+    } catch (error) {
+        console.error('Error loading Restaurant Spending data:', error);
         return null;
     }
 }
@@ -854,6 +880,11 @@ document.addEventListener('DOMContentLoaded', async function() {
     const scAccommodationEmployment = await loadAccommodationEmployment();
     if (scAccommodationEmployment) {
         updateKPIContent('additional12-content', scAccommodationEmployment, 'Employment in Accom.');
+    }
+
+    const scRestaurantSpending = await loadRestaurantSpending();
+    if (scRestaurantSpending) {
+        updateKPIContent('additional13-content', scRestaurantSpending, 'YTD Restaurant Spending');
     }
 
 });
