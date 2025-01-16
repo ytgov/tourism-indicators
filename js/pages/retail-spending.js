@@ -12,7 +12,7 @@ function createArrowSvg(isPositive) {
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         // Load data directly
-        const data = await loadCSVData('data/vw_kpi_economic_restaurant_spending.csv');
+        const data = await loadCSVData('data/vw_kpi_economic_retail_spending.csv');
         
         if (!data || !data.data) {
             console.error('No data available');
@@ -72,8 +72,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Initialize charts for both views
         const monthlyConfig = {
-            ...datasetConfigs.restaurantSpending,
-            dataFile: 'data/vw_kpi_economic_restaurant_spending.csv',
+            ...datasetConfigs.retailSpending,
+            dataFile: 'data/vw_kpi_economic_retail_spending.csv',
             
         };
 
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 type: 'column' // Vertical bar chart
             },
             title: {
-                text: 'Yearly Restaurant Sales'
+                text: 'Yearly Retail Sales'
             },
             xAxis: {
                 type: 'category',

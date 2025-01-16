@@ -591,7 +591,7 @@ async function loadAccommodationEmployment() {
     }
 }
 
-async function loadRestaurantSpending() {
+async function loadRestaurantSales() {
     try {
         const response = await fetch('/data/vw_kpi_economic_restaurant_spending.csv');
         const csvText = await response.text();
@@ -612,7 +612,33 @@ async function loadRestaurantSpending() {
             }))
         };
     } catch (error) {
-        console.error('Error loading Restaurant Spending data:', error);
+        console.error('Error loading Restaurant Sales data:', error);
+        return null;
+    }
+}
+
+async function loadRetailSales() {
+    try {
+        const response = await fetch('/data/vw_kpi_economic_retail_spending.csv');
+        const csvText = await response.text();
+        const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
+        const data = rows.slice(1).filter(row => row.length > 1);
+        
+        // Get the most recent row
+        const mostRecent = data[data.length - 1];
+        const date = new Date(mostRecent[0]);
+        
+        return {
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            ytdTotal: '$' + (parseFloat(mostRecent[6]) / 1000000).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + 'M CAD',
+            ytdPercentageChange: parseFloat(mostRecent[8]),  
+            monthlyData: data.map(row => ({
+                date: new Date(row[0]),
+                value: parseFloat(row[1])
+            }))
+        };
+    } catch (error) {
+        console.error('Error loading Retail Sales data:', error);
         return null;
     }
 }
@@ -882,9 +908,14 @@ document.addEventListener('DOMContentLoaded', async function() {
         updateKPIContent('additional12-content', scAccommodationEmployment, 'Employment in Accom.');
     }
 
-    const scRestaurantSpending = await loadRestaurantSpending();
-    if (scRestaurantSpending) {
-        updateKPIContent('additional13-content', scRestaurantSpending, 'YTD Restaurant Spending');
+    const scRestaurantSales = await loadRestaurantSales();
+    if (scRestaurantSales) {
+        updateKPIContent('additional13-content', scRestaurantSales, 'YTD Restaurant Sales');
+    }
+
+    const scRetailSales = await loadRetailSales();
+    if (scRetailSales) {
+        updateKPIContent('additional14-content', scRetailSales, 'YTD Retail Sales');
     }
 
 });
