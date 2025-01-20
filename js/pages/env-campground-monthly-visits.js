@@ -92,7 +92,7 @@ async function generateChart() {
             type: 'line'
         },
         title: {
-            text: 'Monthly vists (March to September)'
+            text: 'Monthly visits (March to September)'
         },
         xAxis: {
             categories: displayMonths.map(index => allMonths[index]), // Only show March to September

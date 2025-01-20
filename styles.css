@@ -1,5 +1,20 @@
 /* styles.css */
 
+body {
+    font-family: Montserrat,Helvetica,Arial,sans-serif;
+    color: #323232;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
 /* Container customization */
 .container {
     max-width: 1140px;  /* Default max-width */
@@ -47,6 +62,45 @@
     line-height: 1.2;
     margin-bottom: 0.2rem;
     text-align: left;
+}
+
+footer {
+    position: relative;
+    overflow: hidden;
+    height: 115px;
+}
+
+#footer-menu {
+    background-color: #0b3442;
+    color: #fff;
+    height: 160px;
+    font-weight:500;
+}
+
+#footer-menu a{
+    color:#fff;
+}
+
+.bg-dark {
+    background: #0d3e4f!important;
+}
+
+brand{
+    position: relative;
+    overflow: hidden;
+    height: 115px;
+}
+
+.aurora {
+    top: -30px;
+    position: absolute;
+    right: -20%;
+    width: 70%;
+}
+
+.fNav{
+    list-style:none;
+    flex-flow:column wrap;
 }
 
 .dataset-subheading {
@@ -394,6 +448,9 @@ a .additional-indicator {
 .navbar {
     height: 80px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 .navbar-brand img {
@@ -435,4 +492,13 @@ a .additional-indicator {
 
 .sort-desc::after {
     content: '▼'; /* Down arrow */
+}
+
+#footer-container {
+    margin-top: 50px;
+}
+
+#header-container, #footer-container {
+    min-height: 80px; 
+    position: relative;
 }
