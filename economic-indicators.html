@@ -7,18 +7,18 @@
 
     
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
 
     <!-- Highcharts JS -->
-    <script src="https://code.highcharts.com/12.1.0/highcharts.js"></script>
-    <script src="https://code.highcharts.com/12.1.0/modules/treemap.js"></script>
-    <script src="https://code.highcharts.com/12.1.0/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/12.1.0/modules/accessibility.js"></script>
-    <script src="https://code.highcharts.com/12.1.0/modules/scrollbar.js"></script>
-    <script src="https://code.highcharts.com/12.1.0/modules/stock.js"></script>
+    <script src="./vendor/highcharts/12.1.0/highcharts.js"></script>
+    <script src="./vendor/highcharts/12.1.0/12.1.0/modules/treemap.js"></script>
+    <script src="./vendor/highcharts/12.1.0/12.1.0/modules/exporting.js"></script>
+    <script src="./vendor/highcharts/12.1.0/modules/accessibility.js"></script>
+    <script src="./vendor/highcharts/12.1.0/12.1.0/modules/scrollbar.js"></script>
+    <script src="./vendor/highcharts/12.1.0/modules/stock.js"></script>
     
 
 </head>
@@ -103,8 +103,6 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <!--<div id="gdp-pie-chart" style="height: 400px;"></div>-->
-                            
                              <div class="row">
                                 <div id="revenue-targets" class="col-12"style="height: 400px;"></div>
                                 <div class="data-source mt-4">
@@ -120,6 +118,12 @@
                         <div class="card-body">
                             <div id="gdp-stats-chart" style="height: 400px;"></div> 
                         </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <div id="gdp-pie-chart" style="height: 400px;"></div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -158,10 +162,10 @@
 </div>
 
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- <script type="module" src="js/economic/gdp-pie-chart.js"></script> -->
+    <script src="./vendor/jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="./vendor/popper/popper.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="module" src="js/economic/gdp-pie-chart.js"></script>
     <script type="module" src="js/economic/gdp-stats-over-time.js"></script>
     <script type="module" src="js/economic/revenue-targets.js"></script>
     <!-- <script src="js/utils/data-table.js"></script> -->

@@ -28,6 +28,17 @@ h6 {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1399.98px) {
+
+}
+
+@media (max-width: 576px) {
+    .navbar-brand:nth-child(2) {
+        font-size: 1rem; /* Smaller on extra small screens */
+    }
+}
+
+
 /* Key Indicator Tiles */
 .key-indicator {
     background-color: #ffffff;
@@ -35,7 +46,8 @@ h6 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
     margin: 10px;
-    width: 280px;
+    max-width: 280px;
+    min-width: 280px;
     height: 280px;
     position: relative;
     text-decoration: none;
@@ -207,6 +219,7 @@ brand{
     margin: 5px;
     height: 80px;
     position: relative;
+    min-width: 375px;
 }
 
 a {

@@ -370,99 +370,6 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2015-03-01,2015,3,Congdon Creek,0.0,2.0,-100.0,0.0,4.0,-100.0,January - March
 2015-04-01,2015,4,Congdon Creek,0.0,0.0,,0.0,4.0,-100.0,January - April
 2015-05-01,2015,5,Congdon Creek,346.0,216.0,60.2,346.0,220.0,57.3,January - May
-2006-01-01,2006,1,Congdon Creek,2.0,0.0,,2.0,0.0,,January - January
-2006-02-01,2006,2,Congdon Creek,0.0,0.0,,2.0,0.0,,January - February
-2006-03-01,2006,3,Congdon Creek,0.0,0.0,,2.0,0.0,,January - March
-2006-04-01,2006,4,Congdon Creek,0.0,0.0,,2.0,0.0,,January - April
-2006-05-01,2006,5,Congdon Creek,198.0,0.0,,200.0,0.0,,January - May
-2006-06-01,2006,6,Congdon Creek,780.0,0.0,,980.0,0.0,,January - June
-2006-07-01,2006,7,Congdon Creek,1151.0,0.0,,2131.0,0.0,,January - July
-2006-08-01,2006,8,Congdon Creek,710.0,0.0,,2841.0,0.0,,January - August
-2006-09-01,2006,9,Congdon Creek,2.0,0.0,,2843.0,0.0,,January - September
-2006-10-01,2006,10,Congdon Creek,5.0,0.0,,2848.0,0.0,,January - October
-2006-11-01,2006,11,Congdon Creek,0.0,0.0,,2848.0,0.0,,January - November
-2006-12-01,2006,12,Congdon Creek,0.0,0.0,,2848.0,0.0,,January - December
-2006-01-01,2006,1,Conrad,0.0,0.0,,0.0,0.0,,January - January
-2006-02-01,2006,2,Conrad,0.0,0.0,,0.0,0.0,,January - February
-2006-03-01,2006,3,Conrad,0.0,0.0,,0.0,0.0,,January - March
-2006-04-01,2006,4,Conrad,0.0,0.0,,0.0,0.0,,January - April
-2006-05-01,2006,5,Conrad,0.0,2.0,-100.0,0.0,2.0,-100.0,January - May
-2006-06-01,2006,6,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - June
-2006-07-01,2006,7,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - July
-2006-08-01,2006,8,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - August
-2006-09-01,2006,9,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - September
-2006-10-01,2006,10,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - October
-2006-11-01,2006,11,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - November
-2006-12-01,2006,12,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - December
-2006-01-01,2006,1,Fox Lake,0.0,0.0,,0.0,0.0,,January - January
-2006-02-01,2006,2,Fox Lake,0.0,0.0,,0.0,0.0,,January - February
-2006-03-01,2006,3,Fox Lake,0.0,0.0,,0.0,0.0,,January - March
-2006-04-01,2006,4,Fox Lake,0.0,0.0,,0.0,0.0,,January - April
-2006-05-01,2006,5,Fox Lake,69.0,0.0,,69.0,0.0,,January - May
-2006-06-01,2006,6,Fox Lake,519.0,0.0,,588.0,0.0,,January - June
-2006-07-01,2006,7,Fox Lake,479.0,0.0,,1067.0,0.0,,January - July
-2006-08-01,2006,8,Fox Lake,407.0,0.0,,1474.0,0.0,,January - August
-2006-09-01,2006,9,Fox Lake,67.0,0.0,,1541.0,0.0,,January - September
-2006-10-01,2006,10,Fox Lake,0.0,0.0,,1541.0,0.0,,January - October
-2006-11-01,2006,11,Fox Lake,7.0,0.0,,1548.0,0.0,,January - November
-2006-12-01,2006,12,Fox Lake,0.0,0.0,,1548.0,0.0,,January - December
-2006-01-01,2006,1,Marsh Lake,0.0,0.0,,0.0,0.0,,January - January
-2006-02-01,2006,2,Marsh Lake,0.0,0.0,,0.0,0.0,,January - February
-2006-03-01,2006,3,Marsh Lake,0.0,0.0,,0.0,0.0,,January - March
-2006-04-01,2006,4,Marsh Lake,0.0,0.0,,0.0,0.0,,January - April
-2006-05-01,2006,5,Marsh Lake,0.0,0.0,,0.0,0.0,,January - May
-2006-06-01,2006,6,Marsh Lake,0.0,0.0,,0.0,0.0,,January - June
-2006-07-01,2006,7,Marsh Lake,0.0,0.0,,0.0,0.0,,January - July
-2006-08-01,2006,8,Marsh Lake,0.0,0.0,,0.0,0.0,,January - August
-2006-09-01,2006,9,Marsh Lake,0.0,0.0,,0.0,0.0,,January - September
-2006-10-01,2006,10,Marsh Lake,0.0,0.0,,0.0,0.0,,January - October
-2006-11-01,2006,11,Marsh Lake,0.0,0.0,,0.0,0.0,,January - November
-2022-07-01,2022,7,Teslin Lake,773.0,287.0,169.3,1995.0,597.0,234.2,January - July
-2022-08-01,2022,8,Teslin Lake,302.0,397.0,-23.9,2297.0,994.0,131.1,January - August
-2022-09-01,2022,9,Teslin Lake,211.0,210.0,0.5,2508.0,1204.0,108.3,January - September
-2022-10-01,2022,10,Teslin Lake,9.0,7.0,28.6,2517.0,1211.0,107.8,January - October
-2022-11-01,2022,11,Teslin Lake,0.0,0.0,,2517.0,1211.0,107.8,January - November
-2022-12-01,2022,12,Teslin Lake,0.0,0.0,,2517.0,1211.0,107.8,January - December
-2022-01-01,2022,1,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - January
-2022-02-01,2022,2,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - February
-2022-03-01,2022,3,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - March
-2022-04-01,2022,4,Tombstone Mtn.,2.0,5.0,-60.0,2.0,5.0,-60.0,January - April
-2022-05-01,2022,5,Tombstone Mtn.,175.0,112.0,56.3,177.0,117.0,51.3,January - May
-2022-06-01,2022,6,Tombstone Mtn.,1617.0,504.0,220.8,1794.0,621.0,188.9,January - June
-2022-07-01,2022,7,Tombstone Mtn.,1696.0,961.0,76.5,3490.0,1582.0,120.6,January - July
-2022-08-01,2022,8,Tombstone Mtn.,2131.0,1618.0,31.7,5621.0,3200.0,75.7,January - August
-2022-09-01,2022,9,Tombstone Mtn.,856.0,814.0,5.2,6477.0,4014.0,61.4,January - September
-2022-10-01,2022,10,Tombstone Mtn.,0.0,12.0,-100.0,6477.0,4026.0,60.9,January - October
-2022-11-01,2022,11,Tombstone Mtn.,0.0,0.0,,6477.0,4026.0,60.9,January - November
-2022-12-01,2022,12,Tombstone Mtn.,0.0,0.0,,6477.0,4026.0,60.9,January - December
-2022-01-01,2022,1,Watson Lake,2.0,2.0,0.0,2.0,2.0,0.0,January - January
-2022-02-01,2022,2,Watson Lake,0.0,0.0,,2.0,2.0,0.0,January - February
-2022-03-01,2022,3,Watson Lake,2.0,0.0,,4.0,2.0,100.0,January - March
-2022-04-01,2022,4,Watson Lake,9.0,2.0,350.0,13.0,4.0,225.0,January - April
-2022-05-01,2022,5,Watson Lake,553.0,116.0,376.7,566.0,120.0,371.7,January - May
-2022-06-01,2022,6,Watson Lake,1783.0,229.0,678.6,2349.0,349.0,573.1,January - June
-2022-07-01,2022,7,Watson Lake,1226.0,427.0,187.1,3575.0,776.0,360.7,January - July
-2022-08-01,2022,8,Watson Lake,1482.0,889.0,66.7,5057.0,1665.0,203.7,January - August
-2022-09-01,2022,9,Watson Lake,626.0,496.0,26.2,5683.0,2161.0,163.0,January - September
-2022-10-01,2022,10,Watson Lake,4.0,16.0,-75.0,5687.0,2177.0,161.2,January - October
-2022-11-01,2022,11,Watson Lake,0.0,0.0,,5687.0,2177.0,161.2,January - November
-2022-12-01,2022,12,Watson Lake,0.0,0.0,,5687.0,2177.0,161.2,January - December
-2022-01-01,2022,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
-2022-02-01,2022,2,Wolf Creek,0.0,5.0,-100.0,0.0,5.0,-100.0,January - February
-2022-03-01,2022,3,Wolf Creek,2.0,2.0,0.0,2.0,7.0,-71.4,January - March
-2022-04-01,2022,4,Wolf Creek,42.0,68.0,-38.2,44.0,75.0,-41.3,January - April
-2022-05-01,2022,5,Wolf Creek,799.0,695.0,15.0,843.0,770.0,9.5,January - May
-2022-06-01,2022,6,Wolf Creek,884.0,842.0,5.0,1727.0,1612.0,7.1,January - June
-2022-07-01,2022,7,Wolf Creek,1198.0,898.0,33.4,2925.0,2510.0,16.5,January - July
-2022-08-01,2022,8,Wolf Creek,1382.0,1177.0,17.4,4307.0,3687.0,16.8,January - August
-2022-09-01,2022,9,Wolf Creek,864.0,804.0,7.5,5171.0,4491.0,15.1,January - September
-2022-10-01,2022,10,Wolf Creek,25.0,27.0,-7.4,5196.0,4518.0,15.0,January - October
-2022-11-01,2022,11,Wolf Creek,0.0,0.0,,5196.0,4518.0,15.0,January - November
-2022-12-01,2022,12,Wolf Creek,0.0,0.0,,5196.0,4518.0,15.0,January - December
-2022-01-01,2022,1,Yukon River,0.0,3.0,-100.0,0.0,3.0,-100.0,January - January
-2022-02-01,2022,2,Yukon River,0.0,0.0,,0.0,3.0,-100.0,January - February
-2022-03-01,2022,3,Yukon River,0.0,3.0,-100.0,0.0,6.0,-100.0,January - March
-2022-04-01,2022,4,Yukon River,0.0,2.0,-100.0,0.0,8.0,-100.0,January - April
 2015-06-01,2015,6,Congdon Creek,664.0,791.0,-16.1,1010.0,1011.0,-0.1,January - June
 2015-07-01,2015,7,Congdon Creek,1006.0,1056.0,-4.7,2016.0,2067.0,-2.5,January - July
 2015-08-01,2015,8,Congdon Creek,976.0,902.0,8.2,2992.0,2969.0,0.8,January - August
@@ -510,53 +417,53 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2015-02-01,2015,2,Pine Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - February
 2015-03-01,2015,3,Pine Lake,0.0,0.0,,0.0,2.0,-100.0,January - March
 2015-04-01,2015,4,Pine Lake,0.0,0.0,,0.0,2.0,-100.0,January - April
-2022-05-01,2022,5,Yukon River,228.0,140.0,62.9,228.0,148.0,54.1,January - May
-2022-06-01,2022,6,Yukon River,1779.0,615.0,189.3,2007.0,763.0,163.0,January - June
-2022-07-01,2022,7,Yukon River,1569.0,820.0,91.3,3576.0,1583.0,125.9,January - July
-2022-08-01,2022,8,Yukon River,1537.0,1027.0,49.7,5113.0,2610.0,95.9,January - August
-2022-09-01,2022,9,Yukon River,373.0,555.0,-32.8,5486.0,3165.0,73.3,January - September
-2022-10-01,2022,10,Yukon River,0.0,12.0,-100.0,5486.0,3177.0,72.7,January - October
-2022-11-01,2022,11,Yukon River,0.0,0.0,,5486.0,3177.0,72.7,January - November
-2022-12-01,2022,12,Yukon River,0.0,0.0,,5486.0,3177.0,72.7,January - December
-2023-01-01,2023,1,Congdon Creek,0.0,2.0,-100.0,0.0,2.0,-100.0,January - January
-2023-02-01,2023,2,Congdon Creek,2.0,0.0,,2.0,2.0,0.0,January - February
-2023-03-01,2023,3,Congdon Creek,0.0,0.0,,2.0,2.0,0.0,January - March
-2023-04-01,2023,4,Congdon Creek,5.0,9.0,-44.4,7.0,11.0,-36.4,January - April
-2023-05-01,2023,5,Congdon Creek,672.0,575.0,16.9,679.0,586.0,15.9,January - May
-2023-06-01,2023,6,Congdon Creek,1687.0,1779.0,-5.2,2366.0,2365.0,0.0,January - June
-2023-07-01,2023,7,Congdon Creek,2360.0,2036.0,15.9,4726.0,4401.0,7.4,January - July
-2023-08-01,2023,8,Congdon Creek,2224.0,1901.0,17.0,6950.0,6302.0,10.3,January - August
-2023-09-01,2023,9,Congdon Creek,954.0,846.0,12.8,7904.0,7148.0,10.6,January - September
-2023-10-01,2023,10,Congdon Creek,13.0,14.0,-7.1,7917.0,7162.0,10.5,January - October
-2023-11-01,2023,11,Congdon Creek,0.0,0.0,,7917.0,7162.0,10.5,January - November
-2023-12-01,2023,12,Congdon Creek,0.0,0.0,,7917.0,7162.0,10.5,January - December
-2023-01-01,2023,1,Conrad,0.0,0.0,,0.0,0.0,,January - January
-2023-02-01,2023,2,Conrad,0.0,0.0,,0.0,0.0,,January - February
-2023-03-01,2023,3,Conrad,0.0,0.0,,0.0,0.0,,January - March
-2023-04-01,2023,4,Conrad,5.0,10.0,-50.0,5.0,10.0,-50.0,January - April
-2023-05-01,2023,5,Conrad,455.0,364.0,25.0,460.0,374.0,23.0,January - May
-2023-06-01,2023,6,Conrad,1056.0,893.0,18.3,1516.0,1267.0,19.7,January - June
-2023-07-01,2023,7,Conrad,1095.0,1221.0,-10.3,2611.0,2488.0,4.9,January - July
-2023-08-01,2023,8,Conrad,1299.0,1116.0,16.4,3910.0,3604.0,8.5,January - August
-2023-09-01,2023,9,Conrad,613.0,617.0,-0.6,4523.0,4221.0,7.2,January - September
-2023-10-01,2023,10,Conrad,14.0,10.0,40.0,4537.0,4231.0,7.2,January - October
-2023-11-01,2023,11,Conrad,5.0,0.0,,4542.0,4231.0,7.4,January - November
-2023-12-01,2023,12,Conrad,0.0,0.0,,4542.0,4231.0,7.4,January - December
-2023-01-01,2023,1,Fox Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - January
-2023-02-01,2023,2,Fox Lake,0.0,0.0,,0.0,2.0,-100.0,January - February
-2023-03-01,2023,3,Fox Lake,0.0,0.0,,0.0,2.0,-100.0,January - March
-2023-04-01,2023,4,Fox Lake,10.0,27.0,-63.0,10.0,29.0,-65.5,January - April
-2023-05-01,2023,5,Fox Lake,322.0,308.0,4.5,332.0,337.0,-1.5,January - May
-2023-06-01,2023,6,Fox Lake,1083.0,878.0,23.3,1415.0,1215.0,16.5,January - June
-2023-07-01,2023,7,Fox Lake,1034.0,756.0,36.8,2449.0,1971.0,24.3,January - July
-2023-08-01,2023,8,Fox Lake,1023.0,787.0,30.0,3472.0,2758.0,25.9,January - August
-2023-09-01,2023,9,Fox Lake,306.0,291.0,5.2,3778.0,3049.0,23.9,January - September
-2023-10-01,2023,10,Fox Lake,5.0,2.0,150.0,3783.0,3051.0,24.0,January - October
-2023-11-01,2023,11,Fox Lake,0.0,0.0,,3783.0,3051.0,24.0,January - November
-2023-12-01,2023,12,Fox Lake,0.0,0.0,,3783.0,3051.0,24.0,January - December
-2023-01-01,2023,1,Marsh Lake,0.0,0.0,,0.0,0.0,,January - January
-2023-02-01,2023,2,Marsh Lake,0.0,0.0,,0.0,0.0,,January - February
-2023-03-01,2023,3,Marsh Lake,7.0,0.0,,7.0,0.0,,January - March
+2006-01-01,2006,1,Congdon Creek,2.0,0.0,,2.0,0.0,,January - January
+2006-02-01,2006,2,Congdon Creek,0.0,0.0,,2.0,0.0,,January - February
+2006-03-01,2006,3,Congdon Creek,0.0,0.0,,2.0,0.0,,January - March
+2006-04-01,2006,4,Congdon Creek,0.0,0.0,,2.0,0.0,,January - April
+2006-05-01,2006,5,Congdon Creek,198.0,0.0,,200.0,0.0,,January - May
+2006-06-01,2006,6,Congdon Creek,780.0,0.0,,980.0,0.0,,January - June
+2006-07-01,2006,7,Congdon Creek,1151.0,0.0,,2131.0,0.0,,January - July
+2006-08-01,2006,8,Congdon Creek,710.0,0.0,,2841.0,0.0,,January - August
+2006-09-01,2006,9,Congdon Creek,2.0,0.0,,2843.0,0.0,,January - September
+2006-10-01,2006,10,Congdon Creek,5.0,0.0,,2848.0,0.0,,January - October
+2006-11-01,2006,11,Congdon Creek,0.0,0.0,,2848.0,0.0,,January - November
+2006-12-01,2006,12,Congdon Creek,0.0,0.0,,2848.0,0.0,,January - December
+2006-01-01,2006,1,Conrad,0.0,0.0,,0.0,0.0,,January - January
+2006-02-01,2006,2,Conrad,0.0,0.0,,0.0,0.0,,January - February
+2006-03-01,2006,3,Conrad,0.0,0.0,,0.0,0.0,,January - March
+2006-04-01,2006,4,Conrad,0.0,0.0,,0.0,0.0,,January - April
+2006-05-01,2006,5,Conrad,0.0,2.0,-100.0,0.0,2.0,-100.0,January - May
+2006-06-01,2006,6,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - June
+2006-07-01,2006,7,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - July
+2006-08-01,2006,8,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - August
+2006-09-01,2006,9,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - September
+2006-10-01,2006,10,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - October
+2006-11-01,2006,11,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - November
+2006-12-01,2006,12,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - December
+2006-01-01,2006,1,Fox Lake,0.0,0.0,,0.0,0.0,,January - January
+2006-02-01,2006,2,Fox Lake,0.0,0.0,,0.0,0.0,,January - February
+2006-03-01,2006,3,Fox Lake,0.0,0.0,,0.0,0.0,,January - March
+2006-04-01,2006,4,Fox Lake,0.0,0.0,,0.0,0.0,,January - April
+2006-05-01,2006,5,Fox Lake,69.0,0.0,,69.0,0.0,,January - May
+2006-06-01,2006,6,Fox Lake,519.0,0.0,,588.0,0.0,,January - June
+2006-07-01,2006,7,Fox Lake,479.0,0.0,,1067.0,0.0,,January - July
+2006-08-01,2006,8,Fox Lake,407.0,0.0,,1474.0,0.0,,January - August
+2006-09-01,2006,9,Fox Lake,67.0,0.0,,1541.0,0.0,,January - September
+2006-10-01,2006,10,Fox Lake,0.0,0.0,,1541.0,0.0,,January - October
+2006-11-01,2006,11,Fox Lake,7.0,0.0,,1548.0,0.0,,January - November
+2006-12-01,2006,12,Fox Lake,0.0,0.0,,1548.0,0.0,,January - December
+2006-01-01,2006,1,Marsh Lake,0.0,0.0,,0.0,0.0,,January - January
+2006-02-01,2006,2,Marsh Lake,0.0,0.0,,0.0,0.0,,January - February
+2006-03-01,2006,3,Marsh Lake,0.0,0.0,,0.0,0.0,,January - March
+2006-04-01,2006,4,Marsh Lake,0.0,0.0,,0.0,0.0,,January - April
+2006-05-01,2006,5,Marsh Lake,0.0,0.0,,0.0,0.0,,January - May
+2006-06-01,2006,6,Marsh Lake,0.0,0.0,,0.0,0.0,,January - June
+2006-07-01,2006,7,Marsh Lake,0.0,0.0,,0.0,0.0,,January - July
+2006-08-01,2006,8,Marsh Lake,0.0,0.0,,0.0,0.0,,January - August
+2006-09-01,2006,9,Marsh Lake,0.0,0.0,,0.0,0.0,,January - September
+2006-10-01,2006,10,Marsh Lake,0.0,0.0,,0.0,0.0,,January - October
+2006-11-01,2006,11,Marsh Lake,0.0,0.0,,0.0,0.0,,January - November
 2015-05-01,2015,5,Pine Lake,403.0,251.0,60.6,403.0,253.0,59.3,January - May
 2015-06-01,2015,6,Pine Lake,908.0,776.0,17.0,1311.0,1029.0,27.4,January - June
 2015-07-01,2015,7,Pine Lake,1127.0,1116.0,1.0,2438.0,2145.0,13.7,January - July
@@ -603,52 +510,52 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2015-12-01,2015,12,Watson Lake,0.0,0.0,,3315.0,2544.0,30.3,January - December
 2015-01-01,2015,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
 2015-02-01,2015,2,Wolf Creek,0.0,0.0,,0.0,0.0,,January - February
-2023-04-01,2023,4,Marsh Lake,2.0,27.0,-92.6,9.0,27.0,-66.7,January - April
-2023-05-01,2023,5,Marsh Lake,486.0,571.0,-14.9,495.0,598.0,-17.2,January - May
-2023-06-01,2023,6,Marsh Lake,1167.0,1210.0,-3.6,1662.0,1808.0,-8.1,January - June
-2023-07-01,2023,7,Marsh Lake,1337.0,1035.0,29.2,2999.0,2843.0,5.5,January - July
-2023-08-01,2023,8,Marsh Lake,1110.0,778.0,42.7,4109.0,3621.0,13.5,January - August
-2023-09-01,2023,9,Marsh Lake,427.0,426.0,0.2,4536.0,4047.0,12.1,January - September
-2023-10-01,2023,10,Marsh Lake,5.0,3.0,66.7,4541.0,4050.0,12.1,January - October
-2023-11-01,2023,11,Marsh Lake,0.0,0.0,,4541.0,4050.0,12.1,January - November
-2023-12-01,2023,12,Marsh Lake,0.0,0.0,,4541.0,4050.0,12.1,January - December
-2023-01-01,2023,1,Pine Lake,0.0,0.0,,0.0,0.0,,January - January
-2023-02-01,2023,2,Pine Lake,2.0,0.0,,2.0,0.0,,January - February
-2023-03-01,2023,3,Pine Lake,2.0,0.0,,4.0,0.0,,January - March
-2023-04-01,2023,4,Pine Lake,12.0,25.0,-52.0,16.0,25.0,-36.0,January - April
-2023-05-01,2023,5,Pine Lake,837.0,589.0,42.1,853.0,614.0,38.9,January - May
-2023-06-01,2023,6,Pine Lake,1577.0,1291.0,22.2,2430.0,1905.0,27.6,January - June
-2023-07-01,2023,7,Pine Lake,1514.0,1437.0,5.4,3944.0,3342.0,18.0,January - July
-2023-08-01,2023,8,Pine Lake,1577.0,1400.0,12.6,5521.0,4742.0,16.4,January - August
-2023-09-01,2023,9,Pine Lake,776.0,741.0,4.7,6297.0,5483.0,14.8,January - September
-2023-10-01,2023,10,Pine Lake,10.0,14.0,-28.6,6307.0,5497.0,14.7,January - October
-2023-11-01,2023,11,Pine Lake,0.0,0.0,,6307.0,5497.0,14.7,January - November
-2023-12-01,2023,12,Pine Lake,0.0,0.0,,6307.0,5497.0,14.7,January - December
-2023-01-01,2023,1,Teslin Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - January
-2023-02-01,2023,2,Teslin Lake,0.0,2.0,-100.0,0.0,4.0,-100.0,January - February
-2023-03-01,2023,3,Teslin Lake,2.0,0.0,,2.0,4.0,-50.0,January - March
-2023-04-01,2023,4,Teslin Lake,5.0,0.0,,7.0,4.0,75.0,January - April
-2023-05-01,2023,5,Teslin Lake,377.0,206.0,83.0,384.0,210.0,82.9,January - May
-2023-06-01,2023,6,Teslin Lake,883.0,1012.0,-12.7,1267.0,1222.0,3.7,January - June
-2023-07-01,2023,7,Teslin Lake,1022.0,773.0,32.2,2289.0,1995.0,14.7,January - July
-2023-08-01,2023,8,Teslin Lake,837.0,302.0,177.2,3126.0,2297.0,36.1,January - August
-2023-09-01,2023,9,Teslin Lake,241.0,211.0,14.2,3367.0,2508.0,34.3,January - September
-2023-10-01,2023,10,Teslin Lake,0.0,9.0,-100.0,3367.0,2517.0,33.8,January - October
-2023-11-01,2023,11,Teslin Lake,0.0,0.0,,3367.0,2517.0,33.8,January - November
-2023-12-01,2023,12,Teslin Lake,0.0,0.0,,3367.0,2517.0,33.8,January - December
-2023-01-01,2023,1,Tombstone Mtn.,7.0,0.0,,7.0,0.0,,January - January
-2023-02-01,2023,2,Tombstone Mtn.,7.0,0.0,,14.0,0.0,,January - February
-2023-03-01,2023,3,Tombstone Mtn.,2.0,0.0,,16.0,0.0,,January - March
-2023-04-01,2023,4,Tombstone Mtn.,7.0,2.0,250.0,23.0,2.0,1050.0,January - April
-2023-05-01,2023,5,Tombstone Mtn.,158.0,175.0,-9.7,181.0,177.0,2.3,January - May
-2023-06-01,2023,6,Tombstone Mtn.,1371.0,1617.0,-15.2,1552.0,1794.0,-13.5,January - June
-2023-07-01,2023,7,Tombstone Mtn.,2044.0,1696.0,20.5,3596.0,3490.0,3.0,January - July
-2023-08-01,2023,8,Tombstone Mtn.,2080.0,2131.0,-2.4,5676.0,5621.0,1.0,January - August
-2023-09-01,2023,9,Tombstone Mtn.,668.0,856.0,-22.0,6344.0,6477.0,-2.1,January - September
-2023-10-01,2023,10,Tombstone Mtn.,12.0,0.0,,6356.0,6477.0,-1.9,January - October
-2023-11-01,2023,11,Tombstone Mtn.,0.0,0.0,,6356.0,6477.0,-1.9,January - November
-2023-12-01,2023,12,Tombstone Mtn.,0.0,0.0,,6356.0,6477.0,-1.9,January - December
-2023-01-01,2023,1,Watson Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - January
+2006-12-01,2006,12,Marsh Lake,0.0,0.0,,0.0,0.0,,January - December
+2006-01-01,2006,1,Pine Lake,0.0,0.0,,0.0,0.0,,January - January
+2006-02-01,2006,2,Pine Lake,0.0,0.0,,0.0,0.0,,January - February
+2006-03-01,2006,3,Pine Lake,0.0,0.0,,0.0,0.0,,January - March
+2006-04-01,2006,4,Pine Lake,0.0,0.0,,0.0,0.0,,January - April
+2006-05-01,2006,5,Pine Lake,111.0,0.0,,111.0,0.0,,January - May
+2006-06-01,2006,6,Pine Lake,734.0,0.0,,845.0,0.0,,January - June
+2006-07-01,2006,7,Pine Lake,787.0,0.0,,1632.0,0.0,,January - July
+2006-08-01,2006,8,Pine Lake,656.0,0.0,,2288.0,0.0,,January - August
+2006-09-01,2006,9,Pine Lake,2.0,0.0,,2290.0,0.0,,January - September
+2006-10-01,2006,10,Pine Lake,0.0,0.0,,2290.0,0.0,,January - October
+2006-11-01,2006,11,Pine Lake,0.0,0.0,,2290.0,0.0,,January - November
+2006-12-01,2006,12,Pine Lake,0.0,0.0,,2290.0,0.0,,January - December
+2006-01-01,2006,1,Teslin Lake,0.0,0.0,,0.0,0.0,,January - January
+2006-02-01,2006,2,Teslin Lake,0.0,0.0,,0.0,0.0,,January - February
+2006-03-01,2006,3,Teslin Lake,0.0,0.0,,0.0,0.0,,January - March
+2006-04-01,2006,4,Teslin Lake,0.0,0.0,,0.0,0.0,,January - April
+2006-05-01,2006,5,Teslin Lake,0.0,0.0,,0.0,0.0,,January - May
+2006-06-01,2006,6,Teslin Lake,108.0,0.0,,108.0,0.0,,January - June
+2006-07-01,2006,7,Teslin Lake,2.0,0.0,,110.0,0.0,,January - July
+2006-08-01,2006,8,Teslin Lake,0.0,0.0,,110.0,0.0,,January - August
+2006-09-01,2006,9,Teslin Lake,0.0,0.0,,110.0,0.0,,January - September
+2006-10-01,2006,10,Teslin Lake,0.0,0.0,,110.0,0.0,,January - October
+2006-11-01,2006,11,Teslin Lake,0.0,0.0,,110.0,0.0,,January - November
+2006-12-01,2006,12,Teslin Lake,0.0,0.0,,110.0,0.0,,January - December
+2006-01-01,2006,1,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - January
+2006-02-01,2006,2,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - February
+2006-03-01,2006,3,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - March
+2006-04-01,2006,4,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - April
+2006-05-01,2006,5,Tombstone Mtn.,66.0,0.0,,66.0,0.0,,January - May
+2006-06-01,2006,6,Tombstone Mtn.,390.0,0.0,,456.0,0.0,,January - June
+2006-07-01,2006,7,Tombstone Mtn.,837.0,0.0,,1293.0,0.0,,January - July
+2006-08-01,2006,8,Tombstone Mtn.,761.0,0.0,,2054.0,0.0,,January - August
+2006-09-01,2006,9,Tombstone Mtn.,291.0,0.0,,2345.0,0.0,,January - September
+2006-10-01,2006,10,Tombstone Mtn.,7.0,0.0,,2352.0,0.0,,January - October
+2006-11-01,2006,11,Tombstone Mtn.,0.0,0.0,,2352.0,0.0,,January - November
+2006-12-01,2006,12,Tombstone Mtn.,0.0,0.0,,2352.0,0.0,,January - December
+2006-01-01,2006,1,Watson Lake,0.0,0.0,,0.0,0.0,,January - January
+2006-02-01,2006,2,Watson Lake,0.0,0.0,,0.0,0.0,,January - February
+2006-03-01,2006,3,Watson Lake,0.0,0.0,,0.0,0.0,,January - March
+2006-04-01,2006,4,Watson Lake,0.0,0.0,,0.0,0.0,,January - April
+2006-05-01,2006,5,Watson Lake,0.0,0.0,,0.0,0.0,,January - May
+2006-06-01,2006,6,Watson Lake,0.0,0.0,,0.0,0.0,,January - June
+2006-07-01,2006,7,Watson Lake,0.0,0.0,,0.0,0.0,,January - July
+2006-08-01,2006,8,Watson Lake,0.0,0.0,,0.0,0.0,,January - August
+2006-09-01,2006,9,Watson Lake,0.0,0.0,,0.0,0.0,,January - September
 2015-03-01,2015,3,Wolf Creek,0.0,0.0,,0.0,0.0,,January - March
 2015-04-01,2015,4,Wolf Creek,0.0,3.0,-100.0,0.0,3.0,-100.0,January - April
 2015-05-01,2015,5,Wolf Creek,449.0,410.0,9.5,449.0,413.0,8.7,January - May
@@ -696,41 +603,52 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2016-11-01,2016,11,Conrad,0.0,0.0,,4086.0,0.0,,January - November
 2016-12-01,2016,12,Conrad,0.0,0.0,,4086.0,0.0,,January - December
 2016-01-01,2016,1,Fox Lake,0.0,0.0,,0.0,0.0,,January - January
-2023-02-01,2023,2,Watson Lake,0.0,0.0,,0.0,2.0,-100.0,January - February
-2023-03-01,2023,3,Watson Lake,2.0,2.0,0.0,2.0,4.0,-50.0,January - March
-2023-04-01,2023,4,Watson Lake,0.0,9.0,-100.0,2.0,13.0,-84.6,January - April
-2023-05-01,2023,5,Watson Lake,452.0,553.0,-18.3,454.0,566.0,-19.8,January - May
-2023-06-01,2023,6,Watson Lake,1473.0,1783.0,-17.4,1927.0,2349.0,-18.0,January - June
-2023-07-01,2023,7,Watson Lake,1623.0,1226.0,32.4,3550.0,3575.0,-0.7,January - July
-2023-08-01,2023,8,Watson Lake,1380.0,1482.0,-6.9,4930.0,5057.0,-2.5,January - August
-2023-09-01,2023,9,Watson Lake,679.0,626.0,8.5,5609.0,5683.0,-1.3,January - September
-2023-10-01,2023,10,Watson Lake,9.0,4.0,125.0,5618.0,5687.0,-1.2,January - October
-2023-11-01,2023,11,Watson Lake,0.0,0.0,,5618.0,5687.0,-1.2,January - November
-2023-12-01,2023,12,Watson Lake,0.0,0.0,,5618.0,5687.0,-1.2,January - December
-2023-01-01,2023,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
-2023-02-01,2023,2,Wolf Creek,0.0,0.0,,0.0,0.0,,January - February
-2023-03-01,2023,3,Wolf Creek,8.0,2.0,300.0,8.0,2.0,300.0,January - March
-2023-04-01,2023,4,Wolf Creek,8.0,42.0,-81.0,16.0,44.0,-63.6,January - April
-2023-05-01,2023,5,Wolf Creek,795.0,799.0,-0.5,811.0,843.0,-3.8,January - May
-2023-06-01,2023,6,Wolf Creek,1206.0,884.0,36.4,2017.0,1727.0,16.8,January - June
-2023-07-01,2023,7,Wolf Creek,1326.0,1198.0,10.7,3343.0,2925.0,14.3,January - July
-2023-08-01,2023,8,Wolf Creek,1381.0,1382.0,-0.1,4724.0,4307.0,9.7,January - August
-2023-09-01,2023,9,Wolf Creek,923.0,864.0,6.8,5647.0,5171.0,9.2,January - September
-2023-10-01,2023,10,Wolf Creek,29.0,25.0,16.0,5676.0,5196.0,9.2,January - October
-2023-11-01,2023,11,Wolf Creek,5.0,0.0,,5681.0,5196.0,9.3,January - November
-2023-12-01,2023,12,Wolf Creek,0.0,0.0,,5681.0,5196.0,9.3,January - December
-2023-01-01,2023,1,Yukon River,5.0,0.0,,5.0,0.0,,January - January
-2023-02-01,2023,2,Yukon River,0.0,0.0,,5.0,0.0,,January - February
-2023-03-01,2023,3,Yukon River,2.0,0.0,,7.0,0.0,,January - March
-2023-04-01,2023,4,Yukon River,7.0,0.0,,14.0,0.0,,January - April
-2023-05-01,2023,5,Yukon River,77.0,228.0,-66.2,91.0,228.0,-60.1,January - May
-2023-06-01,2023,6,Yukon River,1989.0,1779.0,11.8,2080.0,2007.0,3.6,January - June
-2023-07-01,2023,7,Yukon River,2611.0,1569.0,66.4,4691.0,3576.0,31.2,January - July
-2023-08-01,2023,8,Yukon River,2263.0,1537.0,47.2,6954.0,5113.0,36.0,January - August
-2023-09-01,2023,9,Yukon River,391.0,373.0,4.8,7345.0,5486.0,33.9,January - September
-2023-10-01,2023,10,Yukon River,2.0,0.0,,7347.0,5486.0,33.9,January - October
-2023-11-01,2023,11,Yukon River,0.0,0.0,,7347.0,5486.0,33.9,January - November
-2023-12-01,2023,12,Yukon River,0.0,0.0,,7347.0,5486.0,33.9,January - December
+2006-10-01,2006,10,Watson Lake,0.0,0.0,,0.0,0.0,,January - October
+2006-11-01,2006,11,Watson Lake,0.0,0.0,,0.0,0.0,,January - November
+2006-12-01,2006,12,Watson Lake,0.0,0.0,,0.0,0.0,,January - December
+2006-01-01,2006,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
+2006-02-01,2006,2,Wolf Creek,0.0,0.0,,0.0,0.0,,January - February
+2006-03-01,2006,3,Wolf Creek,0.0,0.0,,0.0,0.0,,January - March
+2006-04-01,2006,4,Wolf Creek,0.0,0.0,,0.0,0.0,,January - April
+2006-05-01,2006,5,Wolf Creek,0.0,0.0,,0.0,0.0,,January - May
+2006-06-01,2006,6,Wolf Creek,0.0,0.0,,0.0,0.0,,January - June
+2006-07-01,2006,7,Wolf Creek,0.0,0.0,,0.0,0.0,,January - July
+2006-08-01,2006,8,Wolf Creek,0.0,0.0,,0.0,0.0,,January - August
+2006-09-01,2006,9,Wolf Creek,0.0,0.0,,0.0,0.0,,January - September
+2006-10-01,2006,10,Wolf Creek,0.0,0.0,,0.0,0.0,,January - October
+2006-11-01,2006,11,Wolf Creek,0.0,0.0,,0.0,0.0,,January - November
+2006-12-01,2006,12,Wolf Creek,0.0,0.0,,0.0,0.0,,January - December
+2006-01-01,2006,1,Yukon River,2.0,0.0,,2.0,0.0,,January - January
+2006-02-01,2006,2,Yukon River,0.0,0.0,,2.0,0.0,,January - February
+2006-03-01,2006,3,Yukon River,0.0,0.0,,2.0,0.0,,January - March
+2006-04-01,2006,4,Yukon River,2.0,0.0,,4.0,0.0,,January - April
+2006-05-01,2006,5,Yukon River,114.0,0.0,,118.0,0.0,,January - May
+2006-06-01,2006,6,Yukon River,940.0,0.0,,1058.0,0.0,,January - June
+2006-07-01,2006,7,Yukon River,1004.0,0.0,,2062.0,0.0,,January - July
+2006-08-01,2006,8,Yukon River,1025.0,0.0,,3087.0,0.0,,January - August
+2006-09-01,2006,9,Yukon River,41.0,0.0,,3128.0,0.0,,January - September
+2006-10-01,2006,10,Yukon River,0.0,0.0,,3128.0,0.0,,January - October
+2006-11-01,2006,11,Yukon River,0.0,0.0,,3128.0,0.0,,January - November
+2006-12-01,2006,12,Yukon River,0.0,0.0,,3128.0,0.0,,January - December
+2007-01-01,2007,1,Congdon Creek,3.0,2.0,50.0,3.0,2.0,50.0,January - January
+2007-02-01,2007,2,Congdon Creek,0.0,0.0,,3.0,2.0,50.0,January - February
+2007-03-01,2007,3,Congdon Creek,0.0,0.0,,3.0,2.0,50.0,January - March
+2007-04-01,2007,4,Congdon Creek,0.0,0.0,,3.0,2.0,50.0,January - April
+2007-05-01,2007,5,Congdon Creek,234.0,198.0,18.2,237.0,200.0,18.5,January - May
+2007-06-01,2007,6,Congdon Creek,725.0,780.0,-7.1,962.0,980.0,-1.8,January - June
+2007-07-01,2007,7,Congdon Creek,1072.0,1151.0,-6.9,2034.0,2131.0,-4.6,January - July
+2007-08-01,2007,8,Congdon Creek,255.0,710.0,-64.1,2289.0,2841.0,-19.4,January - August
+2007-09-01,2007,9,Congdon Creek,59.0,2.0,2850.0,2348.0,2843.0,-17.4,January - September
+2007-10-01,2007,10,Congdon Creek,9.0,5.0,80.0,2357.0,2848.0,-17.2,January - October
+2007-11-01,2007,11,Congdon Creek,0.0,0.0,,2357.0,2848.0,-17.2,January - November
+2007-12-01,2007,12,Congdon Creek,0.0,0.0,,2357.0,2848.0,-17.2,January - December
+2007-01-01,2007,1,Conrad,0.0,0.0,,0.0,0.0,,January - January
+2007-02-01,2007,2,Conrad,0.0,0.0,,0.0,0.0,,January - February
+2007-03-01,2007,3,Conrad,0.0,0.0,,0.0,0.0,,January - March
+2007-04-01,2007,4,Conrad,0.0,0.0,,0.0,0.0,,January - April
+2007-05-01,2007,5,Conrad,0.0,0.0,,0.0,0.0,,January - May
+2007-06-01,2007,6,Conrad,0.0,0.0,,0.0,0.0,,January - June
+2007-07-01,2007,7,Conrad,0.0,0.0,,0.0,0.0,,January - July
 2016-02-01,2016,2,Fox Lake,2.0,0.0,,2.0,0.0,,January - February
 2016-03-01,2016,3,Fox Lake,0.0,0.0,,2.0,0.0,,January - March
 2016-04-01,2016,4,Fox Lake,0.0,0.0,,2.0,0.0,,January - April
@@ -778,191 +696,6 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2016-10-01,2016,10,Teslin Lake,2.0,4.0,-50.0,2890.0,2704.0,6.9,January - October
 2016-11-01,2016,11,Teslin Lake,0.0,4.0,-100.0,2890.0,2708.0,6.7,January - November
 2016-12-01,2016,12,Teslin Lake,0.0,0.0,,2890.0,2708.0,6.7,January - December
-2006-12-01,2006,12,Marsh Lake,0.0,0.0,,0.0,0.0,,January - December
-2006-01-01,2006,1,Pine Lake,0.0,0.0,,0.0,0.0,,January - January
-2006-02-01,2006,2,Pine Lake,0.0,0.0,,0.0,0.0,,January - February
-2006-03-01,2006,3,Pine Lake,0.0,0.0,,0.0,0.0,,January - March
-2006-04-01,2006,4,Pine Lake,0.0,0.0,,0.0,0.0,,January - April
-2006-05-01,2006,5,Pine Lake,111.0,0.0,,111.0,0.0,,January - May
-2006-06-01,2006,6,Pine Lake,734.0,0.0,,845.0,0.0,,January - June
-2006-07-01,2006,7,Pine Lake,787.0,0.0,,1632.0,0.0,,January - July
-2006-08-01,2006,8,Pine Lake,656.0,0.0,,2288.0,0.0,,January - August
-2006-09-01,2006,9,Pine Lake,2.0,0.0,,2290.0,0.0,,January - September
-2006-10-01,2006,10,Pine Lake,0.0,0.0,,2290.0,0.0,,January - October
-2006-11-01,2006,11,Pine Lake,0.0,0.0,,2290.0,0.0,,January - November
-2006-12-01,2006,12,Pine Lake,0.0,0.0,,2290.0,0.0,,January - December
-2006-01-01,2006,1,Teslin Lake,0.0,0.0,,0.0,0.0,,January - January
-2006-02-01,2006,2,Teslin Lake,0.0,0.0,,0.0,0.0,,January - February
-2006-03-01,2006,3,Teslin Lake,0.0,0.0,,0.0,0.0,,January - March
-2006-04-01,2006,4,Teslin Lake,0.0,0.0,,0.0,0.0,,January - April
-2006-05-01,2006,5,Teslin Lake,0.0,0.0,,0.0,0.0,,January - May
-2006-06-01,2006,6,Teslin Lake,108.0,0.0,,108.0,0.0,,January - June
-2006-07-01,2006,7,Teslin Lake,2.0,0.0,,110.0,0.0,,January - July
-2006-08-01,2006,8,Teslin Lake,0.0,0.0,,110.0,0.0,,January - August
-2006-09-01,2006,9,Teslin Lake,0.0,0.0,,110.0,0.0,,January - September
-2006-10-01,2006,10,Teslin Lake,0.0,0.0,,110.0,0.0,,January - October
-2006-11-01,2006,11,Teslin Lake,0.0,0.0,,110.0,0.0,,January - November
-2006-12-01,2006,12,Teslin Lake,0.0,0.0,,110.0,0.0,,January - December
-2006-01-01,2006,1,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - January
-2006-02-01,2006,2,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - February
-2006-03-01,2006,3,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - March
-2006-04-01,2006,4,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - April
-2006-05-01,2006,5,Tombstone Mtn.,66.0,0.0,,66.0,0.0,,January - May
-2006-06-01,2006,6,Tombstone Mtn.,390.0,0.0,,456.0,0.0,,January - June
-2006-07-01,2006,7,Tombstone Mtn.,837.0,0.0,,1293.0,0.0,,January - July
-2006-08-01,2006,8,Tombstone Mtn.,761.0,0.0,,2054.0,0.0,,January - August
-2006-09-01,2006,9,Tombstone Mtn.,291.0,0.0,,2345.0,0.0,,January - September
-2006-10-01,2006,10,Tombstone Mtn.,7.0,0.0,,2352.0,0.0,,January - October
-2006-11-01,2006,11,Tombstone Mtn.,0.0,0.0,,2352.0,0.0,,January - November
-2006-12-01,2006,12,Tombstone Mtn.,0.0,0.0,,2352.0,0.0,,January - December
-2006-01-01,2006,1,Watson Lake,0.0,0.0,,0.0,0.0,,January - January
-2006-02-01,2006,2,Watson Lake,0.0,0.0,,0.0,0.0,,January - February
-2006-03-01,2006,3,Watson Lake,0.0,0.0,,0.0,0.0,,January - March
-2006-04-01,2006,4,Watson Lake,0.0,0.0,,0.0,0.0,,January - April
-2006-05-01,2006,5,Watson Lake,0.0,0.0,,0.0,0.0,,January - May
-2006-06-01,2006,6,Watson Lake,0.0,0.0,,0.0,0.0,,January - June
-2006-07-01,2006,7,Watson Lake,0.0,0.0,,0.0,0.0,,January - July
-2006-08-01,2006,8,Watson Lake,0.0,0.0,,0.0,0.0,,January - August
-2006-09-01,2006,9,Watson Lake,0.0,0.0,,0.0,0.0,,January - September
-2016-01-01,2016,1,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - January
-2016-02-01,2016,2,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - February
-2016-03-01,2016,3,Tombstone Mtn.,2.0,0.0,,2.0,0.0,,January - March
-2016-04-01,2016,4,Tombstone Mtn.,0.0,0.0,,2.0,0.0,,January - April
-2016-05-01,2016,5,Tombstone Mtn.,94.0,108.0,-13.0,96.0,108.0,-11.1,January - May
-2016-06-01,2016,6,Tombstone Mtn.,1110.0,1153.0,-3.7,1206.0,1261.0,-4.4,January - June
-2016-07-01,2016,7,Tombstone Mtn.,1377.0,1468.0,-6.2,2583.0,2729.0,-5.3,January - July
-2016-08-01,2016,8,Tombstone Mtn.,1384.0,1616.0,-14.4,3967.0,4345.0,-8.7,January - August
-2016-09-01,2016,9,Tombstone Mtn.,493.0,374.0,31.8,4460.0,4719.0,-5.5,January - September
-2016-10-01,2016,10,Tombstone Mtn.,0.0,2.0,-100.0,4460.0,4721.0,-5.5,January - October
-2016-11-01,2016,11,Tombstone Mtn.,0.0,0.0,,4460.0,4721.0,-5.5,January - November
-2016-12-01,2016,12,Tombstone Mtn.,0.0,0.0,,4460.0,4721.0,-5.5,January - December
-2016-01-01,2016,1,Watson Lake,0.0,0.0,,0.0,0.0,,January - January
-2016-02-01,2016,2,Watson Lake,0.0,0.0,,0.0,0.0,,January - February
-2016-03-01,2016,3,Watson Lake,0.0,0.0,,0.0,0.0,,January - March
-2016-04-01,2016,4,Watson Lake,0.0,0.0,,0.0,0.0,,January - April
-2016-05-01,2016,5,Watson Lake,246.0,157.0,56.7,246.0,157.0,56.7,January - May
-2016-06-01,2016,6,Watson Lake,990.0,893.0,10.9,1236.0,1050.0,17.7,January - June
-2016-07-01,2016,7,Watson Lake,1425.0,1126.0,26.6,2661.0,2176.0,22.3,January - July
-2016-08-01,2016,8,Watson Lake,1190.0,938.0,26.9,3851.0,3114.0,23.7,January - August
-2016-09-01,2016,9,Watson Lake,228.0,194.0,17.5,4079.0,3308.0,23.3,January - September
-2016-10-01,2016,10,Watson Lake,0.0,7.0,-100.0,4079.0,3315.0,23.0,January - October
-2016-11-01,2016,11,Watson Lake,0.0,0.0,,4079.0,3315.0,23.0,January - November
-2016-12-01,2016,12,Watson Lake,0.0,0.0,,4079.0,3315.0,23.0,January - December
-2016-01-01,2016,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
-2016-02-01,2016,2,Wolf Creek,0.0,0.0,,0.0,0.0,,January - February
-2016-03-01,2016,3,Wolf Creek,4.0,0.0,,4.0,0.0,,January - March
-2016-04-01,2016,4,Wolf Creek,3.0,0.0,,7.0,0.0,,January - April
-2016-05-01,2016,5,Wolf Creek,475.0,449.0,5.8,482.0,449.0,7.3,January - May
-2016-06-01,2016,6,Wolf Creek,989.0,809.0,22.2,1471.0,1258.0,16.9,January - June
-2016-07-01,2016,7,Wolf Creek,1115.0,877.0,27.1,2586.0,2135.0,21.1,January - July
-2016-08-01,2016,8,Wolf Creek,1000.0,737.0,35.7,3586.0,2872.0,24.9,January - August
-2016-09-01,2016,9,Wolf Creek,490.0,357.0,37.3,4076.0,3229.0,26.2,January - September
-2016-10-01,2016,10,Wolf Creek,2.0,2.0,0.0,4078.0,3231.0,26.2,January - October
-2016-11-01,2016,11,Wolf Creek,0.0,0.0,,4078.0,3231.0,26.2,January - November
-2016-12-01,2016,12,Wolf Creek,0.0,0.0,,4078.0,3231.0,26.2,January - December
-2016-01-01,2016,1,Yukon River,0.0,0.0,,0.0,0.0,,January - January
-2016-02-01,2016,2,Yukon River,0.0,0.0,,0.0,0.0,,January - February
-2016-03-01,2016,3,Yukon River,0.0,0.0,,0.0,0.0,,January - March
-2016-04-01,2016,4,Yukon River,2.0,0.0,,2.0,0.0,,January - April
-2016-05-01,2016,5,Yukon River,301.0,353.0,-14.7,303.0,353.0,-14.2,January - May
-2016-06-01,2016,6,Yukon River,2045.0,1895.0,7.9,2348.0,2248.0,4.4,January - June
-2016-07-01,2016,7,Yukon River,1966.0,2286.0,-14.0,4314.0,4534.0,-4.9,January - July
-2016-08-01,2016,8,Yukon River,1728.0,1685.0,2.6,6042.0,6219.0,-2.8,January - August
-2016-09-01,2016,9,Yukon River,375.0,373.0,0.5,6417.0,6592.0,-2.7,January - September
-2016-10-01,2016,10,Yukon River,3.0,0.0,,6420.0,6592.0,-2.6,January - October
-2006-10-01,2006,10,Watson Lake,0.0,0.0,,0.0,0.0,,January - October
-2006-11-01,2006,11,Watson Lake,0.0,0.0,,0.0,0.0,,January - November
-2006-12-01,2006,12,Watson Lake,0.0,0.0,,0.0,0.0,,January - December
-2006-01-01,2006,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
-2006-02-01,2006,2,Wolf Creek,0.0,0.0,,0.0,0.0,,January - February
-2006-03-01,2006,3,Wolf Creek,0.0,0.0,,0.0,0.0,,January - March
-2006-04-01,2006,4,Wolf Creek,0.0,0.0,,0.0,0.0,,January - April
-2006-05-01,2006,5,Wolf Creek,0.0,0.0,,0.0,0.0,,January - May
-2006-06-01,2006,6,Wolf Creek,0.0,0.0,,0.0,0.0,,January - June
-2006-07-01,2006,7,Wolf Creek,0.0,0.0,,0.0,0.0,,January - July
-2006-08-01,2006,8,Wolf Creek,0.0,0.0,,0.0,0.0,,January - August
-2006-09-01,2006,9,Wolf Creek,0.0,0.0,,0.0,0.0,,January - September
-2006-10-01,2006,10,Wolf Creek,0.0,0.0,,0.0,0.0,,January - October
-2006-11-01,2006,11,Wolf Creek,0.0,0.0,,0.0,0.0,,January - November
-2006-12-01,2006,12,Wolf Creek,0.0,0.0,,0.0,0.0,,January - December
-2006-01-01,2006,1,Yukon River,2.0,0.0,,2.0,0.0,,January - January
-2006-02-01,2006,2,Yukon River,0.0,0.0,,2.0,0.0,,January - February
-2006-03-01,2006,3,Yukon River,0.0,0.0,,2.0,0.0,,January - March
-2006-04-01,2006,4,Yukon River,2.0,0.0,,4.0,0.0,,January - April
-2006-05-01,2006,5,Yukon River,114.0,0.0,,118.0,0.0,,January - May
-2006-06-01,2006,6,Yukon River,940.0,0.0,,1058.0,0.0,,January - June
-2006-07-01,2006,7,Yukon River,1004.0,0.0,,2062.0,0.0,,January - July
-2006-08-01,2006,8,Yukon River,1025.0,0.0,,3087.0,0.0,,January - August
-2006-09-01,2006,9,Yukon River,41.0,0.0,,3128.0,0.0,,January - September
-2006-10-01,2006,10,Yukon River,0.0,0.0,,3128.0,0.0,,January - October
-2006-11-01,2006,11,Yukon River,0.0,0.0,,3128.0,0.0,,January - November
-2006-12-01,2006,12,Yukon River,0.0,0.0,,3128.0,0.0,,January - December
-2007-01-01,2007,1,Congdon Creek,3.0,2.0,50.0,3.0,2.0,50.0,January - January
-2007-02-01,2007,2,Congdon Creek,0.0,0.0,,3.0,2.0,50.0,January - February
-2007-03-01,2007,3,Congdon Creek,0.0,0.0,,3.0,2.0,50.0,January - March
-2007-04-01,2007,4,Congdon Creek,0.0,0.0,,3.0,2.0,50.0,January - April
-2007-05-01,2007,5,Congdon Creek,234.0,198.0,18.2,237.0,200.0,18.5,January - May
-2007-06-01,2007,6,Congdon Creek,725.0,780.0,-7.1,962.0,980.0,-1.8,January - June
-2007-07-01,2007,7,Congdon Creek,1072.0,1151.0,-6.9,2034.0,2131.0,-4.6,January - July
-2007-08-01,2007,8,Congdon Creek,255.0,710.0,-64.1,2289.0,2841.0,-19.4,January - August
-2007-09-01,2007,9,Congdon Creek,59.0,2.0,2850.0,2348.0,2843.0,-17.4,January - September
-2007-10-01,2007,10,Congdon Creek,9.0,5.0,80.0,2357.0,2848.0,-17.2,January - October
-2007-11-01,2007,11,Congdon Creek,0.0,0.0,,2357.0,2848.0,-17.2,January - November
-2007-12-01,2007,12,Congdon Creek,0.0,0.0,,2357.0,2848.0,-17.2,January - December
-2007-01-01,2007,1,Conrad,0.0,0.0,,0.0,0.0,,January - January
-2007-02-01,2007,2,Conrad,0.0,0.0,,0.0,0.0,,January - February
-2007-03-01,2007,3,Conrad,0.0,0.0,,0.0,0.0,,January - March
-2007-04-01,2007,4,Conrad,0.0,0.0,,0.0,0.0,,January - April
-2007-05-01,2007,5,Conrad,0.0,0.0,,0.0,0.0,,January - May
-2007-06-01,2007,6,Conrad,0.0,0.0,,0.0,0.0,,January - June
-2007-07-01,2007,7,Conrad,0.0,0.0,,0.0,0.0,,January - July
-2016-11-01,2016,11,Yukon River,0.0,0.0,,6420.0,6592.0,-2.6,January - November
-2016-12-01,2016,12,Yukon River,0.0,0.0,,6420.0,6592.0,-2.6,January - December
-2017-01-01,2017,1,Congdon Creek,0.0,0.0,,0.0,0.0,,January - January
-2017-02-01,2017,2,Congdon Creek,0.0,0.0,,0.0,0.0,,January - February
-2017-03-01,2017,3,Congdon Creek,4.0,3.0,33.3,4.0,3.0,33.3,January - March
-2017-04-01,2017,4,Congdon Creek,2.0,0.0,,6.0,3.0,100.0,January - April
-2017-05-01,2017,5,Congdon Creek,451.0,354.0,27.4,457.0,357.0,28.0,January - May
-2017-06-01,2017,6,Congdon Creek,931.0,963.0,-3.3,1388.0,1320.0,5.2,January - June
-2017-07-01,2017,7,Congdon Creek,1405.0,1252.0,12.2,2793.0,2572.0,8.6,January - July
-2017-08-01,2017,8,Congdon Creek,1273.0,1104.0,15.3,4066.0,3676.0,10.6,January - August
-2017-09-01,2017,9,Congdon Creek,675.0,702.0,-3.8,4741.0,4378.0,8.3,January - September
-2017-10-01,2017,10,Congdon Creek,37.0,0.0,,4778.0,4378.0,9.1,January - October
-2017-11-01,2017,11,Congdon Creek,0.0,0.0,,4778.0,4378.0,9.1,January - November
-2017-12-01,2017,12,Congdon Creek,0.0,0.0,,4778.0,4378.0,9.1,January - December
-2017-01-01,2017,1,Conrad,0.0,0.0,,0.0,0.0,,January - January
-2017-02-01,2017,2,Conrad,0.0,0.0,,0.0,0.0,,January - February
-2017-03-01,2017,3,Conrad,0.0,2.0,-100.0,0.0,2.0,-100.0,January - March
-2017-04-01,2017,4,Conrad,3.0,0.0,,3.0,2.0,50.0,January - April
-2017-05-01,2017,5,Conrad,371.0,253.0,46.6,374.0,255.0,46.7,January - May
-2017-06-01,2017,6,Conrad,803.0,1091.0,-26.4,1177.0,1346.0,-12.6,January - June
-2017-07-01,2017,7,Conrad,1022.0,1441.0,-29.1,2199.0,2787.0,-21.1,January - July
-2017-08-01,2017,8,Conrad,976.0,956.0,2.1,3175.0,3743.0,-15.2,January - August
-2017-09-01,2017,9,Conrad,465.0,331.0,40.5,3640.0,4074.0,-10.7,January - September
-2017-10-01,2017,10,Conrad,4.0,12.0,-66.7,3644.0,4086.0,-10.8,January - October
-2017-11-01,2017,11,Conrad,0.0,0.0,,3644.0,4086.0,-10.8,January - November
-2017-12-01,2017,12,Conrad,0.0,0.0,,3644.0,4086.0,-10.8,January - December
-2017-01-01,2017,1,Fox Lake,0.0,0.0,,0.0,0.0,,January - January
-2017-02-01,2017,2,Fox Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - February
-2017-03-01,2017,3,Fox Lake,0.0,0.0,,0.0,2.0,-100.0,January - March
-2017-04-01,2017,4,Fox Lake,0.0,0.0,,0.0,2.0,-100.0,January - April
-2017-05-01,2017,5,Fox Lake,310.0,340.0,-8.8,310.0,342.0,-9.4,January - May
-2017-06-01,2017,6,Fox Lake,761.0,907.0,-16.1,1071.0,1249.0,-14.3,January - June
-2017-07-01,2017,7,Fox Lake,839.0,784.0,7.0,1910.0,2033.0,-6.1,January - July
-2017-08-01,2017,8,Fox Lake,763.0,757.0,0.8,2673.0,2790.0,-4.2,January - August
-2017-09-01,2017,9,Fox Lake,259.0,258.0,0.4,2932.0,3048.0,-3.8,January - September
-2017-10-01,2017,10,Fox Lake,0.0,0.0,,2932.0,3048.0,-3.8,January - October
-2017-11-01,2017,11,Fox Lake,0.0,0.0,,2932.0,3048.0,-3.8,January - November
-2017-12-01,2017,12,Fox Lake,0.0,0.0,,2932.0,3048.0,-3.8,January - December
-2017-01-01,2017,1,Marsh Lake,0.0,0.0,,0.0,0.0,,January - January
-2017-02-01,2017,2,Marsh Lake,0.0,0.0,,0.0,0.0,,January - February
-2017-03-01,2017,3,Marsh Lake,0.0,0.0,,0.0,0.0,,January - March
-2017-04-01,2017,4,Marsh Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - April
-2017-05-01,2017,5,Marsh Lake,479.0,333.0,43.8,479.0,335.0,43.0,January - May
-2017-06-01,2017,6,Marsh Lake,955.0,747.0,27.8,1434.0,1082.0,32.5,January - June
-2017-07-01,2017,7,Marsh Lake,1162.0,792.0,46.7,2596.0,1874.0,38.5,January - July
-2017-08-01,2017,8,Marsh Lake,1060.0,398.0,166.3,3656.0,2272.0,60.9,January - August
-2017-09-01,2017,9,Marsh Lake,348.0,41.0,748.8,4004.0,2313.0,73.1,January - September
 2007-08-01,2007,8,Conrad,0.0,0.0,,0.0,0.0,,January - August
 2007-09-01,2007,9,Conrad,0.0,0.0,,0.0,0.0,,January - September
 2007-10-01,2007,10,Conrad,0.0,0.0,,0.0,0.0,,January - October
@@ -1010,6 +743,52 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2007-04-01,2007,4,Teslin Lake,0.0,0.0,,0.0,0.0,,January - April
 2007-05-01,2007,5,Teslin Lake,106.0,0.0,,106.0,0.0,,January - May
 2007-06-01,2007,6,Teslin Lake,430.0,108.0,298.1,536.0,108.0,396.3,January - June
+2016-01-01,2016,1,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - January
+2016-02-01,2016,2,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - February
+2016-03-01,2016,3,Tombstone Mtn.,2.0,0.0,,2.0,0.0,,January - March
+2016-04-01,2016,4,Tombstone Mtn.,0.0,0.0,,2.0,0.0,,January - April
+2016-05-01,2016,5,Tombstone Mtn.,94.0,108.0,-13.0,96.0,108.0,-11.1,January - May
+2016-06-01,2016,6,Tombstone Mtn.,1110.0,1153.0,-3.7,1206.0,1261.0,-4.4,January - June
+2016-07-01,2016,7,Tombstone Mtn.,1377.0,1468.0,-6.2,2583.0,2729.0,-5.3,January - July
+2016-08-01,2016,8,Tombstone Mtn.,1384.0,1616.0,-14.4,3967.0,4345.0,-8.7,January - August
+2016-09-01,2016,9,Tombstone Mtn.,493.0,374.0,31.8,4460.0,4719.0,-5.5,January - September
+2016-10-01,2016,10,Tombstone Mtn.,0.0,2.0,-100.0,4460.0,4721.0,-5.5,January - October
+2016-11-01,2016,11,Tombstone Mtn.,0.0,0.0,,4460.0,4721.0,-5.5,January - November
+2016-12-01,2016,12,Tombstone Mtn.,0.0,0.0,,4460.0,4721.0,-5.5,January - December
+2016-01-01,2016,1,Watson Lake,0.0,0.0,,0.0,0.0,,January - January
+2016-02-01,2016,2,Watson Lake,0.0,0.0,,0.0,0.0,,January - February
+2016-03-01,2016,3,Watson Lake,0.0,0.0,,0.0,0.0,,January - March
+2016-04-01,2016,4,Watson Lake,0.0,0.0,,0.0,0.0,,January - April
+2016-05-01,2016,5,Watson Lake,246.0,157.0,56.7,246.0,157.0,56.7,January - May
+2016-06-01,2016,6,Watson Lake,990.0,893.0,10.9,1236.0,1050.0,17.7,January - June
+2016-07-01,2016,7,Watson Lake,1425.0,1126.0,26.6,2661.0,2176.0,22.3,January - July
+2016-08-01,2016,8,Watson Lake,1190.0,938.0,26.9,3851.0,3114.0,23.7,January - August
+2016-09-01,2016,9,Watson Lake,228.0,194.0,17.5,4079.0,3308.0,23.3,January - September
+2016-10-01,2016,10,Watson Lake,0.0,7.0,-100.0,4079.0,3315.0,23.0,January - October
+2016-11-01,2016,11,Watson Lake,0.0,0.0,,4079.0,3315.0,23.0,January - November
+2016-12-01,2016,12,Watson Lake,0.0,0.0,,4079.0,3315.0,23.0,January - December
+2016-01-01,2016,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
+2016-02-01,2016,2,Wolf Creek,0.0,0.0,,0.0,0.0,,January - February
+2016-03-01,2016,3,Wolf Creek,4.0,0.0,,4.0,0.0,,January - March
+2016-04-01,2016,4,Wolf Creek,3.0,0.0,,7.0,0.0,,January - April
+2016-05-01,2016,5,Wolf Creek,475.0,449.0,5.8,482.0,449.0,7.3,January - May
+2016-06-01,2016,6,Wolf Creek,989.0,809.0,22.2,1471.0,1258.0,16.9,January - June
+2016-07-01,2016,7,Wolf Creek,1115.0,877.0,27.1,2586.0,2135.0,21.1,January - July
+2016-08-01,2016,8,Wolf Creek,1000.0,737.0,35.7,3586.0,2872.0,24.9,January - August
+2016-09-01,2016,9,Wolf Creek,490.0,357.0,37.3,4076.0,3229.0,26.2,January - September
+2016-10-01,2016,10,Wolf Creek,2.0,2.0,0.0,4078.0,3231.0,26.2,January - October
+2016-11-01,2016,11,Wolf Creek,0.0,0.0,,4078.0,3231.0,26.2,January - November
+2016-12-01,2016,12,Wolf Creek,0.0,0.0,,4078.0,3231.0,26.2,January - December
+2016-01-01,2016,1,Yukon River,0.0,0.0,,0.0,0.0,,January - January
+2016-02-01,2016,2,Yukon River,0.0,0.0,,0.0,0.0,,January - February
+2016-03-01,2016,3,Yukon River,0.0,0.0,,0.0,0.0,,January - March
+2016-04-01,2016,4,Yukon River,2.0,0.0,,2.0,0.0,,January - April
+2016-05-01,2016,5,Yukon River,301.0,353.0,-14.7,303.0,353.0,-14.2,January - May
+2016-06-01,2016,6,Yukon River,2045.0,1895.0,7.9,2348.0,2248.0,4.4,January - June
+2016-07-01,2016,7,Yukon River,1966.0,2286.0,-14.0,4314.0,4534.0,-4.9,January - July
+2016-08-01,2016,8,Yukon River,1728.0,1685.0,2.6,6042.0,6219.0,-2.8,January - August
+2016-09-01,2016,9,Yukon River,375.0,373.0,0.5,6417.0,6592.0,-2.7,January - September
+2016-10-01,2016,10,Yukon River,3.0,0.0,,6420.0,6592.0,-2.6,January - October
 2007-07-01,2007,7,Teslin Lake,541.0,2.0,26950.0,1077.0,110.0,879.1,January - July
 2007-08-01,2007,8,Teslin Lake,514.0,0.0,,1591.0,110.0,1346.4,January - August
 2007-09-01,2007,9,Teslin Lake,151.0,0.0,,1742.0,110.0,1483.6,January - September
@@ -1056,6 +835,100 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2007-02-01,2007,2,Yukon River,0.0,0.0,,0.0,2.0,-100.0,January - February
 2007-03-01,2007,3,Yukon River,0.0,0.0,,0.0,2.0,-100.0,January - March
 2007-04-01,2007,4,Yukon River,0.0,2.0,-100.0,0.0,4.0,-100.0,January - April
+2007-05-01,2007,5,Yukon River,210.0,114.0,84.2,210.0,118.0,78.0,January - May
+2007-06-01,2007,6,Yukon River,1135.0,940.0,20.7,1345.0,1058.0,27.1,January - June
+2007-07-01,2007,7,Yukon River,1604.0,1004.0,59.8,2949.0,2062.0,43.0,January - July
+2007-08-01,2007,8,Yukon River,1305.0,1025.0,27.3,4254.0,3087.0,37.8,January - August
+2007-09-01,2007,9,Yukon River,278.0,41.0,578.0,4532.0,3128.0,44.9,January - September
+2007-10-01,2007,10,Yukon River,0.0,0.0,,4532.0,3128.0,44.9,January - October
+2007-11-01,2007,11,Yukon River,0.0,0.0,,4532.0,3128.0,44.9,January - November
+2007-12-01,2007,12,Yukon River,5.0,0.0,,4537.0,3128.0,45.0,January - December
+2008-01-01,2008,1,Congdon Creek,0.0,3.0,-100.0,0.0,3.0,-100.0,January - January
+2008-02-01,2008,2,Congdon Creek,0.0,0.0,,0.0,3.0,-100.0,January - February
+2008-03-01,2008,3,Congdon Creek,0.0,0.0,,0.0,3.0,-100.0,January - March
+2008-04-01,2008,4,Congdon Creek,0.0,0.0,,0.0,3.0,-100.0,January - April
+2008-05-01,2008,5,Congdon Creek,189.0,234.0,-19.2,189.0,237.0,-20.3,January - May
+2008-06-01,2008,6,Congdon Creek,771.0,725.0,6.3,960.0,962.0,-0.2,January - June
+2008-07-01,2008,7,Congdon Creek,835.0,1072.0,-22.1,1795.0,2034.0,-11.8,January - July
+2008-08-01,2008,8,Congdon Creek,676.0,255.0,165.1,2471.0,2289.0,8.0,January - August
+2008-09-01,2008,9,Congdon Creek,270.0,59.0,357.6,2741.0,2348.0,16.7,January - September
+2008-10-01,2008,10,Congdon Creek,2.0,9.0,-77.8,2743.0,2357.0,16.4,January - October
+2008-11-01,2008,11,Congdon Creek,0.0,0.0,,2743.0,2357.0,16.4,January - November
+2008-12-01,2008,12,Congdon Creek,0.0,0.0,,2743.0,2357.0,16.4,January - December
+2008-01-01,2008,1,Conrad,0.0,0.0,,0.0,0.0,,January - January
+2008-02-01,2008,2,Conrad,0.0,0.0,,0.0,0.0,,January - February
+2008-03-01,2008,3,Conrad,0.0,0.0,,0.0,0.0,,January - March
+2008-04-01,2008,4,Conrad,0.0,0.0,,0.0,0.0,,January - April
+2008-05-01,2008,5,Conrad,0.0,0.0,,0.0,0.0,,January - May
+2008-06-01,2008,6,Conrad,0.0,0.0,,0.0,0.0,,January - June
+2008-07-01,2008,7,Conrad,0.0,0.0,,0.0,0.0,,January - July
+2008-08-01,2008,8,Conrad,0.0,0.0,,0.0,0.0,,January - August
+2008-09-01,2008,9,Conrad,0.0,0.0,,0.0,0.0,,January - September
+2008-10-01,2008,10,Conrad,0.0,0.0,,0.0,0.0,,January - October
+2008-11-01,2008,11,Conrad,0.0,0.0,,0.0,0.0,,January - November
+2008-12-01,2008,12,Conrad,0.0,0.0,,0.0,0.0,,January - December
+2008-01-01,2008,1,Fox Lake,0.0,0.0,,0.0,0.0,,January - January
+2008-02-01,2008,2,Fox Lake,0.0,0.0,,0.0,0.0,,January - February
+2008-03-01,2008,3,Fox Lake,5.0,0.0,,5.0,0.0,,January - March
+2008-04-01,2008,4,Fox Lake,0.0,0.0,,5.0,0.0,,January - April
+2008-05-01,2008,5,Fox Lake,266.0,57.0,366.7,271.0,57.0,375.4,January - May
+2008-06-01,2008,6,Fox Lake,559.0,519.0,7.7,830.0,576.0,44.1,January - June
+2008-07-01,2008,7,Fox Lake,673.0,697.0,-3.4,1503.0,1273.0,18.1,January - July
+2008-08-01,2008,8,Fox Lake,561.0,597.0,-6.0,2064.0,1870.0,10.4,January - August
+2008-09-01,2008,9,Fox Lake,196.0,127.0,54.3,2260.0,1997.0,13.2,January - September
+2008-10-01,2008,10,Fox Lake,0.0,0.0,,2260.0,1997.0,13.2,January - October
+2008-11-01,2008,11,Fox Lake,0.0,0.0,,2260.0,1997.0,13.2,January - November
+2008-12-01,2008,12,Fox Lake,0.0,0.0,,2260.0,1997.0,13.2,January - December
+2008-01-01,2008,1,Marsh Lake,0.0,0.0,,0.0,0.0,,January - January
+2008-02-01,2008,2,Marsh Lake,0.0,0.0,,0.0,0.0,,January - February
+2008-03-01,2008,3,Marsh Lake,0.0,0.0,,0.0,0.0,,January - March
+2016-11-01,2016,11,Yukon River,0.0,0.0,,6420.0,6592.0,-2.6,January - November
+2016-12-01,2016,12,Yukon River,0.0,0.0,,6420.0,6592.0,-2.6,January - December
+2017-01-01,2017,1,Congdon Creek,0.0,0.0,,0.0,0.0,,January - January
+2017-02-01,2017,2,Congdon Creek,0.0,0.0,,0.0,0.0,,January - February
+2017-03-01,2017,3,Congdon Creek,4.0,3.0,33.3,4.0,3.0,33.3,January - March
+2017-04-01,2017,4,Congdon Creek,2.0,0.0,,6.0,3.0,100.0,January - April
+2017-05-01,2017,5,Congdon Creek,451.0,354.0,27.4,457.0,357.0,28.0,January - May
+2017-06-01,2017,6,Congdon Creek,931.0,963.0,-3.3,1388.0,1320.0,5.2,January - June
+2017-07-01,2017,7,Congdon Creek,1405.0,1252.0,12.2,2793.0,2572.0,8.6,January - July
+2017-08-01,2017,8,Congdon Creek,1273.0,1104.0,15.3,4066.0,3676.0,10.6,January - August
+2017-09-01,2017,9,Congdon Creek,675.0,702.0,-3.8,4741.0,4378.0,8.3,January - September
+2017-10-01,2017,10,Congdon Creek,37.0,0.0,,4778.0,4378.0,9.1,January - October
+2017-11-01,2017,11,Congdon Creek,0.0,0.0,,4778.0,4378.0,9.1,January - November
+2017-12-01,2017,12,Congdon Creek,0.0,0.0,,4778.0,4378.0,9.1,January - December
+2017-01-01,2017,1,Conrad,0.0,0.0,,0.0,0.0,,January - January
+2017-02-01,2017,2,Conrad,0.0,0.0,,0.0,0.0,,January - February
+2017-03-01,2017,3,Conrad,0.0,2.0,-100.0,0.0,2.0,-100.0,January - March
+2017-04-01,2017,4,Conrad,3.0,0.0,,3.0,2.0,50.0,January - April
+2017-05-01,2017,5,Conrad,371.0,253.0,46.6,374.0,255.0,46.7,January - May
+2017-06-01,2017,6,Conrad,803.0,1091.0,-26.4,1177.0,1346.0,-12.6,January - June
+2017-07-01,2017,7,Conrad,1022.0,1441.0,-29.1,2199.0,2787.0,-21.1,January - July
+2017-08-01,2017,8,Conrad,976.0,956.0,2.1,3175.0,3743.0,-15.2,January - August
+2017-09-01,2017,9,Conrad,465.0,331.0,40.5,3640.0,4074.0,-10.7,January - September
+2017-10-01,2017,10,Conrad,4.0,12.0,-66.7,3644.0,4086.0,-10.8,January - October
+2017-11-01,2017,11,Conrad,0.0,0.0,,3644.0,4086.0,-10.8,January - November
+2017-12-01,2017,12,Conrad,0.0,0.0,,3644.0,4086.0,-10.8,January - December
+2017-01-01,2017,1,Fox Lake,0.0,0.0,,0.0,0.0,,January - January
+2017-02-01,2017,2,Fox Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - February
+2017-03-01,2017,3,Fox Lake,0.0,0.0,,0.0,2.0,-100.0,January - March
+2017-04-01,2017,4,Fox Lake,0.0,0.0,,0.0,2.0,-100.0,January - April
+2017-05-01,2017,5,Fox Lake,310.0,340.0,-8.8,310.0,342.0,-9.4,January - May
+2017-06-01,2017,6,Fox Lake,761.0,907.0,-16.1,1071.0,1249.0,-14.3,January - June
+2017-07-01,2017,7,Fox Lake,839.0,784.0,7.0,1910.0,2033.0,-6.1,January - July
+2017-08-01,2017,8,Fox Lake,763.0,757.0,0.8,2673.0,2790.0,-4.2,January - August
+2017-09-01,2017,9,Fox Lake,259.0,258.0,0.4,2932.0,3048.0,-3.8,January - September
+2017-10-01,2017,10,Fox Lake,0.0,0.0,,2932.0,3048.0,-3.8,January - October
+2017-11-01,2017,11,Fox Lake,0.0,0.0,,2932.0,3048.0,-3.8,January - November
+2017-12-01,2017,12,Fox Lake,0.0,0.0,,2932.0,3048.0,-3.8,January - December
+2017-01-01,2017,1,Marsh Lake,0.0,0.0,,0.0,0.0,,January - January
+2017-02-01,2017,2,Marsh Lake,0.0,0.0,,0.0,0.0,,January - February
+2017-03-01,2017,3,Marsh Lake,0.0,0.0,,0.0,0.0,,January - March
+2017-04-01,2017,4,Marsh Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - April
+2017-05-01,2017,5,Marsh Lake,479.0,333.0,43.8,479.0,335.0,43.0,January - May
+2017-06-01,2017,6,Marsh Lake,955.0,747.0,27.8,1434.0,1082.0,32.5,January - June
+2017-07-01,2017,7,Marsh Lake,1162.0,792.0,46.7,2596.0,1874.0,38.5,January - July
+2017-08-01,2017,8,Marsh Lake,1060.0,398.0,166.3,3656.0,2272.0,60.9,January - August
+2017-09-01,2017,9,Marsh Lake,348.0,41.0,748.8,4004.0,2313.0,73.1,January - September
 2017-10-01,2017,10,Marsh Lake,0.0,8.0,-100.0,4004.0,2321.0,72.5,January - October
 2017-11-01,2017,11,Marsh Lake,0.0,0.0,,4004.0,2321.0,72.5,January - November
 2017-12-01,2017,12,Marsh Lake,0.0,0.0,,4004.0,2321.0,72.5,January - December
@@ -1148,53 +1021,52 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2018-03-01,2018,3,Conrad,0.0,0.0,,0.0,0.0,,January - March
 2018-04-01,2018,4,Conrad,4.0,3.0,33.3,4.0,3.0,33.3,January - April
 2018-05-01,2018,5,Conrad,349.0,371.0,-5.9,353.0,374.0,-5.6,January - May
-2007-05-01,2007,5,Yukon River,210.0,114.0,84.2,210.0,118.0,78.0,January - May
-2007-06-01,2007,6,Yukon River,1135.0,940.0,20.7,1345.0,1058.0,27.1,January - June
-2007-07-01,2007,7,Yukon River,1604.0,1004.0,59.8,2949.0,2062.0,43.0,January - July
-2007-08-01,2007,8,Yukon River,1305.0,1025.0,27.3,4254.0,3087.0,37.8,January - August
-2007-09-01,2007,9,Yukon River,278.0,41.0,578.0,4532.0,3128.0,44.9,January - September
-2007-10-01,2007,10,Yukon River,0.0,0.0,,4532.0,3128.0,44.9,January - October
-2007-11-01,2007,11,Yukon River,0.0,0.0,,4532.0,3128.0,44.9,January - November
-2007-12-01,2007,12,Yukon River,5.0,0.0,,4537.0,3128.0,45.0,January - December
-2008-01-01,2008,1,Congdon Creek,0.0,3.0,-100.0,0.0,3.0,-100.0,January - January
-2008-02-01,2008,2,Congdon Creek,0.0,0.0,,0.0,3.0,-100.0,January - February
-2008-03-01,2008,3,Congdon Creek,0.0,0.0,,0.0,3.0,-100.0,January - March
-2008-04-01,2008,4,Congdon Creek,0.0,0.0,,0.0,3.0,-100.0,January - April
-2008-05-01,2008,5,Congdon Creek,189.0,234.0,-19.2,189.0,237.0,-20.3,January - May
-2008-06-01,2008,6,Congdon Creek,771.0,725.0,6.3,960.0,962.0,-0.2,January - June
-2008-07-01,2008,7,Congdon Creek,835.0,1072.0,-22.1,1795.0,2034.0,-11.8,January - July
-2008-08-01,2008,8,Congdon Creek,676.0,255.0,165.1,2471.0,2289.0,8.0,January - August
-2008-09-01,2008,9,Congdon Creek,270.0,59.0,357.6,2741.0,2348.0,16.7,January - September
-2008-10-01,2008,10,Congdon Creek,2.0,9.0,-77.8,2743.0,2357.0,16.4,January - October
-2008-11-01,2008,11,Congdon Creek,0.0,0.0,,2743.0,2357.0,16.4,January - November
-2008-12-01,2008,12,Congdon Creek,0.0,0.0,,2743.0,2357.0,16.4,January - December
-2008-01-01,2008,1,Conrad,0.0,0.0,,0.0,0.0,,January - January
-2008-02-01,2008,2,Conrad,0.0,0.0,,0.0,0.0,,January - February
-2008-03-01,2008,3,Conrad,0.0,0.0,,0.0,0.0,,January - March
-2008-04-01,2008,4,Conrad,0.0,0.0,,0.0,0.0,,January - April
-2008-05-01,2008,5,Conrad,0.0,0.0,,0.0,0.0,,January - May
-2008-06-01,2008,6,Conrad,0.0,0.0,,0.0,0.0,,January - June
-2008-07-01,2008,7,Conrad,0.0,0.0,,0.0,0.0,,January - July
-2008-08-01,2008,8,Conrad,0.0,0.0,,0.0,0.0,,January - August
-2008-09-01,2008,9,Conrad,0.0,0.0,,0.0,0.0,,January - September
-2008-10-01,2008,10,Conrad,0.0,0.0,,0.0,0.0,,January - October
-2008-11-01,2008,11,Conrad,0.0,0.0,,0.0,0.0,,January - November
-2008-12-01,2008,12,Conrad,0.0,0.0,,0.0,0.0,,January - December
-2008-01-01,2008,1,Fox Lake,0.0,0.0,,0.0,0.0,,January - January
-2008-02-01,2008,2,Fox Lake,0.0,0.0,,0.0,0.0,,January - February
-2008-03-01,2008,3,Fox Lake,5.0,0.0,,5.0,0.0,,January - March
-2008-04-01,2008,4,Fox Lake,0.0,0.0,,5.0,0.0,,January - April
-2008-05-01,2008,5,Fox Lake,266.0,57.0,366.7,271.0,57.0,375.4,January - May
-2008-06-01,2008,6,Fox Lake,559.0,519.0,7.7,830.0,576.0,44.1,January - June
-2008-07-01,2008,7,Fox Lake,673.0,697.0,-3.4,1503.0,1273.0,18.1,January - July
-2008-08-01,2008,8,Fox Lake,561.0,597.0,-6.0,2064.0,1870.0,10.4,January - August
-2008-09-01,2008,9,Fox Lake,196.0,127.0,54.3,2260.0,1997.0,13.2,January - September
-2008-10-01,2008,10,Fox Lake,0.0,0.0,,2260.0,1997.0,13.2,January - October
-2008-11-01,2008,11,Fox Lake,0.0,0.0,,2260.0,1997.0,13.2,January - November
-2008-12-01,2008,12,Fox Lake,0.0,0.0,,2260.0,1997.0,13.2,January - December
-2008-01-01,2008,1,Marsh Lake,0.0,0.0,,0.0,0.0,,January - January
-2008-02-01,2008,2,Marsh Lake,0.0,0.0,,0.0,0.0,,January - February
-2008-03-01,2008,3,Marsh Lake,0.0,0.0,,0.0,0.0,,January - March
+2008-04-01,2008,4,Marsh Lake,0.0,0.0,,0.0,0.0,,January - April
+2008-05-01,2008,5,Marsh Lake,237.0,113.0,109.7,237.0,113.0,109.7,January - May
+2008-06-01,2008,6,Marsh Lake,501.0,490.0,2.2,738.0,603.0,22.4,January - June
+2008-07-01,2008,7,Marsh Lake,505.0,421.0,20.0,1243.0,1024.0,21.4,January - July
+2008-08-01,2008,8,Marsh Lake,452.0,281.0,60.9,1695.0,1305.0,29.9,January - August
+2008-09-01,2008,9,Marsh Lake,121.0,90.0,34.4,1816.0,1395.0,30.2,January - September
+2008-10-01,2008,10,Marsh Lake,0.0,0.0,,1816.0,1395.0,30.2,January - October
+2008-11-01,2008,11,Marsh Lake,0.0,0.0,,1816.0,1395.0,30.2,January - November
+2008-12-01,2008,12,Marsh Lake,0.0,0.0,,1816.0,1395.0,30.2,January - December
+2008-01-01,2008,1,Pine Lake,0.0,0.0,,0.0,0.0,,January - January
+2008-02-01,2008,2,Pine Lake,0.0,0.0,,0.0,0.0,,January - February
+2008-03-01,2008,3,Pine Lake,2.0,0.0,,2.0,0.0,,January - March
+2008-04-01,2008,4,Pine Lake,0.0,0.0,,2.0,0.0,,January - April
+2008-05-01,2008,5,Pine Lake,251.0,162.0,54.9,253.0,162.0,56.2,January - May
+2008-06-01,2008,6,Pine Lake,516.0,795.0,-35.1,769.0,957.0,-19.6,January - June
+2008-07-01,2008,7,Pine Lake,817.0,913.0,-10.5,1586.0,1870.0,-15.2,January - July
+2008-08-01,2008,8,Pine Lake,828.0,929.0,-10.9,2414.0,2799.0,-13.8,January - August
+2008-09-01,2008,9,Pine Lake,335.0,301.0,11.3,2749.0,3100.0,-11.3,January - September
+2008-10-01,2008,10,Pine Lake,13.0,0.0,,2762.0,3100.0,-10.9,January - October
+2008-11-01,2008,11,Pine Lake,0.0,0.0,,2762.0,3100.0,-10.9,January - November
+2008-12-01,2008,12,Pine Lake,0.0,0.0,,2762.0,3100.0,-10.9,January - December
+2008-01-01,2008,1,Teslin Lake,0.0,0.0,,0.0,0.0,,January - January
+2008-02-01,2008,2,Teslin Lake,0.0,0.0,,0.0,0.0,,January - February
+2008-03-01,2008,3,Teslin Lake,0.0,0.0,,0.0,0.0,,January - March
+2008-04-01,2008,4,Teslin Lake,0.0,0.0,,0.0,0.0,,January - April
+2008-05-01,2008,5,Teslin Lake,121.0,106.0,14.2,121.0,106.0,14.2,January - May
+2008-06-01,2008,6,Teslin Lake,500.0,430.0,16.3,621.0,536.0,15.9,January - June
+2008-07-01,2008,7,Teslin Lake,482.0,541.0,-10.9,1103.0,1077.0,2.4,January - July
+2008-08-01,2008,8,Teslin Lake,387.0,514.0,-24.7,1490.0,1591.0,-6.3,January - August
+2008-09-01,2008,9,Teslin Lake,155.0,151.0,2.6,1645.0,1742.0,-5.6,January - September
+2008-10-01,2008,10,Teslin Lake,2.0,2.0,0.0,1647.0,1744.0,-5.6,January - October
+2008-11-01,2008,11,Teslin Lake,0.0,0.0,,1647.0,1744.0,-5.6,January - November
+2008-12-01,2008,12,Teslin Lake,0.0,2.0,-100.0,1647.0,1746.0,-5.7,January - December
+2008-01-01,2008,1,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - January
+2008-02-01,2008,2,Tombstone Mtn.,0.0,2.0,-100.0,0.0,2.0,-100.0,January - February
+2008-03-01,2008,3,Tombstone Mtn.,0.0,0.0,,0.0,2.0,-100.0,January - March
+2008-04-01,2008,4,Tombstone Mtn.,0.0,3.0,-100.0,0.0,5.0,-100.0,January - April
+2008-05-01,2008,5,Tombstone Mtn.,64.0,108.0,-40.7,64.0,113.0,-43.4,January - May
+2008-06-01,2008,6,Tombstone Mtn.,735.0,599.0,22.7,799.0,712.0,12.2,January - June
+2008-07-01,2008,7,Tombstone Mtn.,856.0,968.0,-11.6,1655.0,1680.0,-1.5,January - July
+2008-08-01,2008,8,Tombstone Mtn.,758.0,1143.0,-33.7,2413.0,2823.0,-14.5,January - August
+2008-09-01,2008,9,Tombstone Mtn.,204.0,153.0,33.3,2617.0,2976.0,-12.1,January - September
+2008-10-01,2008,10,Tombstone Mtn.,0.0,0.0,,2617.0,2976.0,-12.1,January - October
+2008-11-01,2008,11,Tombstone Mtn.,0.0,0.0,,2617.0,2976.0,-12.1,January - November
+2008-12-01,2008,12,Tombstone Mtn.,0.0,0.0,,2617.0,2976.0,-12.1,January - December
+2008-01-01,2008,1,Watson Lake,0.0,0.0,,0.0,0.0,,January - January
 2018-06-01,2018,6,Conrad,955.0,803.0,18.9,1308.0,1177.0,11.1,January - June
 2018-07-01,2018,7,Conrad,1122.0,1022.0,9.8,2430.0,2199.0,10.5,January - July
 2018-08-01,2018,8,Conrad,830.0,976.0,-15.0,3260.0,3175.0,2.7,January - August
@@ -1242,145 +1114,6 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2018-02-01,2018,2,Teslin Lake,0.0,0.0,,0.0,0.0,,January - February
 2018-03-01,2018,3,Teslin Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - March
 2018-04-01,2018,4,Teslin Lake,2.0,0.0,,2.0,2.0,0.0,January - April
-2018-05-01,2018,5,Teslin Lake,295.0,198.0,49.0,297.0,200.0,48.5,January - May
-2018-06-01,2018,6,Teslin Lake,1081.0,793.0,36.3,1378.0,993.0,38.8,January - June
-2018-07-01,2018,7,Teslin Lake,1171.0,1065.0,10.0,2549.0,2058.0,23.9,January - July
-2018-08-01,2018,8,Teslin Lake,853.0,903.0,-5.5,3402.0,2961.0,14.9,January - August
-2018-09-01,2018,9,Teslin Lake,163.0,309.0,-47.2,3565.0,3270.0,9.0,January - September
-2018-10-01,2018,10,Teslin Lake,0.0,0.0,,3565.0,3270.0,9.0,January - October
-2018-11-01,2018,11,Teslin Lake,0.0,0.0,,3565.0,3270.0,9.0,January - November
-2018-12-01,2018,12,Teslin Lake,0.0,0.0,,3565.0,3270.0,9.0,January - December
-2018-01-01,2018,1,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - January
-2018-02-01,2018,2,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - February
-2018-03-01,2018,3,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - March
-2018-04-01,2018,4,Tombstone Mtn.,4.0,0.0,,4.0,0.0,,January - April
-2018-05-01,2018,5,Tombstone Mtn.,218.0,165.0,32.1,222.0,165.0,34.5,January - May
-2018-06-01,2018,6,Tombstone Mtn.,1577.0,1170.0,34.8,1799.0,1335.0,34.8,January - June
-2018-07-01,2018,7,Tombstone Mtn.,1993.0,1551.0,28.5,3792.0,2886.0,31.4,January - July
-2018-08-01,2018,8,Tombstone Mtn.,2032.0,1794.0,13.3,5824.0,4680.0,24.4,January - August
-2018-09-01,2018,9,Tombstone Mtn.,170.0,733.0,-76.8,5994.0,5413.0,10.7,January - September
-2018-10-01,2018,10,Tombstone Mtn.,4.0,8.0,-50.0,5998.0,5421.0,10.6,January - October
-2018-11-01,2018,11,Tombstone Mtn.,2.0,0.0,,6000.0,5421.0,10.7,January - November
-2018-12-01,2018,12,Tombstone Mtn.,2.0,0.0,,6002.0,5421.0,10.7,January - December
-2018-01-01,2018,1,Watson Lake,0.0,0.0,,0.0,0.0,,January - January
-2018-02-01,2018,2,Watson Lake,0.0,0.0,,0.0,0.0,,January - February
-2018-03-01,2018,3,Watson Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - March
-2018-04-01,2018,4,Watson Lake,0.0,3.0,-100.0,0.0,5.0,-100.0,January - April
-2018-05-01,2018,5,Watson Lake,424.0,338.0,25.4,424.0,343.0,23.6,January - May
-2018-06-01,2018,6,Watson Lake,1337.0,1075.0,24.4,1761.0,1418.0,24.2,January - June
-2018-07-01,2018,7,Watson Lake,1670.0,1440.0,16.0,3431.0,2858.0,20.0,January - July
-2018-08-01,2018,8,Watson Lake,1361.0,1359.0,0.1,4792.0,4217.0,13.6,January - August
-2018-09-01,2018,9,Watson Lake,532.0,418.0,27.3,5324.0,4635.0,14.9,January - September
-2018-10-01,2018,10,Watson Lake,0.0,0.0,,5324.0,4635.0,14.9,January - October
-2018-11-01,2018,11,Watson Lake,0.0,0.0,,5324.0,4635.0,14.9,January - November
-2018-12-01,2018,12,Watson Lake,0.0,0.0,,5324.0,4635.0,14.9,January - December
-2018-01-01,2018,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
-2018-02-01,2018,2,Wolf Creek,0.0,0.0,,0.0,0.0,,January - February
-2018-03-01,2018,3,Wolf Creek,2.0,0.0,,2.0,0.0,,January - March
-2018-04-01,2018,4,Wolf Creek,5.0,0.0,,7.0,0.0,,January - April
-2018-05-01,2018,5,Wolf Creek,722.0,595.0,21.3,729.0,595.0,22.5,January - May
-2018-06-01,2018,6,Wolf Creek,1206.0,1034.0,16.6,1935.0,1629.0,18.8,January - June
-2018-07-01,2018,7,Wolf Creek,1370.0,1284.0,6.7,3305.0,2913.0,13.5,January - July
-2018-08-01,2018,8,Wolf Creek,1225.0,1262.0,-2.9,4530.0,4175.0,8.5,January - August
-2018-09-01,2018,9,Wolf Creek,693.0,685.0,1.2,5223.0,4860.0,7.5,January - September
-2018-10-01,2018,10,Wolf Creek,0.0,7.0,-100.0,5223.0,4867.0,7.3,January - October
-2018-11-01,2018,11,Wolf Creek,0.0,0.0,,5223.0,4867.0,7.3,January - November
-2018-12-01,2018,12,Wolf Creek,0.0,0.0,,5223.0,4867.0,7.3,January - December
-2018-01-01,2018,1,Yukon River,0.0,0.0,,0.0,0.0,,January - January
-2018-02-01,2018,2,Yukon River,0.0,4.0,-100.0,0.0,4.0,-100.0,January - February
-2008-04-01,2008,4,Marsh Lake,0.0,0.0,,0.0,0.0,,January - April
-2008-05-01,2008,5,Marsh Lake,237.0,113.0,109.7,237.0,113.0,109.7,January - May
-2008-06-01,2008,6,Marsh Lake,501.0,490.0,2.2,738.0,603.0,22.4,January - June
-2008-07-01,2008,7,Marsh Lake,505.0,421.0,20.0,1243.0,1024.0,21.4,January - July
-2008-08-01,2008,8,Marsh Lake,452.0,281.0,60.9,1695.0,1305.0,29.9,January - August
-2008-09-01,2008,9,Marsh Lake,121.0,90.0,34.4,1816.0,1395.0,30.2,January - September
-2008-10-01,2008,10,Marsh Lake,0.0,0.0,,1816.0,1395.0,30.2,January - October
-2008-11-01,2008,11,Marsh Lake,0.0,0.0,,1816.0,1395.0,30.2,January - November
-2008-12-01,2008,12,Marsh Lake,0.0,0.0,,1816.0,1395.0,30.2,January - December
-2008-01-01,2008,1,Pine Lake,0.0,0.0,,0.0,0.0,,January - January
-2008-02-01,2008,2,Pine Lake,0.0,0.0,,0.0,0.0,,January - February
-2008-03-01,2008,3,Pine Lake,2.0,0.0,,2.0,0.0,,January - March
-2008-04-01,2008,4,Pine Lake,0.0,0.0,,2.0,0.0,,January - April
-2008-05-01,2008,5,Pine Lake,251.0,162.0,54.9,253.0,162.0,56.2,January - May
-2008-06-01,2008,6,Pine Lake,516.0,795.0,-35.1,769.0,957.0,-19.6,January - June
-2008-07-01,2008,7,Pine Lake,817.0,913.0,-10.5,1586.0,1870.0,-15.2,January - July
-2008-08-01,2008,8,Pine Lake,828.0,929.0,-10.9,2414.0,2799.0,-13.8,January - August
-2008-09-01,2008,9,Pine Lake,335.0,301.0,11.3,2749.0,3100.0,-11.3,January - September
-2008-10-01,2008,10,Pine Lake,13.0,0.0,,2762.0,3100.0,-10.9,January - October
-2008-11-01,2008,11,Pine Lake,0.0,0.0,,2762.0,3100.0,-10.9,January - November
-2008-12-01,2008,12,Pine Lake,0.0,0.0,,2762.0,3100.0,-10.9,January - December
-2008-01-01,2008,1,Teslin Lake,0.0,0.0,,0.0,0.0,,January - January
-2008-02-01,2008,2,Teslin Lake,0.0,0.0,,0.0,0.0,,January - February
-2008-03-01,2008,3,Teslin Lake,0.0,0.0,,0.0,0.0,,January - March
-2008-04-01,2008,4,Teslin Lake,0.0,0.0,,0.0,0.0,,January - April
-2008-05-01,2008,5,Teslin Lake,121.0,106.0,14.2,121.0,106.0,14.2,January - May
-2008-06-01,2008,6,Teslin Lake,500.0,430.0,16.3,621.0,536.0,15.9,January - June
-2008-07-01,2008,7,Teslin Lake,482.0,541.0,-10.9,1103.0,1077.0,2.4,January - July
-2008-08-01,2008,8,Teslin Lake,387.0,514.0,-24.7,1490.0,1591.0,-6.3,January - August
-2008-09-01,2008,9,Teslin Lake,155.0,151.0,2.6,1645.0,1742.0,-5.6,January - September
-2008-10-01,2008,10,Teslin Lake,2.0,2.0,0.0,1647.0,1744.0,-5.6,January - October
-2008-11-01,2008,11,Teslin Lake,0.0,0.0,,1647.0,1744.0,-5.6,January - November
-2008-12-01,2008,12,Teslin Lake,0.0,2.0,-100.0,1647.0,1746.0,-5.7,January - December
-2008-01-01,2008,1,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - January
-2008-02-01,2008,2,Tombstone Mtn.,0.0,2.0,-100.0,0.0,2.0,-100.0,January - February
-2008-03-01,2008,3,Tombstone Mtn.,0.0,0.0,,0.0,2.0,-100.0,January - March
-2008-04-01,2008,4,Tombstone Mtn.,0.0,3.0,-100.0,0.0,5.0,-100.0,January - April
-2008-05-01,2008,5,Tombstone Mtn.,64.0,108.0,-40.7,64.0,113.0,-43.4,January - May
-2008-06-01,2008,6,Tombstone Mtn.,735.0,599.0,22.7,799.0,712.0,12.2,January - June
-2008-07-01,2008,7,Tombstone Mtn.,856.0,968.0,-11.6,1655.0,1680.0,-1.5,January - July
-2008-08-01,2008,8,Tombstone Mtn.,758.0,1143.0,-33.7,2413.0,2823.0,-14.5,January - August
-2008-09-01,2008,9,Tombstone Mtn.,204.0,153.0,33.3,2617.0,2976.0,-12.1,January - September
-2008-10-01,2008,10,Tombstone Mtn.,0.0,0.0,,2617.0,2976.0,-12.1,January - October
-2008-11-01,2008,11,Tombstone Mtn.,0.0,0.0,,2617.0,2976.0,-12.1,January - November
-2008-12-01,2008,12,Tombstone Mtn.,0.0,0.0,,2617.0,2976.0,-12.1,January - December
-2008-01-01,2008,1,Watson Lake,0.0,0.0,,0.0,0.0,,January - January
-2018-03-01,2018,3,Yukon River,0.0,2.0,-100.0,0.0,6.0,-100.0,January - March
-2018-04-01,2018,4,Yukon River,2.0,0.0,,2.0,6.0,-66.7,January - April
-2018-05-01,2018,5,Yukon River,382.0,421.0,-9.3,384.0,427.0,-10.1,January - May
-2018-06-01,2018,6,Yukon River,2186.0,2112.0,3.5,2570.0,2539.0,1.2,January - June
-2018-07-01,2018,7,Yukon River,2887.0,2204.0,31.0,5457.0,4743.0,15.1,January - July
-2018-08-01,2018,8,Yukon River,2183.0,1873.0,16.6,7640.0,6616.0,15.5,January - August
-2018-09-01,2018,9,Yukon River,494.0,547.0,-9.7,8134.0,7163.0,13.6,January - September
-2018-10-01,2018,10,Yukon River,3.0,0.0,,8137.0,7163.0,13.6,January - October
-2018-11-01,2018,11,Yukon River,0.0,0.0,,8137.0,7163.0,13.6,January - November
-2018-12-01,2018,12,Yukon River,0.0,0.0,,8137.0,7163.0,13.6,January - December
-2019-01-01,2019,1,Congdon Creek,0.0,0.0,,0.0,0.0,,January - January
-2019-02-01,2019,2,Congdon Creek,2.0,0.0,,2.0,0.0,,January - February
-2019-03-01,2019,3,Congdon Creek,0.0,0.0,,2.0,0.0,,January - March
-2019-04-01,2019,4,Congdon Creek,4.0,4.0,0.0,6.0,4.0,50.0,January - April
-2019-05-01,2019,5,Congdon Creek,519.0,488.0,6.4,525.0,492.0,6.7,January - May
-2019-06-01,2019,6,Congdon Creek,1437.0,1276.0,12.6,1962.0,1768.0,11.0,January - June
-2019-07-01,2019,7,Congdon Creek,1699.0,1746.0,-2.7,3661.0,3514.0,4.2,January - July
-2019-08-01,2019,8,Congdon Creek,1680.0,1555.0,8.0,5341.0,5069.0,5.4,January - August
-2019-09-01,2019,9,Congdon Creek,907.0,848.0,7.0,6248.0,5917.0,5.6,January - September
-2019-10-01,2019,10,Congdon Creek,0.0,0.0,,6248.0,5917.0,5.6,January - October
-2019-11-01,2019,11,Congdon Creek,0.0,0.0,,6248.0,5917.0,5.6,January - November
-2019-12-01,2019,12,Congdon Creek,0.0,0.0,,6248.0,5917.0,5.6,January - December
-2019-01-01,2019,1,Conrad,2.0,0.0,,2.0,0.0,,January - January
-2019-02-01,2019,2,Conrad,0.0,0.0,,2.0,0.0,,January - February
-2019-03-01,2019,3,Conrad,0.0,0.0,,2.0,0.0,,January - March
-2019-04-01,2019,4,Conrad,0.0,4.0,-100.0,2.0,4.0,-50.0,January - April
-2019-05-01,2019,5,Conrad,467.0,349.0,33.8,469.0,353.0,32.9,January - May
-2019-06-01,2019,6,Conrad,986.0,955.0,3.2,1455.0,1308.0,11.2,January - June
-2019-07-01,2019,7,Conrad,1295.0,1122.0,15.4,2750.0,2430.0,13.2,January - July
-2019-08-01,2019,8,Conrad,1137.0,830.0,37.0,3887.0,3260.0,19.2,January - August
-2019-09-01,2019,9,Conrad,529.0,447.0,18.3,4416.0,3707.0,19.1,January - September
-2019-10-01,2019,10,Conrad,0.0,2.0,-100.0,4416.0,3709.0,19.1,January - October
-2019-11-01,2019,11,Conrad,0.0,0.0,,4416.0,3709.0,19.1,January - November
-2019-12-01,2019,12,Conrad,0.0,0.0,,4416.0,3709.0,19.1,January - December
-2019-01-01,2019,1,Fox Lake,0.0,0.0,,0.0,0.0,,January - January
-2019-02-01,2019,2,Fox Lake,0.0,0.0,,0.0,0.0,,January - February
-2019-03-01,2019,3,Fox Lake,0.0,0.0,,0.0,0.0,,January - March
-2019-04-01,2019,4,Fox Lake,0.0,0.0,,0.0,0.0,,January - April
-2019-05-01,2019,5,Fox Lake,325.0,285.0,14.0,325.0,285.0,14.0,January - May
-2019-06-01,2019,6,Fox Lake,849.0,750.0,13.2,1174.0,1035.0,13.4,January - June
-2019-07-01,2019,7,Fox Lake,962.0,986.0,-2.4,2136.0,2021.0,5.7,January - July
-2019-08-01,2019,8,Fox Lake,833.0,753.0,10.6,2969.0,2774.0,7.0,January - August
-2019-09-01,2019,9,Fox Lake,389.0,257.0,51.4,3358.0,3031.0,10.8,January - September
-2019-10-01,2019,10,Fox Lake,0.0,0.0,,3358.0,3031.0,10.8,January - October
-2019-11-01,2019,11,Fox Lake,0.0,0.0,,3358.0,3031.0,10.8,January - November
-2019-12-01,2019,12,Fox Lake,0.0,0.0,,3358.0,3031.0,10.8,January - December
-2019-01-01,2019,1,Marsh Lake,0.0,0.0,,0.0,0.0,,January - January
 2008-02-01,2008,2,Watson Lake,0.0,0.0,,0.0,0.0,,January - February
 2008-03-01,2008,3,Watson Lake,0.0,0.0,,0.0,0.0,,January - March
 2008-04-01,2008,4,Watson Lake,2.0,0.0,,2.0,0.0,,January - April
@@ -1427,52 +1160,52 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2009-09-01,2009,9,Congdon Creek,311.0,270.0,15.2,2697.0,2741.0,-1.6,January - September
 2009-10-01,2009,10,Congdon Creek,7.0,2.0,250.0,2704.0,2743.0,-1.4,January - October
 2009-11-01,2009,11,Congdon Creek,0.0,0.0,,2704.0,2743.0,-1.4,January - November
-2019-02-01,2019,2,Marsh Lake,0.0,0.0,,0.0,0.0,,January - February
-2019-03-01,2019,3,Marsh Lake,2.0,0.0,,2.0,0.0,,January - March
-2019-04-01,2019,4,Marsh Lake,0.0,0.0,,2.0,0.0,,January - April
-2019-05-01,2019,5,Marsh Lake,559.0,446.0,25.3,561.0,446.0,25.8,January - May
-2019-06-01,2019,6,Marsh Lake,1213.0,1168.0,3.9,1774.0,1614.0,9.9,January - June
-2019-07-01,2019,7,Marsh Lake,1441.0,1419.0,1.6,3215.0,3033.0,6.0,January - July
-2019-08-01,2019,8,Marsh Lake,1050.0,1016.0,3.3,4265.0,4049.0,5.3,January - August
-2019-09-01,2019,9,Marsh Lake,464.0,371.0,25.1,4729.0,4420.0,7.0,January - September
-2019-10-01,2019,10,Marsh Lake,0.0,0.0,,4729.0,4420.0,7.0,January - October
-2019-11-01,2019,11,Marsh Lake,0.0,0.0,,4729.0,4420.0,7.0,January - November
-2019-12-01,2019,12,Marsh Lake,0.0,0.0,,4729.0,4420.0,7.0,January - December
-2019-01-01,2019,1,Pine Lake,0.0,3.0,-100.0,0.0,3.0,-100.0,January - January
-2019-02-01,2019,2,Pine Lake,0.0,0.0,,0.0,3.0,-100.0,January - February
-2019-03-01,2019,3,Pine Lake,0.0,0.0,,0.0,3.0,-100.0,January - March
-2019-04-01,2019,4,Pine Lake,3.0,0.0,,3.0,3.0,0.0,January - April
-2019-05-01,2019,5,Pine Lake,577.0,624.0,-7.5,580.0,627.0,-7.5,January - May
-2019-06-01,2019,6,Pine Lake,1320.0,1635.0,-19.3,1900.0,2262.0,-16.0,January - June
-2019-07-01,2019,7,Pine Lake,1529.0,1764.0,-13.3,3429.0,4026.0,-14.8,January - July
-2019-08-01,2019,8,Pine Lake,1252.0,1459.0,-14.2,4681.0,5485.0,-14.7,January - August
-2019-09-01,2019,9,Pine Lake,736.0,657.0,12.0,5417.0,6142.0,-11.8,January - September
-2019-10-01,2019,10,Pine Lake,2.0,32.0,-93.8,5419.0,6174.0,-12.2,January - October
-2019-11-01,2019,11,Pine Lake,0.0,2.0,-100.0,5419.0,6176.0,-12.3,January - November
-2019-12-01,2019,12,Pine Lake,0.0,0.0,,5419.0,6176.0,-12.3,January - December
-2019-01-01,2019,1,Teslin Lake,0.0,0.0,,0.0,0.0,,January - January
-2019-02-01,2019,2,Teslin Lake,0.0,0.0,,0.0,0.0,,January - February
-2019-03-01,2019,3,Teslin Lake,0.0,0.0,,0.0,0.0,,January - March
-2019-04-01,2019,4,Teslin Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - April
-2019-05-01,2019,5,Teslin Lake,269.0,295.0,-8.8,269.0,297.0,-9.4,January - May
-2019-06-01,2019,6,Teslin Lake,809.0,1081.0,-25.2,1078.0,1378.0,-21.8,January - June
-2019-07-01,2019,7,Teslin Lake,1101.0,1171.0,-6.0,2179.0,2549.0,-14.5,January - July
-2019-08-01,2019,8,Teslin Lake,850.0,853.0,-0.4,3029.0,3402.0,-11.0,January - August
-2019-09-01,2019,9,Teslin Lake,237.0,163.0,45.4,3266.0,3565.0,-8.4,January - September
-2019-10-01,2019,10,Teslin Lake,5.0,0.0,,3271.0,3565.0,-8.2,January - October
-2019-11-01,2019,11,Teslin Lake,0.0,0.0,,3271.0,3565.0,-8.2,January - November
-2019-12-01,2019,12,Teslin Lake,0.0,0.0,,3271.0,3565.0,-8.2,January - December
-2019-01-01,2019,1,Tombstone Mtn.,2.0,0.0,,2.0,0.0,,January - January
-2019-02-01,2019,2,Tombstone Mtn.,0.0,0.0,,2.0,0.0,,January - February
-2019-03-01,2019,3,Tombstone Mtn.,0.0,0.0,,2.0,0.0,,January - March
-2019-04-01,2019,4,Tombstone Mtn.,2.0,4.0,-50.0,4.0,4.0,0.0,January - April
-2019-05-01,2019,5,Tombstone Mtn.,260.0,218.0,19.3,264.0,222.0,18.9,January - May
-2019-06-01,2019,6,Tombstone Mtn.,1495.0,1577.0,-5.2,1759.0,1799.0,-2.2,January - June
-2019-07-01,2019,7,Tombstone Mtn.,1789.0,1993.0,-10.2,3548.0,3792.0,-6.4,January - July
-2019-08-01,2019,8,Tombstone Mtn.,2170.0,2032.0,6.8,5718.0,5824.0,-1.8,January - August
-2019-09-01,2019,9,Tombstone Mtn.,732.0,170.0,330.6,6450.0,5994.0,7.6,January - September
-2019-10-01,2019,10,Tombstone Mtn.,4.0,4.0,0.0,6454.0,5998.0,7.6,January - October
-2019-11-01,2019,11,Tombstone Mtn.,0.0,2.0,-100.0,6454.0,6000.0,7.6,January - November
+2018-05-01,2018,5,Teslin Lake,295.0,198.0,49.0,297.0,200.0,48.5,January - May
+2018-06-01,2018,6,Teslin Lake,1081.0,793.0,36.3,1378.0,993.0,38.8,January - June
+2018-07-01,2018,7,Teslin Lake,1171.0,1065.0,10.0,2549.0,2058.0,23.9,January - July
+2018-08-01,2018,8,Teslin Lake,853.0,903.0,-5.5,3402.0,2961.0,14.9,January - August
+2018-09-01,2018,9,Teslin Lake,163.0,309.0,-47.2,3565.0,3270.0,9.0,January - September
+2018-10-01,2018,10,Teslin Lake,0.0,0.0,,3565.0,3270.0,9.0,January - October
+2018-11-01,2018,11,Teslin Lake,0.0,0.0,,3565.0,3270.0,9.0,January - November
+2018-12-01,2018,12,Teslin Lake,0.0,0.0,,3565.0,3270.0,9.0,January - December
+2018-01-01,2018,1,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - January
+2018-02-01,2018,2,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - February
+2018-03-01,2018,3,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - March
+2018-04-01,2018,4,Tombstone Mtn.,4.0,0.0,,4.0,0.0,,January - April
+2018-05-01,2018,5,Tombstone Mtn.,218.0,165.0,32.1,222.0,165.0,34.5,January - May
+2018-06-01,2018,6,Tombstone Mtn.,1577.0,1170.0,34.8,1799.0,1335.0,34.8,January - June
+2018-07-01,2018,7,Tombstone Mtn.,1993.0,1551.0,28.5,3792.0,2886.0,31.4,January - July
+2018-08-01,2018,8,Tombstone Mtn.,2032.0,1794.0,13.3,5824.0,4680.0,24.4,January - August
+2018-09-01,2018,9,Tombstone Mtn.,170.0,733.0,-76.8,5994.0,5413.0,10.7,January - September
+2018-10-01,2018,10,Tombstone Mtn.,4.0,8.0,-50.0,5998.0,5421.0,10.6,January - October
+2018-11-01,2018,11,Tombstone Mtn.,2.0,0.0,,6000.0,5421.0,10.7,January - November
+2018-12-01,2018,12,Tombstone Mtn.,2.0,0.0,,6002.0,5421.0,10.7,January - December
+2018-01-01,2018,1,Watson Lake,0.0,0.0,,0.0,0.0,,January - January
+2018-02-01,2018,2,Watson Lake,0.0,0.0,,0.0,0.0,,January - February
+2018-03-01,2018,3,Watson Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - March
+2018-04-01,2018,4,Watson Lake,0.0,3.0,-100.0,0.0,5.0,-100.0,January - April
+2018-05-01,2018,5,Watson Lake,424.0,338.0,25.4,424.0,343.0,23.6,January - May
+2018-06-01,2018,6,Watson Lake,1337.0,1075.0,24.4,1761.0,1418.0,24.2,January - June
+2018-07-01,2018,7,Watson Lake,1670.0,1440.0,16.0,3431.0,2858.0,20.0,January - July
+2018-08-01,2018,8,Watson Lake,1361.0,1359.0,0.1,4792.0,4217.0,13.6,January - August
+2018-09-01,2018,9,Watson Lake,532.0,418.0,27.3,5324.0,4635.0,14.9,January - September
+2018-10-01,2018,10,Watson Lake,0.0,0.0,,5324.0,4635.0,14.9,January - October
+2018-11-01,2018,11,Watson Lake,0.0,0.0,,5324.0,4635.0,14.9,January - November
+2018-12-01,2018,12,Watson Lake,0.0,0.0,,5324.0,4635.0,14.9,January - December
+2018-01-01,2018,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
+2018-02-01,2018,2,Wolf Creek,0.0,0.0,,0.0,0.0,,January - February
+2018-03-01,2018,3,Wolf Creek,2.0,0.0,,2.0,0.0,,January - March
+2018-04-01,2018,4,Wolf Creek,5.0,0.0,,7.0,0.0,,January - April
+2018-05-01,2018,5,Wolf Creek,722.0,595.0,21.3,729.0,595.0,22.5,January - May
+2018-06-01,2018,6,Wolf Creek,1206.0,1034.0,16.6,1935.0,1629.0,18.8,January - June
+2018-07-01,2018,7,Wolf Creek,1370.0,1284.0,6.7,3305.0,2913.0,13.5,January - July
+2018-08-01,2018,8,Wolf Creek,1225.0,1262.0,-2.9,4530.0,4175.0,8.5,January - August
+2018-09-01,2018,9,Wolf Creek,693.0,685.0,1.2,5223.0,4860.0,7.5,January - September
+2018-10-01,2018,10,Wolf Creek,0.0,7.0,-100.0,5223.0,4867.0,7.3,January - October
+2018-11-01,2018,11,Wolf Creek,0.0,0.0,,5223.0,4867.0,7.3,January - November
+2018-12-01,2018,12,Wolf Creek,0.0,0.0,,5223.0,4867.0,7.3,January - December
+2018-01-01,2018,1,Yukon River,0.0,0.0,,0.0,0.0,,January - January
+2018-02-01,2018,2,Yukon River,0.0,4.0,-100.0,0.0,4.0,-100.0,January - February
 2009-12-01,2009,12,Congdon Creek,2.0,0.0,,2706.0,2743.0,-1.3,January - December
 2009-01-01,2009,1,Conrad,0.0,0.0,,0.0,0.0,,January - January
 2009-02-01,2009,2,Conrad,0.0,0.0,,0.0,0.0,,January - February
@@ -1567,52 +1300,6 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2009-07-01,2009,7,Wolf Creek,1142.0,1019.0,12.1,2405.0,2508.0,-4.1,January - July
 2009-08-01,2009,8,Wolf Creek,945.0,917.0,3.1,3350.0,3425.0,-2.2,January - August
 2009-09-01,2009,9,Wolf Creek,296.0,336.0,-11.9,3646.0,3761.0,-3.1,January - September
-2019-12-01,2019,12,Tombstone Mtn.,0.0,2.0,-100.0,6454.0,6002.0,7.5,January - December
-2019-01-01,2019,1,Watson Lake,0.0,0.0,,0.0,0.0,,January - January
-2019-02-01,2019,2,Watson Lake,0.0,0.0,,0.0,0.0,,January - February
-2019-03-01,2019,3,Watson Lake,2.0,0.0,,2.0,0.0,,January - March
-2019-04-01,2019,4,Watson Lake,2.0,0.0,,4.0,0.0,,January - April
-2019-05-01,2019,5,Watson Lake,511.0,424.0,20.5,515.0,424.0,21.5,January - May
-2019-06-01,2019,6,Watson Lake,1506.0,1337.0,12.6,2021.0,1761.0,14.8,January - June
-2019-07-01,2019,7,Watson Lake,1797.0,1670.0,7.6,3818.0,3431.0,11.3,January - July
-2019-08-01,2019,8,Watson Lake,1022.0,1361.0,-24.9,4840.0,4792.0,1.0,January - August
-2019-09-01,2019,9,Watson Lake,563.0,532.0,5.8,5403.0,5324.0,1.5,January - September
-2019-10-01,2019,10,Watson Lake,0.0,0.0,,5403.0,5324.0,1.5,January - October
-2019-11-01,2019,11,Watson Lake,0.0,0.0,,5403.0,5324.0,1.5,January - November
-2019-12-01,2019,12,Watson Lake,0.0,0.0,,5403.0,5324.0,1.5,January - December
-2019-01-01,2019,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
-2019-02-01,2019,2,Wolf Creek,2.0,0.0,,2.0,0.0,,January - February
-2019-03-01,2019,3,Wolf Creek,2.0,2.0,0.0,4.0,2.0,100.0,January - March
-2019-04-01,2019,4,Wolf Creek,0.0,5.0,-100.0,4.0,7.0,-42.9,January - April
-2019-05-01,2019,5,Wolf Creek,712.0,722.0,-1.4,716.0,729.0,-1.8,January - May
-2019-06-01,2019,6,Wolf Creek,1072.0,1206.0,-11.1,1788.0,1935.0,-7.6,January - June
-2019-07-01,2019,7,Wolf Creek,1107.0,1370.0,-19.2,2895.0,3305.0,-12.4,January - July
-2019-08-01,2019,8,Wolf Creek,1541.0,1225.0,25.8,4436.0,4530.0,-2.1,January - August
-2019-09-01,2019,9,Wolf Creek,1050.0,693.0,51.5,5486.0,5223.0,5.0,January - September
-2019-10-01,2019,10,Wolf Creek,3.0,0.0,,5489.0,5223.0,5.1,January - October
-2019-11-01,2019,11,Wolf Creek,0.0,0.0,,5489.0,5223.0,5.1,January - November
-2019-12-01,2019,12,Wolf Creek,0.0,0.0,,5489.0,5223.0,5.1,January - December
-2019-01-01,2019,1,Yukon River,0.0,0.0,,0.0,0.0,,January - January
-2019-02-01,2019,2,Yukon River,4.0,0.0,,4.0,0.0,,January - February
-2019-03-01,2019,3,Yukon River,0.0,0.0,,4.0,0.0,,January - March
-2019-04-01,2019,4,Yukon River,0.0,2.0,-100.0,4.0,2.0,100.0,January - April
-2019-05-01,2019,5,Yukon River,358.0,382.0,-6.3,362.0,384.0,-5.7,January - May
-2019-06-01,2019,6,Yukon River,2329.0,2186.0,6.5,2691.0,2570.0,4.7,January - June
-2019-07-01,2019,7,Yukon River,2245.0,2887.0,-22.2,4936.0,5457.0,-9.5,January - July
-2019-08-01,2019,8,Yukon River,2175.0,2183.0,-0.4,7111.0,7640.0,-6.9,January - August
-2019-09-01,2019,9,Yukon River,481.0,494.0,-2.6,7592.0,8134.0,-6.7,January - September
-2019-10-01,2019,10,Yukon River,2.0,3.0,-33.3,7594.0,8137.0,-6.7,January - October
-2019-11-01,2019,11,Yukon River,0.0,0.0,,7594.0,8137.0,-6.7,January - November
-2019-12-01,2019,12,Yukon River,0.0,0.0,,7594.0,8137.0,-6.7,January - December
-2020-01-01,2020,1,Congdon Creek,0.0,0.0,,0.0,0.0,,January - January
-2020-02-01,2020,2,Congdon Creek,0.0,2.0,-100.0,0.0,2.0,-100.0,January - February
-2020-03-01,2020,3,Congdon Creek,0.0,0.0,,0.0,2.0,-100.0,January - March
-2020-04-01,2020,4,Congdon Creek,0.0,4.0,-100.0,0.0,6.0,-100.0,January - April
-2020-05-01,2020,5,Congdon Creek,0.0,519.0,-100.0,0.0,525.0,-100.0,January - May
-2020-06-01,2020,6,Congdon Creek,335.0,1437.0,-76.7,335.0,1962.0,-82.9,January - June
-2020-07-01,2020,7,Congdon Creek,432.0,1699.0,-74.6,767.0,3661.0,-79.0,January - July
-2020-08-01,2020,8,Congdon Creek,320.0,1680.0,-81.0,1087.0,5341.0,-79.6,January - August
-2020-09-01,2020,9,Congdon Creek,223.0,907.0,-75.4,1310.0,6248.0,-79.0,January - September
 2009-10-01,2009,10,Wolf Creek,0.0,0.0,,3646.0,3761.0,-3.1,January - October
 2009-11-01,2009,11,Wolf Creek,0.0,0.0,,3646.0,3761.0,-3.1,January - November
 2009-12-01,2009,12,Wolf Creek,0.0,0.0,,3646.0,3761.0,-3.1,January - December
@@ -1660,117 +1347,6 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2010-06-01,2010,6,Fox Lake,738.0,598.0,23.4,917.0,782.0,17.3,January - June
 2010-07-01,2010,7,Fox Lake,803.0,834.0,-3.7,1720.0,1616.0,6.4,January - July
 2010-08-01,2010,8,Fox Lake,614.0,493.0,24.5,2334.0,2109.0,10.7,January - August
-2020-10-01,2020,10,Congdon Creek,0.0,0.0,,1310.0,6248.0,-79.0,January - October
-2020-11-01,2020,11,Congdon Creek,0.0,0.0,,1310.0,6248.0,-79.0,January - November
-2020-12-01,2020,12,Congdon Creek,0.0,0.0,,1310.0,6248.0,-79.0,January - December
-2020-01-01,2020,1,Conrad,0.0,2.0,-100.0,0.0,2.0,-100.0,January - January
-2020-02-01,2020,2,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - February
-2020-03-01,2020,3,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - March
-2020-04-01,2020,4,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - April
-2020-05-01,2020,5,Conrad,3.0,467.0,-99.4,3.0,469.0,-99.4,January - May
-2020-06-01,2020,6,Conrad,521.0,986.0,-47.2,524.0,1455.0,-64.0,January - June
-2020-07-01,2020,7,Conrad,637.0,1295.0,-50.8,1161.0,2750.0,-57.8,January - July
-2020-08-01,2020,8,Conrad,691.0,1137.0,-39.2,1852.0,3887.0,-52.4,January - August
-2020-09-01,2020,9,Conrad,492.0,529.0,-7.0,2344.0,4416.0,-46.9,January - September
-2020-10-01,2020,10,Conrad,0.0,0.0,,2344.0,4416.0,-46.9,January - October
-2020-11-01,2020,11,Conrad,0.0,0.0,,2344.0,4416.0,-46.9,January - November
-2020-12-01,2020,12,Conrad,0.0,0.0,,2344.0,4416.0,-46.9,January - December
-2020-01-01,2020,1,Fox Lake,0.0,0.0,,0.0,0.0,,January - January
-2020-02-01,2020,2,Fox Lake,0.0,0.0,,0.0,0.0,,January - February
-2020-03-01,2020,3,Fox Lake,0.0,0.0,,0.0,0.0,,January - March
-2020-04-01,2020,4,Fox Lake,0.0,0.0,,0.0,0.0,,January - April
-2020-05-01,2020,5,Fox Lake,11.0,325.0,-96.6,11.0,325.0,-96.6,January - May
-2020-06-01,2020,6,Fox Lake,618.0,849.0,-27.2,629.0,1174.0,-46.4,January - June
-2020-07-01,2020,7,Fox Lake,700.0,962.0,-27.2,1329.0,2136.0,-37.8,January - July
-2020-08-01,2020,8,Fox Lake,564.0,833.0,-32.3,1893.0,2969.0,-36.2,January - August
-2020-09-01,2020,9,Fox Lake,275.0,389.0,-29.3,2168.0,3358.0,-35.4,January - September
-2020-10-01,2020,10,Fox Lake,2.0,0.0,,2170.0,3358.0,-35.4,January - October
-2020-11-01,2020,11,Fox Lake,0.0,0.0,,2170.0,3358.0,-35.4,January - November
-2020-12-01,2020,12,Fox Lake,0.0,0.0,,2170.0,3358.0,-35.4,January - December
-2020-01-01,2020,1,Marsh Lake,3.0,0.0,,3.0,0.0,,January - January
-2020-02-01,2020,2,Marsh Lake,0.0,0.0,,3.0,0.0,,January - February
-2020-03-01,2020,3,Marsh Lake,0.0,2.0,-100.0,3.0,2.0,50.0,January - March
-2020-04-01,2020,4,Marsh Lake,0.0,0.0,,3.0,2.0,50.0,January - April
-2020-05-01,2020,5,Marsh Lake,11.0,559.0,-98.0,14.0,561.0,-97.5,January - May
-2020-06-01,2020,6,Marsh Lake,880.0,1213.0,-27.5,894.0,1774.0,-49.6,January - June
-2020-07-01,2020,7,Marsh Lake,916.0,1441.0,-36.4,1810.0,3215.0,-43.7,January - July
-2020-08-01,2020,8,Marsh Lake,592.0,1050.0,-43.6,2402.0,4265.0,-43.7,January - August
-2020-09-01,2020,9,Marsh Lake,239.0,464.0,-48.5,2641.0,4729.0,-44.2,January - September
-2020-10-01,2020,10,Marsh Lake,3.0,0.0,,2644.0,4729.0,-44.1,January - October
-2020-11-01,2020,11,Marsh Lake,0.0,0.0,,2644.0,4729.0,-44.1,January - November
-2020-12-01,2020,12,Marsh Lake,0.0,0.0,,2644.0,4729.0,-44.1,January - December
-2020-01-01,2020,1,Pine Lake,0.0,0.0,,0.0,0.0,,January - January
-2020-02-01,2020,2,Pine Lake,0.0,0.0,,0.0,0.0,,January - February
-2020-03-01,2020,3,Pine Lake,0.0,0.0,,0.0,0.0,,January - March
-2020-04-01,2020,4,Pine Lake,3.0,3.0,0.0,3.0,3.0,0.0,January - April
-2020-05-01,2020,5,Pine Lake,5.0,577.0,-99.1,8.0,580.0,-98.6,January - May
-2020-06-01,2020,6,Pine Lake,645.0,1320.0,-51.1,653.0,1900.0,-65.6,January - June
-2020-07-01,2020,7,Pine Lake,723.0,1529.0,-52.7,1376.0,3429.0,-59.9,January - July
-2020-08-01,2020,8,Pine Lake,545.0,1252.0,-56.5,1921.0,4681.0,-59.0,January - August
-2020-09-01,2020,9,Pine Lake,323.0,736.0,-56.1,2244.0,5417.0,-58.6,January - September
-2020-10-01,2020,10,Pine Lake,0.0,2.0,-100.0,2244.0,5419.0,-58.6,January - October
-2020-11-01,2020,11,Pine Lake,0.0,0.0,,2244.0,5419.0,-58.6,January - November
-2020-12-01,2020,12,Pine Lake,0.0,0.0,,2244.0,5419.0,-58.6,January - December
-2020-01-01,2020,1,Teslin Lake,0.0,0.0,,0.0,0.0,,January - January
-2020-02-01,2020,2,Teslin Lake,0.0,0.0,,0.0,0.0,,January - February
-2020-03-01,2020,3,Teslin Lake,0.0,0.0,,0.0,0.0,,January - March
-2020-04-01,2020,4,Teslin Lake,0.0,0.0,,0.0,0.0,,January - April
-2020-05-01,2020,5,Teslin Lake,5.0,269.0,-98.1,5.0,269.0,-98.1,January - May
-2020-06-01,2020,6,Teslin Lake,204.0,809.0,-74.8,209.0,1078.0,-80.6,January - June
-2020-07-01,2020,7,Teslin Lake,313.0,1101.0,-71.6,522.0,2179.0,-76.0,January - July
-2020-08-01,2020,8,Teslin Lake,337.0,850.0,-60.4,859.0,3029.0,-71.6,January - August
-2020-09-01,2020,9,Teslin Lake,117.0,237.0,-50.6,976.0,3266.0,-70.1,January - September
-2020-10-01,2020,10,Teslin Lake,0.0,5.0,-100.0,976.0,3271.0,-70.2,January - October
-2020-11-01,2020,11,Teslin Lake,0.0,0.0,,976.0,3271.0,-70.2,January - November
-2020-12-01,2020,12,Teslin Lake,0.0,0.0,,976.0,3271.0,-70.2,January - December
-2020-01-01,2020,1,Tombstone Mtn.,0.0,2.0,-100.0,0.0,2.0,-100.0,January - January
-2020-02-01,2020,2,Tombstone Mtn.,0.0,0.0,,0.0,2.0,-100.0,January - February
-2020-03-01,2020,3,Tombstone Mtn.,0.0,0.0,,0.0,2.0,-100.0,January - March
-2020-04-01,2020,4,Tombstone Mtn.,0.0,2.0,-100.0,0.0,4.0,-100.0,January - April
-2020-05-01,2020,5,Tombstone Mtn.,8.0,260.0,-96.9,8.0,264.0,-97.0,January - May
-2020-06-01,2020,6,Tombstone Mtn.,505.0,1495.0,-66.2,513.0,1759.0,-70.8,January - June
-2020-07-01,2020,7,Tombstone Mtn.,980.0,1789.0,-45.2,1493.0,3548.0,-57.9,January - July
-2020-08-01,2020,8,Tombstone Mtn.,1407.0,2170.0,-35.2,2900.0,5718.0,-49.3,January - August
-2020-09-01,2020,9,Tombstone Mtn.,560.0,732.0,-23.5,3460.0,6450.0,-46.4,January - September
-2020-10-01,2020,10,Tombstone Mtn.,5.0,4.0,25.0,3465.0,6454.0,-46.3,January - October
-2020-11-01,2020,11,Tombstone Mtn.,0.0,0.0,,3465.0,6454.0,-46.3,January - November
-2020-12-01,2020,12,Tombstone Mtn.,0.0,0.0,,3465.0,6454.0,-46.3,January - December
-2020-01-01,2020,1,Watson Lake,0.0,0.0,,0.0,0.0,,January - January
-2020-02-01,2020,2,Watson Lake,0.0,0.0,,0.0,0.0,,January - February
-2020-03-01,2020,3,Watson Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - March
-2020-04-01,2020,4,Watson Lake,0.0,2.0,-100.0,0.0,4.0,-100.0,January - April
-2020-05-01,2020,5,Watson Lake,0.0,511.0,-100.0,0.0,515.0,-100.0,January - May
-2020-06-01,2020,6,Watson Lake,117.0,1506.0,-92.2,117.0,2021.0,-94.2,January - June
-2020-07-01,2020,7,Watson Lake,403.0,1797.0,-77.6,520.0,3818.0,-86.4,January - July
-2020-08-01,2020,8,Watson Lake,461.0,1022.0,-54.9,981.0,4840.0,-79.7,January - August
-2020-09-01,2020,9,Watson Lake,237.0,563.0,-57.9,1218.0,5403.0,-77.5,January - September
-2020-10-01,2020,10,Watson Lake,5.0,0.0,,1223.0,5403.0,-77.4,January - October
-2020-11-01,2020,11,Watson Lake,0.0,0.0,,1223.0,5403.0,-77.4,January - November
-2020-12-01,2020,12,Watson Lake,0.0,0.0,,1223.0,5403.0,-77.4,January - December
-2020-01-01,2020,1,Wolf Creek,5.0,0.0,,5.0,0.0,,January - January
-2020-02-01,2020,2,Wolf Creek,0.0,2.0,-100.0,5.0,2.0,150.0,January - February
-2020-03-01,2020,3,Wolf Creek,0.0,2.0,-100.0,5.0,4.0,25.0,January - March
-2020-04-01,2020,4,Wolf Creek,0.0,0.0,,5.0,4.0,25.0,January - April
-2020-05-01,2020,5,Wolf Creek,5.0,712.0,-99.3,10.0,716.0,-98.6,January - May
-2020-06-01,2020,6,Wolf Creek,658.0,1072.0,-38.6,668.0,1788.0,-62.6,January - June
-2020-07-01,2020,7,Wolf Creek,742.0,1107.0,-33.0,1410.0,2895.0,-51.3,January - July
-2020-08-01,2020,8,Wolf Creek,824.0,1541.0,-46.5,2234.0,4436.0,-49.6,January - August
-2020-09-01,2020,9,Wolf Creek,477.0,1050.0,-54.6,2711.0,5486.0,-50.6,January - September
-2020-10-01,2020,10,Wolf Creek,0.0,3.0,-100.0,2711.0,5489.0,-50.6,January - October
-2020-11-01,2020,11,Wolf Creek,0.0,0.0,,2711.0,5489.0,-50.6,January - November
-2020-12-01,2020,12,Wolf Creek,0.0,0.0,,2711.0,5489.0,-50.6,January - December
-2020-01-01,2020,1,Yukon River,0.0,0.0,,0.0,0.0,,January - January
-2020-02-01,2020,2,Yukon River,0.0,4.0,-100.0,0.0,4.0,-100.0,January - February
-2020-03-01,2020,3,Yukon River,0.0,0.0,,0.0,4.0,-100.0,January - March
-2020-04-01,2020,4,Yukon River,0.0,0.0,,0.0,4.0,-100.0,January - April
-2020-05-01,2020,5,Yukon River,12.0,358.0,-96.6,12.0,362.0,-96.7,January - May
-2020-06-01,2020,6,Yukon River,455.0,2329.0,-80.5,467.0,2691.0,-82.6,January - June
-2020-07-01,2020,7,Yukon River,896.0,2245.0,-60.1,1363.0,4936.0,-72.4,January - July
-2020-08-01,2020,8,Yukon River,1172.0,2175.0,-46.1,2535.0,7111.0,-64.4,January - August
-2020-09-01,2020,9,Yukon River,177.0,481.0,-63.2,2712.0,7592.0,-64.3,January - September
-2020-10-01,2020,10,Yukon River,0.0,2.0,-100.0,2712.0,7594.0,-64.3,January - October
-2020-11-01,2020,11,Yukon River,0.0,0.0,,2712.0,7594.0,-64.3,January - November
-2020-12-01,2020,12,Yukon River,0.0,0.0,,2712.0,7594.0,-64.3,January - December
 2010-09-01,2010,9,Fox Lake,184.0,172.0,7.0,2518.0,2281.0,10.4,January - September
 2010-10-01,2010,10,Fox Lake,0.0,0.0,,2518.0,2281.0,10.4,January - October
 2010-11-01,2010,11,Fox Lake,0.0,0.0,,2518.0,2281.0,10.4,January - November
@@ -2096,6 +1672,99 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2012-07-01,2012,7,Yukon River,1670.0,1473.0,13.4,3000.0,2684.0,11.8,January - July
 2012-08-01,2012,8,Yukon River,1249.0,1057.0,18.2,4249.0,3741.0,13.6,January - August
 2012-09-01,2012,9,Yukon River,263.0,243.0,8.2,4512.0,3984.0,13.3,January - September
+2018-03-01,2018,3,Yukon River,0.0,2.0,-100.0,0.0,6.0,-100.0,January - March
+2018-04-01,2018,4,Yukon River,2.0,0.0,,2.0,6.0,-66.7,January - April
+2018-05-01,2018,5,Yukon River,382.0,421.0,-9.3,384.0,427.0,-10.1,January - May
+2018-06-01,2018,6,Yukon River,2186.0,2112.0,3.5,2570.0,2539.0,1.2,January - June
+2018-07-01,2018,7,Yukon River,2887.0,2204.0,31.0,5457.0,4743.0,15.1,January - July
+2018-08-01,2018,8,Yukon River,2183.0,1873.0,16.6,7640.0,6616.0,15.5,January - August
+2018-09-01,2018,9,Yukon River,494.0,547.0,-9.7,8134.0,7163.0,13.6,January - September
+2018-10-01,2018,10,Yukon River,3.0,0.0,,8137.0,7163.0,13.6,January - October
+2018-11-01,2018,11,Yukon River,0.0,0.0,,8137.0,7163.0,13.6,January - November
+2018-12-01,2018,12,Yukon River,0.0,0.0,,8137.0,7163.0,13.6,January - December
+2019-01-01,2019,1,Congdon Creek,0.0,0.0,,0.0,0.0,,January - January
+2019-02-01,2019,2,Congdon Creek,2.0,0.0,,2.0,0.0,,January - February
+2019-03-01,2019,3,Congdon Creek,0.0,0.0,,2.0,0.0,,January - March
+2019-04-01,2019,4,Congdon Creek,4.0,4.0,0.0,6.0,4.0,50.0,January - April
+2019-05-01,2019,5,Congdon Creek,519.0,488.0,6.4,525.0,492.0,6.7,January - May
+2019-06-01,2019,6,Congdon Creek,1437.0,1276.0,12.6,1962.0,1768.0,11.0,January - June
+2019-07-01,2019,7,Congdon Creek,1699.0,1746.0,-2.7,3661.0,3514.0,4.2,January - July
+2019-08-01,2019,8,Congdon Creek,1680.0,1555.0,8.0,5341.0,5069.0,5.4,January - August
+2019-09-01,2019,9,Congdon Creek,907.0,848.0,7.0,6248.0,5917.0,5.6,January - September
+2019-10-01,2019,10,Congdon Creek,0.0,0.0,,6248.0,5917.0,5.6,January - October
+2019-11-01,2019,11,Congdon Creek,0.0,0.0,,6248.0,5917.0,5.6,January - November
+2019-12-01,2019,12,Congdon Creek,0.0,0.0,,6248.0,5917.0,5.6,January - December
+2019-01-01,2019,1,Conrad,2.0,0.0,,2.0,0.0,,January - January
+2019-02-01,2019,2,Conrad,0.0,0.0,,2.0,0.0,,January - February
+2019-03-01,2019,3,Conrad,0.0,0.0,,2.0,0.0,,January - March
+2019-04-01,2019,4,Conrad,0.0,4.0,-100.0,2.0,4.0,-50.0,January - April
+2019-05-01,2019,5,Conrad,467.0,349.0,33.8,469.0,353.0,32.9,January - May
+2019-06-01,2019,6,Conrad,986.0,955.0,3.2,1455.0,1308.0,11.2,January - June
+2019-07-01,2019,7,Conrad,1295.0,1122.0,15.4,2750.0,2430.0,13.2,January - July
+2019-08-01,2019,8,Conrad,1137.0,830.0,37.0,3887.0,3260.0,19.2,January - August
+2019-09-01,2019,9,Conrad,529.0,447.0,18.3,4416.0,3707.0,19.1,January - September
+2019-10-01,2019,10,Conrad,0.0,2.0,-100.0,4416.0,3709.0,19.1,January - October
+2019-11-01,2019,11,Conrad,0.0,0.0,,4416.0,3709.0,19.1,January - November
+2019-12-01,2019,12,Conrad,0.0,0.0,,4416.0,3709.0,19.1,January - December
+2019-01-01,2019,1,Fox Lake,0.0,0.0,,0.0,0.0,,January - January
+2019-02-01,2019,2,Fox Lake,0.0,0.0,,0.0,0.0,,January - February
+2019-03-01,2019,3,Fox Lake,0.0,0.0,,0.0,0.0,,January - March
+2019-04-01,2019,4,Fox Lake,0.0,0.0,,0.0,0.0,,January - April
+2019-05-01,2019,5,Fox Lake,325.0,285.0,14.0,325.0,285.0,14.0,January - May
+2019-06-01,2019,6,Fox Lake,849.0,750.0,13.2,1174.0,1035.0,13.4,January - June
+2019-07-01,2019,7,Fox Lake,962.0,986.0,-2.4,2136.0,2021.0,5.7,January - July
+2019-08-01,2019,8,Fox Lake,833.0,753.0,10.6,2969.0,2774.0,7.0,January - August
+2019-09-01,2019,9,Fox Lake,389.0,257.0,51.4,3358.0,3031.0,10.8,January - September
+2019-10-01,2019,10,Fox Lake,0.0,0.0,,3358.0,3031.0,10.8,January - October
+2019-11-01,2019,11,Fox Lake,0.0,0.0,,3358.0,3031.0,10.8,January - November
+2019-12-01,2019,12,Fox Lake,0.0,0.0,,3358.0,3031.0,10.8,January - December
+2019-01-01,2019,1,Marsh Lake,0.0,0.0,,0.0,0.0,,January - January
+2019-02-01,2019,2,Marsh Lake,0.0,0.0,,0.0,0.0,,January - February
+2019-03-01,2019,3,Marsh Lake,2.0,0.0,,2.0,0.0,,January - March
+2019-04-01,2019,4,Marsh Lake,0.0,0.0,,2.0,0.0,,January - April
+2019-05-01,2019,5,Marsh Lake,559.0,446.0,25.3,561.0,446.0,25.8,January - May
+2019-06-01,2019,6,Marsh Lake,1213.0,1168.0,3.9,1774.0,1614.0,9.9,January - June
+2019-07-01,2019,7,Marsh Lake,1441.0,1419.0,1.6,3215.0,3033.0,6.0,January - July
+2019-08-01,2019,8,Marsh Lake,1050.0,1016.0,3.3,4265.0,4049.0,5.3,January - August
+2019-09-01,2019,9,Marsh Lake,464.0,371.0,25.1,4729.0,4420.0,7.0,January - September
+2019-10-01,2019,10,Marsh Lake,0.0,0.0,,4729.0,4420.0,7.0,January - October
+2019-11-01,2019,11,Marsh Lake,0.0,0.0,,4729.0,4420.0,7.0,January - November
+2019-12-01,2019,12,Marsh Lake,0.0,0.0,,4729.0,4420.0,7.0,January - December
+2019-01-01,2019,1,Pine Lake,0.0,3.0,-100.0,0.0,3.0,-100.0,January - January
+2019-02-01,2019,2,Pine Lake,0.0,0.0,,0.0,3.0,-100.0,January - February
+2019-03-01,2019,3,Pine Lake,0.0,0.0,,0.0,3.0,-100.0,January - March
+2019-04-01,2019,4,Pine Lake,3.0,0.0,,3.0,3.0,0.0,January - April
+2019-05-01,2019,5,Pine Lake,577.0,624.0,-7.5,580.0,627.0,-7.5,January - May
+2019-06-01,2019,6,Pine Lake,1320.0,1635.0,-19.3,1900.0,2262.0,-16.0,January - June
+2019-07-01,2019,7,Pine Lake,1529.0,1764.0,-13.3,3429.0,4026.0,-14.8,January - July
+2019-08-01,2019,8,Pine Lake,1252.0,1459.0,-14.2,4681.0,5485.0,-14.7,January - August
+2019-09-01,2019,9,Pine Lake,736.0,657.0,12.0,5417.0,6142.0,-11.8,January - September
+2019-10-01,2019,10,Pine Lake,2.0,32.0,-93.8,5419.0,6174.0,-12.2,January - October
+2019-11-01,2019,11,Pine Lake,0.0,2.0,-100.0,5419.0,6176.0,-12.3,January - November
+2019-12-01,2019,12,Pine Lake,0.0,0.0,,5419.0,6176.0,-12.3,January - December
+2019-01-01,2019,1,Teslin Lake,0.0,0.0,,0.0,0.0,,January - January
+2019-02-01,2019,2,Teslin Lake,0.0,0.0,,0.0,0.0,,January - February
+2019-03-01,2019,3,Teslin Lake,0.0,0.0,,0.0,0.0,,January - March
+2019-04-01,2019,4,Teslin Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - April
+2019-05-01,2019,5,Teslin Lake,269.0,295.0,-8.8,269.0,297.0,-9.4,January - May
+2019-06-01,2019,6,Teslin Lake,809.0,1081.0,-25.2,1078.0,1378.0,-21.8,January - June
+2019-07-01,2019,7,Teslin Lake,1101.0,1171.0,-6.0,2179.0,2549.0,-14.5,January - July
+2019-08-01,2019,8,Teslin Lake,850.0,853.0,-0.4,3029.0,3402.0,-11.0,January - August
+2019-09-01,2019,9,Teslin Lake,237.0,163.0,45.4,3266.0,3565.0,-8.4,January - September
+2019-10-01,2019,10,Teslin Lake,5.0,0.0,,3271.0,3565.0,-8.2,January - October
+2019-11-01,2019,11,Teslin Lake,0.0,0.0,,3271.0,3565.0,-8.2,January - November
+2019-12-01,2019,12,Teslin Lake,0.0,0.0,,3271.0,3565.0,-8.2,January - December
+2019-01-01,2019,1,Tombstone Mtn.,2.0,0.0,,2.0,0.0,,January - January
+2019-02-01,2019,2,Tombstone Mtn.,0.0,0.0,,2.0,0.0,,January - February
+2019-03-01,2019,3,Tombstone Mtn.,0.0,0.0,,2.0,0.0,,January - March
+2019-04-01,2019,4,Tombstone Mtn.,2.0,4.0,-50.0,4.0,4.0,0.0,January - April
+2019-05-01,2019,5,Tombstone Mtn.,260.0,218.0,19.3,264.0,222.0,18.9,January - May
+2019-06-01,2019,6,Tombstone Mtn.,1495.0,1577.0,-5.2,1759.0,1799.0,-2.2,January - June
+2019-07-01,2019,7,Tombstone Mtn.,1789.0,1993.0,-10.2,3548.0,3792.0,-6.4,January - July
+2019-08-01,2019,8,Tombstone Mtn.,2170.0,2032.0,6.8,5718.0,5824.0,-1.8,January - August
+2019-09-01,2019,9,Tombstone Mtn.,732.0,170.0,330.6,6450.0,5994.0,7.6,January - September
+2019-10-01,2019,10,Tombstone Mtn.,4.0,4.0,0.0,6454.0,5998.0,7.6,January - October
+2019-11-01,2019,11,Tombstone Mtn.,0.0,2.0,-100.0,6454.0,6000.0,7.6,January - November
 2012-10-01,2012,10,Yukon River,0.0,2.0,-100.0,4512.0,3986.0,13.2,January - October
 2012-11-01,2012,11,Yukon River,0.0,2.0,-100.0,4512.0,3988.0,13.1,January - November
 2012-12-01,2012,12,Yukon River,0.0,0.0,,4512.0,3988.0,13.1,January - December
@@ -2143,6 +1812,52 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2013-06-01,2013,6,Marsh Lake,545.0,553.0,-1.4,784.0,780.0,0.5,January - June
 2013-07-01,2013,7,Marsh Lake,756.0,653.0,15.8,1540.0,1433.0,7.5,January - July
 2013-08-01,2013,8,Marsh Lake,634.0,506.0,25.3,2174.0,1939.0,12.1,January - August
+2019-12-01,2019,12,Tombstone Mtn.,0.0,2.0,-100.0,6454.0,6002.0,7.5,January - December
+2019-01-01,2019,1,Watson Lake,0.0,0.0,,0.0,0.0,,January - January
+2019-02-01,2019,2,Watson Lake,0.0,0.0,,0.0,0.0,,January - February
+2019-03-01,2019,3,Watson Lake,2.0,0.0,,2.0,0.0,,January - March
+2019-04-01,2019,4,Watson Lake,2.0,0.0,,4.0,0.0,,January - April
+2019-05-01,2019,5,Watson Lake,511.0,424.0,20.5,515.0,424.0,21.5,January - May
+2019-06-01,2019,6,Watson Lake,1506.0,1337.0,12.6,2021.0,1761.0,14.8,January - June
+2019-07-01,2019,7,Watson Lake,1797.0,1670.0,7.6,3818.0,3431.0,11.3,January - July
+2019-08-01,2019,8,Watson Lake,1022.0,1361.0,-24.9,4840.0,4792.0,1.0,January - August
+2019-09-01,2019,9,Watson Lake,563.0,532.0,5.8,5403.0,5324.0,1.5,January - September
+2019-10-01,2019,10,Watson Lake,0.0,0.0,,5403.0,5324.0,1.5,January - October
+2019-11-01,2019,11,Watson Lake,0.0,0.0,,5403.0,5324.0,1.5,January - November
+2019-12-01,2019,12,Watson Lake,0.0,0.0,,5403.0,5324.0,1.5,January - December
+2019-01-01,2019,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
+2019-02-01,2019,2,Wolf Creek,2.0,0.0,,2.0,0.0,,January - February
+2019-03-01,2019,3,Wolf Creek,2.0,2.0,0.0,4.0,2.0,100.0,January - March
+2019-04-01,2019,4,Wolf Creek,0.0,5.0,-100.0,4.0,7.0,-42.9,January - April
+2019-05-01,2019,5,Wolf Creek,712.0,722.0,-1.4,716.0,729.0,-1.8,January - May
+2019-06-01,2019,6,Wolf Creek,1072.0,1206.0,-11.1,1788.0,1935.0,-7.6,January - June
+2019-07-01,2019,7,Wolf Creek,1107.0,1370.0,-19.2,2895.0,3305.0,-12.4,January - July
+2019-08-01,2019,8,Wolf Creek,1541.0,1225.0,25.8,4436.0,4530.0,-2.1,January - August
+2019-09-01,2019,9,Wolf Creek,1050.0,693.0,51.5,5486.0,5223.0,5.0,January - September
+2019-10-01,2019,10,Wolf Creek,3.0,0.0,,5489.0,5223.0,5.1,January - October
+2019-11-01,2019,11,Wolf Creek,0.0,0.0,,5489.0,5223.0,5.1,January - November
+2019-12-01,2019,12,Wolf Creek,0.0,0.0,,5489.0,5223.0,5.1,January - December
+2019-01-01,2019,1,Yukon River,0.0,0.0,,0.0,0.0,,January - January
+2019-02-01,2019,2,Yukon River,4.0,0.0,,4.0,0.0,,January - February
+2019-03-01,2019,3,Yukon River,0.0,0.0,,4.0,0.0,,January - March
+2019-04-01,2019,4,Yukon River,0.0,2.0,-100.0,4.0,2.0,100.0,January - April
+2019-05-01,2019,5,Yukon River,358.0,382.0,-6.3,362.0,384.0,-5.7,January - May
+2019-06-01,2019,6,Yukon River,2329.0,2186.0,6.5,2691.0,2570.0,4.7,January - June
+2019-07-01,2019,7,Yukon River,2245.0,2887.0,-22.2,4936.0,5457.0,-9.5,January - July
+2019-08-01,2019,8,Yukon River,2175.0,2183.0,-0.4,7111.0,7640.0,-6.9,January - August
+2019-09-01,2019,9,Yukon River,481.0,494.0,-2.6,7592.0,8134.0,-6.7,January - September
+2019-10-01,2019,10,Yukon River,2.0,3.0,-33.3,7594.0,8137.0,-6.7,January - October
+2019-11-01,2019,11,Yukon River,0.0,0.0,,7594.0,8137.0,-6.7,January - November
+2019-12-01,2019,12,Yukon River,0.0,0.0,,7594.0,8137.0,-6.7,January - December
+2020-01-01,2020,1,Congdon Creek,0.0,0.0,,0.0,0.0,,January - January
+2020-02-01,2020,2,Congdon Creek,0.0,2.0,-100.0,0.0,2.0,-100.0,January - February
+2020-03-01,2020,3,Congdon Creek,0.0,0.0,,0.0,2.0,-100.0,January - March
+2020-04-01,2020,4,Congdon Creek,0.0,4.0,-100.0,0.0,6.0,-100.0,January - April
+2020-05-01,2020,5,Congdon Creek,0.0,519.0,-100.0,0.0,525.0,-100.0,January - May
+2020-06-01,2020,6,Congdon Creek,335.0,1437.0,-76.7,335.0,1962.0,-82.9,January - June
+2020-07-01,2020,7,Congdon Creek,432.0,1699.0,-74.6,767.0,3661.0,-79.0,January - July
+2020-08-01,2020,8,Congdon Creek,320.0,1680.0,-81.0,1087.0,5341.0,-79.6,January - August
+2020-09-01,2020,9,Congdon Creek,223.0,907.0,-75.4,1310.0,6248.0,-79.0,January - September
 2013-09-01,2013,9,Marsh Lake,214.0,128.0,67.2,2388.0,2067.0,15.5,January - September
 2013-10-01,2013,10,Marsh Lake,0.0,0.0,,2388.0,2067.0,15.5,January - October
 2013-11-01,2013,11,Marsh Lake,0.0,0.0,,2388.0,2067.0,15.5,January - November
@@ -2159,6 +1874,291 @@ date,year,month,campground,monthly_total,prev_year_monthly_total,monthly_percent
 2013-10-01,2013,10,Pine Lake,0.0,2.0,-100.0,3051.0,2993.0,1.9,January - October
 2013-11-01,2013,11,Pine Lake,0.0,0.0,,3051.0,2993.0,1.9,January - November
 2013-12-01,2013,12,Pine Lake,0.0,0.0,,3051.0,2993.0,1.9,January - December
+2020-10-01,2020,10,Congdon Creek,0.0,0.0,,1310.0,6248.0,-79.0,January - October
+2020-11-01,2020,11,Congdon Creek,0.0,0.0,,1310.0,6248.0,-79.0,January - November
+2020-12-01,2020,12,Congdon Creek,0.0,0.0,,1310.0,6248.0,-79.0,January - December
+2020-01-01,2020,1,Conrad,0.0,2.0,-100.0,0.0,2.0,-100.0,January - January
+2020-02-01,2020,2,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - February
+2020-03-01,2020,3,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - March
+2020-04-01,2020,4,Conrad,0.0,0.0,,0.0,2.0,-100.0,January - April
+2020-05-01,2020,5,Conrad,3.0,467.0,-99.4,3.0,469.0,-99.4,January - May
+2020-06-01,2020,6,Conrad,521.0,986.0,-47.2,524.0,1455.0,-64.0,January - June
+2020-07-01,2020,7,Conrad,637.0,1295.0,-50.8,1161.0,2750.0,-57.8,January - July
+2020-08-01,2020,8,Conrad,691.0,1137.0,-39.2,1852.0,3887.0,-52.4,January - August
+2020-09-01,2020,9,Conrad,492.0,529.0,-7.0,2344.0,4416.0,-46.9,January - September
+2020-10-01,2020,10,Conrad,0.0,0.0,,2344.0,4416.0,-46.9,January - October
+2020-11-01,2020,11,Conrad,0.0,0.0,,2344.0,4416.0,-46.9,January - November
+2020-12-01,2020,12,Conrad,0.0,0.0,,2344.0,4416.0,-46.9,January - December
+2020-01-01,2020,1,Fox Lake,0.0,0.0,,0.0,0.0,,January - January
+2020-02-01,2020,2,Fox Lake,0.0,0.0,,0.0,0.0,,January - February
+2020-03-01,2020,3,Fox Lake,0.0,0.0,,0.0,0.0,,January - March
+2020-04-01,2020,4,Fox Lake,0.0,0.0,,0.0,0.0,,January - April
+2020-05-01,2020,5,Fox Lake,11.0,325.0,-96.6,11.0,325.0,-96.6,January - May
+2020-06-01,2020,6,Fox Lake,618.0,849.0,-27.2,629.0,1174.0,-46.4,January - June
+2020-07-01,2020,7,Fox Lake,700.0,962.0,-27.2,1329.0,2136.0,-37.8,January - July
+2020-08-01,2020,8,Fox Lake,564.0,833.0,-32.3,1893.0,2969.0,-36.2,January - August
+2020-09-01,2020,9,Fox Lake,275.0,389.0,-29.3,2168.0,3358.0,-35.4,January - September
+2020-10-01,2020,10,Fox Lake,2.0,0.0,,2170.0,3358.0,-35.4,January - October
+2020-11-01,2020,11,Fox Lake,0.0,0.0,,2170.0,3358.0,-35.4,January - November
+2020-12-01,2020,12,Fox Lake,0.0,0.0,,2170.0,3358.0,-35.4,January - December
+2020-01-01,2020,1,Marsh Lake,3.0,0.0,,3.0,0.0,,January - January
+2020-02-01,2020,2,Marsh Lake,0.0,0.0,,3.0,0.0,,January - February
+2020-03-01,2020,3,Marsh Lake,0.0,2.0,-100.0,3.0,2.0,50.0,January - March
+2020-04-01,2020,4,Marsh Lake,0.0,0.0,,3.0,2.0,50.0,January - April
+2020-05-01,2020,5,Marsh Lake,11.0,559.0,-98.0,14.0,561.0,-97.5,January - May
+2020-06-01,2020,6,Marsh Lake,880.0,1213.0,-27.5,894.0,1774.0,-49.6,January - June
+2020-07-01,2020,7,Marsh Lake,916.0,1441.0,-36.4,1810.0,3215.0,-43.7,January - July
+2020-08-01,2020,8,Marsh Lake,592.0,1050.0,-43.6,2402.0,4265.0,-43.7,January - August
+2020-09-01,2020,9,Marsh Lake,239.0,464.0,-48.5,2641.0,4729.0,-44.2,January - September
+2020-10-01,2020,10,Marsh Lake,3.0,0.0,,2644.0,4729.0,-44.1,January - October
+2020-11-01,2020,11,Marsh Lake,0.0,0.0,,2644.0,4729.0,-44.1,January - November
+2020-12-01,2020,12,Marsh Lake,0.0,0.0,,2644.0,4729.0,-44.1,January - December
+2020-01-01,2020,1,Pine Lake,0.0,0.0,,0.0,0.0,,January - January
+2020-02-01,2020,2,Pine Lake,0.0,0.0,,0.0,0.0,,January - February
+2020-03-01,2020,3,Pine Lake,0.0,0.0,,0.0,0.0,,January - March
+2020-04-01,2020,4,Pine Lake,3.0,3.0,0.0,3.0,3.0,0.0,January - April
+2020-05-01,2020,5,Pine Lake,5.0,577.0,-99.1,8.0,580.0,-98.6,January - May
+2020-06-01,2020,6,Pine Lake,645.0,1320.0,-51.1,653.0,1900.0,-65.6,January - June
+2020-07-01,2020,7,Pine Lake,723.0,1529.0,-52.7,1376.0,3429.0,-59.9,January - July
+2020-08-01,2020,8,Pine Lake,545.0,1252.0,-56.5,1921.0,4681.0,-59.0,January - August
+2020-09-01,2020,9,Pine Lake,323.0,736.0,-56.1,2244.0,5417.0,-58.6,January - September
+2020-10-01,2020,10,Pine Lake,0.0,2.0,-100.0,2244.0,5419.0,-58.6,January - October
+2020-11-01,2020,11,Pine Lake,0.0,0.0,,2244.0,5419.0,-58.6,January - November
+2020-12-01,2020,12,Pine Lake,0.0,0.0,,2244.0,5419.0,-58.6,January - December
+2020-01-01,2020,1,Teslin Lake,0.0,0.0,,0.0,0.0,,January - January
+2020-02-01,2020,2,Teslin Lake,0.0,0.0,,0.0,0.0,,January - February
+2020-03-01,2020,3,Teslin Lake,0.0,0.0,,0.0,0.0,,January - March
+2020-04-01,2020,4,Teslin Lake,0.0,0.0,,0.0,0.0,,January - April
+2020-05-01,2020,5,Teslin Lake,5.0,269.0,-98.1,5.0,269.0,-98.1,January - May
+2020-06-01,2020,6,Teslin Lake,204.0,809.0,-74.8,209.0,1078.0,-80.6,January - June
+2020-07-01,2020,7,Teslin Lake,313.0,1101.0,-71.6,522.0,2179.0,-76.0,January - July
+2020-08-01,2020,8,Teslin Lake,337.0,850.0,-60.4,859.0,3029.0,-71.6,January - August
+2020-09-01,2020,9,Teslin Lake,117.0,237.0,-50.6,976.0,3266.0,-70.1,January - September
+2020-10-01,2020,10,Teslin Lake,0.0,5.0,-100.0,976.0,3271.0,-70.2,January - October
+2020-11-01,2020,11,Teslin Lake,0.0,0.0,,976.0,3271.0,-70.2,January - November
+2020-12-01,2020,12,Teslin Lake,0.0,0.0,,976.0,3271.0,-70.2,January - December
+2020-01-01,2020,1,Tombstone Mtn.,0.0,2.0,-100.0,0.0,2.0,-100.0,January - January
+2020-02-01,2020,2,Tombstone Mtn.,0.0,0.0,,0.0,2.0,-100.0,January - February
+2020-03-01,2020,3,Tombstone Mtn.,0.0,0.0,,0.0,2.0,-100.0,January - March
+2020-04-01,2020,4,Tombstone Mtn.,0.0,2.0,-100.0,0.0,4.0,-100.0,January - April
+2020-05-01,2020,5,Tombstone Mtn.,8.0,260.0,-96.9,8.0,264.0,-97.0,January - May
+2020-06-01,2020,6,Tombstone Mtn.,505.0,1495.0,-66.2,513.0,1759.0,-70.8,January - June
+2020-07-01,2020,7,Tombstone Mtn.,980.0,1789.0,-45.2,1493.0,3548.0,-57.9,January - July
+2020-08-01,2020,8,Tombstone Mtn.,1407.0,2170.0,-35.2,2900.0,5718.0,-49.3,January - August
+2020-09-01,2020,9,Tombstone Mtn.,560.0,732.0,-23.5,3460.0,6450.0,-46.4,January - September
+2020-10-01,2020,10,Tombstone Mtn.,5.0,4.0,25.0,3465.0,6454.0,-46.3,January - October
+2020-11-01,2020,11,Tombstone Mtn.,0.0,0.0,,3465.0,6454.0,-46.3,January - November
+2020-12-01,2020,12,Tombstone Mtn.,0.0,0.0,,3465.0,6454.0,-46.3,January - December
+2020-01-01,2020,1,Watson Lake,0.0,0.0,,0.0,0.0,,January - January
+2020-02-01,2020,2,Watson Lake,0.0,0.0,,0.0,0.0,,January - February
+2020-03-01,2020,3,Watson Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - March
+2020-04-01,2020,4,Watson Lake,0.0,2.0,-100.0,0.0,4.0,-100.0,January - April
+2020-05-01,2020,5,Watson Lake,0.0,511.0,-100.0,0.0,515.0,-100.0,January - May
+2020-06-01,2020,6,Watson Lake,117.0,1506.0,-92.2,117.0,2021.0,-94.2,January - June
+2020-07-01,2020,7,Watson Lake,403.0,1797.0,-77.6,520.0,3818.0,-86.4,January - July
+2020-08-01,2020,8,Watson Lake,461.0,1022.0,-54.9,981.0,4840.0,-79.7,January - August
+2020-09-01,2020,9,Watson Lake,237.0,563.0,-57.9,1218.0,5403.0,-77.5,January - September
+2020-10-01,2020,10,Watson Lake,5.0,0.0,,1223.0,5403.0,-77.4,January - October
+2020-11-01,2020,11,Watson Lake,0.0,0.0,,1223.0,5403.0,-77.4,January - November
+2020-12-01,2020,12,Watson Lake,0.0,0.0,,1223.0,5403.0,-77.4,January - December
+2020-01-01,2020,1,Wolf Creek,5.0,0.0,,5.0,0.0,,January - January
+2020-02-01,2020,2,Wolf Creek,0.0,2.0,-100.0,5.0,2.0,150.0,January - February
+2020-03-01,2020,3,Wolf Creek,0.0,2.0,-100.0,5.0,4.0,25.0,January - March
+2020-04-01,2020,4,Wolf Creek,0.0,0.0,,5.0,4.0,25.0,January - April
+2020-05-01,2020,5,Wolf Creek,5.0,712.0,-99.3,10.0,716.0,-98.6,January - May
+2020-06-01,2020,6,Wolf Creek,658.0,1072.0,-38.6,668.0,1788.0,-62.6,January - June
+2020-07-01,2020,7,Wolf Creek,742.0,1107.0,-33.0,1410.0,2895.0,-51.3,January - July
+2020-08-01,2020,8,Wolf Creek,824.0,1541.0,-46.5,2234.0,4436.0,-49.6,January - August
+2020-09-01,2020,9,Wolf Creek,477.0,1050.0,-54.6,2711.0,5486.0,-50.6,January - September
+2020-10-01,2020,10,Wolf Creek,0.0,3.0,-100.0,2711.0,5489.0,-50.6,January - October
+2020-11-01,2020,11,Wolf Creek,0.0,0.0,,2711.0,5489.0,-50.6,January - November
+2020-12-01,2020,12,Wolf Creek,0.0,0.0,,2711.0,5489.0,-50.6,January - December
+2020-01-01,2020,1,Yukon River,0.0,0.0,,0.0,0.0,,January - January
+2020-02-01,2020,2,Yukon River,0.0,4.0,-100.0,0.0,4.0,-100.0,January - February
+2020-03-01,2020,3,Yukon River,0.0,0.0,,0.0,4.0,-100.0,January - March
+2020-04-01,2020,4,Yukon River,0.0,0.0,,0.0,4.0,-100.0,January - April
+2020-05-01,2020,5,Yukon River,12.0,358.0,-96.6,12.0,362.0,-96.7,January - May
+2020-06-01,2020,6,Yukon River,455.0,2329.0,-80.5,467.0,2691.0,-82.6,January - June
+2020-07-01,2020,7,Yukon River,896.0,2245.0,-60.1,1363.0,4936.0,-72.4,January - July
+2020-08-01,2020,8,Yukon River,1172.0,2175.0,-46.1,2535.0,7111.0,-64.4,January - August
+2020-09-01,2020,9,Yukon River,177.0,481.0,-63.2,2712.0,7592.0,-64.3,January - September
+2020-10-01,2020,10,Yukon River,0.0,2.0,-100.0,2712.0,7594.0,-64.3,January - October
+2020-11-01,2020,11,Yukon River,0.0,0.0,,2712.0,7594.0,-64.3,January - November
+2020-12-01,2020,12,Yukon River,0.0,0.0,,2712.0,7594.0,-64.3,January - December
+2022-07-01,2022,7,Teslin Lake,773.0,287.0,169.3,1995.0,597.0,234.2,January - July
+2022-08-01,2022,8,Teslin Lake,302.0,397.0,-23.9,2297.0,994.0,131.1,January - August
+2022-09-01,2022,9,Teslin Lake,211.0,210.0,0.5,2508.0,1204.0,108.3,January - September
+2022-10-01,2022,10,Teslin Lake,9.0,7.0,28.6,2517.0,1211.0,107.8,January - October
+2022-11-01,2022,11,Teslin Lake,0.0,0.0,,2517.0,1211.0,107.8,January - November
+2022-12-01,2022,12,Teslin Lake,0.0,0.0,,2517.0,1211.0,107.8,January - December
+2022-01-01,2022,1,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - January
+2022-02-01,2022,2,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - February
+2022-03-01,2022,3,Tombstone Mtn.,0.0,0.0,,0.0,0.0,,January - March
+2022-04-01,2022,4,Tombstone Mtn.,2.0,5.0,-60.0,2.0,5.0,-60.0,January - April
+2022-05-01,2022,5,Tombstone Mtn.,175.0,112.0,56.3,177.0,117.0,51.3,January - May
+2022-06-01,2022,6,Tombstone Mtn.,1617.0,504.0,220.8,1794.0,621.0,188.9,January - June
+2022-07-01,2022,7,Tombstone Mtn.,1696.0,961.0,76.5,3490.0,1582.0,120.6,January - July
+2022-08-01,2022,8,Tombstone Mtn.,2131.0,1618.0,31.7,5621.0,3200.0,75.7,January - August
+2022-09-01,2022,9,Tombstone Mtn.,856.0,814.0,5.2,6477.0,4014.0,61.4,January - September
+2022-10-01,2022,10,Tombstone Mtn.,0.0,12.0,-100.0,6477.0,4026.0,60.9,January - October
+2022-11-01,2022,11,Tombstone Mtn.,0.0,0.0,,6477.0,4026.0,60.9,January - November
+2022-12-01,2022,12,Tombstone Mtn.,0.0,0.0,,6477.0,4026.0,60.9,January - December
+2022-01-01,2022,1,Watson Lake,2.0,2.0,0.0,2.0,2.0,0.0,January - January
+2022-02-01,2022,2,Watson Lake,0.0,0.0,,2.0,2.0,0.0,January - February
+2022-03-01,2022,3,Watson Lake,2.0,0.0,,4.0,2.0,100.0,January - March
+2022-04-01,2022,4,Watson Lake,9.0,2.0,350.0,13.0,4.0,225.0,January - April
+2022-05-01,2022,5,Watson Lake,553.0,116.0,376.7,566.0,120.0,371.7,January - May
+2022-06-01,2022,6,Watson Lake,1783.0,229.0,678.6,2349.0,349.0,573.1,January - June
+2022-07-01,2022,7,Watson Lake,1226.0,427.0,187.1,3575.0,776.0,360.7,January - July
+2022-08-01,2022,8,Watson Lake,1482.0,889.0,66.7,5057.0,1665.0,203.7,January - August
+2022-09-01,2022,9,Watson Lake,626.0,496.0,26.2,5683.0,2161.0,163.0,January - September
+2022-10-01,2022,10,Watson Lake,4.0,16.0,-75.0,5687.0,2177.0,161.2,January - October
+2022-11-01,2022,11,Watson Lake,0.0,0.0,,5687.0,2177.0,161.2,January - November
+2022-12-01,2022,12,Watson Lake,0.0,0.0,,5687.0,2177.0,161.2,January - December
+2022-01-01,2022,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
+2022-02-01,2022,2,Wolf Creek,0.0,5.0,-100.0,0.0,5.0,-100.0,January - February
+2022-03-01,2022,3,Wolf Creek,2.0,2.0,0.0,2.0,7.0,-71.4,January - March
+2022-04-01,2022,4,Wolf Creek,42.0,68.0,-38.2,44.0,75.0,-41.3,January - April
+2022-05-01,2022,5,Wolf Creek,799.0,695.0,15.0,843.0,770.0,9.5,January - May
+2022-06-01,2022,6,Wolf Creek,884.0,842.0,5.0,1727.0,1612.0,7.1,January - June
+2022-07-01,2022,7,Wolf Creek,1198.0,898.0,33.4,2925.0,2510.0,16.5,January - July
+2022-08-01,2022,8,Wolf Creek,1382.0,1177.0,17.4,4307.0,3687.0,16.8,January - August
+2022-09-01,2022,9,Wolf Creek,864.0,804.0,7.5,5171.0,4491.0,15.1,January - September
+2022-10-01,2022,10,Wolf Creek,25.0,27.0,-7.4,5196.0,4518.0,15.0,January - October
+2022-11-01,2022,11,Wolf Creek,0.0,0.0,,5196.0,4518.0,15.0,January - November
+2022-12-01,2022,12,Wolf Creek,0.0,0.0,,5196.0,4518.0,15.0,January - December
+2022-01-01,2022,1,Yukon River,0.0,3.0,-100.0,0.0,3.0,-100.0,January - January
+2022-02-01,2022,2,Yukon River,0.0,0.0,,0.0,3.0,-100.0,January - February
+2022-03-01,2022,3,Yukon River,0.0,3.0,-100.0,0.0,6.0,-100.0,January - March
+2022-04-01,2022,4,Yukon River,0.0,2.0,-100.0,0.0,8.0,-100.0,January - April
+2022-05-01,2022,5,Yukon River,228.0,140.0,62.9,228.0,148.0,54.1,January - May
+2022-06-01,2022,6,Yukon River,1779.0,615.0,189.3,2007.0,763.0,163.0,January - June
+2022-07-01,2022,7,Yukon River,1569.0,820.0,91.3,3576.0,1583.0,125.9,January - July
+2022-08-01,2022,8,Yukon River,1537.0,1027.0,49.7,5113.0,2610.0,95.9,January - August
+2022-09-01,2022,9,Yukon River,373.0,555.0,-32.8,5486.0,3165.0,73.3,January - September
+2022-10-01,2022,10,Yukon River,0.0,12.0,-100.0,5486.0,3177.0,72.7,January - October
+2022-11-01,2022,11,Yukon River,0.0,0.0,,5486.0,3177.0,72.7,January - November
+2022-12-01,2022,12,Yukon River,0.0,0.0,,5486.0,3177.0,72.7,January - December
+2023-01-01,2023,1,Congdon Creek,0.0,2.0,-100.0,0.0,2.0,-100.0,January - January
+2023-02-01,2023,2,Congdon Creek,2.0,0.0,,2.0,2.0,0.0,January - February
+2023-03-01,2023,3,Congdon Creek,0.0,0.0,,2.0,2.0,0.0,January - March
+2023-04-01,2023,4,Congdon Creek,5.0,9.0,-44.4,7.0,11.0,-36.4,January - April
+2023-05-01,2023,5,Congdon Creek,672.0,575.0,16.9,679.0,586.0,15.9,January - May
+2023-06-01,2023,6,Congdon Creek,1687.0,1779.0,-5.2,2366.0,2365.0,0.0,January - June
+2023-07-01,2023,7,Congdon Creek,2360.0,2036.0,15.9,4726.0,4401.0,7.4,January - July
+2023-08-01,2023,8,Congdon Creek,2224.0,1901.0,17.0,6950.0,6302.0,10.3,January - August
+2023-09-01,2023,9,Congdon Creek,954.0,846.0,12.8,7904.0,7148.0,10.6,January - September
+2023-10-01,2023,10,Congdon Creek,13.0,14.0,-7.1,7917.0,7162.0,10.5,January - October
+2023-11-01,2023,11,Congdon Creek,0.0,0.0,,7917.0,7162.0,10.5,January - November
+2023-12-01,2023,12,Congdon Creek,0.0,0.0,,7917.0,7162.0,10.5,January - December
+2023-01-01,2023,1,Conrad,0.0,0.0,,0.0,0.0,,January - January
+2023-02-01,2023,2,Conrad,0.0,0.0,,0.0,0.0,,January - February
+2023-03-01,2023,3,Conrad,0.0,0.0,,0.0,0.0,,January - March
+2023-04-01,2023,4,Conrad,5.0,10.0,-50.0,5.0,10.0,-50.0,January - April
+2023-05-01,2023,5,Conrad,455.0,364.0,25.0,460.0,374.0,23.0,January - May
+2023-06-01,2023,6,Conrad,1056.0,893.0,18.3,1516.0,1267.0,19.7,January - June
+2023-07-01,2023,7,Conrad,1095.0,1221.0,-10.3,2611.0,2488.0,4.9,January - July
+2023-08-01,2023,8,Conrad,1299.0,1116.0,16.4,3910.0,3604.0,8.5,January - August
+2023-09-01,2023,9,Conrad,613.0,617.0,-0.6,4523.0,4221.0,7.2,January - September
+2023-10-01,2023,10,Conrad,14.0,10.0,40.0,4537.0,4231.0,7.2,January - October
+2023-11-01,2023,11,Conrad,5.0,0.0,,4542.0,4231.0,7.4,January - November
+2023-12-01,2023,12,Conrad,0.0,0.0,,4542.0,4231.0,7.4,January - December
+2023-01-01,2023,1,Fox Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - January
+2023-02-01,2023,2,Fox Lake,0.0,0.0,,0.0,2.0,-100.0,January - February
+2023-03-01,2023,3,Fox Lake,0.0,0.0,,0.0,2.0,-100.0,January - March
+2023-04-01,2023,4,Fox Lake,10.0,27.0,-63.0,10.0,29.0,-65.5,January - April
+2023-05-01,2023,5,Fox Lake,322.0,308.0,4.5,332.0,337.0,-1.5,January - May
+2023-06-01,2023,6,Fox Lake,1083.0,878.0,23.3,1415.0,1215.0,16.5,January - June
+2023-07-01,2023,7,Fox Lake,1034.0,756.0,36.8,2449.0,1971.0,24.3,January - July
+2023-08-01,2023,8,Fox Lake,1023.0,787.0,30.0,3472.0,2758.0,25.9,January - August
+2023-09-01,2023,9,Fox Lake,306.0,291.0,5.2,3778.0,3049.0,23.9,January - September
+2023-10-01,2023,10,Fox Lake,5.0,2.0,150.0,3783.0,3051.0,24.0,January - October
+2023-11-01,2023,11,Fox Lake,0.0,0.0,,3783.0,3051.0,24.0,January - November
+2023-12-01,2023,12,Fox Lake,0.0,0.0,,3783.0,3051.0,24.0,January - December
+2023-01-01,2023,1,Marsh Lake,0.0,0.0,,0.0,0.0,,January - January
+2023-02-01,2023,2,Marsh Lake,0.0,0.0,,0.0,0.0,,January - February
+2023-03-01,2023,3,Marsh Lake,7.0,0.0,,7.0,0.0,,January - March
+2023-04-01,2023,4,Marsh Lake,2.0,27.0,-92.6,9.0,27.0,-66.7,January - April
+2023-05-01,2023,5,Marsh Lake,486.0,571.0,-14.9,495.0,598.0,-17.2,January - May
+2023-06-01,2023,6,Marsh Lake,1167.0,1210.0,-3.6,1662.0,1808.0,-8.1,January - June
+2023-07-01,2023,7,Marsh Lake,1337.0,1035.0,29.2,2999.0,2843.0,5.5,January - July
+2023-08-01,2023,8,Marsh Lake,1110.0,778.0,42.7,4109.0,3621.0,13.5,January - August
+2023-09-01,2023,9,Marsh Lake,427.0,426.0,0.2,4536.0,4047.0,12.1,January - September
+2023-10-01,2023,10,Marsh Lake,5.0,3.0,66.7,4541.0,4050.0,12.1,January - October
+2023-11-01,2023,11,Marsh Lake,0.0,0.0,,4541.0,4050.0,12.1,January - November
+2023-12-01,2023,12,Marsh Lake,0.0,0.0,,4541.0,4050.0,12.1,January - December
+2023-01-01,2023,1,Pine Lake,0.0,0.0,,0.0,0.0,,January - January
+2023-02-01,2023,2,Pine Lake,2.0,0.0,,2.0,0.0,,January - February
+2023-03-01,2023,3,Pine Lake,2.0,0.0,,4.0,0.0,,January - March
+2023-04-01,2023,4,Pine Lake,12.0,25.0,-52.0,16.0,25.0,-36.0,January - April
+2023-05-01,2023,5,Pine Lake,837.0,589.0,42.1,853.0,614.0,38.9,January - May
+2023-06-01,2023,6,Pine Lake,1577.0,1291.0,22.2,2430.0,1905.0,27.6,January - June
+2023-07-01,2023,7,Pine Lake,1514.0,1437.0,5.4,3944.0,3342.0,18.0,January - July
+2023-08-01,2023,8,Pine Lake,1577.0,1400.0,12.6,5521.0,4742.0,16.4,January - August
+2023-09-01,2023,9,Pine Lake,776.0,741.0,4.7,6297.0,5483.0,14.8,January - September
+2023-10-01,2023,10,Pine Lake,10.0,14.0,-28.6,6307.0,5497.0,14.7,January - October
+2023-11-01,2023,11,Pine Lake,0.0,0.0,,6307.0,5497.0,14.7,January - November
+2023-12-01,2023,12,Pine Lake,0.0,0.0,,6307.0,5497.0,14.7,January - December
+2023-01-01,2023,1,Teslin Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - January
+2023-02-01,2023,2,Teslin Lake,0.0,2.0,-100.0,0.0,4.0,-100.0,January - February
+2023-03-01,2023,3,Teslin Lake,2.0,0.0,,2.0,4.0,-50.0,January - March
+2023-04-01,2023,4,Teslin Lake,5.0,0.0,,7.0,4.0,75.0,January - April
+2023-05-01,2023,5,Teslin Lake,377.0,206.0,83.0,384.0,210.0,82.9,January - May
+2023-06-01,2023,6,Teslin Lake,883.0,1012.0,-12.7,1267.0,1222.0,3.7,January - June
+2023-07-01,2023,7,Teslin Lake,1022.0,773.0,32.2,2289.0,1995.0,14.7,January - July
+2023-08-01,2023,8,Teslin Lake,837.0,302.0,177.2,3126.0,2297.0,36.1,January - August
+2023-09-01,2023,9,Teslin Lake,241.0,211.0,14.2,3367.0,2508.0,34.3,January - September
+2023-10-01,2023,10,Teslin Lake,0.0,9.0,-100.0,3367.0,2517.0,33.8,January - October
+2023-11-01,2023,11,Teslin Lake,0.0,0.0,,3367.0,2517.0,33.8,January - November
+2023-12-01,2023,12,Teslin Lake,0.0,0.0,,3367.0,2517.0,33.8,January - December
+2023-01-01,2023,1,Tombstone Mtn.,7.0,0.0,,7.0,0.0,,January - January
+2023-02-01,2023,2,Tombstone Mtn.,7.0,0.0,,14.0,0.0,,January - February
+2023-03-01,2023,3,Tombstone Mtn.,2.0,0.0,,16.0,0.0,,January - March
+2023-04-01,2023,4,Tombstone Mtn.,7.0,2.0,250.0,23.0,2.0,1050.0,January - April
+2023-05-01,2023,5,Tombstone Mtn.,158.0,175.0,-9.7,181.0,177.0,2.3,January - May
+2023-06-01,2023,6,Tombstone Mtn.,1371.0,1617.0,-15.2,1552.0,1794.0,-13.5,January - June
+2023-07-01,2023,7,Tombstone Mtn.,2044.0,1696.0,20.5,3596.0,3490.0,3.0,January - July
+2023-08-01,2023,8,Tombstone Mtn.,2080.0,2131.0,-2.4,5676.0,5621.0,1.0,January - August
+2023-09-01,2023,9,Tombstone Mtn.,668.0,856.0,-22.0,6344.0,6477.0,-2.1,January - September
+2023-10-01,2023,10,Tombstone Mtn.,12.0,0.0,,6356.0,6477.0,-1.9,January - October
+2023-11-01,2023,11,Tombstone Mtn.,0.0,0.0,,6356.0,6477.0,-1.9,January - November
+2023-12-01,2023,12,Tombstone Mtn.,0.0,0.0,,6356.0,6477.0,-1.9,January - December
+2023-01-01,2023,1,Watson Lake,0.0,2.0,-100.0,0.0,2.0,-100.0,January - January
+2023-02-01,2023,2,Watson Lake,0.0,0.0,,0.0,2.0,-100.0,January - February
+2023-03-01,2023,3,Watson Lake,2.0,2.0,0.0,2.0,4.0,-50.0,January - March
+2023-04-01,2023,4,Watson Lake,0.0,9.0,-100.0,2.0,13.0,-84.6,January - April
+2023-05-01,2023,5,Watson Lake,452.0,553.0,-18.3,454.0,566.0,-19.8,January - May
+2023-06-01,2023,6,Watson Lake,1473.0,1783.0,-17.4,1927.0,2349.0,-18.0,January - June
+2023-07-01,2023,7,Watson Lake,1623.0,1226.0,32.4,3550.0,3575.0,-0.7,January - July
+2023-08-01,2023,8,Watson Lake,1380.0,1482.0,-6.9,4930.0,5057.0,-2.5,January - August
+2023-09-01,2023,9,Watson Lake,679.0,626.0,8.5,5609.0,5683.0,-1.3,January - September
+2023-10-01,2023,10,Watson Lake,9.0,4.0,125.0,5618.0,5687.0,-1.2,January - October
+2023-11-01,2023,11,Watson Lake,0.0,0.0,,5618.0,5687.0,-1.2,January - November
+2023-12-01,2023,12,Watson Lake,0.0,0.0,,5618.0,5687.0,-1.2,January - December
+2023-01-01,2023,1,Wolf Creek,0.0,0.0,,0.0,0.0,,January - January
+2023-02-01,2023,2,Wolf Creek,0.0,0.0,,0.0,0.0,,January - February
+2023-03-01,2023,3,Wolf Creek,8.0,2.0,300.0,8.0,2.0,300.0,January - March
+2023-04-01,2023,4,Wolf Creek,8.0,42.0,-81.0,16.0,44.0,-63.6,January - April
+2023-05-01,2023,5,Wolf Creek,795.0,799.0,-0.5,811.0,843.0,-3.8,January - May
+2023-06-01,2023,6,Wolf Creek,1206.0,884.0,36.4,2017.0,1727.0,16.8,January - June
+2023-07-01,2023,7,Wolf Creek,1326.0,1198.0,10.7,3343.0,2925.0,14.3,January - July
+2023-08-01,2023,8,Wolf Creek,1381.0,1382.0,-0.1,4724.0,4307.0,9.7,January - August
+2023-09-01,2023,9,Wolf Creek,923.0,864.0,6.8,5647.0,5171.0,9.2,January - September
+2023-10-01,2023,10,Wolf Creek,29.0,25.0,16.0,5676.0,5196.0,9.2,January - October
+2023-11-01,2023,11,Wolf Creek,5.0,0.0,,5681.0,5196.0,9.3,January - November
+2023-12-01,2023,12,Wolf Creek,0.0,0.0,,5681.0,5196.0,9.3,January - December
+2023-01-01,2023,1,Yukon River,5.0,0.0,,5.0,0.0,,January - January
+2023-02-01,2023,2,Yukon River,0.0,0.0,,5.0,0.0,,January - February
+2023-03-01,2023,3,Yukon River,2.0,0.0,,7.0,0.0,,January - March
+2023-04-01,2023,4,Yukon River,7.0,0.0,,14.0,0.0,,January - April
+2023-05-01,2023,5,Yukon River,77.0,228.0,-66.2,91.0,228.0,-60.1,January - May
+2023-06-01,2023,6,Yukon River,1989.0,1779.0,11.8,2080.0,2007.0,3.6,January - June
+2023-07-01,2023,7,Yukon River,2611.0,1569.0,66.4,4691.0,3576.0,31.2,January - July
+2023-08-01,2023,8,Yukon River,2263.0,1537.0,47.2,6954.0,5113.0,36.0,January - August
+2023-09-01,2023,9,Yukon River,391.0,373.0,4.8,7345.0,5486.0,33.9,January - September
+2023-10-01,2023,10,Yukon River,2.0,0.0,,7347.0,5486.0,33.9,January - October
+2023-11-01,2023,11,Yukon River,0.0,0.0,,7347.0,5486.0,33.9,January - November
+2023-12-01,2023,12,Yukon River,0.0,0.0,,7347.0,5486.0,33.9,January - December
 2006-01-01,2006,1,All,7.0,,,7.0,0.0,,January - January
 2006-02-01,2006,2,All,0.0,,,7.0,0.0,,January - February
 2006-03-01,2006,3,All,2.0,,,9.0,0.0,,January - March

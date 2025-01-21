@@ -142,6 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
             geoDropdown.addEventListener("change", applyFilters);
             timeDropdown.addEventListener("change", applyFilters);
             covidDropdown.addEventListener("change", applyFilters);
+            applyFilters();
         })
         .catch(error => console.error("Error loading CSV data:", error));
 });

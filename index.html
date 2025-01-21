@@ -7,15 +7,15 @@
 
 
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
 
     <!-- Highcharts Library -->
-    <script src="https://code.highcharts.com/12.1.0/highcharts.js" defer></script>
-    <script src="https://code.highcharts.com/12.1.0/modules/accessibility.js" defer></script>
-    <script src="https://code.highcharts.com/12.1.0/modules/stock.js" defer></script>
+    <script src="./vendor/highcharts/12.1.0/highcharts.js" defer></script>
+    <script src="./vendor/highcharts/12.1.0/modules/accessibility.js" defer></script>
+    <script src="./vendor/highcharts/12.1.0/modules/stock.js" defer></script>
     
 </head>
 <body>
@@ -51,9 +51,9 @@
             </div>
         </div>
         
-        <div class="row justify-content-center">
+        <div class="row justify-content-center d-flex">
             <!-- Four Key Indicators -->
-            <a href="visitor-estimates.html" class="key-indicator">
+            <a href="visitor-estimates.html" class="key-indicator col-xl-4 col-lg-6">
                 <div id="indicator1-content"></div>
                 <div id="indicator1-chart" class="chart-container"></div>
             </a>
@@ -81,45 +81,42 @@
         </div>
         <!-- First Row-->
         <div class="row mb-4 justify-content-center">
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
                 <a href="hotel-stats.html">
                     <div class="additional-indicator">
                         <div id="additional1-content"></div>
                     </div>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
                 <a href="hotel-stats.html">
                     <div class="additional-indicator">
                         <div id="additional2-content"></div>
                     </div>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
                 <a href="hotel-stats.html">
                     <div class="additional-indicator">
                         <div id="additional3-content"></div>
                     </div>
                 </a>
             </div>
-        </div>
-        <!-- Second Row-->
-        <div class="row mb-4">
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
                 <a href="str-stats.html">
                 <div class="additional-indicator">
                     <div id="additional6-content"></div>
                 </div>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
                 <a href="str-stats.html">  
                 <div class="additional-indicator">
                     <div id="additional7-content"></div>
                 </div>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
                 <a href="str-stats.html">
                 <div class="additional-indicator">
                     <div id="additional8-content"></div>
@@ -127,7 +124,8 @@
                 </a>               
             </div>
         </div>
-        <!-- Third Row -->
+
+        <!-- Second Row -->
         <div class="row">
             <div class="col-12">
                 <h3 class="additional-indicators-heading">Visitation Indicators</h3>
@@ -135,14 +133,14 @@
         </div>
         
         <div class="row mb-4">
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
                 <a href="campground-visitation.html">
                     <div class="additional-indicator">
                         <div id="additional11-content"></div>
                     </div>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
                 <a href="pc-site-visitation.html">
                     <div class="additional-indicator">                      
                         <div id="additional9-content"></div>                        
@@ -150,28 +148,28 @@
                 </a>
             </div>
         </div>
-        <!-- Fourth Row -->
+        <!-- Third Row -->
         <div class="row">
             <div class="col-12">
                 <h3 class="additional-indicators-heading">Economic Indicators</h3>
             </div>
         </div>
         <div class="row mb-4">
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
                 <a href="accommodation-employment.html">
                     <div class="additional-indicator">                      
                         <div id="additional12-content"></div>                        
                     </div>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
                 <a href="restaurant-sales.html">
                     <div class="additional-indicator">                      
                         <div id="additional13-content"></div>                        
                     </div>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
                 <a href="retail-sales.html">
                     <div class="additional-indicator">                      
                         <div id="additional14-content"></div>                        
@@ -206,8 +204,8 @@
     </div>
 
     <!-- jQuery and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
     
