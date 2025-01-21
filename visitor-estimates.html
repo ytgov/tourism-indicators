@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estimated Visitors</title>
+    <title>Estimated Visitors | Yukon Tourism Indicators</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
     
     <!-- Bootstrap CSS -->
     <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
     <!-- Highcharts JS -->
     <script src="./vendor/highcharts/12.1.0/highcharts.js"></script>
-    <script src="./vendor/highcharts/12.1.0/12.1.0/modules/treemap.js"></script>
-    <script src="./vendor/highcharts/12.1.0/12.1.0/modules/exporting.js"></script>
+    <script src="./vendor/highcharts/12.1.0/modules/treemap.js"></script>
+    <script src="./vendor/highcharts/12.1.0/stock/modules/exporting.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/accessibility.js"></script>
-    <script src="./vendor/highcharts/12.1.0/12.1.0/modules/scrollbar.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/stock.js"></script>
     
 
@@ -227,16 +227,13 @@
     <script src="./vendor/jquery/jquery-3.5.1.slim.min.js"></script>
     <script src="./vendor/popper/popper.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/utils/get-year.js"></script>
     <script src="js/visitor-estimates/visitors-by-month.js"></script>
     <script src="js/visitor-estimates/visitors-by-year.js"></script>
     <script src="js/visitor-estimates/visitors-by-transportation.js"></script>
     <script src="js/visitor-estimates/visitors-by-month-stacked.js"></script>
     <script src="js/utils/data-table.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const dataTable = new DataTable('data-table-container');
-            dataTable.initialize();
-        });
-    </script>
+    <script src="js/utils/get-year.js"></script>
+
 </body>
 </html>

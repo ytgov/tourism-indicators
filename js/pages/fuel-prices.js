@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             return acc;
         }, {});
         
-        console.log(yearlyData);
+        //console.log(yearlyData);
         
         // Populate yearly chart data
         yearlyConfig.series[0].data = Object.entries(yearlyData).map(([year, total]) => ({

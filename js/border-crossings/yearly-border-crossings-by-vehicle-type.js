@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Update years dynamically for the x-axis
                 years = [...new Set(filteredData.map(row => row[0]))].sort();
 
-                console.log(filteredData);
+                //console.log(filteredData);
                 // Re-render the chart with filtered data
                 renderChart(filteredData, selectedGeo);
             }

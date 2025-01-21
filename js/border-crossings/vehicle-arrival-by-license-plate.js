@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const yearSelect = document.getElementById('license-year-filter');
 
-            console.log(uniqueYears);
+            //console.log(uniqueYears);
             uniqueYears.forEach(year => {
                 const option = document.createElement('option');
                 option.value = year;

@@ -855,7 +855,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     const roomRateData = await loadRoomRateData();
     if (roomRateData) {
-        updateKPIContent('additional2-content', roomRateData, 'Avg. Daily Room Rate');
+        updateKPIContent('additional2-content', roomRateData, 'Avg. Daily Rate');
     }
 
     const revenuePerRoomData = await loadRevenuePerRoomData();

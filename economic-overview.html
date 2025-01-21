@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parks Canada Visitation | Yukon Tourism Indicators</title>
+    <title>Economic Overview | Yukon Tourism Indicators</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+
+    <!-- Bootstrap CSS -->
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Highcharts JS -->
     <script src="./vendor/highcharts/12.1.0/highcharts.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/treemap.js"></script>
     <script src="./vendor/highcharts/12.1.0/stock/modules/exporting.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/accessibility.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/stock.js"></script>
+
 
 </head>
 
@@ -46,14 +49,16 @@
     </nav>
 
 
-    <!-- Main Content -->
+    <!-- Main Container -->
     <div class="container mt-4">
         <div class="indicator-container">
             <!-- Title Section -->
             <div class="text-center mb-2">
-                <h1 class="indicator-title">Visits to National Parks and Historic Sites</h1>
-                <p class="indicator-subtitle">Yearly data shows the number of visitors to key national parks and
-                    historic sites in the Yukon.</p>
+                <h1 class="indicator-title">Economic Overview</h1>
+                <p class="indicator-subtitle">
+                    This section provides an overview of the economic indicators for the Yukon,
+                    such as GDP, Revenue, Jobs, labour income, and visitor spending.
+                </p>
             </div>
 
             <!-- Highlights Card -->
@@ -61,57 +66,68 @@
                 <div class="card-body" style="width:100%;">
                     <h5 class="card-title">Highlights</h5>
                     <ul>
-                        <li>Klondike Historic Site set an all time record in 2022 with 60,056 visits.</li>
-                        <li>Kluane National Park visits have been trending downwards since a peak in the 1980s and
-                            1990s.</li>
-                        <li>S.S. Klondike is undergoing extensive restoration and lead removal work. As this is a long
-                            term project, the boat is not accessibnle to visitors at this time.</li>
-                        <li>Chilkoot Trail has been partially closed since the 2020 pandemic, and a major flood washed
-                            out large sections of the trail in fall 2022.</li>
+                        <li>Gross business revenue reached a record high of $472.8 million in 2023, an 8.4% increase
+                            from the pre-pandemic peak of $436.2 million in 2019.</li>
+                        <li>Projections based on spending data from The Data Collective's Lodging Aligned Spend Report
+                            (LASR) suggest that gross business revenue attributed to tourism is poised to reach an
+                            all-time high in 2024.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Tabs for Data Display -->
-            <div style="width: 100%;">
-                <ul class="nav nav-tabs" id="data-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab"
-                            aria-controls="by-year" aria-selected="true">By Year</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab"
-                            aria-controls="by-month" aria-selected="false">By Month</a>
-                    </li>
-                </ul>
+            <!-- Gross Business Revenue -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div id="revenue-targets" class="col-12" style="height: 400px;"></div>
+                                <div class="data-source mt-4">
+                                    <p class="ml-4">Notes: Target Revenue is from the Yukon Tourism Development
+                                        Strategy, 2016.
+                                        Actual Revenue comes from Yukon Business Survey, 2014-2022. Estimated and
+                                        forecast
+                                        revenue is calculated based on monthly spending from LASR.</p>
+                                </div>
+                            </div>
 
-                <div class="tab-content" id="tab-content">
-                    <!-- By Year Content -->
-                    <div class="tab-pane fade show active" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
-                        <div id="by-year-container" class="mb-4 " style="width:100%; margin-top: 20px;">
-                            <div id="pc-container" class="card mb-4" style="width:100%;margin-top: 20px;"></div>
                         </div>
                     </div>
-
-                    <!-- By Month Content -->
-                    <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
-                        <div id="by-month-container" class="mb-4" style="width:100%; margin-top: 20px;">
-                            <!-- Data by Month goes here -->
-                            <div id="indicator-chart" class="card mb-4" style="width:100%;"></div>
-                            <div id="data-table-container" class="card mb-4 p-3"
-                                data-csv-url="data/vw_kpi_pc_site_visitation_ytd_summary.csv" class="card mb-4"
-                                style="width:100%; margin-top: 20px;"></div>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <div id="gdp-stats-chart" style="height: 400px;"></div>
                         </div>
                     </div>
-                </div>
-
-
-                <!-- Data Source -->
-                <div class="data-source mt-4">
-                    <p>Source: Parks Canada, 2024.</p>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <div id="gdp-pie-chart" style="height: 400px;"></div>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <div>
+                                <label for="year-selector">Select Year: </label>
+                                <select id="year-selector"></select>
+                            </div>
+                            <div id="yukon-business-survey" style="height: 400px;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+
+            <!-- Data Source -->
+            <div class="data-source mt-4">
+                <p> Source: Statistics Canada, Tables:
+                    <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005301"
+                        target="_blank">24-10-0053-01</a>,
+                    <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005001"
+                        target="_blank">24-10-0050-01</a>. Updated Weekly.
+                </p>
+            </div>
         </div>
+    </div>
     </div>
 
     <!-- Footer -->
@@ -136,13 +152,16 @@
         </div>
     </div>
 
+    <!-- JavaScript -->
     <script src="./vendor/jquery/jquery-3.5.1.slim.min.js"></script>
     <script src="./vendor/popper/popper.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script type="module" src="js/pages/pc-yearly-site-visitation.js"></script>
-    <script type="module" src="js/pages/pc-site-visitation.js"></script>
-    <script type="module" src="js/utils/data-table.js"></script>
+    <script type="module" src="js/economic/gdp-pie-chart.js"></script>
+    <script type="module" src="js/economic/gdp-stats-over-time.js"></script>
+    <script type="module" src="js/economic/revenue-targets.js"></script>
+    <script type="module" src="js/economic/yukon-business-survey.js"></script>
     <script src="js/utils/get-year.js"></script>
+    <!-- <script src="js/utils/data-table.js"></script> -->
 </body>
 
 </html>

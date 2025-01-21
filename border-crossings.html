@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yearly Border Crossings</title>
+    <title>Yearly Border Crossings | Yukon Tourism Indicators</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
-    
+
     <!-- Bootstrap CSS -->
     <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
     <!-- Highcharts JS -->
     <script src="./vendor/highcharts/12.1.0/highcharts.js"></script>
-    <script src="./vendor/highcharts/12.1.0/12.1.0/modules/treemap.js"></script>
-    <script src="./vendor/highcharts/12.1.0/12.1.0/modules/exporting.js"></script>
+    <script src="./vendor/highcharts/12.1.0/modules/treemap.js"></script>
+    <script src="./vendor/highcharts/12.1.0/stock/modules/exporting.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/accessibility.js"></script>
-    <script src="./vendor/highcharts/12.1.0/12.1.0/modules/scrollbar.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/stock.js"></script>
-    <script src="./vendor/highcharts/12.1.0/12.1.0/modules/exporting.js"></script>
-    <script src="./vendor/highcharts/12.1.0/12.1.0/modules/export-data.js"></script>
-    
-    
+    <script src="./vendor/highcharts/12.1.0/stock/modules/exporting.js"></script>
+    <script src="./vendor/highcharts/12.1.0/stock/modules/export-data.js"></script>
+
+
 
 </head>
+
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo.svg" class="d-inline-block align-top" style="height:40px;width:auto;margin-right:30px;" alt="Yukon Logo">
-            <a class="navbar-brand" href="index.html">Yukon Tourism Indicators</a>
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" class="d-inline-block align-top"
+                    style="height:40px;width:auto;margin-right:30px;" alt="Yukon Logo">
+                <a class="navbar-brand" href="index.html">Yukon Tourism Indicators</a>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
@@ -43,8 +48,8 @@
                     </li>
                 </ul>
             </div>
-    </div>
-</nav>
+        </div>
+    </nav>
 
 
     <!-- Main Container -->
@@ -56,8 +61,8 @@
                     <div class="text-center">
                         <h1 class="indicator-title">Border Crossings into the Yukon</h1>
                         <p class="indicator-subtitle">
-                            Insights into international border crossings into the Yukon: location trends, 
-                            overnight visitation, mode of transport, and visitor origin.  Totals include Yukoners.
+                            Insights into international border crossings into the Yukon: location trends,
+                            overnight visitation, mode of transport, and visitor origin. Totals include Yukoners.
                         </p>
                     </div>
                 </div>
@@ -98,18 +103,26 @@
             <div class="row mb-2">
                 <div class="card-body" style="width:100%;">
                     <h5 class="card-title">Highlights</h5>
-                    <p>In recent years, there has been a notable shift in the trends of international border crossings into Yukon, highlighting changing visitor dynamics:
+                    <p>In recent years, there has been a notable shift in the trends of international border crossings
+                        into Yukon, highlighting changing visitor dynamics:
                     </p>
                     <ul>
-                        <li>While crossings at Beaver Creek have experienced a slight resurgence in recent years, the overall trend has been downward since reaching an all-time high in 1992.</li>
-                        <li>Crossings at Pleasant Camp hit a record low in 2013 but have seen steady growth since then.</li>
-                        <li>Crossings at Fraser have increased dramatically, driven by the rise in cruise ship passengers docking in Skagway. This has led to a substantial increase in day trips from Skagway, although overnight visitation is trending downward.</li>
+                        <li>While crossings at Beaver Creek have experienced a slight resurgence in recent years, the
+                            overall trend has been downward since reaching an all-time high in 1992.</li>
+                        <li>Crossings at Pleasant Camp hit a record low in 2013 but have seen steady growth since then.
+                        </li>
+                        <li>Crossings at Fraser have increased dramatically, driven by the rise in cruise ship
+                            passengers docking in Skagway. This has led to a substantial increase in day trips from
+                            Skagway, although overnight visitation is trending downward.</li>
                     </ul>
                     <p>Visitor behavior and modes of transport have also evolved:</p>
                     <ul>
-                        <li>Train passenger numbers have remained steady, while there has been significant growth in bus passengers.</li>
-                        <li>The majority of visitors continue to be Americans, but the proportion of overseas visitors is growing.</li>
-                        <li>Visitors from Europe have remained stable or are decreasing, while travelers from Asia, Oceania, and the Americas are on the rise.</li>
+                        <li>Train passenger numbers have remained steady, while there has been significant growth in bus
+                            passengers.</li>
+                        <li>The majority of visitors continue to be Americans, but the proportion of overseas visitors
+                            is growing.</li>
+                        <li>Visitors from Europe have remained stable or are decreasing, while travelers from Asia,
+                            Oceania, and the Americas are on the rise.</li>
                     </ul>
                 </div>
             </div>
@@ -118,16 +131,20 @@
             <div style="width: 100%;">
                 <ul class="nav nav-tabs" id="data-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="true">By Year</a>
+                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab"
+                            aria-controls="by-year" aria-selected="true">By Year</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="false">By Month</a>
+                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab"
+                            aria-controls="by-month" aria-selected="false">By Month</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="origin-tab" data-toggle="tab" href="#origin" role="tab" aria-controls="origin" aria-selected="false">By Country of origin</a>
+                        <a class="nav-link" id="origin-tab" data-toggle="tab" href="#origin" role="tab"
+                            aria-controls="origin" aria-selected="false">By Country of origin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="license-tab" data-toggle="tab" href="#license" role="tab" aria-controls="license" aria-selected="false">By License Plate</a>
+                        <a class="nav-link" id="license-tab" data-toggle="tab" href="#license" role="tab"
+                            aria-controls="license" aria-selected="false">By License Plate</a>
                     </li>
                 </ul>
 
@@ -182,9 +199,9 @@
                             <div id="ybcvt-container" class="card mb-4 mt-4" style="width:100%;"></div>
                             <div id="ybco-container" class="card mb-4 mt-4" style="width:100%;"></div>
                             <div id="ybcc-container" class="card mb-4 mt-4" style="width:100%;"></div>
-                            
-                            
-                            
+
+
+
                         </div>
                     </div>
 
@@ -193,14 +210,16 @@
                         <div id="by-month-container" class="mb-4" style="width:100%; margin-top: 20px;">
                             <!-- Data by Month goes here -->
                             <div id="ybcm-container" class="card mb-4" style="width:100%;"></div>
-                            <div id="data-table-container" data-csv-url="data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
+                            <div id="data-table-container"
+                                data-csv-url="data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv"
+                                class="card mb-4" style="width:100%; margin-top: 20px;"></div>
                         </div>
                     </div>
 
                     <!-- Origin -->
                     <div class="tab-pane fade" id="origin" role="tabpanel" aria-labelledby="origin-tab">
                         <div id="origin-container" class="mb-4" style="width:100%; margin-top: 20px;">
-                            
+
                             <!-- Filters Container -->
                             <div class="d-flex flex-wrap align-items-center mb-4">
                                 <div class="d-flex align-items-center mr-4">
@@ -210,15 +229,20 @@
                                     </select>
                                 </div>
                             </div>
-                            <div id="can-us-bar-container"class="card mb-4 mt-4" style="width: 100%; height: 300px;"></div>
-                            <div id="country-bar-container"class="card mb-4 mt-4" style="width: 100%; height: 500px;"></div>
-                            <div id="country-pie-container" class="card mb-4 mt-4" style="width: 100%; height: 400px;"></div>
+                            <div id="can-us-bar-container" class="card mb-4 mt-4" style="width: 100%; height: 300px;">
+                            </div>
+                            <div id="country-bar-container" class="card mb-4 mt-4" style="width: 100%; height: 500px;">
+                            </div>
+                            <div id="country-pie-container" class="card mb-4 mt-4" style="width: 100%; height: 400px;">
+                            </div>
 
 
-                            
-                            
+
+
                             <div class="data-source mt-4">
-                                <p>Notes: Data has been filtered to only show countries with at least 100 crossings. Data for most recent year might not be a complete year.  Check the latest monthly crossing date.</p>
+                                <p>Notes: Data has been filtered to only show countries with at least 100 crossings.
+                                    Data for most recent year might not be a complete year. Check the latest monthly
+                                    crossing date.</p>
                             </div>
                         </div>
                     </div>
@@ -227,58 +251,66 @@
                     <div class="tab-pane fade" id="license" role="tabpanel" aria-labelledby="license-tab">
                         <div id="license-tab-container" class="mb-4" style="width:100%; margin-top: 20px;"></div>
 
-                            <!-- Filters Container -->
-                            <div class="d-flex flex-wrap align-items-center mb-4">
-                                <div class="d-flex align-items-center mr-4">
-                                    <label for="license-year-filter" class="sr-only">Filter by Year</label>
-                                    <select id="license-year-filter" class="form-control">
-                                        <!-- Years populated dynamically by Javascript -->
-                                    </select>
-                                </div>
+                        <!-- Filters Container -->
+                        <div class="d-flex flex-wrap align-items-center mb-4">
+                            <div class="d-flex align-items-center mr-4">
+                                <label for="license-year-filter" class="sr-only">Filter by Year</label>
+                                <select id="license-year-filter" class="form-control">
+                                    <!-- Years populated dynamically by Javascript -->
+                                </select>
                             </div>
-                            
-                            <div id="license-container" class="card mb-4 mt-4" style="width: 100%; height: 600px;"></div>
-                            <div class="data-source mt-4">
-                                <p>Notes: Vehicle arrivals have been filtered to only show states and provinces with at least 1000 crossings. Data has been filtered to only show countries with at least 100 crossings. Data for most recent year might not be a complete year.  Check the latest monthly crossing date.</p>
-                            </div>
+                        </div>
+
+                        <div id="license-container" class="card mb-4 mt-4" style="width: 100%; height: 600px;"></div>
+                        <div class="data-source mt-4">
+                            <p>Notes: Vehicle arrivals have been filtered to only show states and provinces with at
+                                least 1000 crossings. Data has been filtered to only show countries with at least 100
+                                crossings. Data for most recent year might not be a complete year. Check the latest
+                                monthly crossing date.</p>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Data Source -->
-                <div class="data-source mt-4">
-                    <p>Notes: Excludes travellers entering Yukon via BC on the South Alaska or Stewart-Cassiar Highways,
-                        the NWT on the Dempster Highway or on domestic flights. Total includes Yukoners.</p>
-                    <p>Source: Statistics Canada, Tables:
-                        <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005301" target="_blank">24-10-0053-01</a>,
-                        <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005001" target="_blank">24-10-0050-01</a>,
-                        <a href="https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=2410005701" target="_blank">20-10-0057-01</a>. Updated Weekly.</p>
-                        
-                </div>
+            <!-- Data Source -->
+            <div class="data-source mt-4">
+                <p>Notes: Excludes travellers entering Yukon via BC on the South Alaska or Stewart-Cassiar Highways,
+                    the NWT on the Dempster Highway or on domestic flights. Total includes Yukoners.</p>
+                <p>Source: Statistics Canada, Tables:
+                    <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005301"
+                        target="_blank">24-10-0053-01</a>,
+                    <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005001"
+                        target="_blank">24-10-0050-01</a>,
+                    <a href="https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=2410005701"
+                        target="_blank">20-10-0057-01</a>. Updated Weekly.
+                </p>
+
             </div>
         </div>
     </div>
+    </div>
 
-<!-- Footer -->
-<footer class="py-4 bg-dark">
-    <div class="container">
-        <div class="brand">
-            <a href="index.html"><img src="images/logo-rev.png" alt="Yukon Government Logo" style="height:62px;width:158px;margin-right:30px;" /></a>
-            <div><img class="aurora" src="images/Aurora-main.svg" alt="Yukon Government Branding" style="" /></div>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <div class="brand">
+                <a href="index.html"><img src="images/logo-rev.png" alt="Yukon Government Logo"
+                        style="height:62px;width:158px;margin-right:30px;" /></a>
+                <div><img class="aurora" src="images/Aurora-main.svg" alt="Yukon Government Branding" style="" /></div>
+            </div>
+        </div>
+    </footer>
+    <div id="footer-menu" class="py-4">
+        <div class="container">
+            <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
+            <ul class="fNav" style="float:left;">
+                <li><a href="https://yukon.ca/en" class="active">Home</a></li>
+            </ul>
+            <ul class="fNav" style="float:left;">
+                <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
+            </ul>
         </div>
     </div>
-</footer>
-<div id="footer-menu" class="py-4">
-    <div class="container">
-        <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
-        <ul class="fNav" style="float:left;">
-            <li><a href="https://yukon.ca/en" class="active">Home</a></li>
-        </ul>
-        <ul class="fNav" style="float:left;">
-            <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
-        </ul>
-    </div>
-</div>
 
     <!-- JavaScript -->
     <script src="./vendor/jquery/jquery-3.5.1.slim.min.js"></script>
@@ -292,13 +324,9 @@
     <script src="js/border-crossings/border-crossings-by-country-recent-year.js" defer></script>
     <script src="js/border-crossings/border-crossings-by-us-can-overseas.js" defer></script>
     <script src="js/border-crossings/vehicle-arrival-by-license-plate.js" defer></script>
-    <script src="js/border-crossings/monthly-border-crossings.js"  defer></script>
+    <script src="js/border-crossings/monthly-border-crossings.js" defer></script>
     <script src="js/utils/data-table.js" defer></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const dataTable = new DataTable('data-table-container');
-            dataTable.initialize();
-        });
-    </script>
+    <script src="js/utils/get-year.js"></script>
 </body>
+
 </html>

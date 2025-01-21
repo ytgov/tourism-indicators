@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             console.error('Could not generate chart due to missing data.');
             return;
         }
-        console.log(gdpData);
+        //console.log(gdpData);
 
         const chartTitle = `$${tourismGDPValue.toFixed(1)} million (${GDPPercentage.toFixed(1)}%) of Yukon's GDP was attributable to tourism in ${latestTourismYear}.`;
 

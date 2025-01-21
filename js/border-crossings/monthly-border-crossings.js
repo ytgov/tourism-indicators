@@ -62,17 +62,22 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
             const latestEntry = data[data.length - 1];
 
+            console.log(latestEntry);
+            const date = new Date(latestEntry.date);
+            const month = date.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
+            const year = date.getFullYear();
+
             // Update "Latest Monthly Crossings"
             const latestMonthly = document.getElementById("latest-monthly");
             const latestMonthlyDate = document.getElementById("latest-monthly-date");
             if (latestMonthly) latestMonthly.textContent = latestEntry.monthlyTotal.toLocaleString();
-            if (latestMonthlyDate) latestMonthlyDate.textContent = latestEntry.dateString;
+            if (latestMonthlyDate) latestMonthlyDate.textContent = month + " " + year;
 
             // Update "Year-to-Date Crossings"
             const ytdAmount = document.getElementById("ytd-amount");
             const ytdDateRange = document.getElementById("ytd-date-range");
             if (ytdAmount) ytdAmount.textContent = latestEntry.ytdTotal.toLocaleString();
-            if (ytdDateRange) ytdDateRange.textContent = latestEntry.ytdDateRange;
+            if (ytdDateRange) ytdDateRange.textContent = latestEntry.ytdDateRange + year;
 
             // Update "Year-to-Date Change"
             const ytdChangeElement = document.getElementById("ytd-change");

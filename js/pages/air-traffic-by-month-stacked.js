@@ -33,7 +33,7 @@ async function loadCSVData(csvUrl) {
 // Generate the chart
 async function generateChart() {
     const rawData = await loadCSVData('data/vw_kpi_air_arrivals_ytd_summary.csv');
-    console.log(rawData);
+    //console.log(rawData);
     if (!rawData.length) {
         console.error('Failed to load CSV data.');
         return;
