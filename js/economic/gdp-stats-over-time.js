@@ -142,7 +142,8 @@ async function createGDPStatsChart() {
                 color: '#2f7ed8',
                 yAxis: 1,
                 zIndex: 1
-            }]
+            }],
+            credits: { enabled: false }
         });
     } catch (error) {
         console.error('Error creating GDP stats chart:', error);

@@ -189,7 +189,7 @@ class DataTable {
 
     createChangeCell(change) {
         const numericChange = parseFloat(change) || 0;
-        const changeClass = numericChange > 0 ? 'text-success' : numericChange < 0 ? 'text-danger' : '';
+        const changeClass = numericChange > 1 ? 'text-success' : numericChange < -1 ? 'text-danger' : 'text-neutral';
         const arrow = numericChange > 0 ? '↑' : numericChange < 0 ? '↓' : '';
         return `<span class="${changeClass}">${arrow} ${Math.abs(numericChange).toFixed(1)}%</span>`;
     }

@@ -85,45 +85,56 @@
                                 <div class="data-source mt-4">
                                     <p class="ml-4">Notes: Target Revenue is from the Yukon Tourism Development
                                         Strategy, 2016.
-                                        Actual Revenue comes from Yukon Business Survey, 2014-2022. Estimated and
-                                        forecast
-                                        revenue is calculated based on monthly spending from LASR.</p>
+                                        Actual Revenue comes from <a href="https://yukon.ca/en/yukon-business-survey-2023" target="_blank">Yukon Business Survey, 2009-2023.</a>
+                                         Estimated and forecast revenue is calculated based on monthly spending from <a href="https://www.tourismdatacollective.ca/" target="_blank">LASR.</a></p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="card mt-4">
                         <div class="card-body">
                             <div id="gdp-stats-chart" style="height: 400px;"></div>
                         </div>
-                    </div>
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <div id="gdp-pie-chart" style="height: 400px;"></div>
-                        </div>
-                    </div>
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <div>
-                                <label for="year-selector">Select Year: </label>
-                                <select id="year-selector"></select>
-                            </div>
-                            <div id="yukon-business-survey" style="height: 400px;"></div>
+                        <div class="data-source">
+                            <p class="ml-4">Source: <a href="https://yukon.ca/en/yukon-business-survey-2023" target="_blank">Yukon Business Survey, 2009-2023.</a></br>
+                                Statistics Canada. <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610040201" target="_blank">Table 36-10-0402-01  Gross domestic product (GDP) at basic prices, by industry, provinces and territories (x 1,000,000)</a></p>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- GDP -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="d-flex align-items-center mr-4">
+                                    <div>
+                                        <label for="year-selector">Select Year: </label>
+                                        <select id="year-selector"></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="yukon-business-survey" class="col-md-7" style="height: 500px;"></div>
+                                <div id="gdp-pie-chart" class="col-md-5" style="height: 500px;"></div>
+                            </div>
+                            <div class="data-source">
+                                <p>Source: <a href="https://yukon.ca/en/yukon-business-survey-2023" target="_blank">Yukon Business Survey, 2009-2023.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
 
             <!-- Data Source -->
             <div class="data-source mt-4">
-                <p> Source: Statistics Canada, Tables:
-                    <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005301"
-                        target="_blank">24-10-0053-01</a>,
-                    <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005001"
-                        target="_blank">24-10-0050-01</a>. Updated Weekly.
+                <p>Notes: These statistics represent <b>perceived</b> Yukon GDP attributed to tourism, construction, 
+                    agriculture and mining, since the computations are entirely dependent on the respondent's perception of the percentage 
+                    of their revenues attributed to each of these industry sectors.  Reporting of this perceived value by businesses was based 
+                    on their 'best guess' which may have imparted bias in the data.
                 </p>
             </div>
         </div>
@@ -159,7 +170,7 @@
     <script type="module" src="js/economic/gdp-pie-chart.js"></script>
     <script type="module" src="js/economic/gdp-stats-over-time.js"></script>
     <script type="module" src="js/economic/revenue-targets.js"></script>
-    <script type="module" src="js/economic/yukon-business-survey.js"></script>
+    <script type="module" src="js/economic/revenue-and-gdp-attributable-to-tourism-by-sector.js"></script>
     <script src="js/utils/get-year.js"></script>
     <!-- <script src="js/utils/data-table.js"></script> -->
 </body>

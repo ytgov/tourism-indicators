@@ -297,7 +297,7 @@ class DataTable {
     
 
     createChangeCell(change) {
-        const changeClass = change > 0 ? 'text-success' : change < 0 ? 'text-danger' : '';
+        const changeClass = change > 1 ? 'text-success' : change < -1 ? 'text-danger' : 'text-neutral';
         const arrow = change > 0 ? '↑' : change < 0 ? '↓' : '';
         return `<span class="${changeClass}">${arrow} ${Math.abs(change).toFixed(1)}%</span>`;
     }

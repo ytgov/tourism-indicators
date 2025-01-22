@@ -91,8 +91,8 @@ async function initChart(csvPath) {
     }
     if (ytdChangeElement) {
         ytdChangeElement.textContent = `${ytdChange}%`;
-        ytdChangeElement.classList.remove('text-success', 'text-danger');
-        ytdChangeElement.classList.add(ytdChange >= 0 ? 'text-success' : 'text-danger');
+        ytdChangeElement.classList.remove('text-success', 'text-danger', 'text-neutral');
+        ytdChangeElement.classList.add(ytdChange >= 1 ? 'text-success' : ytdChange <= -1 ? 'text-danger' : 'text-neutral');
     }
 
     // Create a map to aggregate total visitors by date

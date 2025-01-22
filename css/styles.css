@@ -170,6 +170,10 @@ brand{
     color: #dc3545;
 }
 
+.text-neutral {
+    color: #6c757d;
+}
+
 
 .chart-container {
     position: absolute;

@@ -41,8 +41,16 @@ document.addEventListener("DOMContentLoaded", function () {
         changeElement.textContent = `${ytdChange >= 0 ? '+' : ''}${ytdChange.toFixed(1)}%`;
 
         // Safely update classes without overwriting existing ones
-        changeElement.classList.remove('text-success', 'text-danger');
-        changeElement.classList.add(ytdChange >= 0 ? 'text-success' : 'text-danger');
+        changeElement.classList.remove('text-success', 'text-danger', 'text-neutral');
+
+        if (ytdChange >= 1) {
+            changeElement.classList.add('text-success');
+        } else if (ytdChange <= -1) {
+            changeElement.classList.add('text-danger');
+        } else {
+            changeElement.classList.add('text-neutral');
+        }
+
     }
 
     // Fetch and process data

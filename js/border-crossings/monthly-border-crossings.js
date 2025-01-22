@@ -83,12 +83,14 @@ document.addEventListener("DOMContentLoaded", function () {
             const ytdChangeElement = document.getElementById("ytd-change");
             if (ytdChangeElement) {
                 ytdChangeElement.textContent = `${latestEntry.ytdChange.toFixed(1)}%`;
-                ytdChangeElement.classList.remove("text-success", "text-danger");
+                ytdChangeElement.classList.remove("text-success", "text-danger", "text-neutral");
                 
-                if (latestEntry.ytdChange > 0) {
+                if (latestEntry.ytdChange > 1) {
                     ytdChangeElement.classList.add("text-success");
-                } else if (latestEntry.ytdChange < 0) {
+                } else if (latestEntry.ytdChange < -1) {
                     ytdChangeElement.classList.add("text-danger");
+                } else {
+                    ytdChangeElement.classList.add("text-neutral");
                 }
             }
         } catch (error) {

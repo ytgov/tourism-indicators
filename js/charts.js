@@ -679,9 +679,9 @@ function updateKPIContent(containerId, data, title) {
     let isAccommodationIndicator = containerId.startsWith('additional');
     
     // Special formatting for different indicators
-    if (title === 'Visitor Spending') {
+    if (title === 'Economic Overview') {
         formattedTotal = formatSpendingInMillions(data.ytdTotal);
-        subheading = 'Total visitor spending';
+        subheading = 'GDP, Revenue, and Spending';
     } else if (title === 'Air Arrivals') {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Erik Nielsen Whitehorse International Airport';
@@ -836,7 +836,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     // Third KPI - Visitor Spending
     const spendingData = await loadSpendingData();
     if (spendingData) {
-        updateKPIContent('indicator4-content', spendingData, 'Visitor Spending');
+        updateKPIContent('indicator4-content', spendingData, 'Economic Overview');
         createKPIChart('indicator4-chart', spendingData.monthlyData, spendingData.ytdPercentageChange);
     }
 
