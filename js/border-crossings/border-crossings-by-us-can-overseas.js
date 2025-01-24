@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         } else {
             barChart = Highcharts.chart('can-us-bar-container', {
-                chart: { type: 'bar' },
+                chart: { type: 'bar', height: 300 },
                 title: { text: `Border Crossings by Origin (${year})` },
                 xAxis: {
                     type: 'category',

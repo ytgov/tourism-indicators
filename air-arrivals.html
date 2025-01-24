@@ -82,9 +82,9 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5 class="card-title">YTD Change</h5>
+                            <h5 class="card-title">Year-to-Date Change</h5>
                             <p class="card-text h2" id="ytd-change">-</p>
-                            <p class="card-text text-muted">vs Previous Year</p>
+                            <p class="card-text  mb-0" id="c2019-change"></p>
                         </div>
                     </div>
                 </div>
@@ -167,17 +167,20 @@
             </div>
         </div>
     </footer>
-    <div id="footer-menu" class="py-4">
-        <div class="container">
-            <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
-            <ul class="fNav" style="float:left;">
-                <li><a href="https://yukon.ca/en" class="active">Home</a></li>
-            </ul>
-            <ul class="fNav" style="float:left;">
-                <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
-            </ul>
+        <div id="footer-menu" class="py-4">
+            <div class="container">
+                <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
+                <ul class="fNav" style="float:left;">
+                    <li><a href="https://yukon.ca/en" class="active">Home</a></li>
+                </ul>
+                <ul class="fNav" style="float:left;">
+                    <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
+                </ul>
+                <ul class="fNav" style="float:left;">
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
     <!-- jQuery and Bootstrap JS -->
     <script src="./vendor/jquery/jquery-3.5.1.slim.min.js"></script>

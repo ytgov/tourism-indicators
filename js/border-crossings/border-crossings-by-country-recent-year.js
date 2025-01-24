@@ -71,7 +71,10 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         } else {
             barChart = Highcharts.chart('country-bar-container', {
-                chart: { type: 'bar' },
+                chart: { 
+                    type: 'bar',
+                    height: 500
+                 },
                 title: { text: `Border Crossings by Overseas Country (${year})` },
                 xAxis: {
                     type: 'category',

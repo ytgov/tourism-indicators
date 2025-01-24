@@ -212,7 +212,7 @@ class DataTable {
         // Extract selected month and year
         const [month, year] = this.selectedMonth.split(' ');
         const prevYear = parseInt(year, 10) - 1;
-        const ytdRange = selectedData[0][10] ? selectedData[0][10].replace(/January - /, 'Jan - ') : '';
+        const ytdRange = selectedData[0][12] ? selectedData[0][12].replace(/January - /, 'Jan - ') : '';
     
         // Determine if the 4th column contains "monthly"
         const containsMonthly = this.columns[3]?.toLowerCase().includes('monthly');

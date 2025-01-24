@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
         Highcharts.chart('ybctt-container', {
             chart: {
                 type: 'column',
-                zoomType: 'x'
+                zoomType: 'x',
+                height: 400
             },
             title: {
                 text: titleText

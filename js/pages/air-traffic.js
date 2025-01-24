@@ -46,11 +46,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (latestData) {
                 const ytdTotal = parseFloat(latestData[6]).toLocaleString();
                 const date = new Date(latestData[0]);
-                const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+                const month = date.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
                 const year = date.getFullYear();
                 
                 ytdAmountElement.textContent = ytdTotal;
-                ytdDateRangeElement.textContent = `Jan - ${month} ${year}`;
+                ytdDateRangeElement.textContent = `January - ${month} ${year}`;
             }
 
             // Update YTD change
@@ -66,7 +66,23 @@ document.addEventListener('DOMContentLoaded', async () => {
                     color = '#dc3545';  // Red for negative changes
                 }
                 const arrow = createArrowSvg(ytdChangeValue >= 0);
-                ytdChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdChangeValue.toFixed(1)}%</span>`;
+                ytdChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdChangeValue.toFixed(1)}% y/y</span>`;
+            }
+
+            // Update 2019 comparison
+            const c2019ChangeElement = document.getElementById('c2019-change');
+            if (latestData && latestData[9]) {
+                const c2019ChangeValue = parseFloat(latestData[10]);
+                let color;
+                if (c2019ChangeValue >= -1 && c2019ChangeValue <= 1) {
+                    color = '#6c757d';  // Dark grey for neutral changes
+                } else if (c2019ChangeValue > 1) {
+                    color = '#28a745';  // Green for positive changes
+                } else {
+                    color = '#dc3545';  // Red for negative changes
+                }
+                const arrow = createArrowSvg(c2019ChangeValue >= 0);
+                c2019ChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${c2019ChangeValue.toFixed(1)}% from 2019</span>`;
             }
         }
 
@@ -78,7 +94,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const yearlyConfig = {
             chart: {
-                type: 'column' // Vertical bar chart
+                type: 'column', 
+                height: 400 
             },
             title: {
                 text: 'Yearly Airport Arrivals'

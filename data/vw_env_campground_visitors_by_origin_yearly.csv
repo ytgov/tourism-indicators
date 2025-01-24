@@ -1,14 +1,4 @@
 arrivalyear,visitor_origin,visitors
-2006,United States,6092.0
-2009,United States,10983.0
-2017,Canada,48334.0
-2019,Overseas,16627.0
-2019,United States,20913.0
-2021,United States,2290.0
-2007,Unknown,6979.0
-2008,Unknown,6249.0
-2021,Overseas,321.0
-2023,United States,25632.0
 2011,Canada,24304.0
 2014,United States,13027.0
 2017,United States,18141.0
@@ -24,6 +14,16 @@ arrivalyear,visitor_origin,visitors
 2021,Unknown,323.0
 2012,Canada,25053.0
 2017,Overseas,13887.0
+2006,United States,6092.0
+2009,United States,10983.0
+2017,Canada,48334.0
+2019,Overseas,16627.0
+2019,United States,20913.0
+2021,United States,2290.0
+2007,Unknown,6979.0
+2008,Unknown,6249.0
+2021,Overseas,321.0
+2023,United States,25632.0
 2009,Overseas,10606.0
 2010,Overseas,11132.0
 2020,Canada,40238.0
@@ -46,8 +46,8 @@ arrivalyear,visitor_origin,visitors
 2006,Overseas,4557.0
 2012,United States,10463.0
 2016,Canada,43269.0
-2018,United States,20828.0
 2018,Overseas,15787.0
+2018,United States,20828.0
 2014,Unknown,765.0
 2015,Canada,35775.0
 2023,Overseas,11170.0

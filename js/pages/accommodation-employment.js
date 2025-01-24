@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     color = '#dc3545';  // Red for negative changes
                 }
                 const arrow = createArrowSvg(ytdChangeValue >= 0);
-                ytdChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdChangeValue.toFixed(1)}%</span>`;
+                ytdChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdChangeValue.toFixed(1)}% y/y</span>`;
             }
 
             // Update Average Weekly Earnings
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     color = '#dc3545';  // Red for negative changes
                 }
                 const arrow = createArrowSvg(ytdEChangeValue >= 0);
-                ytdEarningsChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdEChangeValue.toFixed(1)}%</span>`;
+                ytdEarningsChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdEChangeValue.toFixed(1)}% y/y</span>`;
             }
         }
 
@@ -119,7 +119,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const yearlyConfig = {
             chart: {
-                type: 'column' // Vertical bar chart
+                type: 'column', // Vertical bar chart
+                height: 400
             },
             title: {
                 text: 'Average Monthly Employment and Weekly Earnings in Accommodation and Food Services'

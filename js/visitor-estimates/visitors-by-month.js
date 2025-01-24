@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const csvUrl = "/data/vw_kpi_estimated_visitors.csv";
 
+    // Function to create arrow SVG
+    function createArrowSvg(isPositive) {
+        return `<svg class="svg-arrow" width="20" height="20" viewBox="0 0 448 512" style="transform: ${isPositive ? 'none' : 'rotate(180deg)'}">
+        <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5-9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3-9.8-24.8-10-34.3.4z"></path>
+    </svg>`;
+    }
+
     function updateMetricsCards(data) {
         if (!data || data.length === 0) {
             console.error('No data available to update metrics cards.');
@@ -17,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const monthlyTotal = latestData.monthlyTotal || 0;
         const ytdTotal = latestData.ytdTotal || 0;
         const ytdChange = latestData.ytdChange || 0;
+        const c2019Change = latestData.c2019Change || 0;
 
         // Update Latest Monthly Visitors
         document.getElementById('latest-monthly').textContent = monthlyTotal.toLocaleString();
@@ -38,10 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Calculate and update YTD Change
         const changeElement = document.getElementById('ytd-change');
-        changeElement.textContent = `${ytdChange >= 0 ? '+' : ''}${ytdChange.toFixed(1)}%`;
+        const arrow = createArrowSvg(ytdChange >= 0);
+        changeElement.innerHTML = `${arrow}${ytdChange.toFixed(1)}% y/y`;
+
+        // Calculate and update 2019 Change
+        const c2019ChangeElement = document.getElementById('c2019-change');
+        const cArrow = createArrowSvg(c2019Change >= 0);
+        c2019ChangeElement.innerHTML = `${cArrow}${Math.abs(c2019Change.toFixed(1))}% from 2019`;
 
         // Safely update classes without overwriting existing ones
         changeElement.classList.remove('text-success', 'text-danger', 'text-neutral');
+        c2019ChangeElement.classList.remove('text-success', 'text-danger', 'text-neutral');
 
         if (ytdChange >= 1) {
             changeElement.classList.add('text-success');
@@ -49,6 +64,14 @@ document.addEventListener("DOMContentLoaded", function () {
             changeElement.classList.add('text-danger');
         } else {
             changeElement.classList.add('text-neutral');
+        }
+
+        if (c2019Change >= 1) {
+            c2019ChangeElement.classList.add('text-success');
+        } else if (c2019Change <= -1) {
+            c2019ChangeElement.classList.add('text-danger');
+        } else {
+            c2019ChangeElement.classList.add('text-neutral');
         }
 
     }
@@ -75,7 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     date: new Date(row[0].replace(/"/g, '')),
                     monthlyTotal: parseInt(row[4]) || 0,
                     ytdTotal: parseInt(row[7]) || 0,
-                    ytdChange: parseFloat(row[9]) || 0
+                    ytdChange: parseFloat(row[9]) || 0,
+                    c2019Change: parseFloat(row[11]) || 0
                 }))
                 .filter(item => !isNaN(item.date) && !isNaN(item.monthlyTotal))
                 .sort((a, b) => a.date - b.date); // Sort by date ascending

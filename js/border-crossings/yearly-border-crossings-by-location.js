@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
         Highcharts.chart('ybcbl-container', {
             chart: {
                 type: 'column', // Vertical bar chart
-                zoomType: 'x'
+                zoomType: 'x',
+                height: 400
             },
             title: {
                 text: titleText

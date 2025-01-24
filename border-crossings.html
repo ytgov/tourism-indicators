@@ -93,7 +93,7 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Year-to-Date Change</h5>
                             <p class="card-text h2" id="ytd-change">-</p>
-                            <p class="card-text text-muted">vs Previous Year</p>
+                            <p class="card-text  mb-0" id="c2019-change"></p>
                         </div>
                     </div>
                 </div>
@@ -274,8 +274,11 @@
 
             <!-- Data Source -->
             <div class="data-source mt-4">
-                <p>Notes: Excludes travellers entering Yukon via BC on the South Alaska or Stewart-Cassiar Highways,
-                    the NWT on the Dempster Highway or on domestic flights. Total includes Yukoners.</p>
+                <p>Notes: Border crossings overestimate the number of travellers entering the Yukon, as the Fraser and
+                    Pleasant Camp crossings can enter British Columbia without entering the Yukon. These border
+                    crossings come from official port of entries, which therefor exclude
+                    travellers entering Yukon via BC on the South Alaska or Stewart-Cassiar Highways,
+                    the NWT on the Dempster Highway or on domestic flights. Totals includes Yukoners.</p>
                 <p>Source: Statistics Canada, Tables:
                     <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005301"
                         target="_blank">24-10-0053-01</a>,
@@ -309,6 +312,9 @@
             <ul class="fNav" style="float:left;">
                 <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
             </ul>
+            <ul class="fNav" style="float:left;">
+                <li><a href="data.html">Data</a></li>
+            </ul>
         </div>
     </div>
 
@@ -316,6 +322,7 @@
     <script src="./vendor/jquery/jquery-3.5.1.slim.min.js"></script>
     <script src="./vendor/popper/popper.min.js" defer></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="js/border-crossings/monthly-border-crossings.js" defer></script>
     <script src="js/border-crossings/yearly-border-crossings-by-location.js" defer></script>
     <script src="js/border-crossings/yearly-border-crossings-by-traveller-type.js" defer></script>
     <script src="js/border-crossings/yearly-border-crossings-by-origin.js" defer></script>
@@ -324,7 +331,6 @@
     <script src="js/border-crossings/border-crossings-by-country-recent-year.js" defer></script>
     <script src="js/border-crossings/border-crossings-by-us-can-overseas.js" defer></script>
     <script src="js/border-crossings/vehicle-arrival-by-license-plate.js" defer></script>
-    <script src="js/border-crossings/monthly-border-crossings.js" defer></script>
     <script src="js/utils/data-table.js" defer></script>
     <script src="js/utils/get-year.js"></script>
 </body>

@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             barChart = Highcharts.chart('license-container', {
                 chart: {
                     type: 'bar',
+                    height: 600,
                     scrollablePlotArea: {
                         minHeight: 500, // Adjust as per the number of bars
                         scrollPositionY: 0

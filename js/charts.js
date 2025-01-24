@@ -708,13 +708,13 @@ function updateKPIContent(containerId, data, title) {
     } else if (title === 'Highway Traffic') {
         formattedTotal = formatInThousands(Math.round(data.ytdTotal / 1000) * 1000);
         subheading = 'Total highway traffic';
-    } else if (title === 'STR Occupancy Rate') {
+    } else if (title === 'Rental Occupancy Rate') {
         formattedTotal = formatPercentage(data.ytdTotal);
         subheading = 'Average STR occupancy rate';
     } else if (title === 'STR Average Daily Rate') {
         formattedTotal = formatCurrency(data.ytdTotal);
         subheading = 'Average STR daily rate';
-    } else if (title === 'STR Revenue Per Room') {
+    } else if (title === 'Revenue Per Room') {
         formattedTotal = formatCurrency(data.ytdTotal);
         subheading = 'Average STR revenue per room';
     }
@@ -875,33 +875,35 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     const strOccupancyData = await loadSTROccupancyData();
     if (strOccupancyData) {
-        updateKPIContent('additional6-content', strOccupancyData, 'STR Occupancy Rate');
+        updateKPIContent('additional6-content', strOccupancyData, 'Rental Occupancy Rate');
     }
 
     const strADRData = await loadSTRADRData();
     if (strADRData) {
-        updateKPIContent('additional7-content', strADRData, 'STR Avg. Daily Rate');
+        updateKPIContent('additional7-content', strADRData, 'Avg. Daily Rate');
     }
 
     const strRevPARData = await loadSTRRevPARData();
     if (strRevPARData) {
-        updateKPIContent('additional8-content', strRevPARData, 'STR Revenue Per Room');
+        updateKPIContent('additional8-content', strRevPARData, 'Revenue Per Room');
     }
-
+    /*
     const pcVisitorsData = await loadPCVisitorData();
     if (pcVisitorsData) {
         updateKPIContent('additional9-content', pcVisitorsData, 'Parks Canada Visits');
     }
+    */
 
     /*const scFuelPrices = await loadFuelPrices();
     if (scFuelPrices) {
         updateKPIContent('additional10-content', scFuelPrices, 'Average Fuel Price');
     }*/
-
+    /*
     const envCampgroundData = await loadCampgroundVisitorData();
     if (envCampgroundData) {
         updateKPIContent('additional11-content', envCampgroundData, 'Campground Visits');
     }
+    */
 
     const scAccommodationEmployment = await loadAccommodationEmployment();
     if (scAccommodationEmployment) {

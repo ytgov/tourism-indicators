@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const csvUrl = "./data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv";
 
+    // Function to create arrow SVG
+    function createArrowSvg(isPositive) {
+        return `<svg class="svg-arrow" width="20" height="20" viewBox="0 0 448 512" style="transform: ${isPositive ? 'none' : 'rotate(180deg)'}">
+        <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5-9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3-9.8-24.8-10-34.3.4z"></path>
+    </svg>`;
+    }
+
     function fetchDataAndRender() {
         fetch(csvUrl)
             .then(response => {
@@ -25,7 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         const monthlyTotal = parseFloat(row[4]) || 0; // monthly_total
                         const ytdTotal = parseFloat(row[7]) || 0; // ytd_total
                         const ytdChange = parseFloat(row[9]) || 0; // ytd_percentage_difference
-                        const ytdDateRange = row[10] ? row[10].replace(/"/g, "") : ""; // ytd_month_range
+                        const ytdDateRange = row[12] ? row[12].replace(/"/g, "") : ""; // ytd_month_range
+                        const c2019Change = parseFloat(row[11]) || 0; // c2019_percentage_difference
 
                         return {
                             date: new Date(dateStr).getTime(),
@@ -33,7 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             monthlyTotal: monthlyTotal,
                             ytdTotal: ytdTotal,
                             ytdDateRange: ytdDateRange,
-                            ytdChange: ytdChange
+                            ytdChange: ytdChange,
+                            c2019Change: c2019Change
                         };
                     })
                     .filter(item => !isNaN(item.date) && !isNaN(item.monthlyTotal))
@@ -61,8 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateMetricsCards(data) {
         try {
             const latestEntry = data[data.length - 1];
-
-            console.log(latestEntry);
             const date = new Date(latestEntry.date);
             const month = date.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
             const year = date.getFullYear();
@@ -82,16 +89,31 @@ document.addEventListener("DOMContentLoaded", function () {
             // Update "Year-to-Date Change"
             const ytdChangeElement = document.getElementById("ytd-change");
             if (ytdChangeElement) {
-                ytdChangeElement.textContent = `${latestEntry.ytdChange.toFixed(1)}%`;
-                ytdChangeElement.classList.remove("text-success", "text-danger", "text-neutral");
-                
-                if (latestEntry.ytdChange > 1) {
-                    ytdChangeElement.classList.add("text-success");
-                } else if (latestEntry.ytdChange < -1) {
-                    ytdChangeElement.classList.add("text-danger");
+                let color;
+                if (latestEntry.ytdChange >= -1 && latestEntry.ytdChange <= 1) {
+                    color = '#6c757d';  // Dark grey for neutral changes
+                } else if (latestEntry.ytdChange > 1) {
+                    color = '#28a745';  // Green for positive changes
                 } else {
-                    ytdChangeElement.classList.add("text-neutral");
+                    color = '#dc3545';  // Red for negative changes
                 }
+                const arrow = createArrowSvg(latestEntry.ytdChange >= 0);
+                ytdChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${latestEntry.ytdChange.toFixed(1)}% y/y</span>`;
+            }
+
+            // Update 2019 Change comparison
+            const c2019ChangeElement = document.getElementById("c2019-change");
+            if (c2019ChangeElement) {
+                let color;
+                if (latestEntry.c2019Change >= -1 && latestEntry.c2019Change <= 1) {
+                    color = '#6c757d';  // Dark grey for neutral changes
+                } else if (latestEntry.c2019Change > 1) {
+                    color = '#28a745';  // Green for positive changes
+                } else {
+                    color = '#dc3545';  // Red for negative changes
+                }
+                const arrow = createArrowSvg(latestEntry.c2019Change >= 0);
+                c2019ChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${latestEntry.c2019Change.toFixed(1)}% from 2019</span>`;
             }
         } catch (error) {
             console.error("Error updating metrics cards:", error);
@@ -133,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     text: "Total Crossings"
                 },
                 labels: {
-                    formatter: function() {
+                    formatter: function () {
                         return this.value.toLocaleString();
                     }
                 }
@@ -148,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }],
             tooltip: {
                 valueDecimals: 0,
-                pointFormatter: function() {
+                pointFormatter: function () {
                     return `<span style="color:${this.color}">\u25CF</span> ${this.series.name}: <b>${this.y.toLocaleString()} crossings</b><br/>`;
                 }
             }

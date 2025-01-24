@@ -42,7 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
         Highcharts.chart('ybcc-container', {
             chart: {
                 type: 'column',
-                zoomType: 'x'
+                zoomType: 'x',
+                height: 400
             },
             title: {
                 text: 'Overseas visitors by Continent'

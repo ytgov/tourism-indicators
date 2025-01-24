@@ -78,7 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
         Highcharts.chart('transportation-chart', {
             chart: {
                 type: 'column',
-                zoomType: 'x'
+                zoomType: 'x',
+                height: 400
             },
             title: {
                 text: 'Visitors by Transportation Type'

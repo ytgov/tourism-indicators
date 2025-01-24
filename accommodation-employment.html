@@ -78,6 +78,9 @@
                                 <p class="card-text text-muted mt-2 mb-0" id="ytd-date-range">-</p>
                                 <p class="card-text text-muted mt-2 mb-0" id="ytd-change"></p>
                             </div>
+                            <div class="d-flex justify-content-between mt-auto">
+                                <p class="card-text text-muted" id="2019-change">8.8 y/y</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,10 +158,11 @@
 
                 <!-- Data Source -->
                 <div class="data-source mt-4">
+                    <p>Notes: Numbers are not adjusted for inflation. Numbers are seasonally adjusted.</p>
                     <p>Source: Statistics Canada, Employment and average weekly earnings (including overtime) for all
                         employees by province and territory, monthly, seasonally adjusted.
                         Earnings data are based on gross payroll before source deductions.
-                        <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410022301">Table
+                        <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410022301" target="_blank">Table
                             14-10-0223-01.</a>
                     </p>
                 </div>
@@ -176,17 +180,20 @@
             </div>
         </div>
     </footer>
-    <div id="footer-menu" class="py-4">
-        <div class="container">
-            <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
-            <ul class="fNav" style="float:left;">
-                <li><a href="https://yukon.ca/en" class="active">Home</a></li>
-            </ul>
-            <ul class="fNav" style="float:left;">
-                <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
-            </ul>
+        <div id="footer-menu" class="py-4">
+            <div class="container">
+                <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
+                <ul class="fNav" style="float:left;">
+                    <li><a href="https://yukon.ca/en" class="active">Home</a></li>
+                </ul>
+                <ul class="fNav" style="float:left;">
+                    <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
+                </ul>
+                <ul class="fNav" style="float:left;">
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
     <!-- JavaScript -->
     <script src="./vendor/jquery/jquery-3.5.1.slim.min.js"></script>

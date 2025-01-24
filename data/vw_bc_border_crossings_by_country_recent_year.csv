@@ -1,7 +1,7 @@
 year,Country_of_residence,value
 2024,Argentina,92
 2024,Aruba,4
-2024,Australia,9896
+2024,Australia,9921
 2024,Austria,207
 2024,Bahamas,96
 2024,Bahrain,2
@@ -18,10 +18,10 @@ year,Country_of_residence,value
 2024,Cambodia,7
 2024,Cayman Islands,20
 2024,Chile,125
-2024,China,3160
+2024,China,3175
 2024,Colombia,162
 2024,"Congo, Republic of the",2
-2024,Costa Rica,125
+2024,Costa Rica,126
 2024,Croatia,26
 2024,Cuba,8
 2024,Cyprus,2
@@ -33,27 +33,27 @@ year,Country_of_residence,value
 2024,Egypt,4
 2024,El Salvador,18
 2024,Estonia,14
-2024,Fiji,7
+2024,Fiji,11
 2024,Finland,26
-2024,France,378
+2024,France,380
 2024,French Polynesia,3
-2024,Germany,2472
+2024,Germany,2477
 2024,Ghana,11
 2024,Greece,26
 2024,Guatemala,27
 2024,Haiti,3
 2024,Honduras,25
-2024,Hong Kong,832
+2024,Hong Kong,835
 2024,Hungary,60
 2024,Iceland,19
-2024,India,3802
+2024,India,3808
 2024,Indonesia,329
 2024,Iran,58
 2024,Ireland,563
 2024,Israel,489
 2024,Italy,399
 2024,Jamaica,23
-2024,Japan,764
+2024,Japan,771
 2024,Jordan,5
 2024,Kazakhstan,9
 2024,Kenya,21
@@ -64,15 +64,15 @@ year,Country_of_residence,value
 2024,Lithuania,28
 2024,Luxembourg,14
 2024,Macao,10
-2024,Malaysia,555
+2024,Malaysia,556
 2024,Malta,150
 2024,Mauritius,6
-2024,Mexico,3138
+2024,Mexico,3150
 2024,Mongolia,4
-2024,Morocco,6
+2024,Morocco,7
 2024,Myanmar,10
 2024,Nepal,30
-2024,Netherlands,1107
+2024,Netherlands,1108
 2024,New Zealand,1535
 2024,Nicaragua,5
 2024,Nigeria,29
@@ -81,7 +81,7 @@ year,Country_of_residence,value
 2024,Pakistan,47
 2024,Panama,53
 2024,Peru,66
-2024,Philippines,990
+2024,Philippines,993
 2024,Poland,146
 2024,Portugal,134
 2024,Puerto Rico,10
@@ -91,24 +91,24 @@ year,Country_of_residence,value
 2024,Saudi Arabia,8
 2024,Serbia,6
 2024,Sierra Leone,1
-2024,Singapore,2259
+2024,Singapore,2261
 2024,Slovakia,18
 2024,Slovenia,17
 2024,"South Africa, Republic of",89
-2024,Spain,1165
+2024,Spain,1166
 2024,Sri Lanka,36
 2024,Sweden,85
 2024,Switzerland,382
-2024,Taiwan,1596
-2024,Thailand,146
+2024,Taiwan,1600
+2024,Thailand,147
 2024,Trinidad and Tobago,52
-2024,Türkiye,53
+2024,Türkiye,54
 2024,Turks and Caicos Islands,2
 2024,Uganda,2
 2024,Ukraine,42
 2024,United Arab Emirates,43
-2024,United Kingdom,8934
-2024,United States,344792
+2024,United Kingdom,8951
+2024,United States,347153
 2024,Uruguay,10
 2024,Venezuela,8
 2024,Viet Nam,329

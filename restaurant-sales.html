@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
 
@@ -20,18 +21,22 @@
     <script src="./vendor/highcharts/12.1.0/stock/modules/export-data.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/accessibility.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/stock.js"></script>
-    
+
 </head>
+
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo.svg" class="d-inline-block align-top" style="height:40px;width:auto;margin-right:30px;" alt="Yukon Logo">
-            <a class="navbar-brand" href="index.html">Yukon Tourism Indicators</a>
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" class="d-inline-block align-top"
+                    style="height:40px;width:auto;margin-right:30px;" alt="Yukon Logo">
+                <a class="navbar-brand" href="index.html">Yukon Tourism Indicators</a>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
@@ -40,8 +45,8 @@
                     </li>
                 </ul>
             </div>
-    </div>
-</nav>
+        </div>
+    </nav>
 
 
     <!-- Main Content -->
@@ -52,7 +57,7 @@
                 <h1 class="indicator-title">Restaurant Sales</h1>
                 <p class="indicator-subtitle">
                     This dashboard highlights monthly and year-to-date trends in restaurant and bar sales in the Yukon,
-                     providing insights into the economic health of the food and beverage industry.</p>
+                    providing insights into the economic health of the food and beverage industry.</p>
             </div>
 
             <!-- Metrics Cards -->
@@ -91,9 +96,13 @@
                 <div class="card-body" style="width:100%;">
                     <h5 class="card-title">Highlights</h5>
                     <ul>
-                        <li>2024 is on track to be a record year for sales at restaurants and bars in the Yukon, with a 8.2% increase year over year from January to October 2024.</li>
-                        <li>Sales rebounded strongly post-2020, with YTD sales rising from $70.3M in 2020 to $103.9M in 2023, surpassing the pre-pandemic high of $83.9M in 2019.</li>
-                        <li>The YTD sales shows an overall upward trend, growing significantly from $45.6M in 2000 to $103.9M in 2023. This indicates sustained growth in restaurant and bar sales over the years.</li>
+                        <li>2024 is on track to be a record year for sales at restaurants and bars in the Yukon, with a
+                            8.2% increase year over year from January to October 2024.</li>
+                        <li>Sales rebounded strongly post-2020, with YTD sales rising from $70.3M in 2020 to $103.9M in
+                            2023, surpassing the pre-pandemic high of $83.9M in 2019.</li>
+                        <li>The YTD sales shows an overall upward trend, growing significantly from $45.6M in 2000 to
+                            $103.9M in 2023. This indicates sustained growth in restaurant and bar sales over the years.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -102,10 +111,12 @@
             <div style="width: 100%;">
                 <ul class="nav nav-tabs" id="data-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="true">By Year</a>
+                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab"
+                            aria-controls="by-year" aria-selected="true">By Year</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="false">By Month</a>
+                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab"
+                            aria-controls="by-month" aria-selected="false">By Month</a>
                     </li>
                 </ul>
 
@@ -121,56 +132,70 @@
                     <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
                         <div id="by-month-container" class="mb-4" style="width:100%; margin-top: 20px;">
                             <!-- Data by Month goes here -->
-                            <div id="indicator-chart" class="card mb-4 indicator-chart-container" style="width:100%; height:500px;"></div>
-                            <div id="data-table-container"  class="card mb-4 p-3" data-csv-url="data/vw_kpi_economic_restaurant_spending.csv" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
+                            <div id="indicator-chart" class="card mb-4 indicator-chart-container"
+                                style="width:100%; height:500px;"></div>
+                            <div id="data-table-container" class="card mb-4 p-3"
+                                data-csv-url="data/vw_kpi_economic_restaurant_spending.csv" class="card mb-4"
+                                style="width:100%; margin-top: 20px;"></div>
                         </div>
                     </div>
                 </div>
-            
 
-            <!-- Data Source -->
-            <div class="data-source mt-4">
-                <p>Notes: Numbers are not adjusted for inflation. This dashboard presents insights into monthly restaurant and bar sales in the Yukon, based on data from the Monthly Survey of
-                     Food Services and Drinking Places. The survey tracks the sales of restaurants, caterers, and drinking establishments 
-                     classified under NAICS 722, providing vital information for federal and territorial governments, industry associations, 
-                     and businesses for planning, marketing, and policy-making. Updates typically occur within 3 months.</p>
-                <p>Data Source: Statistics Canada, Monthly Survey of Food Services and Drinking Places. <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2110001901" target="_blank">Table 21-10-0019-01.</a></p>
+
+                <!-- Data Source -->
+                <div class="data-source mt-4">
+                    <p>Notes: Numbers are not adjusted for inflation. This dashboard presents insights into monthly
+                        restaurant and bar sales in the Yukon, based on data from the Monthly Survey of
+                        Food Services and Drinking Places. The survey tracks the sales of restaurants, caterers, and
+                        drinking establishments
+                        classified under NAICS 722, providing vital information for federal and territorial governments,
+                        industry associations,
+                        and businesses for planning, marketing, and policy-making. Updates typically occur within 3
+                        months.</p>
+                    <p>Data Source: Statistics Canada, Monthly Survey of Food Services and Drinking Places. <a
+                            href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2110001901"
+                            target="_blank">Table 21-10-0019-01.</a></p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-    
 
-<!-- Footer -->
-<footer class="py-4 bg-dark">
-    <div class="container">
-        <div class="brand">
-            <a href="index.html"><img src="images/logo-rev.png" alt="Yukon Government Logo" style="height:62px;width:158px;margin-right:30px;" /></a>
-            <div><img class="aurora" src="images/Aurora-main.svg" alt="Yukon Government Branding" style="" /></div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <div class="brand">
+                <a href="index.html"><img src="images/logo-rev.png" alt="Yukon Government Logo"
+                        style="height:62px;width:158px;margin-right:30px;" /></a>
+                <div><img class="aurora" src="images/Aurora-main.svg" alt="Yukon Government Branding" style="" /></div>
+            </div>
+        </div>
+    </footer>
+    <div id="footer-menu" class="py-4">
+        <div class="container">
+            <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
+            <ul class="fNav" style="float:left;">
+                <li><a href="https://yukon.ca/en" class="active">Home</a></li>
+            </ul>
+            <ul class="fNav" style="float:left;">
+                <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
+            </ul>
+            <ul class="fNav" style="float:left;">
+                <li><a href="data.html">Data</a></li>
+            </ul>
         </div>
     </div>
-</footer>
-<div id="footer-menu" class="py-4">
-    <div class="container">
-        <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
-        <ul class="fNav" style="float:left;">
-            <li><a href="https://yukon.ca/en" class="active">Home</a></li>
-        </ul>
-        <ul class="fNav" style="float:left;">
-            <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
-        </ul>
-    </div>
-</div>
 
     <!-- jQuery and Bootstrap JS -->
     <script src="./vendor/jquery/jquery-3.5.1.slim.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- Custom JS -->
     <script type="module" src="js/pages/restaurant-spending.js"></script>
     <script type="module" src="js/utils/data-table.js"></script>
     <script src="js/utils/get-year.js"></script>
 
 </body>
+
 </html>

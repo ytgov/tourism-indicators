@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Create GDP composition pie chart
         Highcharts.chart('gdp-pie-chart', {
-            chart: { type: 'pie' },
+            chart: { type: 'pie', height: 500 },
             title: { text: chartTitle },
             tooltip: { pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>' },
             plotOptions: {

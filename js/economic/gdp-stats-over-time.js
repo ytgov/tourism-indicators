@@ -47,6 +47,7 @@ async function createGDPStatsChart() {
         Highcharts.chart('gdp-stats-chart', {
             chart: {
                 type: 'line',
+                height: 400,
                 style: {
                     fontFamily: 'Arial, sans-serif'
                 }

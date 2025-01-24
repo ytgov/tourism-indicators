@@ -41,10 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Render Highcharts
         Highcharts.chart('yukon-business-survey', {
             chart: {
-                type: 'bar'
+                type: 'bar',
+                height: 500
             },
             title: {
-                text: `Revenue and GDP attributable to Tourism by Sector (${selectedYear})`
+                text: `Gross revenue and GDP attributable to Tourism by Sector (${selectedYear})`
             },
             xAxis: {
                 categories: sortedSectors,

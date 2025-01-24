@@ -79,7 +79,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const yearlyConfig = {
             chart: {
-                type: 'column' // Vertical bar chart
+                type: 'column', // Vertical bar chart
+                height: 400
             },
             title: {
                 text: 'Yearly Restaurant Sales'
