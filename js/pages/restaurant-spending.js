@@ -66,7 +66,23 @@ document.addEventListener('DOMContentLoaded', async () => {
                     color = '#dc3545';  // Red for negative changes
                 }
                 const arrow = createArrowSvg(ytdChangeValue >= 0);
-                ytdChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdChangeValue.toFixed(1)}%</span>`;
+                ytdChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdChangeValue.toFixed(1)}% y/y</span>`;
+            }
+
+            // Update 2019 change
+            const ytdChangeElement2019 = document.getElementById('ytd-change-2019');
+            if (latestData[10]) {
+                const ytdChangeValue2019 = parseFloat(latestData[10]);
+                let color2019;
+                if (ytdChangeValue2019 >= -1 && ytdChangeValue2019 <= 1) {
+                    color2019 = '#6c757d';  // Dark grey for neutral changes
+                } else if (ytdChangeValue2019 > 1) {
+                    color2019 = '#28a745';  // Green for positive changes
+                } else {
+                    color2019 = '#dc3545';  // Red for negative changes
+                }
+                const arrow2019 = createArrowSvg(ytdChangeValue2019 >= 0);
+                ytdChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${ytdChangeValue2019.toFixed(1)}% from 2019</span>`;
             }
         }
 

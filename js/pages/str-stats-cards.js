@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             const occElement = document.getElementById('ytd-occupancy');
             const occChangeElement = document.getElementById('ytd-occ-change');
             const occDateElement = document.getElementById('latest-monthly-date');
+            const occChangeElement2019 = document.getElementById('ytd-occ-change-2019');
+            const occDateElement2019 = document.getElementById('latest-monthly-date-2019');
 
             if (latestOccData) {
                 // Get total YTD occupancy
@@ -51,10 +53,24 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
                 const arrow = createArrowSvg(occChange >= 0);
 
+                // Get 2019 change percentage
+                const occChange2019 = parseFloat(latestOccData[10]);
+                let color2019;
+                if (occChange2019 >= -1 && occChange2019 <= 1) {
+                    color2019 = '#6c757d';  // Dark grey for neutral changes
+                } else if (occChange2019 > 1) {
+                    color2019 = '#28a745';  // Green for positive changes
+                } else {
+                    color2019 = '#dc3545';  // Red for negative changes
+                }
+                const arrow2019 = createArrowSvg(occChange2019 >= 0);
+
                 // Update occupancy elements
                 occElement.textContent = monthlyTotal;
                 occChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${occChange.toFixed(1)}% y/y</span>`;
                 occDateElement.textContent = `Jan - ${month} ${year}`;
+                occChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${occChange2019.toFixed(1)}% y/y</span>`;
+                occDateElement2019.textContent = `Jan - ${month} 2019`;
             }
 
 
@@ -62,6 +78,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             const adrElement = document.getElementById('ytd-adr');
             const adrChangeElement = document.getElementById('ytd-adr-change');
             const adrDateRangeElement = document.getElementById('ytd-adr-date-range');
+            const adrChangeElement2019 = document.getElementById('ytd-adr-change-2019');
+            const adrDateRangeElement2019 = document.getElementById('ytd-adr-date-range-2019');
             //console.log(latestAdrData);
             if (latestAdrData) {
                 const ytdTotal = '$' + parseFloat(latestAdrData[6]).toLocaleString();
@@ -80,16 +98,33 @@ document.addEventListener('DOMContentLoaded', async () => {
                     color = '#dc3545';  // Red for negative changes
                 }
                 const arrow = createArrowSvg(adrChange >= 0);
+
+                // Get 2019 change percentage
+                const adrChange2019 = parseFloat(latestAdrData[10]);
+                let color2019;
+                if (adrChange2019 >= -1 && adrChange2019 <= 1) {
+                    color2019 = '#6c757d';  // Dark grey for neutral changes
+                } else if (adrChange2019 > 1) {
+                    color2019 = '#28a745';  // Green for positive changes
+                } else {
+                    color2019 = '#dc3545';  // Red for negative changes
+                }
+                const arrow2019 = createArrowSvg(adrChange2019 >= 0);
                 
                 adrElement.textContent = ytdTotal;
                 adrChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${adrChange.toFixed(1)}% y/y</span>`;
                 adrDateRangeElement.textContent = `Jan - ${month} ${year}`;
+                adrChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${adrChange2019.toFixed(1)}% y/y</span>`;
+                adrDateRangeElement2019.textContent = `Jan - ${month} 2019`;
             }
 
             // Update revpar
             const revElement = document.getElementById('ytd-revpar');
             const revChangeElement = document.getElementById('ytd-rev-change');
             const revDateRangeElement = document.getElementById('ytd-rev-date-range');
+            const revChangeElement2019 = document.getElementById('ytd-rev-change-2019');
+            const revDateRangeElement2019 = document.getElementById('ytd-rev-date-range-2019');
+
             if (latestRevparData) {
                 const ytdTotal = '$' + parseFloat(latestRevparData[6]).toLocaleString();
                 const date = new Date(latestRevparData[0]);
@@ -107,10 +142,24 @@ document.addEventListener('DOMContentLoaded', async () => {
                     color = '#dc3545';  // Red for negative changes
                 }
                 const arrow = createArrowSvg(revChange >= 0);
+
+                // Get 2019 change percentage
+                const revChange2019 = parseFloat(latestRevparData[10]);
+                let color2019;
+                if (revChange2019 >= -1 && revChange2019 <= 1) {
+                    color2019 = '#6c757d';  // Dark grey for neutral changes
+                } else if (revChange2019 > 1) {
+                    color2019 = '#28a745';  // Green for positive changes
+                } else {
+                    color2019 = '#dc3545';  // Red for negative changes
+                }
+                const arrow2019 = createArrowSvg(revChange2019 >= 0);
                 
                 revElement.textContent = ytdTotal;
                 revChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${revChange.toFixed(1)}% y/y</span>`;
                 revDateRangeElement.textContent = `Jan - ${month} ${year}`;
+                revChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${revChange2019.toFixed(1)}% y/y</span>`;
+                revDateRangeElement2019.textContent = `Jan - ${month} 2019`;
             }
         }
 

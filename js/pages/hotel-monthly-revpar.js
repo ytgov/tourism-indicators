@@ -59,7 +59,8 @@ async function generateChart() {
     // Generate the chart
     Highcharts.chart('monthly-revpar', {
         chart: {
-            type: 'line'
+            type: 'line',
+            height: 400
         },
         title: {
             text: 'RevPAR'

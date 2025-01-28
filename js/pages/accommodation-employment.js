@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Update YTD amount
             const ytdAmountElement = document.getElementById('ytd-amount');
             const ytdDateRangeElement = document.getElementById('ytd-date-range');
+            const ytdDateRangeElement2019 = document.getElementById('ytd-date-range-2019');
             if (latestData) {
                 const ytdTotal = parseFloat(latestData[6]).toLocaleString();
                 const date = new Date(latestData[0]);
@@ -58,6 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 
                 ytdAmountElement.textContent = ytdTotal;
                 ytdDateRangeElement.textContent = `Jan - ${month} ${year}`;
+                ytdDateRangeElement2019.textContent = `Jan - ${month} 2019`;
             }
 
             // Update YTD change
@@ -76,9 +78,26 @@ document.addEventListener('DOMContentLoaded', async () => {
                 ytdChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdChangeValue.toFixed(1)}% y/y</span>`;
             }
 
+            // Update 2019 change
+            const ytdChangeElement2019 = document.getElementById('ytd-change-2019');
+            if (latestData[10]) {
+                const ytdChangeValue2019 = parseFloat(latestData[10]);
+                let color2019;
+                if (ytdChangeValue2019 >= -1 && ytdChangeValue2019 <= 1) {
+                    color2019 = '#6c757d';  // Dark grey for neutral changes
+                } else if (ytdChangeValue2019 > 1) {
+                    color2019 = '#28a745';  // Green for positive changes
+                } else {
+                    color2019 = '#dc3545';  // Red for negative changes
+                }
+                const arrow2019 = createArrowSvg(ytdChangeValue2019 >= 0);
+                ytdChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${ytdChangeValue2019.toFixed(1)}% y/y</span>`;
+            }
+
             // Update Average Weekly Earnings
             const ytdEarningsAmountElement = document.getElementById('ytd-earn-amount');
             const ytdEarningsDateRangeElement = document.getElementById('ytd-earn-date-range');
+            const ytdEarningsDateRangeElement2019 = document.getElementById('ytd-earn-date-range-2019');
             if (latestEData) {
                 const ytdTotal = parseFloat(latestEData[6]).toLocaleString();
                 const date = new Date(latestEData[0]);
@@ -87,6 +106,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 
                 ytdEarningsAmountElement.textContent = `$${ytdTotal}`;
                 ytdEarningsDateRangeElement.textContent = `Jan - ${month} ${year}`;
+                ytdEarningsDateRangeElement2019.textContent = `Jan - ${month} 2019`;
             }
 
 
@@ -103,6 +123,21 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
                 const arrow = createArrowSvg(ytdEChangeValue >= 0);
                 ytdEarningsChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdEChangeValue.toFixed(1)}% y/y</span>`;
+            }
+
+            const ytdEarningsChangeElement2019 = document.getElementById('ytd-earn-change-2019');
+            if (latestEData[10]) {
+                const ytdEChangeValue2019 = parseFloat(latestEData[10]);
+                let color2019;
+                if (ytdEChangeValue2019 >= -1 && ytdEChangeValue2019 <= 1) {
+                    color2019 = '#6c757d';  // Dark grey for neutral changes
+                } else if (ytdEChangeValue2019 > 1) {
+                    color2019 = '#28a745';  // Green for positive changes
+                } else {
+                    color2019 = '#dc3545';  // Red for negative changes
+                }
+                const arrow2019 = createArrowSvg(ytdEChangeValue2019 >= 0);
+                ytdEarningsChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${ytdEChangeValue2019.toFixed(1)}% y/y</span>`;
             }
         }
 

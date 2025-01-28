@@ -32,9 +32,6 @@ arrivalyear,visitor_origin,visitors
 2018,Canada,52635.0
 2022,Overseas,10456.0
 2023,Unknown,2620.0
-2011,Overseas,10431.0
-2013,Canada,27799.0
-2013,Unknown,848.0
 2008,Overseas,10292.0
 2013,Overseas,9773.0
 2016,Unknown,766.0
@@ -57,8 +54,8 @@ arrivalyear,visitor_origin,visitors
 2006,Canada,8772.0
 2008,United States,9447.0
 2012,Overseas,10213.0
-2013,United States,11773.0
 2014,Canada,29605.0
+2013,United States,11773.0
 2018,Unknown,1822.0
 2019,Canada,52920.0
 2007,Overseas,7909.0
@@ -71,3 +68,6 @@ arrivalyear,visitor_origin,visitors
 2022,Canada,51989.0
 2022,Unknown,2328.0
 2023,Canada,55419.0
+2011,Overseas,10431.0
+2013,Canada,27799.0
+2013,Unknown,848.0

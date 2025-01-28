@@ -126,11 +126,17 @@ const datasetConfigs = {
         dataFile: 'data/vw_kpi_air_arrivals_ytd_summary.csv',
         yAxisTitle: 'Passengers deplaning',
         valueFormat: 'number',
-        description: 'Monthly passengers deplaning from Erik Nielsen Whitehorse International Airport. This dataset provides arrival statistics showing passenger traffic trends.'
+        description: 'Monthly passengers deplaning from Erik Nielsen Whitehorse International Airport. This dataset provides arrival statistics showing passenger traffic trends.',
+        chart: {
+            height: 400
+        }
     },
     restaurantSpending: {
         id: 'restaurant-spending',
         title: 'Monthly Restaurant Spending',
+        chart: {
+            height: 400
+        },
         yAxisTitle: 'Spending ($M)',
         valueFormat: 'number',
         tooltip: {
@@ -152,6 +158,9 @@ const datasetConfigs = {
     retailSpending: {
         id: 'retail-spending',
         title: 'Monthly Retail Spending',
+        chart: {
+            height: 400
+        },
         yAxisTitle: 'Spending ($M)',
         valueFormat: 'number',
         tooltip: {
@@ -174,13 +183,19 @@ const datasetConfigs = {
         id: 'accommodation-employment',
         title: 'Employment in the Accommodation and Food Services Industry',
         yAxisTitle: 'Employment',
-        valueFormat: 'number'
+        valueFormat: 'number',
+        chart: {
+            height: 400
+        }
     },
     accommodationEarnings: {
         id: 'accommodation-earnings',
         title: 'Average weekly earnings in the Accommodation and Food Services Industry',
         yAxisTitle: 'Weekly earnings ($)',
-        valueFormat: 'number'
+        valueFormat: 'number',
+        chart: {
+            height: 400
+        }
     },
     intlTravelers: {
         id: 'intl-travelers',
@@ -212,7 +227,7 @@ const datasetConfigs = {
         dataFile: '/data/vw_kpi_sc_gas_prices_ytd_summary.csv',
         yAxisTitle: 'Price (c/L)',
         valueFormat: 'number',
-        description: 'Monthly average prices for regular gasoline.'
+        description: 'Monthly average prices for regular gasoline.',
     },
     hotelStats: {
         id: 'hotel-stats',
@@ -221,10 +236,16 @@ const datasetConfigs = {
         yAxisTitle: 'Occupancy Rate (%)',
         valueFormat: 'number',
         description: 'Occupancy rate at select hotels.',
+        chart: {
+            height: 400
+        }
     },
     strStats: {
         id: 'str-stats',
         title: 'STR Key Performance Indicators',
+        chart: {
+            height: 400
+        },
         dataFiles: {
             occupancy: '/data/vw_kpi_str_occupancy_ytd_summary.csv',
             adr: '/data/vw_kpi_str_adr_ytd_summary.csv',

@@ -69,7 +69,8 @@ async function generateChart() {
     // Generate the chart
     Highcharts.chart('monthly-chart', {
         chart: {
-            type: 'line'
+            type: 'line',
+            height: 400
         },
         title: {
             text: 'Air arrivals by month'

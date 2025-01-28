@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Create bar chart for border crossing types
         Highcharts.chart('border-types-chart', {
             chart: {
-                type: 'column'
+                type: 'column',
+                height: 400
             },
             title: {
                 text: null

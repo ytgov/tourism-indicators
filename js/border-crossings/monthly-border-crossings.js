@@ -122,6 +122,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function renderChart(seriesData) {
         Highcharts.stockChart("ybcm-container", {
+            chart: {
+                height: 400
+            },
             rangeSelector: {
                 selected: 2,
                 buttons: [{

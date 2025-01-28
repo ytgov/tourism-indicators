@@ -18,7 +18,8 @@ fetch('./data/vw_ve_estimated_visitors_by_year_historic.csv')
         // Create the chart
         Highcharts.chart('visitor-estimates-container', {
             chart: {
-                type: 'spline'
+                type: 'spline',
+                height: 400
             },
             title: {
                 text: 'Estimated Annual Visitors'

@@ -58,7 +58,8 @@ async function generateChart() {
     // Generate the chart
     Highcharts.chart('monthly-adr', {
         chart: {
-            type: 'line'
+            type: 'line',
+            height: 400
         },
         title: {
             text: 'Average Daily Room Rate'
