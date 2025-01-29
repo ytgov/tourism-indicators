@@ -39,7 +39,7 @@ class DataTable {
 
     async fetchData(csvUrl) {
         try {
-            const response = await fetch(csvUrl);
+            const response = await fetch(csvUrl + '?' + Math.random());
             const csvText = await response.text();
 
             // Ensure rows are split properly and empty lines are removed

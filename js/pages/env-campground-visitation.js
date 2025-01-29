@@ -201,6 +201,6 @@ async function initChart(csvPath) {
 }
 
 // Example usage
-const csvPath = 'data/vw_kpi_env_campground_visitors_by_month.csv';
+const csvPath = 'data/vw_kpi_env_campground_visitors_by_month.csv?'+Math.random();
 initChart(csvPath);
 updateMetricCards();

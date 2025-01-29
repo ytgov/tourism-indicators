@@ -12,7 +12,7 @@ function createArrowSvg(isPositive) {
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         // Load data directly
-        const data = await loadCSVData("/data/vw_kpi_wlws_highway_counts_ytd_summary.csv");
+        const data = await loadCSVData("/data/vw_kpi_wlws_highway_counts_ytd_summary.csv?"+Math.random());
         
         if (!data || !data.data) {
             console.error('No data available');
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Initialize charts for both views
         const monthlyConfig = {
             ...datasetConfigs.vicVisitors,
-            dataFile: 'data/vw_kpi_wlws_highway_counts_ytd_summary.csv'
+            dataFile: 'data/vw_kpi_wlws_highway_counts_ytd_summary.csv?'+Math.random()
         };
 
         // Define desired order

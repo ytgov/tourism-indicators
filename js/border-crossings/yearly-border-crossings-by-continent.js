@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "./data/vw_bc_yearly_border_crossings_by_continent.csv";
+    const csvUrl = "./data/vw_bc_yearly_border_crossings_by_continent.csv?"+Math.random();
 
     let allData = []; // Store all the fetched CSV data
     let years = []; // Store unique years
@@ -99,17 +99,17 @@ document.addEventListener("DOMContentLoaded", function () {
             renderChart(allData);
 
             // Add event listeners for filters
-            const geoDropdown = document.getElementById("geo-filter");
+            //const geoDropdown = document.getElementById("geo-filter");
             const timeDropdown = document.getElementById("time-filter");
             const covidDropdown = document.getElementById("covid-filter");
 
             function applyFilters() {
-                const selectedGeo = geoDropdown.value;
+                //const selectedGeo = geoDropdown.value;
                 const selectedTime = timeDropdown.value;
                 const covidFilter = covidDropdown.value; // "include" or "exclude"
 
-                // Filter data by geo
-                let filteredData = selectedGeo === "All" ? allData : allData.filter(row => row[1].trim() === selectedGeo);
+                // Filter data by time
+                let filteredData = allData;
 
                 // Filter data by time
                 if (selectedTime !== "All") {
@@ -131,7 +131,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             // Attach change event listeners
-            geoDropdown.addEventListener("change", applyFilters);
             timeDropdown.addEventListener("change", applyFilters);
             covidDropdown.addEventListener("change", applyFilters);
             applyFilters();

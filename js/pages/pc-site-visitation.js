@@ -132,5 +132,5 @@ async function initChart(csvPath) {
 }
 
 // Example usage
-const csvPath = 'data/vw_kpi_pc_site_visitation_ytd_summary.csv';
+const csvPath = 'data/vw_kpi_pc_site_visitation_ytd_summary.csv?'+Math.random();
 initChart(csvPath);

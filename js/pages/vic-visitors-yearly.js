@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "./data/vw_kpi_vic_visitors_by_location_ytd_summary.csv";
+    const csvUrl = "./data/vw_kpi_vic_visitors_by_location_ytd_summary.csv?"+Math.random();
 
     let allData = []; // To store the fetched CSV data
     let years = []; // To store unique years

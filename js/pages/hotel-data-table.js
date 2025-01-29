@@ -33,7 +33,7 @@ class DataTable {
 
     async fetchData(csvUrl) {
         try {
-            const response = await fetch(csvUrl);
+            const response = await fetch(csvUrl + '?' + Math.random());
             const csvText = await response.text();
 
             const rows = csvText

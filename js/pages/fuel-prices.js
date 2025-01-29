@@ -12,7 +12,7 @@ function createArrowSvg(isPositive) {
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         // Load data directly
-        const data = await loadCSVData('data/vw_kpi_sc_gas_prices_ytd_summary.csv');
+        const data = await loadCSVData('data/vw_kpi_sc_gas_prices_ytd_summary.csv?'+Math.random());
         
         if (!data || !data.data) {
             console.error('No data available');

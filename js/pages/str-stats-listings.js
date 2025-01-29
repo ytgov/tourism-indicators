@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             id: 'str-stats',
             title: 'Occupancy Rate and Available Listings',
             dataFiles: {
-                occupancy: '/data/vw_kpi_str_occupancy_ytd_summary.csv',
-                listings: '/data/vw_kpi_str_available_listings_ytd_summary.csv'
+                occupancy: '/data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random(),
+                listings: '/data/vw_kpi_str_available_listings_ytd_summary.csv?'+Math.random()
             },
             series: {
                 occupancy: {

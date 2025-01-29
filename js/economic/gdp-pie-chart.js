@@ -2,7 +2,7 @@ import { loadCSVData } from '../utils/data-utils.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     // Load data directly
-    const data = await loadCSVData('data/ybs_gdp_percentage.csv');
+    const data = await loadCSVData('data/ybs_gdp_percentage.csv?'+Math.random());
 
     // Convert data into an array of objects using the headers
     const parsedData = data.data.map(row => {

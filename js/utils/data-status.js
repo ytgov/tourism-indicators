@@ -2,7 +2,7 @@
 async function displayDataStatusTable() {
     try {
         // Fetch the CSV file
-        const response = await fetch('../data/vw_etl_data_status.csv');
+        const response = await fetch('../data/vw_etl_data_status.csv?'+Math.random());
         const csvText = await response.text();
 
         // Parse CSV into an array of rows
@@ -52,8 +52,8 @@ async function displayDataStatusTable() {
                 } else if (index === 3 && rowData[1] === 'Export') {
                     // Format the 4th column as a hyperlink if the process (index 1) is 'Export'
                     const link = document.createElement('a');
-                    link.href = '/data/' + cellData + '.csv'; // Assume the cellData contains the URL
-                    link.textContent = cellData + '.csv'; // Display text for the hyperlink
+                    link.href = '/data/' + cellData + '.csv?'+Math.random(); // Assume the cellData contains the URL
+                    link.textContent = cellData + '.csv?'+Math.random(); // Display text for the hyperlink
                     link.target = '_blank'; // Open the link in a new tab
                     td.appendChild(link);
                 }

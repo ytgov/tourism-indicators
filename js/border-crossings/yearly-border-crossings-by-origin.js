@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "./data/vw_bc_yearly_border_crossings_by_origin.csv";
+    const csvUrl = "./data/vw_bc_yearly_border_crossings_by_origin.csv?"+Math.random();
 
     let allData = []; // To store the fetched CSV data
     let years = []; // To store unique years

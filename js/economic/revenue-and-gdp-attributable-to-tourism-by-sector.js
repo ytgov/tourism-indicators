@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "./data/vw_ybs_tourism_revenue_and_gdp.csv";
+    const csvUrl = "./data/vw_ybs_tourism_revenue_and_gdp.csv?"+Math.random();
 
 
     // Function to parse CSV with proper handling of quoted fields

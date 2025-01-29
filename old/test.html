@@ -42,7 +42,7 @@
         }
 
         // Process CSV and render the chart
-        loadCSV('/data/vw_kpi_air_arrivals_ytd_summary.csv', function(data) {
+        loadCSV('/data/vw_kpi_air_arrivals_ytd_summary.csv?'+Math.random(), function(data) {
 
             // Sort data by date (ascending)
             data.sort((a, b) => new Date(a.date) - new Date(b.date));

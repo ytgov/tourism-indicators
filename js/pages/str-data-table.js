@@ -217,10 +217,10 @@ class DataTable {
 // Example Usage
 document.addEventListener('DOMContentLoaded', function () {
     const csvUrls = [
-        'data/vw_kpi_str_occupancy_ytd_summary.csv',
-        'data/vw_kpi_str_adr_ytd_summary.csv',
-        'data/vw_kpi_str_revpar_ytd_summary.csv',
-        'data/vw_kpi_str_available_listings_ytd_summary.csv'
+        'data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random(),
+        'data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random(),
+        'data/vw_kpi_str_revpar_ytd_summary.csv?'+Math.random(),
+        'data/vw_kpi_str_available_listings_ytd_summary.csv?'+Math.random()
     ];
 
 

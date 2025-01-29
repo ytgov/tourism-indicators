@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "./data/vw_bc_vehicle_arrivals_by_license_plate.csv";
+    const csvUrl = "./data/vw_bc_vehicle_arrivals_by_license_plate.csv?"+Math.random();
     let globalData = []; // Store parsed CSV data globally
     let barChart; // Store Highcharts bar chart instance globally
 

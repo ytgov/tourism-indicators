@@ -35,7 +35,7 @@ async function loadCSVData(csvUrl) {
 }
 
 async function generateChart() {
-    const rawData = await loadCSVData('data/vw_env_campground_yearly_visitors_by_country.csv');
+    const rawData = await loadCSVData('data/vw_env_campground_yearly_visitors_by_country.csv?'+Math.random());
     if (!rawData) {
         console.error('Failed to load CSV data.');
         return;

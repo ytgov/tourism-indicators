@@ -17,7 +17,7 @@ const colors = [
 ]
 // Load the data
 async function generateChart() {
-    const csvData = await loadCSVData('data/vw_kpi_str_adr_ytd_summary.csv');
+    const csvData = await loadCSVData('data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random());
     if (!csvData) {
         console.error('Failed to load CSV data.');
         return;

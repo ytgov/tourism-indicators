@@ -123,7 +123,7 @@ const datasetConfigs = {
     airArrivals: {
         id: 'air-arrivals',
         title: 'Airport Arrivals',
-        dataFile: 'data/vw_kpi_air_arrivals_ytd_summary.csv',
+        dataFile: 'data/vw_kpi_air_arrivals_ytd_summary.csv?'+Math.random(),
         yAxisTitle: 'Passengers deplaning',
         valueFormat: 'number',
         description: 'Monthly passengers deplaning from Erik Nielsen Whitehorse International Airport. This dataset provides arrival statistics showing passenger traffic trends.',
@@ -200,7 +200,7 @@ const datasetConfigs = {
     intlTravelers: {
         id: 'intl-travelers',
         title: 'Border Crossings',
-        dataFile: '/data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv',
+        dataFile: '/data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv?'+Math.random(),
         yAxisTitle: 'International Travelers',
         valueFormat: 'number',
         description: 'Monthly international travelers entering Canada through Yukon border crossings. This dataset provides border crossing statistics showing visitor traffic trends.'
@@ -208,7 +208,7 @@ const datasetConfigs = {
     vicVisitors: {
         id: 'vic-visitors',
         title: 'Visitor Information Center Traffic',
-        dataFile: '/data/vw_kpi_vic_visitors_ytd_summary.csv',
+        dataFile: '/data/vw_kpi_vic_visitors_ytd_summary.csv?'+Math.random(),
         yAxisTitle: 'Number of Visitors',
         valueFormat: 'number',
         description: 'Monthly visitor counts at information centers.'
@@ -216,7 +216,7 @@ const datasetConfigs = {
     pcVisitors: {
         id: 'pc-visitors',
         title: 'Parks Canada Visitor Traffic',
-        dataFile: '/data/vw_kpi_pc_site_visitation_ytd_summary.csv',
+        dataFile: '/data/vw_kpi_pc_site_visitation_ytd_summary.csv?'+Math.random(),
         yAxisTitle: 'Number of Visitors',
         valueFormat: 'number',
         description: 'Monthly visitor counts at Parks Canada sites.'
@@ -224,7 +224,7 @@ const datasetConfigs = {
     scFuelPrices: {
         id: 'sc-fuel-prices',
         title: 'Motor Fuel Prices',
-        dataFile: '/data/vw_kpi_sc_gas_prices_ytd_summary.csv',
+        dataFile: '/data/vw_kpi_sc_gas_prices_ytd_summary.csv?'+Math.random(),
         yAxisTitle: 'Price (c/L)',
         valueFormat: 'number',
         description: 'Monthly average prices for regular gasoline.',
@@ -232,7 +232,7 @@ const datasetConfigs = {
     hotelStats: {
         id: 'hotel-stats',
         title: 'Monthly Occupancy Rate',
-        dataFile: '/data/vw_kpi_cbre_occupancy_rate_ytd_summary.csv',
+        dataFile: '/data/vw_kpi_cbre_occupancy_rate_ytd_summary.csv?'+Math.random(),
         yAxisTitle: 'Occupancy Rate (%)',
         valueFormat: 'number',
         description: 'Occupancy rate at select hotels.',
@@ -247,14 +247,14 @@ const datasetConfigs = {
             height: 400
         },
         dataFiles: {
-            occupancy: '/data/vw_kpi_str_occupancy_ytd_summary.csv',
-            adr: '/data/vw_kpi_str_adr_ytd_summary.csv',
-            revpar: '/data/vw_kpi_str_revpar_ytd_summary.csv'
+            occupancy: '/data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random(),
+            adr: '/data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random(),
+            revpar: '/data/vw_kpi_str_revpar_ytd_summary.csv?'+Math.random()
         },
         series: [
             {
                 name: 'Occupancy Rate',
-                dataFile: '/data/vw_kpi_str_occupancy_ytd_summary.csv',
+                dataFile: '/data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random(),
                 yAxis: 0, // Left axis
                 tooltip: {
                     valueSuffix: '%'
@@ -262,7 +262,7 @@ const datasetConfigs = {
             },
             {
                 name: 'ADR',
-                dataFile: '/data/vw_kpi_str_adr_ytd_summary.csv',
+                dataFile: '/data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random(),
                 yAxis: 1, // Right axis
                 tooltip: {
                     valuePrefix: '$'
@@ -270,7 +270,7 @@ const datasetConfigs = {
             },
             {
                 name: 'RevPAR',
-                dataFile: '/data/vw_kpi_str_revpar_ytd_summary.csv',
+                dataFile: '/data/vw_kpi_str_revpar_ytd_summary.csv?'+Math.random(),
                 yAxis: 1, // Right axis
                 tooltip: {
                     valuePrefix: '$'

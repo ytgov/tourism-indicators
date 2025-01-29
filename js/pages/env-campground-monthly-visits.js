@@ -45,7 +45,7 @@ async function loadCSVData(csvUrl) {
 }
 
 async function generateChart() {
-    const rawData = await loadCSVData('data/vw_kpi_env_campground_visitors_by_month.csv');
+    const rawData = await loadCSVData('data/vw_kpi_env_campground_visitors_by_month.csv?'+Math.random());
     if (!rawData) {
         console.error('Failed to load CSV data.');
         return;

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "./data/vw_bc_yearly_border_crossings_by_country_of_origin.csv";
+    const csvUrl = "./data/vw_bc_yearly_border_crossings_by_country_of_origin.csv?"+Math.random();
     let globalData = []; // Store parsed CSV data globally
     let barChart; // Store Highcharts bar chart instance globally
     let pieChart; // Store Highcharts pie chart instance globally

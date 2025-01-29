@@ -1,5 +1,5 @@
 // Fetch and process visitor data
-fetch('./data/vw_ve_estimated_visitors_by_year_historic.csv')
+fetch('./data/vw_ve_estimated_visitors_by_year_historic.csv?'+Math.random())
     .then(response => response.text())
     .then(data => {
         // Parse CSV data

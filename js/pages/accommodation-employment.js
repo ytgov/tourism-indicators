@@ -12,8 +12,8 @@ function createArrowSvg(isPositive) {
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         // Load data directly
-        const data = await loadCSVData('data/vw_kpi_economic_accommodation_and_food_employment.csv');
-        const earningsData = await loadCSVData('data/vw_kpi_economic_accommodation_and_food_weekly_earnings.csv');
+        const data = await loadCSVData('data/vw_kpi_economic_accommodation_and_food_employment.csv?'+Math.random());
+        const earningsData = await loadCSVData('data/vw_kpi_economic_accommodation_and_food_weekly_earnings.csv?'+Math.random());
         
 
         if (!data || !data.data) {
@@ -144,12 +144,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Initialize charts for both views
         const monthlyConfig = {
             ...datasetConfigs.accommodationEmployment,
-            dataFile: 'data/vw_kpi_economic_accommodation_and_food_employment.csv'
+            dataFile: 'data/vw_kpi_economic_accommodation_and_food_employment.csv?'+Math.random()
         };
         // Initialize charts for both views
         const monthlyConfig2 = {
             ...datasetConfigs.accommodationEarnings,
-            dataFile: 'data/vw_kpi_economic_accommodation_and_food_weekly_earnings.csv'
+            dataFile: 'data/vw_kpi_economic_accommodation_and_food_weekly_earnings.csv?'+Math.random()
         };
 
         const yearlyConfig = {

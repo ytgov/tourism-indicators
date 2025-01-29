@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "./data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv";
+    const csvUrl = "./data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv?"+Math.random();
 
     // Function to create arrow SVG
     function createArrowSvg(isPositive) {

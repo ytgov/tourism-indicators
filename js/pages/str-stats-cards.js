@@ -12,9 +12,9 @@ function createArrowSvg(isPositive) {
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         // Load data directly
-        const occupancyData = await loadCSVData('data/vw_kpi_str_occupancy_ytd_summary.csv');
-        const adrData = await loadCSVData('data/vw_kpi_str_adr_ytd_summary.csv');
-        const revparData = await loadCSVData('data/vw_kpi_str_revpar_ytd_summary.csv');
+        const occupancyData = await loadCSVData('data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random());
+        const adrData = await loadCSVData('data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random());
+        const revparData = await loadCSVData('data/vw_kpi_str_revpar_ytd_summary.csv?'+Math.random());
         
         // Update metric cards with latest data
         function updateMetricCards() {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 occChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${occChange.toFixed(1)}% y/y</span>`;
                 occDateElement.textContent = `Jan - ${month} ${year}`;
                 occChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${occChange2019.toFixed(1)}% y/y</span>`;
-                occDateElement2019.textContent = `Jan - ${month} 2019`;
+                occDateElement2019.textContent = `From 2019`;
             }
 
 
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 adrChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${adrChange.toFixed(1)}% y/y</span>`;
                 adrDateRangeElement.textContent = `Jan - ${month} ${year}`;
                 adrChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${adrChange2019.toFixed(1)}% y/y</span>`;
-                adrDateRangeElement2019.textContent = `Jan - ${month} 2019`;
+                adrDateRangeElement2019.textContent = `From 2019`;
             }
 
             // Update revpar
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 revChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${revChange.toFixed(1)}% y/y</span>`;
                 revDateRangeElement.textContent = `Jan - ${month} ${year}`;
                 revChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${revChange2019.toFixed(1)}% y/y</span>`;
-                revDateRangeElement2019.textContent = `Jan - ${month} 2019`;
+                revDateRangeElement2019.textContent = `From 2019`;
             }
         }
 
