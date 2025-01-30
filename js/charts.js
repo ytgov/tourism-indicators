@@ -181,7 +181,6 @@ async function loadEstimatedVisitorsData() {
     }
 }
 
-
 // Function to load occupancy rate data
 async function loadOccupancyData() {
     try {
@@ -591,6 +590,34 @@ async function loadAccommodationEmployment() {
     }
 }
 
+// Function to load Accommodation Employment
+async function loadBusinessCounts() {
+    try {
+        const response = await fetch('/data/vw_kpi_sc_tourism_business_count.csv?'+Math.random());
+        const csvText = await response.text();
+        const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
+        const data = rows.slice(1).filter(row => row.length > 1);
+        
+        // Get the most recent row
+        const mostRecent = data[data.length - 1];
+        console.log(mostRecent);
+        const date = new Date(mostRecent[0]);
+        
+        return {
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            ytdTotal: parseFloat(mostRecent[7]),  
+            ytdPercentageChange: parseFloat(mostRecent[9]),  
+            monthlyData: data.map(row => ({
+                date: new Date(row[0]),
+                value: parseFloat(row[1])
+            }))
+        };
+    } catch (error) {
+        console.error('Error loading Tourism Business Counts data:', error);
+        return null;
+    }
+}
+
 async function loadRestaurantSales() {
     try {
         const response = await fetch('/data/vw_kpi_economic_restaurant_spending.csv?'+Math.random());
@@ -717,6 +744,9 @@ function updateKPIContent(containerId, data, title) {
     } else if (title === 'Revenue Per Room') {
         formattedTotal = formatCurrency(data.ytdTotal);
         subheading = 'Average STR revenue per room';
+    } else if (title === 'Tourism Businesses') {
+        formattedTotal = formatInThousands(data.ytdTotal);
+        subheading = 'Business counts';
     }
 
     if (isAccommodationIndicator) {
@@ -918,6 +948,11 @@ document.addEventListener('DOMContentLoaded', async function() {
     const scRetailSales = await loadRetailSales();
     if (scRetailSales) {
         updateKPIContent('additional14-content', scRetailSales, 'YTD Retail Sales');
+    }
+
+    const scBusinessCounts = await loadBusinessCounts();
+    if (scBusinessCounts) {
+        updateKPIContent('additional15-content', scBusinessCounts, 'Business Counts');
     }
 
 });

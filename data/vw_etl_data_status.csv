@@ -1,58 +1,58 @@
 timestamp,process,Action,Dataset,Message
-2025-01-25 19:03:35,Load,SUCCESS,statcan_cpi,Loaded 24 into statcan_cpi.
-2025-01-25 19:04:39,Load,SUCCESS,statcan_employment_by_industry,Loaded 88 into statcan_employment_by_industry.
-2025-01-25 19:04:40,Download,SUCCESS,statcan_exchange_rates,Data downloaded successfully
-2025-01-25 19:03:34,Download,SUCCESS,statcan_gas_prices,Data downloaded successfully
-2025-01-25 19:04:41,Download,SUCCESS,statcan_gdp,Data downloaded successfully
-2025-01-25 19:03:33,Load,SUCCESS,statcan_intl_travellers_entering_canada,Loaded 13133 into statcan_intl_travellers_entering_canada.
-2025-01-25 19:03:37,Load,SUCCESS,statcan_restaurant_spending,Loaded 322 into statcan_restaurant_spending.
-2025-01-25 19:03:36,Load,SUCCESS,statcan_retail_sales,Loaded 322 into statcan_retail_sales.
-2025-01-25 19:04:39,Download,SUCCESS,statcan_tourism_business_count,Data downloaded successfully
-2025-01-25 19:04:38,Load,SUCCESS,statcan_vehicle_arrivals,Loaded 44956 into statcan_vehicle_arrivals.
-2025-01-25 19:03:41,Load,SUCCESS,statcan_visitor_origin,Loaded 2007 into statcan_visitor_origin.
+2025-01-30 09:54:40.117000,Load,SUCCESS,statcan_cpi,Loaded 120 into statcan_cpi.
+2025-01-30 09:57:42.380000,Load,SUCCESS,statcan_employment_by_industry,Loaded 476 into statcan_employment_by_industry.
+2025-01-30 09:57:52.653000,Load,SUCCESS,statcan_exchange_rates,Loaded 2436 into statcan_exchange_rates.
+2025-01-30 09:54:36.817000,Load,SUCCESS,statcan_gas_prices,Loaded 120 into statcan_gas_prices.
+2025-01-30 09:57:55.560000,Load,SUCCESS,statcan_gdp,Loaded 117 into statcan_gdp.
+2025-01-30 09:54:28.013000,Load,SUCCESS,statcan_intl_travellers_entering_canada,Loaded 195917 into statcan_intl_travellers_entering_canada.
+2025-01-30 09:54:49.010000,Load,SUCCESS,statcan_restaurant_spending,Loaded 1666 into statcan_restaurant_spending.
+2025-01-30 09:54:44.317000,Load,SUCCESS,statcan_retail_sales,Loaded 1330 into statcan_retail_sales.
+2025-01-30 09:57:46.883000,Load,SUCCESS,statcan_tourism_business_count,Loaded 590 into statcan_tourism_business_count.
+2025-01-30 09:57:39.113000,Load,SUCCESS,statcan_vehicle_arrivals,Loaded 144681 into statcan_vehicle_arrivals.
+2025-01-30 09:55:18.013000,Load,SUCCESS,statcan_visitor_origin,Loaded 26789 into statcan_visitor_origin.
 2025-01-27 14:34:14.090000,Load,SUCCESS,tdc_lasr_spending_details,Loaded 15397 successfully into tdc_lasr_spending_details.
 2025-01-27 14:34:04.447000,Delete,SUCCESS,ty_regional,Truncated table ty_regional.
-2025-01-28 16:10:36.913000,Export,SUCCESS,vw_bc_border_crossings_by_country_recent_year,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_border_crossings_by_country_recent_year.csv
-2025-01-28 16:10:37.367000,Export,SUCCESS,vw_bc_vehicle_arrivals_by_license_plate,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_vehicle_arrivals_by_license_plate.csv
-2025-01-28 16:10:31.947000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_continent,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_continent.csv
-2025-01-28 16:10:37.070000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_country_of_origin,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_country_of_origin.csv
-2025-01-28 16:10:18.607000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_location,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_location.csv
-2025-01-28 16:10:31.703000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_origin,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_origin.csv
-2025-01-28 16:10:31.487000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_traveller_type,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_traveller_type.csv
-2025-01-28 16:10:37.193000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_us_can_overseas,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_us_can_overseas.csv
-2025-01-28 16:10:35.510000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_vehicle_type,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_vehicle_type.csv
-2025-01-28 16:10:18.877000,Export,SUCCESS,vw_env_campground_visitors_by_origin_yearly,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_env_campground_visitors_by_origin_yearly.csv
-2025-01-28 16:10:18.970000,Export,SUCCESS,vw_env_campground_visitors_by_residency_yearly,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_env_campground_visitors_by_residency_yearly.csv
-2025-01-28 16:10:19.093000,Export,SUCCESS,vw_env_campground_yearly_visitors_by_country,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_env_campground_yearly_visitors_by_country.csv
-2025-01-27 16:18:57.143000,Export,SUCCESS,vw_etl_data_status,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_etl_data_status.csv
-2025-01-28 16:10:19.167000,Export,SUCCESS,vw_gdp_stats,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_gdp_stats.csv
-2025-01-28 16:10:19.223000,Export,SUCCESS,vw_kpi_air_arrivals_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_air_arrivals_ytd_summary.csv
-2025-01-28 16:10:19.287000,Export,SUCCESS,vw_kpi_cbre_avg_daily_room_rate_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_cbre_avg_daily_room_rate_ytd_summary.csv
-2025-01-28 16:10:19.367000,Export,SUCCESS,vw_kpi_cbre_occupancy_rate_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_cbre_occupancy_rate_ytd_summary.csv
-2025-01-28 16:10:19.443000,Export,SUCCESS,vw_kpi_cbre_revpar_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_cbre_revpar_ytd_summary.csv
-2025-01-28 16:10:37.477000,Export,SUCCESS,vw_kpi_economic_accommodation_and_food_employment,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_economic_accommodation_and_food_employment.csv
-2025-01-28 16:10:37.563000,Export,SUCCESS,vw_kpi_economic_restaurant_spending,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_economic_restaurant_spending.csv
-2025-01-28 16:10:37.660000,Export,SUCCESS,vw_kpi_economic_retail_spending,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_economic_retail_spending.csv
-2025-01-28 16:10:20.163000,Export,SUCCESS,vw_kpi_env_campground_visitors_by_campground_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_env_campground_visitors_by_campground_ytd_summary.csv
-2025-01-28 16:10:20.280000,Export,SUCCESS,vw_kpi_env_campground_visitors_by_month,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_env_campground_visitors_by_month.csv
-2025-01-28 16:10:20.483000,Export,SUCCESS,vw_kpi_env_campground_visitors_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_env_campground_visitors_ytd_summary.csv
-2025-01-28 16:10:28.537000,Export,SUCCESS,vw_kpi_estimated_visitors,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_estimated_visitors.csv
-2025-01-28 16:10:28.983000,Export,SUCCESS,vw_kpi_intl_travellers_entering_canada_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_intl_travellers_entering_canada_ytd_summary.csv
-2025-01-28 16:10:29.247000,Export,SUCCESS,vw_kpi_iov_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_iov_ytd_summary.csv
-2025-01-28 16:10:29.327000,Export,SUCCESS,vw_kpi_lasr_spending_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_lasr_spending_ytd_summary.csv
-2025-01-28 16:10:29.487000,Export,SUCCESS,vw_kpi_pc_site_visitation_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_pc_site_visitation_ytd_summary.csv
-2025-01-28 16:10:29.587000,Export,SUCCESS,vw_kpi_sc_gas_prices_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_sc_gas_prices_ytd_summary.csv
-2025-01-28 16:10:29.667000,Export,SUCCESS,vw_kpi_str_adr_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_str_adr_ytd_summary.csv
-2025-01-28 16:10:29.727000,Export,SUCCESS,vw_kpi_str_available_listings_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_str_available_listings_ytd_summary.csv
-2025-01-28 16:10:29.780000,Export,SUCCESS,vw_kpi_str_occupancy_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_str_occupancy_ytd_summary.csv
-2025-01-28 16:10:29.850000,Export,SUCCESS,vw_kpi_str_revpar_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_str_revpar_ytd_summary.csv
-2025-01-28 16:10:29.930000,Export,SUCCESS,vw_kpi_tc_revenue_estimates,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_tc_revenue_estimates.csv
-2025-01-28 16:10:30.040000,Export,SUCCESS,vw_kpi_tc_revenue_estimates_adj_inflation_2024,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_tc_revenue_estimates_adj_inflation_2024.csv
-2025-01-28 16:10:36.570000,Export,SUCCESS,vw_kpi_vic_visitors_by_location_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_vic_visitors_by_location_ytd_summary.csv
-2025-01-28 16:10:30.163000,Export,SUCCESS,vw_kpi_vic_visitors_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_vic_visitors_ytd_summary.csv
-2025-01-28 16:10:31.233000,Export,SUCCESS,vw_kpi_wlws_highway_counts_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_wlws_highway_counts_ytd_summary.csv
-2025-01-28 16:10:36.627000,Export,SUCCESS,vw_pc_yearly_site_visitation,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_pc_yearly_site_visitation.csv
-2025-01-28 16:10:36.430000,Export,SUCCESS,vw_ve_estimated_visitors_by_year_historic,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_ve_estimated_visitors_by_year_historic.csv
-2025-01-28 16:10:37.723000,Export,SUCCESS,vw_ybs_tourism_revenue_and_gdp,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_ybs_tourism_revenue_and_gdp.csv
-2025-01-28 16:10:37.767000,Export,SUCCESS,ybs_gdp_percentage,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\ybs_gdp_percentage.csv
+2025-01-30 14:50:11.383000,Export,SUCCESS,vw_bc_border_crossings_by_country_recent_year,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_border_crossings_by_country_recent_year.csv
+2025-01-30 14:50:11.960000,Export,SUCCESS,vw_bc_vehicle_arrivals_by_license_plate,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_vehicle_arrivals_by_license_plate.csv
+2025-01-30 14:50:06.640000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_continent,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_continent.csv
+2025-01-30 14:50:11.533000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_country_of_origin,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_country_of_origin.csv
+2025-01-30 14:49:46.570000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_location,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_location.csv
+2025-01-30 14:50:06.353000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_origin,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_origin.csv
+2025-01-30 14:50:06.080000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_traveller_type,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_traveller_type.csv
+2025-01-30 14:50:11.680000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_us_can_overseas,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_us_can_overseas.csv
+2025-01-30 14:50:10.067000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_vehicle_type,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_bc_yearly_border_crossings_by_vehicle_type.csv
+2025-01-30 14:49:46.930000,Export,SUCCESS,vw_env_campground_visitors_by_origin_yearly,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_env_campground_visitors_by_origin_yearly.csv
+2025-01-30 14:49:47.120000,Export,SUCCESS,vw_env_campground_visitors_by_residency_yearly,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_env_campground_visitors_by_residency_yearly.csv
+2025-01-30 14:49:47.280000,Export,SUCCESS,vw_env_campground_yearly_visitors_by_country,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_env_campground_yearly_visitors_by_country.csv
+2025-01-30 09:08:18.267000,Export,SUCCESS,vw_etl_data_status,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_etl_data_status.csv
+2025-01-30 14:49:47.350000,Export,SUCCESS,vw_gdp_stats,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_gdp_stats.csv
+2025-01-30 14:49:47.440000,Export,SUCCESS,vw_kpi_air_arrivals_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_air_arrivals_ytd_summary.csv
+2025-01-30 14:49:47.517000,Export,SUCCESS,vw_kpi_cbre_avg_daily_room_rate_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_cbre_avg_daily_room_rate_ytd_summary.csv
+2025-01-30 14:49:47.597000,Export,SUCCESS,vw_kpi_cbre_occupancy_rate_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_cbre_occupancy_rate_ytd_summary.csv
+2025-01-30 14:49:47.840000,Export,SUCCESS,vw_kpi_cbre_revpar_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_cbre_revpar_ytd_summary.csv
+2025-01-30 14:50:12.053000,Export,SUCCESS,vw_kpi_economic_accommodation_and_food_employment,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_economic_accommodation_and_food_employment.csv
+2025-01-30 14:50:12.170000,Export,SUCCESS,vw_kpi_economic_restaurant_spending,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_economic_restaurant_spending.csv
+2025-01-30 14:50:12.307000,Export,SUCCESS,vw_kpi_economic_retail_spending,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_economic_retail_spending.csv
+2025-01-30 14:49:54.727000,Export,SUCCESS,vw_kpi_env_campground_visitors_by_campground_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_env_campground_visitors_by_campground_ytd_summary.csv
+2025-01-30 14:49:54.913000,Export,SUCCESS,vw_kpi_env_campground_visitors_by_month,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_env_campground_visitors_by_month.csv
+2025-01-30 14:49:55.387000,Export,SUCCESS,vw_kpi_env_campground_visitors_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_env_campground_visitors_ytd_summary.csv
+2025-01-30 14:50:03.003000,Export,SUCCESS,vw_kpi_estimated_visitors,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_estimated_visitors.csv
+2025-01-30 14:50:03.517000,Export,SUCCESS,vw_kpi_intl_travellers_entering_canada_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_intl_travellers_entering_canada_ytd_summary.csv
+2025-01-30 14:50:03.817000,Export,SUCCESS,vw_kpi_iov_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_iov_ytd_summary.csv
+2025-01-30 14:50:03.900000,Export,SUCCESS,vw_kpi_lasr_spending_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_lasr_spending_ytd_summary.csv
+2025-01-30 14:50:04.117000,Export,SUCCESS,vw_kpi_pc_site_visitation_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_pc_site_visitation_ytd_summary.csv
+2025-01-30 14:50:04.207000,Export,SUCCESS,vw_kpi_sc_gas_prices_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_sc_gas_prices_ytd_summary.csv
+2025-01-30 14:50:04.323000,Export,SUCCESS,vw_kpi_str_adr_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_str_adr_ytd_summary.csv
+2025-01-30 14:50:04.400000,Export,SUCCESS,vw_kpi_str_available_listings_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_str_available_listings_ytd_summary.csv
+2025-01-30 14:50:04.470000,Export,SUCCESS,vw_kpi_str_occupancy_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_str_occupancy_ytd_summary.csv
+2025-01-30 14:50:04.537000,Export,SUCCESS,vw_kpi_str_revpar_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_str_revpar_ytd_summary.csv
+2025-01-30 14:50:04.613000,Export,SUCCESS,vw_kpi_tc_revenue_estimates,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_tc_revenue_estimates.csv
+2025-01-30 14:50:04.723000,Export,SUCCESS,vw_kpi_tc_revenue_estimates_adj_inflation_2024,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_tc_revenue_estimates_adj_inflation_2024.csv
+2025-01-30 14:50:11.090000,Export,SUCCESS,vw_kpi_vic_visitors_by_location_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_vic_visitors_by_location_ytd_summary.csv
+2025-01-30 14:50:04.863000,Export,SUCCESS,vw_kpi_vic_visitors_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_vic_visitors_ytd_summary.csv
+2025-01-30 14:50:05.817000,Export,SUCCESS,vw_kpi_wlws_highway_counts_ytd_summary,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_kpi_wlws_highway_counts_ytd_summary.csv
+2025-01-30 14:50:11.153000,Export,SUCCESS,vw_pc_yearly_site_visitation,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_pc_yearly_site_visitation.csv
+2025-01-30 14:50:10.937000,Export,SUCCESS,vw_ve_estimated_visitors_by_year_historic,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_ve_estimated_visitors_by_year_historic.csv
+2025-01-30 14:50:12.347000,Export,SUCCESS,vw_ybs_tourism_revenue_and_gdp,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\vw_ybs_tourism_revenue_and_gdp.csv
+2025-01-30 14:50:12.403000,Export,SUCCESS,ybs_gdp_percentage,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\ybs_gdp_percentage.csv
 2025-01-21 16:39:33,Export,SUCCESS,ybs_revenue_and_gdp_attributable_to_tourism,Exported to C:\Users\btelliot\Documents\GitHub\tc-dashboard-frontend\data\ybs_revenue_and_gdp_attributable_to_tourism.csv

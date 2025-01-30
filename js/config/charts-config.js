@@ -179,6 +179,15 @@ const datasetConfigs = {
             }
         }
     },
+    tourismBusinessCount: {
+        id: 'tourism-business-counts',
+        title: 'Estimated Tourism Business Counts',
+        yAxisTitle: 'Number of Businesses',
+        valueFormat: 'number',
+        chart: {
+            height: 400
+        }
+    },
     accommodationEmployment: {
         id: 'accommodation-employment',
         title: 'Employment in the Accommodation and Food Services Industry',

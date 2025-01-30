@@ -69,41 +69,6 @@ date,year,month,Traveller_characteristics,monthly_total,prev_year_monthly_total,
 1997-09-01,1997,9,United States of America residents entering Canada,39502,36046,9.6,331892,324782,2.2,January - September
 1997-10-01,1997,10,United States of America residents entering Canada,11584,9818,18.0,343476,334600,2.7,January - October
 1997-11-01,1997,11,United States of America residents entering Canada,5850,5058,15.7,349326,339658,2.8,January - November
-2022-12-01,2022,12,United States of America residents entering Canada,2142,1524,40.6,127354,51530,147.1,January - December
-2023-01-01,2023,1,Canadian-resident visitors returning to Canada,500,152,228.9,500,152,228.9,January - January
-2023-02-01,2023,2,Canadian-resident visitors returning to Canada,670,166,303.6,1170,318,267.9,January - February
-2023-03-01,2023,3,Canadian-resident visitors returning to Canada,1228,444,176.6,2398,762,214.7,January - March
-2023-04-01,2023,4,Canadian-resident visitors returning to Canada,2760,2566,7.6,5158,3328,55.0,January - April
-2023-05-01,2023,5,Canadian-resident visitors returning to Canada,6646,8074,-17.7,11804,11402,3.5,January - May
-2023-06-01,2023,6,Canadian-resident visitors returning to Canada,9302,8774,6.0,21106,20176,4.6,January - June
-2023-07-01,2023,7,Canadian-resident visitors returning to Canada,14156,12274,15.3,35262,32450,8.7,January - July
-2023-08-01,2023,8,Canadian-resident visitors returning to Canada,12154,11194,8.6,47416,43644,8.6,January - August
-2023-09-01,2023,9,Canadian-resident visitors returning to Canada,5248,5368,-2.2,52664,49012,7.5,January - September
-2023-10-01,2023,10,Canadian-resident visitors returning to Canada,2250,2500,-10.0,54914,51512,6.6,January - October
-2023-11-01,2023,11,Canadian-resident visitors returning to Canada,1048,752,39.4,55962,52264,7.1,January - November
-2023-12-01,2023,12,Canadian-resident visitors returning to Canada,534,576,-7.3,56496,52840,6.9,January - December
-2023-01-01,2023,1,Residents of countries other than the United States of America entering Canada,52,4,1200.0,52,4,1200.0,January - January
-2023-02-01,2023,2,Residents of countries other than the United States of America entering Canada,62,14,342.9,114,18,533.3,January - February
-2023-03-01,2023,3,Residents of countries other than the United States of America entering Canada,130,84,54.8,244,102,139.2,January - March
-2023-04-01,2023,4,Residents of countries other than the United States of America entering Canada,186,146,27.4,430,248,73.4,January - April
-2023-05-01,2023,5,Residents of countries other than the United States of America entering Canada,1530,730,109.6,1960,978,100.4,January - May
-2023-06-01,2023,6,Residents of countries other than the United States of America entering Canada,5794,3450,67.9,7754,4428,75.1,January - June
-2023-07-01,2023,7,Residents of countries other than the United States of America entering Canada,5896,4412,33.6,13650,8840,54.4,January - July
-2023-08-01,2023,8,Residents of countries other than the United States of America entering Canada,5602,5946,-5.8,19252,14786,30.2,January - August
-2023-09-01,2023,9,Residents of countries other than the United States of America entering Canada,2754,3902,-29.4,22006,18688,17.8,January - September
-2023-10-01,2023,10,Residents of countries other than the United States of America entering Canada,380,298,27.5,22386,18986,17.9,January - October
-2023-11-01,2023,11,Residents of countries other than the United States of America entering Canada,158,106,49.1,22544,19092,18.1,January - November
-2023-12-01,2023,12,Residents of countries other than the United States of America entering Canada,62,42,47.6,22606,19134,18.1,January - December
-2023-01-01,2023,1,United States of America residents entering Canada,1662,982,69.2,1662,982,69.2,January - January
-2023-02-01,2023,2,United States of America residents entering Canada,1720,1158,48.5,3382,2140,58.0,January - February
-2023-03-01,2023,3,United States of America residents entering Canada,3112,2386,30.4,6494,4526,43.5,January - March
-2023-04-01,2023,4,United States of America residents entering Canada,4748,3898,21.8,11242,8424,33.5,January - April
-2023-05-01,2023,5,United States of America residents entering Canada,11110,9104,22.0,22352,17528,27.5,January - May
-2023-06-01,2023,6,United States of America residents entering Canada,25680,21038,22.1,48032,38566,24.5,January - June
-2023-07-01,2023,7,United States of America residents entering Canada,33918,27144,25.0,81950,65710,24.7,January - July
-2023-08-01,2023,8,United States of America residents entering Canada,32682,28574,14.4,114632,94284,21.6,January - August
-2023-09-01,2023,9,United States of America residents entering Canada,24604,19694,24.9,139236,113978,22.2,January - September
-2023-10-01,2023,10,United States of America residents entering Canada,7596,8126,-6.5,146832,122104,20.3,January - October
 1997-12-01,1997,12,United States of America residents entering Canada,4766,4358,9.4,354092,344016,2.9,January - December
 1998-01-01,1998,1,Canadian-resident visitors returning to Canada,868,894,-2.9,868,894,-2.9,January - January
 1998-02-01,1998,2,Canadian-resident visitors returning to Canada,1260,802,57.1,2128,1696,25.5,January - February
@@ -139,41 +104,41 @@ date,year,month,Traveller_characteristics,monthly_total,prev_year_monthly_total,
 1998-08-01,1998,8,United States of America residents entering Canada,101564,89484,13.5,328920,292390,12.5,January - August
 1998-09-01,1998,9,United States of America residents entering Canada,47472,39502,20.2,376392,331892,13.4,January - September
 1998-10-01,1998,10,United States of America residents entering Canada,13384,11584,15.5,389776,343476,13.5,January - October
-2023-11-01,2023,11,United States of America residents entering Canada,2836,3108,-8.8,149668,125212,19.5,January - November
-2023-12-01,2023,12,United States of America residents entering Canada,2446,2142,14.2,152114,127354,19.4,January - December
-2024-01-01,2024,1,Canadian-resident visitors returning to Canada,518,500,3.6,518,500,3.6,January - January
-2024-02-01,2024,2,Canadian-resident visitors returning to Canada,822,670,22.7,1340,1170,14.5,January - February
-2024-03-01,2024,3,Canadian-resident visitors returning to Canada,2734,1228,122.6,4074,2398,69.9,January - March
-2024-04-01,2024,4,Canadian-resident visitors returning to Canada,2480,2760,-10.1,6554,5158,27.1,January - April
-2024-05-01,2024,5,Canadian-resident visitors returning to Canada,4568,6646,-31.3,11122,11804,-5.8,January - May
-2024-06-01,2024,6,Canadian-resident visitors returning to Canada,8036,9302,-13.6,19158,21106,-9.2,January - June
-2024-07-01,2024,7,Canadian-resident visitors returning to Canada,9028,14156,-36.2,28186,35262,-20.1,January - July
-2024-08-01,2024,8,Canadian-resident visitors returning to Canada,8780,12154,-27.8,36966,47416,-22.0,January - August
-2024-09-01,2024,9,Canadian-resident visitors returning to Canada,4914,5248,-6.4,41880,52664,-20.5,January - September
-2024-10-01,2024,10,Canadian-resident visitors returning to Canada,1116,2250,-50.4,42996,54914,-21.7,January - October
-2024-11-01,2024,11,Canadian-resident visitors returning to Canada,644,1048,-38.5,43640,55962,-22.0,January - November
-2024-01-01,2024,1,Residents of countries other than the United States of America entering Canada,34,52,-34.6,34,52,-34.6,January - January
-2024-02-01,2024,2,Residents of countries other than the United States of America entering Canada,136,62,119.4,170,114,49.1,January - February
-2024-03-01,2024,3,Residents of countries other than the United States of America entering Canada,230,130,76.9,400,244,63.9,January - March
-2024-04-01,2024,4,Residents of countries other than the United States of America entering Canada,222,186,19.4,622,430,44.7,January - April
-2024-05-01,2024,5,Residents of countries other than the United States of America entering Canada,980,1530,-35.9,1602,1960,-18.3,January - May
-2024-06-01,2024,6,Residents of countries other than the United States of America entering Canada,2606,5794,-55.0,4208,7754,-45.7,January - June
-2024-07-01,2024,7,Residents of countries other than the United States of America entering Canada,3336,5896,-43.4,7544,13650,-44.7,January - July
-2024-08-01,2024,8,Residents of countries other than the United States of America entering Canada,3832,5602,-31.6,11376,19252,-40.9,January - August
-2024-09-01,2024,9,Residents of countries other than the United States of America entering Canada,2134,2754,-22.5,13510,22006,-38.6,January - September
-2024-10-01,2024,10,Residents of countries other than the United States of America entering Canada,272,380,-28.4,13782,22386,-38.4,January - October
-2024-11-01,2024,11,Residents of countries other than the United States of America entering Canada,88,158,-44.3,13870,22544,-38.5,January - November
-2024-01-01,2024,1,United States of America residents entering Canada,2064,1662,24.2,2064,1662,24.2,January - January
-2024-02-01,2024,2,United States of America residents entering Canada,2256,1720,31.2,4320,3382,27.7,January - February
-2024-03-01,2024,3,United States of America residents entering Canada,4096,3112,31.6,8416,6494,29.6,January - March
-2024-04-01,2024,4,United States of America residents entering Canada,4700,4748,-1.0,13116,11242,16.7,January - April
-2024-05-01,2024,5,United States of America residents entering Canada,11802,11110,6.2,24918,22352,11.5,January - May
-2024-06-01,2024,6,United States of America residents entering Canada,24662,25680,-4.0,49580,48032,3.2,January - June
-2024-07-01,2024,7,United States of America residents entering Canada,33264,33918,-1.9,82844,81950,1.1,January - July
-2024-08-01,2024,8,United States of America residents entering Canada,34330,32682,5.0,117174,114632,2.2,January - August
-2024-09-01,2024,9,United States of America residents entering Canada,23490,24604,-4.5,140664,139236,1.0,January - September
-2024-10-01,2024,10,United States of America residents entering Canada,8694,7596,14.5,149358,146832,1.7,January - October
-2024-11-01,2024,11,United States of America residents entering Canada,2938,2836,3.6,152296,149668,1.8,January - November
+2022-12-01,2022,12,United States of America residents entering Canada,2142,1524,40.6,127354,51530,147.1,January - December
+2023-01-01,2023,1,Canadian-resident visitors returning to Canada,500,152,228.9,500,152,228.9,January - January
+2023-02-01,2023,2,Canadian-resident visitors returning to Canada,670,166,303.6,1170,318,267.9,January - February
+2023-03-01,2023,3,Canadian-resident visitors returning to Canada,1228,444,176.6,2398,762,214.7,January - March
+2023-04-01,2023,4,Canadian-resident visitors returning to Canada,2760,2566,7.6,5158,3328,55.0,January - April
+2023-05-01,2023,5,Canadian-resident visitors returning to Canada,6646,8074,-17.7,11804,11402,3.5,January - May
+2023-06-01,2023,6,Canadian-resident visitors returning to Canada,9302,8774,6.0,21106,20176,4.6,January - June
+2023-07-01,2023,7,Canadian-resident visitors returning to Canada,14156,12274,15.3,35262,32450,8.7,January - July
+2023-08-01,2023,8,Canadian-resident visitors returning to Canada,12154,11194,8.6,47416,43644,8.6,January - August
+2023-09-01,2023,9,Canadian-resident visitors returning to Canada,5248,5368,-2.2,52664,49012,7.5,January - September
+2023-10-01,2023,10,Canadian-resident visitors returning to Canada,2250,2500,-10.0,54914,51512,6.6,January - October
+2023-11-01,2023,11,Canadian-resident visitors returning to Canada,1048,752,39.4,55962,52264,7.1,January - November
+2023-12-01,2023,12,Canadian-resident visitors returning to Canada,534,576,-7.3,56496,52840,6.9,January - December
+2023-01-01,2023,1,Residents of countries other than the United States of America entering Canada,52,4,1200.0,52,4,1200.0,January - January
+2023-02-01,2023,2,Residents of countries other than the United States of America entering Canada,62,14,342.9,114,18,533.3,January - February
+2023-03-01,2023,3,Residents of countries other than the United States of America entering Canada,130,84,54.8,244,102,139.2,January - March
+2023-04-01,2023,4,Residents of countries other than the United States of America entering Canada,186,146,27.4,430,248,73.4,January - April
+2023-05-01,2023,5,Residents of countries other than the United States of America entering Canada,1530,730,109.6,1960,978,100.4,January - May
+2023-06-01,2023,6,Residents of countries other than the United States of America entering Canada,5794,3450,67.9,7754,4428,75.1,January - June
+2023-07-01,2023,7,Residents of countries other than the United States of America entering Canada,5896,4412,33.6,13650,8840,54.4,January - July
+2023-08-01,2023,8,Residents of countries other than the United States of America entering Canada,5602,5946,-5.8,19252,14786,30.2,January - August
+2023-09-01,2023,9,Residents of countries other than the United States of America entering Canada,2754,3902,-29.4,22006,18688,17.8,January - September
+2023-10-01,2023,10,Residents of countries other than the United States of America entering Canada,380,298,27.5,22386,18986,17.9,January - October
+2023-11-01,2023,11,Residents of countries other than the United States of America entering Canada,158,106,49.1,22544,19092,18.1,January - November
+2023-12-01,2023,12,Residents of countries other than the United States of America entering Canada,62,42,47.6,22606,19134,18.1,January - December
+2023-01-01,2023,1,United States of America residents entering Canada,1662,982,69.2,1662,982,69.2,January - January
+2023-02-01,2023,2,United States of America residents entering Canada,1720,1158,48.5,3382,2140,58.0,January - February
+2023-03-01,2023,3,United States of America residents entering Canada,3112,2386,30.4,6494,4526,43.5,January - March
+2023-04-01,2023,4,United States of America residents entering Canada,4748,3898,21.8,11242,8424,33.5,January - April
+2023-05-01,2023,5,United States of America residents entering Canada,11110,9104,22.0,22352,17528,27.5,January - May
+2023-06-01,2023,6,United States of America residents entering Canada,25680,21038,22.1,48032,38566,24.5,January - June
+2023-07-01,2023,7,United States of America residents entering Canada,33918,27144,25.0,81950,65710,24.7,January - July
+2023-08-01,2023,8,United States of America residents entering Canada,32682,28574,14.4,114632,94284,21.6,January - August
+2023-09-01,2023,9,United States of America residents entering Canada,24604,19694,24.9,139236,113978,22.2,January - September
+2023-10-01,2023,10,United States of America residents entering Canada,7596,8126,-6.5,146832,122104,20.3,January - October
 1998-11-01,1998,11,United States of America residents entering Canada,7018,5850,20.0,396794,349326,13.6,January - November
 1998-12-01,1998,12,United States of America residents entering Canada,5276,4766,10.7,402070,354092,13.5,January - December
 1999-01-01,1999,1,Canadian-resident visitors returning to Canada,1200,868,38.2,1200,868,38.2,January - January
@@ -244,6 +209,41 @@ date,year,month,Traveller_characteristics,monthly_total,prev_year_monthly_total,
 2000-06-01,2000,6,United States of America residents entering Canada,66962,70828,-5.5,114640,117376,-2.3,January - June
 2000-07-01,2000,7,United States of America residents entering Canada,115796,128334,-9.8,230436,245710,-6.2,January - July
 2000-08-01,2000,8,United States of America residents entering Canada,98672,108884,-9.4,329108,354594,-7.2,January - August
+2023-11-01,2023,11,United States of America residents entering Canada,2836,3108,-8.8,149668,125212,19.5,January - November
+2023-12-01,2023,12,United States of America residents entering Canada,2446,2142,14.2,152114,127354,19.4,January - December
+2024-01-01,2024,1,Canadian-resident visitors returning to Canada,518,500,3.6,518,500,3.6,January - January
+2024-02-01,2024,2,Canadian-resident visitors returning to Canada,822,670,22.7,1340,1170,14.5,January - February
+2024-03-01,2024,3,Canadian-resident visitors returning to Canada,2734,1228,122.6,4074,2398,69.9,January - March
+2024-04-01,2024,4,Canadian-resident visitors returning to Canada,2480,2760,-10.1,6554,5158,27.1,January - April
+2024-05-01,2024,5,Canadian-resident visitors returning to Canada,4568,6646,-31.3,11122,11804,-5.8,January - May
+2024-06-01,2024,6,Canadian-resident visitors returning to Canada,8036,9302,-13.6,19158,21106,-9.2,January - June
+2024-07-01,2024,7,Canadian-resident visitors returning to Canada,9028,14156,-36.2,28186,35262,-20.1,January - July
+2024-08-01,2024,8,Canadian-resident visitors returning to Canada,8780,12154,-27.8,36966,47416,-22.0,January - August
+2024-09-01,2024,9,Canadian-resident visitors returning to Canada,4914,5248,-6.4,41880,52664,-20.5,January - September
+2024-10-01,2024,10,Canadian-resident visitors returning to Canada,1116,2250,-50.4,42996,54914,-21.7,January - October
+2024-11-01,2024,11,Canadian-resident visitors returning to Canada,644,1048,-38.5,43640,55962,-22.0,January - November
+2024-01-01,2024,1,Residents of countries other than the United States of America entering Canada,34,52,-34.6,34,52,-34.6,January - January
+2024-02-01,2024,2,Residents of countries other than the United States of America entering Canada,136,62,119.4,170,114,49.1,January - February
+2024-03-01,2024,3,Residents of countries other than the United States of America entering Canada,230,130,76.9,400,244,63.9,January - March
+2024-04-01,2024,4,Residents of countries other than the United States of America entering Canada,222,186,19.4,622,430,44.7,January - April
+2024-05-01,2024,5,Residents of countries other than the United States of America entering Canada,980,1530,-35.9,1602,1960,-18.3,January - May
+2024-06-01,2024,6,Residents of countries other than the United States of America entering Canada,2606,5794,-55.0,4208,7754,-45.7,January - June
+2024-07-01,2024,7,Residents of countries other than the United States of America entering Canada,3336,5896,-43.4,7544,13650,-44.7,January - July
+2024-08-01,2024,8,Residents of countries other than the United States of America entering Canada,3832,5602,-31.6,11376,19252,-40.9,January - August
+2024-09-01,2024,9,Residents of countries other than the United States of America entering Canada,2134,2754,-22.5,13510,22006,-38.6,January - September
+2024-10-01,2024,10,Residents of countries other than the United States of America entering Canada,272,380,-28.4,13782,22386,-38.4,January - October
+2024-11-01,2024,11,Residents of countries other than the United States of America entering Canada,88,158,-44.3,13870,22544,-38.5,January - November
+2024-01-01,2024,1,United States of America residents entering Canada,2064,1662,24.2,2064,1662,24.2,January - January
+2024-02-01,2024,2,United States of America residents entering Canada,2256,1720,31.2,4320,3382,27.7,January - February
+2024-03-01,2024,3,United States of America residents entering Canada,4096,3112,31.6,8416,6494,29.6,January - March
+2024-04-01,2024,4,United States of America residents entering Canada,4700,4748,-1.0,13116,11242,16.7,January - April
+2024-05-01,2024,5,United States of America residents entering Canada,11802,11110,6.2,24918,22352,11.5,January - May
+2024-06-01,2024,6,United States of America residents entering Canada,24662,25680,-4.0,49580,48032,3.2,January - June
+2024-07-01,2024,7,United States of America residents entering Canada,33264,33918,-1.9,82844,81950,1.1,January - July
+2024-08-01,2024,8,United States of America residents entering Canada,34330,32682,5.0,117174,114632,2.2,January - August
+2024-09-01,2024,9,United States of America residents entering Canada,23490,24604,-4.5,140664,139236,1.0,January - September
+2024-10-01,2024,10,United States of America residents entering Canada,8694,7596,14.5,149358,146832,1.7,January - October
+2024-11-01,2024,11,United States of America residents entering Canada,2938,2836,3.6,152296,149668,1.8,January - November
 1972-01-01,1972,1,Canadian-resident visitors returning to Canada,288,,,288,0,,January - January
 1972-02-01,1972,2,Canadian-resident visitors returning to Canada,200,,,488,0,,January - February
 1972-03-01,1972,3,Canadian-resident visitors returning to Canada,190,,,678,0,,January - March

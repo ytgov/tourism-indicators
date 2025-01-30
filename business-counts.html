@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accommodation Employment and Weekly Earnings | Yukon Tourism Indicators</title>
+    <title>Tourism Business Counts | Yukon Tourism Indicators</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
     <!-- Bootstrap CSS -->
@@ -52,9 +52,10 @@
         <div class="indicator-container">
             <!-- Title Section -->
             <div class="text-center mb-4">
-                <h2 class="indicator-title">Employment in the Accommodation and Food Services Industry</h2>
-                <p class="indicator-subtitle">Number of people employed in the accommodation and food services industry,
-                    and their average weekly earnings.</p>
+                <h2 class="indicator-title">Estimated Tourism Business Counts</h2>
+                <p class="indicator-subtitle">Estimated number of businesses in the tourism sector that employ at least
+                    one person, as reported by Statistics Canada's Monthly Business Openings and Closures (MBOC).
+                </p>
             </div>
 
             <!-- Metrics Cards -->
@@ -62,7 +63,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center d-flex flex-column justify-content-between">
-                            <h5 class="card-title">Latest Monthly Employment</h5>
+                            <h5 class="card-title">Latest Monthly</h5>
                             <p class="card-text h2" id="latest-monthly">-</p>
                             <p class="card-text text-muted" id="latest-monthly-date">-</p>
                         </div>
@@ -72,16 +73,9 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center d-flex flex-column justify-content-between">
-                            <h5 class="card-title">Avg Monthly Employment (YTD)</h5>
+                            <h5 class="card-title">Year-to-Date Average</h5>
                             <p class="card-text h2" id="ytd-amount">-</p>
-                            <div class="d-flex justify-content-between mt-auto">
-                                <p class="card-text text-muted mt-2 mb-0" id="ytd-date-range">-</p>
-                                <p class="card-text text-muted mt-2 mb-0" id="ytd-change"></p>
-                            </div>
-                            <div class="d-flex justify-content-between mt-auto">
-                                <p class="card-text text-muted mt-2 mb-0" id="ytd-date-range-2019">-</p>
-                                <p class="card-text text-muted mt-2 mb-0" id="ytd-change-2019"></p>
-                            </div>
+                            <p class="card-text text-muted" id="ytd-date-range">-</p>
                         </div>
                     </div>
                 </div>
@@ -89,16 +83,9 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center d-flex flex-column justify-content-between">
-                            <h5 class="card-title">Average Weekly Earnings (YTD)</h5>
-                            <p class="card-text h2" id="ytd-earn-amount">-</p>
-                            <div class="d-flex justify-content-between mt-auto">
-                                <p class="card-text text-muted mt-2 mb-0" id="ytd-earn-date-range">-</p>
-                                <p class="card-text text-muted mt-2 mb-0" id="ytd-earn-change"></p>
-                            </div>
-                            <div class="d-flex justify-content-between mt-auto">
-                                <p class="card-text text-muted mt-2 mb-0" id="ytd-earn-date-range-2019">-</p>
-                                <p class="card-text text-muted mt-2 mb-0" id="ytd-earn-change-2019"></p>
-                            </div>
+                            <h5 class="card-title">Year-to-Date Change</h5>
+                            <p class="card-text h2" id="ytd-change">-</p>
+                            <p class="card-text" id="ytd-change-2019"></p>
                         </div>
                     </div>
                 </div>
@@ -109,12 +96,11 @@
                 <div class="card-body" style="width:100%;">
                     <h5 class="card-title">Highlights</h5>
                     <ul>
-                        <li>Employment in the accommodation and food services industry has remained relatively
-                            consistent over time.</li>
-                        <li>Employment in accommodation and food services have increased since the pandemic, but are
-                            still lower than the pre-pandemic peak in 2016 of 2,013.</li>
-                        <li>Weekly earnings have increased 8.2% y/y from January to October 2024, over the same period
-                            in 2023.</li>
+                        <li>The total number of tourism-related businesses in the Yukon has decreased by 5.5%, from 201
+                            between January and October 2019 to 190 during the same period in 2024.</li>
+                        <li>The total number of tourism-related businesses has remained relatively consistent over time, with 
+                            similar numbers in 2023 and 2024.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -150,10 +136,8 @@
                             <!-- Data by month -->
                             <div id="indicator-chart" class="card mb-4" style="width:100%;"></div>
                             <div id="data-table-container" class="card mb-4 p-3"
-                                data-csv-url="data/vw_kpi_economic_accommodation_and_food_employment.csv"
-                                class="card mb-4" style="width:100%; margin-top: 20px;"></div>
-                            <div id="indicator-chart2" class="card mb-4" style="width:100%;"></div>
-
+                                data-csv-url="data/vw_kpi_sc_tourism_business_count.csv" class="card mb-4"
+                                style="width:100%; margin-top: 20px;"></div>
 
                         </div>
                     </div>
@@ -163,12 +147,12 @@
 
                 <!-- Data Source -->
                 <div class="data-source mt-4">
-                    <p>Notes: Numbers are not adjusted for inflation. Numbers are seasonally adjusted.</p>
-                    <p>Source: Statistics Canada, Employment and average weekly earnings (including overtime) for all
-                        employees by province and territory, monthly, seasonally adjusted.
-                        Earnings data are based on gross payroll before source deductions.
-                        <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410022301" target="_blank">Table
-                            14-10-0223-01.</a>
+                    <p>Notes: Numbers are seasonally adjusted.</p>
+                    <p>Source: Statistics Canada. <a
+                            href="https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3310027001"
+                            target="_blank">Table 33-10-0270-01 Experimental estimates for business openings and
+                            closures for Canada,
+                            provinces and territories, census metropolitan areas, seasonally adjusted.</a>
                     </p>
                 </div>
             </div>
@@ -181,30 +165,32 @@
             <div class="brand">
                 <a href="index.html"><img src="images/logo-rev.png" alt="Government of Yukon Logo"
                         style="height:62px;width:158px;margin-right:30px;" /></a>
-                <div><img class="aurora" src="images/Aurora-main.svg" alt="Government of Yukon Branding" /></div>
+                <div><img class="aurora" src="images/Aurora-main.svg" alt="Government of Yukon Branding" style="" />
+                </div>
             </div>
         </div>
     </footer>
-        <div id="footer-menu" class="py-4">
-            <div class="container">
-                <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
-                <ul class="fNav" style="float:left;">
-                    <li><a href="https://yukon.ca/en" class="active">Home</a></li>
-                </ul>
-                <ul class="fNav" style="float:left;">
-                    <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
-                </ul>
-                <ul class="fNav" style="float:left;">
-                    <li><a href="data.html">Data</a></li>
-                </ul>
-            </div>
+    <div id="footer-menu" class="py-4">
+        <div class="container">
+            <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
+            <ul class="fNav" style="float:left;">
+                <li><a href="https://yukon.ca/en" class="active">Home</a></li>
+            </ul>
+            <ul class="fNav" style="float:left;">
+                <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
+            </ul>
+            <ul class="fNav" style="float:left;">
+                <li><a href="data.html">Data</a></li>
+            </ul>
         </div>
+    </div>
 
     <!-- JavaScript -->
     <script src="./vendor/jquery/jquery-3.5.1.min.js"></script>
     <script src="./vendor/popper/popper.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script type="module" src="js/pages/accommodation-employment.js"></script>
+    <script type="module" src="js/pages/tourism-business-counts.js"></script>
+    <script type="module" src="js/pages/tourism-business-counts-monthly.js"></script>
     <script type="module" src="js/utils/data-table.js"></script>
     <script src="js/utils/get-year.js"></script>
 <script src="js/utils/analytics.js"></script>
