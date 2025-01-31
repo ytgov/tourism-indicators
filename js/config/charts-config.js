@@ -131,6 +131,15 @@ const datasetConfigs = {
             height: 400
         }
     },
+    consumerConfidence: {
+        id: 'consumer-confidence',
+        title: 'Consumer Confidence',
+        yAxisTitle: 'Consumer Confidence',
+        valueFormat: 'number',
+        chart: {
+            height: 400
+        }
+    },
     restaurantSpending: {
         id: 'restaurant-spending',
         title: 'Monthly Restaurant Spending',
