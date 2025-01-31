@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Short Term Rental Performance | Yukon Tourism Indicators</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
-    
+
     <!-- Bootstrap CSS -->
     <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
 
@@ -19,19 +20,23 @@
     <script src="./vendor/highcharts/12.1.0/stock/modules/exporting.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/accessibility.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/stock.js"></script>
-    
+
 
 </head>
+
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo.svg" class="d-inline-block align-top" style="height:40px;width:auto;margin-right:30px;" alt="Yukon Logo">
-            <a class="navbar-brand" href="index.html">Yukon Tourism Indicators</a>
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" class="d-inline-block align-top"
+                    style="height:40px;width:auto;margin-right:30px;" alt="Yukon Logo">
+                <a class="navbar-brand" href="index.html">Yukon Tourism Indicators</a>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
@@ -40,8 +45,8 @@
                     </li>
                 </ul>
             </div>
-    </div>
-</nav>
+        </div>
+    </nav>
 
 
     <!-- Main Container -->
@@ -50,8 +55,11 @@
             <!-- Title Section -->
             <div class="text-center mb-4">
                 <h1 class="indicator-title">Short Term Rental Performance</h1>
-                <p class="indicator-subtitle">Occupancy rates, average daily rates (ADR), and revenue per available room (RevPAR)
-                     information helps us understand the performance of the short term rental sector.  Data is shown for entire home listings.  Data is converted from USD to CAD using the latest average monthly exchange rate from Stats Canada.</p>
+                <p class="indicator-subtitle">Occupancy rates, average daily rates (ADR), and revenue per available room
+                    (RevPAR)
+                    information helps us understand the performance of the short term rental sector. Data is shown for
+                    entire home listings. Data is converted from USD to CAD using the latest average monthly exchange
+                    rate from Stats Canada.</p>
             </div>
 
             <!-- Metrics Cards -->
@@ -61,7 +69,7 @@
                         <div class="card-body text-center d-flex flex-column justify-content-between">
                             <h5 class="card-title">Average Occupancy Rate (YTD)</h5>
                             <p class="card-text h2 mb-0" id="ytd-occupancy">-</p>
-                            <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between border-bottom pb-2 mt-auto">
                                 <p class="card-text text-muted mt-2 mb-0" id="latest-monthly-date">-</p>
                                 <p class="card-text text-muted mt-2 mb-0" id="ytd-occ-change">(-)</p>
                             </div>
@@ -78,7 +86,7 @@
                         <div class="card-body text-center d-flex flex-column justify-content-between">
                             <h5 class="card-title">Average Daily Rate (YTD)</h5>
                             <p class="card-text h2 mb-0" id="ytd-adr">-</p>
-                            <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between border-bottom pb-2  mt-auto">
                                 <p class="card-text text-muted mt-2 mb-0" id="ytd-adr-date-range">-</p>
                                 <p class="card-text text-muted mt-2 mb-0" id="ytd-adr-change"></p>
                             </div>
@@ -95,7 +103,7 @@
                         <div class="card-body text-center d-flex flex-column justify-content-between">
                             <h5 class="card-title">Average RevPAR (YTD)</h5>
                             <p class="card-text h2 mb-0" id="ytd-revpar">-</p>
-                            <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between border-bottom pb-2  mt-auto">
                                 <p class="card-text text-muted mt-2 mb-0" id="ytd-rev-date-range">-</p>
                                 <p class="card-text text-muted mt-2 mb-0" id="ytd-rev-change"></p>
                             </div>
@@ -113,10 +121,14 @@
                 <div class="card-body" style="width:100%;">
                     <h5 class="card-title">Highlights</h5>
                     <ul>
-                        <li><strong>Occupancy rates</strong> have decreased as the number of available listings has increased considerably over time.</li>
-                        <li><strong>Average Daily Rate (ADR)</strong> during summer months has seen a significant increase of 41%, rising from $170 in 2019 to $240 in 2024.</li>
-                        <li><strong>Revenue Per Available Room (RevPAR)</strong> has grown by 32%, climbing from $125 in 2019 to approximately $165 in 2024.</li>
-                        <li>These trends indicate a growing supply of short-term rentals, accompanied by strong demand and higher pricing power in the market.</li>
+                        <li><strong>Occupancy rates</strong> have decreased as the number of available listings has
+                            increased considerably over time.</li>
+                        <li><strong>Average Daily Rate (ADR)</strong> during summer months has seen a significant
+                            increase of 41%, rising from $170 in 2019 to $240 in 2024.</li>
+                        <li><strong>Revenue Per Available Room (RevPAR)</strong> has grown by 32%, climbing from $125 in
+                            2019 to approximately $165 in 2024.</li>
+                        <li>These trends indicate a growing supply of short-term rentals, accompanied by strong demand
+                            and higher pricing power in the market.</li>
                     </ul>
                 </div>
             </div>
@@ -125,28 +137,32 @@
             <div style="width: 100%;">
                 <ul class="nav nav-tabs" id="data-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="true">By month</a>
+                        <a class="nav-link active" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab"
+                            aria-controls="by-month" aria-selected="true">By month</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="false">Historical</a>
+                        <a class="nav-link" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab"
+                            aria-controls="by-year" aria-selected="false">Historical</a>
                     </li>
                 </ul>
 
-                
+
 
                 <div class="tab-content" id="tab-content">
                     <!-- By month Content -->
                     <div class="tab-pane fade show active" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
-                        <div id="by-month-container" class="card mb-4" style="border:0px; width:100%; margin-top: 20px;">
+                        <div id="by-month-container" class="card mb-4"
+                            style="border:0px; width:100%; margin-top: 20px;">
 
                             <!-- Data by month -->
-                             <div class="row">
+                            <div class="row">
                                 <div id="monthly-occupancy" class="mb-4 col-md-4" style="height:400px;"></div>
                                 <div id="monthly-adr" class="mb-4 col-md-4" style="height:400px;"></div>
                                 <div id="monthly-revpar" class="mb-4 col-md-4" style="height:400px;"></div>
-                             </div>
+                            </div>
 
-                             <div id="data-table-container" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
+                            <div id="data-table-container" class="card mb-4" style="width:100%; margin-top: 20px;">
+                            </div>
 
                         </div>
                     </div>
@@ -157,46 +173,51 @@
                             <!-- Data by year goes here -->
                             <div id="indicator-chart" class="card mb-4" style="width:100%;"></div>
                             <div id="listings-chart" class="card mb-4" style="width:100%;"></div>
-                            
+
                         </div>
                     </div>
                 </div>
 
                 <!-- Data Source -->
                 <div class="data-source mt-4">
-                    <p>Disclaimer: The Yukon Tourism Indicators Dashboard and associated reports incorporate data provided under a 
-                        licensing agreement with AirDNA, LLC, a leading provider of vacation rental analytics. The data 
-                        includes metrics such as occupancy rates, available listings, and average daily revenue for the 
-                        Yukon region. These insights support statistical and research purposes for the Government of Yukon. 
-                        For further details on data methodology, visit AirDNA’s documentation at: <a href="https://www.airdna.co/airdna-data-how-it-works">AirDNA Data Methodology.</a>                        </p>
+                    <p>Disclaimer: The Yukon Tourism Indicators Dashboard and associated reports incorporate data
+                        provided under a
+                        licensing agreement with AirDNA, LLC, a leading provider of vacation rental analytics. The data
+                        includes metrics such as occupancy rates, available listings, and average daily revenue for the
+                        Yukon region. These insights support statistical and research purposes for the Government of
+                        Yukon.
+                        For further details on data methodology, visit AirDNA’s documentation at: <a
+                            href="https://www.airdna.co/airdna-data-how-it-works">AirDNA Data Methodology.</a> </p>
                 </div>
             </div>
         </div>
     </div>
 
-<!-- Footer -->
-<footer class="py-4 bg-dark">
-    <div class="container">
-        <div class="brand">
-            <a href="index.html"><img src="images/logo-rev.png" alt="Government of Yukon Logo" style="height:62px;width:158px;margin-right:30px;" /></a>
-            <div><img class="aurora" src="images/Aurora-main.svg" alt="Government of Yukon Branding" style="" /></div>
-        </div>
-    </div>
-</footer>
-        <div id="footer-menu" class="py-4">
-            <div class="container">
-                <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
-                <ul class="fNav" style="float:left;">
-                    <li><a href="https://yukon.ca/en" class="active">Home</a></li>
-                </ul>
-                <ul class="fNav" style="float:left;">
-                    <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
-                </ul>
-                <ul class="fNav" style="float:left;">
-                    <li><a href="data.html">Data</a></li>
-                </ul>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <div class="brand">
+                <a href="index.html"><img src="images/logo-rev.png" alt="Government of Yukon Logo"
+                        style="height:62px;width:158px;margin-right:30px;" /></a>
+                <div><img class="aurora" src="images/Aurora-main.svg" alt="Government of Yukon Branding" style="" />
+                </div>
             </div>
         </div>
+    </footer>
+    <div id="footer-menu" class="py-4">
+        <div class="container">
+            <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
+            <ul class="fNav" style="float:left;">
+                <li><a href="https://yukon.ca/en" class="active">Home</a></li>
+            </ul>
+            <ul class="fNav" style="float:left;">
+                <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
+            </ul>
+            <ul class="fNav" style="float:left;">
+                <li><a href="data.html">Data</a></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- JavaScript -->
     <script src="./vendor/jquery/jquery-3.5.1.min.js"></script>
@@ -210,7 +231,8 @@
     <script type="module" src="js/pages/str-monthly-revpar.js"></script>
     <script type="module" src="js/pages/str-data-table.js"></script>
     <script src="js/utils/get-year.js"></script>
-<script src="js/utils/analytics.js"></script>
+    <script src="js/utils/analytics.js"></script>
 
 </body>
+
 </html>

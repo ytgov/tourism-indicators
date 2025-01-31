@@ -600,7 +600,6 @@ async function loadBusinessCounts() {
         
         // Get the most recent row
         const mostRecent = data[data.length - 1];
-        console.log(mostRecent);
         const date = new Date(mostRecent[0]);
         
         return {
@@ -628,7 +627,6 @@ async function loadConsumerConfidence() {
         
         // Get the most recent row
         const mostRecent = data[data.length - 1];
-        console.log(mostRecent);
         const date = new Date(mostRecent[0]);
         
         return {
@@ -699,9 +697,15 @@ async function loadRetailSales() {
 }
 
 // Function to create arrow SVG
-function createArrowSvg(isPositive) {
-    return `<svg class="svg-arrow" width="20" height="20" viewBox="0 0 448 512" style="transform: ${isPositive ? 'none' : 'rotate(180deg)'}">
-        <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
+export function createArrowSvg(changeValue) {
+    if (changeValue == 0) {
+        return `<svg class="svg-equals" width="20" height="20" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M48 224h352c8.8 0 16 7.2 16 16v32c0 8.8 7.2 16-16 16H48c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16zm0 128h352c8.8 0 16 7.2 16 16v32c0 8.8 7.2 16-16 16H48c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16z"></path>
+        </svg>`;
+    }
+    
+    return `<svg class="svg-arrow" width="20" height="20" viewBox="0 0 448 512" style="transform: ${changeValue > 0 ? 'none' : 'rotate(180deg)'}">
+        <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5-9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3-9.8-24.8-10-34.3.4z"></path>
     </svg>`;
 }
 
@@ -731,7 +735,7 @@ function updateKPIContent(containerId, data, title) {
     const container = document.getElementById(containerId);
     let formattedTotal = data.ytdTotal.toLocaleString();
     let subheading = '';
-    let isAccommodationIndicator = containerId.startsWith('additional');
+    let isAdditionalIndicator = containerId.startsWith('additional');
     
     // Special formatting for different indicators
     if (title === 'Economic Overview') {
@@ -754,16 +758,7 @@ function updateKPIContent(containerId, data, title) {
     } else if (title === 'Average Revenue Per Room') {
         formattedTotal = formatCurrency(data.ytdTotal);
         subheading = 'Average revenue per available room';
-    } /*else if (title === 'VIC Visitors') {
-        formattedTotal = formatInThousands(Math.round(data.ytdTotal / 1000) * 1000);
-        subheading = 'Visitor Information Centre visitors';
-    } else if (title === 'WLWS Northbound Traffic') {
-        formattedTotal = formatInThousands(Math.round(data.ytdTotal / 1000) * 1000);
-        subheading = 'Northbound vehicles through Watson Lake';
-    } else if (title === 'Highway Traffic') {
-        formattedTotal = formatInThousands(Math.round(data.ytdTotal / 1000) * 1000);
-        subheading = 'Total highway traffic';
-    } */else if (title === 'Rental Occupancy Rate') {
+    } else if (title === 'Rental Occupancy Rate') {
         formattedTotal = formatPercentage(data.ytdTotal);
         subheading = 'Average STR occupancy rate';
     } else if (title === 'STR Average Daily Rate') {
@@ -777,13 +772,15 @@ function updateKPIContent(containerId, data, title) {
         subheading = 'Business counts';
     }
 
-    if (isAccommodationIndicator) {
+    if (isAdditionalIndicator) {
+        // Small Indicator cards
+        console.log(data.ytdPercentageChange);
         container.innerHTML = `
             <div class="ytd-change ${
                 data.ytdPercentageChange >= 1 ? 'positive' :
                 data.ytdPercentageChange <= -1 ? 'negative' : 'neutral'
             }">
-                ${createArrowSvg(data.ytdPercentageChange >= 0)} <!-- Original logic for SVG arrows -->
+                ${createArrowSvg(data.ytdPercentageChange)}
             </div>
             <div class="dataset-name">${title}</div>
             <div class="ytd-total">${formattedTotal}</div>
@@ -796,6 +793,7 @@ function updateKPIContent(containerId, data, title) {
             <div class="current-month">${data.monthYear}</div>
         `;
     } else {
+        // Main Indicators
         container.innerHTML = `
             <div class="current-month">${data.monthYear}</div>
             <div class="dataset-name">${title}</div>
@@ -805,7 +803,7 @@ function updateKPIContent(containerId, data, title) {
                 data.ytdPercentageChange >= 1 ? 'positive' :
                 data.ytdPercentageChange <= -1 ? 'negative' : 'neutral'
             }">
-                ${createArrowSvg(data.ytdPercentageChange >= 0)} <!-- Original logic for SVG arrows -->
+                ${createArrowSvg(data.ytdPercentageChange)} 
                 ${data.ytdPercentageChange < 0 ? '-' : ''}${Math.abs(data.ytdPercentageChange).toFixed(1)}% y/y
             </div>
         `;

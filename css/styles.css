@@ -154,6 +154,11 @@ brand{
     stroke: white;
 }
 
+.key-indicator .svg-equals {
+    stroke-width: 1.5em;
+    stroke: white;
+}
+
 .key-indicator .ytd-change.positive {
     color: #28a745;
 }

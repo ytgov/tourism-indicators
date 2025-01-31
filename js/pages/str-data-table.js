@@ -33,7 +33,7 @@ class DataTable {
 
     async fetchData(csvUrl) {
         try {
-            const response = await fetch(csvUrl);
+            const response = await fetch(csvUrl+'?' + Math.random());
             const csvText = await response.text();
 
             const rows = csvText
@@ -217,14 +217,11 @@ class DataTable {
 // Example Usage
 document.addEventListener('DOMContentLoaded', function () {
     const csvUrls = [
-        'data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random(),
-        'data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random(),
-        'data/vw_kpi_str_revpar_ytd_summary.csv?'+Math.random(),
-        'data/vw_kpi_str_available_listings_ytd_summary.csv?'+Math.random()
+        'data/vw_kpi_str_occupancy_ytd_summary.csv',
+        'data/vw_kpi_str_adr_ytd_summary.csv',
+        'data/vw_kpi_str_revpar_ytd_summary.csv',
+        'data/vw_kpi_str_available_listings_ytd_summary.csv'
     ];
-
-
-
     const dataTable = new DataTable('data-table-container', csvUrls);
     dataTable.initialize();
 });

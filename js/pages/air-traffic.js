@@ -1,13 +1,7 @@
 import { ChartBuilder } from '../components/chart-builder.js';
 import { datasetConfigs } from '../config/charts-config.js';
 import { loadCSVData } from '../utils/data-utils.js';
-
-// Function to create arrow SVG
-function createArrowSvg(isPositive) {
-    return `<svg class="svg-arrow" width="20" height="20" viewBox="0 0 448 512" style="transform: ${isPositive ? 'none' : 'rotate(180deg)'}">
-        <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5-9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3-9.8-24.8-10-34.3.4z"></path>
-    </svg>`;
-}
+import { createArrowSvg } from '../utils/svg-utils.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
@@ -65,7 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 } else {
                     color = '#dc3545';  // Red for negative changes
                 }
-                const arrow = createArrowSvg(ytdChangeValue >= 0);
+                const arrow = createArrowSvg(ytdChangeValue);
                 ytdChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${ytdChangeValue.toFixed(1)}% y/y</span>`;
             }
 
@@ -81,7 +75,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 } else {
                     color = '#dc3545';  // Red for negative changes
                 }
-                const arrow = createArrowSvg(c2019ChangeValue >= 0);
+                const arrow = createArrowSvg(c2019ChangeValue);
                 c2019ChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${c2019ChangeValue.toFixed(1)}% from 2019</span>`;
             }
         }
