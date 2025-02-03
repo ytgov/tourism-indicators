@@ -44,52 +44,68 @@ document.addEventListener("DOMContentLoaded", function () {
         const titleText = selectedGeo === "All" ? "Total Border Crossings (All Locations)" : `Total Border Crossing (${selectedGeo})`;
 
         // Render the chart
-        Highcharts.chart('ybcbl-container', {
-            chart: {
-                type: 'column', // Vertical bar chart
-                zoomType: 'x',
-                height: 400
+        // Render the chart
+Highcharts.chart('ybcbl-container', {
+    chart: {
+        type: 'column', // Vertical bar chart
+        zoomType: 'x',
+        height: 400
+    },
+    title: {
+        text: titleText
+    },
+    xAxis: {
+        categories: years,
+        title: {
+            text: 'Year'
+        },
+        scrollbar: {
+            enabled: false // Enable scrollbar for x-axis
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total Crossings'
+        },
+        labels: {
+            overflow: 'justify'
+        },
+        stackLabels: {  // Add stack labels to show totals
+            enabled: false,
+            style: {
+                fontWeight: 'bold',
+                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
             },
-            title: {
-                text: titleText
-            },
-            xAxis: {
-                categories: years,
-                title: {
-                    text: 'Year'
-                },
-                scrollbar: {
-                    enabled: false // Enable scrollbar for x-axis
-                }
-            },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: 'Total Crossings'
-                },
-                labels: {
-                    overflow: 'justify'
-                }
-            },
-            tooltip: {
-                shared: true,
-                valueSuffix: ' crossings'
-            },
-            plotOptions: {
-                column: {
-                    stacking: 'normal',
-                    pointPadding: 0.1,
-                    groupPadding: 0
-                }
-            },
-            legend: {
-                reversed: true
-            },
-            credits: {
-                enabled: false
-            },
-            series: seriesData
-        });
+            formatter: function () {
+                return this.total.toLocaleString(); // Display the total value of the stacked bars
+            }
+        }
+    },
+    tooltip: {
+        shared: true,
+        valueSuffix: ' crossings'
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            pointPadding: 0.1,
+            groupPadding: 0,
+            dataLabels: {  // Enable data labels on bars
+                enabled: false,
+                format: '{y}'
+            }
+        }
+    },
+    legend: {
+        reversed: true
+    },
+    credits: {
+        enabled: false
+    },
+    series: seriesData
+});
+
     }
 
     // Fetch data and initialize chart
