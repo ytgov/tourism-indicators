@@ -38,6 +38,40 @@ h6 {
     }
 }
 
+@media print {
+    /* Force all tabs to be visible */
+    .tab-pane {
+        display: block !important;  /* Ensure all tab content is visible */
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /* Make sure active tab styling remains */
+    .nav-tabs .nav-link {
+        border: 1px solid #ccc;  /* Add a border so tabs are visible */
+        background-color: white !important;
+        color: black !important;
+    }
+
+    /* Optional: Remove underline effect from tabs */
+    .nav-tabs .nav-link.active {
+        font-weight: bold;
+        border-bottom: 2px solid black !important;
+    }
+    
+    /* Adjust tab container to prevent overlapping */
+    .tab-content {
+        position: relative !important;
+        height: auto !important;
+    }
+
+    /* If any tab content has inline display:none, override it */
+    .tab-content > .tab-pane {
+        display: block !important;
+    }
+
+}
+
 
 /* Key Indicator Tiles */
 .key-indicator {

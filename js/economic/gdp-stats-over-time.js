@@ -117,32 +117,42 @@ async function createGDPStatsChart() {
                 borderWidth: 0
             },
             plotOptions: {
-                spline: {
+                line: {
                     marker: {
                         enabled: true,
                         radius: 4
                     }
+                },
+                column: {
+                    grouping: true,
+                    pointPadding: 0.1,
+                    borderWidth: 0
                 }
             },
             series: [{
+                type: 'column',
                 name: 'Tourism GDP',
                 data: seriesData.tourismGdp,
                 color: '#0d233a',
                 yAxis: 0,
-                zIndex: 2
+                zIndex: 1,
+                pointPlacement: 0
             }, {
+                type: 'column',
                 name: 'Tourism Revenue',
                 data: seriesData.tourismRevenue,
                 color: '#8bbc21',
                 yAxis: 0,
-                zIndex: 2
+                zIndex: 0,
+                pointPlacement: 0
             },  
             {
+                type: 'line',
                 name: 'Total GDP',
                 data: seriesData.gdp,
                 color: '#2f7ed8',
                 yAxis: 1,
-                zIndex: 1
+                zIndex: 2
             }],
             credits: { enabled: false }
         });

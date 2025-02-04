@@ -34,7 +34,7 @@ async function loadIntlTravelersData() {
             .filter(row => row.trim())
             .map(row => row.replace(/"/g, ''))
             .map(row => row.split(','));
-
+        
         // Get total for all locations for each month
         const monthlyTotals = new Map(); // key: date, value: {total, ytdTotal, ytdChange}
         
@@ -95,40 +95,37 @@ async function loadIntlTravelersData() {
 // Function to load spending data
 async function loadSpendingData() {
     try {
-        const response = await fetch('/data/vw_kpi_lasr_spending_ytd_summary.csv?'+Math.random());
+        const response = await fetch('/data/vw_kpi_tc_revenue_estimates.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim()) // Remove empty lines
-            .map(row => row.replace(/"/g, ''))
-            .map(row => row.split(','));
+            .map(row => row.replace(/^"|"$/g, '')) // Remove surrounding quotes
+            .map(row => row.split(',').map(cell => cell.replace(/^"|"$/g, ''))); // Remove quotes from cells
         
         // Remove header row and ensure all rows are complete
         const data = rows.slice(1)
-            .filter(row => row.length > 1 && row[0].trim())
+            .filter(row => row.length >= 5 && row[0].trim() && !isNaN(parseFloat(row[1])))
             .map(row => ({
-                date: new Date(row[0]),
-                value: parseFloat(row[3]),  // Using monthly_total for the chart
-                year: parseInt(row[1]),
-                month: parseInt(row[2])
+                year: parseInt(row[0]),
+                value: parseFloat(row[1]),
+                type: row[2],
+                updated: new Date(row[4]).toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+                percentChange: row[5] ? parseFloat(row[5]) : null
             }))
-            .sort((a, b) => b.date - a.date);  // Sort by date descending
+            .filter(row => row.type === 'Estimated revenue' || row.type === 'Actual revenue')
+            .sort((a, b) => b.year - a.year);  // Sort by year descending
         
         // Get the most recent row
         const mostRecent = data[0];
-        const ytdTotal = parseFloat(rows.find(row => 
-            row[1] === mostRecent.year.toString() && 
-            row[2] === mostRecent.month.toString()
-        )[6]); // Using YTD total for the display
+        console.log(mostRecent);
         
         return {
-            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-            ytdTotal: ytdTotal,
-            ytdPercentageChange: parseFloat(rows.find(row => 
-                row[1] === mostRecent.year.toString() && 
-                row[2] === mostRecent.month.toString()
-            )[8]),
-            monthlyData: data
-                .sort((a, b) => a.date - b.date)  // Sort ascending for chart data
+            year: mostRecent.year,
+            monthYear: mostRecent.updated,
+            ytdTotal: mostRecent.value * 1000000, // Multiply by millions for KPIU
+            ytdPercentageChange: mostRecent.percentChange,
+            yearlyData: data
+                .sort((a, b) => a.year - b.year)
         };
     } catch (error) {
         console.error('Error loading spending data:', error);
@@ -136,6 +133,7 @@ async function loadSpendingData() {
     }
 }
 
+// Function to load estimated visitors data
 async function loadEstimatedVisitorsData() {
     try {
         const response = await fetch('/data/vw_kpi_estimated_visitors.csv?'+Math.random());
@@ -740,7 +738,7 @@ function updateKPIContent(containerId, data, title) {
     // Special formatting for different indicators
     if (title === 'Economic Overview') {
         formattedTotal = formatSpendingInMillions(data.ytdTotal);
-        subheading = 'GDP, Revenue, and Spending';
+        subheading = 'Estimated gross business revenue, GDP, and more';
     } else if (title === 'Air Arrivals') {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Erik Nielsen Whitehorse International Airport';
@@ -774,7 +772,6 @@ function updateKPIContent(containerId, data, title) {
 
     if (isAdditionalIndicator) {
         // Small Indicator cards
-        console.log(data.ytdPercentageChange);
         container.innerHTML = `
             <div class="ytd-change ${
                 data.ytdPercentageChange >= 1 ? 'positive' :
@@ -873,6 +870,71 @@ function createKPIChart(containerId, data, ytdPercentageChange) {
     });
 }
 
+function createYearlyKPIChart(containerId, data, ytdPercentageChange) {
+    let color;
+    if (ytdPercentageChange > -1 && ytdPercentageChange < 1) {
+        color = '#6c757d';  // Dark grey for neutral changes
+    } else if (ytdPercentageChange > 1) {
+        color = '#28a745';  // Green for positive changes
+    } else {
+        color = '#dc3545';  // Red for negative changes
+    }
+
+    const currentYear = new Date().getFullYear();
+    const tenYearsAgo = currentYear - 10;
+
+    // Process data to aggregate by year (assuming each data item has 'year' and 'value')
+    const yearlyData = data
+        .filter(item => item.year >= tenYearsAgo) // Filter last 10 years
+        .sort((a, b) => a.year - b.year) // Sort by year ascending
+        .map(item => [new Date(item.year, 0, 1).getTime(), item.value]); // Convert year to timestamp
+
+    Highcharts.chart(containerId, {
+        chart: {
+            type: 'area',
+            height: 100,
+            margin: [0, 0, 0, 0],
+            backgroundColor: 'transparent',
+            style: {
+                overflow: 'visible'
+            }
+        },
+        title: null,
+        credits: { enabled: false },
+        xAxis: {
+            visible: false
+        },
+        yAxis: { visible: false, min: 0 },
+        legend: { enabled: false },
+        tooltip: { enabled: false },        
+        plotOptions: {
+            area: {
+                marker: { enabled: false },
+                lineWidth: 2,
+                states: { hover: { enabled: false } },
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, Highcharts.color(color).setOpacity(0.3).get()],
+                        [1, Highcharts.color(color).setOpacity(0).get()]
+                    ]
+                },
+                color: color
+            }
+        },
+        series: [{
+            data: yearlyData,
+            showInLegend: false
+        }]
+    });
+}
+
+
 // Initialize everything when the document is ready
 document.addEventListener('DOMContentLoaded', async function() {
     // First KPI - Airport Arrivals
@@ -893,7 +955,8 @@ document.addEventListener('DOMContentLoaded', async function() {
     const spendingData = await loadSpendingData();
     if (spendingData) {
         updateKPIContent('indicator4-content', spendingData, 'Economic Overview');
-        createKPIChart('indicator4-chart', spendingData.monthlyData, spendingData.ytdPercentageChange);
+        createYearlyKPIChart('indicator4-chart', spendingData.yearlyData, spendingData.ytdPercentageChange);
+        console.log(spendingData);
     }
 
     // Fourth KPI - Estimated Visitors

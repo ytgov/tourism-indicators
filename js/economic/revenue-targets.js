@@ -2,8 +2,10 @@ import { loadCSVData } from '../utils/data-utils.js';
 
 async function createGDPStatsChart() {
     try {
-        const { data } = await loadCSVData('../../data/vw_kpi_tc_revenue_estimates_adj_inflation_2024.csv?'+Math.random());
+        const { data } = await loadCSVData('../../data/vw_kpi_tc_revenue_estimates.csv?'+Math.random());
         
+        //console.log(data);
+
         // Process data into series
         const seriesData = {
             target: [],
@@ -12,17 +14,28 @@ async function createGDPStatsChart() {
             forecast: []
         };
 
-        const actualYears = new Set();
-
-        // Process each row of data
+        const relevantYears = new Set(); // Track years where 'Estimated revenue' or 'Actual revenue' exist
+        const actualYears = new Set(); // Track years with actual revenue
+        
+        // First pass: Identify relevant years
         data.forEach(row => {
-            const [year, value, adjusted_value, type, notes] = row;
+            const [year, value, type] = row;
+            const numYear = parseInt(year);
+        
+            if (type === 'Actual revenue' || type === 'Estimated revenue') {
+                relevantYears.add(numYear);
+            }
+        });
+        
+        // Second pass: Process only relevant years
+        data.forEach(row => {
+            const [year, value, type] = row;
             const numYear = parseInt(year);
             const numValue = parseFloat(value);
             const currentYear = new Date().getFullYear();
-
-            // Only include data from 2016 onwards
-            if (numYear > 2016 && numYear <= currentYear+1) {
+        
+            // Only include data from 2016 onwards and only for relevant years
+            if (numYear > 2016 && numYear <= currentYear + 1 && relevantYears.has(numYear)) {
                 switch (type) {
                     case 'Target Revenue':
                         seriesData.target.push([numYear, numValue]);
@@ -43,7 +56,6 @@ async function createGDPStatsChart() {
                 }
             }
         });
-
 
         // Sort data points by year
         Object.values(seriesData).forEach(series => series.sort((a, b) => a[0] - b[0]));
