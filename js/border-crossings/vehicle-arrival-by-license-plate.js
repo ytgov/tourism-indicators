@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (barChart) {
             barChart.update({
-                title: { text: `Vehicle Arrivals by License Plate (${year})` },
+                title: { text: `Vehicle arrivals by license plate (${year})` },
                 series: [{
                     data: barData,
                     showInLegend: false
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         scrollPositionY: 0
                     }
                 },
-                title: { text: `Vehicle Arrivals by License Plate (${year})` },
+                title: { text: `Vehicle arrivals by license plate (${year})` },
                 xAxis: {
                     type: 'category',
                     title: { text: 'License Plate' }

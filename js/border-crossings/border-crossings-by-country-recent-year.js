@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (barChart) {
             barChart.update({
-                title: { text: `Border Crossings by Overseas Country (${year})`},
+                title: { text: `Border crossings by overseas country (${year})`},
                 series: [{
                     data: barData,
                     showInLegend: false
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     type: 'bar',
                     height: 500
                  },
-                title: { text: `Border Crossings by Overseas Country (${year})` },
+                title: { text: `Border crossings by overseas country (${year})` },
                 xAxis: {
                     type: 'category',
                     title: { text: 'Country' }
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
         if (pieChart) {
             pieChart.update({
-                title: { text: `Overseas Border Crossings Breakdown (${year})` },
+                title: { text: `Overseas border crossings breakdown (${year})` },
                 series: [{
                     data: top10Data,
                     showInLegend: true
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             pieChart = Highcharts.chart('country-pie-container', {
                 chart: { type: 'pie' },
-                title: { text: `Overseas Border Crossings Breakdown (${year})` },
+                title: { text: `Overseas border crossings breakdown (${year})` },
                 series: [{
                     name: 'Crossings',
                     data: top10Data,

@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }]
             },
             title: {
-                text: "Estimated Tourism Business Counts by Month"
+                text: "Estimated tourism business counts by month"
             },
             xAxis: {
                 type: "datetime",

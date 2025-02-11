@@ -11,7 +11,7 @@ async function loadCSVData(csvUrl) {
         // Parse the header row and remove quotes
         const headers = rows[0].split(',').map(header => header.replace(/"/g, '').trim());
 
-        // Parse the data rows and sort by year
+        // Parse the data rows and sort By year
         const data = rows.slice(1)
             .map(row => {
                 const values = row.split(',').map(value => value.replace(/"/g, '').trim());

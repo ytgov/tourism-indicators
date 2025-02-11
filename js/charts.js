@@ -113,7 +113,7 @@ async function loadSpendingData() {
                 percentChange: row[5] ? parseFloat(row[5]) : null
             }))
             .filter(row => row.type === 'Estimated revenue' || row.type === 'Actual revenue')
-            .sort((a, b) => b.year - a.year);  // Sort by year descending
+            .sort((a, b) => b.year - a.year);  // Sort By year descending
         
         // Get the most recent row
         const mostRecent = data[0];
@@ -133,7 +133,7 @@ async function loadSpendingData() {
     }
 }
 
-// Function to load estimated visitors data
+// Function to load Estimated visitors data
 async function loadEstimatedVisitorsData() {
     try {
         const response = await fetch('/data/vw_kpi_estimated_visitors.csv?'+Math.random());
@@ -174,7 +174,7 @@ async function loadEstimatedVisitorsData() {
                 .sort((a, b) => a.date - b.date)  // Sort ascending for chart data
         };
     } catch (error) {
-        console.error('Error loading estimated visitors data:', error);
+        console.error('Error loading Estimated visitors data:', error);
         return null;
     }
 }
@@ -387,7 +387,7 @@ async function loadHighwayCountsData() {
     }
 }
 
-// Load STR Occupancy Rate Data
+// Load STR Occupancy rate Data
 async function loadSTROccupancyData() {
     try {
         const response = await fetch('/data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random());
@@ -663,7 +663,7 @@ async function loadRestaurantSales() {
             }))
         };
     } catch (error) {
-        console.error('Error loading Restaurant Sales data:', error);
+        console.error('Error loading Restaurant sales data:', error);
         return null;
     }
 }
@@ -736,36 +736,36 @@ function updateKPIContent(containerId, data, title) {
     let isAdditionalIndicator = containerId.startsWith('additional');
     
     // Special formatting for different indicators
-    if (title === 'Economic Overview') {
+    if (title === 'Economic overview') {
         formattedTotal = formatSpendingInMillions(data.ytdTotal);
         subheading = 'Estimated gross business revenue, GDP, and more';
-    } else if (title === 'Air Arrivals') {
+    } else if (title === 'Air arrivals') {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Erik Nielsen Whitehorse International Airport';
-    } else if (title === 'Border Crossings') {
+    } else if (title === 'Border crossings') {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Travelers entering through Canadian customs';
-    } else if (title === 'Estimated Visitors') {
+    } else if (title === 'Estimated visitors') {
         subheading = 'Total unique visitors to Yukon';
-    } else if (title === 'Hotel Occupancy Rate') {
+    } else if (title === 'Hotel occupancy rate') {
         formattedTotal = formatPercentage(data.ytdTotal);
         subheading = 'Average room occupancy rate';
-    } else if (title === 'Average Daily Room Rate') {
+    } else if (title === 'Average daily room rate') {
         formattedTotal = formatCurrency(data.ytdTotal);
         subheading = 'Average daily room rate';
-    } else if (title === 'Average Revenue Per Room') {
+    } else if (title === 'Average revenue per room') {
         formattedTotal = formatCurrency(data.ytdTotal);
         subheading = 'Average revenue per available room';
-    } else if (title === 'Rental Occupancy Rate') {
+    } else if (title === 'Rental occupancy rate') {
         formattedTotal = formatPercentage(data.ytdTotal);
         subheading = 'Average STR occupancy rate';
-    } else if (title === 'STR Average Daily Rate') {
+    } else if (title === 'STR average daily rate') {
         formattedTotal = formatCurrency(data.ytdTotal);
         subheading = 'Average STR daily rate';
-    } else if (title === 'Revenue Per Room') {
+    } else if (title === 'Revenue per room') {
         formattedTotal = formatCurrency(data.ytdTotal);
         subheading = 'Average STR revenue per room';
-    } else if (title === 'Tourism Businesses') {
+    } else if (title === 'Tourism businesses') {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Business counts';
     }
@@ -883,10 +883,10 @@ function createYearlyKPIChart(containerId, data, ytdPercentageChange) {
     const currentYear = new Date().getFullYear();
     const tenYearsAgo = currentYear - 10;
 
-    // Process data to aggregate by year (assuming each data item has 'year' and 'value')
+    // Process data to aggregate By year (assuming each data item has 'year' and 'value')
     const yearlyData = data
         .filter(item => item.year >= tenYearsAgo) // Filter last 10 years
-        .sort((a, b) => a.year - b.year) // Sort by year ascending
+        .sort((a, b) => a.year - b.year) // Sort By year ascending
         .map(item => [new Date(item.year, 0, 1).getTime(), item.value]); // Convert year to timestamp
 
     Highcharts.chart(containerId, {
@@ -940,46 +940,46 @@ document.addEventListener('DOMContentLoaded', async function() {
     // First KPI - Airport Arrivals
     const airportData = await loadAirportData();
     if (airportData) {
-        updateKPIContent('indicator2-content', airportData, 'Air Arrivals');
+        updateKPIContent('indicator2-content', airportData, 'Air arrivals');
         createKPIChart('indicator2-chart', airportData.monthlyData, airportData.ytdPercentageChange);
     }
 
-    // Second KPI - Border Crossings
+    // Second KPI - Border crossings
     const intlData = await loadIntlTravelersData();
     if (intlData) {
-        updateKPIContent('indicator3-content', intlData, 'Border Crossings');
+        updateKPIContent('indicator3-content', intlData, 'Border crossings');
         createKPIChart('indicator3-chart', intlData.monthlyData, intlData.ytdPercentageChange);
     }
 
     // Third KPI - Visitor Spending
     const spendingData = await loadSpendingData();
     if (spendingData) {
-        updateKPIContent('indicator4-content', spendingData, 'Economic Overview');
+        updateKPIContent('indicator4-content', spendingData, 'Economic overview');
         createYearlyKPIChart('indicator4-chart', spendingData.yearlyData, spendingData.ytdPercentageChange);
         console.log(spendingData);
     }
 
-    // Fourth KPI - Estimated Visitors
+    // Fourth KPI - Estimated visitors
     const visitorsData = await loadEstimatedVisitorsData();
     if (visitorsData) {
-        updateKPIContent('indicator1-content', visitorsData, 'Estimated Visitors');
+        updateKPIContent('indicator1-content', visitorsData, 'Estimated visitors');
         createKPIChart('indicator1-chart', visitorsData.monthlyData, visitorsData.ytdPercentageChange);
     }
 
     // Additional indicators
     const occupancyData = await loadOccupancyData();
     if (occupancyData) {
-        updateKPIContent('additional1-content', occupancyData, 'Hotel Occupancy Rate');
+        updateKPIContent('additional1-content', occupancyData, 'Hotel occupancy rate');
     }
 
     const roomRateData = await loadRoomRateData();
     if (roomRateData) {
-        updateKPIContent('additional2-content', roomRateData, 'Avg. Daily Rate');
+        updateKPIContent('additional2-content', roomRateData, 'Avg. daily rate');
     }
 
     const revenuePerRoomData = await loadRevenuePerRoomData();
     if (revenuePerRoomData) {
-        updateKPIContent('additional3-content', revenuePerRoomData, 'Avg. Revenue Per Room');
+        updateKPIContent('additional3-content', revenuePerRoomData, 'Avg. revenue per room');
     }
 
     /*const vicVisitorsData = await loadVICVisitorsData();
@@ -994,17 +994,17 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     const strOccupancyData = await loadSTROccupancyData();
     if (strOccupancyData) {
-        updateKPIContent('additional6-content', strOccupancyData, 'Rental Occupancy Rate');
+        updateKPIContent('additional6-content', strOccupancyData, 'Rental occupancy rate');
     }
 
     const strADRData = await loadSTRADRData();
     if (strADRData) {
-        updateKPIContent('additional7-content', strADRData, 'Avg. Daily Rate');
+        updateKPIContent('additional7-content', strADRData, 'Avg. daily rate');
     }
 
     const strRevPARData = await loadSTRRevPARData();
     if (strRevPARData) {
-        updateKPIContent('additional8-content', strRevPARData, 'Revenue Per Room');
+        updateKPIContent('additional8-content', strRevPARData, 'Revenue per room');
     }
     /*
     const pcVisitorsData = await loadPCVisitorData();
@@ -1026,27 +1026,27 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     const scAccommodationEmployment = await loadAccommodationEmployment();
     if (scAccommodationEmployment) {
-        updateKPIContent('additional12-content', scAccommodationEmployment, 'Employment in Accom.');
+        updateKPIContent('additional12-content', scAccommodationEmployment, 'Employment in accom.');
     }
 
     const scRestaurantSales = await loadRestaurantSales();
     if (scRestaurantSales) {
-        updateKPIContent('additional13-content', scRestaurantSales, 'YTD Restaurant Sales');
+        updateKPIContent('additional13-content', scRestaurantSales, 'YTD restaurant sales');
     }
 
     const scRetailSales = await loadRetailSales();
     if (scRetailSales) {
-        updateKPIContent('additional14-content', scRetailSales, 'YTD Retail Sales');
+        updateKPIContent('additional14-content', scRetailSales, 'YTD retail sales');
     }
 
     const scBusinessCounts = await loadBusinessCounts();
     if (scBusinessCounts) {
-        updateKPIContent('additional15-content', scBusinessCounts, 'Business Counts');
+        updateKPIContent('additional15-content', scBusinessCounts, 'Business counts');
     }
 
     const consumerConfidence = await loadConsumerConfidence();
     if (consumerConfidence) {
-        updateKPIContent('additional16-content', consumerConfidence, 'Consumer Confidence');
+        updateKPIContent('additional16-content', consumerConfidence, 'Consumer confidence');
     }
 
 });

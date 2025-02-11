@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 ytdChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${ytdChangeValue2019.toFixed(1)}% y/y</span>`;
             }
 
-            // Update Average Weekly Earnings
+            // Update Average weekly earnings
             const ytdEarningsAmountElement = document.getElementById('ytd-earn-amount');
             const ytdEarningsDateRangeElement = document.getElementById('ytd-earn-date-range');
             const ytdEarningsDateRangeElement2019 = document.getElementById('ytd-earn-date-range-2019');
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 height: 400
             },
             title: {
-                text: 'Average Monthly Employment and Weekly Earnings in Accommodation and Food Services'
+                text: 'Average monthly employment and weekly earnings in accommodation and food services'
             },
             xAxis: {
                 type: 'category',
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 },
                 {
                     title: {
-                        text: 'Weekly Earnings'
+                        text: 'Weekly earnings'
                     },
                     opposite: true // Weekly earnings will be on the right
                 }
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     yAxis: 0 // Maps to the first y-axis
                 },
                 {
-                    name: 'Weekly Earnings',
+                    name: 'Weekly earnings',
                     data: [],
                     color: '#f39c12',
                     type: 'spline', // Line type for earnings

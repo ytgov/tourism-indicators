@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Update chart title dynamically based on selected geo
-        const titleText = selectedGeo === "All" ? "Visitor origin (All Locations)" : `Visitor origin (${selectedGeo})`;
+        const titleText = selectedGeo === "All" ? "Visitor origin (all locations)" : `Visitor origin (${selectedGeo})`;
 
         // Render the chart
         Highcharts.chart('ybco-container', {

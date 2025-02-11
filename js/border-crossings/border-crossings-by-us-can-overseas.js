@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (barChart) {
             barChart.update({
-                title: { text: `Border Crossings by Origin (${year})` },
+                title: { text: `Border crossings by origin (${year})` },
                 series: [{
                     data: barData,
                     showInLegend: false
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             barChart = Highcharts.chart('can-us-bar-container', {
                 chart: { type: 'bar', height: 300 },
-                title: { text: `Border Crossings by Origin (${year})` },
+                title: { text: `Border crossings by origin (${year})` },
                 xAxis: {
                     type: 'category',
                     title: { text: 'Origin' }

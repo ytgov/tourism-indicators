@@ -21,7 +21,7 @@ async function loadCSVData(csvUrl) {
                 month: parseInt(row[2]) - 1,    // Convert to 0-based month index
                 value: parseFloat(row[3])       // Use monthly_total
             }))
-            .sort((a, b) => a.year - b.year || a.month - b.month); // Sort by year and month
+            .sort((a, b) => a.year - b.year || a.month - b.month); // Sort By year and month
 
         return data;
     } catch (error) {
@@ -44,7 +44,7 @@ async function generateChart() {
         new Date(2024, i).toLocaleString('default', { month: 'short' })
     );
 
-    // Aggregate data by year
+    // Aggregate data By year
     const dataByYear = {};
     rawData.forEach(row => {
         const year = row.year.toString();
@@ -73,7 +73,7 @@ async function generateChart() {
             height: 400
         },
         title: {
-            text: 'Air arrivals by month'
+            text: 'Air arrivals By month'
         },
         xAxis: {
             categories: allMonths, // Use month names for the X-axis

@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 height: 400
             },
             title: {
-                text: 'Visitors by Transportation Type'
+                text: 'Visitors by transportation type'
             },
             xAxis: {
                 categories: categories,

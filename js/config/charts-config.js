@@ -48,6 +48,7 @@ const commonChartConfig = {
     },
     plotOptions: {
         series: {
+            color: '#3a97a9',
             marker: {
                 enabled: false,
                 radius: 4
@@ -122,19 +123,20 @@ const commonChartConfig = {
 const datasetConfigs = {
     airArrivals: {
         id: 'air-arrivals',
-        title: 'Airport Arrivals',
+        title: 'Airport arrivals',
         dataFile: 'data/vw_kpi_air_arrivals_ytd_summary.csv?'+Math.random(),
         yAxisTitle: 'Passengers deplaning',
         valueFormat: 'number',
         description: 'Monthly passengers deplaning from Erik Nielsen Whitehorse International Airport. This dataset provides arrival statistics showing passenger traffic trends.',
         chart: {
             height: 400
-        }
+        },
+        color: '#3a97a9'
     },
     consumerConfidence: {
         id: 'consumer-confidence',
-        title: 'Consumer Confidence',
-        yAxisTitle: 'Consumer Confidence',
+        title: 'Consumer confidence',
+        yAxisTitle: 'Consumer confidence',
         valueFormat: 'number',
         chart: {
             height: 400
@@ -142,7 +144,7 @@ const datasetConfigs = {
     },
     restaurantSpending: {
         id: 'restaurant-spending',
-        title: 'Monthly Restaurant Spending',
+        title: 'Monthly restaurant spending',
         chart: {
             height: 400
         },
@@ -166,7 +168,7 @@ const datasetConfigs = {
     },
     retailSpending: {
         id: 'retail-spending',
-        title: 'Monthly Retail Spending',
+        title: 'Monthly retail spending',
         chart: {
             height: 400
         },
@@ -199,7 +201,7 @@ const datasetConfigs = {
     },
     accommodationEmployment: {
         id: 'accommodation-employment',
-        title: 'Employment in the Accommodation and Food Services Industry',
+        title: 'Employment in the Accommodation and food services industry',
         yAxisTitle: 'Employment',
         valueFormat: 'number',
         chart: {
@@ -208,7 +210,7 @@ const datasetConfigs = {
     },
     accommodationEarnings: {
         id: 'accommodation-earnings',
-        title: 'Average weekly earnings in the Accommodation and Food Services Industry',
+        title: 'Average weekly earnings in the Accommodation and food services industry',
         yAxisTitle: 'Weekly earnings ($)',
         valueFormat: 'number',
         chart: {
@@ -249,9 +251,9 @@ const datasetConfigs = {
     },
     hotelStats: {
         id: 'hotel-stats',
-        title: 'Monthly Occupancy Rate',
+        title: 'Monthly occupancy rate',
         dataFile: '/data/vw_kpi_cbre_occupancy_rate_ytd_summary.csv?'+Math.random(),
-        yAxisTitle: 'Occupancy Rate (%)',
+        yAxisTitle: 'Occupancy rate (%)',
         valueFormat: 'number',
         description: 'Occupancy rate at select hotels.',
         chart: {
@@ -271,7 +273,7 @@ const datasetConfigs = {
         },
         series: [
             {
-                name: 'Occupancy Rate',
+                name: 'Occupancy rate',
                 dataFile: '/data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random(),
                 yAxis: 0, // Left axis
                 tooltip: {
@@ -298,7 +300,7 @@ const datasetConfigs = {
         yAxes: [
             {
                 title: {
-                    text: 'Occupancy Rate (%)'
+                    text: 'Occupancy r  ate (%)'
                 },
                 opposite: false // Left axis
             },

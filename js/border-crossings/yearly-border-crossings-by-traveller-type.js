@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Update chart title dynamically based on selected geo
-        const titleText = selectedGeo === "All" ? "Overnight vs Same-Day (All Locations)" : `Overnight vs Same-Day (${selectedGeo})`;
+        const titleText = selectedGeo === "All" ? "Overnight vs same-day (all locations)" : `Overnight vs same-day (${selectedGeo})`;
 
         // Render the chart
         Highcharts.chart('ybctt-container', {

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const year = date.split("-")[0]; // Extract year from date
                 if (!yearlyTotals[year]) yearlyTotals[year] = {};
                 if (!yearlyTotals[year][site]) yearlyTotals[year][site] = 0;
-                yearlyTotals[year][site] += parseInt(value, 10) || 0; // Sum values for each site by year
+                yearlyTotals[year][site] += parseInt(value, 10) || 0; // Sum values for each site By year
             });
 
             // Extract unique years
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     zoomType: 'x'
                 },
                 title: {
-                    text: 'Visits to National Parks and Historic Sites by Year'
+                    text: 'Visits to National Parks and Historic Sites By year'
                 },
                 xAxis: {
                     categories: years,

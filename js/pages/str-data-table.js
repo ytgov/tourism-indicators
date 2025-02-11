@@ -121,15 +121,15 @@ class DataTable {
         tableContainer.innerHTML = '';
 
         const datasetLabels = {
-            "vw_kpi_str_occupancy_ytd_summary": "Occupancy Rate",
-            "vw_kpi_str_adr_ytd_summary": "Average Daily Room Rate",
+            "vw_kpi_str_occupancy_ytd_summary": "Occupancy rate",
+            "vw_kpi_str_adr_ytd_summary": "Average daily room rate",
             "vw_kpi_str_revpar_ytd_summary": "RevPAR",
             "vw_kpi_str_available_listings_ytd_summary": "Available Listings"
         };
 
         const datasetFormats = {
-            "vw_kpi_str_occupancy_ytd_summary": "%", // Use % for Occupancy Rate
-            "vw_kpi_str_adr_ytd_summary": "$", // Use $ for Average Daily Room Rate
+            "vw_kpi_str_occupancy_ytd_summary": "%", // Use % for Occupancy rate
+            "vw_kpi_str_adr_ytd_summary": "$", // Use $ for Average daily room rate
             "vw_kpi_str_revpar_ytd_summary": "$", // Use $ for RevPAR
             "vw_kpi_str_available_listings_ytd_summary": ""
         };

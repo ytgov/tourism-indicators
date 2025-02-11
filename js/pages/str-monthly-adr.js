@@ -61,7 +61,7 @@ async function generateChart() {
             type: 'line'
         },
         title: {
-            text: 'Average Daily Rate'
+            text: 'Average daily rate'
         },
         xAxis: {
             categories: allMonths, // Ensure x-axis categories are always January to December

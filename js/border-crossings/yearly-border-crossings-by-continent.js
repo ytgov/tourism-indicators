@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 height: 400
             },
             title: {
-                text: 'Overseas visitors by Continent'
+                text: 'Overseas visitors by continent'
             },
             xAxis: {
                 categories: years,

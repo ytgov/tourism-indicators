@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Update chart title dynamically based on selected geo
-        const titleText = selectedGeo === "All" ? "Total Border Crossings (All Locations)" : `Total Border Crossing (${selectedGeo})`;
+        const titleText = selectedGeo === "All" ? "Total border crossings (all locations)" : `Total Border Crossing (${selectedGeo})`;
 
         // Render the chart
         // Render the chart

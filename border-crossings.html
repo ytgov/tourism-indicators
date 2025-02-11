@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yearly Border Crossings | Yukon Tourism Indicators</title>
+    <title>Border crossings | Yukon tourism indicators</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
 
@@ -29,12 +29,12 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo.svg" class="d-inline-block align-top"
                     style="height:40px;width:auto;margin-right:30px;" alt="Yukon Logo">
-                <a class="navbar-brand" href="index.html">Yukon Tourism Indicators</a>
+                <a class="navbar-brand" href="index.html">Yukon tourism indicators</a>
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -59,7 +59,7 @@
             <div class=container>
                 <div class="row">
                     <div class="text-center">
-                        <h1 class="indicator-title">Border Crossings into the Yukon</h1>
+                        <h1 class="indicator-title">Border crossings into the Yukon</h1>
                         <p class="indicator-subtitle">
                             Insights into international border crossings into the Yukon: location trends,
                             overnight visitation, mode of transport, and visitor origin. Totals include Yukoners.
@@ -73,7 +73,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Latest Monthly Crossings</h5>
+                            <h5 class="card-title">Latest monthly crossings</h5>
                             <p class="card-text h2" id="latest-monthly">-</p>
                             <p class="card-text text-muted" id="latest-monthly-date">-</p>
                         </div>
@@ -82,7 +82,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Year-to-Date Crossings</h5>
+                            <h5 class="card-title">Year-to-date crossings</h5>
                             <p class="card-text h2" id="ytd-amount">-</p>
                             <p class="card-text text-muted" id="ytd-date-range">-</p>
                         </div>
@@ -91,7 +91,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Year-to-Date Change</h5>
+                            <h5 class="card-title">Year-to-date change</h5>
                             <p class="card-text h2" id="ytd-change">-</p>
                             <p class="card-text  mb-0" id="c2019-change"></p>
                         </div>
@@ -132,24 +132,24 @@
                 <ul class="nav nav-tabs" id="data-tabs" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab"
-                            aria-controls="by-year" aria-selected="true">By Year</a>
+                            aria-controls="by-year" aria-selected="true">By year</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab"
-                            aria-controls="by-month" aria-selected="false">By Month</a>
+                            aria-controls="by-month" aria-selected="false">By month</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="origin-tab" data-toggle="tab" href="#origin" role="tab"
-                            aria-controls="origin" aria-selected="false">By Country of origin</a>
+                            aria-controls="origin" aria-selected="false">By country of origin</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="license-tab" data-toggle="tab" href="#license" role="tab"
-                            aria-controls="license" aria-selected="false">By License Plate</a>
+                            aria-controls="license" aria-selected="false">By license plate</a>
                     </li>
                 </ul>
 
                 <div class="tab-content" id="tab-content">
-                    <!-- By Year Content -->
+                    <!-- By year Content -->
                     <div class="tab-pane fade show active" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
                         <div id="by-year-container" class="card mb-4" style="border:0px; width:100%; margin-top: 20px;">
                             <!-- Filters Container -->
@@ -158,7 +158,7 @@
                                 <div class="d-flex align-items-center mr-4">
                                     <label for="geo-filter" class="sr-only">Filter by Location</label>
                                     <select id="geo-filter" class="form-control">
-                                        <option value="All">All Border Crossings</option>
+                                        <option value="All">All border crossings</option>
                                         <option value="Beaver Creek">Beaver Creek</option>
                                         <option value="Dawson">Dawson</option>
                                         <option value="Fraser">Fraser</option>
@@ -171,29 +171,29 @@
 
                                 <!-- Time Filter -->
                                 <div class="d-flex align-items-center mr-4">
-                                    <label for="time-filter" class="sr-only">Filter by Time</label>
+                                    <label for="time-filter" class="sr-only">Filter by time</label>
                                     <select id="time-filter" class="form-control">
-                                        <option value="All">All Time</option>
-                                        <option value="6">Last 5 Years</option>
-                                        <option value="11">Last 10 Years</option>
-                                        <option value="16" selected>Last 15 Years</option>
-                                        <option value="21">Last 20 Years</option>
-                                        <option value="26">Last 25 Years</option>
-                                        <option value="31">Last 30 Years</option>
+                                        <option value="All">All time</option>
+                                        <option value="6">Last 5 years</option>
+                                        <option value="11">Last 10 years</option>
+                                        <option value="16" selected>Last 15 years</option>
+                                        <option value="21">Last 20 years</option>
+                                        <option value="26">Last 25 years</option>
+                                        <option value="31">Last 30 years</option>
                                     </select>
                                 </div>
 
                                 <!-- COVID Years Filter -->
                                 <div class="d-flex align-items-center mr-4">
-                                    <label for="covid-filter" class="sr-only">Filter Pandemic Years</label>
+                                    <label for="covid-filter" class="sr-only">Filter pandemic years</label>
                                     <select id="covid-filter" class="form-control">
-                                        <option value="include">Include Pandemic Years</option>
-                                        <option value="exclude">Exclude Pandemic Years</option>
+                                        <option value="include">Include pandemic years</option>
+                                        <option value="exclude">Exclude pandemic years</option>
                                     </select>
                                 </div>
                             </div>
 
-                            <!-- Data by Year -->
+                            <!-- Data By year -->
                             <div id="ybcbl-container" class="card mb-4" style="width:100%;"></div>
                             <div id="ybctt-container" class="card mb-4 mt-4" style="width:100%;"></div>
                             <div id="ybcvt-container" class="card mb-4 mt-4" style="width:100%;"></div>
@@ -205,10 +205,10 @@
                         </div>
                     </div>
 
-                    <!-- By Month Content -->
+                    <!-- By month Content -->
                     <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
                         <div id="by-month-container" class="mb-4" style="width:100%; margin-top: 20px;">
-                            <!-- Data by Month goes here -->
+                            <!-- Data By month goes here -->
                             <div id="ybcm-container" class="card mb-4" style="width:100%;"></div>
                             <div id="data-table-container"
                                 data-csv-url="data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv"
@@ -223,7 +223,7 @@
                             <!-- Filters Container -->
                             <div class="d-flex flex-wrap align-items-center mb-4">
                                 <div class="d-flex align-items-center mr-4">
-                                    <label for="year-select" class="sr-only">Filter by Year</label>
+                                    <label for="year-select" class="sr-only">Filter By year</label>
                                     <select id="year-select" class="form-control">
                                         <!-- Years populated dynamically by Javascript -->
                                     </select>
@@ -240,7 +240,7 @@
 
 
                             <div class="data-source mt-4">
-                                <p>Notes: Data has been filtered to only show countries with at least 100 crossings.
+                                <p>Notes on data: Data has been filtered to only show countries with at least 100 crossings.
                                     Data for most recent year might not be a complete year. Check the latest monthly
                                     crossing date.</p>
                             </div>
@@ -254,7 +254,7 @@
                         <!-- Filters Container -->
                         <div class="d-flex flex-wrap align-items-center mb-4">
                             <div class="d-flex align-items-center mr-4">
-                                <label for="license-year-filter" class="sr-only">Filter by Year</label>
+                                <label for="license-year-filter" class="sr-only">Filter By year</label>
                                 <select id="license-year-filter" class="form-control">
                                     <!-- Years populated dynamically by Javascript -->
                                 </select>
@@ -263,7 +263,7 @@
 
                         <div id="license-container" class="card mb-4 mt-4" style="width: 100%; height: 600px;"></div>
                         <div class="data-source mt-4">
-                            <p>Notes: Vehicle arrivals have been filtered to only show states and provinces with at
+                            <p>Notes on data: Vehicle arrivals have been filtered to only show states and provinces with at
                                 least 1000 crossings. Data has been filtered to only show countries with at least 100
                                 crossings. Data for most recent year might not be a complete year. Check the latest
                                 monthly crossing date.</p>
@@ -274,18 +274,18 @@
 
             <!-- Data Source -->
             <div class="data-source mt-4">
-                <p>Notes: Border crossings overestimate the number of travellers entering the Yukon, as the Fraser and
+                <p>Notes on data: Border crossings overestimate the number of travellers entering the Yukon, as the Fraser and
                     Pleasant Camp crossings can enter British Columbia without entering the Yukon. These border
                     crossings come from official port of entries, which exclude
                     travellers entering Yukon via BC on the South Alaska or Stewart-Cassiar Highways,
                     the NWT on the Dempster Highway or on domestic flights. Totals includes Yukoners.</p>
-                <p>Source: Statistics Canada, Tables:
+                <p>Source: Statistics Canada. <br>
                     <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005301"
-                        target="_blank">24-10-0053-01</a>,
+                        target="_blank">Table 24-10-0053-01 International travellers entering or returning to Canada, by type of transportation and traveller type</a>,<br>
                     <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005001"
-                        target="_blank">24-10-0050-01</a>,
+                        target="_blank">Table 24-10-0050-01 Non-resident visitors entering Canada, by country of residence</a>,<br>
                     <a href="https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=2410005701"
-                        target="_blank">20-10-0057-01</a>. Updated Weekly.
+                        target="_blank">Table 24-10-0057-01  Leading indicator, International visitors entering or returning to Canada by land, by vehicle type, vehicle licence plate and traveller type</a>.
                 </p>
 
             </div>
@@ -294,27 +294,31 @@
     </div>
 
     <!-- Footer -->
-    <footer class="py-4 bg-dark">
-        <div class="container">
-            <div class="brand">
-                <a href="index.html"><img src="images/logo-rev.png" alt="Government of Yukon Logo"
-                        style="height:62px;width:158px;margin-right:30px;" /></a>
-                <div><img class="aurora" src="images/Aurora-main.svg" alt="Government of Yukon Branding" style="" /></div>
+    <div id="footer-container">
+        <footer class="py-4 bg-dark">
+            <div class="container">
+                <div class="brand">
+                    <a href="index.html"><img src="images/logo-rev.png" alt="Government of Yukon Logo" style="height:62px;width:158px;margin-right:30px;" /></a>
+                    <div><img class="aurora" src="images/Aurora-main.svg" alt="Government of Yukon Branding" style="" /></div>
+                </div>
             </div>
-        </div>
-    </footer>
-    <div id="footer-menu" class="py-4">
-        <div class="container">
-            <p style="float:right;">Copyright &copy; <span id="currentYear"></span> Government of Yukon</p>
-            <ul class="fNav" style="float:left;">
-                <li><a href="https://yukon.ca/en" class="active">Home</a></li>
-            </ul>
-            <ul class="fNav" style="float:left;">
-                <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
-            </ul>
-            <ul class="fNav" style="float:left;">
-                <li><a href="data.html">Data</a></li>
-            </ul>
+        </footer>
+        <div id="footer-menu" class="py-4">
+            <div class="container">
+                <p style="float:right;">&copy; <span id="currentYear"></span> Government of Yukon</p>
+                <ul class="fNav" style="float:left;">
+                    <li><a href="https://yukon.ca/en" class="active">Home</a></li>
+                </ul>
+                <ul class="fNav" style="float:left;">
+                    <li><a href="https://yukon.ca/en/disclaimer">Disclaimer</a></li>
+                </ul>
+                <ul class="fNav" style="float:left;">
+                    <li><a href="about.html">Submit feedback</a></li>
+                </ul>
+                <ul class="fNav" style="float:left;">
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 

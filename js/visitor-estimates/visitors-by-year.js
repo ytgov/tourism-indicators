@@ -13,7 +13,7 @@ fetch('./data/vw_ve_estimated_visitors_by_year_historic.csv?'+Math.random())
                 return [year, visitors];
             })
             .filter(row => !isNaN(row[0]) && !isNaN(row[1])) // Remove any invalid rows
-            .sort((a, b) => a[0] - b[0]); // Sort by year
+            .sort((a, b) => a[0] - b[0]); // Sort By year
 
         // Create the chart
         Highcharts.chart('visitor-estimates-container', {
@@ -22,7 +22,7 @@ fetch('./data/vw_ve_estimated_visitors_by_year_historic.csv?'+Math.random())
                 height: 400
             },
             title: {
-                text: 'Estimated Annual Visitors'
+                text: 'Estimated annual visitors'
             },
             xAxis: {
                 title: {
@@ -49,7 +49,7 @@ fetch('./data/vw_ve_estimated_visitors_by_year_historic.csv?'+Math.random())
             series: [{
                 name: 'Visitors',
                 data: seriesData,
-                color: '#2f7ed8'
+                color: '#3a97a9'
             }],
             credits: {
                 enabled: false

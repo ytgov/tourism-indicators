@@ -40,7 +40,7 @@ async function createGDPStatsChart() {
             }
         });
 
-        // Sort data points by year
+        // Sort data points By year
         Object.values(seriesData).forEach(series => series.sort((a, b) => a[0] - b[0]));
 
         // Create the chart
@@ -53,7 +53,7 @@ async function createGDPStatsChart() {
                 }
             },
             title: {
-                text: 'GDP and Tourism Statistics Over Time',
+                text: 'GDP and tourism statistics over time',
                 style: {
                     fontSize: '20px',
                     fontWeight: 'bold'
@@ -133,7 +133,7 @@ async function createGDPStatsChart() {
                 type: 'column',
                 name: 'Tourism GDP',
                 data: seriesData.tourismGdp,
-                color: '#0d233a',
+                color: '#244c5a',
                 yAxis: 0,
                 zIndex: 1,
                 pointPlacement: 0
@@ -141,7 +141,7 @@ async function createGDPStatsChart() {
                 type: 'column',
                 name: 'Tourism Revenue',
                 data: seriesData.tourismRevenue,
-                color: '#8bbc21',
+                color: '#DC4404',
                 yAxis: 0,
                 zIndex: 0,
                 pointPlacement: 0
@@ -150,7 +150,7 @@ async function createGDPStatsChart() {
                 type: 'line',
                 name: 'Total GDP',
                 data: seriesData.gdp,
-                color: '#2f7ed8',
+                color: '#3A97A9',
                 yAxis: 1,
                 zIndex: 2
             }],

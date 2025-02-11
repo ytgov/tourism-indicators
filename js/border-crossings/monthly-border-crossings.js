@@ -69,19 +69,19 @@ document.addEventListener("DOMContentLoaded", function () {
             const month = date.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
             const year = date.getFullYear();
 
-            // Update "Latest Monthly Crossings"
+            // Update "Latest monthly crossings"
             const latestMonthly = document.getElementById("latest-monthly");
             const latestMonthlyDate = document.getElementById("latest-monthly-date");
             if (latestMonthly) latestMonthly.textContent = latestEntry.monthlyTotal.toLocaleString();
             if (latestMonthlyDate) latestMonthlyDate.textContent = month + " " + year;
 
-            // Update "Year-to-Date Crossings"
+            // Update "Year-to-date crossings"
             const ytdAmount = document.getElementById("ytd-amount");
             const ytdDateRange = document.getElementById("ytd-date-range");
             if (ytdAmount) ytdAmount.textContent = latestEntry.ytdTotal.toLocaleString();
             if (ytdDateRange) ytdDateRange.textContent = latestEntry.ytdDateRange + year;
 
-            // Update "Year-to-Date Change"
+            // Update "Year-to-date change"
             const ytdChangeElement = document.getElementById("ytd-change");
             if (ytdChangeElement) {
                 let color;
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }]
             },
             title: {
-                text: "Yukon Border Crossings by Date"
+                text: "Yukon border crossings by date"
             },
             xAxis: {
                 type: "datetime",
@@ -161,6 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
             series: [{
                 name: "Monthly Total",
                 data: seriesData,
+                color: '#3a97a9',
                 tooltip: {
                     valueDecimals: 0,
                     valueSuffix: " crossings"

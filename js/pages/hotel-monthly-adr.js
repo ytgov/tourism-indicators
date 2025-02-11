@@ -62,7 +62,7 @@ async function generateChart() {
             height: 400
         },
         title: {
-            text: 'Average Daily Room Rate'
+            text: 'Average daily room rate'
         },
         xAxis: {
             categories: allMonths, // Ensure x-axis categories are always January to December

@@ -57,7 +57,7 @@ async function createGDPStatsChart() {
             }
         });
 
-        // Sort data points by year
+        // Sort data points By year
         Object.values(seriesData).forEach(series => series.sort((a, b) => a[0] - b[0]));
 
         // Create the chart
@@ -71,7 +71,7 @@ async function createGDPStatsChart() {
                 enabled: false
             },
             title: {
-                text: 'Gross Business Revenue attributed to Tourism in Yukon',
+                text: 'Gross business revenue attributed to tourism in the Yukon',
                 style: {
                     fontSize: '20px',
                     fontWeight: 'bold'

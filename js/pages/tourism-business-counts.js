@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 height: 400
             },
             title: {
-                text: 'Estimated Tourism Business Counts by Year'
+                text: 'Estimated tourism business counts by year'
             },
             xAxis: {
                 type: 'category',

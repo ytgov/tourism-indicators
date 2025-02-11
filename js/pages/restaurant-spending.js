@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 height: 400
             },
             title: {
-                text: 'Yearly Restaurant Sales'
+                text: 'Yearly restaurant sales'
             },
             xAxis: {
                 type: 'category',

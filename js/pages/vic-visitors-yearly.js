@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
             // Filter data to use only the last month of each year per location
             const lastMonthData = allData
-                .sort((a, b) => a.month - b.month) // Ensure data is sorted by month
+                .sort((a, b) => a.month - b.month) // Ensure data is sorted By month
                 .reduce((acc, row) => {
                     const key = `${row.year}-${row.location}`;
                     if (!acc[key] || acc[key].month < row.month) {

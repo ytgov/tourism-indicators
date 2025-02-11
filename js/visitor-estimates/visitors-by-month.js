@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
             timeZone: 'UTC'
         })} ${currentYear}`;
 
-        // Calculate and update YTD Change
+        // Calculate and update Year-to-date change
         const changeElement = document.getElementById('ytd-change');
         const arrow = createArrowSvg(ytdChange);
         changeElement.innerHTML = `${arrow}${ytdChange.toFixed(1)}% y/y`;

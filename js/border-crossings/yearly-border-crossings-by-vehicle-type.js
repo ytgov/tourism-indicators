@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Update chart title dynamically based on selected geo
-        const titleText = selectedGeo === "All" ? "Vehicle type (All Locations)" : `Vehicle type (${selectedGeo})`;
+        const titleText = selectedGeo === "All" ? "Vehicle type (all locations)" : `Vehicle type (${selectedGeo})`;
 
         // Render the chart
         Highcharts.chart('ybcvt-container', {

@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             },
             yAxes: [
                 {
-                    title: { text: 'Occupancy Rate (%)' },
+                    title: { text: 'Occupancy rate (%)' },
                     labels: {
                         formatter: function () {
                             return `${this.value}%`;

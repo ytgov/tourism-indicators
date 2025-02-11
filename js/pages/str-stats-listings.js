@@ -6,27 +6,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const config = {
             id: 'str-stats',
-            title: 'Occupancy Rate and Available Listings',
+            title: 'Occupancy rate and available listings',
             dataFiles: {
                 occupancy: '/data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random(),
                 listings: '/data/vw_kpi_str_available_listings_ytd_summary.csv?'+Math.random()
             },
             series: {
                 occupancy: {
-                    name: 'Occupancy Rate',
+                    name: 'Occupancy rate',
                     yAxis: 0, // Left axis
                     tooltip: { valueFormat: 'percentage' },
                     color: '#244c5a'
                 },
                 listings: {
-                    name: 'Available Listings',
+                    name: 'Available listings',
                     yAxis: 1, // Right axis
                     color: '#dc4405'
                 }
             },
             yAxes: [
                 {
-                    title: { text: 'Occupancy Rate (%)' },
+                    title: { text: 'Occupancy rate (%)' },
                     labels: {
                         formatter: function () {
                             return `${this.value}%`;
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     opposite: false
                 },
                 {
-                    title: { text: 'Available Listings' },
+                    title: { text: 'Available listings' },
                     labels: {
                         formatter: function () {
                             return `${this.value}`;

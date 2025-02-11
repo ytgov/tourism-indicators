@@ -44,7 +44,7 @@ async function generateChart() {
         new Date(2024, i).toLocaleString('default', { month: 'short' })
     );
 
-    // Aggregate data by year
+    // Aggregate data By year
     const dataByYear = {};
     rawData.forEach(row => {
         const year = row.year.toString();
@@ -73,7 +73,7 @@ async function generateChart() {
             height: 400
         },
         title: {
-            text: 'Estimated Visitors by Month'
+            text: 'Estimated visitors By month'
         },
         xAxis: {
             categories: allMonths, // Show all months

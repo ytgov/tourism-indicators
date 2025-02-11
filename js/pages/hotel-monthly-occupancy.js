@@ -63,7 +63,7 @@ async function generateChart() {
             height: 400
         },
         title: {
-            text: 'Occupancy Rate'
+            text: 'Occupancy rate'
         },
         xAxis: {
             categories: allMonths, // Ensure x-axis categories are always January to December

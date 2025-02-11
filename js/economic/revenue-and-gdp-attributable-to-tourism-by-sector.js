@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 height: 500
             },
             title: {
-                text: `Gross revenue and GDP attributable to Tourism by Sector (${selectedYear})`
+                text: `Gross revenue and GDP attributable to tourism by sector (${selectedYear})`
             },
             xAxis: {
                 categories: sortedSectors,
