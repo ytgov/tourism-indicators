@@ -117,7 +117,7 @@ async function loadSpendingData() {
         
         // Get the most recent row
         const mostRecent = data[0];
-        console.log(mostRecent);
+        //console.log(mostRecent);
         
         return {
             year: mostRecent.year,
@@ -738,7 +738,7 @@ function updateKPIContent(containerId, data, title) {
     // Special formatting for different indicators
     if (title === 'Economic overview') {
         formattedTotal = formatSpendingInMillions(data.ytdTotal);
-        subheading = 'Estimated gross business revenue, GDP, and more';
+        subheading = 'Estimated gross business revenue attributable to tourism, GDP, and more';
     } else if (title === 'Air arrivals') {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Erik Nielsen Whitehorse International Airport';
@@ -813,9 +813,9 @@ function createKPIChart(containerId, data, ytdPercentageChange) {
     if (ytdPercentageChange > -1 && ytdPercentageChange < 1) {
         color = '#6c757d';  // Dark grey for neutral changes
     } else if (ytdPercentageChange > 1) {
-        color = '#28a745';  // Green for positive changes
+        color = '#0f6723';  // Green for positive changes
     } else {
-        color = '#dc3545';  // Red for negative changes
+        color = '#a42330';  // Red for negative changes
     }
 
     const currentDate = new Date();
@@ -875,9 +875,9 @@ function createYearlyKPIChart(containerId, data, ytdPercentageChange) {
     if (ytdPercentageChange > -1 && ytdPercentageChange < 1) {
         color = '#6c757d';  // Dark grey for neutral changes
     } else if (ytdPercentageChange > 1) {
-        color = '#28a745';  // Green for positive changes
+        color = '#0f6723';  // Green for positive changes
     } else {
-        color = '#dc3545';  // Red for negative changes
+        color = '#a42330';  // Red for negative changes
     }
 
     const currentYear = new Date().getFullYear();
@@ -956,7 +956,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     if (spendingData) {
         updateKPIContent('indicator4-content', spendingData, 'Economic overview');
         createYearlyKPIChart('indicator4-chart', spendingData.yearlyData, spendingData.ytdPercentageChange);
-        console.log(spendingData);
+        //console.log(spendingData);
     }
 
     // Fourth KPI - Estimated visitors

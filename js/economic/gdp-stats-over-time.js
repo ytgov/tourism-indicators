@@ -87,13 +87,13 @@ async function createGDPStatsChart() {
                 title: {
                     text: 'Total GDP (Millions CAD)',
                     style: {
-                        color: '#2f7ed8'
+                        color: '#103442'
                     }
                 },
                 labels: {
                     format: '${value:,.0f}M',
                     style: {
-                        color: '#2f7ed8'
+                        color: '#103442'
                     }
                 },
                 opposite: true

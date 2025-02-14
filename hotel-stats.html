@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Performance | Yukon tourism indicators</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
-    
+
     <!-- Bootstrap CSS -->
     <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
 
@@ -19,19 +20,23 @@
     <script src="./vendor/highcharts/12.1.0/stock/modules/exporting.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/accessibility.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/stock.js"></script>
-    
+
 
 </head>
+
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo.svg" class="d-inline-block align-top" style="height:40px;width:auto;margin-right:30px;" alt="Yukon Logo">
-            <a class="navbar-brand" href="index.html">Yukon tourism indicators</a>
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" class="d-inline-block align-top"
+                    style="height:40px;width:auto;margin-right:30px;" alt="Yukon Logo">
+                <a class="navbar-brand" href="index.html">Yukon tourism indicators</a>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
@@ -40,8 +45,8 @@
                     </li>
                 </ul>
             </div>
-    </div>
-</nav>
+        </div>
+    </nav>
 
 
     <!-- Main Container -->
@@ -50,8 +55,8 @@
             <!-- Title Section -->
             <div class="text-center mb-4">
                 <h1 class="indicator-title">Hotel performance</h1>
-                <p class="indicator-subtitle">Hotel occupancy rates, Average daily rates, and revenue per available room
-                     information helps us understand the performance of the hotel sector.</p>
+                <p class="indicator-subtitle">Hotel occupancy rates, average daily rates, and revenue per available room
+                    help us understand how well the hotel sector is performing.</p>
             </div>
 
             <!-- Metrics Cards -->
@@ -113,11 +118,16 @@
                 <div class="card-body" style="width:100%;">
                     <h5 class="card-title">Highlights</h5>
                     <ul>
-                        <li><strong>Occupancy rates</strong> in Yukon have remained relatively consistent over time, though they exhibit strong seasonal variation.</li>
-                        <li>Hotel room rates are highly seasonal, with peak months from May to September 2024 averaging over $200 per night, while winter months see rates drop as low as $160.</li>
-                        <li><strong>Average daily rate (ADR)</strong> during summer months has seen a significant increase of 27%, rising from $165 in 2019 to $210 in 2024.</li>
-                        <li><strong>Revenue per available room (RevPAR)</strong> has grown by 26%, climbing from $143 in 2019 to approximately $180 in 2024.</li>
-                        <li>These trends reflect a robust recovery in Yukon's accommodation sector and a willingness among travelers to spend more during peak travel seasons.</li>
+                        <li>Hotel occupancy rates in Yukon have stayed about the same over time, but they change a lot
+                            with the seasons.</li>
+                        <li>Hotel prices are highest from May to September 2024, averaging over $200 per night, while in
+                            winter, they drop to around $160.</li>
+                        <li>In the summer, the average daily rate (ADR) has gone up by 27%, from $165 in 2019 to $210 in
+                            2024.</li>
+                        <li>Revenue per available room (RevPAR) has increased by 26%, from $143 in 2019 to about $180 in
+                            2024.</li>
+                        <li>These trends show that Yukon's hotel industry is recovering well and that visitors are
+                            willing to pay more during busy travel months.</li>
                     </ul>
                 </div>
             </div>
@@ -126,28 +136,32 @@
             <div style="width: 100%;">
                 <ul class="nav nav-tabs" id="data-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab" aria-controls="by-month" aria-selected="true">By month</a>
+                        <a class="nav-link active" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab"
+                            aria-controls="by-month" aria-selected="true">By month</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab" aria-controls="by-year" aria-selected="false">Historical</a>
+                        <a class="nav-link" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab"
+                            aria-controls="by-year" aria-selected="false">Historical</a>
                     </li>
                 </ul>
 
-                
+
 
                 <div class="tab-content" id="tab-content">
                     <!-- By month Content -->
                     <div class="tab-pane fade show active" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
-                        <div id="by-month-container" class="card mb-4" style="border:0px; width:100%; margin-top: 20px;">
+                        <div id="by-month-container" class="card mb-4"
+                            style="border:0px; width:100%; margin-top: 20px;">
 
                             <!-- Data By month -->
-                             <div class="row">
+                            <div class="row">
                                 <div id="monthly-occupancy" class="mb-4 col-md-4" style="height:400px;"></div>
                                 <div id="monthly-adr" class="mb-4 col-md-4" style="height:400px;"></div>
                                 <div id="monthly-revpar" class="mb-4 col-md-4" style="height:400px;"></div>
-                             </div>
+                            </div>
 
-                             <div id="data-table-container" class="card mb-4" style="width:100%; margin-top: 20px;"></div>
+                            <div id="data-table-container" class="card mb-4 p-3" style="width:100%; margin-top: 20px;">
+                            </div>
 
                         </div>
                     </div>
@@ -157,7 +171,7 @@
                         <div id="by-year-container" class="mb-4" style="width:100%; margin-top: 20px;">
                             <!-- Data By year goes here -->
                             <div id="indicator-chart" class="card mb-4" style="width:100%;"></div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -165,12 +179,14 @@
                 <!-- Data Source -->
                 <div class="data-source mt-4">
                     <p>Notes on data: Data only represents approximately 600 rooms in Yukon and
-                        should not be generalized to the whole accommodation market. Due to increases in CBRE inventory, 2017 and 2018 data is not directly comparable
+                        should not be generalized to the whole accommodation market. Due to increases in CBRE inventory,
+                        2017 and 2018 data is not directly comparable
                         to previous periods. </p>
 
-                        <p>Source: This data is provided by CBRE, with reproduction and use of
-                        information subject to CBRE Disclaimer / Terms of Use as detailed at <a href="https://www.cbre.ca">www.cbre.ca.</a> 
-                        </p>
+                    <p>Source: This data is provided by CBRE, with reproduction and use of
+                        information subject to CBRE Disclaimer / Terms of Use as detailed at <a
+                            href="https://www.cbre.ca">www.cbre.ca.</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -181,8 +197,10 @@
         <footer class="py-4 bg-dark">
             <div class="container">
                 <div class="brand">
-                    <a href="index.html"><img src="images/logo-rev.png" alt="Government of Yukon Logo" style="height:62px;width:158px;margin-right:30px;" /></a>
-                    <div><img class="aurora" src="images/Aurora-main.svg" alt="Government of Yukon Branding" style="" /></div>
+                    <a href="index.html"><img src="images/logo-rev.png" alt="Government of Yukon Logo"
+                            style="height:62px;width:158px;margin-right:30px;" /></a>
+                    <div><img class="aurora" src="images/Aurora-main.svg" alt="Government of Yukon Branding" style="" />
+                    </div>
                 </div>
             </div>
         </footer>
@@ -216,7 +234,8 @@
     <script type="module" src="js/pages/hotel-monthly-revpar.js"></script>
     <script type="module" src="js/pages/hotel-data-table.js"></script>
     <script src="js/utils/get-year.js"></script>
-<script src="js/utils/analytics.js"></script>
+    <script src="js/utils/analytics.js"></script>
 
 </body>
+
 </html>

@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (occChange >= -1 && occChange <= 1) {
                     color = '#6c757d';  // Dark grey for neutral changes
                 } else if (occChange > 1) {
-                    color = '#28a745';  // Green for positive changes
+                    color = '#0f6723';  // Green for positive changes
                 } else {
-                    color = '#dc3545';  // Red for negative changes
+                    color = '#a42330';  // Red for negative changes
                 }
                 const arrow = createArrowSvg(occChange);
 
@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (occChange2019 >= -1 && occChange2019 <= 1) {
                     color2019 = '#6c757d';  // Dark grey for neutral changes
                 } else if (occChange2019 > 1) {
-                    color2019 = '#28a745';  // Green for positive changes
+                    color2019 = '#0f6723';  // Green for positive changes
                 } else {
-                    color2019 = '#dc3545';  // Red for negative changes
+                    color2019 = '#a42330';  // Red for negative changes
                 }
                 const arrow2019 = createArrowSvg(occChange2019);
 
@@ -87,9 +87,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (adrChange >= -1 && adrChange <= 1) {
                     color = '#6c757d';  // Dark grey for neutral changes
                 } else if (adrChange > 1) {
-                    color = '#28a745';  // Green for positive changes
+                    color = '#0f6723';  // Green for positive changes
                 } else {
-                    color = '#dc3545';  // Red for negative changes
+                    color = '#a42330';  // Red for negative changes
                 }
                 const arrow = createArrowSvg(adrChange);
 
@@ -99,9 +99,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (adrChange2019 >= -1 && adrChange2019 <= 1) {
                     color2019 = '#6c757d';  // Dark grey for neutral changes
                 } else if (adrChange2019 > 1) {
-                    color2019 = '#28a745';  // Green for positive changes
+                    color2019 = '#0f6723';  // Green for positive changes
                 } else {
-                    color2019 = '#dc3545';  // Red for negative changes
+                    color2019 = '#a42330';  // Red for negative changes
                 }
                 const arrow2019 = createArrowSvg(adrChange2019);
                 
@@ -131,9 +131,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (revChange >= -1 && revChange <= 1) {
                     color = '#6c757d';  // Dark grey for neutral changes
                 } else if (revChange > 1) {
-                    color = '#28a745';  // Green for positive changes
+                    color = '#0f6723';  // Green for positive changes
                 } else {
-                    color = '#dc3545';  // Red for negative changes
+                    color = '#a42330';  // Red for negative changes
                 }
                 const arrow = createArrowSvg(revChange);
 
@@ -143,9 +143,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (revChange2019 >= -1 && revChange2019 <= 1) {
                     color2019 = '#6c757d';  // Dark grey for neutral changes
                 } else if (revChange2019 > 1) {
-                    color2019 = '#28a745';  // Green for positive changes
+                    color2019 = '#0f6723';  // Green for positive changes
                 } else {
-                    color2019 = '#dc3545';  // Red for negative changes
+                    color2019 = '#a42330';  // Red for negative changes
                 }
                 const arrow2019 = createArrowSvg(revChange2019);
                 

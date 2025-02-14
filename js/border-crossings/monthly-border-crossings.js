@@ -88,9 +88,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (latestEntry.ytdChange >= -1 && latestEntry.ytdChange <= 1) {
                     color = '#6c757d';  // Dark grey for neutral changes
                 } else if (latestEntry.ytdChange > 1) {
-                    color = '#28a745';  // Green for positive changes
+                    color = '#0f6723';  // Green for positive changes
                 } else {
-                    color = '#dc3545';  // Red for negative changes
+                    color = '#a42330';  // Red for negative changes
                 }
                 const arrow = createArrowSvg(latestEntry.ytdChange);
                 ytdChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${latestEntry.ytdChange.toFixed(1)}% y/y</span>`;
@@ -103,9 +103,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (latestEntry.c2019Change >= -1 && latestEntry.c2019Change <= 1) {
                     color = '#6c757d';  // Dark grey for neutral changes
                 } else if (latestEntry.c2019Change > 1) {
-                    color = '#28a745';  // Green for positive changes
+                    color = '#0f6723';  // Green for positive changes
                 } else {
-                    color = '#dc3545';  // Red for negative changes
+                    color = '#a42330';  // Red for negative changes
                 }
                 const arrow = createArrowSvg(latestEntry.c2019Change);
                 c2019ChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${latestEntry.c2019Change.toFixed(1)}% from 2019</span>`;

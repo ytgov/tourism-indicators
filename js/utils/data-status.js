@@ -44,9 +44,9 @@ async function displayDataStatusTable() {
                 } else if (index === 2) {
                     td.textContent = cellData;
                     if (cellData === 'SUCCESS') {
-                        td.style.color = '#28a745';
+                        td.style.color = '#0f6723';
                     } else {
-                        td.style.color = '#dc3545';
+                        td.style.color = '#a42330';
                         td.style.fontWeight = 'bold';
                     }
                 } else if (index === 3 && rowData[1] === 'Export') {

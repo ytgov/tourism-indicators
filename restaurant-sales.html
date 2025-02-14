@@ -56,8 +56,8 @@
             <div class="text-center mb-4">
                 <h1 class="indicator-title">Restaurant sales</h1>
                 <p class="indicator-subtitle">
-                    This dashboard highlights monthly and Year-to-date trends in restaurant and bar sales in the Yukon,
-                    providing insights into the economic health of the food and beverage industry.</p>
+                    This dashboard tracks monthly and year-to-date sales in Yukon’s restaurants and bars, helping to
+                    show how the food and drink industry is doing.</p>
             </div>
 
             <!-- Metrics Cards -->
@@ -96,13 +96,14 @@
                 <div class="card-body" style="width:100%;">
                     <h5 class="card-title">Highlights</h5>
                     <ul>
-                        <li>2024 is on track to be a record year for sales at restaurants and bars in the Yukon, with a
-                            8.2% increase year over year from January to October 2024.</li>
-                        <li>Sales rebounded strongly post-2020, with YTD sales rising from $70.3M in 2020 to $103.9M in
-                            2023, surpassing the pre-pandemic high of $83.9M in 2019.</li>
-                        <li>The YTD sales shows an overall upward trend, growing significantly from $45.6M in 2000 to
-                            $103.9M in 2023. This indicates sustained growth in restaurant and bar sales over the years.
-                        </li>
+                        <li>2024 is on track to be a record year for restaurant and bar sales in Yukon, with an 8.2%
+                            increase from January to October compared to last year.</li>
+                        <li>Sales have grown a lot since 2020, rising from $70.3 million in 2020 to $103.9 million in
+                            2023, beating the pre-pandemic high of $83.9 million in 2019.</li>
+                        <li>Year-to-date sales have been going up over time, growing from $45.6 million in 2000 to
+                            $103.9 million in 2023, showing steady growth in the food and drink industry.</li>
+                        <li>However, higher sales do not always mean higher profits, as rising costs for food, labor,
+                            and supplies have also impacted businesses.</li>
                     </ul>
                 </div>
             </div>
@@ -132,8 +133,7 @@
                     <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
                         <div id="by-month-container" class="mb-4" style="width:100%; margin-top: 20px;">
                             <!-- Data By month goes here -->
-                            <div id="indicator-chart" class="card mb-4 indicator-chart-container"
-                                style="width:100%; height:500px;"></div>
+                            <div id="indicator-chart" class="card mb-4" style="width:100%; height:400px;"></div>
                             <div id="data-table-container" class="card mb-4 p-3"
                                 data-csv-url="data/vw_kpi_economic_restaurant_spending.csv" class="card mb-4"
                                 style="width:100%; margin-top: 20px;"></div>
@@ -144,7 +144,8 @@
 
                 <!-- Data Source -->
                 <div class="data-source mt-4">
-                    <p>Notes on data: Numbers are not adjusted for inflation. This dashboard presents insights into monthly
+                    <p>Notes on data: Numbers are not adjusted for inflation. This dashboard presents insights into
+                        monthly
                         restaurant and bar sales in the Yukon, based on data from the Monthly Survey of
                         Food Services and Drinking Places. The survey tracks the sales of restaurants, caterers, and
                         drinking establishments
@@ -154,7 +155,8 @@
                         months.</p>
                     <p>Source: Statistics Canada. <a
                             href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2110001901"
-                            target="_blank">Table 21-10-0019-01  Monthly survey of food services and drinking places (x 1,000).</a></p>
+                            target="_blank">Table 21-10-0019-01 Monthly survey of food services and drinking places (x
+                            1,000).</a></p>
                 </div>
             </div>
         </div>
@@ -167,8 +169,10 @@
         <footer class="py-4 bg-dark">
             <div class="container">
                 <div class="brand">
-                    <a href="index.html"><img src="images/logo-rev.png" alt="Government of Yukon Logo" style="height:62px;width:158px;margin-right:30px;" /></a>
-                    <div><img class="aurora" src="images/Aurora-main.svg" alt="Government of Yukon Branding" style="" /></div>
+                    <a href="index.html"><img src="images/logo-rev.png" alt="Government of Yukon Logo"
+                            style="height:62px;width:158px;margin-right:30px;" /></a>
+                    <div><img class="aurora" src="images/Aurora-main.svg" alt="Government of Yukon Branding" style="" />
+                    </div>
                 </div>
             </div>
         </footer>
@@ -199,7 +203,7 @@
     <script type="module" src="js/pages/restaurant-spending.js"></script>
     <script type="module" src="js/utils/data-table.js"></script>
     <script src="js/utils/get-year.js"></script>
-<script src="js/utils/analytics.js"></script>
+    <script src="js/utils/analytics.js"></script>
 
 </body>
 

@@ -2,18 +2,18 @@ import { loadCSVData } from '../utils/data-utils.js';
 
 // Define the color scheme
 const colors = [
-    "#F2A9008C", // 55% Opacity
-    "#DC44058C",
-    "#0097A98C",
-    "#244C5A8C",
+    "#7A9A018C", // 55% Opacity
     "#512A448C",
-    "#7A9A018C",
-    "#F2A900", // Original
-    "#DC4405",
-    "#0097A9",
-    "#244C5A",
+    "#244C5A8C",
+    "#0097A98C",
+    "#DC44058C",
+    "#F2A9008C",
+    "#7A9A01",
     "#512A44",
-    "#7A9A01"
+    "#244C5A",
+    "#0097A9",
+    "#DC4405",
+    "#F2A900"
 ]
 
 // Load the data

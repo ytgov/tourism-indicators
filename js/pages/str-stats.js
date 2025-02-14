@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const config = {
             id: 'str-stats',
-            title: 'Short Term Rental Key Performance Indicators',
+            title: 'Short term rental key performance indicators',
             dataFiles: {
                 occupancy: '/data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random(),
                 adr: '/data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random(),

@@ -195,19 +195,19 @@ brand{
 }
 
 .key-indicator .ytd-change.positive {
-    color: #28a745;
+    color: #0f6723;
 }
 
 .key-indicator .ytd-change.negative {
-    color: #dc3545;
+    color: #a42330;
 }
 
 .text-success {
-    color: #28a745;
+    color: #0f6723;
 }
 
 .text-danger {
-    color: #dc3545;
+    color: #a42330;
 }
 
 .text-neutral {
@@ -360,13 +360,13 @@ a:hover {
 
 .additional-indicator .ytd-change.positive {
     background: linear-gradient(to left, rgba(61, 161, 85, 0), rgba(40, 167, 69, 0.2));
-    color: #28a745;
+    color: #0f6723;
     border-radius: 10px;
 }
 
 .additional-indicator .ytd-change.negative {
     background: linear-gradient(to left, rgba(102, 85, 87, 0), rgba(220, 53, 69, 0.2));
-    color: #dc3545;
+    color: #a42330;
     border-radius: 10px;
 }
 
@@ -382,8 +382,8 @@ a:hover {
 }
 
 .additional-indicator .ytd-change.positive .svg-arrow {
-    color: #28a745;
-    outline: #28a745;
+    color: #0f6723;
+    outline: #0f6723;
     outline-width: 2px;
 }
 
@@ -394,8 +394,8 @@ a:hover {
 }
 
 .additional-indicator .ytd-change.negative .svg-arrow {
-    color: #dc3545;
-    outline: #dc3545;
+    color: #a42330;
+    outline: #a42330;
     outline-width: 2px;
 }
 
@@ -408,7 +408,7 @@ a:hover {
 }
 
 .additional-indicator .percentage-change.positive {
-    color: #28a745;
+    color: #0f6723;
 }
 
 .additional-indicator .percentage-change.neutral {
@@ -416,7 +416,7 @@ a:hover {
 }
 
 .additional-indicator .percentage-change.negative {
-    color: #dc3545;
+    color: #a42330;
 }
 
 .additional-indicator .current-month {
@@ -540,7 +540,6 @@ a:hover {
 
 /* Navbar styles */
 .navbar {
-    height: 80px;
     border-bottom: 4px solid #F7CD58;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;

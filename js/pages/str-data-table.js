@@ -84,11 +84,11 @@ class DataTable {
 
         // Create dropdown
         const dropdownContainer = document.createElement('div');
-        dropdownContainer.className = 'mb-4 mt-3 month-year-select-container col-md-4';
+        dropdownContainer.className = 'mb-4 mt-3 month-year-select-container col-md-6';
         dropdownContainer.innerHTML = `
             <div class="row align-items-center">
                 <div class="col-auto">
-                    <label for="month-year-select" class="form-label mb-0">Select Month and Year:</label>
+                    <label for="month-year-select" class="form-label mb-0">Select month and year:</label>
                 </div>
                 <div class="col">
                     <select id="month-year-select" class="form-control custom-select">
