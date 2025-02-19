@@ -16,6 +16,7 @@
 
     <!-- Highcharts JS -->
     <script src="./vendor/highcharts/12.1.0/highcharts.js"></script>
+    <script src="./vendor/highcharts/12.1.0/highcharts-more.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/treemap.js"></script>
     <script src="./vendor/highcharts/12.1.0/stock/modules/exporting.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/accessibility.js"></script>
@@ -53,7 +54,7 @@
     <div class="container mt-4">
         <div class="indicator-container">
             <!-- Title Section -->
-            <div class="text-center mb-2">
+            <div class="text-center mb-4">
                 <h1 class="indicator-title">Economic overview</h1>
                 This section gives an overview of Yukon's economic indicators, including GDP, revenue, jobs, labor
                 income, and visitor spending.
@@ -61,16 +62,46 @@
                 </p>
             </div>
 
+            <!-- Metrics Cards -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Target revenue</h5>
+                            <p class="card-text h2" id="target">-</p>
+                            <p class="card-text text-muted" id="target-notes"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Gross business revenue attributed to tourism</h5>
+                            <p class="card-text h2" id="ytd-amount">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Year-to-date change</h5>
+                            <p class="card-text h2" id="ytd-change">-</p>
+                            <p class="card-text  mb-0" id="c2019-change"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Highlights Card -->
             <div class="row mb-2">
                 <div class="card-body" style="width:100%;">
                     <h5 class="card-title">Highlights</h5>
                     <ul>
-                        <li>Gross business revenue attributed to tourism reached a record high of $472.8 million in 2023, an 8.4% increase
-                            from the pre-pandemic peak of $436.2 million in 2019.</li>
-                        <li>Projections based on spending data from The Data Collective's Lodging aligned spend report
-                            (LASR) suggest that gross business revenue attributed to tourism is poised to reach an
-                            all-time high in 2024.</li>
+                        <li>Gross business revenue attributed to tourism reached a record high of $580 million in 2024,
+                            an 45% increase
+                            from the pre-pandemic peak of $400 million in 2019.</li>
+                        <li>In 2024, the number of visitors remained similar to 2023, but visitor spending saw a
+                            significant increase, likely due to rising costs in accommodation, food, and retail.</li>
                     </ul>
                 </div>
             </div>
@@ -81,15 +112,21 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="row">
-                                <div id="revenue-targets" class="col-12" style="height: 400px;"></div>
+                                <div id="revenue-targets" class="col-12" style="height: 500px;"></div>
                                 <div class="data-source mt-4">
-                                    <p class="ml-4">Notes on data: Target revenue is from the Yukon Tourism Development
-                                        Strategy, 2016.
-                                        Actual Revenue comes from <a
+                                    <p class="ml-4">Notes on data: The target revenue is sourced from the <a
+                                            href="https://yukon.ca/en/yukon-tourism-development-strategy-sustainable-tourism-our-path-our-future"
+                                            target="_blank">
+                                            Yukon Tourism
+                                            Development Strategy, 2016</a>. The shaded blue area represents the
+                                        confidence
+                                        range, indicating possible estimated values for Gross Business Revenue
+                                        attributed to tourism. Estimated revenue data is derived from <a
+                                            href="https://www.tourismdatacollective.ca/" target="_blank">Destination
+                                            Canada's Lodging Spend Reporting (LASR)</a>,
+                                        combined with information from the <a
                                             href="https://yukon.ca/en/yukon-business-survey-2023" target="_blank">Yukon
-                                            Business Survey, 2009-2023</a>, updated every two years.
-                                        Estimated and forecast revenue is calculated based on monthly spending from <a
-                                            href="https://www.tourismdatacollective.ca/" target="_blank">LASR.</a></p>
+                                            Business Survey (2009-2023)</a>.</p>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +224,8 @@
     <script src="./vendor/jquery/jquery-3.5.1.min.js"></script>
     <script src="./vendor/popper/popper.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script type="module" src="js/economic/revenue-targets.js"></script>
+    <script type="module" src="js/economic/revenue-targets-revised.js"></script>
+    <script type="module" src="js/economic/revenue-targets-metric-cards.js"></script>
     <script type="module" src="js/economic/gdp-pie-chart.js"></script>
     <script type="module" src="js/economic/gdp-stats-over-time.js"></script>
 

@@ -95,43 +95,42 @@ async function loadIntlTravelersData() {
 // Function to load spending data
 async function loadSpendingData() {
     try {
-        const response = await fetch('/data/vw_kpi_tc_revenue_estimates.csv?'+Math.random());
+        const response = await fetch('/data/vw_kpi_tc_revenue_estimates_revised.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim()) // Remove empty lines
             .map(row => row.replace(/^"|"$/g, '')) // Remove surrounding quotes
             .map(row => row.split(',').map(cell => cell.replace(/^"|"$/g, ''))); // Remove quotes from cells
-        
+
         // Remove header row and ensure all rows are complete
         const data = rows.slice(1)
-            .filter(row => row.length >= 5 && row[0].trim() && !isNaN(parseFloat(row[1])))
+            .filter(row => row.length >= 6 && row[0].trim() && !isNaN(parseFloat(row[1])))
             .map(row => ({
                 year: parseInt(row[0]),
                 value: parseFloat(row[1]),
-                type: row[2],
-                updated: new Date(row[4]).toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-                percentChange: row[5] ? parseFloat(row[5]) : null
+                type: row[4] === 'Actual' ? 'Actual revenue' : row[4] === 'Estimate' ? 'Estimated revenue' : row[4],
+                updated: new Date(row[7]).toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
+                percentChange: row[6] ? parseFloat(row[6]) : null
             }))
             .filter(row => row.type === 'Estimated revenue' || row.type === 'Actual revenue')
-            .sort((a, b) => b.year - a.year);  // Sort By year descending
-        
+            .sort((a, b) => b.year - a.year);  // Sort by year descending
+
         // Get the most recent row
         const mostRecent = data[0];
-        //console.log(mostRecent);
-        
+
         return {
             year: mostRecent.year,
             monthYear: mostRecent.updated,
             ytdTotal: mostRecent.value * 1000000, // Multiply by millions for KPIU
             ytdPercentageChange: mostRecent.percentChange,
-            yearlyData: data
-                .sort((a, b) => a.year - b.year)
+            yearlyData: data.sort((a, b) => a.year - b.year) // Sort by year ascending
         };
     } catch (error) {
         console.error('Error loading spending data:', error);
         return null;
     }
 }
+
 
 // Function to load Estimated visitors data
 async function loadEstimatedVisitorsData() {
