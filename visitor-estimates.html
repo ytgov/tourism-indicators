@@ -16,6 +16,7 @@
 
     <!-- Highcharts JS -->
     <script src="./vendor/highcharts/12.1.0/highcharts.js"></script>
+    <script src="./vendor/highcharts/12.1.0/highcharts-more.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/treemap.js"></script>
     <script src="./vendor/highcharts/12.1.0/stock/modules/exporting.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/accessibility.js"></script>
@@ -99,7 +100,7 @@
                 <div class="card-body" style="width:100%;">
                     <h5 class="card-title">Highlights</h5>
                     <ul>
-                        <li>From January to September 2024, the number of visitors to the Yukon is about the same as in
+                        <li>From January to November 2024, the number of visitors to the Yukon is about the same as in
                             2023. There were 9.2% fewer automobile visitors, but more people arrived by bus, plane, and
                             train.</li>
                         <li>In 2023, Yukon had about 450,500 visits—8.3% less than the record high of 491,300 in 2018.
@@ -136,9 +137,19 @@
                     <!-- By year Content -->
                     <div class="tab-pane fade show active" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
                         <div class="card mb-4" style="border:0px; margin-top: 20px;">
+                            <!-- Filters Container-->
+                            <div class="d-flex align-items-center mr-4">
+                                <!-- Year Selector -->
+                                <div class="d-flex align-items-center mr-4">
+                                    <label for="yearSelect" class="sr-only">Filter by Location</label>
+                                    <select id="yearSelect" class="form-control">
+                                        <!-- Years will be dynamically populated by JavaScript -->
+                                    </select>
+                                </div>
+                            </div>
 
                             <!-- Data By year -->
-                            <div id="visitor-estimates-container" style="width:100%; height:400px;"></div>
+                            <div id="visitor-estimates-container" class="card mt-4" style="width:100%; height:500px;"></div>
 
                         </div>
                     </div>
@@ -146,9 +157,9 @@
                     <!-- By month Content -->
                     <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
                         <div class="card mb-4" style="border:0px; margin-top: 20px;">
-                            <div id="monthly-chart" style="width:100%; height:400px; margin-top: 20px;"></div>
+                            <div id="monthly-chart" class="card mt-4" style="width:100%; height:400px; margin-top: 20px;"></div>
 
-                            <div id="transportation-chart" style="width:100%; height:400px; margin-top: 20px;"></div>
+                            <div id="transportation-chart" class="card mt-4" style="width:100%; height:400px; margin-top: 20px;"></div>
                             <div id="data-table-container" data-csv-url="/data/vw_kpi_estimated_visitors.csv"
                                 class="card mb-4" style="width:100%; margin-top: 20px;"></div>
                         </div>
@@ -165,7 +176,7 @@
                                 <p>To estimate how many people visit the Yukon, we use three main sources of
                                     information:</p>
                                 <ul>
-                                    <li>Visitor Exit Survey 2022/23 (VES) – Collected by the Yukon Bureau of Statistics,
+                                    <li>Visitor Exit Survey (VES) – Collected by the Yukon Bureau of Statistics,
                                         this survey provides detailed monthly visitor numbers.</li>
                                     <li>Statistics Canada International Border Crossings – Tracks the number of people
                                         entering Yukon through border crossings.</li>
@@ -191,15 +202,6 @@
                                     perfect because it doesn’t consider all factors that might affect visitor trends.
                                 </p>
 
-                                <h3 class="mt-4">Checking the accuracy</h3>
-                                <p>To see if this method works, we compared our results with past visitor surveys:</p>
-                                <ul>
-                                    <li>Our estimate for 2017/18 was 490,496, while the actual visitor survey recorded
-                                        491,300 (a difference of only 1%).</li>
-                                    <li>However, when comparing against 2012 survey data, our method overestimated
-                                        visitor numbers by a significant amount.</li>
-                                </ul>
-                                <p>Because of this, this method should not be used for past years.</p>
 
                                 <h3 class="mt-4">Limitations</h3>
                                 <p>Although this method is useful, it has some gaps:</p>
@@ -225,20 +227,21 @@
 
             <!-- Data Source -->
             <div class="data-source mt-4">
-                <p><strong>Notes on data:</strong></p>
-                <ul>
-                    <li>Numbers have been rounded to the nearest hundred. These numbers are estimates based on data from
-                        the Visitor Exit Survey, for more information, see the methodology.</li>
-                </ul>
-                <p><strong>Source:</strong></p>
-                <ul>
-                    <li>Air arrivals: Government of Yukon, Department of Highways and Public Works</li>
-                    <li>Statistics Canada. <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005301"
+                <p>Notes on data: Numbers have been rounded to the nearest hundred. The shaded blue area represents the confidence
+                        range, indicating possible estimated values for visitors. These numbers are estimates based on
+                        data from
+                        the Visitor Exit Survey, for more information, see the methodology.
+                </p>
+                <p>Source:
+                    Air arrivals: Government of Yukon, Department of Highways and Public Works</br>
+                    Statistics Canada. <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410005301"
                             target="_blank">Table 24-10-0053-01 International travellers entering or returning to
-                            Canada, by type of transportation and traveller type</a></li>
-                    <li>Visitor exit survey 2022/23, 2017/18, 2012/13: 2004, 1999, 1994, 1987. Government of Yukon,
-                        Department of Tourism and Culture.</li>
-                </ul>
+                            Canada, by type of transportation and traveller type</a></br>
+                    Visitor Exit Survey <a href="https://yukon.ca/en/visitor-exit-survey-2017-2018"
+                            target="_blank">2017/18</a>, <a
+                            href="https://yukon.ca/en/yukon-visitor-tracking-program-summer-report-2012-13"
+                            target="_blank">2012/13</a>, 2004, 1999, 1994, 1987. Government of Yukon,
+                        Department of Tourism and Culture.
             </div>
         </div>
     </div>

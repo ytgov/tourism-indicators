@@ -87,10 +87,7 @@ async function createGDPStatsChart() {
         // Create the chart
         Highcharts.chart('revenue-targets', {
             chart: {
-                type: 'line',
-                style: {
-                    fontFamily: 'Arial, sans-serif'
-                }
+                type: 'line'
             },
             credits: {
                 enabled: false
