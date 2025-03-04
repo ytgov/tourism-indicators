@@ -41,8 +41,11 @@ The dashboard uses various CSV files located in the `data/` directory, including
 
 ## Setup
 1. Clone the repository
-2. Open [index.html]
-3. No additional setup or dependencies required
+2. Open the project folder in VS Code
+3. Install and enable the Live Server extension
+4. Right-click index.html and select "Open with Live Server"
+
+Alternatively, you can copy the folder to a web server such as IIS or Apache and run the dashboard locally.
 
 ## Branding
 Developed for the Government of Yukon.

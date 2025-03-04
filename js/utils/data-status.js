@@ -2,7 +2,7 @@
 async function displayDataStatusTable() {
     try {
         // Fetch the CSV file
-        const response = await fetch('../data/vw_etl_data_status.csv?'+Math.random());
+        const response = await fetch('./data/vw_etl_data_status.csv?'+Math.random());
         const csvText = await response.text();
 
         // Parse CSV into an array of rows
