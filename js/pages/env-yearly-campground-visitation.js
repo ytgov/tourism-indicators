@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "/data/vw_env_campground_visitors_by_origin_yearly.csv?"+Math.random();
+    const csvUrl = "./data/vw_env_campground_visitors_by_origin_yearly.csv?"+Math.random();
 
     fetch(csvUrl)
         .then(response => response.text())

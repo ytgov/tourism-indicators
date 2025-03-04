@@ -2,7 +2,7 @@ import { loadCSVData } from '../utils/data-utils.js';
 
 async function createGDPStatsChart() {
     try {
-        const { data } = await loadCSVData('../../data/vw_kpi_tc_revenue_estimates.csv?'+Math.random());
+        const { data } = await loadCSVData('./data/vw_kpi_tc_revenue_estimates.csv?'+Math.random());
         
         //console.log(data);
 

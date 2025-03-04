@@ -6,7 +6,7 @@ import { createArrowSvg } from '../utils/svg-utils.js';
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         // Load data directly
-        const data = await loadCSVData("/data/vw_kpi_wlws_highway_counts_ytd_summary.csv?"+Math.random());
+        const data = await loadCSVData("./data/vw_kpi_wlws_highway_counts_ytd_summary.csv?"+Math.random());
         
         if (!data || !data.data) {
             console.error('No data available');

@@ -1,7 +1,7 @@
 import { createArrowSvg } from '../utils/svg-utils.js';
 
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "/data/vw_kpi_estimated_visitors.csv?"+Math.random();
+    const csvUrl = "./data/vw_kpi_estimated_visitors.csv?"+Math.random();
 
     function updateMetricsCards(data) {
         if (!data || data.length === 0) {
