@@ -52,7 +52,7 @@ async function displayDataStatusTable() {
                 } else if (index === 3 && rowData[1] === 'Export') {
                     // Format the 4th column as a hyperlink if the process (index 1) is 'Export'
                     const link = document.createElement('a');
-                    link.href = '/data/' + cellData + '.csv'; // Assume the cellData contains the URL
+                    link.href = './data/' + cellData + '.csv'; // Assume the cellData contains the URL
                     link.textContent = cellData + '.csv'; // Display text for the hyperlink
                     link.target = '_blank'; // Open the link in a new tab
                     td.appendChild(link);

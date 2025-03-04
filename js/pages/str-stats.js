@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             id: 'str-stats',
             title: 'Short term rental key performance indicators',
             dataFiles: {
-                occupancy: '/data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random(),
-                adr: '/data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random(),
-                revpar: '/data/vw_kpi_str_revpar_ytd_summary.csv?'+Math.random()
+                occupancy: './data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random(),
+                adr: './data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random(),
+                revpar: './data/vw_kpi_str_revpar_ytd_summary.csv?'+Math.random()
             },
             series: {
                 occupancy: {

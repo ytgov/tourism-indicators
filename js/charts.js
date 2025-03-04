@@ -1,7 +1,7 @@
 // Function to load and parse CSV data
 async function loadAirportData() {
     try {
-        const response = await fetch('/data/vw_kpi_air_arrivals_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_air_arrivals_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
@@ -28,7 +28,7 @@ async function loadAirportData() {
 // Function to load international travelers data
 async function loadIntlTravelersData() {
     try {
-        const response = await fetch('/data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim())
@@ -95,7 +95,7 @@ async function loadIntlTravelersData() {
 // Function to load spending data
 async function loadSpendingData() {
     try {
-        const response = await fetch('/data/vw_kpi_tc_revenue_estimates_revised.csv?' + Math.random());
+        const response = await fetch('./data/vw_kpi_tc_revenue_estimates_revised.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim()) // Remove empty lines
@@ -135,7 +135,7 @@ async function loadSpendingData() {
 // Function to load Estimated visitors data
 async function loadEstimatedVisitorsData() {
     try {
-        const response = await fetch('/data/vw_kpi_estimated_visitors.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_estimated_visitors.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim()) // Remove empty lines
@@ -181,7 +181,7 @@ async function loadEstimatedVisitorsData() {
 // Function to load occupancy rate data
 async function loadOccupancyData() {
     try {
-        const response = await fetch('/data/vw_kpi_cbre_occupancy_rate_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_cbre_occupancy_rate_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim()) // Remove empty lines
@@ -225,7 +225,7 @@ async function loadOccupancyData() {
 // Function to load daily room rate data
 async function loadRoomRateData() {
     try {
-        const response = await fetch('/data/vw_kpi_cbre_avg_daily_room_rate_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_cbre_avg_daily_room_rate_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim())
@@ -266,7 +266,7 @@ async function loadRoomRateData() {
 // Function to load revenue per room data
 async function loadRevenuePerRoomData() {
     try {
-        const response = await fetch('/data/vw_kpi_cbre_revpar_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_cbre_revpar_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim())
@@ -307,7 +307,7 @@ async function loadRevenuePerRoomData() {
 // Function to load VIC visitors data
 async function loadVICVisitorsData() {
     try {
-        const response = await fetch('/data/vw_kpi_vic_visitors_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_vic_visitors_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim())
@@ -348,7 +348,7 @@ async function loadVICVisitorsData() {
 // Function to load highway counts data
 async function loadHighwayCountsData() {
     try {
-        const response = await fetch('/data/vw_kpi_wlws_highway_counts_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_wlws_highway_counts_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim())
@@ -389,7 +389,7 @@ async function loadHighwayCountsData() {
 // Load STR Occupancy rate Data
 async function loadSTROccupancyData() {
     try {
-        const response = await fetch('/data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
@@ -416,7 +416,7 @@ async function loadSTROccupancyData() {
 // Load STR Average Daily Rate Data
 async function loadSTRADRData() {
     try {
-        const response = await fetch('/data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
@@ -443,7 +443,7 @@ async function loadSTRADRData() {
 // Load STR RevPAR Data
 async function loadSTRRevPARData() {
     try {
-        const response = await fetch('/data/vw_kpi_str_revpar_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_str_revpar_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
@@ -470,7 +470,7 @@ async function loadSTRRevPARData() {
 // Function to load PC Visitor Data
 async function loadPCVisitorData() {
     try {
-        const response = await fetch('/data/vw_kpi_pc_site_visitation_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_pc_site_visitation_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const headers = rows[0];
@@ -501,7 +501,7 @@ async function loadPCVisitorData() {
 // Function to load Campground Visitor Data
 async function loadCampgroundVisitorData() {
     try {
-        const response = await fetch('/data/vw_kpi_env_campground_visitors_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_env_campground_visitors_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const headers = rows[0];
@@ -536,7 +536,7 @@ async function loadCampgroundVisitorData() {
 //removed by request
 /*async function loadFuelPrices() {
     try {
-        const response = await fetch('/data/vw_kpi_sc_gas_prices_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_sc_gas_prices_ytd_summary.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
@@ -563,7 +563,7 @@ async function loadCampgroundVisitorData() {
 // Function to load Accommodation Employment
 async function loadAccommodationEmployment() {
     try {
-        const response = await fetch('/data/vw_kpi_economic_accommodation_and_food_employment.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_economic_accommodation_and_food_employment.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
@@ -590,7 +590,7 @@ async function loadAccommodationEmployment() {
 // Function to load Tourism Business Counts
 async function loadBusinessCounts() {
     try {
-        const response = await fetch('/data/vw_kpi_sc_tourism_business_count.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_sc_tourism_business_count.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
@@ -617,7 +617,7 @@ async function loadBusinessCounts() {
 // Function to load Consumer Confidence
 async function loadConsumerConfidence() {
     try {
-        const response = await fetch('/data/vw_kpi_cboc_consumer_confidence.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_cboc_consumer_confidence.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
@@ -643,7 +643,7 @@ async function loadConsumerConfidence() {
 
 async function loadRestaurantSales() {
     try {
-        const response = await fetch('/data/vw_kpi_economic_restaurant_spending.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_economic_restaurant_spending.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
@@ -669,7 +669,7 @@ async function loadRestaurantSales() {
 
 async function loadRetailSales() {
     try {
-        const response = await fetch('/data/vw_kpi_economic_retail_spending.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_economic_retail_spending.csv?'+Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
