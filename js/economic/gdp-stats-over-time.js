@@ -71,7 +71,7 @@ async function createGDPStatsChart() {
             yAxis: [{
                 // Left y-axis for tourism metrics
                 title: {
-                    text: 'Tourism Values (Millions CAD)',
+                    text: 'Tourism revenue and GDP (Millions CAD)',
                     style: {
                         color: '#0d233a'
                     }

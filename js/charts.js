@@ -738,7 +738,7 @@ function updateKPIContent(containerId, data, title) {
     if (title === 'Economic overview') {
         formattedTotal = formatSpendingInMillions(data.ytdTotal);
         subheading = 'Estimated gross business revenue attributable to tourism, GDP, and more';
-    } else if (title === 'Air arrivals') {
+    } else if (title === 'Airport arrivals') {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Erik Nielsen Whitehorse International Airport';
     } else if (title === 'Border crossings') {
@@ -939,7 +939,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     // First KPI - Airport Arrivals
     const airportData = await loadAirportData();
     if (airportData) {
-        updateKPIContent('indicator2-content', airportData, 'Air arrivals');
+        updateKPIContent('indicator2-content', airportData, 'Airport arrivals');
         createKPIChart('indicator2-chart', airportData.monthlyData, airportData.ytdPercentageChange);
     }
 

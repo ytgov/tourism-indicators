@@ -5,7 +5,7 @@ This web-based dashboard provides comprehensive insights into Yukon's tourism pe
 
 ## Features
 - **Key Performance Indicators**:
-  - Air Arrivals
+  - Airport Arrivals
   - Border Crossings
   - Economic Overview
 
@@ -16,7 +16,7 @@ This web-based dashboard provides comprehensive insights into Yukon's tourism pe
 
 ## Pages
 - [index.html](https://open-data-static-files.service.yukon.ca/tourism-indicators/): Main dashboard with key indicators
-- `air-arrivals.html`: Detailed air arrivals data
+- `air-arrivals.html`: Detailed airport arrivals data
 - `border-crossings.html`: Border crossing statistics
 - `economic-overview.html`: Economic performance metrics
 - `hotel-stats.html`: Hotel performance indicators

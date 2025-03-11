@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const adrDateRangeElement2019 = document.getElementById('ytd-adr-date-range-2019');
             //console.log(latestAdrData);
             if (latestAdrData) {
-                const ytdTotal = '$' + parseFloat(latestAdrData[6]).toLocaleString();
+                const ytdTotal = '$' + parseFloat(latestAdrData[6]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
                 const date = new Date(latestAdrData[0]);
                 const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
                 const year = date.getFullYear();
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const revDateRangeElement2019 = document.getElementById('ytd-rev-date-range-2019');
 
             if (latestRevparData) {
-                const ytdTotal = '$' + parseFloat(latestRevparData[6]).toLocaleString();
+                const ytdTotal = '$' + parseFloat(latestRevparData[6]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
                 const date = new Date(latestRevparData[0]);
                 const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
                 const year = date.getFullYear();

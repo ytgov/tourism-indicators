@@ -73,7 +73,7 @@ async function generateChart() {
             height: 400
         },
         title: {
-            text: 'Air arrivals By month'
+            text: 'Airport arrivals By month'
         },
         xAxis: {
             categories: allMonths, // Use month names for the X-axis
