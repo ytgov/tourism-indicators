@@ -25,67 +25,45 @@ async function loadAirportData() {
     }
 }
 
-// Function to load international travelers data
 async function loadIntlTravelersData() {
     try {
-        const response = await fetch('./data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
+        
         const rows = csvText.split('\n')
             .filter(row => row.trim())
             .map(row => row.replace(/"/g, ''))
             .map(row => row.split(','));
-        
-        // Get total for all locations for each month
-        const monthlyTotals = new Map(); // key: date, value: {total, ytdTotal, ytdChange}
-        
-        rows.slice(1).forEach(row => {
-            if (row.length < 8) return; // Skip incomplete rows
-            
-            const date = row[0];
-            const monthly = parseFloat(row[4]) || 0;
-            const ytdTotal = parseFloat(row[7]) || 0;
-            const ytdChange = parseFloat(row[9]) || 0;
-            
-            if (monthlyTotals.has(date)) {
-                const current = monthlyTotals.get(date);
-                monthlyTotals.set(date, {
-                    total: current.total + monthly,
-                    ytdTotal: Math.max(current.ytdTotal, ytdTotal),
-                    ytdChange: current.ytdChange || ytdChange
-                });
-            } else {
-                monthlyTotals.set(date, {
-                    total: monthly,
-                    ytdTotal: ytdTotal,
-                    ytdChange: ytdChange
-                });
-            }
-        });
 
-        // Convert to array and sort by date
-        const data = Array.from(monthlyTotals.entries())
-            .map(([date, values]) => ({
-                date: new Date(date),
-                total: values.total,
-                ytdTotal: values.ytdTotal,
-                ytdChange: values.ytdChange
-            }))
-            .sort((a, b) => b.date - a.date); // Sort descending
+        const headers = rows[0]; // Capture headers just in case
+
+        // Filter for rows where location is "Yukon"
+        const yukonRows = rows.slice(1).filter(row => row[3] === 'Yukon');
+
+        // Convert to structured objects
+        const data = yukonRows.map(row => ({
+            date: new Date(row[0]),
+            monthlyTotal: parseFloat(row[4]) || 0,
+            ytdTotal: parseFloat(row[7]) || 0,
+            ytdChange: parseFloat(row[9]) || 0,
+        }));
+
+        // Sort by date descending to get the most recent first
+        data.sort((a, b) => b.date - a.date);
 
         const mostRecent = data[0];
-        
+
         return {
-            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: mostRecent.ytdTotal,
             ytdPercentageChange: mostRecent.ytdChange,
             monthlyData: data
-                .sort((a, b) => a.date - b.date) // Sort ascending for chart
+                .sort((a, b) => a.date - b.date) // sort ascending for chart
                 .map(item => ({
                     date: item.date,
-                    value: item.total
+                    value: item.monthlyTotal
                 }))
         };
-        
     } catch (error) {
         console.error('Error loading international travelers data:', error);
         return null;

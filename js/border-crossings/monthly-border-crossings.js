@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const latestEntry = data[data.length - 1];
             const date = new Date(latestEntry.date);
             const month = date.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
-            const year = date.getFullYear();
+            const year = date.getUTCFullYear();
 
             // Update "Latest monthly crossings"
             const latestMonthly = document.getElementById("latest-monthly");

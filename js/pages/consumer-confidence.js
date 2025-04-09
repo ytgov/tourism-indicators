@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (latestData) {
                 const ytdTotal = parseFloat(latestData[6]);
                 const date = new Date(latestData[0]);
-                const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
-                const year = date.getFullYear();
+                const month = date.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
+                const year = date.getUTCFullYear();
                 
                 ytdAmountElement.textContent = ytdTotal;
-                ytdDateRangeElement.textContent = `Jan - ${month} ${year}`;
+                ytdDateRangeElement.textContent = `January - ${month} ${year}`;
             }
 
             // Update YTD change

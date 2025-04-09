@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const ytdTotal = parseFloat(latestData[6]).toLocaleString();
                 const date = new Date(latestData[0]);
                 const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
-                const year = date.getFullYear();
+                const year = date.getUTCFullYear();
                 
                 ytdAmountElement.textContent = ytdTotal;
                 ytdDateRangeElement.textContent = `Jan - ${month} ${year}`;
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const ytdTotal = parseFloat(latestEData[6]).toLocaleString();
                 const date = new Date(latestEData[0]);
                 const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
-                const year = date.getFullYear();
+                const year = date.getUTCFullYear();
                 
                 ytdEarningsAmountElement.textContent = `$${ytdTotal}`;
                 ytdEarningsDateRangeElement.textContent = `Jan - ${month} ${year}`;

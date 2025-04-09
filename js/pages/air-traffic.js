@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const ytdTotal = parseFloat(latestData[6]).toLocaleString();
                 const date = new Date(latestData[0]);
                 const month = date.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
-                const year = date.getFullYear();
+                const year = date.getUTCFullYear();
                 
                 ytdAmountElement.textContent = ytdTotal;
                 ytdDateRangeElement.textContent = `January - ${month} ${year}`;

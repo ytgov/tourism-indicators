@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const monthlyTotal = parseFloat(latestOccData[6]).toFixed(1) + '%';
                 const date = new Date(latestOccData[0]);
                 const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
-                const year = date.getFullYear();
+                const year = date.getUTCFullYear();
 
                 // Get YTD change percentage
                 const occChange = parseFloat(latestOccData[8]);
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const ytdTotal = '$' + parseFloat(latestAdrData[6]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
                 const date = new Date(latestAdrData[0]);
                 const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
-                const year = date.getFullYear();
+                const year = date.getUTCFullYear();
 
                 // Get YTD change percentage
                 const adrChange = parseFloat(latestAdrData[8]);
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const ytdTotal = '$' + parseFloat(latestRevparData[6]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
                 const date = new Date(latestRevparData[0]);
                 const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
-                const year = date.getFullYear();
+                const year = date.getUTCFullYear();
 
                 // Get YTD change percentage
                 const revChange = parseFloat(latestRevparData[8]);

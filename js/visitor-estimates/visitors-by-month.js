@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Calculate current year if not already provided
-        const currentYear = latestData.date.getFullYear();
+        const currentYear = latestData.date.getUTCFullYear();
 
         // Update YTD Amount
         document.getElementById('ytd-amount').textContent = ytdTotal.toLocaleString();

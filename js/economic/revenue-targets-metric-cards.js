@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
             const date = new Date(latestEntry.date);
             const month = date.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
-            const year = date.getFullYear();
+            const year = date.getUTCFullYear();
 
             // Update "Target"
             const target = document.getElementById("target");

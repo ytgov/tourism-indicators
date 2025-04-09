@@ -1,82 +1,4 @@
 year,geo,Traveller_type,value
-1972,Beaver Creek,Excursionists (same-day),3252
-1972,Fraser,Excursionists (same-day),47
-1972,Beaver Creek,Tourists (overnight),70980
-1972,Fraser,Tourists (overnight),28768
-1972,Dawson,Excursionists (same-day),18
-1972,Little Gold Creek,Excursionists (same-day),726
-1972,Dawson,Tourists (overnight),155
-1972,Pleasant Camp,Excursionists (same-day),15587
-1972,Whitehorse,Excursionists (same-day),493
-1972,Little Gold Creek,Tourists (overnight),9232
-1972,Pleasant Camp,Tourists (overnight),12106
-1972,Old Crow,Excursionists (same-day),36
-1972,Whitehorse,Tourists (overnight),6770
-1972,Old Crow,Tourists (overnight),127
-1985,Dawson,Excursionists (same-day),2190
-1985,Beaver Creek,Excursionists (same-day),8173
-1985,Fraser,Tourists (overnight),48251
-1985,Beaver Creek,Tourists (overnight),117676
-1985,Dawson,Tourists (overnight),1598
-1985,Little Gold Creek,Excursionists (same-day),996
-1985,Whitehorse,Excursionists (same-day),222
-1985,Pleasant Camp,Excursionists (same-day),21158
-1985,Fraser,Excursionists (same-day),32768
-1985,Little Gold Creek,Tourists (overnight),13063
-1985,Whitehorse,Tourists (overnight),7172
-1985,Pleasant Camp,Tourists (overnight),11454
-1985,Old Crow,Excursionists (same-day),28
-1985,Old Crow,Tourists (overnight),227
-1986,Beaver Creek,Excursionists (same-day),7464
-1986,Little Gold Creek,Tourists (overnight),15200
-1986,Fraser,Tourists (overnight),53881
-1986,Dawson,Excursionists (same-day),2135
-1986,Beaver Creek,Tourists (overnight),123476
-1986,Old Crow,Tourists (overnight),291
-1986,Whitehorse,Excursionists (same-day),275
-1986,Dawson,Tourists (overnight),1238
-1986,Little Gold Creek,Excursionists (same-day),1103
-1986,Pleasant Camp,Excursionists (same-day),11489
-1986,Whitehorse,Tourists (overnight),5665
-1986,Fraser,Excursionists (same-day),44431
-1986,Old Crow,Excursionists (same-day),10
-1986,Pleasant Camp,Tourists (overnight),20732
-1987,Beaver Creek,Excursionists (same-day),6074
-1987,Beaver Creek,Tourists (overnight),122265
-1987,Dawson,Excursionists (same-day),90
-1987,Little Gold Creek,Tourists (overnight),19435
-1987,Dawson,Tourists (overnight),1590
-1987,Little Gold Creek,Excursionists (same-day),918
-1987,Fraser,Excursionists (same-day),43967
-1987,Old Crow,Excursionists (same-day),37
-1987,Whitehorse,Excursionists (same-day),143
-1987,Old Crow,Tourists (overnight),261
-1987,Fraser,Tourists (overnight),59642
-1987,Pleasant Camp,Excursionists (same-day),14228
-1987,Whitehorse,Tourists (overnight),4357
-1987,Pleasant Camp,Tourists (overnight),18862
-1988,Fraser,Tourists (overnight),55850
-1988,Beaver Creek,Excursionists (same-day),5061
-1988,Fraser,Excursionists (same-day),31776
-1988,Beaver Creek,Tourists (overnight),114877
-1988,Pleasant Camp,Excursionists (same-day),18990
-1988,Dawson,Excursionists (same-day),221
-1988,Little Gold Creek,Excursionists (same-day),1377
-1988,Dawson,Tourists (overnight),3070
-1988,Pleasant Camp,Tourists (overnight),17335
-1988,Whitehorse,Excursionists (same-day),182
-1988,Little Gold Creek,Tourists (overnight),20015
-1988,Whitehorse,Tourists (overnight),4486
-1988,Old Crow,Excursionists (same-day),37
-1988,Old Crow,Tourists (overnight),282
-2002,Beaver Creek,Excursionists (same-day),8724
-2002,Dawson,Excursionists (same-day),1421
-2002,Fraser,Tourists (overnight),88152
-2002,Pleasant Camp,Excursionists (same-day),23276
-2002,Beaver Creek,Tourists (overnight),100368
-2002,Dawson,Tourists (overnight),6320
-2002,Whitehorse,Excursionists (same-day),545
-2002,Pleasant Camp,Tourists (overnight),22531
 1974,Beaver Creek,Tourists (overnight),67136
 1974,Fraser,Excursionists (same-day),3490
 1974,Dawson,Excursionists (same-day),80
@@ -233,84 +155,6 @@ year,geo,Traveller_type,value
 1994,Pleasant Camp,Excursionists (same-day),22184
 1994,Beaver Creek,Tourists (overnight),110332
 1994,Dawson,Tourists (overnight),3107
-2002,Little Gold Creek,Excursionists (same-day),1268
-2002,Fraser,Excursionists (same-day),89240
-2002,Whitehorse,Tourists (overnight),7135
-2002,Little Gold Creek,Tourists (overnight),19109
-2002,Old Crow,Excursionists (same-day),8
-2002,Old Crow,Tourists (overnight),190
-2003,Little Gold Creek,Tourists (overnight),16477
-2003,Fraser,Tourists (overnight),97783
-2003,Beaver Creek,Excursionists (same-day),8887
-2003,Dawson,Excursionists (same-day),1321
-2003,Old Crow,Tourists (overnight),17
-2003,Whitehorse,Excursionists (same-day),273
-2003,Beaver Creek,Tourists (overnight),93448
-2003,Dawson,Tourists (overnight),6984
-2003,Pleasant Camp,Excursionists (same-day),22930
-2003,Whitehorse,Tourists (overnight),7009
-2003,Little Gold Creek,Excursionists (same-day),728
-2003,Fraser,Excursionists (same-day),93920
-2003,Pleasant Camp,Tourists (overnight),20255
-2003,Old Crow,Excursionists (same-day),14
-2004,Beaver Creek,Excursionists (same-day),9050
-2004,Little Gold Creek,Excursionists (same-day),686
-2004,Beaver Creek,Tourists (overnight),92618
-2004,Dawson,Excursionists (same-day),1019
-2004,Dawson,Tourists (overnight),5688
-2004,Little Gold Creek,Tourists (overnight),13356
-2004,Whitehorse,Excursionists (same-day),308
-2004,Fraser,Excursionists (same-day),115898
-2004,Whitehorse,Tourists (overnight),6871
-2004,Old Crow,Excursionists (same-day),6
-2004,Fraser,Tourists (overnight),94218
-2004,Old Crow,Tourists (overnight),17
-2004,Pleasant Camp,Tourists (overnight),21969
-2004,Pleasant Camp,Excursionists (same-day),21015
-2005,Fraser,Tourists (overnight),103076
-2005,Beaver Creek,Tourists (overnight),87981
-2005,Beaver Creek,Excursionists (same-day),7457
-2005,Fraser,Excursionists (same-day),124671
-2005,Pleasant Camp,Excursionists (same-day),20375
-2005,Little Gold Creek,Excursionists (same-day),702
-2005,Dawson,Excursionists (same-day),1309
-2005,Little Gold Creek,Tourists (overnight),14081
-2005,Pleasant Camp,Tourists (overnight),22305
-2005,Old Crow,Excursionists (same-day),20
-2005,Dawson,Tourists (overnight),6600
-2005,Old Crow,Tourists (overnight),14
-2005,Whitehorse,Tourists (overnight),6495
-2005,Whitehorse,Excursionists (same-day),334
-2019,Beaver Creek,Excursionists (same-day),7831
-2019,Dawson,Excursionists (same-day),161
-2019,Old Crow,Tourists (overnight),0
-2019,Fraser,Tourists (overnight),47427
-2019,Beaver Creek,Tourists (overnight),71813
-2019,Dawson,Tourists (overnight),6567
-2019,Pleasant Camp,Excursionists (same-day),12665
-2019,Whitehorse,Excursionists (same-day),420
-2019,Little Gold Creek,Excursionists (same-day),940
-2019,Fraser,Excursionists (same-day),315081
-2019,Pleasant Camp,Tourists (overnight),25476
-2019,Whitehorse,Tourists (overnight),4392
-2019,Little Gold Creek,Tourists (overnight),12253
-2019,Old Crow,Excursionists (same-day),1
-2020,Beaver Creek,Tourists (overnight),20694
-2020,Little Gold Creek,Tourists (overnight),0
-2020,Beaver Creek,Excursionists (same-day),2020
-2020,Dawson,Excursionists (same-day),2
-2020,Little Gold Creek,Excursionists (same-day),0
-2020,Old Crow,Excursionists (same-day),0
-2020,Fraser,Tourists (overnight),1340
-2020,Dawson,Tourists (overnight),27
-2020,Whitehorse,Excursionists (same-day),181
-2020,Old Crow,Tourists (overnight),0
-2020,Whitehorse,Tourists (overnight),140
-2020,Fraser,Excursionists (same-day),2614
-2020,Pleasant Camp,Excursionists (same-day),2182
-2020,Pleasant Camp,Tourists (overnight),1355
-2021,Dawson,Excursionists (same-day),0
-2021,Beaver Creek,Tourists (overnight),24034
 1973,Beaver Creek,Excursionists (same-day),4766
 1973,Fraser,Excursionists (same-day),3
 1973,Fraser,Tourists (overnight),36640
@@ -545,32 +389,6 @@ year,geo,Traveller_type,value
 2014,Old Crow,Tourists (overnight),13
 2016,Beaver Creek,Tourists (overnight),66227
 2016,Beaver Creek,Excursionists (same-day),6063
-2021,Beaver Creek,Excursionists (same-day),1465
-2021,Little Gold Creek,Excursionists (same-day),0
-2021,Fraser,Excursionists (same-day),1605
-2021,Little Gold Creek,Tourists (overnight),0
-2021,Dawson,Tourists (overnight),0
-2021,Old Crow,Excursionists (same-day),0
-2021,Fraser,Tourists (overnight),1594
-2021,Old Crow,Tourists (overnight),0
-2021,Whitehorse,Excursionists (same-day),153
-2021,Pleasant Camp,Excursionists (same-day),2844
-2021,Pleasant Camp,Tourists (overnight),1248
-2021,Whitehorse,Tourists (overnight),159
-2022,Fraser,Tourists (overnight),25330
-2022,Beaver Creek,Tourists (overnight),48854
-2022,Fraser,Excursionists (same-day),52037
-2022,Beaver Creek,Excursionists (same-day),4465
-2022,Pleasant Camp,Excursionists (same-day),7478
-2022,Dawson,Excursionists (same-day),39
-2022,Little Gold Creek,Excursionists (same-day),6803
-2022,Dawson,Tourists (overnight),4189
-2022,Pleasant Camp,Tourists (overnight),16641
-2022,Whitehorse,Excursionists (same-day),427
-2022,Little Gold Creek,Tourists (overnight),1512
-2022,Whitehorse,Tourists (overnight),3137
-2022,Old Crow,Excursionists (same-day),0
-2022,Old Crow,Tourists (overnight),1
 2012,Beaver Creek,Tourists (overnight),59738
 2012,Dawson,Excursionists (same-day),56
 2012,Dawson,Tourists (overnight),283
@@ -597,6 +415,84 @@ year,geo,Traveller_type,value
 2013,Old Crow,Tourists (overnight),21
 2013,Whitehorse,Excursionists (same-day),176
 2013,Pleasant Camp,Excursionists (same-day),10674
+1972,Beaver Creek,Excursionists (same-day),3252
+1972,Fraser,Excursionists (same-day),47
+1972,Beaver Creek,Tourists (overnight),70980
+1972,Fraser,Tourists (overnight),28768
+1972,Dawson,Excursionists (same-day),18
+1972,Little Gold Creek,Excursionists (same-day),726
+1972,Dawson,Tourists (overnight),155
+1972,Pleasant Camp,Excursionists (same-day),15587
+1972,Whitehorse,Excursionists (same-day),493
+1972,Little Gold Creek,Tourists (overnight),9232
+1972,Pleasant Camp,Tourists (overnight),12106
+1972,Old Crow,Excursionists (same-day),36
+1972,Whitehorse,Tourists (overnight),6770
+1972,Old Crow,Tourists (overnight),127
+1985,Dawson,Excursionists (same-day),2190
+1985,Beaver Creek,Excursionists (same-day),8173
+1985,Fraser,Tourists (overnight),48251
+1985,Beaver Creek,Tourists (overnight),117676
+1985,Dawson,Tourists (overnight),1598
+1985,Little Gold Creek,Excursionists (same-day),996
+1985,Whitehorse,Excursionists (same-day),222
+1985,Pleasant Camp,Excursionists (same-day),21158
+1985,Fraser,Excursionists (same-day),32768
+1985,Little Gold Creek,Tourists (overnight),13063
+1985,Whitehorse,Tourists (overnight),7172
+1985,Pleasant Camp,Tourists (overnight),11454
+1985,Old Crow,Excursionists (same-day),28
+1985,Old Crow,Tourists (overnight),227
+1986,Beaver Creek,Excursionists (same-day),7464
+1986,Little Gold Creek,Tourists (overnight),15200
+1986,Fraser,Tourists (overnight),53881
+1986,Dawson,Excursionists (same-day),2135
+1986,Beaver Creek,Tourists (overnight),123476
+1986,Old Crow,Tourists (overnight),291
+1986,Whitehorse,Excursionists (same-day),275
+1986,Dawson,Tourists (overnight),1238
+1986,Little Gold Creek,Excursionists (same-day),1103
+1986,Pleasant Camp,Excursionists (same-day),11489
+1986,Whitehorse,Tourists (overnight),5665
+1986,Fraser,Excursionists (same-day),44431
+1986,Old Crow,Excursionists (same-day),10
+1986,Pleasant Camp,Tourists (overnight),20732
+1987,Beaver Creek,Excursionists (same-day),6074
+1987,Beaver Creek,Tourists (overnight),122265
+1987,Dawson,Excursionists (same-day),90
+1987,Little Gold Creek,Tourists (overnight),19435
+1987,Dawson,Tourists (overnight),1590
+1987,Little Gold Creek,Excursionists (same-day),918
+1987,Fraser,Excursionists (same-day),43967
+1987,Old Crow,Excursionists (same-day),37
+1987,Whitehorse,Excursionists (same-day),143
+1987,Old Crow,Tourists (overnight),261
+1987,Fraser,Tourists (overnight),59642
+1987,Pleasant Camp,Excursionists (same-day),14228
+1987,Whitehorse,Tourists (overnight),4357
+1987,Pleasant Camp,Tourists (overnight),18862
+1988,Fraser,Tourists (overnight),55850
+1988,Beaver Creek,Excursionists (same-day),5061
+1988,Fraser,Excursionists (same-day),31776
+1988,Beaver Creek,Tourists (overnight),114877
+1988,Pleasant Camp,Excursionists (same-day),18990
+1988,Dawson,Excursionists (same-day),221
+1988,Little Gold Creek,Excursionists (same-day),1377
+1988,Dawson,Tourists (overnight),3070
+1988,Pleasant Camp,Tourists (overnight),17335
+1988,Whitehorse,Excursionists (same-day),182
+1988,Little Gold Creek,Tourists (overnight),20015
+1988,Whitehorse,Tourists (overnight),4486
+1988,Old Crow,Excursionists (same-day),37
+1988,Old Crow,Tourists (overnight),282
+2002,Beaver Creek,Excursionists (same-day),8724
+2002,Dawson,Excursionists (same-day),1421
+2002,Fraser,Tourists (overnight),88152
+2002,Pleasant Camp,Excursionists (same-day),23276
+2002,Beaver Creek,Tourists (overnight),100368
+2002,Dawson,Tourists (overnight),6320
+2002,Whitehorse,Excursionists (same-day),545
+2002,Pleasant Camp,Tourists (overnight),22531
 2016,Dawson,Excursionists (same-day),1131
 2016,Fraser,Excursionists (same-day),203095
 2016,Dawson,Tourists (overnight),5463
@@ -637,6 +533,110 @@ year,geo,Traveller_type,value
 2023,Dawson,Tourists (overnight),6034
 2023,Whitehorse,Excursionists (same-day),376
 2023,Whitehorse,Tourists (overnight),3289
+2002,Little Gold Creek,Excursionists (same-day),1268
+2002,Fraser,Excursionists (same-day),89240
+2002,Whitehorse,Tourists (overnight),7135
+2002,Little Gold Creek,Tourists (overnight),19109
+2002,Old Crow,Excursionists (same-day),8
+2002,Old Crow,Tourists (overnight),190
+2003,Little Gold Creek,Tourists (overnight),16477
+2003,Fraser,Tourists (overnight),97783
+2003,Beaver Creek,Excursionists (same-day),8887
+2003,Dawson,Excursionists (same-day),1321
+2003,Old Crow,Tourists (overnight),17
+2003,Whitehorse,Excursionists (same-day),273
+2003,Beaver Creek,Tourists (overnight),93448
+2003,Dawson,Tourists (overnight),6984
+2003,Pleasant Camp,Excursionists (same-day),22930
+2003,Whitehorse,Tourists (overnight),7009
+2003,Little Gold Creek,Excursionists (same-day),728
+2003,Fraser,Excursionists (same-day),93920
+2003,Pleasant Camp,Tourists (overnight),20255
+2003,Old Crow,Excursionists (same-day),14
+2004,Beaver Creek,Excursionists (same-day),9050
+2004,Little Gold Creek,Excursionists (same-day),686
+2004,Beaver Creek,Tourists (overnight),92618
+2004,Dawson,Excursionists (same-day),1019
+2004,Dawson,Tourists (overnight),5688
+2004,Little Gold Creek,Tourists (overnight),13356
+2004,Whitehorse,Excursionists (same-day),308
+2004,Fraser,Excursionists (same-day),115898
+2004,Whitehorse,Tourists (overnight),6871
+2004,Old Crow,Excursionists (same-day),6
+2004,Fraser,Tourists (overnight),94218
+2004,Old Crow,Tourists (overnight),17
+2004,Pleasant Camp,Tourists (overnight),21969
+2004,Pleasant Camp,Excursionists (same-day),21015
+2005,Fraser,Tourists (overnight),103076
+2005,Beaver Creek,Tourists (overnight),87981
+2005,Beaver Creek,Excursionists (same-day),7457
+2005,Fraser,Excursionists (same-day),124671
+2005,Pleasant Camp,Excursionists (same-day),20375
+2005,Little Gold Creek,Excursionists (same-day),702
+2005,Dawson,Excursionists (same-day),1309
+2005,Little Gold Creek,Tourists (overnight),14081
+2005,Pleasant Camp,Tourists (overnight),22305
+2005,Old Crow,Excursionists (same-day),20
+2005,Dawson,Tourists (overnight),6600
+2005,Old Crow,Tourists (overnight),14
+2005,Whitehorse,Tourists (overnight),6495
+2005,Whitehorse,Excursionists (same-day),334
+2019,Beaver Creek,Excursionists (same-day),7831
+2019,Dawson,Excursionists (same-day),161
+2019,Old Crow,Tourists (overnight),0
+2019,Fraser,Tourists (overnight),47427
+2019,Beaver Creek,Tourists (overnight),71813
+2019,Dawson,Tourists (overnight),6567
+2019,Pleasant Camp,Excursionists (same-day),12665
+2019,Whitehorse,Excursionists (same-day),420
+2019,Little Gold Creek,Excursionists (same-day),940
+2019,Fraser,Excursionists (same-day),315081
+2019,Pleasant Camp,Tourists (overnight),25476
+2019,Whitehorse,Tourists (overnight),4392
+2019,Little Gold Creek,Tourists (overnight),12253
+2019,Old Crow,Excursionists (same-day),1
+2020,Beaver Creek,Tourists (overnight),20694
+2020,Little Gold Creek,Tourists (overnight),0
+2020,Beaver Creek,Excursionists (same-day),2020
+2020,Dawson,Excursionists (same-day),2
+2020,Little Gold Creek,Excursionists (same-day),0
+2020,Old Crow,Excursionists (same-day),0
+2020,Fraser,Tourists (overnight),1340
+2020,Dawson,Tourists (overnight),27
+2020,Whitehorse,Excursionists (same-day),181
+2020,Old Crow,Tourists (overnight),0
+2020,Whitehorse,Tourists (overnight),140
+2020,Fraser,Excursionists (same-day),2614
+2020,Pleasant Camp,Excursionists (same-day),2182
+2020,Pleasant Camp,Tourists (overnight),1355
+2021,Dawson,Excursionists (same-day),0
+2021,Beaver Creek,Tourists (overnight),24034
+2021,Beaver Creek,Excursionists (same-day),1465
+2021,Little Gold Creek,Excursionists (same-day),0
+2021,Fraser,Excursionists (same-day),1605
+2021,Little Gold Creek,Tourists (overnight),0
+2021,Dawson,Tourists (overnight),0
+2021,Old Crow,Excursionists (same-day),0
+2021,Fraser,Tourists (overnight),1594
+2021,Old Crow,Tourists (overnight),0
+2021,Whitehorse,Excursionists (same-day),153
+2021,Pleasant Camp,Excursionists (same-day),2844
+2021,Pleasant Camp,Tourists (overnight),1248
+2021,Whitehorse,Tourists (overnight),159
+2022,Fraser,Tourists (overnight),25330
+2022,Beaver Creek,Tourists (overnight),48854
+2022,Fraser,Excursionists (same-day),52037
+2022,Beaver Creek,Excursionists (same-day),4465
+2022,Pleasant Camp,Excursionists (same-day),7478
+2022,Dawson,Excursionists (same-day),39
+2022,Little Gold Creek,Excursionists (same-day),6803
+2022,Dawson,Tourists (overnight),4189
+2022,Pleasant Camp,Tourists (overnight),16641
+2022,Whitehorse,Excursionists (same-day),427
+2022,Little Gold Creek,Tourists (overnight),1512
+2022,Whitehorse,Tourists (overnight),3137
+2022,Old Crow,Excursionists (same-day),0
+2022,Old Crow,Tourists (overnight),1
 1992,Little Gold Creek,Tourists (overnight),22988
 1992,Old Crow,Excursionists (same-day),85
 1992,Old Crow,Tourists (overnight),219
