@@ -523,34 +523,34 @@ date,year,month,industry,monthly_total,prev_year_monthly_total,monthly_percentag
 2023-06-01,2023,6,Recreation and entertainment (tourism),30,30,0.0,29,29,0.0,32,-9.4,January - June
 2023-07-01,2023,7,Recreation and entertainment (tourism),28,31,-9.7,28,29,-3.4,32,-12.5,January - July
 2023-08-01,2023,8,Recreation and entertainment (tourism),29,30,-3.3,28,29,-3.4,32,-12.5,January - August
-2023-09-01,2023,9,Recreation and entertainment (tourism),28,29,-3.4,28,29,-3.4,32,-12.5,January - September
-2023-10-01,2023,10,Recreation and entertainment (tourism),30,29,3.4,28,29,-3.4,32,-12.5,January - October
-2023-11-01,2023,11,Recreation and entertainment (tourism),29,28,3.6,28,29,-3.4,32,-12.5,January - November
-2023-12-01,2023,12,Recreation and entertainment (tourism),29,28,3.6,28,29,-3.4,32,-12.5,January - December
-2023-01-01,2023,1,Total Tourism industry,192,184,4.3,192,184,4.3,195,-1.5,January - January
-2023-02-01,2023,2,Total Tourism industry,195,187,4.3,193,185,4.3,195,-1.0,January - February
-2023-03-01,2023,3,Total Tourism industry,191,190,0.5,192,187,2.7,195,-1.5,January - March
-2023-04-01,2023,4,Total Tourism industry,188,192,-2.1,191,188,1.6,197,-3.0,January - April
+2023-09-01,2023,9,Recreation and entertainment (tourism),29,29,0.0,28,29,-3.4,32,-12.5,January - September
+2023-10-01,2023,10,Recreation and entertainment (tourism),30,29,3.4,29,29,0.0,32,-9.4,January - October
+2023-11-01,2023,11,Recreation and entertainment (tourism),29,28,3.6,29,29,0.0,32,-9.4,January - November
+2023-12-01,2023,12,Recreation and entertainment (tourism),29,28,3.6,29,29,0.0,32,-9.4,January - December
+2023-01-01,2023,1,Total Tourism industry,193,184,4.9,193,184,4.9,195,-1.0,January - January
+2023-02-01,2023,2,Total Tourism industry,195,187,4.3,194,185,4.9,195,-0.5,January - February
+2023-03-01,2023,3,Total Tourism industry,191,190,0.5,193,187,3.2,195,-1.0,January - March
+2023-04-01,2023,4,Total Tourism industry,189,192,-1.6,192,188,2.1,197,-2.5,January - April
 2023-05-01,2023,5,Total Tourism industry,190,195,-2.6,191,189,1.1,198,-3.5,January - May
 2023-06-01,2023,6,Total Tourism industry,191,191,0.0,191,189,1.1,199,-4.0,January - June
 2023-07-01,2023,7,Total Tourism industry,187,195,-4.1,190,190,0.0,199,-4.5,January - July
 2023-08-01,2023,8,Total Tourism industry,188,196,-4.1,190,191,-0.5,200,-5.0,January - August
 2023-09-01,2023,9,Total Tourism industry,189,195,-3.1,190,191,-0.5,200,-5.0,January - September
-2023-10-01,2023,10,Total Tourism industry,193,190,1.6,190,191,-0.5,201,-5.5,January - October
-2023-11-01,2023,11,Total Tourism industry,188,189,-0.5,190,191,-0.5,201,-5.5,January - November
-2023-12-01,2023,12,Total Tourism industry,191,188,1.6,190,191,-0.5,201,-5.5,January - December
-2024-01-01,2024,1,Accommodation (tourism),58,57,1.8,58,57,1.8,60,-3.3,January - January
-2024-02-01,2024,2,Accommodation (tourism),56,57,-1.8,57,57,0.0,59,-3.4,January - February
+2023-10-01,2023,10,Total Tourism industry,192,190,1.1,190,191,-0.5,201,-5.5,January - October
+2023-11-01,2023,11,Total Tourism industry,187,189,-1.1,190,191,-0.5,201,-5.5,January - November
+2023-12-01,2023,12,Total Tourism industry,192,188,2.1,190,191,-0.5,201,-5.5,January - December
+2024-01-01,2024,1,Accommodation (tourism),59,57,3.5,59,57,3.5,60,-1.7,January - January
+2024-02-01,2024,2,Accommodation (tourism),57,57,0.0,58,57,1.8,59,-1.7,January - February
 2024-03-01,2024,3,Accommodation (tourism),57,60,-5.0,57,58,-1.7,60,-5.0,January - March
-2024-04-01,2024,4,Accommodation (tourism),59,56,5.4,57,57,0.0,60,-5.0,January - April
-2024-05-01,2024,5,Accommodation (tourism),58,55,5.5,57,57,0.0,61,-6.6,January - May
-2024-06-01,2024,6,Accommodation (tourism),61,55,10.9,58,56,3.6,62,-6.5,January - June
-2024-07-01,2024,7,Accommodation (tourism),56,56,0.0,57,56,1.8,62,-8.1,January - July
+2024-04-01,2024,4,Accommodation (tourism),59,56,5.4,58,57,1.8,60,-3.3,January - April
+2024-05-01,2024,5,Accommodation (tourism),58,55,5.5,58,57,1.8,61,-4.9,January - May
+2024-06-01,2024,6,Accommodation (tourism),60,55,9.1,58,56,3.6,62,-6.5,January - June
+2024-07-01,2024,7,Accommodation (tourism),56,56,0.0,58,56,3.6,62,-6.5,January - July
 2024-08-01,2024,8,Accommodation (tourism),57,55,3.6,57,56,1.8,62,-8.1,January - August
-2024-09-01,2024,9,Accommodation (tourism),58,55,5.5,57,56,1.8,62,-8.1,January - September
+2024-09-01,2024,9,Accommodation (tourism),57,55,3.6,57,56,1.8,62,-8.1,January - September
 2024-10-01,2024,10,Accommodation (tourism),57,57,0.0,57,56,1.8,62,-8.1,January - October
-2024-11-01,2024,11,Accommodation (tourism),59,55,7.3,57,56,1.8,62,-8.1,January - November
-2024-12-01,2024,12,Accommodation (tourism),59,57,3.5,57,56,1.8,62,-8.1,January - December
+2024-11-01,2024,11,Accommodation (tourism),58,55,5.5,57,56,1.8,62,-8.1,January - November
+2024-12-01,2024,12,Accommodation (tourism),58,57,1.8,57,56,1.8,62,-8.1,January - December
 2024-01-01,2024,1,Air transportation (tourism),13,15,-13.3,13,15,-13.3,16,-18.8,January - January
 2024-02-01,2024,2,Air transportation (tourism),13,15,-13.3,13,15,-13.3,16,-18.8,January - February
 2024-03-01,2024,3,Air transportation (tourism),13,15,-13.3,13,15,-13.3,16,-18.8,January - March
@@ -578,24 +578,29 @@ date,year,month,industry,monthly_total,prev_year_monthly_total,monthly_percentag
 2024-01-01,2024,1,Recreation and entertainment (tourism),29,29,0.0,29,29,0.0,33,-12.1,January - January
 2024-02-01,2024,2,Recreation and entertainment (tourism),28,29,-3.4,28,29,-3.4,33,-15.2,January - February
 2024-03-01,2024,3,Recreation and entertainment (tourism),30,28,7.1,29,28,3.6,33,-12.1,January - March
-2024-04-01,2024,4,Recreation and entertainment (tourism),29,29,0.0,29,28,3.6,32,-9.4,January - April
+2024-04-01,2024,4,Recreation and entertainment (tourism),30,29,3.4,29,28,3.6,32,-9.4,January - April
 2024-05-01,2024,5,Recreation and entertainment (tourism),25,29,-13.8,28,28,0.0,32,-12.5,January - May
 2024-06-01,2024,6,Recreation and entertainment (tourism),27,30,-10.0,28,29,-3.4,32,-12.5,January - June
 2024-07-01,2024,7,Recreation and entertainment (tourism),28,28,0.0,28,28,0.0,32,-12.5,January - July
-2024-08-01,2024,8,Recreation and entertainment (tourism),27,29,-6.9,27,28,-3.6,32,-15.6,January - August
-2024-09-01,2024,9,Recreation and entertainment (tourism),28,28,0.0,27,28,-3.6,32,-15.6,January - September
-2024-10-01,2024,10,Recreation and entertainment (tourism),28,30,-6.7,27,28,-3.6,32,-15.6,January - October
-2024-11-01,2024,11,Recreation and entertainment (tourism),28,29,-3.4,27,28,-3.6,32,-15.6,January - November
-2024-12-01,2024,12,Recreation and entertainment (tourism),31,29,6.9,28,28,0.0,32,-12.5,January - December
-2024-01-01,2024,1,Total Tourism industry,191,192,-0.5,191,192,-0.5,195,-2.1,January - January
-2024-02-01,2024,2,Total Tourism industry,188,195,-3.6,189,193,-2.1,195,-3.1,January - February
-2024-03-01,2024,3,Total Tourism industry,191,191,0.0,190,192,-1.0,195,-2.6,January - March
-2024-04-01,2024,4,Total Tourism industry,196,188,4.3,191,191,0.0,197,-3.0,January - April
+2024-08-01,2024,8,Recreation and entertainment (tourism),27,29,-6.9,28,28,0.0,32,-12.5,January - August
+2024-09-01,2024,9,Recreation and entertainment (tourism),29,29,0.0,28,28,0.0,32,-12.5,January - September
+2024-10-01,2024,10,Recreation and entertainment (tourism),28,30,-6.7,28,29,-3.4,32,-12.5,January - October
+2024-11-01,2024,11,Recreation and entertainment (tourism),27,29,-6.9,28,29,-3.4,32,-12.5,January - November
+2024-12-01,2024,12,Recreation and entertainment (tourism),30,29,3.4,28,29,-3.4,32,-12.5,January - December
+2024-01-01,2024,1,Total Tourism industry,191,193,-1.0,191,193,-1.0,195,-2.1,January - January
+2024-02-01,2024,2,Total Tourism industry,187,195,-4.1,189,194,-2.6,195,-3.1,January - February
+2024-03-01,2024,3,Total Tourism industry,191,191,0.0,189,193,-2.1,195,-3.1,January - March
+2024-04-01,2024,4,Total Tourism industry,196,189,3.7,191,192,-0.5,197,-3.0,January - April
 2024-05-01,2024,5,Total Tourism industry,190,190,0.0,191,191,0.0,198,-3.5,January - May
 2024-06-01,2024,6,Total Tourism industry,192,191,0.5,191,191,0.0,199,-4.0,January - June
 2024-07-01,2024,7,Total Tourism industry,192,187,2.7,191,190,0.5,199,-4.0,January - July
 2024-08-01,2024,8,Total Tourism industry,189,188,0.5,191,190,0.5,200,-4.5,January - August
 2024-09-01,2024,9,Total Tourism industry,191,189,1.1,191,190,0.5,200,-4.5,January - September
-2024-10-01,2024,10,Total Tourism industry,191,193,-1.0,191,190,0.5,201,-5.0,January - October
-2024-11-01,2024,11,Total Tourism industry,191,188,1.6,191,190,0.5,201,-5.0,January - November
-2024-12-01,2024,12,Total Tourism industry,189,191,-1.0,190,190,0.0,201,-5.5,January - December
+2024-10-01,2024,10,Total Tourism industry,191,192,-0.5,191,190,0.5,201,-5.0,January - October
+2024-11-01,2024,11,Total Tourism industry,190,187,1.6,190,190,0.0,201,-5.5,January - November
+2024-12-01,2024,12,Total Tourism industry,188,192,-2.1,190,190,0.0,201,-5.5,January - December
+2025-01-01,2025,1,Accommodation (tourism),57,59,-3.4,57,59,-3.4,60,-5.0,January - January
+2025-01-01,2025,1,Air transportation (tourism),12,13,-7.7,12,13,-7.7,16,-25.0,January - January
+2025-01-01,2025,1,Food and beverage services (tourism),61,66,-7.6,61,66,-7.6,69,-11.6,January - January
+2025-01-01,2025,1,Recreation and entertainment (tourism),30,29,3.4,30,29,3.4,33,-9.1,January - January
+2025-01-01,2025,1,Total Tourism industry,188,191,-1.6,188,191,-1.6,195,-3.6,January - January

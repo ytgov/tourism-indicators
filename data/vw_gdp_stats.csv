@@ -33,6 +33,8 @@ year,measure,sector,value
 2012,GDP,Total,2694.1
 2013,GDP,Total,2734.7
 2014,GDP,Total,2752.5
+2023,GDP,Total,3438.7
+2024,GDP,Total,3326.1
 2015,GDP,Total,2543.4
 2016,GDP,Total,2726.9
 2017,GDP,Total,2781.0
@@ -41,11 +43,10 @@ year,measure,sector,value
 2020,GDP,Total,2875.0
 2021,GDP,Total,3143.9
 2022,GDP,Total,3378.8
-2023,GDP,Total,3438.7
-2024,Spend from LASR,Total,400.2
+2024,Spend from LASR,Total,389.9
 2021,Spend from LASR,Total,163.0
 2022,Spend from LASR,Total,255.7
-2025,Spend from LASR,Total,50.6
+2025,Spend from LASR,Total,81.4
 2019,Spend from LASR,Total,276.0
 2020,Spend from LASR,Total,105.9
 2023,Spend from LASR,Total,320.8
