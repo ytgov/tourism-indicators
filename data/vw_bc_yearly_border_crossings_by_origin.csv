@@ -44,51 +44,6 @@ year,geo,Traveller_characteristics,value
 1982,Beaver Creek,Canadian-resident visitors returning to Canada,9534
 1982,Beaver Creek,Residents of countries other than the United States of America entering Canada,2740
 1982,Beaver Creek,United States of America residents entering Canada,75897
-1977,Beaver Creek,Canadian-resident visitors returning to Canada,4286
-1977,Dawson,United States of America residents entering Canada,479
-1977,Dawson,Residents of countries other than the United States of America entering Canada,0
-1977,Beaver Creek,United States of America residents entering Canada,63047
-1977,Beaver Creek,Residents of countries other than the United States of America entering Canada,232
-1977,Fraser,Canadian-resident visitors returning to Canada,3807
-1977,Dawson,Canadian-resident visitors returning to Canada,53
-1977,Fraser,United States of America residents entering Canada,46526
-1977,Little Gold Creek,United States of America residents entering Canada,9009
-1977,Fraser,Residents of countries other than the United States of America entering Canada,808
-1977,Pleasant Camp,Canadian-resident visitors returning to Canada,5403
-1977,Little Gold Creek,Canadian-resident visitors returning to Canada,2433
-1977,Pleasant Camp,Residents of countries other than the United States of America entering Canada,263
-1977,Whitehorse,Residents of countries other than the United States of America entering Canada,10
-1977,Little Gold Creek,Residents of countries other than the United States of America entering Canada,530
-1977,Old Crow,Canadian-resident visitors returning to Canada,34
-1977,Old Crow,Residents of countries other than the United States of America entering Canada,0
-1977,Old Crow,United States of America residents entering Canada,93
-1977,Pleasant Camp,United States of America residents entering Canada,25433
-1977,Whitehorse,Canadian-resident visitors returning to Canada,1410
-1977,Whitehorse,United States of America residents entering Canada,6528
-1978,Beaver Creek,Residents of countries other than the United States of America entering Canada,207
-1978,Dawson,United States of America residents entering Canada,601
-1978,Beaver Creek,Canadian-resident visitors returning to Canada,9476
-1978,Dawson,Residents of countries other than the United States of America entering Canada,0
-1978,Beaver Creek,United States of America residents entering Canada,79796
-1978,Fraser,Canadian-resident visitors returning to Canada,3968
-1978,Dawson,Canadian-resident visitors returning to Canada,113
-1978,Fraser,Residents of countries other than the United States of America entering Canada,848
-1978,Fraser,United States of America residents entering Canada,37684
-1978,Whitehorse,Residents of countries other than the United States of America entering Canada,318
-1978,Little Gold Creek,Residents of countries other than the United States of America entering Canada,706
-1978,Little Gold Creek,Canadian-resident visitors returning to Canada,3065
-1978,Old Crow,Residents of countries other than the United States of America entering Canada,0
-1978,Little Gold Creek,United States of America residents entering Canada,11343
-1978,Pleasant Camp,Canadian-resident visitors returning to Canada,8161
-1978,Old Crow,Canadian-resident visitors returning to Canada,98
-1978,Pleasant Camp,Residents of countries other than the United States of America entering Canada,234
-1978,Old Crow,United States of America residents entering Canada,122
-1978,Pleasant Camp,United States of America residents entering Canada,32103
-1978,Whitehorse,Canadian-resident visitors returning to Canada,2241
-1978,Whitehorse,United States of America residents entering Canada,8445
-1979,Beaver Creek,Residents of countries other than the United States of America entering Canada,331
-1979,Beaver Creek,Canadian-resident visitors returning to Canada,9540
-1979,Dawson,Residents of countries other than the United States of America entering Canada,19
 1982,Dawson,Canadian-resident visitors returning to Canada,67
 1982,Fraser,United States of America residents entering Canada,38311
 1982,Dawson,Residents of countries other than the United States of America entering Canada,5
@@ -134,231 +89,6 @@ year,geo,Traveller_characteristics,value
 1989,Dawson,United States of America residents entering Canada,2778
 1989,Beaver Creek,Residents of countries other than the United States of America entering Canada,4379
 1989,Fraser,United States of America residents entering Canada,49216
-1979,Dawson,United States of America residents entering Canada,627
-1979,Beaver Creek,United States of America residents entering Canada,73254
-1979,Dawson,Canadian-resident visitors returning to Canada,78
-1979,Fraser,Canadian-resident visitors returning to Canada,18261
-1979,Fraser,Residents of countries other than the United States of America entering Canada,914
-1979,Little Gold Creek,Canadian-resident visitors returning to Canada,2557
-1979,Fraser,United States of America residents entering Canada,54874
-1979,Pleasant Camp,United States of America residents entering Canada,22771
-1979,Pleasant Camp,Residents of countries other than the United States of America entering Canada,133
-1979,Little Gold Creek,United States of America residents entering Canada,8577
-1979,Little Gold Creek,Residents of countries other than the United States of America entering Canada,529
-1979,Whitehorse,Canadian-resident visitors returning to Canada,1943
-1979,Old Crow,Residents of countries other than the United States of America entering Canada,0
-1979,Old Crow,Canadian-resident visitors returning to Canada,94
-1979,Pleasant Camp,Canadian-resident visitors returning to Canada,6498
-1979,Whitehorse,Residents of countries other than the United States of America entering Canada,448
-1979,Old Crow,United States of America residents entering Canada,105
-1979,Whitehorse,United States of America residents entering Canada,8138
-1980,Beaver Creek,Canadian-resident visitors returning to Canada,7507
-1980,Dawson,Residents of countries other than the United States of America entering Canada,101
-1980,Dawson,Canadian-resident visitors returning to Canada,109
-1980,Dawson,United States of America residents entering Canada,656
-1980,Beaver Creek,Residents of countries other than the United States of America entering Canada,1398
-1980,Fraser,Canadian-resident visitors returning to Canada,17012
-1980,Fraser,United States of America residents entering Canada,37772
-1980,Fraser,Residents of countries other than the United States of America entering Canada,1824
-1980,Beaver Creek,United States of America residents entering Canada,55365
-1980,Pleasant Camp,United States of America residents entering Canada,22306
-1980,Little Gold Creek,Residents of countries other than the United States of America entering Canada,840
-1980,Pleasant Camp,Residents of countries other than the United States of America entering Canada,515
-1980,Little Gold Creek,Canadian-resident visitors returning to Canada,3282
-1980,Whitehorse,Canadian-resident visitors returning to Canada,1377
-1980,Old Crow,Canadian-resident visitors returning to Canada,85
-1980,Whitehorse,Residents of countries other than the United States of America entering Canada,554
-1980,Little Gold Creek,United States of America residents entering Canada,8772
-1980,Old Crow,Residents of countries other than the United States of America entering Canada,0
-1980,Old Crow,United States of America residents entering Canada,76
-1980,Pleasant Camp,Canadian-resident visitors returning to Canada,9107
-1980,Whitehorse,United States of America residents entering Canada,6894
-1993,Beaver Creek,United States of America residents entering Canada,104587
-1993,Dawson,Residents of countries other than the United States of America entering Canada,749
-1993,Dawson,Canadian-resident visitors returning to Canada,874
-1993,Beaver Creek,Canadian-resident visitors returning to Canada,16055
-1993,Dawson,United States of America residents entering Canada,3512
-1993,Beaver Creek,Residents of countries other than the United States of America entering Canada,7462
-1993,Fraser,Canadian-resident visitors returning to Canada,35357
-1993,Little Gold Creek,United States of America residents entering Canada,12684
-1993,Fraser,Residents of countries other than the United States of America entering Canada,8408
-1993,Old Crow,United States of America residents entering Canada,135
-1993,Fraser,United States of America residents entering Canada,61967
-1993,Pleasant Camp,Residents of countries other than the United States of America entering Canada,2863
-1993,Whitehorse,Residents of countries other than the United States of America entering Canada,176
-1993,Little Gold Creek,Canadian-resident visitors returning to Canada,4328
-1993,Little Gold Creek,Residents of countries other than the United States of America entering Canada,3453
-1993,Old Crow,Canadian-resident visitors returning to Canada,139
-1993,Old Crow,Residents of countries other than the United States of America entering Canada,0
-1993,Pleasant Camp,Canadian-resident visitors returning to Canada,11904
-1993,Pleasant Camp,United States of America residents entering Canada,33497
-1993,Whitehorse,Canadian-resident visitors returning to Canada,1188
-1993,Whitehorse,United States of America residents entering Canada,2240
-1994,Beaver Creek,Residents of countries other than the United States of America entering Canada,6779
-1994,Dawson,United States of America residents entering Canada,2986
-1994,Beaver Creek,Canadian-resident visitors returning to Canada,12956
-1994,Dawson,Residents of countries other than the United States of America entering Canada,547
-1994,Beaver Creek,United States of America residents entering Canada,97325
-1994,Fraser,Canadian-resident visitors returning to Canada,35939
-1994,Dawson,Canadian-resident visitors returning to Canada,586
-1994,Fraser,Residents of countries other than the United States of America entering Canada,8618
-1994,Fraser,United States of America residents entering Canada,71834
-1994,Whitehorse,Residents of countries other than the United States of America entering Canada,154
-1994,Little Gold Creek,United States of America residents entering Canada,16314
-1994,Little Gold Creek,Canadian-resident visitors returning to Canada,4712
-1994,Old Crow,Residents of countries other than the United States of America entering Canada,2
-1994,Little Gold Creek,Residents of countries other than the United States of America entering Canada,4949
-1994,Pleasant Camp,Canadian-resident visitors returning to Canada,11849
-1994,Old Crow,Canadian-resident visitors returning to Canada,123
-1994,Pleasant Camp,Residents of countries other than the United States of America entering Canada,3533
-1994,Old Crow,United States of America residents entering Canada,195
-1994,Pleasant Camp,United States of America residents entering Canada,30966
-1994,Whitehorse,Canadian-resident visitors returning to Canada,1246
-1994,Whitehorse,United States of America residents entering Canada,2399
-1995,Beaver Creek,Residents of countries other than the United States of America entering Canada,7011
-1995,Beaver Creek,Canadian-resident visitors returning to Canada,12481
-1995,Fraser,Canadian-resident visitors returning to Canada,38875
-1995,Dawson,Residents of countries other than the United States of America entering Canada,580
-1995,Beaver Creek,United States of America residents entering Canada,102646
-1995,Dawson,Canadian-resident visitors returning to Canada,225
-1995,Fraser,Residents of countries other than the United States of America entering Canada,9508
-1995,Dawson,United States of America residents entering Canada,3245
-1995,Little Gold Creek,Canadian-resident visitors returning to Canada,4090
-1972,Dawson,Residents of countries other than the United States of America entering Canada,0
-1972,Dawson,Canadian-resident visitors returning to Canada,1
-1972,Dawson,United States of America residents entering Canada,172
-1972,Beaver Creek,Canadian-resident visitors returning to Canada,4969
-1972,Fraser,Canadian-resident visitors returning to Canada,2687
-1972,Fraser,United States of America residents entering Canada,25829
-1972,Fraser,Residents of countries other than the United States of America entering Canada,299
-1972,Beaver Creek,Residents of countries other than the United States of America entering Canada,206
-1972,Pleasant Camp,United States of America residents entering Canada,22706
-1972,Little Gold Creek,Canadian-resident visitors returning to Canada,1823
-1972,Pleasant Camp,Residents of countries other than the United States of America entering Canada,44
-1972,Beaver Creek,United States of America residents entering Canada,69057
-1972,Whitehorse,Canadian-resident visitors returning to Canada,1143
-1972,Little Gold Creek,Residents of countries other than the United States of America entering Canada,101
-1972,Whitehorse,Residents of countries other than the United States of America entering Canada,47
-1972,Little Gold Creek,United States of America residents entering Canada,8034
-1972,Old Crow,Canadian-resident visitors returning to Canada,48
-1972,Old Crow,United States of America residents entering Canada,115
-1972,Old Crow,Residents of countries other than the United States of America entering Canada,0
-1972,Pleasant Camp,Canadian-resident visitors returning to Canada,4943
-1972,Whitehorse,United States of America residents entering Canada,6073
-1985,Dawson,United States of America residents entering Canada,2907
-1985,Dawson,Residents of countries other than the United States of America entering Canada,134
-1985,Beaver Creek,United States of America residents entering Canada,113939
-1985,Beaver Creek,Canadian-resident visitors returning to Canada,9641
-1985,Fraser,Residents of countries other than the United States of America entering Canada,2160
-1985,Beaver Creek,Residents of countries other than the United States of America entering Canada,2269
-1985,Dawson,Canadian-resident visitors returning to Canada,747
-1985,Little Gold Creek,United States of America residents entering Canada,9874
-1985,Whitehorse,Residents of countries other than the United States of America entering Canada,84
-1985,Old Crow,United States of America residents entering Canada,143
-1985,Fraser,Canadian-resident visitors returning to Canada,23975
-1985,Pleasant Camp,Residents of countries other than the United States of America entering Canada,564
-1985,Fraser,United States of America residents entering Canada,54884
-1985,Little Gold Creek,Canadian-resident visitors returning to Canada,3742
-1985,Little Gold Creek,Residents of countries other than the United States of America entering Canada,443
-1985,Old Crow,Canadian-resident visitors returning to Canada,112
-1985,Old Crow,Residents of countries other than the United States of America entering Canada,0
-1985,Pleasant Camp,Canadian-resident visitors returning to Canada,7060
-1985,Pleasant Camp,United States of America residents entering Canada,24988
-1985,Whitehorse,Canadian-resident visitors returning to Canada,1306
-1985,Whitehorse,United States of America residents entering Canada,6004
-1986,Beaver Creek,Residents of countries other than the United States of America entering Canada,2746
-1986,Dawson,United States of America residents entering Canada,2668
-1986,Beaver Creek,Canadian-resident visitors returning to Canada,8259
-1986,Dawson,Residents of countries other than the United States of America entering Canada,137
-1986,Beaver Creek,United States of America residents entering Canada,119935
-1986,Fraser,Canadian-resident visitors returning to Canada,32503
-1986,Dawson,Canadian-resident visitors returning to Canada,568
-1986,Fraser,Residents of countries other than the United States of America entering Canada,3442
-1986,Fraser,United States of America residents entering Canada,62367
-1986,Whitehorse,Residents of countries other than the United States of America entering Canada,141
-1986,Old Crow,Residents of countries other than the United States of America entering Canada,0
-1986,Little Gold Creek,Canadian-resident visitors returning to Canada,2623
-1986,Pleasant Camp,Canadian-resident visitors returning to Canada,7169
-1986,Little Gold Creek,Residents of countries other than the United States of America entering Canada,1325
-1986,Pleasant Camp,Residents of countries other than the United States of America entering Canada,719
-1986,Little Gold Creek,United States of America residents entering Canada,12355
-1986,Old Crow,Canadian-resident visitors returning to Canada,140
-1986,Old Crow,United States of America residents entering Canada,161
-1986,Pleasant Camp,United States of America residents entering Canada,24333
-1986,Whitehorse,Canadian-resident visitors returning to Canada,914
-1986,Whitehorse,United States of America residents entering Canada,4885
-1987,Beaver Creek,Residents of countries other than the United States of America entering Canada,3047
-1987,Beaver Creek,Canadian-resident visitors returning to Canada,10664
-1987,Dawson,Residents of countries other than the United States of America entering Canada,107
-1987,Dawson,United States of America residents entering Canada,1288
-1987,Beaver Creek,United States of America residents entering Canada,114628
-1987,Dawson,Canadian-resident visitors returning to Canada,285
-1987,Fraser,Canadian-resident visitors returning to Canada,35436
-1987,Fraser,Residents of countries other than the United States of America entering Canada,4051
-1987,Little Gold Creek,Canadian-resident visitors returning to Canada,4558
-1987,Fraser,United States of America residents entering Canada,64122
-1987,Pleasant Camp,United States of America residents entering Canada,24472
-1987,Little Gold Creek,Residents of countries other than the United States of America entering Canada,1902
-1987,Little Gold Creek,United States of America residents entering Canada,13893
-1987,Old Crow,Residents of countries other than the United States of America entering Canada,5
-1987,Whitehorse,Canadian-resident visitors returning to Canada,1099
-1987,Pleasant Camp,Canadian-resident visitors returning to Canada,7744
-1987,Old Crow,Canadian-resident visitors returning to Canada,96
-1987,Pleasant Camp,Residents of countries other than the United States of America entering Canada,874
-1987,Whitehorse,Residents of countries other than the United States of America entering Canada,77
-1987,Old Crow,United States of America residents entering Canada,197
-1987,Whitehorse,United States of America residents entering Canada,3324
-1988,Beaver Creek,Canadian-resident visitors returning to Canada,10542
-1988,Dawson,Residents of countries other than the United States of America entering Canada,175
-1988,Dawson,Canadian-resident visitors returning to Canada,491
-1988,Dawson,United States of America residents entering Canada,2625
-1988,Beaver Creek,Residents of countries other than the United States of America entering Canada,3736
-1988,Fraser,Canadian-resident visitors returning to Canada,32836
-1988,Fraser,United States of America residents entering Canada,50228
-1988,Fraser,Residents of countries other than the United States of America entering Canada,4562
-1988,Beaver Creek,United States of America residents entering Canada,105660
-1988,Pleasant Camp,United States of America residents entering Canada,26802
-1988,Little Gold Creek,Residents of countries other than the United States of America entering Canada,2250
-1988,Pleasant Camp,Residents of countries other than the United States of America entering Canada,1019
-1988,Little Gold Creek,Canadian-resident visitors returning to Canada,4295
-1988,Whitehorse,Canadian-resident visitors returning to Canada,1483
-1988,Old Crow,Residents of countries other than the United States of America entering Canada,0
-1988,Whitehorse,Residents of countries other than the United States of America entering Canada,92
-1988,Little Gold Creek,United States of America residents entering Canada,14847
-1988,Pleasant Camp,Canadian-resident visitors returning to Canada,8504
-1988,Old Crow,Canadian-resident visitors returning to Canada,134
-1988,Whitehorse,United States of America residents entering Canada,3093
-1988,Old Crow,United States of America residents entering Canada,185
-2002,Dawson,Residents of countries other than the United States of America entering Canada,438
-2002,Beaver Creek,Canadian-resident visitors returning to Canada,12908
-2002,Dawson,United States of America residents entering Canada,6055
-2002,Beaver Creek,United States of America residents entering Canada,90839
-2002,Fraser,Canadian-resident visitors returning to Canada,36010
-2002,Beaver Creek,Residents of countries other than the United States of America entering Canada,5345
-2002,Fraser,Residents of countries other than the United States of America entering Canada,10018
-2002,Fraser,United States of America residents entering Canada,131364
-2002,Whitehorse,Residents of countries other than the United States of America entering Canada,3891
-2002,Dawson,Canadian-resident visitors returning to Canada,1248
-2002,Little Gold Creek,Canadian-resident visitors returning to Canada,3051
-2002,Little Gold Creek,United States of America residents entering Canada,13408
-2002,Little Gold Creek,Residents of countries other than the United States of America entering Canada,3918
-2002,Pleasant Camp,Residents of countries other than the United States of America entering Canada,2844
-2002,Old Crow,Canadian-resident visitors returning to Canada,28
-2002,Old Crow,Residents of countries other than the United States of America entering Canada,4
-2002,Old Crow,United States of America residents entering Canada,166
-2002,Pleasant Camp,Canadian-resident visitors returning to Canada,10720
-2002,Pleasant Camp,United States of America residents entering Canada,32243
-2002,Whitehorse,Canadian-resident visitors returning to Canada,1194
-2002,Whitehorse,United States of America residents entering Canada,2595
-2003,Beaver Creek,Residents of countries other than the United States of America entering Canada,5408
-2003,Beaver Creek,Canadian-resident visitors returning to Canada,12443
-2003,Dawson,United States of America residents entering Canada,6336
-2003,Dawson,Residents of countries other than the United States of America entering Canada,557
-2003,Beaver Creek,United States of America residents entering Canada,84484
-2003,Dawson,Canadian-resident visitors returning to Canada,1412
-2003,Fraser,Canadian-resident visitors returning to Canada,38684
-2003,Little Gold Creek,Residents of countries other than the United States of America entering Canada,4151
-2003,Fraser,United States of America residents entering Canada,142242
 1989,Fraser,Canadian-resident visitors returning to Canada,34091
 1989,Fraser,Residents of countries other than the United States of America entering Canada,4394
 1989,Beaver Creek,United States of America residents entering Canada,99286
@@ -449,6 +179,51 @@ year,geo,Traveller_characteristics,value
 2007,Little Gold Creek,Canadian-resident visitors returning to Canada,2902
 2007,Pleasant Camp,United States of America residents entering Canada,23683
 2007,Fraser,Canadian-resident visitors returning to Canada,35269
+1972,Dawson,Residents of countries other than the United States of America entering Canada,0
+1972,Dawson,Canadian-resident visitors returning to Canada,1
+1972,Dawson,United States of America residents entering Canada,172
+1972,Beaver Creek,Canadian-resident visitors returning to Canada,4969
+1972,Fraser,Canadian-resident visitors returning to Canada,2687
+1972,Fraser,United States of America residents entering Canada,25829
+1972,Fraser,Residents of countries other than the United States of America entering Canada,299
+1972,Beaver Creek,Residents of countries other than the United States of America entering Canada,206
+1972,Pleasant Camp,United States of America residents entering Canada,22706
+1972,Little Gold Creek,Canadian-resident visitors returning to Canada,1823
+1972,Pleasant Camp,Residents of countries other than the United States of America entering Canada,44
+1972,Beaver Creek,United States of America residents entering Canada,69057
+1972,Whitehorse,Canadian-resident visitors returning to Canada,1143
+1972,Little Gold Creek,Residents of countries other than the United States of America entering Canada,101
+1972,Whitehorse,Residents of countries other than the United States of America entering Canada,47
+1972,Little Gold Creek,United States of America residents entering Canada,8034
+1972,Old Crow,Canadian-resident visitors returning to Canada,48
+1972,Old Crow,United States of America residents entering Canada,115
+1972,Old Crow,Residents of countries other than the United States of America entering Canada,0
+1972,Pleasant Camp,Canadian-resident visitors returning to Canada,4943
+1972,Whitehorse,United States of America residents entering Canada,6073
+1985,Dawson,United States of America residents entering Canada,2907
+1985,Dawson,Residents of countries other than the United States of America entering Canada,134
+1985,Beaver Creek,United States of America residents entering Canada,113939
+1985,Beaver Creek,Canadian-resident visitors returning to Canada,9641
+1985,Fraser,Residents of countries other than the United States of America entering Canada,2160
+1985,Beaver Creek,Residents of countries other than the United States of America entering Canada,2269
+1985,Dawson,Canadian-resident visitors returning to Canada,747
+1985,Little Gold Creek,United States of America residents entering Canada,9874
+1985,Whitehorse,Residents of countries other than the United States of America entering Canada,84
+1985,Old Crow,United States of America residents entering Canada,143
+1985,Fraser,Canadian-resident visitors returning to Canada,23975
+1985,Pleasant Camp,Residents of countries other than the United States of America entering Canada,564
+1985,Fraser,United States of America residents entering Canada,54884
+1985,Little Gold Creek,Canadian-resident visitors returning to Canada,3742
+1985,Little Gold Creek,Residents of countries other than the United States of America entering Canada,443
+1985,Old Crow,Canadian-resident visitors returning to Canada,112
+1985,Old Crow,Residents of countries other than the United States of America entering Canada,0
+1985,Pleasant Camp,Canadian-resident visitors returning to Canada,7060
+1985,Pleasant Camp,United States of America residents entering Canada,24988
+1985,Whitehorse,Canadian-resident visitors returning to Canada,1306
+1985,Whitehorse,United States of America residents entering Canada,6004
+1986,Beaver Creek,Residents of countries other than the United States of America entering Canada,2746
+1986,Dawson,United States of America residents entering Canada,2668
+1986,Beaver Creek,Canadian-resident visitors returning to Canada,8259
 2007,Whitehorse,Canadian-resident visitors returning to Canada,972
 2007,Little Gold Creek,Residents of countries other than the United States of America entering Canada,3848
 2007,Fraser,Residents of countries other than the United States of America entering Canada,17409
@@ -494,51 +269,6 @@ year,geo,Traveller_characteristics,value
 2014,Little Gold Creek,United States of America residents entering Canada,5703
 2014,Whitehorse,Canadian-resident visitors returning to Canada,1243
 2014,Little Gold Creek,Residents of countries other than the United States of America entering Canada,4328
-1995,Fraser,United States of America residents entering Canada,76379
-1995,Pleasant Camp,United States of America residents entering Canada,31067
-1995,Little Gold Creek,Residents of countries other than the United States of America entering Canada,4679
-1995,Little Gold Creek,United States of America residents entering Canada,15613
-1995,Old Crow,Residents of countries other than the United States of America entering Canada,4
-1995,Whitehorse,Canadian-resident visitors returning to Canada,1191
-1995,Pleasant Camp,Canadian-resident visitors returning to Canada,11354
-1995,Old Crow,Canadian-resident visitors returning to Canada,86
-1995,Pleasant Camp,Residents of countries other than the United States of America entering Canada,3814
-1995,Whitehorse,Residents of countries other than the United States of America entering Canada,217
-1995,Old Crow,United States of America residents entering Canada,137
-1995,Whitehorse,United States of America residents entering Canada,2388
-1996,Beaver Creek,Residents of countries other than the United States of America entering Canada,6770
-1996,Dawson,Residents of countries other than the United States of America entering Canada,387
-1996,Beaver Creek,Canadian-resident visitors returning to Canada,11784
-1996,Dawson,United States of America residents entering Canada,4031
-1996,Beaver Creek,United States of America residents entering Canada,91460
-1996,Fraser,Canadian-resident visitors returning to Canada,41488
-1996,Dawson,Canadian-resident visitors returning to Canada,340
-1996,Fraser,Residents of countries other than the United States of America entering Canada,10052
-1996,Little Gold Creek,Canadian-resident visitors returning to Canada,4084
-1996,Pleasant Camp,United States of America residents entering Canada,28593
-1996,Fraser,United States of America residents entering Canada,77812
-1996,Pleasant Camp,Residents of countries other than the United States of America entering Canada,3923
-1996,Little Gold Creek,United States of America residents entering Canada,15127
-1996,Whitehorse,Canadian-resident visitors returning to Canada,1838
-1996,Little Gold Creek,Residents of countries other than the United States of America entering Canada,7159
-1996,Whitehorse,Residents of countries other than the United States of America entering Canada,253
-1996,Old Crow,Canadian-resident visitors returning to Canada,249
-1996,Old Crow,Residents of countries other than the United States of America entering Canada,3
-1996,Old Crow,United States of America residents entering Canada,414
-1996,Pleasant Camp,Canadian-resident visitors returning to Canada,11359
-1996,Whitehorse,United States of America residents entering Canada,1971
-1997,Beaver Creek,Canadian-resident visitors returning to Canada,11497
-1997,Dawson,United States of America residents entering Canada,4606
-1997,Dawson,Residents of countries other than the United States of America entering Canada,154
-1997,Dawson,Canadian-resident visitors returning to Canada,646
-1997,Beaver Creek,Residents of countries other than the United States of America entering Canada,6856
-1997,Fraser,Residents of countries other than the United States of America entering Canada,11902
-1997,Fraser,Canadian-resident visitors returning to Canada,42717
-1997,Fraser,United States of America residents entering Canada,92921
-1997,Beaver Creek,United States of America residents entering Canada,89758
-1997,Pleasant Camp,Residents of countries other than the United States of America entering Canada,3400
-1997,Pleasant Camp,United States of America residents entering Canada,29471
-1997,Little Gold Creek,Canadian-resident visitors returning to Canada,3708
 2014,Whitehorse,Residents of countries other than the United States of America entering Canada,3436
 2014,Old Crow,United States of America residents entering Canada,15
 2014,Old Crow,Canadian-resident visitors returning to Canada,3
@@ -584,97 +314,51 @@ year,geo,Traveller_characteristics,value
 2018,Old Crow,Canadian-resident visitors returning to Canada,0
 2018,Old Crow,Residents of countries other than the United States of America entering Canada,0
 2018,Pleasant Camp,Canadian-resident visitors returning to Canada,14504
-1997,Little Gold Creek,United States of America residents entering Canada,12423
-1997,Whitehorse,Residents of countries other than the United States of America entering Canada,384
-1997,Whitehorse,Canadian-resident visitors returning to Canada,1328
-1997,Little Gold Creek,Residents of countries other than the United States of America entering Canada,5386
-1997,Old Crow,United States of America residents entering Canada,270
-1997,Old Crow,Canadian-resident visitors returning to Canada,139
-1997,Old Crow,Residents of countries other than the United States of America entering Canada,1
-1997,Pleasant Camp,Canadian-resident visitors returning to Canada,9698
-1997,Whitehorse,United States of America residents entering Canada,3112
-2010,Beaver Creek,United States of America residents entering Canada,67536
-2010,Dawson,Canadian-resident visitors returning to Canada,633
-2010,Dawson,Residents of countries other than the United States of America entering Canada,563
-2010,Beaver Creek,Canadian-resident visitors returning to Canada,10834
-2010,Dawson,United States of America residents entering Canada,2758
-2010,Fraser,Canadian-resident visitors returning to Canada,45956
-2010,Fraser,Residents of countries other than the United States of America entering Canada,20521
-2010,Beaver Creek,Residents of countries other than the United States of America entering Canada,5313
-2010,Whitehorse,Residents of countries other than the United States of America entering Canada,4392
-2010,Fraser,United States of America residents entering Canada,200479
-2010,Little Gold Creek,United States of America residents entering Canada,5218
-2010,Little Gold Creek,Canadian-resident visitors returning to Canada,1899
-2010,Old Crow,United States of America residents entering Canada,10
-2010,Little Gold Creek,Residents of countries other than the United States of America entering Canada,2991
-2010,Pleasant Camp,Residents of countries other than the United States of America entering Canada,2859
-2010,Old Crow,Canadian-resident visitors returning to Canada,13
-2010,Old Crow,Residents of countries other than the United States of America entering Canada,0
-2010,Pleasant Camp,Canadian-resident visitors returning to Canada,8643
-2010,Pleasant Camp,United States of America residents entering Canada,16355
-2010,Whitehorse,Canadian-resident visitors returning to Canada,979
-2010,Whitehorse,United States of America residents entering Canada,1122
-2011,Beaver Creek,Residents of countries other than the United States of America entering Canada,4405
-2011,Beaver Creek,Canadian-resident visitors returning to Canada,10458
-2011,Dawson,United States of America residents entering Canada,202
-2011,Dawson,Residents of countries other than the United States of America entering Canada,61
-2011,Beaver Creek,United States of America residents entering Canada,54735
-2011,Dawson,Canadian-resident visitors returning to Canada,152
-2011,Fraser,Canadian-resident visitors returning to Canada,48010
-2011,Old Crow,Residents of countries other than the United States of America entering Canada,0
-2011,Fraser,United States of America residents entering Canada,201035
-2011,Pleasant Camp,Canadian-resident visitors returning to Canada,8786
-2011,Fraser,Residents of countries other than the United States of America entering Canada,20905
-2011,Pleasant Camp,Residents of countries other than the United States of America entering Canada,3113
-2011,Little Gold Creek,Canadian-resident visitors returning to Canada,3098
-2011,Whitehorse,Residents of countries other than the United States of America entering Canada,4274
-2011,Little Gold Creek,Residents of countries other than the United States of America entering Canada,4870
-2011,Little Gold Creek,United States of America residents entering Canada,11252
-2011,Old Crow,Canadian-resident visitors returning to Canada,0
-2011,Old Crow,United States of America residents entering Canada,6
-2011,Pleasant Camp,United States of America residents entering Canada,15949
-2011,Whitehorse,Canadian-resident visitors returning to Canada,1148
-2011,Whitehorse,United States of America residents entering Canada,626
-2012,Beaver Creek,Residents of countries other than the United States of America entering Canada,3774
-2012,Fraser,Canadian-resident visitors returning to Canada,50037
-2012,Beaver Creek,Canadian-resident visitors returning to Canada,9465
-2012,Dawson,Residents of countries other than the United States of America entering Canada,31
-2012,Beaver Creek,United States of America residents entering Canada,54655
-2012,Fraser,Residents of countries other than the United States of America entering Canada,24497
-2012,Dawson,Canadian-resident visitors returning to Canada,129
-2012,Dawson,United States of America residents entering Canada,179
-2012,Little Gold Creek,Canadian-resident visitors returning to Canada,2309
-2012,Pleasant Camp,United States of America residents entering Canada,14752
-2012,Fraser,United States of America residents entering Canada,211917
-2012,Whitehorse,Canadian-resident visitors returning to Canada,861
-2012,Little Gold Creek,United States of America residents entering Canada,7710
-2012,Whitehorse,Residents of countries other than the United States of America entering Canada,3561
-2012,Little Gold Creek,Residents of countries other than the United States of America entering Canada,3164
-2012,Old Crow,Canadian-resident visitors returning to Canada,0
-2012,Old Crow,Residents of countries other than the United States of America entering Canada,0
-2012,Old Crow,United States of America residents entering Canada,9
-2012,Pleasant Camp,Canadian-resident visitors returning to Canada,9247
-2012,Whitehorse,United States of America residents entering Canada,731
-2012,Pleasant Camp,Residents of countries other than the United States of America entering Canada,2670
-2013,Beaver Creek,Canadian-resident visitors returning to Canada,9076
-2013,Dawson,United States of America residents entering Canada,124
-2013,Dawson,Residents of countries other than the United States of America entering Canada,26
-2013,Dawson,Canadian-resident visitors returning to Canada,76
-2013,Beaver Creek,Residents of countries other than the United States of America entering Canada,3861
-2013,Fraser,Residents of countries other than the United States of America entering Canada,26324
-2013,Fraser,Canadian-resident visitors returning to Canada,54929
-2013,Fraser,United States of America residents entering Canada,235584
-2013,Beaver Creek,United States of America residents entering Canada,54951
-2013,Pleasant Camp,Residents of countries other than the United States of America entering Canada,2580
-2013,Pleasant Camp,United States of America residents entering Canada,14047
-2013,Little Gold Creek,Residents of countries other than the United States of America entering Canada,4503
-2013,Little Gold Creek,Canadian-resident visitors returning to Canada,3989
-2013,Old Crow,Residents of countries other than the United States of America entering Canada,6
-2013,Whitehorse,Canadian-resident visitors returning to Canada,737
-2013,Pleasant Camp,Canadian-resident visitors returning to Canada,9515
-2013,Little Gold Creek,United States of America residents entering Canada,10728
-2013,Whitehorse,United States of America residents entering Canada,589
-2013,Whitehorse,Residents of countries other than the United States of America entering Canada,3441
+1986,Dawson,Residents of countries other than the United States of America entering Canada,137
+1986,Beaver Creek,United States of America residents entering Canada,119935
+1986,Fraser,Canadian-resident visitors returning to Canada,32503
+1986,Dawson,Canadian-resident visitors returning to Canada,568
+1986,Fraser,Residents of countries other than the United States of America entering Canada,3442
+1986,Fraser,United States of America residents entering Canada,62367
+1986,Whitehorse,Residents of countries other than the United States of America entering Canada,141
+1986,Old Crow,Residents of countries other than the United States of America entering Canada,0
+1986,Little Gold Creek,Canadian-resident visitors returning to Canada,2623
+1986,Pleasant Camp,Canadian-resident visitors returning to Canada,7169
+1986,Little Gold Creek,Residents of countries other than the United States of America entering Canada,1325
+1986,Pleasant Camp,Residents of countries other than the United States of America entering Canada,719
+1986,Little Gold Creek,United States of America residents entering Canada,12355
+1986,Old Crow,Canadian-resident visitors returning to Canada,140
+1986,Old Crow,United States of America residents entering Canada,161
+1986,Pleasant Camp,United States of America residents entering Canada,24333
+1986,Whitehorse,Canadian-resident visitors returning to Canada,914
+1986,Whitehorse,United States of America residents entering Canada,4885
+1987,Beaver Creek,Residents of countries other than the United States of America entering Canada,3047
+1987,Beaver Creek,Canadian-resident visitors returning to Canada,10664
+1987,Dawson,Residents of countries other than the United States of America entering Canada,107
+1987,Dawson,United States of America residents entering Canada,1288
+1987,Beaver Creek,United States of America residents entering Canada,114628
+1987,Dawson,Canadian-resident visitors returning to Canada,285
+1987,Fraser,Canadian-resident visitors returning to Canada,35436
+1987,Fraser,Residents of countries other than the United States of America entering Canada,4051
+1987,Little Gold Creek,Canadian-resident visitors returning to Canada,4558
+1987,Fraser,United States of America residents entering Canada,64122
+1987,Pleasant Camp,United States of America residents entering Canada,24472
+1987,Little Gold Creek,Residents of countries other than the United States of America entering Canada,1902
+1987,Little Gold Creek,United States of America residents entering Canada,13893
+1987,Old Crow,Residents of countries other than the United States of America entering Canada,5
+1987,Whitehorse,Canadian-resident visitors returning to Canada,1099
+1987,Pleasant Camp,Canadian-resident visitors returning to Canada,7744
+1987,Old Crow,Canadian-resident visitors returning to Canada,96
+1987,Pleasant Camp,Residents of countries other than the United States of America entering Canada,874
+1987,Whitehorse,Residents of countries other than the United States of America entering Canada,77
+1987,Old Crow,United States of America residents entering Canada,197
+1987,Whitehorse,United States of America residents entering Canada,3324
+1988,Beaver Creek,Canadian-resident visitors returning to Canada,10542
+1988,Dawson,Residents of countries other than the United States of America entering Canada,175
+1988,Dawson,Canadian-resident visitors returning to Canada,491
+1988,Dawson,United States of America residents entering Canada,2625
+1988,Beaver Creek,Residents of countries other than the United States of America entering Canada,3736
+1988,Fraser,Canadian-resident visitors returning to Canada,32836
 2018,Pleasant Camp,United States of America residents entering Canada,19641
 2018,Whitehorse,Canadian-resident visitors returning to Canada,608
 2018,Whitehorse,United States of America residents entering Canada,614
@@ -699,53 +383,51 @@ year,geo,Traveller_characteristics,value
 2023,Pleasant Camp,Residents of countries other than the United States of America entering Canada,2332
 2023,Whitehorse,United States of America residents entering Canada,583
 2023,Whitehorse,Residents of countries other than the United States of America entering Canada,2213
-2013,Old Crow,Canadian-resident visitors returning to Canada,6
-2013,Old Crow,United States of America residents entering Canada,10
-1974,Beaver Creek,Residents of countries other than the United States of America entering Canada,449
-1974,Beaver Creek,United States of America residents entering Canada,64095
-1974,Dawson,Canadian-resident visitors returning to Canada,13
-1974,Beaver Creek,Canadian-resident visitors returning to Canada,6200
-1974,Dawson,Residents of countries other than the United States of America entering Canada,0
-1974,Dawson,United States of America residents entering Canada,245
-1974,Fraser,Canadian-resident visitors returning to Canada,2547
-1974,Little Gold Creek,Canadian-resident visitors returning to Canada,2581
-1974,Little Gold Creek,United States of America residents entering Canada,7025
-1974,Old Crow,Canadian-resident visitors returning to Canada,16
-1974,Fraser,Residents of countries other than the United States of America entering Canada,362
-1974,Whitehorse,United States of America residents entering Canada,6846
-1974,Old Crow,United States of America residents entering Canada,87
-1974,Fraser,United States of America residents entering Canada,34800
-1974,Pleasant Camp,United States of America residents entering Canada,31789
-1974,Little Gold Creek,Residents of countries other than the United States of America entering Canada,247
-1974,Old Crow,Residents of countries other than the United States of America entering Canada,0
-1974,Pleasant Camp,Canadian-resident visitors returning to Canada,5994
-1974,Pleasant Camp,Residents of countries other than the United States of America entering Canada,168
-1974,Whitehorse,Canadian-resident visitors returning to Canada,1543
-1974,Whitehorse,Residents of countries other than the United States of America entering Canada,0
-1976,Dawson,Residents of countries other than the United States of America entering Canada,0
-1976,Beaver Creek,Canadian-resident visitors returning to Canada,4420
-1976,Beaver Creek,United States of America residents entering Canada,72905
-1976,Dawson,Canadian-resident visitors returning to Canada,32
-1976,Dawson,United States of America residents entering Canada,469
-1976,Beaver Creek,Residents of countries other than the United States of America entering Canada,552
-1976,Fraser,Residents of countries other than the United States of America entering Canada,780
-1976,Fraser,Canadian-resident visitors returning to Canada,3110
-1976,Little Gold Creek,Canadian-resident visitors returning to Canada,2765
-1976,Little Gold Creek,United States of America residents entering Canada,9023
-1976,Whitehorse,Residents of countries other than the United States of America entering Canada,0
-1976,Fraser,United States of America residents entering Canada,41686
-1976,Old Crow,United States of America residents entering Canada,32
-1976,Little Gold Creek,Residents of countries other than the United States of America entering Canada,412
-1976,Pleasant Camp,Residents of countries other than the United States of America entering Canada,198
-1976,Old Crow,Canadian-resident visitors returning to Canada,51
-1976,Old Crow,Residents of countries other than the United States of America entering Canada,0
-1976,Pleasant Camp,Canadian-resident visitors returning to Canada,6022
-1976,Pleasant Camp,United States of America residents entering Canada,29247
-1976,Whitehorse,Canadian-resident visitors returning to Canada,1818
-1976,Whitehorse,United States of America residents entering Canada,8393
-1981,Beaver Creek,Canadian-resident visitors returning to Canada,9887
-1981,Beaver Creek,United States of America residents entering Canada,71592
-1981,Dawson,Residents of countries other than the United States of America entering Canada,0
+1988,Fraser,United States of America residents entering Canada,50228
+1988,Fraser,Residents of countries other than the United States of America entering Canada,4562
+1988,Beaver Creek,United States of America residents entering Canada,105660
+1988,Pleasant Camp,United States of America residents entering Canada,26802
+1988,Little Gold Creek,Residents of countries other than the United States of America entering Canada,2250
+1988,Pleasant Camp,Residents of countries other than the United States of America entering Canada,1019
+1988,Little Gold Creek,Canadian-resident visitors returning to Canada,4295
+1988,Whitehorse,Canadian-resident visitors returning to Canada,1483
+1988,Old Crow,Residents of countries other than the United States of America entering Canada,0
+1988,Whitehorse,Residents of countries other than the United States of America entering Canada,92
+1988,Little Gold Creek,United States of America residents entering Canada,14847
+1988,Pleasant Camp,Canadian-resident visitors returning to Canada,8504
+1988,Old Crow,Canadian-resident visitors returning to Canada,134
+1988,Whitehorse,United States of America residents entering Canada,3093
+1988,Old Crow,United States of America residents entering Canada,185
+2002,Dawson,Residents of countries other than the United States of America entering Canada,438
+2002,Beaver Creek,Canadian-resident visitors returning to Canada,12908
+2002,Dawson,United States of America residents entering Canada,6055
+2002,Beaver Creek,United States of America residents entering Canada,90839
+2002,Fraser,Canadian-resident visitors returning to Canada,36010
+2002,Beaver Creek,Residents of countries other than the United States of America entering Canada,5345
+2002,Fraser,Residents of countries other than the United States of America entering Canada,10018
+2002,Fraser,United States of America residents entering Canada,131364
+2002,Whitehorse,Residents of countries other than the United States of America entering Canada,3891
+2002,Dawson,Canadian-resident visitors returning to Canada,1248
+2002,Little Gold Creek,Canadian-resident visitors returning to Canada,3051
+2002,Little Gold Creek,United States of America residents entering Canada,13408
+2002,Little Gold Creek,Residents of countries other than the United States of America entering Canada,3918
+2002,Pleasant Camp,Residents of countries other than the United States of America entering Canada,2844
+2002,Old Crow,Canadian-resident visitors returning to Canada,28
+2002,Old Crow,Residents of countries other than the United States of America entering Canada,4
+2002,Old Crow,United States of America residents entering Canada,166
+2002,Pleasant Camp,Canadian-resident visitors returning to Canada,10720
+2002,Pleasant Camp,United States of America residents entering Canada,32243
+2002,Whitehorse,Canadian-resident visitors returning to Canada,1194
+2002,Whitehorse,United States of America residents entering Canada,2595
+2003,Beaver Creek,Residents of countries other than the United States of America entering Canada,5408
+2003,Beaver Creek,Canadian-resident visitors returning to Canada,12443
+2003,Dawson,United States of America residents entering Canada,6336
+2003,Dawson,Residents of countries other than the United States of America entering Canada,557
+2003,Beaver Creek,United States of America residents entering Canada,84484
+2003,Dawson,Canadian-resident visitors returning to Canada,1412
+2003,Fraser,Canadian-resident visitors returning to Canada,38684
+2003,Little Gold Creek,Residents of countries other than the United States of America entering Canada,4151
+2003,Fraser,United States of America residents entering Canada,142242
 2003,Old Crow,Residents of countries other than the United States of America entering Canada,0
 2003,Fraser,Residents of countries other than the United States of America entering Canada,10777
 2003,Pleasant Camp,Canadian-resident visitors returning to Canada,9468
@@ -791,6 +473,51 @@ year,geo,Traveller_characteristics,value
 2005,Little Gold Creek,Residents of countries other than the United States of America entering Canada,3938
 2005,Pleasant Camp,United States of America residents entering Canada,28880
 2005,Pleasant Camp,Residents of countries other than the United States of America entering Canada,3019
+1974,Beaver Creek,Residents of countries other than the United States of America entering Canada,449
+1974,Beaver Creek,United States of America residents entering Canada,64095
+1974,Dawson,Canadian-resident visitors returning to Canada,13
+1974,Beaver Creek,Canadian-resident visitors returning to Canada,6200
+1974,Dawson,Residents of countries other than the United States of America entering Canada,0
+1974,Dawson,United States of America residents entering Canada,245
+1974,Fraser,Canadian-resident visitors returning to Canada,2547
+1974,Little Gold Creek,Canadian-resident visitors returning to Canada,2581
+1974,Little Gold Creek,United States of America residents entering Canada,7025
+1974,Old Crow,Canadian-resident visitors returning to Canada,16
+1974,Fraser,Residents of countries other than the United States of America entering Canada,362
+1974,Whitehorse,United States of America residents entering Canada,6846
+1974,Old Crow,United States of America residents entering Canada,87
+1974,Fraser,United States of America residents entering Canada,34800
+1974,Pleasant Camp,United States of America residents entering Canada,31789
+1974,Little Gold Creek,Residents of countries other than the United States of America entering Canada,247
+1974,Old Crow,Residents of countries other than the United States of America entering Canada,0
+1974,Pleasant Camp,Canadian-resident visitors returning to Canada,5994
+1974,Pleasant Camp,Residents of countries other than the United States of America entering Canada,168
+1974,Whitehorse,Canadian-resident visitors returning to Canada,1543
+1974,Whitehorse,Residents of countries other than the United States of America entering Canada,0
+1976,Dawson,Residents of countries other than the United States of America entering Canada,0
+1976,Beaver Creek,Canadian-resident visitors returning to Canada,4420
+1976,Beaver Creek,United States of America residents entering Canada,72905
+1976,Dawson,Canadian-resident visitors returning to Canada,32
+1976,Dawson,United States of America residents entering Canada,469
+1976,Beaver Creek,Residents of countries other than the United States of America entering Canada,552
+1976,Fraser,Residents of countries other than the United States of America entering Canada,780
+1976,Fraser,Canadian-resident visitors returning to Canada,3110
+1976,Little Gold Creek,Canadian-resident visitors returning to Canada,2765
+1976,Little Gold Creek,United States of America residents entering Canada,9023
+1976,Whitehorse,Residents of countries other than the United States of America entering Canada,0
+1976,Fraser,United States of America residents entering Canada,41686
+1976,Old Crow,United States of America residents entering Canada,32
+1976,Little Gold Creek,Residents of countries other than the United States of America entering Canada,412
+1976,Pleasant Camp,Residents of countries other than the United States of America entering Canada,198
+1976,Old Crow,Canadian-resident visitors returning to Canada,51
+1976,Old Crow,Residents of countries other than the United States of America entering Canada,0
+1976,Pleasant Camp,Canadian-resident visitors returning to Canada,6022
+1976,Pleasant Camp,United States of America residents entering Canada,29247
+1976,Whitehorse,Canadian-resident visitors returning to Canada,1818
+1976,Whitehorse,United States of America residents entering Canada,8393
+1981,Beaver Creek,Canadian-resident visitors returning to Canada,9887
+1981,Beaver Creek,United States of America residents entering Canada,71592
+1981,Dawson,Residents of countries other than the United States of America entering Canada,0
 2005,Little Gold Creek,Canadian-resident visitors returning to Canada,2337
 2005,Old Crow,Canadian-resident visitors returning to Canada,0
 2005,Whitehorse,Canadian-resident visitors returning to Canada,973
@@ -836,54 +563,6 @@ year,geo,Traveller_characteristics,value
 2020,Little Gold Creek,United States of America residents entering Canada,0
 2020,Little Gold Creek,Residents of countries other than the United States of America entering Canada,0
 2020,Old Crow,Canadian-resident visitors returning to Canada,0
-2020,Old Crow,Residents of countries other than the United States of America entering Canada,0
-2020,Old Crow,United States of America residents entering Canada,0
-2020,Pleasant Camp,Canadian-resident visitors returning to Canada,702
-2020,Pleasant Camp,United States of America residents entering Canada,2812
-2020,Pleasant Camp,Residents of countries other than the United States of America entering Canada,23
-2020,Whitehorse,United States of America residents entering Canada,251
-2021,Beaver Creek,Residents of countries other than the United States of America entering Canada,0
-2021,Beaver Creek,Canadian-resident visitors returning to Canada,884
-2021,Dawson,Residents of countries other than the United States of America entering Canada,0
-2021,Dawson,United States of America residents entering Canada,0
-2021,Beaver Creek,United States of America residents entering Canada,24615
-2021,Dawson,Canadian-resident visitors returning to Canada,0
-2021,Fraser,Canadian-resident visitors returning to Canada,915
-2021,Fraser,Residents of countries other than the United States of America entering Canada,16
-2021,Little Gold Creek,Canadian-resident visitors returning to Canada,0
-2021,Fraser,United States of America residents entering Canada,2268
-2021,Pleasant Camp,United States of America residents entering Canada,3592
-2021,Pleasant Camp,Residents of countries other than the United States of America entering Canada,7
-2021,Little Gold Creek,United States of America residents entering Canada,0
-2021,Little Gold Creek,Residents of countries other than the United States of America entering Canada,0
-2021,Whitehorse,Canadian-resident visitors returning to Canada,39
-2021,Old Crow,Residents of countries other than the United States of America entering Canada,0
-2021,Old Crow,Canadian-resident visitors returning to Canada,0
-2021,Pleasant Camp,Canadian-resident visitors returning to Canada,493
-2021,Whitehorse,Residents of countries other than the United States of America entering Canada,3
-2021,Old Crow,United States of America residents entering Canada,0
-2021,Whitehorse,United States of America residents entering Canada,270
-2022,Beaver Creek,Canadian-resident visitors returning to Canada,7009
-2022,Dawson,Residents of countries other than the United States of America entering Canada,204
-2022,Dawson,Canadian-resident visitors returning to Canada,363
-2022,Dawson,United States of America residents entering Canada,3661
-2022,Beaver Creek,Residents of countries other than the United States of America entering Canada,2513
-2022,Fraser,Canadian-resident visitors returning to Canada,29102
-2022,Fraser,United States of America residents entering Canada,43071
-2022,Fraser,Residents of countries other than the United States of America entering Canada,5194
-2022,Beaver Creek,United States of America residents entering Canada,43797
-2022,Pleasant Camp,United States of America residents entering Canada,12277
-2022,Little Gold Creek,Residents of countries other than the United States of America entering Canada,2119
-2022,Pleasant Camp,Residents of countries other than the United States of America entering Canada,1539
-2022,Little Gold Creek,Canadian-resident visitors returning to Canada,2299
-2022,Whitehorse,Canadian-resident visitors returning to Canada,1205
-2022,Old Crow,Canadian-resident visitors returning to Canada,0
-2022,Whitehorse,Residents of countries other than the United States of America entering Canada,1839
-2022,Little Gold Creek,United States of America residents entering Canada,3897
-2022,Old Crow,Residents of countries other than the United States of America entering Canada,0
-2022,Old Crow,United States of America residents entering Canada,1
-2022,Pleasant Camp,Canadian-resident visitors returning to Canada,10303
-2022,Whitehorse,United States of America residents entering Canada,520
 1981,Dawson,United States of America residents entering Canada,576
 1981,Beaver Creek,Residents of countries other than the United States of America entering Canada,3334
 1981,Dawson,Canadian-resident visitors returning to Canada,145
@@ -974,6 +653,51 @@ year,geo,Traveller_characteristics,value
 1999,Little Gold Creek,United States of America residents entering Canada,14558
 1999,Dawson,United States of America residents entering Canada,6683
 1999,Old Crow,United States of America residents entering Canada,163
+2020,Old Crow,Residents of countries other than the United States of America entering Canada,0
+2020,Old Crow,United States of America residents entering Canada,0
+2020,Pleasant Camp,Canadian-resident visitors returning to Canada,702
+2020,Pleasant Camp,United States of America residents entering Canada,2812
+2020,Pleasant Camp,Residents of countries other than the United States of America entering Canada,23
+2020,Whitehorse,United States of America residents entering Canada,251
+2021,Beaver Creek,Residents of countries other than the United States of America entering Canada,0
+2021,Beaver Creek,Canadian-resident visitors returning to Canada,884
+2021,Dawson,Residents of countries other than the United States of America entering Canada,0
+2021,Dawson,United States of America residents entering Canada,0
+2021,Beaver Creek,United States of America residents entering Canada,24615
+2021,Dawson,Canadian-resident visitors returning to Canada,0
+2021,Fraser,Canadian-resident visitors returning to Canada,915
+2021,Fraser,Residents of countries other than the United States of America entering Canada,16
+2021,Little Gold Creek,Canadian-resident visitors returning to Canada,0
+2021,Fraser,United States of America residents entering Canada,2268
+2021,Pleasant Camp,United States of America residents entering Canada,3592
+2021,Pleasant Camp,Residents of countries other than the United States of America entering Canada,7
+2021,Little Gold Creek,United States of America residents entering Canada,0
+2021,Little Gold Creek,Residents of countries other than the United States of America entering Canada,0
+2021,Whitehorse,Canadian-resident visitors returning to Canada,39
+2021,Old Crow,Residents of countries other than the United States of America entering Canada,0
+2021,Old Crow,Canadian-resident visitors returning to Canada,0
+2021,Pleasant Camp,Canadian-resident visitors returning to Canada,493
+2021,Whitehorse,Residents of countries other than the United States of America entering Canada,3
+2021,Old Crow,United States of America residents entering Canada,0
+2021,Whitehorse,United States of America residents entering Canada,270
+2022,Beaver Creek,Canadian-resident visitors returning to Canada,7009
+2022,Dawson,Residents of countries other than the United States of America entering Canada,204
+2022,Dawson,Canadian-resident visitors returning to Canada,363
+2022,Dawson,United States of America residents entering Canada,3661
+2022,Beaver Creek,Residents of countries other than the United States of America entering Canada,2513
+2022,Fraser,Canadian-resident visitors returning to Canada,29102
+2022,Fraser,United States of America residents entering Canada,43071
+2022,Fraser,Residents of countries other than the United States of America entering Canada,5194
+2022,Beaver Creek,United States of America residents entering Canada,43797
+2022,Pleasant Camp,United States of America residents entering Canada,12277
+2022,Little Gold Creek,Residents of countries other than the United States of America entering Canada,2119
+2022,Pleasant Camp,Residents of countries other than the United States of America entering Canada,1539
+2022,Little Gold Creek,Canadian-resident visitors returning to Canada,2299
+2022,Whitehorse,Canadian-resident visitors returning to Canada,1205
+2022,Old Crow,Canadian-resident visitors returning to Canada,0
+2022,Whitehorse,Residents of countries other than the United States of America entering Canada,1839
+2022,Little Gold Creek,United States of America residents entering Canada,3897
+2022,Old Crow,Residents of countries other than the United States of America entering Canada,0
 1999,Little Gold Creek,Canadian-resident visitors returning to Canada,4372
 1999,Pleasant Camp,United States of America residents entering Canada,31228
 1999,Fraser,Canadian-resident visitors returning to Canada,41171
@@ -1019,6 +743,54 @@ year,geo,Traveller_characteristics,value
 2006,Pleasant Camp,United States of America residents entering Canada,25258
 2006,Fraser,United States of America residents entering Canada,191765
 2006,Pleasant Camp,Residents of countries other than the United States of America entering Canada,2635
+1977,Beaver Creek,Canadian-resident visitors returning to Canada,4286
+1977,Dawson,United States of America residents entering Canada,479
+1977,Dawson,Residents of countries other than the United States of America entering Canada,0
+1977,Beaver Creek,United States of America residents entering Canada,63047
+1977,Beaver Creek,Residents of countries other than the United States of America entering Canada,232
+1977,Fraser,Canadian-resident visitors returning to Canada,3807
+1977,Dawson,Canadian-resident visitors returning to Canada,53
+1977,Fraser,United States of America residents entering Canada,46526
+1977,Little Gold Creek,United States of America residents entering Canada,9009
+1977,Fraser,Residents of countries other than the United States of America entering Canada,808
+1977,Pleasant Camp,Canadian-resident visitors returning to Canada,5403
+1977,Little Gold Creek,Canadian-resident visitors returning to Canada,2433
+1977,Pleasant Camp,Residents of countries other than the United States of America entering Canada,263
+1977,Whitehorse,Residents of countries other than the United States of America entering Canada,10
+1977,Little Gold Creek,Residents of countries other than the United States of America entering Canada,530
+1977,Old Crow,Canadian-resident visitors returning to Canada,34
+1977,Old Crow,Residents of countries other than the United States of America entering Canada,0
+1977,Old Crow,United States of America residents entering Canada,93
+1977,Pleasant Camp,United States of America residents entering Canada,25433
+1977,Whitehorse,Canadian-resident visitors returning to Canada,1410
+1977,Whitehorse,United States of America residents entering Canada,6528
+1978,Beaver Creek,Residents of countries other than the United States of America entering Canada,207
+1978,Dawson,United States of America residents entering Canada,601
+1978,Beaver Creek,Canadian-resident visitors returning to Canada,9476
+1978,Dawson,Residents of countries other than the United States of America entering Canada,0
+1978,Beaver Creek,United States of America residents entering Canada,79796
+1978,Fraser,Canadian-resident visitors returning to Canada,3968
+1978,Dawson,Canadian-resident visitors returning to Canada,113
+1978,Fraser,Residents of countries other than the United States of America entering Canada,848
+1978,Fraser,United States of America residents entering Canada,37684
+1978,Whitehorse,Residents of countries other than the United States of America entering Canada,318
+1978,Little Gold Creek,Residents of countries other than the United States of America entering Canada,706
+1978,Little Gold Creek,Canadian-resident visitors returning to Canada,3065
+1978,Old Crow,Residents of countries other than the United States of America entering Canada,0
+1978,Little Gold Creek,United States of America residents entering Canada,11343
+1978,Pleasant Camp,Canadian-resident visitors returning to Canada,8161
+1978,Old Crow,Canadian-resident visitors returning to Canada,98
+1978,Pleasant Camp,Residents of countries other than the United States of America entering Canada,234
+1978,Old Crow,United States of America residents entering Canada,122
+1978,Pleasant Camp,United States of America residents entering Canada,32103
+1978,Whitehorse,Canadian-resident visitors returning to Canada,2241
+1978,Whitehorse,United States of America residents entering Canada,8445
+1979,Beaver Creek,Residents of countries other than the United States of America entering Canada,331
+1979,Beaver Creek,Canadian-resident visitors returning to Canada,9540
+1979,Dawson,Residents of countries other than the United States of America entering Canada,19
+2022,Old Crow,United States of America residents entering Canada,1
+2022,Pleasant Camp,Canadian-resident visitors returning to Canada,10303
+2022,Whitehorse,United States of America residents entering Canada,520
 2006,Old Crow,United States of America residents entering Canada,43
 2006,Whitehorse,Canadian-resident visitors returning to Canada,1599
 2006,Little Gold Creek,Canadian-resident visitors returning to Canada,2482
@@ -1110,3 +882,231 @@ year,geo,Traveller_characteristics,value
 2024,Pleasant Camp,Residents of countries other than the United States of America entering Canada,1419
 2024,Whitehorse,Canadian-resident visitors returning to Canada,815
 2024,Whitehorse,Residents of countries other than the United States of America entering Canada,64
+1979,Dawson,United States of America residents entering Canada,627
+1979,Beaver Creek,United States of America residents entering Canada,73254
+1979,Dawson,Canadian-resident visitors returning to Canada,78
+1979,Fraser,Canadian-resident visitors returning to Canada,18261
+1979,Fraser,Residents of countries other than the United States of America entering Canada,914
+1979,Little Gold Creek,Canadian-resident visitors returning to Canada,2557
+1979,Fraser,United States of America residents entering Canada,54874
+1979,Pleasant Camp,United States of America residents entering Canada,22771
+1979,Pleasant Camp,Residents of countries other than the United States of America entering Canada,133
+1979,Little Gold Creek,United States of America residents entering Canada,8577
+1979,Little Gold Creek,Residents of countries other than the United States of America entering Canada,529
+1979,Whitehorse,Canadian-resident visitors returning to Canada,1943
+1979,Old Crow,Residents of countries other than the United States of America entering Canada,0
+1979,Old Crow,Canadian-resident visitors returning to Canada,94
+1979,Pleasant Camp,Canadian-resident visitors returning to Canada,6498
+1979,Whitehorse,Residents of countries other than the United States of America entering Canada,448
+1979,Old Crow,United States of America residents entering Canada,105
+1979,Whitehorse,United States of America residents entering Canada,8138
+1980,Beaver Creek,Canadian-resident visitors returning to Canada,7507
+1980,Dawson,Residents of countries other than the United States of America entering Canada,101
+1980,Dawson,Canadian-resident visitors returning to Canada,109
+1980,Dawson,United States of America residents entering Canada,656
+1980,Beaver Creek,Residents of countries other than the United States of America entering Canada,1398
+1980,Fraser,Canadian-resident visitors returning to Canada,17012
+1980,Fraser,United States of America residents entering Canada,37772
+1980,Fraser,Residents of countries other than the United States of America entering Canada,1824
+1980,Beaver Creek,United States of America residents entering Canada,55365
+1980,Pleasant Camp,United States of America residents entering Canada,22306
+1980,Little Gold Creek,Residents of countries other than the United States of America entering Canada,840
+1980,Pleasant Camp,Residents of countries other than the United States of America entering Canada,515
+1980,Little Gold Creek,Canadian-resident visitors returning to Canada,3282
+1980,Whitehorse,Canadian-resident visitors returning to Canada,1377
+1980,Old Crow,Canadian-resident visitors returning to Canada,85
+1980,Whitehorse,Residents of countries other than the United States of America entering Canada,554
+1980,Little Gold Creek,United States of America residents entering Canada,8772
+1980,Old Crow,Residents of countries other than the United States of America entering Canada,0
+1980,Old Crow,United States of America residents entering Canada,76
+1980,Pleasant Camp,Canadian-resident visitors returning to Canada,9107
+1980,Whitehorse,United States of America residents entering Canada,6894
+1993,Beaver Creek,United States of America residents entering Canada,104587
+1993,Dawson,Residents of countries other than the United States of America entering Canada,749
+1993,Dawson,Canadian-resident visitors returning to Canada,874
+1993,Beaver Creek,Canadian-resident visitors returning to Canada,16055
+1993,Dawson,United States of America residents entering Canada,3512
+1993,Beaver Creek,Residents of countries other than the United States of America entering Canada,7462
+1993,Fraser,Canadian-resident visitors returning to Canada,35357
+1993,Little Gold Creek,United States of America residents entering Canada,12684
+1993,Fraser,Residents of countries other than the United States of America entering Canada,8408
+1993,Old Crow,United States of America residents entering Canada,135
+1993,Fraser,United States of America residents entering Canada,61967
+1993,Pleasant Camp,Residents of countries other than the United States of America entering Canada,2863
+1993,Whitehorse,Residents of countries other than the United States of America entering Canada,176
+1993,Little Gold Creek,Canadian-resident visitors returning to Canada,4328
+1993,Little Gold Creek,Residents of countries other than the United States of America entering Canada,3453
+1993,Old Crow,Canadian-resident visitors returning to Canada,139
+1993,Old Crow,Residents of countries other than the United States of America entering Canada,0
+1993,Pleasant Camp,Canadian-resident visitors returning to Canada,11904
+1993,Pleasant Camp,United States of America residents entering Canada,33497
+1993,Whitehorse,Canadian-resident visitors returning to Canada,1188
+1993,Whitehorse,United States of America residents entering Canada,2240
+1994,Beaver Creek,Residents of countries other than the United States of America entering Canada,6779
+1994,Dawson,United States of America residents entering Canada,2986
+1994,Beaver Creek,Canadian-resident visitors returning to Canada,12956
+1994,Dawson,Residents of countries other than the United States of America entering Canada,547
+1994,Beaver Creek,United States of America residents entering Canada,97325
+1994,Fraser,Canadian-resident visitors returning to Canada,35939
+1994,Dawson,Canadian-resident visitors returning to Canada,586
+1994,Fraser,Residents of countries other than the United States of America entering Canada,8618
+1994,Fraser,United States of America residents entering Canada,71834
+1994,Whitehorse,Residents of countries other than the United States of America entering Canada,154
+1994,Little Gold Creek,United States of America residents entering Canada,16314
+1994,Little Gold Creek,Canadian-resident visitors returning to Canada,4712
+1994,Old Crow,Residents of countries other than the United States of America entering Canada,2
+1994,Little Gold Creek,Residents of countries other than the United States of America entering Canada,4949
+1994,Pleasant Camp,Canadian-resident visitors returning to Canada,11849
+1994,Old Crow,Canadian-resident visitors returning to Canada,123
+1994,Pleasant Camp,Residents of countries other than the United States of America entering Canada,3533
+1994,Old Crow,United States of America residents entering Canada,195
+1994,Pleasant Camp,United States of America residents entering Canada,30966
+1994,Whitehorse,Canadian-resident visitors returning to Canada,1246
+1994,Whitehorse,United States of America residents entering Canada,2399
+1995,Beaver Creek,Residents of countries other than the United States of America entering Canada,7011
+1995,Beaver Creek,Canadian-resident visitors returning to Canada,12481
+1995,Fraser,Canadian-resident visitors returning to Canada,38875
+1995,Dawson,Residents of countries other than the United States of America entering Canada,580
+1995,Beaver Creek,United States of America residents entering Canada,102646
+1995,Dawson,Canadian-resident visitors returning to Canada,225
+1995,Fraser,Residents of countries other than the United States of America entering Canada,9508
+1995,Dawson,United States of America residents entering Canada,3245
+1995,Little Gold Creek,Canadian-resident visitors returning to Canada,4090
+1995,Fraser,United States of America residents entering Canada,76379
+1995,Pleasant Camp,United States of America residents entering Canada,31067
+1995,Little Gold Creek,Residents of countries other than the United States of America entering Canada,4679
+1995,Little Gold Creek,United States of America residents entering Canada,15613
+1995,Old Crow,Residents of countries other than the United States of America entering Canada,4
+1995,Whitehorse,Canadian-resident visitors returning to Canada,1191
+1995,Pleasant Camp,Canadian-resident visitors returning to Canada,11354
+1995,Old Crow,Canadian-resident visitors returning to Canada,86
+1995,Pleasant Camp,Residents of countries other than the United States of America entering Canada,3814
+1995,Whitehorse,Residents of countries other than the United States of America entering Canada,217
+1995,Old Crow,United States of America residents entering Canada,137
+1995,Whitehorse,United States of America residents entering Canada,2388
+1996,Beaver Creek,Residents of countries other than the United States of America entering Canada,6770
+1996,Dawson,Residents of countries other than the United States of America entering Canada,387
+1996,Beaver Creek,Canadian-resident visitors returning to Canada,11784
+1996,Dawson,United States of America residents entering Canada,4031
+1996,Beaver Creek,United States of America residents entering Canada,91460
+1996,Fraser,Canadian-resident visitors returning to Canada,41488
+1996,Dawson,Canadian-resident visitors returning to Canada,340
+1996,Fraser,Residents of countries other than the United States of America entering Canada,10052
+1996,Little Gold Creek,Canadian-resident visitors returning to Canada,4084
+1996,Pleasant Camp,United States of America residents entering Canada,28593
+1996,Fraser,United States of America residents entering Canada,77812
+1996,Pleasant Camp,Residents of countries other than the United States of America entering Canada,3923
+1996,Little Gold Creek,United States of America residents entering Canada,15127
+1996,Whitehorse,Canadian-resident visitors returning to Canada,1838
+1996,Little Gold Creek,Residents of countries other than the United States of America entering Canada,7159
+1996,Whitehorse,Residents of countries other than the United States of America entering Canada,253
+1996,Old Crow,Canadian-resident visitors returning to Canada,249
+1996,Old Crow,Residents of countries other than the United States of America entering Canada,3
+1996,Old Crow,United States of America residents entering Canada,414
+1996,Pleasant Camp,Canadian-resident visitors returning to Canada,11359
+1996,Whitehorse,United States of America residents entering Canada,1971
+1997,Beaver Creek,Canadian-resident visitors returning to Canada,11497
+1997,Dawson,United States of America residents entering Canada,4606
+1997,Dawson,Residents of countries other than the United States of America entering Canada,154
+1997,Dawson,Canadian-resident visitors returning to Canada,646
+1997,Beaver Creek,Residents of countries other than the United States of America entering Canada,6856
+1997,Fraser,Residents of countries other than the United States of America entering Canada,11902
+1997,Fraser,Canadian-resident visitors returning to Canada,42717
+1997,Fraser,United States of America residents entering Canada,92921
+1997,Beaver Creek,United States of America residents entering Canada,89758
+1997,Pleasant Camp,Residents of countries other than the United States of America entering Canada,3400
+1997,Pleasant Camp,United States of America residents entering Canada,29471
+1997,Little Gold Creek,Canadian-resident visitors returning to Canada,3708
+1997,Little Gold Creek,United States of America residents entering Canada,12423
+1997,Whitehorse,Residents of countries other than the United States of America entering Canada,384
+1997,Whitehorse,Canadian-resident visitors returning to Canada,1328
+1997,Little Gold Creek,Residents of countries other than the United States of America entering Canada,5386
+1997,Old Crow,United States of America residents entering Canada,270
+1997,Old Crow,Canadian-resident visitors returning to Canada,139
+1997,Old Crow,Residents of countries other than the United States of America entering Canada,1
+1997,Pleasant Camp,Canadian-resident visitors returning to Canada,9698
+1997,Whitehorse,United States of America residents entering Canada,3112
+2010,Beaver Creek,United States of America residents entering Canada,67536
+2010,Dawson,Canadian-resident visitors returning to Canada,633
+2010,Dawson,Residents of countries other than the United States of America entering Canada,563
+2010,Beaver Creek,Canadian-resident visitors returning to Canada,10834
+2010,Dawson,United States of America residents entering Canada,2758
+2010,Fraser,Canadian-resident visitors returning to Canada,45956
+2010,Fraser,Residents of countries other than the United States of America entering Canada,20521
+2010,Beaver Creek,Residents of countries other than the United States of America entering Canada,5313
+2010,Whitehorse,Residents of countries other than the United States of America entering Canada,4392
+2010,Fraser,United States of America residents entering Canada,200479
+2010,Little Gold Creek,United States of America residents entering Canada,5218
+2010,Little Gold Creek,Canadian-resident visitors returning to Canada,1899
+2010,Old Crow,United States of America residents entering Canada,10
+2010,Little Gold Creek,Residents of countries other than the United States of America entering Canada,2991
+2010,Pleasant Camp,Residents of countries other than the United States of America entering Canada,2859
+2010,Old Crow,Canadian-resident visitors returning to Canada,13
+2010,Old Crow,Residents of countries other than the United States of America entering Canada,0
+2010,Pleasant Camp,Canadian-resident visitors returning to Canada,8643
+2010,Pleasant Camp,United States of America residents entering Canada,16355
+2010,Whitehorse,Canadian-resident visitors returning to Canada,979
+2010,Whitehorse,United States of America residents entering Canada,1122
+2011,Beaver Creek,Residents of countries other than the United States of America entering Canada,4405
+2011,Beaver Creek,Canadian-resident visitors returning to Canada,10458
+2011,Dawson,United States of America residents entering Canada,202
+2011,Dawson,Residents of countries other than the United States of America entering Canada,61
+2011,Beaver Creek,United States of America residents entering Canada,54735
+2011,Dawson,Canadian-resident visitors returning to Canada,152
+2011,Fraser,Canadian-resident visitors returning to Canada,48010
+2011,Old Crow,Residents of countries other than the United States of America entering Canada,0
+2011,Fraser,United States of America residents entering Canada,201035
+2011,Pleasant Camp,Canadian-resident visitors returning to Canada,8786
+2011,Fraser,Residents of countries other than the United States of America entering Canada,20905
+2011,Pleasant Camp,Residents of countries other than the United States of America entering Canada,3113
+2011,Little Gold Creek,Canadian-resident visitors returning to Canada,3098
+2011,Whitehorse,Residents of countries other than the United States of America entering Canada,4274
+2011,Little Gold Creek,Residents of countries other than the United States of America entering Canada,4870
+2011,Little Gold Creek,United States of America residents entering Canada,11252
+2011,Old Crow,Canadian-resident visitors returning to Canada,0
+2011,Old Crow,United States of America residents entering Canada,6
+2011,Pleasant Camp,United States of America residents entering Canada,15949
+2011,Whitehorse,Canadian-resident visitors returning to Canada,1148
+2011,Whitehorse,United States of America residents entering Canada,626
+2012,Beaver Creek,Residents of countries other than the United States of America entering Canada,3774
+2012,Fraser,Canadian-resident visitors returning to Canada,50037
+2012,Beaver Creek,Canadian-resident visitors returning to Canada,9465
+2012,Dawson,Residents of countries other than the United States of America entering Canada,31
+2012,Beaver Creek,United States of America residents entering Canada,54655
+2012,Fraser,Residents of countries other than the United States of America entering Canada,24497
+2012,Dawson,Canadian-resident visitors returning to Canada,129
+2012,Dawson,United States of America residents entering Canada,179
+2012,Little Gold Creek,Canadian-resident visitors returning to Canada,2309
+2012,Pleasant Camp,United States of America residents entering Canada,14752
+2012,Fraser,United States of America residents entering Canada,211917
+2012,Whitehorse,Canadian-resident visitors returning to Canada,861
+2012,Little Gold Creek,United States of America residents entering Canada,7710
+2012,Whitehorse,Residents of countries other than the United States of America entering Canada,3561
+2012,Little Gold Creek,Residents of countries other than the United States of America entering Canada,3164
+2012,Old Crow,Canadian-resident visitors returning to Canada,0
+2012,Old Crow,Residents of countries other than the United States of America entering Canada,0
+2012,Old Crow,United States of America residents entering Canada,9
+2012,Pleasant Camp,Canadian-resident visitors returning to Canada,9247
+2012,Whitehorse,United States of America residents entering Canada,731
+2012,Pleasant Camp,Residents of countries other than the United States of America entering Canada,2670
+2013,Beaver Creek,Canadian-resident visitors returning to Canada,9076
+2013,Dawson,United States of America residents entering Canada,124
+2013,Dawson,Residents of countries other than the United States of America entering Canada,26
+2013,Dawson,Canadian-resident visitors returning to Canada,76
+2013,Beaver Creek,Residents of countries other than the United States of America entering Canada,3861
+2013,Fraser,Residents of countries other than the United States of America entering Canada,26324
+2013,Fraser,Canadian-resident visitors returning to Canada,54929
+2013,Fraser,United States of America residents entering Canada,235584
+2013,Beaver Creek,United States of America residents entering Canada,54951
+2013,Pleasant Camp,Residents of countries other than the United States of America entering Canada,2580
+2013,Pleasant Camp,United States of America residents entering Canada,14047
+2013,Little Gold Creek,Residents of countries other than the United States of America entering Canada,4503
+2013,Little Gold Creek,Canadian-resident visitors returning to Canada,3989
+2013,Old Crow,Residents of countries other than the United States of America entering Canada,6
+2013,Whitehorse,Canadian-resident visitors returning to Canada,737
+2013,Pleasant Camp,Canadian-resident visitors returning to Canada,9515
+2013,Little Gold Creek,United States of America residents entering Canada,10728
+2013,Whitehorse,United States of America residents entering Canada,589
+2013,Whitehorse,Residents of countries other than the United States of America entering Canada,3441
+2013,Old Crow,Canadian-resident visitors returning to Canada,6
+2013,Old Crow,United States of America residents entering Canada,10
