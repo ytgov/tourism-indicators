@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Fetch and process visitor data with fan chart and forecast range
     Promise.all([
-        fetch('../data/vw_ve_estimated_visitors_by_year_historic.csv?' + Math.random()).then(response => response.text()),
-        fetch('../data/vw_kpi_estimated_visitation_forecast.csv?' + Math.random()).then(response => response.text())
+        fetch('./data/vw_ve_estimated_visitors_by_year_historic.csv?' + Math.random()).then(response => response.text()),
+        fetch('./data/vw_kpi_estimated_visitation_forecast.csv?' + Math.random()).then(response => response.text())
     ])
         .then(([historicCsvData, forecastCsvData]) => {
             // --- Process Historic Data ---
