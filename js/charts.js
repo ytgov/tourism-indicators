@@ -863,108 +863,61 @@ function createYearlyKPIChart(containerId, data, ytdPercentageChange) {
 
 
 // Initialize everything when the document is ready
-document.addEventListener('DOMContentLoaded', async function() {
-    // First KPI - Airport Arrivals
-    const airportData = await loadAirportData();
-    if (airportData) {
-        updateKPIContent('indicator2-content', airportData, 'Airport arrivals');
-        createKPIChart('indicator2-chart', airportData.monthlyData, airportData.ytdPercentageChange);
-    }
+document.addEventListener('DOMContentLoaded', async function () {
+    const [
+        visitorsData,
+        airportData,
+        intlData,
+        spendingData,
+        occupancyData,
+        roomRateData,
+        revenuePerRoomData,
+        strOccupancyData,
+        strADRData,
+        strRevPARData,
+        scAccommodationEmployment,
+        scRestaurantSales,
+        consumerConfidence
+    ] = await Promise.all([
+        loadEstimatedVisitorsData(),
+        loadAirportData(),
+        loadIntlTravelersData(),
+        loadSpendingData(),
+        loadOccupancyData(),
+        loadRoomRateData(),
+        loadRevenuePerRoomData(),
+        loadSTROccupancyData(),
+        loadSTRADRData(),
+        loadSTRRevPARData(),
+        loadAccommodationEmployment(),
+        loadRestaurantSales(),
+        loadConsumerConfidence()
+    ]);
 
-    // Second KPI - Border crossings
-    const intlData = await loadIntlTravelersData();
-    if (intlData) {
-        updateKPIContent('indicator3-content', intlData, 'Border crossings');
-        createKPIChart('indicator3-chart', intlData.monthlyData, intlData.ytdPercentageChange);
-    }
-
-    // Third KPI - Visitor Spending
-    const spendingData = await loadSpendingData();
-    if (spendingData) {
-        updateKPIContent('indicator4-content', spendingData, 'Economic overview');
-        createYearlyKPIChart('indicator4-chart', spendingData.yearlyData, spendingData.ytdPercentageChange);
-        //console.log(spendingData);
-    }
-
-    // Fourth KPI - Estimated visitors
-    const visitorsData = await loadEstimatedVisitorsData();
     if (visitorsData) {
         updateKPIContent('indicator1-content', visitorsData, 'Estimated visitors');
         createKPIChart('indicator1-chart', visitorsData.monthlyData, visitorsData.ytdPercentageChange);
     }
-
-    // Additional indicators
-    const occupancyData = await loadOccupancyData();
-    if (occupancyData) {
-        updateKPIContent('additional1-content', occupancyData, 'Hotel occupancy rate');
+    if (airportData) {
+        updateKPIContent('indicator2-content', airportData, 'Airport arrivals');
+        createKPIChart('indicator2-chart', airportData.monthlyData, airportData.ytdPercentageChange);
     }
-
-    const roomRateData = await loadRoomRateData();
-    if (roomRateData) {
-        updateKPIContent('additional2-content', roomRateData, 'Avg. daily rate');
+    if (intlData) {
+        updateKPIContent('indicator3-content', intlData, 'Border crossings');
+        createKPIChart('indicator3-chart', intlData.monthlyData, intlData.ytdPercentageChange);
     }
-
-    const revenuePerRoomData = await loadRevenuePerRoomData();
-    if (revenuePerRoomData) {
-        updateKPIContent('additional3-content', revenuePerRoomData, 'Avg. revenue per room');
+    if (spendingData) {
+        updateKPIContent('indicator4-content', spendingData, 'Economic overview');
+        createYearlyKPIChart('indicator4-chart', spendingData.yearlyData, spendingData.ytdPercentageChange);
     }
-
-    /*const vicVisitorsData = await loadVICVisitorsData();
-    if (vicVisitorsData) {
-        updateKPIContent('additional4-content', vicVisitorsData, 'VIC Visits');
-    }*/
-
-    /*const highwayCountsData = await loadHighwayCountsData();
-    if (highwayCountsData) {
-        updateKPIContent('additional5-content', highwayCountsData, 'Highway Counts');
-    }*/
-
-    const strOccupancyData = await loadSTROccupancyData();
-    if (strOccupancyData) {
-        updateKPIContent('additional6-content', strOccupancyData, 'Rental occupancy rate');
-    }
-
-    const strADRData = await loadSTRADRData();
-    if (strADRData) {
-        updateKPIContent('additional7-content', strADRData, 'Avg. daily rate');
-    }
-
-    const strRevPARData = await loadSTRRevPARData();
-    if (strRevPARData) {
-        updateKPIContent('additional8-content', strRevPARData, 'Revenue per room');
-    }
-    /*
-    const pcVisitorsData = await loadPCVisitorData();
-    if (pcVisitorsData) {
-        updateKPIContent('additional9-content', pcVisitorsData, 'Parks Canada Visits');
-    }
-    */
-
-    /*const scFuelPrices = await loadFuelPrices();
-    if (scFuelPrices) {
-        updateKPIContent('additional10-content', scFuelPrices, 'Average Fuel Price');
-    }*/
-    /*
-    const envCampgroundData = await loadCampgroundVisitorData();
-    if (envCampgroundData) {
-        updateKPIContent('additional11-content', envCampgroundData, 'Campground Visits');
-    }
-    */
-
-    const scAccommodationEmployment = await loadAccommodationEmployment();
-    if (scAccommodationEmployment) {
-        updateKPIContent('additional12-content', scAccommodationEmployment, 'Employment in accom.');
-    }
-
-    const scRestaurantSales = await loadRestaurantSales();
-    if (scRestaurantSales) {
-        updateKPIContent('additional13-content', scRestaurantSales, 'YTD restaurant sales');
-    }
-
-
-    const consumerConfidence = await loadConsumerConfidence();
-    if (consumerConfidence) {
-        updateKPIContent('additional16-content', consumerConfidence, 'Consumer confidence');
-    }
-
+    if (occupancyData) updateKPIContent('additional1-content', occupancyData, 'Hotel occupancy rate');
+    if (roomRateData) updateKPIContent('additional2-content', roomRateData, 'Avg. daily rate');
+    if (revenuePerRoomData) updateKPIContent('additional3-content', revenuePerRoomData, 'Avg. revenue per room');
+    if (strOccupancyData) updateKPIContent('additional6-content', strOccupancyData, 'Rental occupancy rate');
+    if (strADRData) updateKPIContent('additional7-content', strADRData, 'Avg. daily rate');
+    if (strRevPARData) updateKPIContent('additional8-content', strRevPARData, 'Revenue per room');
+    if (scAccommodationEmployment) updateKPIContent('additional12-content', scAccommodationEmployment, 'Employment in accom.');
+    if (scRestaurantSales) updateKPIContent('additional13-content', scRestaurantSales, 'YTD restaurant sales');
+    if (consumerConfidence) updateKPIContent('additional16-content', consumerConfidence, 'Consumer confidence');
 });
+
