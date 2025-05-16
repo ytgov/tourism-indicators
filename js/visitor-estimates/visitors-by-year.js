@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // --- Process Historic Data ---
             // Parse CSV data and sort by year ascending
             const historicRows = historicCsvData
-                .split('\r\n') // Use \r\n for Windows line endings if applicable, otherwise \n
+                .split(/\r?\n/) // Handles both Windows and Unix line endings
+                .map(row => row.trim()) // Remove any extra whitespace
+                .filter(row => row) // Remove empty lines
                 .map(row => row.split(','))
                 .filter(row => row.length === 4 && row[0] !== 'year') // Ensure valid rows and skip header
                 .sort((a, b) => parseInt(a[0]) - parseInt(b[0]));
@@ -75,11 +77,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // --- Process Forecast Data ---
             const forecastRows = forecastCsvData
-                .split('\r\n') // Adjust line ending if needed
+                .split(/\r?\n/)
+                .map(row => row.trim())
+                .filter(row => row)
                 .map(row => row.split(','))
-                .filter(row => row.length === 3 && row[0] !== 'month'); // Ensure valid rows and skip header
+                .filter(row => row.length === 3 && row[0] !== 'month');
 
-            const forecastTotals = {}; // Use an object to store totals per year
+            const forecastTotals = {};
 
             forecastRows.forEach(row => {
                 const [monthStr, visitorsStr, type] = row;
