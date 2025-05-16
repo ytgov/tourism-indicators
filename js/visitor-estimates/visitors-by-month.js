@@ -3,7 +3,7 @@ import { ChartBuilder } from '../components/chart-builder.js';
 import { datasetConfigs } from '../config/charts-config.js'; // Import datasetConfigs
 
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "../data/vw_kpi_estimated_visitation_ytd_summary.csv?"+Math.random();
+    const csvUrl = "./data/vw_kpi_estimated_visitation_ytd_summary.csv?"+Math.random();
 
     function updateMetricsCards(data) {
         if (!data || data.length === 0) {
