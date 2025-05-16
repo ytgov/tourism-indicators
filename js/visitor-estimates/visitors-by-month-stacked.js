@@ -1,8 +1,22 @@
 // Define the color scheme
 const colors = [
-    "#F2A9008C", "#DC44058C", "#0097A98C", "#244C5A8C", "#512A448C", "#7A9A018C",
-    "#F2A900", "#DC4405", "#0097A9", "#244C5A", "#512A44", "#7A9A01"
+    "#006D6F",    // New: Deep Teal
+    "#7A9A01",
+    "#512A44",
+    "#244C5A",
+    "#0097A9",
+    "#DC4405",
+    "#F2A900",   // Original
+    "#006D6F8C", // New: Deep Teal with 55% Opacity
+    "#7A9A018C",
+    "#512A448C",
+    "#244C5A8C",
+    "#0097A98C",
+    "#DC44058C",
+    "#F2A9008C"  // 55% Opacity
 ];
+
+
 
 // Load the data
 async function loadCSVData(csvUrl) {
@@ -15,7 +29,7 @@ async function loadCSVData(csvUrl) {
             .map(row => row.split(','));
 
         const data = rows.slice(1)
-            .filter(row => row.length > 1 && row[3].trim() === 'All') // Filter for 'All' transportation type
+            .filter(row => row.length > 1 && row[3].toLowerCase().trim() === 'all') // Filter for 'All' transportation type
             .map(row => ({
                 date: new Date(row[0]),
                 year: parseInt(row[1]),
@@ -33,7 +47,7 @@ async function loadCSVData(csvUrl) {
 
 // Generate the chart
 async function generateChart() {
-    const rawData = await loadCSVData('data/vw_kpi_estimated_visitors.csv?'+Math.random());
+    const rawData = await loadCSVData('data/vw_kpi_estimated_visitation_ytd_summary.csv?'+Math.random());
     if (!rawData.length) {
         console.error('Failed to load CSV data.');
         return;
@@ -63,17 +77,17 @@ async function generateChart() {
             name: year,
             data: allMonths.map((_, monthIndex) => dataByYear[year][monthIndex] || null),
             color: colors[index % colors.length],
-            visible: year === '2019' || parseInt(year) >= 2023 // Show 2018 and years >= 2022
+            visible: year === '2019' || parseInt(year) >= 2024 // Show 2018 and years >= 2022
         }));
 
     // Generate the chart
-    Highcharts.chart('monthly-chart', {
+    Highcharts.chart('monthly-stacked-chart', {
         chart: {
             type: 'line',
             height: 400
         },
         title: {
-            text: 'Estimated visitors By month'
+            text: 'Estimated visitors by month'
         },
         xAxis: {
             categories: allMonths, // Show all months

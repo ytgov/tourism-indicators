@@ -133,6 +133,18 @@ const datasetConfigs = {
         },
         color: '#3a97a9'
     },
+    monthlyVisitors:{
+        id: 'monthly-visitors',
+        title: 'Monthly visitors',
+        dataFile: 'data/vw_kpi_estimated_visitation_ytd_summary.csv?'+Math.random(),
+        yAxisTitle: 'Number of visitors',
+        valueFormat: 'number',
+        description: 'Monthly visitors to the Yukon. This dataset provides visitor statistics showing visitor traffic trends.',
+        chart: {
+            height: 400
+        },
+        color: '#3a97a9'
+    },
     consumerConfidence: {
         id: 'consumer-confidence',
         title: 'Consumer confidence',

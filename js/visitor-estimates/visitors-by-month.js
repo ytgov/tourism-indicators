@@ -1,7 +1,9 @@
 import { createArrowSvg } from '../utils/svg-utils.js';
+import { ChartBuilder } from '../components/chart-builder.js';
+import { datasetConfigs } from '../config/charts-config.js'; // Import datasetConfigs
 
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "./data/vw_kpi_estimated_visitors.csv?"+Math.random();
+    const csvUrl = "../data/vw_kpi_estimated_visitation_ytd_summary.csv?"+Math.random();
 
     function updateMetricsCards(data) {
         if (!data || data.length === 0) {
@@ -88,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Parse data and ensure it's sorted by date ascending
             const data = rows
-                .filter(row => row.length > 1 && row[3].trim() === 'All') // Filter for 'All' transportation type
+                .filter(row => row.length > 1 && row[3].toLowerCase().trim() === 'all') 
                 .map(row => ({
                     date: new Date(row[0].replace(/"/g, '')),
                     monthlyTotal: parseInt(row[4]) || 0,
@@ -103,12 +105,85 @@ document.addEventListener("DOMContentLoaded", function () {
             data.sort((a, b) => a.date - b.date);
 
             updateMetricsCards(data);
+            // Prepare and render chart
+            const seriesData = data.map(item => [item.date.getTime(), item.monthlyTotal]);
+            renderChart(seriesData);
+
+
+
         })
         .catch(error => {
             console.error('Error loading or processing data:', error);
-            const container = document.getElementById('monthly-visitors-chart');
+            const container = document.getElementById('monthly-chart');
             if (container) {
                 container.innerHTML = `<div class="alert alert-danger">Error loading data: ${error.message}</div>`;
             }
         });
+
+        function renderChart(seriesData) {
+            Highcharts.stockChart("monthly-chart", {
+                chart: {
+                    height: 400
+                },
+                title: {
+                    text: "Monthly visitors"
+                },
+                rangeSelector: {
+                    buttons: [
+                        {
+                            type: 'month',
+                            count: 6,
+                            text: '6m'
+                        },
+                        {
+                            type: 'year',
+                            count: 1,
+                            text: '1y'
+                        },
+                        {
+                            type: 'all',
+                            text: 'All'
+                        }
+                    ],
+                    selected: 2 // Default to YTD
+                },
+                xAxis: {
+                    type: 'datetime',
+                    labels: {
+                        format: '{value:%b %Y}'
+                    },
+                    title: {
+                        text: "Date"
+                    }
+                },
+                yAxis: {
+                    opposite: false, // Puts labels on the left
+                    title: {
+                        text: "Number of visitors"
+                    },
+                    labels: {
+                        formatter: function () {
+                            return this.value.toLocaleString();
+                        }
+                    }
+                },
+                series: [{
+                    name: "Monthly Total",
+                    data: seriesData,
+                    color: '#3a97a9',
+                    tooltip: {
+                        valueDecimals: 0,
+                        valueSuffix: ""
+                    }
+                }],
+                credits: { enabled: false },
+                tooltip: {
+                    valueDecimals: 0,
+                    pointFormatter: function () {
+                        return `<span style="color:${this.color}">\u25CF</span> ${this.series.name}: <b>${this.y.toLocaleString()} visitors</b><br/>`;
+                    }
+                }
+            });
+        }
+        
 });

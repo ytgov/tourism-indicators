@@ -113,48 +113,49 @@ async function loadSpendingData() {
 // Function to load Estimated visitors data
 async function loadEstimatedVisitorsData() {
     try {
-        const response = await fetch('./data/vw_kpi_estimated_visitors.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_estimated_visitation_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
-        const rows = csvText.split('\n')
+
+        const rows = csvText
+            .split('\n')
             .filter(row => row.trim()) // Remove empty lines
-            .map(row => row.replace(/"/g, ''))
-            .map(row => row.split(','));
-        
-        // Remove header row and filter for 'All' transportation type
-        const data = rows.slice(1)
-            .filter(row => row.length > 1 && row[3].trim() === 'All') // Only include 'All' rows
+            .map(row => row.replace(/"/g, '').split(','));
+
+        const header = rows[0];
+        const dataRows = rows.slice(1)
+            .filter(row => row.length > 3 && row[3].toLowerCase().trim() === 'all') // Filter for 'All' scope
             .map(row => ({
                 date: new Date(row[0]),
-                value: parseFloat(row[4]),  // Using monthly_total for the chart
                 year: parseInt(row[1]),
-                month: parseInt(row[2])
+                month: parseInt(row[2]),
+                value: parseFloat(row[4]) // monthly_total
             }))
-            .sort((a, b) => b.date - a.date);  // Sort by date descending
-        
-        // Get the most recent row
-        const mostRecent = data[0];
-        const ytdTotal = parseFloat(rows.find(row => 
-            row[1] === mostRecent.year.toString() && 
+            .sort((a, b) => b.date - a.date);
+
+        const mostRecent = dataRows[0];
+
+        // Find full row again for the YTD values
+        const mostRecentRow = rows.find(row =>
+            row[1] === mostRecent.year.toString() &&
             row[2] === mostRecent.month.toString() &&
-            row[3].trim() === 'All' // Ensure it's the 'All' row
-        )[7]); // Using YTD total for the display
-        
+            row[3].toLowerCase().trim() === 'all'
+        );
+
+        const ytdTotal = parseFloat(mostRecentRow[7]);
+        const ytdPercentageChange = parseFloat(mostRecentRow[9]);
+
         return {
-            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-            ytdTotal: ytdTotal,
-            ytdPercentageChange: parseFloat(rows.find(row => 
-                row[1] === mostRecent.year.toString() && 
-                row[2] === mostRecent.month.toString() &&
-                row[3].trim() === 'All' // Ensure it's the 'All' row
-            )[9]),
-            monthlyData: data
-                .sort((a, b) => a.date - b.date)  // Sort ascending for chart data
+            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
+            ytdTotal,
+            ytdPercentageChange,
+            monthlyData: dataRows.sort((a, b) => a.date - b.date)
         };
     } catch (error) {
         console.error('Error loading Estimated visitors data:', error);
         return null;
     }
 }
+
 
 // Function to load occupancy rate data
 async function loadOccupancyData() {
@@ -672,7 +673,7 @@ function updateKPIContent(containerId, data, title) {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Travelers entering through Canadian customs';
     } else if (title === 'Estimated visitors') {
-        subheading = 'Total unique visitors to Yukon';
+        subheading = 'Total visitors to the Yukon';
     } else if (title === 'Hotel occupancy rate') {
         formattedTotal = formatPercentage(data.ytdTotal);
         subheading = 'Average room occupancy rate';
@@ -886,11 +887,11 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
 
     // Fourth KPI - Estimated visitors
-    /*const visitorsData = await loadEstimatedVisitorsData();
+    const visitorsData = await loadEstimatedVisitorsData();
     if (visitorsData) {
         updateKPIContent('indicator1-content', visitorsData, 'Estimated visitors');
         createKPIChart('indicator1-chart', visitorsData.monthlyData, visitorsData.ytdPercentageChange);
-    }*/
+    }
 
     // Additional indicators
     const occupancyData = await loadOccupancyData();

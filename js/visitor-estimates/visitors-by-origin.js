@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const csvUrl = "./data/vw_kpi_estimated_visitors.csv?"+Math.random();
+    const csvUrl = "./data/vw_kpi_estimated_visitation_ytd_summary.csv?"+Math.random();
 
     function fetchDataAndRender() {
         fetch(csvUrl)
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     .filter(row => row.length > 1)
                     .map(row => ({
                         date: new Date(row[0].replace(/"/g, '')),
-                        transportType: row[3].replace(/"/g, ''),
+                        origin: row[3].replace(/"/g, ''),
                         monthlyTotal: parseInt(row[4]) || 0
                     }))
                     .filter(item => !isNaN(item.date) && !isNaN(item.monthlyTotal));
@@ -33,10 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Define desired order and colors to match border crossings chart
                 const desiredOrder = [
-                    "bus",
-                    "train",
-                    "plane",
-                    "automobile"
+                    "Overseas",
+                    "Intra-provincial",
+                    "Inter-provincial",
+                    
+                    "US"
                 ];
 
                 const colors = [
@@ -49,13 +50,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Group data by transportation type
                 const seriesData = desiredOrder
                     .filter(type => parsedData.some(item => 
-                        item.transportType.toLowerCase() === type.toLowerCase()
+                        item.origin.toLowerCase() === type.toLowerCase()
                     ))
                     .map((type, index) => ({
                         name: type,
                         data: dates.map(date => {
                             const monthData = parsedData.find(item => 
-                                item.transportType.toLowerCase() === type.toLowerCase() &&
+                                item.origin.toLowerCase() === type.toLowerCase() &&
                                 Highcharts.dateFormat('%b %Y', item.date.getTime()) === date
                             );
                             return monthData ? monthData.monthlyTotal : 0;
@@ -67,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .catch(error => {
                 console.error('Error loading or processing data:', error);
-                const container = document.getElementById('transportation-chart');
+                const container = document.getElementById('origin-chart');
                 if (container) {
                     container.innerHTML = `<div class="alert alert-danger">Error loading data: ${error.message}</div>`;
                 }
@@ -75,14 +76,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function renderChart(seriesData, categories) {
-        Highcharts.chart('transportation-chart', {
+        Highcharts.chart('origin-chart', {
             chart: {
                 type: 'column',
                 zoomType: 'x',
                 height: 400
             },
             title: {
-                text: 'Visitors by transportation type'
+                text: 'Visitors by origin'
             },
             xAxis: {
                 categories: categories,
@@ -96,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Number of Visitors'
+                    text: 'Number of visitors'
                 },
                 labels: {
                     overflow: 'justify',
