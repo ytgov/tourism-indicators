@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             if (latestOccData) {
                 // Get total YTD occupancy
-                const monthlyTotal = parseFloat(latestOccData[6]).toFixed(1) + '%';
+                const monthlyTotal = parseFloat(latestOccData[3]).toFixed(1) + '%';
                 const date = new Date(latestOccData[0]);
                 const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
                 const year = date.getUTCFullYear();
 
                 // Get YTD change percentage
-                const occChange = parseFloat(latestOccData[8]);
+                const occChange = parseFloat(latestOccData[5]);
                 let color;
                 if (occChange >= -1 && occChange <= 1) {
                     color = '#6c757d';  // Dark grey for neutral changes
@@ -76,13 +76,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             const adrDateRangeElement2019 = document.getElementById('ytd-adr-date-range-2019');
             //console.log(latestAdrData);
             if (latestAdrData) {
-                const ytdTotal = '$' + parseFloat(latestAdrData[6]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+                const ytdTotal = '$' + parseFloat(latestAdrData[3]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
                 const date = new Date(latestAdrData[0]);
                 const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
                 const year = date.getUTCFullYear();
 
                 // Get YTD change percentage
-                const adrChange = parseFloat(latestAdrData[8]);
+                const adrChange = parseFloat(latestAdrData[5]);
                 let color;
                 if (adrChange >= -1 && adrChange <= 1) {
                     color = '#6c757d';  // Dark grey for neutral changes
@@ -120,13 +120,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             const revDateRangeElement2019 = document.getElementById('ytd-rev-date-range-2019');
 
             if (latestRevparData) {
-                const ytdTotal = '$' + parseFloat(latestRevparData[6]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+                const ytdTotal = '$' + parseFloat(latestRevparData[3]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
                 const date = new Date(latestRevparData[0]);
                 const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
                 const year = date.getUTCFullYear();
 
                 // Get YTD change percentage
-                const revChange = parseFloat(latestRevparData[8]);
+                const revChange = parseFloat(latestRevparData[5]);
                 let color;
                 if (revChange >= -1 && revChange <= 1) {
                     color = '#6c757d';  // Dark grey for neutral changes
