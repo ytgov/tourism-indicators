@@ -183,7 +183,7 @@ async function loadOccupancyData() {
         const ytdAverage = parseFloat(rows.find(row => 
             row[1] === mostRecent.year.toString() && 
             row[2] === mostRecent.month.toString()
-        )[6]); // ytd_avg_occupancy_rate
+        )[3]); // monthly_avg_occupancy_rate
         
         return {
             monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
@@ -191,7 +191,7 @@ async function loadOccupancyData() {
             ytdPercentageChange: parseFloat(rows.find(row => 
                 row[1] === mostRecent.year.toString() && 
                 row[2] === mostRecent.month.toString()
-            )[8]),
+            )[5]),
             monthlyData: data
                 .sort((a, b) => a.date - b.date)  // Sort ascending for chart data
         };
@@ -225,7 +225,7 @@ async function loadRoomRateData() {
         const ytdAverage = parseFloat(rows.find(row => 
             row[1] === mostRecent.year.toString() && 
             row[2] === mostRecent.month.toString()
-        )[6]); // ytd_avg_daily_room_rate
+        )[3]); // ytd_avg_daily_room_rate
         
         return {
             monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
@@ -233,7 +233,7 @@ async function loadRoomRateData() {
             ytdPercentageChange: parseFloat(rows.find(row => 
                 row[1] === mostRecent.year.toString() && 
                 row[2] === mostRecent.month.toString()
-            )[8]),
+            )[5]),
             monthlyData: data.sort((a, b) => a.date - b.date)
         };
     } catch (error) {
@@ -266,7 +266,7 @@ async function loadRevenuePerRoomData() {
         const ytdAverage = parseFloat(rows.find(row => 
             row[1] === mostRecent.year.toString() && 
             row[2] === mostRecent.month.toString()
-        )[6]); // ytd_avg_revpar
+        )[3]); // ytd_avg_revpar
         
         return {
             monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
@@ -274,7 +274,7 @@ async function loadRevenuePerRoomData() {
             ytdPercentageChange: parseFloat(rows.find(row => 
                 row[1] === mostRecent.year.toString() && 
                 row[2] === mostRecent.month.toString()
-            )[8]),
+            )[5]),
             monthlyData: data.sort((a, b) => a.date - b.date)
         };
     } catch (error) {
@@ -379,8 +379,8 @@ async function loadSTROccupancyData() {
         
         return {
             monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-            ytdTotal: parseFloat(mostRecent[6]),
-            ytdPercentageChange: parseFloat(mostRecent[8]),
+            ytdTotal: parseFloat(mostRecent[3]),
+            ytdPercentageChange: parseFloat(mostRecent[5]),
             monthlyData: data.map(row => ({
                 date: new Date(row[0]),
                 value: parseFloat(row[3])
@@ -406,8 +406,8 @@ async function loadSTRADRData() {
         
         return {
             monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-            ytdTotal: formatCurrency(parseFloat(mostRecent[6])),
-            ytdPercentageChange: parseFloat(mostRecent[8]),
+            ytdTotal: formatCurrency(parseFloat(mostRecent[3])),
+            ytdPercentageChange: parseFloat(mostRecent[5]),
             monthlyData: data.map(row => ({
                 date: new Date(row[0]),
                 value: parseFloat(row[3])
@@ -433,8 +433,8 @@ async function loadSTRRevPARData() {
         
         return {
             monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-            ytdTotal: parseFloat(mostRecent[6]),
-            ytdPercentageChange: parseFloat(mostRecent[8]),
+            ytdTotal: formatCurrency(parseFloat(mostRecent[3])),
+            ytdPercentageChange: parseFloat(mostRecent[5]),
             monthlyData: data.map(row => ({
                 date: new Date(row[0]),
                 value: parseFloat(row[3])
@@ -912,10 +912,10 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
     if (occupancyData) updateKPIContent('additional1-content', occupancyData, 'Hotel occupancy rate');
     if (roomRateData) updateKPIContent('additional2-content', roomRateData, 'Avg. daily rate');
-    if (revenuePerRoomData) updateKPIContent('additional3-content', revenuePerRoomData, 'Avg. revenue per room');
+    if (revenuePerRoomData) updateKPIContent('additional3-content', revenuePerRoomData, 'RevPAR');
     if (strOccupancyData) updateKPIContent('additional6-content', strOccupancyData, 'Rental occupancy rate');
     if (strADRData) updateKPIContent('additional7-content', strADRData, 'Avg. daily rate');
-    if (strRevPARData) updateKPIContent('additional8-content', strRevPARData, 'Revenue per room');
+    if (strRevPARData) updateKPIContent('additional8-content', strRevPARData, 'RevPAR');
     if (scAccommodationEmployment) updateKPIContent('additional12-content', scAccommodationEmployment, 'Employment in accom.');
     if (scRestaurantSales) updateKPIContent('additional13-content', scRestaurantSales, 'YTD restaurant sales');
     if (consumerConfidence) updateKPIContent('additional16-content', consumerConfidence, 'Consumer confidence');
