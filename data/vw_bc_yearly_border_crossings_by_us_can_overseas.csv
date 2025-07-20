@@ -1,47 +1,43 @@
 year,Traveller_characteristics,value
-1973,Canada,18247
-1976,Canada,18218
-1979,Canada,38971
-1982,Canada,44082
-1986,Canada,52176
-1989,Canada,64668
-1992,Canada,76945
-1995,Canada,68302
-2002,Canada,65159
-2005,Canada,66778
-2008,Canada,64387
-2011,Canada,71652
-2018,Canada,85711
-2021,Canada,2331
-2024,Canada,81616
-1973,Overseas,869
-1976,Overseas,1942
-1979,Overseas,2374
-1986,Overseas,8510
-1989,Overseas,12934
-1992,Overseas,19124
-1999,Overseas,32549
-2002,Overseas,26458
-2005,Overseas,34467
-2008,Overseas,38061
-2015,Overseas,44252
-2018,Overseas,50802
-2021,Overseas,26
-2024,Overseas,50834
-1973,United States,151869
-1976,United States,161755
-1979,United States,168346
-1982,United States,155177
-1989,United States,193846
-1992,United States,217099
-1995,United States,231475
-2002,United States,276670
-2005,United States,294175
-2008,United States,294119
-2011,United States,283805
-2018,United States,365275
-2021,United States,30745
-2024,United States,349055
+1977,Canada,17426
+1980,Canada,38479
+1983,Canada,42852
+1990,Canada,66995
+1993,Canada,69845
+1996,Canada,71142
+1999,Canada,67942
+2006,Canada,63445
+2009,Canada,65737
+2012,Canada,72048
+2015,Canada,67906
+2022,Canada,50281
+1974,Overseas,1226
+1977,Overseas,1843
+1980,Overseas,5232
+1983,Overseas,6619
+1990,Overseas,13809
+1993,Overseas,23111
+1996,Overseas,28547
+2003,Overseas,28398
+2006,Overseas,32572
+2009,Overseas,32098
+2012,Overseas,37697
+2019,Overseas,62680
+2022,Overseas,13408
+1972,United States,131986
+1975,United States,157287
+1978,United States,170094
+1985,United States,212739
+1988,United States,203440
+1991,United States,194640
+1998,United States,264364
+2001,United States,269835
+2004,United States,284669
+2007,United States,325292
+2014,United States,290428
+2017,United States,308099
+2020,United States,26328
+2023,United States,316527
 1974,Canada,18894
 1981,Canada,48331
 1984,Canada,44866
@@ -119,42 +115,46 @@ year,Traveller_characteristics,value
 2012,United States,289953
 2015,United States,292962
 2022,United States,107224
-1977,Canada,17426
-1980,Canada,38479
-1983,Canada,42852
-1990,Canada,66995
-1993,Canada,69845
-1996,Canada,71142
-1999,Canada,67942
-2006,Canada,63445
-2009,Canada,65737
-2012,Canada,72048
-2015,Canada,67906
-2022,Canada,50281
-1974,Overseas,1226
-1977,Overseas,1843
-1980,Overseas,5232
-1983,Overseas,6619
-1990,Overseas,13809
-1993,Overseas,23111
-1996,Overseas,28547
-2003,Overseas,28398
-2006,Overseas,32572
-2009,Overseas,32098
-2012,Overseas,37697
-2019,Overseas,62680
-2022,Overseas,13408
-1972,United States,131986
-1975,United States,157287
-1978,United States,170094
-1985,United States,212739
-1988,United States,203440
-1991,United States,194640
-1998,United States,264364
-2001,United States,269835
-2004,United States,284669
-2007,United States,325292
-2014,United States,290428
-2017,United States,308099
-2020,United States,26328
-2023,United States,316527
+1973,Canada,18247
+1976,Canada,18218
+1979,Canada,38971
+1982,Canada,44082
+1986,Canada,52176
+1989,Canada,64668
+1992,Canada,76945
+1995,Canada,68302
+2002,Canada,65159
+2005,Canada,66778
+2008,Canada,64387
+2011,Canada,71652
+2018,Canada,85711
+2021,Canada,2331
+2024,Canada,81616
+1973,Overseas,869
+1976,Overseas,1942
+1979,Overseas,2374
+1986,Overseas,8510
+1989,Overseas,12934
+1992,Overseas,19124
+1999,Overseas,32549
+2002,Overseas,26458
+2005,Overseas,34467
+2008,Overseas,38061
+2015,Overseas,44252
+2018,Overseas,50802
+2021,Overseas,26
+2024,Overseas,50834
+1973,United States,151869
+1976,United States,161755
+1979,United States,168346
+1982,United States,155177
+1989,United States,193846
+1992,United States,217099
+1995,United States,231475
+2002,United States,276670
+2005,United States,294175
+2008,United States,294119
+2011,United States,283805
+2018,United States,365275
+2021,United States,30745
+2024,United States,349055
