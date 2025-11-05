@@ -90,9 +90,8 @@ async function loadSpendingData() {
                 updated: new Date(row[7]).toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
                 percentChange: row[6] ? parseFloat(row[6]) : null
             }))
-            .filter(row => row.type === 'Estimated revenue' || row.type === 'Actual revenue')
+            .filter(row => row.type === 'Estimated revenue' || row.type === 'Actual revenue' || row.type === 'Forecast')
             .sort((a, b) => b.year - a.year);  // Sort by year descending
-
         // Get the most recent row
         const mostRecent = data[0];
 

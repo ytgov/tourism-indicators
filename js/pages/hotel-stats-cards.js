@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 // Get total YTD occupancy
                 const monthlyTotal = parseFloat(latestOccData[3]).toFixed(1) + '%';
                 const date = new Date(latestOccData[0]);
-                const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+                const month = date.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
                 const year = date.getUTCFullYear();
 
                 // Get YTD change percentage
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 occElement.textContent = monthlyTotal;
                 occChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${occChange.toFixed(1)}% y/y</span>`;
                 occChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${occChange2019.toFixed(1)}% y/y</span>`;
-                occDateElement.textContent = `Jan - ${month} ${year}`;
+                occDateElement.textContent = `${month} ${year}`;
                 occDateElement2019.textContent = `From 2019`;
             }
 
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (latestAdrData) {
                 const ytdTotal = '$' + parseFloat(latestAdrData[3]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
                 const date = new Date(latestAdrData[0]);
-                const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+                const month = date.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
                 const year = date.getUTCFullYear();
 
                 // Get YTD change percentage
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 adrElement.textContent = ytdTotal;
                 adrChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${adrChange.toFixed(1)}% y/y</span>`;
                 adrChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${adrChange2019.toFixed(1)}% y/y</span>`;
-                adrDateRangeElement.textContent = `Jan - ${month} ${year}`;
+                adrDateRangeElement.textContent = `${month} ${year}`;
                 adrDateRangeElement2019.textContent = `From 2019`;
             }
 
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (latestRevparData) {
                 const ytdTotal = '$' + parseFloat(latestRevparData[3]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
                 const date = new Date(latestRevparData[0]);
-                const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+                const month = date.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
                 const year = date.getUTCFullYear();
 
                 // Get YTD change percentage
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 
                 revElement.textContent = ytdTotal;
                 revChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${revChange.toFixed(1)}% y/y</span>`;
-                revDateRangeElement.textContent = `Jan - ${month} ${year}`;
+                revDateRangeElement.textContent = `${month} ${year}`;
                 revChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${revChange2019.toFixed(1)}% y/y</span>`;
                 revDateRangeElement2019.textContent = `From 2019`;
             }
