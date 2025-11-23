@@ -1,43 +1,4 @@
 year,Traveller_characteristics,value
-1972,Canada,15614
-1975,Canada,18900
-1978,Canada,27122
-1985,Canada,46583
-1988,Canada,58285
-1991,Canada,64684
-1998,Canada,75918
-2001,Canada,61523
-2004,Canada,66811
-2007,Canada,62798
-2014,Canada,78226
-2017,Canada,82110
-2020,Canada,4113
-2023,Canada,89342
-1972,Overseas,697
-1975,Overseas,1709
-1982,Overseas,6895
-1985,Overseas,5654
-1988,Overseas,11834
-1995,Overseas,25813
-1998,Overseas,34200
-2001,Overseas,29537
-2004,Overseas,31239
-2011,Overseas,37628
-2014,Overseas,45232
-2017,Overseas,46670
-2020,Overseas,114
-1977,United States,151115
-1980,United States,131841
-1983,United States,176048
-1986,United States,226704
-1993,United States,218622
-1996,United States,219408
-1999,United States,282054
-2006,United States,307435
-2009,United States,260513
-2012,United States,289953
-2015,United States,292962
-2022,United States,107224
 1974,Canada,18894
 1981,Canada,48331
 1984,Canada,44866
@@ -119,6 +80,45 @@ year,Traveller_characteristics,value
 2018,United States,365275
 2021,United States,30745
 2024,United States,349055
+1972,Canada,15614
+1975,Canada,18900
+1978,Canada,27122
+1985,Canada,46583
+1988,Canada,58285
+1991,Canada,64684
+1998,Canada,75918
+2001,Canada,61523
+2004,Canada,66811
+2007,Canada,62798
+2014,Canada,78226
+2017,Canada,82110
+2020,Canada,4113
+2023,Canada,89342
+1972,Overseas,697
+1975,Overseas,1709
+1982,Overseas,6895
+1985,Overseas,5654
+1988,Overseas,11834
+1995,Overseas,25813
+1998,Overseas,34200
+2001,Overseas,29537
+2004,Overseas,31239
+2011,Overseas,37628
+2014,Overseas,45232
+2017,Overseas,46670
+2020,Overseas,114
+1977,United States,151115
+1980,United States,131841
+1983,United States,176048
+1986,United States,226704
+1993,United States,218622
+1996,United States,219408
+1999,United States,282054
+2006,United States,307435
+2009,United States,260513
+2012,United States,289953
+2015,United States,292962
+2022,United States,107224
 1977,Canada,17426
 1980,Canada,38479
 1983,Canada,42852
