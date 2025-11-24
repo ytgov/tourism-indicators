@@ -70,27 +70,35 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Latest monthly visitors</h5>
-                            <p class="card-text h2" id="latest-monthly">-</p>
-                            <p class="card-text text-muted" id="latest-monthly-date">-</p>
+                            <h5 class="card-title">Latest full year</h5>
+                            <p class="card-text h2" id="latest-monthly">574,000</p>
+                            <p class="card-text text-muted" id="latest-monthly-date">visitors in 2024</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Year-to-date visitors</h5>
-                            <p class="card-text h2" id="ytd-amount">-</p>
-                            <p class="card-text text-muted" id="ytd-date-range">-</p>
+                            <h5 class="card-title">vs previous year</h5>
+                            <p class="card-text h2" id="ytd-amount"><span style="color: #0f6726;">
+                                <svg class="svg-arrow" width="20" height="20" viewBox="0 0 448 512" style="transform: none">
+        <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5-9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3-9.8-24.8-10-34.3.4z"></path>
+    </svg>
+                                8.9% y/y</p></span>
+                            <p class="card-text text-muted" id="ytd-date-range">compared to 2023</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Year-to-date change</h5>
-                            <p class="card-text h2" id="ytd-change">-</p>
-                            <p class="card-text  mb-0" id="c2019-change"></p>
+                            <h5 class="card-title">vs pre-pandemic</h5>
+                            <p class="card-text h2" id="ytd-change"><span style="color: #0f6726;">
+                                <svg class="svg-arrow" width="20" height="20" viewBox="0 0 448 512" style="transform: none">
+        <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5-9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3-9.8-24.8-10-34.3.4z"></path>
+    </svg>
+                                5.7%</p></span>
+                            <p class="card-text text-muted" id="c2019-change">compared to 2019</p>
                         </div>
                     </div>
                 </div>
@@ -101,15 +109,15 @@
                 <div class="card-body" style="width:100%;">
                     <h5 class="card-title">Highlights</h5>
                     <ul>
-                        <li>2024 had an estimated 596,100 visitors, including both tourism from outside of the Yukon,
-                            and Yukon residents engaging in local tourism activities. This is the highest annual total
-                            on record.</li>
-                        <li>Visitation in 2023 reached 523,600 (450,500 excluding Yukoners), marking a strong recovery
-                            from the pandemic.</li>
-                        <li>The pre-pandemic peak was in 2018, with an estimated 569,900 (491,300 excluding Yukoners)
-                            visitors.</li>
-                        <li>Note: Previous visitor estimates excluded Yukoners. Going forward, our calculations will
-                            include Yukoners to provide a more comprehensive view of visitation.</li>
+                        <li>In 2024, the Yukon welcomed an estimated 574,000 visitors, an 8.9% increase from 2023.</li>
+                        <li>2023 visitation reached 527,000, reflecting strong post-pandemic recovery.</li>
+                        <li>The pre-pandemic peak was in 2018, with an estimated 575,000 visitors.</li>
+                        <li>The chart below shows annual results from three sources: the Visitor Exit Survey (VES) from 
+                            the Yukon Bureau of Statistics, and the National Travel Survey (NTS)
+                             and Visitor Travel Survey (VTS) from Statistics Canada.</li>
+                        <li>Note: To provide a more comprehensive view of visitation, the historical data has been revised to include trips made by Yukoners within the territory.  Because of this change, previously published figures may not match.
+                        </li>
+                        <li><i>(Data updated annually.  Current as of November, 2025.)</i></li>
                     </ul>
                 </div>
             </div>
@@ -120,14 +128,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab"
                             aria-controls="by-year" aria-selected="true">By year</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab"
-                            aria-controls="by-month" aria-selected="false">By month</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="methodology-tab" data-toggle="tab" href="#methodology" role="tab"
-                            aria-controls="methodology" aria-selected="false">Methodology</a>
                     </li>
 
                 </ul>
@@ -145,13 +145,6 @@
                                         <!-- Years will be dynamically populated by JavaScript -->
                                     </select>
                                 </div>
-                                <!-- Yukoner Selector -->
-                                <div class="d-flex align-items-center mr-4">
-                                    <label for="visitorTypeSelect" class="sr-only">Filter by Visitor Type</label>
-                                    <select id="visitorTypeSelect" class="form-control">
-                                        <!-- populated by JavaScript-->
-                                    </select>
-                                </div>
                             </div>
 
                             <!-- Data By year -->
@@ -161,241 +154,21 @@
                         </div>
                     </div>
 
-                    <!-- By month Content -->
-                    <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
-                        <div class="card mb-4" style="border:0px; margin-top: 20px;">
-                            <div id="monthly-stacked-chart" class="card mt-4"
-                                style="width:100%; height:400px; margin-top: 20px;"></div>
-
-                            <div id="monthly-chart" class="card mt-4"
-                                style="width:100%; height:400px; margin-top: 20px;"></div>
-                            <div id="origin-chart" class="card mt-4"
-                                style="width:100%; height:400px; margin-top: 20px;"></div>
-                            <div id="data-table-container"
-                                data-csv-url="./data/vw_kpi_estimated_visitation_ytd_summary.csv" class="card mb-4"
-                                style="width:100%; margin-top: 20px;"></div>
-                        </div>
-                    </div>
-
-                    <!-- Methodology Tab -->
-                    <div class="tab-pane fade" id="methodology" role="tabpanel" aria-labelledby="methodology-tab">
-                        <div class="card mb-4" style="border:0px; margin-top: 20px;">
-                            <!-- Methodology Content -->
-                            <div class="card-body">
-                                <h2>Methodology</h2>
-
-                                <h3 class="mt-4">What counts as a visitor?</h3>
-                                <p>
-                                    A visitor is a traveller taking a trip to a main destination
-                                    outside their usual environment, for less than a year, and for any main purpose
-                                    (business, leisure or personal) other than to be employed by a resident entity in
-                                    the place visited.
-                                </p>
-
-                                <p>
-                                    This definition aligns with Statistics Canada's standards, as outlined in their <a
-                                        href="https://www150.statcan.gc.ca/n1/pub/13-607-x/2016001/1383-eng.htm"
-                                        target="_blank">Provincial and Territorial Tourism Satellite Account
-                                        (PTTSA)</a>.
-                                </p>
-                                <p>
-                                    In the spending data, a person is only counted as a visitor once they travel at
-                                    least 40 km outside their home location. This ensures that local spending is
-                                    separated from tourism-related activity.
-                                </p>
-
-                                <h3 class="mt-4">How we estimate visitor numbers using spending</h3>
-                                <p>
-                                    We want to understand how many people are visiting the Yukon each month - not just
-                                    once every few years.
-                                    The Visitor Exit Survey is a trusted and detailed source of information, but it's
-                                    only done every 5 to 10 years.
-                                    To help us track visitor trends between surveys we use monthly visitor spending
-                                    data from Destination Canada.</p>
-                                <p>This lets us:</p>
-                                <ul>
-                                    <li>
-                                        Estimate how many people visit each month, based on how much money they spent.
-                                    </li>
-                                    <li>
-                                        Model the total number of visitors for the year before the year is over.
-                                    </li>
-                                </ul>
-                                <p> This helps us see how tourism is changing over time, and
-                                    how this year compares to others like 2019, before the COVID-19 pandemic.
-                                </p>
-
-                                <h3 class="mt-4">Where the information comes from</h3>
-                                <p>We use three main sources of data:</p>
-                                <ul>
-                                    <li>
-                                        <strong>Visitor Exit Survey (VES)</strong> – Collected by the Yukon Bureau of
-                                        Statistics,
-                                        this survey provides detailed monthly visitor numbers.
-                                    </li>
-                                    <li>
-                                        <strong>Consumer Price Index (CPI)</strong> – This shows how the cost of things
-                                        (like food, hotels, gas)
-                                        changes over time. We use it to adjust for inflation.
-                                    </li>
-                                    <li>
-                                        <strong>Visitor spending</strong> – This tells us how much money visitors spend
-                                        in the Yukon each month.
-                                        This comes from
-                                        <a href="https://www.tourismdatacollective.ca/" target="_blank">
-                                            Destination Canada's Lodging Aligned Spend Reporting (LASR)
-                                        </a>.
-                                    </li>
-                                </ul>
-                                <h3 class="mt-4">What's new in 2024</h3>
-                                <p>
-                                    In the past, we only counted visitors from outside Yukon. Starting in 2024, we are
-                                    now including Yukoners in
-                                    the total number of visitors. That means if someone from Whitehorse goes to Dawson
-                                    for the weekend, they're now counted
-                                    too - just like someone visiting from Alberta or Germany.
-                                </p>
-                                <p>To make this change fair and accurate, we look at how much of the spending each month
-                                    comes from Yukoners. This percentage
-                                    changes monthly, and helps us adjust how we estimate the total number of people.
-                                </p>
-
-                                <h3 class="mt-4">How we estimate visitor numbers</h3>
-                                <ol>
-                                    <li>
-                                        <strong>Fix for inflation</strong>
-                                        <ul>
-                                            <li>We start by adjusting the spending data for inflation.</li>
-                                            <li>This helps us compare months fairly, even if prices have gone up.</li>
-                                        </ul>
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <strong>Calculate visitor ratio (including Yukoners)</strong>
-                                        <ul>
-                                            <li>Each month, we check what percentage of the total spending came from
-                                                Yukoners.</li>
-                                            <li>We use that to estimate how many Yukoners and non-Yukoners were
-                                                traveling in Yukon that month.</li>
-                                            <li>We calculate a new combined ratio that includes all visitor types, based
-                                                on total adjusted spending.</li>
-                                            <li>This ratio shows us how much spending equals one visitor (no matter
-                                                where they’re from).</li>
-                                        </ul>
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <strong>Estimate visitor numbers</strong>
-                                        <ul>
-                                            <li>If we already have the real number of visitors from the Visitor Exit
-                                                Survey, we use that.</li>
-                                            <li>If not, we use a ratio to estimate visitors from spending data.</li>
-                                            <li>A ratio tells us how much spending usually equals one visitor.</li>
-                                            <li>We use ratios from past years for the same month (e.g., July this year
-                                                uses July from the most recent Visitor Exit Survey).</li>
-                                            <li>Then we multiply the adjusted spending by that ratio to get a visitor
-                                                estimate.</li>
-                                        </ul>
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <strong>Add it up</strong>
-                                        <ul>
-                                            <li>We total up the number of visitors for each month.</li>
-                                            <li>We also add the total for the year up to that point - this is called
-                                                year-to-date (YTD).</li>
-                                        </ul>
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <strong>Compare to last year</strong>
-                                        <ul>
-                                            <li>We check how each month's numbers compare to the same month last year.
-                                            </li>
-                                            <li>We also compare YTD totals between years.</li>
-                                            <li>We calculate percentage differences to see if more or fewer people
-                                                visited.</li>
-                                        </ul>
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <strong>Compare to 2019</strong>
-                                        <ul>
-                                            <li>We also compare each YTD total to 2019 - a normal year before the
-                                                pandemic.</li>
-                                            <li>This helps us see if visitation is back to normal levels.</li>
-                                        </ul>
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <strong>Forecast the rest of the year</strong>
-                                        <ul>
-                                            <li>Once we have at least one month of real data for the current year, we
-                                                use a model to forecast the rest.</li>
-                                            <li>The model looks at past years (especially 2019 and the most recent full
-                                                year) to understand seasonal patterns – like summer peaks and slower
-                                                winters.</li>
-                                            <li>It uses a method called Holt-Winters exponential smoothing, which is
-                                                good at spotting regular trends and adjusting for them over time.</li>
-                                            <li>This forecast is updated automatically every month as new data comes in.
-                                            </li>
-                                            <li>The result is a projection for the total number of visitors for the full
-                                                year, even before the year is finished.</li>
-                                        </ul>
-                                    </li>
-
-                                    <br>
-                                    <li>
-                                        <strong>Limitations</strong>
-                                        <ul>
-                                            <li>This is just an estimate - it's not perfect, but it’s helpful.</li>
-                                            <li>We assume that when people spend more money, more of them are visiting.
-                                            </li>
-                                            <li>We adjust for inflation so we’re not misled by rising prices.</li>
-                                            <li>Visitor numbers are rounded to the nearest hundred to avoid giving a
-                                                false sense of precision.</li>
-                                            <li>We show a range of possible values (+5% to -5%) to reflect uncertainty
-                                                in the model, not margin of error from survey sampling.</li>
-                                            <li>
-                                                Using a range helps show that there isn’t one “correct” number - it
-                                                gives a more realistic idea of what the true number could be,
-                                                especially when we don’t have exact data.
-                                            </li>
-                                            <li>Our year-end forecasts are based on patterns from recent years and
-                                                assume those seasonal
-                                                trends will continue. Unexpected changes (like new events or travel
-                                                disruptions) may affect accuracy.</li>
-
-                                        </ul>
-                                    </li>
-                                </ol>
-
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
             <!-- Data Source -->
             <div class="data-source mt-4">
-                <p><strong>Notes on data:</strong> Visitor numbers are estimates based on monthly spending data from
-                    <a href="https://www.tourismdatacollective.ca/" target="_blank">Destination Canada’s Lodging Aligned
-                        Spend Reporting (LASR)</a>
-                    , combined with historical visitor data from the Visitor Exit Survey (VES).
+                <p><strong>Notes on data:</strong> Visitor numbers are estimates based on data from Statistics Canada's 
+                    National Travel Survey (NTS) and Visitor Travel Survey (VTS), combined with historical visitor
+                     data from the Visitor Exit Survey (VES).
                 </p>
                 <p>A visitor is a traveller taking a trip to a main destination outside their usual environment, for
                     less than a year, and for any main purpose (business, leisure or personal) other than to be employed
                     by a resident entity in the place visited.
                 </p>
-                <p>As of 2024, estimates now include Yukon residents engaging in local tourism. This provides a more
-                    complete picture of tourism activity within the territory. In 2024, Yukoners made up approximately
-                    17.6% of total visitor spending.</p>
 
-                <p>Numbers have been rounded to the nearest hundred. The shaded blue area represents the
-                    confidence
-                    range, indicating possible estimated values for visitors. For more information, see the methodology.
-                </p>
+                <p>Numbers have been rounded to the nearest hundred.</p>
                 <p>Source:
                     Visitor Exit Survey <a href="https://yukon.ca/en/yukon-visitor-exit-survey-2022-2023"
                         target="_blank">2022/23</a>, <a href="https://yukon.ca/en/visitor-exit-survey-2017-2018"
@@ -403,9 +176,13 @@
                         href="https://yukon.ca/en/yukon-visitor-tracking-program-summer-report-2012-13"
                         target="_blank">2012/13</a>, 2004, 1999, 1994, 1987. Government of Yukon,
                     Department of Tourism and Culture.<br>
-                    Spending data is derived from <a href="https://www.tourismdatacollective.ca/"
-                        target="_blank">Destination
-                        Canada's Lodging Aligned Spend Reporting (LASR)</a>
+
+                    Statistics Canada. <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410007101" target="_blank">Table 24-10-0071-01
+                          Visits, nights and expenditures for Canadian residents travelling in Canada and abroad by geography of visit,
+                           province of trip origin and visit duration (x 1,000)</a><br>
+                    Statistics Canada. <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410006601" target="_blank"> Table 24-10-0066-01
+                          Visits, nights and spending for visitors to Canada by geography of visit, residency and mode of transport (x 1,000)</a><br>
+
             </div>
         </div>
     </div>
@@ -447,13 +224,7 @@
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/utils/get-year.js"></script>
     <script src="js/utils/analytics.js"></script>
-    <script type="module" src="js/visitor-estimates/visitors-by-month.js"></script>
-    <script src="js/visitor-estimates/visitors-by-year.js"></script>
-    <script src="js/visitor-estimates/visitors-by-month-stacked.js"></script>
-    <script src="js/visitor-estimates/visitors-by-origin.js"></script>
-    <script src="js/utils/data-table.js"></script>
-    <script src="js/utils/get-year.js"></script>
-    <script src="js/utils/analytics.js"></script>
+    <script src="js/visitor-estimates/visitors-by-year-revised.js"></script>
 
 </body>
 

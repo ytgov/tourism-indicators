@@ -112,45 +112,41 @@ async function loadSpendingData() {
 // Function to load Estimated visitors data
 async function loadEstimatedVisitorsData() {
     try {
-        const response = await fetch('./data/vw_kpi_estimated_visitation_ytd_summary.csv?' + Math.random());
+        const response = await fetch('./data/vw_estimated_visitors_by_year_revised.csv?' + Math.random());
         const csvText = await response.text();
 
         const rows = csvText
             .split('\n')
-            .filter(row => row.trim()) // Remove empty lines
+            .filter(row => row.trim())
             .map(row => row.replace(/"/g, '').split(','));
 
-        const header = rows[0];
-        const dataRows = rows.slice(1)
-            .filter(row => row.length > 3 && row[3].toLowerCase().trim() === 'all') // Filter for 'All' scope
-            .map(row => ({
-                date: new Date(row[0]),
-                year: parseInt(row[1]),
-                month: parseInt(row[2]),
-                value: parseFloat(row[4]) // monthly_total
+        const data = rows.slice(1)
+            .map(r => ({
+                year: parseInt(r[0]),
+                excYukoners: parseInt(r[1]),
+                incYukoners: parseInt(r[2]),
+                notes: r[3]
             }))
-            .sort((a, b) => b.date - a.date);
+            .sort((a, b) => a.year - b.year);
 
-        const mostRecent = dataRows[0];
-
-        // Find full row again for the YTD values
-        const mostRecentRow = rows.find(row =>
-            row[1] === mostRecent.year.toString() &&
-            row[2] === mostRecent.month.toString() &&
-            row[3].toLowerCase().trim() === 'all'
-        );
-
-        const ytdTotal = parseFloat(mostRecentRow[7]);
-        const ytdPercentageChange = parseFloat(mostRecentRow[9]);
+        const mostRecent = data[data.length - 1];
 
         return {
-            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
-            ytdTotal,
-            ytdPercentageChange,
-            monthlyData: dataRows.sort((a, b) => a.date - b.date)
+            monthYear: mostRecent.year.toString(),       // KPI header
+            ytdTotal: mostRecent.incYukoners,            // Use “including Yukoners”
+            ytdPercentageChange:
+                data.length > 1
+                    ? ((mostRecent.incYukoners - data[data.length - 2].incYukoners) /
+                        data[data.length - 2].incYukoners) * 100
+                    : 0,
+
+            yearlyData: data.map(d => ({
+                year: d.year,
+                value: d.incYukoners
+            }))
         };
     } catch (error) {
-        console.error('Error loading Estimated visitors data:', error);
+        console.error('Error loading Estimated visitors (yearly) data:', error);
         return null;
     }
 }
@@ -895,7 +891,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     if (visitorsData) {
         updateKPIContent('indicator1-content', visitorsData, 'Estimated visitors');
-        createKPIChart('indicator1-chart', visitorsData.monthlyData, visitorsData.ytdPercentageChange);
+        createYearlyKPIChart('indicator1-chart', visitorsData.yearlyData, visitorsData.ytdPercentageChange);
     }
     if (airportData) {
         updateKPIContent('indicator2-content', airportData, 'Airport arrivals');
