@@ -15,8 +15,6 @@ year,measure,sector,value
 2009,GDP attributable to tourism,Total,92.5
 2008,Gross revenues attributable to tourism,Total,173.5
 2008,GDP attributable to tourism,Total,101.3
-2023,GDP,Total,3438.7
-2024,GDP,Total,3326.1
 1997,GDP,Total,1709.8
 1998,GDP,Total,1629.8
 1999,GDP,Total,1626.4
@@ -35,6 +33,8 @@ year,measure,sector,value
 2012,GDP,Total,2694.1
 2013,GDP,Total,2734.7
 2014,GDP,Total,2752.5
+2023,GDP,Total,3438.7
+2024,GDP,Total,3326.1
 2015,GDP,Total,2543.4
 2016,GDP,Total,2726.9
 2017,GDP,Total,2781.0
