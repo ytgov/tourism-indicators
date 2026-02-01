@@ -16,7 +16,6 @@ year,measure,sector,value
 2008,Gross revenues attributable to tourism,Total,173.5
 2008,GDP attributable to tourism,Total,101.3
 2023,GDP,Total,3438.7
-2024,GDP,Total,3326.1
 1997,GDP,Total,1709.8
 1998,GDP,Total,1629.8
 1999,GDP,Total,1626.4
@@ -43,10 +42,11 @@ year,measure,sector,value
 2020,GDP,Total,2875.0
 2021,GDP,Total,3143.9
 2022,GDP,Total,3378.8
+2024,GDP,Total,3326.1
 2024,Spend from LASR,Total,389.9
 2021,Spend from LASR,Total,163.0
 2022,Spend from LASR,Total,255.7
-2025,Spend from LASR,Total,299.9
+2025,Spend from LASR,Total,336.6
 2019,Spend from LASR,Total,276.0
 2020,Spend from LASR,Total,105.9
 2023,Spend from LASR,Total,320.8
