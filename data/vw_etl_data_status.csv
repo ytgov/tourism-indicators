@@ -1,38 +1,38 @@
 timestamp,process,Action,Dataset,Message
-2026-02-01 02:00:50.617000,Load,SUCCESS,statcan_cpi,Loaded 36 into statcan_cpi.
-2026-02-01 02:03:04.250000,Load,SUCCESS,statcan_employment_by_industry,Loaded 140 into statcan_employment_by_industry.
-2026-02-01 02:03:11.373000,Load,SUCCESS,statcan_exchange_rates,Loaded 864 into statcan_exchange_rates.
-2026-02-01 02:00:47.937000,Load,SUCCESS,statcan_gas_prices,Loaded 36 into statcan_gas_prices.
-2026-02-01 02:03:13.977000,Load,SUCCESS,statcan_gdp,Loaded 26 into statcan_gdp.
-2026-02-01 02:00:45.427000,Load,SUCCESS,statcan_intl_travellers_entering_canada,Loaded 16989 into statcan_intl_travellers_entering_canada.
-2026-02-01 02:00:57.263000,Load,SUCCESS,statcan_restaurant_spending,Loaded 490 into statcan_restaurant_spending.
-2026-02-01 02:00:53.957000,Load,SUCCESS,statcan_retail_sales,Loaded 490 into statcan_retail_sales.
-2026-02-01 02:03:07.253000,Load,SUCCESS,statcan_tourism_business_count,Loaded 170 into statcan_tourism_business_count.
-2026-02-01 02:03:01.500000,Load,SUCCESS,statcan_vehicle_arrivals,Loaded 68348 into statcan_vehicle_arrivals.
-2026-02-01 02:01:04.177000,Load,SUCCESS,statcan_visitor_origin,Loaded 2650 into statcan_visitor_origin.
-2026-02-01 02:03:37.727000,Load,SUCCESS,tdc_lasr_spending_details,Loaded 17782 successfully into tdc_lasr_spending_details.
-2026-02-01 02:03:44.503000,Export,SUCCESS,vw_bc_vehicle_arrivals_by_license_plate,Exported to ./export_data/vw_bc_vehicle_arrivals_by_license_plate.csv
-2026-02-01 02:03:40.160000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_continent,Exported to ./export_data/vw_bc_yearly_border_crossings_by_continent.csv
-2026-02-01 02:03:44.243000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_country_of_origin,Exported to ./export_data/vw_bc_yearly_border_crossings_by_country_of_origin.csv
-2026-02-01 02:03:38.213000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_location,Exported to ./export_data/vw_bc_yearly_border_crossings_by_location.csv
-2026-02-01 02:03:40.040000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_origin,Exported to ./export_data/vw_bc_yearly_border_crossings_by_origin.csv
-2026-02-01 02:03:39.810000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_traveller_type,Exported to ./export_data/vw_bc_yearly_border_crossings_by_traveller_type.csv
-2026-02-01 02:03:44.333000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_us_can_overseas,Exported to ./export_data/vw_bc_yearly_border_crossings_by_us_can_overseas.csv
-2026-02-01 02:03:44.087000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_vehicle_type,Exported to ./export_data/vw_bc_yearly_border_crossings_by_vehicle_type.csv
-2026-01-25 02:18:18.417000,Export,SUCCESS,vw_etl_data_status,Exported to ./export_data/vw_etl_data_status.csv
-2026-02-01 02:03:38.277000,Export,SUCCESS,vw_gdp_stats,Exported to ./export_data/vw_gdp_stats.csv
-2026-02-01 02:03:38.390000,Export,SUCCESS,vw_kpi_air_arrivals_ytd_summary,Exported to ./export_data/vw_kpi_air_arrivals_ytd_summary.csv
-2026-02-01 02:03:38.457000,Export,SUCCESS,vw_kpi_cbre_avg_daily_room_rate_ytd_summary,Exported to ./export_data/vw_kpi_cbre_avg_daily_room_rate_ytd_summary.csv
-2026-02-01 02:03:38.513000,Export,SUCCESS,vw_kpi_cbre_occupancy_rate_ytd_summary,Exported to ./export_data/vw_kpi_cbre_occupancy_rate_ytd_summary.csv
-2026-02-01 02:03:38.567000,Export,SUCCESS,vw_kpi_cbre_revpar_ytd_summary,Exported to ./export_data/vw_kpi_cbre_revpar_ytd_summary.csv
-2026-02-01 02:03:44.593000,Export,SUCCESS,vw_kpi_economic_accommodation_and_food_employment,Exported to ./export_data/vw_kpi_economic_accommodation_and_food_employment.csv
-2026-02-01 02:03:44.800000,Export,SUCCESS,vw_kpi_economic_restaurant_spending,Exported to ./export_data/vw_kpi_economic_restaurant_spending.csv
-2026-02-01 02:03:44.880000,Export,SUCCESS,vw_kpi_economic_retail_spending,Exported to ./export_data/vw_kpi_economic_retail_spending.csv
-2026-02-01 02:03:39.177000,Export,SUCCESS,vw_kpi_intl_travellers_entering_canada_ytd_summary,Exported to ./export_data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv
-2026-02-01 02:03:39.247000,Export,SUCCESS,vw_kpi_str_adr_ytd_summary,Exported to ./export_data/vw_kpi_str_adr_ytd_summary.csv
-2026-02-01 02:03:39.297000,Export,SUCCESS,vw_kpi_str_available_listings_ytd_summary,Exported to ./export_data/vw_kpi_str_available_listings_ytd_summary.csv
-2026-02-01 02:03:39.353000,Export,SUCCESS,vw_kpi_str_occupancy_ytd_summary,Exported to ./export_data/vw_kpi_str_occupancy_ytd_summary.csv
-2026-02-01 02:03:39.407000,Export,SUCCESS,vw_kpi_str_revpar_ytd_summary,Exported to ./export_data/vw_kpi_str_revpar_ytd_summary.csv
-2026-02-01 02:03:39.553000,Export,SUCCESS,vw_kpi_tc_revenue_estimates_revised,Exported to ./export_data/vw_kpi_tc_revenue_estimates_revised.csv
-2026-02-01 02:03:44.913000,Export,SUCCESS,vw_ybs_tourism_revenue_and_gdp,Exported to ./export_data/vw_ybs_tourism_revenue_and_gdp.csv
-2026-02-01 02:03:44.943000,Export,SUCCESS,ybs_gdp_percentage,Exported to ./export_data/ybs_gdp_percentage.csv
+2026-02-08 02:00:57.060000,Load,SUCCESS,statcan_cpi,Loaded 36 into statcan_cpi.
+2026-02-08 02:02:50.260000,Load,SUCCESS,statcan_employment_by_industry,Loaded 140 into statcan_employment_by_industry.
+2026-02-08 02:02:56.630000,Load,SUCCESS,statcan_exchange_rates,Loaded 888 into statcan_exchange_rates.
+2026-02-08 02:00:54.510000,Load,SUCCESS,statcan_gas_prices,Loaded 36 into statcan_gas_prices.
+2026-02-08 02:02:59.107000,Load,SUCCESS,statcan_gdp,Loaded 26 into statcan_gdp.
+2026-02-08 02:00:52.263000,Load,SUCCESS,statcan_intl_travellers_entering_canada,Loaded 16989 into statcan_intl_travellers_entering_canada.
+2026-02-08 02:01:03.470000,Load,SUCCESS,statcan_restaurant_spending,Loaded 490 into statcan_restaurant_spending.
+2026-02-08 02:01:00.103000,Load,SUCCESS,statcan_retail_sales,Loaded 490 into statcan_retail_sales.
+2026-02-08 02:02:53.010000,Load,SUCCESS,statcan_tourism_business_count,Loaded 170 into statcan_tourism_business_count.
+2026-02-08 02:02:47.583000,Load,SUCCESS,statcan_vehicle_arrivals,Loaded 68348 into statcan_vehicle_arrivals.
+2026-02-08 02:01:11.117000,Load,SUCCESS,statcan_visitor_origin,Loaded 2650 into statcan_visitor_origin.
+2026-02-08 02:03:20.357000,Load,SUCCESS,tdc_lasr_spending_details,Loaded 17782 successfully into tdc_lasr_spending_details.
+2026-02-08 02:03:30.690000,Export,SUCCESS,vw_bc_vehicle_arrivals_by_license_plate,Exported to ./export_data/vw_bc_vehicle_arrivals_by_license_plate.csv
+2026-02-08 02:03:25.647000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_continent,Exported to ./export_data/vw_bc_yearly_border_crossings_by_continent.csv
+2026-02-08 02:03:30.343000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_country_of_origin,Exported to ./export_data/vw_bc_yearly_border_crossings_by_country_of_origin.csv
+2026-02-08 02:03:20.843000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_location,Exported to ./export_data/vw_bc_yearly_border_crossings_by_location.csv
+2026-02-08 02:03:25.470000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_origin,Exported to ./export_data/vw_bc_yearly_border_crossings_by_origin.csv
+2026-02-08 02:03:25.167000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_traveller_type,Exported to ./export_data/vw_bc_yearly_border_crossings_by_traveller_type.csv
+2026-02-08 02:03:30.493000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_us_can_overseas,Exported to ./export_data/vw_bc_yearly_border_crossings_by_us_can_overseas.csv
+2026-02-08 02:03:30.137000,Export,SUCCESS,vw_bc_yearly_border_crossings_by_vehicle_type,Exported to ./export_data/vw_bc_yearly_border_crossings_by_vehicle_type.csv
+2026-02-01 02:03:44.993000,Export,SUCCESS,vw_etl_data_status,Exported to ./export_data/vw_etl_data_status.csv
+2026-02-08 02:03:20.907000,Export,SUCCESS,vw_gdp_stats,Exported to ./export_data/vw_gdp_stats.csv
+2026-02-08 02:03:20.990000,Export,SUCCESS,vw_kpi_air_arrivals_ytd_summary,Exported to ./export_data/vw_kpi_air_arrivals_ytd_summary.csv
+2026-02-08 02:03:21.050000,Export,SUCCESS,vw_kpi_cbre_avg_daily_room_rate_ytd_summary,Exported to ./export_data/vw_kpi_cbre_avg_daily_room_rate_ytd_summary.csv
+2026-02-08 02:03:21.107000,Export,SUCCESS,vw_kpi_cbre_occupancy_rate_ytd_summary,Exported to ./export_data/vw_kpi_cbre_occupancy_rate_ytd_summary.csv
+2026-02-08 02:03:21.167000,Export,SUCCESS,vw_kpi_cbre_revpar_ytd_summary,Exported to ./export_data/vw_kpi_cbre_revpar_ytd_summary.csv
+2026-02-08 02:03:30.760000,Export,SUCCESS,vw_kpi_economic_accommodation_and_food_employment,Exported to ./export_data/vw_kpi_economic_accommodation_and_food_employment.csv
+2026-02-08 02:03:30.913000,Export,SUCCESS,vw_kpi_economic_restaurant_spending,Exported to ./export_data/vw_kpi_economic_restaurant_spending.csv
+2026-02-08 02:03:30.990000,Export,SUCCESS,vw_kpi_economic_retail_spending,Exported to ./export_data/vw_kpi_economic_retail_spending.csv
+2026-02-08 02:03:24.500000,Export,SUCCESS,vw_kpi_intl_travellers_entering_canada_ytd_summary,Exported to ./export_data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv
+2026-02-08 02:03:24.570000,Export,SUCCESS,vw_kpi_str_adr_ytd_summary,Exported to ./export_data/vw_kpi_str_adr_ytd_summary.csv
+2026-02-08 02:03:24.617000,Export,SUCCESS,vw_kpi_str_available_listings_ytd_summary,Exported to ./export_data/vw_kpi_str_available_listings_ytd_summary.csv
+2026-02-08 02:03:24.667000,Export,SUCCESS,vw_kpi_str_occupancy_ytd_summary,Exported to ./export_data/vw_kpi_str_occupancy_ytd_summary.csv
+2026-02-08 02:03:24.730000,Export,SUCCESS,vw_kpi_str_revpar_ytd_summary,Exported to ./export_data/vw_kpi_str_revpar_ytd_summary.csv
+2026-02-08 02:03:24.843000,Export,SUCCESS,vw_kpi_tc_revenue_estimates_revised,Exported to ./export_data/vw_kpi_tc_revenue_estimates_revised.csv
+2026-02-08 02:03:31.023000,Export,SUCCESS,vw_ybs_tourism_revenue_and_gdp,Exported to ./export_data/vw_ybs_tourism_revenue_and_gdp.csv
+2026-02-08 02:03:31.057000,Export,SUCCESS,ybs_gdp_percentage,Exported to ./export_data/ybs_gdp_percentage.csv
