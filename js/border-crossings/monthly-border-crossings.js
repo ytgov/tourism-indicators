@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const ytdAmount = document.getElementById("ytd-amount");
             const ytdDateRange = document.getElementById("ytd-date-range");
             if (ytdAmount) ytdAmount.textContent = latestEntry.ytdTotal.toLocaleString();
-            if (ytdDateRange) ytdDateRange.textContent = latestEntry.ytdDateRange + year;
+            if (ytdDateRange) ytdDateRange.textContent = latestEntry.ytdDateRange + " " +year;
 
             // Update "Year-to-date change"
             const ytdChangeElement = document.getElementById("ytd-change");
