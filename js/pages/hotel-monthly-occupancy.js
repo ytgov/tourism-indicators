@@ -53,7 +53,7 @@ async function generateChart() {
             y: rate !== null ? rate : null
         })),
         color: colors[index % colors.length], // Apply the color scheme in a loop
-        visible: !['2014', '2015', '2016', '2017', '2018', '2020', '2021', '2022'].includes(year) // Disable specific years by default
+        visible: !['2014', '2015', '2016', '2017', '2018', '2020', '2021', '2022', '2023', '2024'].includes(year) // Disable specific years by default
     }));
 
     // Generate the chart

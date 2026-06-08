@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const occupancyData = await loadCSVData('data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random());
         const adrData = await loadCSVData('data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random());
         const revparData = await loadCSVData('data/vw_kpi_str_revpar_ytd_summary.csv?'+Math.random());
+        const revenueData = await loadCSVData('data/vw_kpi_str_rev_ytd_summary.csv?'+Math.random());
         
         // Update metric cards with latest data
         function updateMetricCards() {
@@ -20,6 +21,57 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             const sortedRevparData = [...revparData.data].sort((a, b) => new Date(b[0]) - new Date(a[0]));
             const latestRevparData = sortedRevparData[0];
+
+            const sortedRevenueData = [...revenueData.data].sort((a, b) => new Date(b[0]) - new Date(a[0]));
+            const latestRevenueData = sortedRevenueData[0];
+            
+            // Update revenue
+            const revenueElement = document.getElementById('ytd-revenue');
+            const revenueChangeElement = document.getElementById('ytd-rev-change');
+            const revenueDateElement = document.getElementById('latest-monthly-rev-date');
+            const revenueChangeElement2019 = document.getElementById('ytd-rev-change-2019');
+            const revenueDateElement2019 = document.getElementById('latest-monthly-rev-date-2019');
+
+            if (latestRevenueData) {
+                // Get total YTD revenue in millions
+                const monthlyTotal = (parseFloat(latestRevenueData[6]) / 1000000).toFixed(2) + 'M';
+                const date = new Date(latestRevenueData[0]);
+                const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+                const year = date.getUTCFullYear();
+
+                // Get YTD change percentage
+                const revenueChange = parseFloat(latestRevenueData[8]);
+                let color;
+                if (revenueChange >= -1 && revenueChange <= 1) {
+                    color = '#6c757d';  // Dark grey for neutral changes
+                } else if (revenueChange > 1) {
+                    color = '#0f6723';  // Green for positive changes
+                } else {
+                    color = '#a42330';  // Red for negative changes
+                }
+                const arrow = createArrowSvg(revenueChange);
+
+                // Update revenue elements
+                revenueElement.textContent = '$' + monthlyTotal;
+                revenueDateElement.textContent = 'Jan - ' + month;
+                revenueChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${revenueChange.toFixed(1)}% y/y</span>`;
+
+                // Get 2019 change percentage
+                const revenueChange2019 = parseFloat(latestRevenueData[10]);
+                let color2019;
+                if (revenueChange2019 >= -1 && revenueChange2019 <= 1) {
+                    color2019 = '#6c757d';  // Dark grey for neutral changes
+                } else if (revenueChange2019 > 1) {
+                    color2019 = '#0f6723';  // Green for positive changes
+                } else {
+                    color2019 = '#a42330';  // Red for negative changes
+                }
+                const arrow2019 = createArrowSvg(revenueChange2019);
+
+                // Update 2019 revenue elements
+                revenueDateElement2019.textContent = 'vs 2019';
+                revenueChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${revenueChange2019.toFixed(1)}% y/y</span>`;
+            }
             
             // Update occupancy
             const occElement = document.getElementById('ytd-occupancy');
@@ -113,11 +165,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             // Update revpar
-            const revElement = document.getElementById('ytd-revpar');
-            const revChangeElement = document.getElementById('ytd-rev-change');
-            const revDateRangeElement = document.getElementById('ytd-rev-date-range');
-            const revChangeElement2019 = document.getElementById('ytd-rev-change-2019');
-            const revDateRangeElement2019 = document.getElementById('ytd-rev-date-range-2019');
+            const revparElement = document.getElementById('ytd-revpar');
+            const revparChangeElement = document.getElementById('ytd-revpar-change');
+            const revparDateRangeElement = document.getElementById('ytd-revpar-date-range');
+            const revparChangeElement2019 = document.getElementById('ytd-revpar-change-2019');
+            const revparDateRangeElement2019 = document.getElementById('ytd-revpar-date-range-2019');
 
             if (latestRevparData) {
                 const ytdTotal = '$' + parseFloat(latestRevparData[3]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -126,34 +178,34 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const year = date.getUTCFullYear();
 
                 // Get YTD change percentage
-                const revChange = parseFloat(latestRevparData[5]);
+                const revparChange = parseFloat(latestRevparData[5]);
                 let color;
-                if (revChange >= -1 && revChange <= 1) {
+                if (revparChange >= -1 && revparChange <= 1) {
                     color = '#6c757d';  // Dark grey for neutral changes
-                } else if (revChange > 1) {
+                } else if (revparChange > 1) {
                     color = '#0f6723';  // Green for positive changes
                 } else {
                     color = '#a42330';  // Red for negative changes
                 }
-                const arrow = createArrowSvg(revChange);
+                const arrow = createArrowSvg(revparChange);
 
                 // Get 2019 change percentage
-                const revChange2019 = parseFloat(latestRevparData[10]);
+                const revparChange2019 = parseFloat(latestRevparData[10]);
                 let color2019;
-                if (revChange2019 >= -1 && revChange2019 <= 1) {
+                if (revparChange2019 >= -1 && revparChange2019 <= 1) {
                     color2019 = '#6c757d';  // Dark grey for neutral changes
-                } else if (revChange2019 > 1) {
+                } else if (revparChange2019 > 1) {
                     color2019 = '#0f6723';  // Green for positive changes
                 } else {
                     color2019 = '#a42330';  // Red for negative changes
                 }
-                const arrow2019 = createArrowSvg(revChange2019);
+                const arrow2019 = createArrowSvg(revparChange2019);
                 
-                revElement.textContent = ytdTotal;
-                revChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${revChange.toFixed(1)}% y/y</span>`;
-                revDateRangeElement.textContent = `${month} ${year}`;
-                revChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${revChange2019.toFixed(1)}% y/y</span>`;
-                revDateRangeElement2019.textContent = `From 2019`;
+                revparElement.textContent = ytdTotal;
+                revparChangeElement.innerHTML = `<span style="color: ${color};">${arrow}${revparChange.toFixed(1)}% y/y</span>`;
+                revparDateRangeElement.textContent = `${month} ${year}`;
+                revparChangeElement2019.innerHTML = `<span style="color: ${color2019};">${arrow2019}${revparChange2019.toFixed(1)}% y/y</span>`;
+                revparDateRangeElement2019.textContent = `From 2019`;
             }
         }
 

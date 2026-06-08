@@ -1,0 +1,128 @@
+"date","type","geo","count"
+2025-01-01 00:00:00.000,Air,Beaver Creek,2
+2025-01-01 00:00:00.000,Air,Dawson,11
+2025-01-01 00:00:00.000,Air,Whitehorse,1
+2025-01-01 00:00:00.000,Automobile,Beaver Creek,990
+2025-01-01 00:00:00.000,Automobile,Fraser,723
+2025-01-01 00:00:00.000,Automobile,Pleasant Camp,588
+2025-01-01 00:00:00.000,Bus,Beaver Creek,8
+2025-02-01 00:00:00.000,Air,Whitehorse,21
+2025-02-01 00:00:00.000,Automobile,Beaver Creek,1205
+2025-02-01 00:00:00.000,Automobile,Fraser,827
+2025-02-01 00:00:00.000,Automobile,Pleasant Camp,641
+2025-02-01 00:00:00.000,Bus,Beaver Creek,17
+2025-02-01 00:00:00.000,Bus,Fraser,29
+2025-02-01 00:00:00.000,Bus,Pleasant Camp,38
+2025-03-01 00:00:00.000,Air,Whitehorse,26
+2025-03-01 00:00:00.000,Automobile,Beaver Creek,1837
+2025-03-01 00:00:00.000,Automobile,Fraser,1675
+2025-03-01 00:00:00.000,Automobile,Pleasant Camp,1112
+2025-03-01 00:00:00.000,Bus,Beaver Creek,26
+2025-04-01 00:00:00.000,Air,Dawson,23
+2025-04-01 00:00:00.000,Air,Whitehorse,38
+2025-04-01 00:00:00.000,Automobile,Beaver Creek,2521
+2025-04-01 00:00:00.000,Automobile,Fraser,2568
+2025-04-01 00:00:00.000,Automobile,Pleasant Camp,1220
+2025-04-01 00:00:00.000,Bus,Fraser,448
+2025-04-01 00:00:00.000,Bus,Pleasant Camp,16
+2025-05-01 00:00:00.000,Air,Beaver Creek,4
+2025-05-01 00:00:00.000,Air,Dawson,795
+2025-05-01 00:00:00.000,Air,Whitehorse,32
+2025-05-01 00:00:00.000,Automobile,Beaver Creek,5049
+2025-05-01 00:00:00.000,Automobile,Fraser,8080
+2025-05-01 00:00:00.000,Automobile,Little Gold Creek,311
+2025-05-01 00:00:00.000,Automobile,Pleasant Camp,2619
+2025-05-01 00:00:00.000,Bus,Beaver Creek,62
+2025-05-01 00:00:00.000,Bus,Fraser,29559
+2025-05-01 00:00:00.000,Bus,Pleasant Camp,73
+2025-05-01 00:00:00.000,Train,Fraser,16522
+2025-06-01 00:00:00.000,Air,Beaver Creek,9
+2025-06-01 00:00:00.000,Air,Dawson,1672
+2025-06-01 00:00:00.000,Air,Fraser,3
+2025-06-01 00:00:00.000,Air,Old Crow,9
+2025-06-01 00:00:00.000,Air,Whitehorse,35
+2025-06-01 00:00:00.000,Automobile,Beaver Creek,8865
+2025-06-01 00:00:00.000,Automobile,Fraser,14257
+2025-06-01 00:00:00.000,Automobile,Little Gold Creek,1981
+2025-06-01 00:00:00.000,Automobile,Pleasant Camp,4546
+2025-06-01 00:00:00.000,Bus,Beaver Creek,583
+2025-06-01 00:00:00.000,Bus,Fraser,48133
+2025-06-01 00:00:00.000,Bus,Little Gold Creek,34
+2025-06-01 00:00:00.000,Bus,Pleasant Camp,481
+2025-06-01 00:00:00.000,Train,Fraser,25889
+2025-07-01 00:00:00.000,Air,Beaver Creek,17
+2025-07-01 00:00:00.000,Air,Dawson,1899
+2025-07-01 00:00:00.000,Air,Fraser,7
+2025-07-01 00:00:00.000,Air,Old Crow,26
+2025-07-01 00:00:00.000,Air,Whitehorse,135
+2025-07-01 00:00:00.000,Automobile,Beaver Creek,13029
+2025-07-01 00:00:00.000,Automobile,Fraser,17392
+2025-07-01 00:00:00.000,Automobile,Little Gold Creek,3217
+2025-07-01 00:00:00.000,Automobile,Pleasant Camp,5038
+2025-07-01 00:00:00.000,Bus,Beaver Creek,363
+2025-07-01 00:00:00.000,Bus,Fraser,54171
+2025-07-01 00:00:00.000,Bus,Little Gold Creek,43
+2025-07-01 00:00:00.000,Bus,Pleasant Camp,773
+2025-07-01 00:00:00.000,Train,Fraser,28479
+2025-08-01 00:00:00.000,Air,Beaver Creek,23
+2025-08-01 00:00:00.000,Air,Dawson,2075
+2025-08-01 00:00:00.000,Air,Fraser,4
+2025-08-01 00:00:00.000,Air,Whitehorse,143
+2025-08-01 00:00:00.000,Automobile,Beaver Creek,13179
+2025-08-01 00:00:00.000,Automobile,Fraser,15414
+2025-08-01 00:00:00.000,Automobile,Little Gold Creek,3259
+2025-08-01 00:00:00.000,Automobile,Pleasant Camp,5959
+2025-08-01 00:00:00.000,Bus,Beaver Creek,413
+2025-08-01 00:00:00.000,Bus,Fraser,46626
+2025-08-01 00:00:00.000,Bus,Little Gold Creek,18
+2025-08-01 00:00:00.000,Bus,Pleasant Camp,513
+2025-08-01 00:00:00.000,Train,Fraser,25619
+2025-09-01 00:00:00.000,Air,Beaver Creek,19
+2025-09-01 00:00:00.000,Air,Dawson,112
+2025-09-01 00:00:00.000,Air,Whitehorse,85
+2025-09-01 00:00:00.000,Automobile,Beaver Creek,10588
+2025-09-01 00:00:00.000,Automobile,Fraser,10859
+2025-09-01 00:00:00.000,Automobile,Little Gold Creek,739
+2025-09-01 00:00:00.000,Automobile,Pleasant Camp,3507
+2025-09-01 00:00:00.000,Bus,Beaver Creek,172
+2025-09-01 00:00:00.000,Bus,Fraser,30533
+2025-09-01 00:00:00.000,Bus,Little Gold Creek,20
+2025-09-01 00:00:00.000,Bus,Pleasant Camp,151
+2025-09-01 00:00:00.000,Train,Fraser,17968
+2025-10-01 00:00:00.000,Air,Beaver Creek,16
+2025-10-01 00:00:00.000,Air,Whitehorse,44
+2025-10-01 00:00:00.000,Automobile,Beaver Creek,4119
+2025-10-01 00:00:00.000,Automobile,Fraser,2743
+2025-10-01 00:00:00.000,Automobile,Pleasant Camp,1909
+2025-10-01 00:00:00.000,Bus,Beaver Creek,108
+2025-10-01 00:00:00.000,Bus,Fraser,871
+2025-10-01 00:00:00.000,Train,Fraser,270
+2025-11-01 00:00:00.000,Air,Whitehorse,3
+2025-11-01 00:00:00.000,Automobile,Beaver Creek,1609
+2025-11-01 00:00:00.000,Automobile,Fraser,848
+2025-11-01 00:00:00.000,Automobile,Pleasant Camp,822
+2025-11-01 00:00:00.000,Bus,Beaver Creek,1
+2025-11-01 00:00:00.000,Bus,Fraser,11
+2025-12-01 00:00:00.000,Air,Whitehorse,34
+2025-12-01 00:00:00.000,Automobile,Beaver Creek,929
+2025-12-01 00:00:00.000,Automobile,Fraser,393
+2025-12-01 00:00:00.000,Automobile,Pleasant Camp,316
+2026-01-01 00:00:00.000,Air,Whitehorse,23
+2026-01-01 00:00:00.000,Automobile,Beaver Creek,894
+2026-01-01 00:00:00.000,Automobile,Fraser,443
+2026-01-01 00:00:00.000,Automobile,Pleasant Camp,499
+2026-01-01 00:00:00.000,Bus,Fraser,8
+2026-02-01 00:00:00.000,Air,Beaver Creek,1
+2026-02-01 00:00:00.000,Air,Whitehorse,9
+2026-02-01 00:00:00.000,Automobile,Beaver Creek,1047
+2026-02-01 00:00:00.000,Automobile,Fraser,635
+2026-02-01 00:00:00.000,Automobile,Pleasant Camp,543
+2026-02-01 00:00:00.000,Bus,Beaver Creek,33
+2026-02-01 00:00:00.000,Bus,Fraser,20
+2026-02-01 00:00:00.000,Bus,Pleasant Camp,8
+2026-03-01 00:00:00.000,Air,Whitehorse,412
+2026-03-01 00:00:00.000,Automobile,Beaver Creek,1838
+2026-03-01 00:00:00.000,Automobile,Fraser,1116
+2026-03-01 00:00:00.000,Automobile,Pleasant Camp,813
+2026-03-01 00:00:00.000,Bus,Beaver Creek,8
+2026-03-01 00:00:00.000,Bus,Fraser,10

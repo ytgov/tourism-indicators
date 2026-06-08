@@ -124,6 +124,7 @@ class DataTable {
             "vw_kpi_str_occupancy_ytd_summary": "Occupancy rate",
             "vw_kpi_str_adr_ytd_summary": "Average daily room rate",
             "vw_kpi_str_revpar_ytd_summary": "RevPAR",
+            "vw_kpi_str_rev_ytd_summary": "Revenue",
             "vw_kpi_str_available_listings_ytd_summary": "Available Listings"
         };
 
@@ -131,11 +132,13 @@ class DataTable {
             "vw_kpi_str_occupancy_ytd_summary": "%", // Use % for Occupancy rate
             "vw_kpi_str_adr_ytd_summary": "$", // Use $ for Average daily room rate
             "vw_kpi_str_revpar_ytd_summary": "$", // Use $ for RevPAR
+            "vw_kpi_str_rev_ytd_summary": "$", // Use $ for Revenue
             "vw_kpi_str_available_listings_ytd_summary": ""
         };
 
         // Define the desired order of datasets
         const datasetOrder = [
+            "vw_kpi_str_rev_ytd_summary",
             "vw_kpi_str_occupancy_ytd_summary",
             "vw_kpi_str_adr_ytd_summary",
             "vw_kpi_str_revpar_ytd_summary",
@@ -172,17 +175,26 @@ class DataTable {
                     // Determine the prefix or suffix for the dataset
                     const format = datasetFormats[datasetName] || ''; // Default to no formatting
                     
-                    return filteredRows.map(row =>
-                        `<tr>
+                    return filteredRows.map(row => {
+                        // Special formatting for revenue (in millions)
+                        const isRevenue = datasetName === "vw_kpi_str_rev_ytd_summary";
+                        const formatValue = (value, decimals = 1) => {
+                            if (isRevenue) {
+                                return (parseFloat(value) / 1000000).toFixed(2) + 'M';
+                            }
+                            return parseFloat(value).toFixed(decimals) || '';
+                        };
+                        
+                        return `<tr>
                             <td style="width:25%">${datasetLabels[datasetName]}</td>
-                            <td style="width:10%">${format === "$" ? "$" : ""}${parseFloat(row[4]).toFixed(1) || ''}${format === "%" ? "%" : ""}</td>
-                            <td style="width:10%">${format === "$" ? "$" : ""}${parseFloat(row[3]).toFixed(1) || ''}${format === "%" ? "%" : ""}</td>
+                            <td style="width:10%">${format === "$" ? "$" : ""}${formatValue(row[4]) || ''}${format === "%" ? "%" : ""}</td>
+                            <td style="width:10%">${format === "$" ? "$" : ""}${formatValue(row[3]) || ''}${format === "%" ? "%" : ""}</td>
                             <td style="width:10%">${this.createChangeCell(row[5])}</td>
-                            <td style="width:15%">${format === "$" ? "$" : ""}${parseFloat(row[7]).toFixed(1) || ''}${format === "%" ? "%" : ""}</td>
-                            <td style="width:15%">${format === "$" ? "$" : ""}${parseFloat(row[6]).toFixed(1) || ''}${format === "%" ? "%" : ""}</td>
+                            <td style="width:15%">${format === "$" ? "$" : ""}${formatValue(row[7]) || ''}${format === "%" ? "%" : ""}</td>
+                            <td style="width:15%">${format === "$" ? "$" : ""}${formatValue(row[6]) || ''}${format === "%" ? "%" : ""}</td>
                             <td style="width:15%">${this.createChangeCell(row[8])}</td>
                         </tr>`
-                    ).join('');
+                    }).join('');
                 }).join('')}
             </tbody>
         `;
@@ -220,6 +232,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'data/vw_kpi_str_occupancy_ytd_summary.csv',
         'data/vw_kpi_str_adr_ytd_summary.csv',
         'data/vw_kpi_str_revpar_ytd_summary.csv',
+        'data/vw_kpi_str_rev_ytd_summary.csv',
         'data/vw_kpi_str_available_listings_ytd_summary.csv'
     ];
     const dataTable = new DataTable('data-table-container', csvUrls);

@@ -63,7 +63,24 @@
 
             <!-- Metrics Cards -->
             <div class="row mb-4">
-                <div class="col-md-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <h5 class="card-title">YTD Revenue</h5>
+                            <p class="card-text h2 mb-0" id="ytd-revenue">-</p>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mt-auto">
+                                <p class="card-text text-muted mt-2 mb-0" id="latest-monthly-rev-date">-</p>
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-rev-change">(-)</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-auto">
+                                <p class="card-text text-muted mt-2 mb-0" id="latest-monthly-rev-date-2019">-</p>
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-rev-change-2019">(-)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
                     <div class="card">
                         <div class="card-body text-center d-flex flex-column justify-content-between">
                             <h5 class="card-title">Occupancy rate</h5>
@@ -80,7 +97,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+
+
+                <div class="col-md-3">
                     <div class="card">
                         <div class="card-body text-center d-flex flex-column justify-content-between">
                             <h5 class="card-title">Average daily rate</h5>
@@ -97,18 +116,18 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card">
                         <div class="card-body text-center d-flex flex-column justify-content-between">
                             <h5 class="card-title">RevPAR</h5>
                             <p class="card-text h2 mb-0" id="ytd-revpar">-</p>
                             <div class="d-flex justify-content-between border-bottom pb-2  mt-auto">
-                                <p class="card-text text-muted mt-2 mb-0" id="ytd-rev-date-range">-</p>
-                                <p class="card-text text-muted mt-2 mb-0" id="ytd-rev-change"></p>
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-revpar-date-range">-</p>
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-revpar-change"></p>
                             </div>
                             <div class="d-flex justify-content-between mt-auto">
-                                <p class="card-text text-muted mt-2 mb-0" id="ytd-rev-date-range-2019">-</p>
-                                <p class="card-text text-muted mt-2 mb-0" id="ytd-rev-change-2019"></p>
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-revpar-date-range-2019">-</p>
+                                <p class="card-text text-muted mt-2 mb-0" id="ytd-revpar-change-2019"></p>
                             </div>
                         </div>
                     </div>
@@ -120,10 +139,10 @@
                 <div class="card-body" style="width:100%;">
                     <h5 class="card-title">Highlights</h5>
                     <ul>
-                        <li>Occupancy rates have gone down as the number of available short-term rental listings has increased considerably over time.</li>
-                        <li>During the summer, the average daily rate (ADR) has jumped by 41%, from $170 in 2019 to $240 in 2024.</li>
-                        <li>Revenue per available room (RevPAR) has grown by 32%, rising from $125 in 2019 to about $165 in 2024.</li>
-                        <li>These trends show that more short-term rentals are available, but demand remains strong, allowing for higher prices.</li>
+                        <li>2025 was a record year for revenue from short term rentals, with a 4.8% increase over 2024.</li>
+                        <li>March 2026 saw particularly strong performance as Whitehorse hosted the 2026 Arctic Winter Games, contributing to higher occupancy rates and room revenue.</li>
+                        <li>Average daily rates (ADR) have increased by 40% since 2019, reflecting continued demand for short-term accommodations in the Yukon.</li>
+                        <li>Revenue per available room (RevPAR) has increased by 53% since 2019, indicating both higher prices and sustained visitor demand.</li>
                     </ul>
                     
                 </div>
@@ -133,28 +152,43 @@
             <div style="width: 100%;">
                 <ul class="nav nav-tabs" id="data-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab"
-                            aria-controls="by-month" aria-selected="true">By month</a>
+                        <a class="nav-link active" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab"
+                            aria-controls="by-year" aria-selected="true">By year</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="by-year-tab" data-toggle="tab" href="#by-year" role="tab"
-                            aria-controls="by-year" aria-selected="false">Historical</a>
+                        <a class="nav-link" id="by-month-tab" data-toggle="tab" href="#by-month" role="tab"
+                            aria-controls="by-month" aria-selected="false">By month</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="by-history-tab" data-toggle="tab" href="#by-history" role="tab"
+                            aria-controls="by-history" aria-selected="false">Historical</a>
                     </li>
                 </ul>
 
 
 
                 <div class="tab-content" id="tab-content">
+                    <!-- By year Content -->
+                    <div class="tab-pane fade show active" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
+                        <div id="by-year-container" class="mb-4" style="width:100%; margin-top: 20px;">
+                            <!-- Data By year goes here -->
+                            <div id="revenue-chart" class="card mb-4" style="width:100%;"></div>
+                        </div>
+                    </div>
+
                     <!-- By month Content -->
-                    <div class="tab-pane fade show active" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
+                    <div class="tab-pane fade" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
                         <div id="by-month-container" class="card mb-4"
                             style="border:0px; width:100%; margin-top: 20px;">
 
                             <!-- Data By month -->
                             <div class="row">
-                                <div id="monthly-occupancy" class="mb-4 col-md-4" style="height:400px;"></div>
-                                <div id="monthly-adr" class="mb-4 col-md-4" style="height:400px;"></div>
-                                <div id="monthly-revpar" class="mb-4 col-md-4" style="height:400px;"></div>
+                                <div id="monthly-rev" class="mb-4 col-md-6" style="height:400px;"></div>
+                                <div id="monthly-occupancy" class="mb-4 col-md-6" style="height:400px;"></div>
+                            </div>
+                            <div class="row">
+                                <div id="monthly-adr" class="mb-4 col-md-6" style="height:400px;"></div>
+                                <div id="monthly-revpar" class="mb-4 col-md-6" style="height:400px;"></div>
                             </div>
 
                             <div id="data-table-container" class="card mb-4 p-3" style="width:100%; margin-top: 20px;">
@@ -163,10 +197,10 @@
                         </div>
                     </div>
 
-                    <!-- By year Content -->
-                    <div class="tab-pane fade" id="by-year" role="tabpanel" aria-labelledby="by-year-tab">
-                        <div id="by-year-container" class="mb-4" style="width:100%; margin-top: 20px;">
-                            <!-- Data By year goes here -->
+                    <!-- By history Content -->
+                    <div class="tab-pane fade" id="by-history" role="tabpanel" aria-labelledby="by-history-tab">
+                        <div id="by-history-container" class="mb-4" style="width:100%; margin-top: 20px;">
+                            <!-- Data By history goes here -->
                             <div id="indicator-chart" class="card mb-4" style="width:100%;"></div>
                             <div id="listings-chart" class="card mb-4" style="width:100%;"></div>
 
@@ -230,8 +264,10 @@
     <script type="module" src="js/pages/str-stats.js"></script>
     <script type="module" src="js/pages/str-stats-listings.js"></script>
     <script type="module" src="js/pages/str-stats-cards.js"></script>
+    <script type="module" src="js/pages/str-revenue-yearly.js"></script>
     <script type="module" src="js/pages/str-monthly-occupancy.js"></script>
     <script type="module" src="js/pages/str-monthly-adr.js"></script>
+    <script type="module" src="js/pages/str-monthly-rev.js"></script>
     <script type="module" src="js/pages/str-monthly-revpar.js"></script>
     <script type="module" src="js/pages/str-data-table.js"></script>
     <script src="js/utils/get-year.js"></script>

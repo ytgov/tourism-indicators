@@ -112,7 +112,7 @@ async function loadSpendingData() {
 // Function to load Estimated visitors data
 async function loadEstimatedVisitorsData() {
     try {
-        const response = await fetch('./data/vw_estimated_visitors_by_year_revised.csv?' + Math.random());
+        const response = await fetch('./data/vw_tc_vis_estimates_summary_2026.csv?' + Math.random());
         const csvText = await response.text();
 
         const rows = csvText
@@ -123,9 +123,9 @@ async function loadEstimatedVisitorsData() {
         const data = rows.slice(1)
             .map(r => ({
                 year: parseInt(r[0]),
-                excYukoners: parseInt(r[1]),
-                incYukoners: parseInt(r[2]),
-                notes: r[3]
+                visitors: parseInt(r[1]),
+                percentageChange: parseFloat(r[2]),
+                vs2019Change: parseFloat(r[3])
             }))
             .sort((a, b) => a.year - b.year);
 
@@ -133,16 +133,12 @@ async function loadEstimatedVisitorsData() {
 
         return {
             monthYear: mostRecent.year.toString(),       // KPI header
-            ytdTotal: mostRecent.incYukoners,            // Use “including Yukoners”
-            ytdPercentageChange:
-                data.length > 1
-                    ? ((mostRecent.incYukoners - data[data.length - 2].incYukoners) /
-                        data[data.length - 2].incYukoners) * 100
-                    : 0,
+            ytdTotal: mostRecent.visitors,            // Use “including Yukoners”
+            ytdPercentageChange: mostRecent.percentageChange,
 
             yearlyData: data.map(d => ({
                 year: d.year,
-                value: d.incYukoners
+                value: d.visitors
             }))
         };
     } catch (error) {

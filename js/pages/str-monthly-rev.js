@@ -2,22 +2,22 @@ import { loadCSVData } from '../utils/data-utils.js';
 
 // Define the color scheme
 const colors = [
-    "#F2A9008C", // 55% Opacity
-    "#DC44058C",
-    "#0097A98C",
-    "#244C5A8C",
+    "#7A9A018C", // 55% Opacity
     "#512A448C",
-    "#7A9A018C",
-    "#F2A900", // Original
-    "#DC4405",
-    "#0097A9",
-    "#244C5A",
+    "#244C5A8C",
+    "#0097A98C",
+    "#DC44058C",
+    "#F2A9008C",
+    "#7A9A01",
     "#512A44",
-    "#7A9A01"
+    "#244C5A",
+    "#0097A9",
+    "#DC4405",
+    "#F2A900"
 ]
 // Load the data
 async function generateChart() {
-    const csvData = await loadCSVData('data/vw_kpi_cbre_avg_daily_room_rate_ytd_summary.csv?'+Math.random());
+    const csvData = await loadCSVData('data/vw_kpi_str_rev_ytd_summary.csv?'+Math.random());
     if (!csvData) {
         console.error('Failed to load CSV data.');
         return;
@@ -35,12 +35,12 @@ async function generateChart() {
     data.forEach(row => {
         const year = row[headers.indexOf('year')];
         const month = parseInt(row[headers.indexOf('month')], 10) - 1; // Month index (0-based)
-        const occupancyRate = Math.round(parseFloat(row[headers.indexOf('monthly_avg_daily_room_rate')]) * 10) / 10;
+        const revenue = Math.round(parseFloat(row[headers.indexOf('monthly_rev')]) / 1000000 * 100) / 100; // Convert to millions
 
         if (!dataByYear[year]) {
             dataByYear[year] = Array(12).fill(null); // Pre-fill with null for all months
         }
-        dataByYear[year][month] = occupancyRate; // Assign occupancy rate for the correct month
+        dataByYear[year][month] = revenue; // Assign revenue for the correct month
     });
 
 
@@ -56,13 +56,12 @@ async function generateChart() {
     }));
 
     // Generate the chart
-    Highcharts.chart('monthly-adr', {
+    Highcharts.chart('monthly-rev', {
         chart: {
-            type: 'line',
-            height: 400
+            type: 'line'
         },
         title: {
-            text: 'Average daily room rate'
+            text: 'Revenue'
         },
         xAxis: {
             categories: allMonths, // Ensure x-axis categories are always January to December
@@ -74,13 +73,17 @@ async function generateChart() {
             title: {
                 enabled: false
             },
+            tickInterval: 0.5,
             labels:{
-                format: '${value}'
+                formatter: function() {
+                    return '$' + Highcharts.numberFormat(this.value, 1) + 'M';
+                }
             }
         },
         tooltip: {
             shared: true,
-            valuePrefix: '$'
+            valuePrefix: '$',
+            valueSuffix: 'M'
         },
         series: series,
         credits: {

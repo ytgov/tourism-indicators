@@ -63,7 +63,7 @@ async function generateChart() {
             name: year,
             data: allMonths.map((_, monthIndex) => dataByYear[year][monthIndex] || null),
             color: colors[index % colors.length],
-            visible: year === '2019' || parseInt(year) >= 2023 // Show specific years by default
+            visible: year === '2019' || parseInt(year) >= 2024 // Show specific years by default
         }));
 
     // Generate the chart
