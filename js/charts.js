@@ -1,3 +1,29 @@
+// Function to load TIPI data
+async function loadTIPIData() {
+    try {
+        const response = await fetch('./data/tc_tourism_industry_performance_index.csv?' + Math.random());
+        const csvText = await response.text();
+        const rows = csvText.split('\n').filter(r => r.trim()).map(r => r.replace(/"/g, '').split(','));
+        const data = rows.slice(1)
+            .filter(r => r.length >= 2 && r[0].trim())
+            .map(r => ({ year: parseInt(r[0]), value: parseFloat(r[1]) }))
+            .filter(r => !isNaN(r.year) && !isNaN(r.value))
+            .sort((a, b) => a.year - b.year);
+        const latest = data[data.length - 1];
+        const prev = data[data.length - 2];
+        const pctChange = prev ? ((latest.value - prev.value) / prev.value) * 100 : 0;
+        return {
+            monthYear: latest.year.toString(),
+            ytdTotal: latest.value,
+            ytdPercentageChange: pctChange,
+            yearlyData: data.map(d => ({ year: d.year, value: d.value }))
+        };
+    } catch (error) {
+        console.error('Error loading TIPI data:', error);
+        return null;
+    }
+}
+
 // Function to load and parse CSV data
 async function loadAirportData() {
     try {
@@ -86,6 +112,8 @@ async function loadSpendingData() {
             .map(row => ({
                 year: parseInt(row[0]),
                 value: parseFloat(row[1]),
+                low: row[2] ? parseFloat(row[2]) : null,
+                high: row[3] ? parseFloat(row[3]) : null,
                 type: row[4] === 'Actual' ? 'Actual revenue' : row[4] === 'Estimate' ? 'Estimated revenue' : row[4],
                 updated: new Date(row[7]).toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
                 percentChange: row[6] ? parseFloat(row[6]) : null
@@ -95,12 +123,18 @@ async function loadSpendingData() {
         // Get the most recent row
         const mostRecent = data[0];
 
+        const sortedData = data.sort((a, b) => a.year - b.year);
         return {
             year: mostRecent.year,
             monthYear: mostRecent.updated,
-            ytdTotal: mostRecent.value * 1000000, // Multiply by millions for KPIU
+            ytdTotal: mostRecent.value * 1000000,
+            ytdLow: mostRecent.low,
+            ytdHigh: mostRecent.high,
             ytdPercentageChange: mostRecent.percentChange,
-            yearlyData: data.sort((a, b) => a.year - b.year) // Sort by year ascending
+            yearlyData: sortedData,
+            mediumData: sortedData.filter(d => d.year <= 2022).map(d => ({ year: d.year, value: d.value })),
+            highData: sortedData.filter(d => d.year >= 2022).map(d => ({ year: d.year, value: d.high !== null ? d.high : d.value })),
+            lowData: sortedData.filter(d => d.year >= 2022).map(d => ({ year: d.year, value: d.low !== null ? d.low : d.value }))
         };
     } catch (error) {
         console.error('Error loading spending data:', error);
@@ -655,7 +689,9 @@ function updateKPIContent(containerId, data, title) {
     
     // Special formatting for different indicators
     if (title === 'Economic overview') {
-        formattedTotal = formatSpendingInMillions(data.ytdTotal);
+        formattedTotal = (data.ytdLow !== null && data.ytdHigh !== null)
+            ? `$${Math.round(data.ytdLow)}M – $${Math.round(data.ytdHigh)}M`
+            : formatSpendingInMillions(data.ytdTotal);
         subheading = 'Estimated gross business revenue attributable to tourism, GDP, and more';
     } else if (title === 'Airport arrivals') {
         formattedTotal = formatInThousands(data.ytdTotal);
@@ -663,6 +699,9 @@ function updateKPIContent(containerId, data, title) {
     } else if (title === 'Border crossings') {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Travelers entering through Canadian customs';
+    } else if (title === 'Tourism industry performance index') {
+        formattedTotal = data.ytdTotal.toFixed(1);
+        subheading = 'Composite measure of tourism-related economic activity';
     } else if (title === 'Estimated visitors') {
         subheading = 'Total visitors to the Yukon';
     } else if (title === 'Hotel occupancy rate') {
@@ -717,8 +756,8 @@ function updateKPIContent(containerId, data, title) {
             <div class="ytd-change ${
                 data.ytdPercentageChange >= 1 ? 'positive' :
                 data.ytdPercentageChange <= -1 ? 'negative' : 'neutral'
-            }">
-                ${createArrowSvg(data.ytdPercentageChange)} 
+            }" ${title === 'Economic overview' ? 'style="display:none"' : ''}>
+                ${createArrowSvg(data.ytdPercentageChange)}
                 ${data.ytdPercentageChange < 0 ? '-' : ''}${Math.abs(data.ytdPercentageChange).toFixed(1)}% y/y
             </div>
         `;
@@ -791,21 +830,20 @@ function createKPIChart(containerId, data, ytdPercentageChange) {
 function createYearlyKPIChart(containerId, data, ytdPercentageChange) {
     let color;
     if (ytdPercentageChange > -1 && ytdPercentageChange < 1) {
-        color = '#6c757d';  // Dark grey for neutral changes
+        color = '#6c757d';
     } else if (ytdPercentageChange > 1) {
-        color = '#0f6723';  // Green for positive changes
+        color = '#0f6723';
     } else {
-        color = '#a42330';  // Red for negative changes
+        color = '#a42330';
     }
 
     const currentYear = new Date().getFullYear();
     const tenYearsAgo = currentYear - 10;
 
-    // Process data to aggregate By year (assuming each data item has 'year' and 'value')
     const yearlyData = data
-        .filter(item => item.year >= tenYearsAgo) // Filter last 10 years
-        .sort((a, b) => a.year - b.year) // Sort By year ascending
-        .map(item => [new Date(item.year, 0, 1).getTime(), item.value]); // Convert year to timestamp
+        .filter(item => item.year >= tenYearsAgo)
+        .sort((a, b) => a.year - b.year)
+        .map(item => [new Date(item.year, 0, 1).getTime(), item.value]);
 
     Highcharts.chart(containerId, {
         chart: {
@@ -813,30 +851,21 @@ function createYearlyKPIChart(containerId, data, ytdPercentageChange) {
             height: 100,
             margin: [0, 0, 0, 0],
             backgroundColor: 'transparent',
-            style: {
-                overflow: 'visible'
-            }
+            style: { overflow: 'visible' }
         },
         title: null,
         credits: { enabled: false },
-        xAxis: {
-            visible: false
-        },
+        xAxis: { visible: false },
         yAxis: { visible: false, min: 0 },
         legend: { enabled: false },
-        tooltip: { enabled: false },        
+        tooltip: { enabled: false },
         plotOptions: {
             area: {
                 marker: { enabled: false },
                 lineWidth: 2,
                 states: { hover: { enabled: false } },
                 fillColor: {
-                    linearGradient: {
-                        x1: 0,
-                        y1: 0,
-                        x2: 0,
-                        y2: 1
-                    },
+                    linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
                     stops: [
                         [0, Highcharts.color(color).setOpacity(0.3).get()],
                         [1, Highcharts.color(color).setOpacity(0).get()]
@@ -845,17 +874,75 @@ function createYearlyKPIChart(containerId, data, ytdPercentageChange) {
                 color: color
             }
         },
-        series: [{
-            data: yearlyData,
-            showInLegend: false
-        }]
+        series: [{ data: yearlyData, showInLegend: false }]
     });
 }
 
 
+function createEconomicOverviewChart(containerId, mediumData, highData, lowData) {
+    const color = '#6c757d';
+    const currentYear = new Date().getFullYear();
+    const tenYearsAgo = currentYear - 10;
+
+    function toChartData(arr) {
+        return arr
+            .filter(item => item.year >= tenYearsAgo)
+            .sort((a, b) => a.year - b.year)
+            .map(item => [new Date(item.year, 0, 1).getTime(), item.value]);
+    }
+
+    // One continuous upper boundary: medium values up to 2022, high values after
+    const upperData = [
+        ...mediumData,
+        ...highData.filter(d => d.year > 2022)
+    ];
+
+    Highcharts.chart(containerId, {
+        chart: {
+            type: 'line',
+            height: 100,
+            margin: [0, 0, 0, 0],
+            backgroundColor: 'transparent',
+            style: { overflow: 'visible' }
+        },
+        title: null,
+        credits: { enabled: false },
+        xAxis: { visible: false },
+        yAxis: { visible: false, min: 0 },
+        legend: { enabled: false },
+        tooltip: { enabled: false },
+        plotOptions: {
+            series: {
+                marker: { enabled: false },
+                lineWidth: 2,
+                enableMouseTracking: false,
+                color: color
+            }
+        },
+        series: [
+            { data: toChartData(lowData), showInLegend: false, color: color, zIndex: 1 },
+            {
+                type: 'area',
+                data: toChartData(upperData),
+                showInLegend: false,
+                color: color,
+                zIndex: 2,
+                fillColor: {
+                    linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+                    stops: [
+                        [0, Highcharts.color(color).setOpacity(0.3).get()],
+                        [1, Highcharts.color(color).setOpacity(0).get()]
+                    ]
+                }
+            }
+        ]
+    });
+}
+
 // Initialize everything when the document is ready
 document.addEventListener('DOMContentLoaded', async function () {
     const [
+        tipiData,
         visitorsData,
         airportData,
         intlData,
@@ -870,6 +957,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         scRestaurantSales,
         consumerConfidence
     ] = await Promise.all([
+        loadTIPIData(),
         loadEstimatedVisitorsData(),
         loadAirportData(),
         loadIntlTravelersData(),
@@ -885,21 +973,25 @@ document.addEventListener('DOMContentLoaded', async function () {
         loadConsumerConfidence()
     ]);
 
+    if (tipiData) {
+        updateKPIContent('indicator1-content', tipiData, 'Tourism industry performance index');
+        createYearlyKPIChart('indicator1-chart', tipiData.yearlyData, tipiData.ytdPercentageChange);
+    }
     if (visitorsData) {
-        updateKPIContent('indicator1-content', visitorsData, 'Estimated visitors');
-        createYearlyKPIChart('indicator1-chart', visitorsData.yearlyData, visitorsData.ytdPercentageChange);
+        updateKPIContent('indicator2-content', visitorsData, 'Estimated visitors');
+        createYearlyKPIChart('indicator2-chart', visitorsData.yearlyData, visitorsData.ytdPercentageChange);
     }
     if (airportData) {
-        updateKPIContent('indicator2-content', airportData, 'Airport arrivals');
-        createKPIChart('indicator2-chart', airportData.monthlyData, airportData.ytdPercentageChange);
+        updateKPIContent('indicator3-content', airportData, 'Airport arrivals');
+        createKPIChart('indicator3-chart', airportData.monthlyData, airportData.ytdPercentageChange);
     }
     if (intlData) {
-        updateKPIContent('indicator3-content', intlData, 'Border crossings');
-        createKPIChart('indicator3-chart', intlData.monthlyData, intlData.ytdPercentageChange);
+        updateKPIContent('indicator4-content', intlData, 'Border crossings');
+        createKPIChart('indicator4-chart', intlData.monthlyData, intlData.ytdPercentageChange);
     }
     if (spendingData) {
-        updateKPIContent('indicator4-content', spendingData, 'Economic overview');
-        createYearlyKPIChart('indicator4-chart', spendingData.yearlyData, spendingData.ytdPercentageChange);
+        updateKPIContent('indicator5-content', spendingData, 'Economic overview');
+        createEconomicOverviewChart('indicator5-chart', spendingData.mediumData, spendingData.highData, spendingData.lowData);
     }
     if (occupancyData) updateKPIContent('additional1-content', occupancyData, 'Hotel occupancy rate');
     if (roomRateData) updateKPIContent('additional2-content', roomRateData, 'Avg. daily rate');
