@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index of consumer confidence | Yukon tourism indicators</title>
+    <title>Visitor spending | Yukon tourism indicators</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
     <!-- Bootstrap CSS -->
@@ -13,10 +13,11 @@
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
 
-    <!-- Highcharts JS -->
+    <!-- Highcharts Library -->
     <script src="./vendor/highcharts/12.1.0/highcharts.js"></script>
-    <script src="./vendor/highcharts/12.1.0/modules/treemap.js"></script>
+    <script src="./vendor/highcharts/12.1.0/stock/modules/data.js"></script>
     <script src="./vendor/highcharts/12.1.0/stock/modules/exporting.js"></script>
+    <script src="./vendor/highcharts/12.1.0/stock/modules/export-data.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/accessibility.js"></script>
     <script src="./vendor/highcharts/12.1.0/modules/stock.js"></script>
 
@@ -46,48 +47,47 @@
         </div>
     </nav>
 
-
     <!-- Main Container -->
     <div class="container mt-4">
         <div class="indicator-container">
             <!-- Title Section -->
-            <div class="text-center mb-4">
-                <h2 class="indicator-title">Index of consumer confidence</h2>
-                <p class="indicator-subtitle">The consumer confidence index is based on Signal49 Research's
-                    survey of Canadian households. It measures how optimistic people feel about the economy, their
-                    personal finances, job prospects in the short term, and making big purchases. It also looks at their
-                    expectations for the next six months. Index, 2014 = 100.
-                </p>
+            <div class="row">
+                <div class="text-center">
+                    <h1 class="indicator-title">Visitor spending</h1>
+                    <p class="indicator-subtitle">
+                        Monthly credit and debit card spending in the Yukon, based on transactions processed through
+                        Moneris payment terminals.
+                        This indicator tracks overall spending trends to assess the health of the visitor economy.
+                    </p>
+                </div>
             </div>
 
             <!-- Metrics Cards -->
-            <div class="row mb-4">
+            <div class="row mb-2">
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-body text-center d-flex flex-column justify-content-between">
-                            <h5 class="card-title">Latest monthly</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Latest monthly spend</h5>
                             <p class="card-text h2" id="latest-monthly">-</p>
                             <p class="card-text text-muted" id="latest-monthly-date">-</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-body text-center d-flex flex-column justify-content-between">
-                            <h5 class="card-title">Year-to-date average</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Year-to-date spend</h5>
                             <p class="card-text h2" id="ytd-amount">-</p>
                             <p class="card-text text-muted" id="ytd-date-range">-</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div class="card-body text-center">
                             <h5 class="card-title">Year-to-date change</h5>
                             <p class="card-text h2" id="ytd-change">-</p>
-                            <p class="card-text" id="ytd-change-2019"></p>
+                            <p class="card-text text-muted">vs previous year</p>
                         </div>
                     </div>
                 </div>
@@ -98,49 +98,32 @@
                 <div class="card-body" style="width:100%;">
                     <h5 class="card-title">Highlights</h5>
                     <ul>
-                        <li>The consumer confidence index dropped to a low of 44.2 in March 2025.</li>
-                        <li>Confidence has been slowly recovering in 2026. In July, the index hit 67.4, its
-                            highest point since late 2024, and up 7.5% from July 2025.</li>
-                        <li>So far in 2026 (January to July), the average index is 60.1, up 9.9% from the same
-                            months in 2025. It's still about 48% below where it was in 2019.</li>
-                        <li>When confidence is low, people may travel less, avoid expensive trips, or choose more
-                            affordable places to visit.</li>
-                        <li>During times of low confidence, more people tend to travel within their own country or
-                            nearby instead of taking big trips.</li>
+                        <li>Year-to-date visitor spending reached $99.8 million through July 2026, up 17.3%
+                            compared to the same period in 2025.</li>
+                        <li>July 2026 was the strongest month on record in this dataset, with $23.1 million in
+                            spending - a 37.1% increase over July 2025.</li>
+                        <li>March 2026 spending rose 20.8% year-over-year, boosted by Whitehorse hosting the
+                            Arctic Winter Games.</li>
+                        <li>Full-year visitor spending in 2025 totaled $142.5 million, the first complete year
+                            available in this dataset.</li>
                     </ul>
-                    
                 </div>
             </div>
 
-            <!-- Tabs for Data Display -->
+            <!-- Monthly Spend Chart -->
             <div style="width: 100%;">
+                <div id="monthly-chart" class="card mb-4" style="margin-top: 20px;"></div>
+                <div id="indicator-chart" class="card mb-4" style="margin-top: 20px;"></div>
+                <div id="data-table-container" class="card mb-4 p-3"
+                    data-csv-url="data/vw_kpi_moneris_total_spending_ytd_summary.csv"></div>
+            </div>
 
-
-                <div class="tab-content" id="tab-content">
-
-                    <!-- By month Content -->
-                    <div class="tab-pane fade show active" id="by-month" role="tabpanel" aria-labelledby="by-month-tab">
-                        <div id="by-month-container" class="card mb-4"
-                            style="border:0px; width:100%; margin-top: 20px;">
-
-                            <!-- Data By month -->
-                            <div id="indicator-chart" class="card mb-2" style="width:100%;"></div>
-                            <div id="data-table-container" class="card mb-4 p-3"
-                                data-csv-url="data/vw_kpi_cboc_consumer_confidence.csv" class="card mb-4"
-                                style="width:100%; margin-top: 20px;"></div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <!-- Data Source -->
-                <div class="data-source mt-4">
-                    <p>Source: Signal49 Research, <a href="https://signal49.ca/"
-                            target="_blank">Monthly Consumer Confidence Index. </a>
-                    </p>
-                </div>
+            <!-- Data Source -->
+            <div class="data-source mt-4">
+                <p><strong>Notes on data:</strong> Moneris processes approximately one in three (33%) of card
+                    transactions across Canada. This data captures a significant portion of the payment card market but
+                    does not include cash transactions or payments processed through other payment providers.</p>
+                <p>Source: <a href="https://dataservices.moneris.com/en/" target="_blank">Moneris Data Services.</a></p>
             </div>
         </div>
     </div>
@@ -180,10 +163,12 @@
     <script src="./vendor/jquery/jquery-3.5.1.min.js"></script>
     <script src="./vendor/popper/popper.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script type="module" src="js/pages/consumer-confidence.js"></script>
-    <script type="module" src="js/utils/data-table.js"></script>
     <script src="js/utils/get-year.js"></script>
     <script src="js/utils/analytics.js"></script>
+    <script type="module" src="js/pages/visitor-spending-cards.js"></script>
+    <script type="module" src="js/pages/visitor-spending-chart.js"></script>
+    <script type="module" src="js/pages/visitor-spending-by-month-stacked.js"></script>
+    <script type="module" src="js/utils/data-table.js"></script>
 
 </body>
 

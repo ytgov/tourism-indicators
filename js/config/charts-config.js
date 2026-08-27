@@ -178,6 +178,16 @@ const datasetConfigs = {
             }
         }
     },
+    visitorSpending: {
+        id: 'visitor-spending',
+        title: 'Monthly visitor spending',
+        dataFile: 'data/vw_kpi_moneris_total_spending_ytd_summary.csv?' + Math.random(),
+        chart: {
+            height: 400
+        },
+        yAxisTitle: 'Spending ($M)',
+        valueFormat: 'number'
+    },
     retailSpending: {
         id: 'retail-spending',
         title: 'Monthly retail spending',

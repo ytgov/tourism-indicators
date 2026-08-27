@@ -27,17 +27,17 @@ async function loadTIPIData() {
 // Function to load and parse CSV data
 async function loadAirportData() {
     try {
-        const response = await fetch('./data/vw_kpi_air_arrivals_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_air_arrivals_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
-        
+
         // Get the most recent row (last row in the CSV)
         const mostRecent = data[data.length - 1];
         const date = new Date(mostRecent[0]);
-        
+
         return {
-            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: parseInt(mostRecent[6]),
             ytdPercentageChange: parseFloat(mostRecent[8]),
             monthlyData: data.map(row => ({
@@ -55,7 +55,7 @@ async function loadIntlTravelersData() {
     try {
         const response = await fetch('./data/vw_kpi_intl_travellers_entering_canada_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
-        
+
         const rows = csvText.split('\n')
             .filter(row => row.trim())
             .map(row => row.replace(/"/g, ''))
@@ -143,6 +143,34 @@ async function loadSpendingData() {
 }
 
 
+async function loadVisitorSpendingData() {
+    try {
+        const response = await fetch('./data/vw_kpi_moneris_total_spending_ytd_summary.csv?' + Math.random());
+        const csvText = await response.text();
+        const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
+        const data = rows.slice(1).filter(row => row.length > 1 && row[0].trim());
+
+        // Get the most recent row (last row in the CSV)
+        const mostRecent = data[data.length - 1];
+        const date = new Date(mostRecent[0]);
+
+        return {
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
+            ytdTotal: '$' + (parseFloat(mostRecent[6]) / 1000000).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + 'M CAD',
+            ytdPercentageChange: mostRecent[8] ? parseFloat(mostRecent[8]) : null,
+            monthlyData: data.map(row => ({
+                date: new Date(row[0]),
+                value: parseInt(row[3])
+            }))
+        };
+    } catch (error) {
+        console.error('Error loading data:', error);
+        return null;
+    }
+}
+
+
+
 // Function to load Estimated visitors data
 async function loadEstimatedVisitorsData() {
     try {
@@ -185,13 +213,13 @@ async function loadEstimatedVisitorsData() {
 // Function to load occupancy rate data
 async function loadOccupancyData() {
     try {
-        const response = await fetch('./data/vw_kpi_cbre_occupancy_rate_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_cbre_occupancy_rate_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim()) // Remove empty lines
             .map(row => row.replace(/"/g, ''))
             .map(row => row.split(','));
-        
+
         // Remove header row and ensure all rows are complete
         const data = rows.slice(1)
             .filter(row => row.length > 1 && row[0].trim())
@@ -202,19 +230,19 @@ async function loadOccupancyData() {
                 month: parseInt(row[2])
             }))
             .sort((a, b) => b.date - a.date);  // Sort by date descending
-        
+
         // Get the most recent row
         const mostRecent = data[0];
-        const ytdAverage = parseFloat(rows.find(row => 
-            row[1] === mostRecent.year.toString() && 
+        const ytdAverage = parseFloat(rows.find(row =>
+            row[1] === mostRecent.year.toString() &&
             row[2] === mostRecent.month.toString()
         )[3]); // monthly_avg_occupancy_rate
-        
+
         return {
-            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: ytdAverage,  // Using average instead of total
-            ytdPercentageChange: parseFloat(rows.find(row => 
-                row[1] === mostRecent.year.toString() && 
+            ytdPercentageChange: parseFloat(rows.find(row =>
+                row[1] === mostRecent.year.toString() &&
                 row[2] === mostRecent.month.toString()
             )[5]),
             monthlyData: data
@@ -229,13 +257,13 @@ async function loadOccupancyData() {
 // Function to load daily room rate data
 async function loadRoomRateData() {
     try {
-        const response = await fetch('./data/vw_kpi_cbre_avg_daily_room_rate_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_cbre_avg_daily_room_rate_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim())
             .map(row => row.replace(/"/g, ''))
             .map(row => row.split(','));
-        
+
         const data = rows.slice(1)
             .filter(row => row.length > 1 && row[0].trim())
             .map(row => ({
@@ -245,18 +273,18 @@ async function loadRoomRateData() {
                 month: parseInt(row[2])
             }))
             .sort((a, b) => b.date - a.date);
-        
+
         const mostRecent = data[0];
-        const ytdAverage = parseFloat(rows.find(row => 
-            row[1] === mostRecent.year.toString() && 
+        const ytdAverage = parseFloat(rows.find(row =>
+            row[1] === mostRecent.year.toString() &&
             row[2] === mostRecent.month.toString()
         )[3]); // ytd_avg_daily_room_rate
-        
+
         return {
-            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: formatCurrency(ytdAverage),
-            ytdPercentageChange: parseFloat(rows.find(row => 
-                row[1] === mostRecent.year.toString() && 
+            ytdPercentageChange: parseFloat(rows.find(row =>
+                row[1] === mostRecent.year.toString() &&
                 row[2] === mostRecent.month.toString()
             )[5]),
             monthlyData: data.sort((a, b) => a.date - b.date)
@@ -270,13 +298,13 @@ async function loadRoomRateData() {
 // Function to load revenue per room data
 async function loadRevenuePerRoomData() {
     try {
-        const response = await fetch('./data/vw_kpi_cbre_revpar_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_cbre_revpar_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim())
             .map(row => row.replace(/"/g, ''))
             .map(row => row.split(','));
-        
+
         const data = rows.slice(1)
             .filter(row => row.length > 1 && row[0].trim())
             .map(row => ({
@@ -286,18 +314,18 @@ async function loadRevenuePerRoomData() {
                 month: parseInt(row[2])
             }))
             .sort((a, b) => b.date - a.date);
-        
+
         const mostRecent = data[0];
-        const ytdAverage = parseFloat(rows.find(row => 
-            row[1] === mostRecent.year.toString() && 
+        const ytdAverage = parseFloat(rows.find(row =>
+            row[1] === mostRecent.year.toString() &&
             row[2] === mostRecent.month.toString()
         )[3]); // ytd_avg_revpar
-        
+
         return {
-            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: formatCurrency(ytdAverage),
-            ytdPercentageChange: parseFloat(rows.find(row => 
-                row[1] === mostRecent.year.toString() && 
+            ytdPercentageChange: parseFloat(rows.find(row =>
+                row[1] === mostRecent.year.toString() &&
                 row[2] === mostRecent.month.toString()
             )[5]),
             monthlyData: data.sort((a, b) => a.date - b.date)
@@ -311,13 +339,13 @@ async function loadRevenuePerRoomData() {
 // Function to load VIC visitors data
 async function loadVICVisitorsData() {
     try {
-        const response = await fetch('./data/vw_kpi_vic_visitors_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_vic_visitors_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim())
             .map(row => row.replace(/"/g, ''))
             .map(row => row.split(','));
-        
+
         const data = rows.slice(1)
             .filter(row => row.length > 1 && row[0].trim())
             .map(row => ({
@@ -327,18 +355,18 @@ async function loadVICVisitorsData() {
                 month: parseInt(row[2])
             }))
             .sort((a, b) => b.date - a.date);
-        
+
         const mostRecent = data[0];
-        const ytdAverage = parseFloat(rows.find(row => 
-            row[1] === mostRecent.year.toString() && 
+        const ytdAverage = parseFloat(rows.find(row =>
+            row[1] === mostRecent.year.toString() &&
             row[2] === mostRecent.month.toString()
         )[6]); // ytd_avg_vic_visitors
-        
+
         return {
-            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: ytdAverage,
-            ytdPercentageChange: parseFloat(rows.find(row => 
-                row[1] === mostRecent.year.toString() && 
+            ytdPercentageChange: parseFloat(rows.find(row =>
+                row[1] === mostRecent.year.toString() &&
                 row[2] === mostRecent.month.toString()
             )[8]),
             monthlyData: data.sort((a, b) => a.date - b.date)
@@ -352,13 +380,13 @@ async function loadVICVisitorsData() {
 // Function to load highway counts data
 async function loadHighwayCountsData() {
     try {
-        const response = await fetch('./data/vw_kpi_wlws_highway_counts_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_wlws_highway_counts_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n')
             .filter(row => row.trim())
             .map(row => row.replace(/"/g, ''))
             .map(row => row.split(','));
-        
+
         const data = rows.slice(1)
             .filter(row => row.length > 1 && row[0].trim())
             .map(row => ({
@@ -368,18 +396,18 @@ async function loadHighwayCountsData() {
                 month: parseInt(row[2])
             }))
             .sort((a, b) => b.date - a.date);
-        
+
         const mostRecent = data[0];
-        const ytdAverage = parseFloat(rows.find(row => 
-            row[1] === mostRecent.year.toString() && 
+        const ytdAverage = parseFloat(rows.find(row =>
+            row[1] === mostRecent.year.toString() &&
             row[2] === mostRecent.month.toString()
         )[6]); // ytd_avg_highway_counts
-        
+
         return {
-            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: mostRecent.date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: ytdAverage,
-            ytdPercentageChange: parseFloat(rows.find(row => 
-                row[1] === mostRecent.year.toString() && 
+            ytdPercentageChange: parseFloat(rows.find(row =>
+                row[1] === mostRecent.year.toString() &&
                 row[2] === mostRecent.month.toString()
             )[8]),
             monthlyData: data.sort((a, b) => a.date - b.date)
@@ -393,17 +421,17 @@ async function loadHighwayCountsData() {
 // Load STR Occupancy rate Data
 async function loadSTROccupancyData() {
     try {
-        const response = await fetch('./data/vw_kpi_str_occupancy_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_str_occupancy_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
-        
+
         // Get the most recent row
         const mostRecent = data[data.length - 1];
         const date = new Date(mostRecent[0]);
-        
+
         return {
-            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: parseFloat(mostRecent[3]),
             ytdPercentageChange: parseFloat(mostRecent[5]),
             monthlyData: data.map(row => ({
@@ -420,17 +448,17 @@ async function loadSTROccupancyData() {
 // Load STR Average Daily Rate Data
 async function loadSTRADRData() {
     try {
-        const response = await fetch('./data/vw_kpi_str_adr_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_str_adr_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
-        
+
         // Get the most recent row
         const mostRecent = data[data.length - 1];
         const date = new Date(mostRecent[0]);
-        
+
         return {
-            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: formatCurrency(parseFloat(mostRecent[3])),
             ytdPercentageChange: parseFloat(mostRecent[5]),
             monthlyData: data.map(row => ({
@@ -447,17 +475,17 @@ async function loadSTRADRData() {
 // Load STR RevPAR Data
 async function loadSTRRevPARData() {
     try {
-        const response = await fetch('./data/vw_kpi_str_revpar_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_str_revpar_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
-        
+
         // Get the most recent row
         const mostRecent = data[data.length - 1];
         const date = new Date(mostRecent[0]);
-        
+
         return {
-            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: formatCurrency(parseFloat(mostRecent[3])),
             ytdPercentageChange: parseFloat(mostRecent[5]),
             monthlyData: data.map(row => ({
@@ -474,21 +502,21 @@ async function loadSTRRevPARData() {
 // Function to load PC Visitor Data
 async function loadPCVisitorData() {
     try {
-        const response = await fetch('./data/vw_kpi_pc_site_visitation_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_pc_site_visitation_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const headers = rows[0];
         const data = rows.slice(1).filter(row => row.length > 1);
-        
+
         // Filter for rows where site is 'all'
         const allSiteData = data.filter(row => row[3].toLowerCase().trim() === 'all');
-        
+
         // Get the most recent row from filtered data
         const mostRecent = allSiteData[allSiteData.length - 1];
         const date = new Date(mostRecent[0]);
-        
+
         return {
-            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: parseFloat(mostRecent[7]),  // ytd_total column
             ytdPercentageChange: parseFloat(mostRecent[9]),  // ytd_percentage_difference column
             monthlyData: allSiteData.map(row => ({
@@ -505,24 +533,24 @@ async function loadPCVisitorData() {
 // Function to load Campground Visitor Data
 async function loadCampgroundVisitorData() {
     try {
-        const response = await fetch('./data/vw_kpi_env_campground_visitors_ytd_summary.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_env_campground_visitors_ytd_summary.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const headers = rows[0];
         const data = rows.slice(1).filter(row => row.length > 1);
-        
+
         // Filter for rows where site is 'all'
         const allSiteData = data;
 
         // Sort data by ref_date (column 0) in ascending order
         const sortedData = allSiteData.sort((a, b) => new Date(a[0]) - new Date(b[0]));
-        
+
         // Get the most recent row from sorted data
         const mostRecent = sortedData[sortedData.length - 1];
         const date = new Date(mostRecent[0]);
-        
+
         return {
-            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: parseFloat(mostRecent[6]),  // ytd_total column
             ytdPercentageChange: parseFloat(mostRecent[8]),  // ytd_percentage_difference column
             monthlyData: allSiteData.map(row => ({
@@ -567,19 +595,19 @@ async function loadCampgroundVisitorData() {
 // Function to load Accommodation Employment
 async function loadAccommodationEmployment() {
     try {
-        const response = await fetch('./data/vw_kpi_economic_accommodation_and_food_employment.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_economic_accommodation_and_food_employment.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
-        
+
         // Get the most recent row
         const mostRecent = data[data.length - 1];
         const date = new Date(mostRecent[0]);
-        
+
         return {
-            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-            ytdTotal: parseFloat(mostRecent[6]),  
-            ytdPercentageChange: parseFloat(mostRecent[8]),  
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
+            ytdTotal: parseFloat(mostRecent[6]),
+            ytdPercentageChange: parseFloat(mostRecent[8]),
             monthlyData: data.map(row => ({
                 date: new Date(row[0]),
                 value: parseFloat(row[1])
@@ -595,19 +623,19 @@ async function loadAccommodationEmployment() {
 // Function to load Consumer Confidence
 async function loadConsumerConfidence() {
     try {
-        const response = await fetch('./data/vw_kpi_cboc_consumer_confidence.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_cboc_consumer_confidence.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
-        
+
         // Get the most recent row
         const mostRecent = data[data.length - 1];
         const date = new Date(mostRecent[0]);
-        
+
         return {
-            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
-            ytdTotal: parseFloat(mostRecent[6]),  
-            ytdPercentageChange: parseFloat(mostRecent[8]),  
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
+            ytdTotal: parseFloat(mostRecent[6]),
+            ytdPercentageChange: parseFloat(mostRecent[8]),
             monthlyData: data.map(row => ({
                 date: new Date(row[0]),
                 value: parseFloat(row[1])
@@ -621,19 +649,19 @@ async function loadConsumerConfidence() {
 
 async function loadRestaurantSales() {
     try {
-        const response = await fetch('./data/vw_kpi_economic_restaurant_spending.csv?'+Math.random());
+        const response = await fetch('./data/vw_kpi_economic_restaurant_spending.csv?' + Math.random());
         const csvText = await response.text();
         const rows = csvText.split('\n').map(row => row.replace(/"/g, '')).map(row => row.split(','));
         const data = rows.slice(1).filter(row => row.length > 1);
-        
+
         // Get the most recent row
         const mostRecent = data[data.length - 1];
         const date = new Date(mostRecent[0]);
-        
+
         return {
-            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone:'UTC' }),
+            monthYear: date.toLocaleString('default', { month: 'long', year: 'numeric', timeZone: 'UTC' }),
             ytdTotal: '$' + (parseFloat(mostRecent[6]) / 1000000).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + 'M CAD',
-            ytdPercentageChange: parseFloat(mostRecent[8]),  
+            ytdPercentageChange: parseFloat(mostRecent[8]),
             monthlyData: data.map(row => ({
                 date: new Date(row[0]),
                 value: parseFloat(row[1])
@@ -653,7 +681,7 @@ export function createArrowSvg(changeValue) {
             <path fill="currentColor" d="M48 224h352c8.8 0 16 7.2 16 16v32c0 8.8 7.2 16-16 16H48c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16zm0 128h352c8.8 0 16 7.2 16 16v32c0 8.8 7.2 16-16 16H48c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16z"></path>
         </svg>`;
     }
-    
+
     return `<svg class="svg-arrow" width="20" height="20" viewBox="0 0 448 512" style="transform: ${changeValue > 0 ? 'none' : 'rotate(180deg)'}">
         <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5-9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3-9.8-24.8-10-34.3.4z"></path>
     </svg>`;
@@ -666,7 +694,7 @@ function formatSpendingInMillions(value) {
 
 // Function to format numbers in thousands
 function formatInThousands(value) {
-    return `${(Math.round((value / 1000))*1000).toLocaleString()}`;
+    return `${(Math.round((value / 1000)) * 1000).toLocaleString()}`;
 }
 
 // Function to format percentage
@@ -686,7 +714,7 @@ function updateKPIContent(containerId, data, title) {
     let formattedTotal = data.ytdTotal.toLocaleString();
     let subheading = '';
     let isAdditionalIndicator = containerId.startsWith('additional');
-    
+
     // Special formatting for different indicators
     if (title === 'Economic overview') {
         formattedTotal = (data.ytdLow !== null && data.ytdHigh !== null)
@@ -696,6 +724,8 @@ function updateKPIContent(containerId, data, title) {
     } else if (title === 'Airport arrivals') {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Erik Nielsen Whitehorse International Airport';
+    } else if (title === 'Visitor spending') {
+        subheading = 'Credit card spending at Moneris terminals';
     } else if (title === 'Border crossings') {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Travelers entering through Canadian customs';
@@ -730,16 +760,14 @@ function updateKPIContent(containerId, data, title) {
     if (isAdditionalIndicator) {
         // Small Indicator cards
         container.innerHTML = `
-            <div class="ytd-change ${
-                data.ytdPercentageChange >= 1 ? 'positive' :
+            <div class="ytd-change ${data.ytdPercentageChange >= 1 ? 'positive' :
                 data.ytdPercentageChange <= -1 ? 'negative' : 'neutral'
             }">
                 ${createArrowSvg(data.ytdPercentageChange)}
             </div>
             <div class="dataset-name">${title}</div>
             <div class="ytd-total">${formattedTotal}</div>
-            <div class="percentage-change ${
-                data.ytdPercentageChange >= 1 ? 'positive' :
+            <div class="percentage-change ${data.ytdPercentageChange >= 1 ? 'positive' :
                 data.ytdPercentageChange <= -1 ? 'negative' : 'neutral'
             }">
                 ${data.ytdPercentageChange < 0 ? '-' : ''}${Math.abs(data.ytdPercentageChange).toFixed(1)}% y/y
@@ -753,8 +781,7 @@ function updateKPIContent(containerId, data, title) {
             <div class="dataset-name">${title}</div>
             <div class="dataset-subheading">${subheading}</div>
             <div class="ytd-total">${formattedTotal}</div>
-            <div class="ytd-change ${
-                data.ytdPercentageChange >= 1 ? 'positive' :
+            <div class="ytd-change ${data.ytdPercentageChange >= 1 ? 'positive' :
                 data.ytdPercentageChange <= -1 ? 'negative' : 'neutral'
             }" ${title === 'Economic overview' ? 'style="display:none"' : ''}>
                 ${createArrowSvg(data.ytdPercentageChange)}
@@ -778,12 +805,12 @@ function createKPIChart(containerId, data, ytdPercentageChange) {
     const currentDate = new Date();
     const tenYearsAgo = new Date();
     tenYearsAgo.setFullYear(currentDate.getFullYear() - 10);
-    
+
     const tenYearData = data
         .filter(item => item.date >= tenYearsAgo)
         .sort((a, b) => a.date - b.date)  // Sort by date ascending
         .map(item => [item.date.getTime(), item.value]);
-    
+
     Highcharts.chart(containerId, {
         chart: {
             type: 'area',
@@ -947,6 +974,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         airportData,
         intlData,
         spendingData,
+        vspendData,
         occupancyData,
         roomRateData,
         revenuePerRoomData,
@@ -962,6 +990,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         loadAirportData(),
         loadIntlTravelersData(),
         loadSpendingData(),
+        loadVisitorSpendingData(),
         loadOccupancyData(),
         loadRoomRateData(),
         loadRevenuePerRoomData(),
@@ -989,10 +1018,15 @@ document.addEventListener('DOMContentLoaded', async function () {
         updateKPIContent('indicator4-content', intlData, 'Border crossings');
         createKPIChart('indicator4-chart', intlData.monthlyData, intlData.ytdPercentageChange);
     }
-    if (spendingData) {
+    /*if (spendingData) {
         updateKPIContent('indicator5-content', spendingData, 'Economic overview');
         createEconomicOverviewChart('indicator5-chart', spendingData.mediumData, spendingData.highData, spendingData.lowData);
+    }*/
+    if (vspendData) {
+        updateKPIContent('indicator6-content', vspendData, 'Visitor spending');
+        createKPIChart('indicator6-chart', vspendData.monthlyData, vspendData.ytdPercentageChange);
     }
+
     if (occupancyData) updateKPIContent('additional1-content', occupancyData, 'Hotel occupancy rate');
     if (roomRateData) updateKPIContent('additional2-content', roomRateData, 'Avg. daily rate');
     if (revenuePerRoomData) updateKPIContent('additional3-content', revenuePerRoomData, 'RevPAR');
