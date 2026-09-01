@@ -725,7 +725,7 @@ function updateKPIContent(containerId, data, title) {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Erik Nielsen Whitehorse International Airport';
     } else if (title === 'Visitor spending') {
-        subheading = 'Credit card spending at Moneris terminals';
+        subheading = 'Credit card spending at payment terminals';
     } else if (title === 'Border crossings') {
         formattedTotal = formatInThousands(data.ytdTotal);
         subheading = 'Travelers entering through Canadian customs';
