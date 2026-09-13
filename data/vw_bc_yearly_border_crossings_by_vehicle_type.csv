@@ -6,19 +6,6 @@ year,type,geo,count
 2005,Train,Fraser,54480
 2019,Train,Fraser,65970
 2022,Train,Fraser,16
-1973,Train,Fraser,34262
-1975,Train,Fraser,38647
-1982,Train,Fraser,15128
-1989,Train,Fraser,9
-1998,Train,Fraser,27263
-2000,Train,Fraser,38441
-2007,Train,Fraser,77776
-2009,Train,Fraser,69943
-2014,Train,Fraser,71174
-2016,Train,Fraser,73383
-2018,Train,Fraser,89471
-2023,Train,Fraser,90643
-2025,Train,Fraser,114747
 1974,Train,Fraser,35913
 1976,Train,Fraser,42855
 1981,Train,Fraser,16999
@@ -43,109 +30,19 @@ year,type,geo,count
 2011,Train,Fraser,76150
 2012,Train,Fraser,75769
 2013,Train,Fraser,75056
-1977,Motorcycle,Beaver Creek,86
-1977,Motorcycle,Fraser,8
-1977,Motorcycle,Little Gold Creek,29
-1977,Motorcycle,Pleasant Camp,125
-1978,Motorcycle,Little Gold Creek,63
-1978,Motorcycle,Beaver Creek,511
-1978,Motorcycle,Pleasant Camp,128
-1979,Motorcycle,Beaver Creek,286
-1979,Motorcycle,Little Gold Creek,60
-1979,Motorcycle,Fraser,80
-1979,Motorcycle,Pleasant Camp,265
-1980,Motorcycle,Beaver Creek,582
-1980,Motorcycle,Fraser,113
-1980,Motorcycle,Little Gold Creek,51
-1980,Motorcycle,Pleasant Camp,192
-1993,Motorcycle,Little Gold Creek,112
-1993,Motorcycle,Fraser,360
-1993,Motorcycle,Beaver Creek,785
-1993,Motorcycle,Pleasant Camp,397
-1994,Motorcycle,Little Gold Creek,66
-1994,Motorcycle,Beaver Creek,508
-1994,Motorcycle,Fraser,564
-1994,Motorcycle,Pleasant Camp,393
-1995,Motorcycle,Beaver Creek,564
-1995,Motorcycle,Pleasant Camp,470
-1995,Motorcycle,Fraser,509
-1995,Motorcycle,Little Gold Creek,92
-1996,Motorcycle,Beaver Creek,274
-1996,Motorcycle,Little Gold Creek,142
-1996,Motorcycle,Fraser,425
-1996,Motorcycle,Pleasant Camp,350
-1997,Motorcycle,Fraser,573
-1997,Motorcycle,Beaver Creek,501
-1997,Motorcycle,Little Gold Creek,112
-1997,Motorcycle,Pleasant Camp,347
-2010,Motorcycle,Little Gold Creek,756
-2010,Motorcycle,Beaver Creek,922
-2010,Motorcycle,Fraser,912
-2010,Motorcycle,Pleasant Camp,58
-2011,Motorcycle,Little Gold Creek,639
-2011,Motorcycle,Fraser,931
-2011,Motorcycle,Beaver Creek,1095
-2011,Motorcycle,Pleasant Camp,100
-2012,Motorcycle,Beaver Creek,1334
-2012,Motorcycle,Fraser,764
-2012,Motorcycle,Little Gold Creek,400
-2012,Motorcycle,Pleasant Camp,31
-2013,Motorcycle,Beaver Creek,1230
-2013,Motorcycle,Little Gold Creek,712
-2013,Motorcycle,Fraser,768
-2013,Motorcycle,Pleasant Camp,23
-1974,Motorcycle,Little Gold Creek,30
-1974,Motorcycle,Beaver Creek,166
-1974,Motorcycle,Fraser,16
-1974,Motorcycle,Pleasant Camp,187
-1976,Motorcycle,Beaver Creek,169
-1976,Motorcycle,Fraser,10
-1976,Motorcycle,Little Gold Creek,86
-1976,Motorcycle,Pleasant Camp,187
-1981,Motorcycle,Beaver Creek,442
-1981,Motorcycle,Little Gold Creek,72
-1981,Motorcycle,Fraser,160
-1981,Motorcycle,Pleasant Camp,234
-1983,Motorcycle,Little Gold Creek,46
-1983,Motorcycle,Beaver Creek,521
-1983,Motorcycle,Fraser,145
-1983,Motorcycle,Pleasant Camp,261
-1990,Motorcycle,Beaver Creek,678
-1990,Motorcycle,Little Gold Creek,56
-1990,Motorcycle,Fraser,260
-1990,Motorcycle,Pleasant Camp,296
-1992,Motorcycle,Beaver Creek,1340
-1992,Motorcycle,Fraser,531
-1992,Motorcycle,Little Gold Creek,78
-1992,Motorcycle,Pleasant Camp,391
-1999,Motorcycle,Beaver Creek,721
-1999,Motorcycle,Little Gold Creek,119
-1999,Motorcycle,Fraser,535
-1999,Motorcycle,Pleasant Camp,243
-2001,Motorcycle,Beaver Creek,697
-2001,Motorcycle,Fraser,260
-2001,Motorcycle,Little Gold Creek,135
-2001,Motorcycle,Pleasant Camp,431
-2006,Motorcycle,Beaver Creek,1319
-2006,Motorcycle,Little Gold Creek,513
-2006,Motorcycle,Fraser,720
-2006,Motorcycle,Pleasant Camp,402
-2008,Motorcycle,Beaver Creek,895
-2008,Motorcycle,Little Gold Creek,525
-2008,Motorcycle,Fraser,935
-2008,Motorcycle,Pleasant Camp,459
-2015,Motorcycle,Beaver Creek,1296
-2015,Motorcycle,Little Gold Creek,337
-2015,Motorcycle,Fraser,541
-2015,Motorcycle,Pleasant Camp,94
-2017,Motorcycle,Beaver Creek,878
-2017,Motorcycle,Fraser,514
-2017,Motorcycle,Little Gold Creek,661
-2017,Motorcycle,Pleasant Camp,257
-2024,Motorcycle,Beaver Creek,1097
-2024,Motorcycle,Little Gold Creek,435
-2024,Motorcycle,Fraser,408
-2024,Motorcycle,Pleasant Camp,45
+1973,Train,Fraser,34262
+1975,Train,Fraser,38647
+1982,Train,Fraser,15128
+1989,Train,Fraser,9
+1998,Train,Fraser,27263
+2000,Train,Fraser,38441
+2007,Train,Fraser,77776
+2009,Train,Fraser,69943
+2014,Train,Fraser,71174
+2016,Train,Fraser,73383
+2018,Train,Fraser,89471
+2023,Train,Fraser,90643
+2025,Train,Fraser,114747
 1972,Motorcycle,Little Gold Creek,2
 1972,Motorcycle,Beaver Creek,180
 1972,Motorcycle,Pleasant Camp,75
@@ -254,6 +151,197 @@ year,type,geo,count
 2025,Motorcycle,Fraser,258
 2025,Motorcycle,Little Gold Creek,224
 2025,Motorcycle,Pleasant Camp,35
+1974,Motorcycle,Little Gold Creek,30
+1974,Motorcycle,Beaver Creek,166
+1974,Motorcycle,Fraser,16
+1974,Motorcycle,Pleasant Camp,187
+1976,Motorcycle,Beaver Creek,169
+1976,Motorcycle,Fraser,10
+1976,Motorcycle,Little Gold Creek,86
+1976,Motorcycle,Pleasant Camp,187
+1981,Motorcycle,Beaver Creek,442
+1981,Motorcycle,Little Gold Creek,72
+1981,Motorcycle,Fraser,160
+1981,Motorcycle,Pleasant Camp,234
+1983,Motorcycle,Little Gold Creek,46
+1983,Motorcycle,Beaver Creek,521
+1983,Motorcycle,Fraser,145
+1983,Motorcycle,Pleasant Camp,261
+1990,Motorcycle,Beaver Creek,678
+1990,Motorcycle,Little Gold Creek,56
+1990,Motorcycle,Fraser,260
+1990,Motorcycle,Pleasant Camp,296
+1992,Motorcycle,Beaver Creek,1340
+1992,Motorcycle,Fraser,531
+1992,Motorcycle,Little Gold Creek,78
+1992,Motorcycle,Pleasant Camp,391
+1999,Motorcycle,Beaver Creek,721
+1999,Motorcycle,Little Gold Creek,119
+1999,Motorcycle,Fraser,535
+1999,Motorcycle,Pleasant Camp,243
+2001,Motorcycle,Beaver Creek,697
+2001,Motorcycle,Fraser,260
+2001,Motorcycle,Little Gold Creek,135
+2001,Motorcycle,Pleasant Camp,431
+2006,Motorcycle,Beaver Creek,1319
+2006,Motorcycle,Little Gold Creek,513
+2006,Motorcycle,Fraser,720
+2006,Motorcycle,Pleasant Camp,402
+2008,Motorcycle,Beaver Creek,895
+2008,Motorcycle,Little Gold Creek,525
+2008,Motorcycle,Fraser,935
+2008,Motorcycle,Pleasant Camp,459
+2015,Motorcycle,Beaver Creek,1296
+2015,Motorcycle,Little Gold Creek,337
+2015,Motorcycle,Fraser,541
+2015,Motorcycle,Pleasant Camp,94
+2017,Motorcycle,Beaver Creek,878
+2017,Motorcycle,Fraser,514
+2017,Motorcycle,Little Gold Creek,661
+2017,Motorcycle,Pleasant Camp,257
+2024,Motorcycle,Beaver Creek,1097
+2024,Motorcycle,Little Gold Creek,435
+2024,Motorcycle,Fraser,408
+2024,Motorcycle,Pleasant Camp,45
+1977,Motorcycle,Beaver Creek,86
+1977,Motorcycle,Fraser,8
+1977,Motorcycle,Little Gold Creek,29
+1977,Motorcycle,Pleasant Camp,125
+1978,Motorcycle,Little Gold Creek,63
+1978,Motorcycle,Beaver Creek,511
+1978,Motorcycle,Pleasant Camp,128
+1979,Motorcycle,Beaver Creek,286
+1979,Motorcycle,Little Gold Creek,60
+1979,Motorcycle,Fraser,80
+1979,Motorcycle,Pleasant Camp,265
+1980,Motorcycle,Beaver Creek,582
+1980,Motorcycle,Fraser,113
+1980,Motorcycle,Little Gold Creek,51
+1980,Motorcycle,Pleasant Camp,192
+1993,Motorcycle,Little Gold Creek,112
+1993,Motorcycle,Fraser,360
+1993,Motorcycle,Beaver Creek,785
+1993,Motorcycle,Pleasant Camp,397
+1994,Motorcycle,Little Gold Creek,66
+1994,Motorcycle,Beaver Creek,508
+1994,Motorcycle,Fraser,564
+1994,Motorcycle,Pleasant Camp,393
+1995,Motorcycle,Beaver Creek,564
+1995,Motorcycle,Pleasant Camp,470
+1995,Motorcycle,Fraser,509
+1995,Motorcycle,Little Gold Creek,92
+1996,Motorcycle,Beaver Creek,274
+1996,Motorcycle,Little Gold Creek,142
+1996,Motorcycle,Fraser,425
+1996,Motorcycle,Pleasant Camp,350
+1997,Motorcycle,Fraser,573
+1997,Motorcycle,Beaver Creek,501
+1997,Motorcycle,Little Gold Creek,112
+1997,Motorcycle,Pleasant Camp,347
+2010,Motorcycle,Little Gold Creek,756
+2010,Motorcycle,Beaver Creek,922
+2010,Motorcycle,Fraser,912
+2010,Motorcycle,Pleasant Camp,58
+2011,Motorcycle,Little Gold Creek,639
+2011,Motorcycle,Fraser,931
+2011,Motorcycle,Beaver Creek,1095
+2011,Motorcycle,Pleasant Camp,100
+2012,Motorcycle,Beaver Creek,1334
+2012,Motorcycle,Fraser,764
+2012,Motorcycle,Little Gold Creek,400
+2012,Motorcycle,Pleasant Camp,31
+2013,Motorcycle,Beaver Creek,1230
+2013,Motorcycle,Little Gold Creek,712
+2013,Motorcycle,Fraser,768
+2013,Motorcycle,Pleasant Camp,23
+1977,Pedestrian,Beaver Creek,7
+1977,Pedestrian,Little Gold Creek,5
+1977,Pedestrian,Pleasant Camp,384
+1978,Pedestrian,Beaver Creek,11
+1978,Pedestrian,Fraser,1
+1978,Pedestrian,Pleasant Camp,99
+1979,Pedestrian,Little Gold Creek,6
+1979,Pedestrian,Fraser,1401
+1979,Pedestrian,Pleasant Camp,53
+1980,Pedestrian,Beaver Creek,71
+1980,Pedestrian,Fraser,574
+1980,Pedestrian,Little Gold Creek,3
+1980,Pedestrian,Pleasant Camp,236
+1993,Pedestrian,Little Gold Creek,6
+1993,Pedestrian,Fraser,137
+1993,Pedestrian,Beaver Creek,6
+1993,Pedestrian,Pleasant Camp,181
+1994,Pedestrian,Beaver Creek,2
+1994,Pedestrian,Fraser,465
+1994,Pedestrian,Pleasant Camp,160
+1995,Pedestrian,Pleasant Camp,288
+1995,Pedestrian,Fraser,40
+1995,Pedestrian,Little Gold Creek,4
+1996,Pedestrian,Beaver Creek,12
+1996,Pedestrian,Little Gold Creek,18
+1996,Pedestrian,Fraser,440
+1996,Pedestrian,Pleasant Camp,191
+1997,Pedestrian,Fraser,795
+1997,Pedestrian,Pleasant Camp,126
+2010,Pedestrian,Fraser,786
+2010,Pedestrian,Pleasant Camp,5
+2011,Pedestrian,Little Gold Creek,27
+2011,Pedestrian,Fraser,147
+2011,Pedestrian,Pleasant Camp,3
+2012,Pedestrian,Fraser,198
+2013,Pedestrian,Little Gold Creek,7
+2013,Pedestrian,Fraser,19
+2013,Pedestrian,Pleasant Camp,5
+1973,Pedestrian,Little Gold Creek,9
+1973,Pedestrian,Beaver Creek,21
+1973,Pedestrian,Pleasant Camp,281
+1975,Pedestrian,Beaver Creek,8
+1975,Pedestrian,Fraser,146
+1975,Pedestrian,Little Gold Creek,8
+1975,Pedestrian,Pleasant Camp,154
+1982,Pedestrian,Beaver Creek,222
+1982,Pedestrian,Little Gold Creek,21
+1982,Pedestrian,Fraser,20
+1982,Pedestrian,Pleasant Camp,55
+1984,Pedestrian,Fraser,18
+1984,Pedestrian,Beaver Creek,32
+1984,Pedestrian,Little Gold Creek,29
+1984,Pedestrian,Pleasant Camp,128
+1989,Pedestrian,Beaver Creek,12
+1989,Pedestrian,Little Gold Creek,5
+1989,Pedestrian,Fraser,184
+1989,Pedestrian,Pleasant Camp,271
+1991,Pedestrian,Little Gold Creek,22
+1991,Pedestrian,Beaver Creek,6
+1991,Pedestrian,Fraser,95
+1991,Pedestrian,Pleasant Camp,340
+1998,Pedestrian,Beaver Creek,2
+1998,Pedestrian,Fraser,459
+1998,Pedestrian,Pleasant Camp,71
+2000,Pedestrian,Fraser,1526
+2000,Pedestrian,Pleasant Camp,59
+2007,Pedestrian,Beaver Creek,2
+2007,Pedestrian,Fraser,2144
+2007,Pedestrian,Pleasant Camp,31
+2009,Pedestrian,Beaver Creek,5
+2009,Pedestrian,Fraser,2148
+2009,Pedestrian,Pleasant Camp,7
+2014,Pedestrian,Beaver Creek,1
+2014,Pedestrian,Fraser,3
+2014,Pedestrian,Pleasant Camp,14
+2016,Pedestrian,Little Gold Creek,8
+2016,Pedestrian,Fraser,1
+2016,Pedestrian,Pleasant Camp,3
+2018,Pedestrian,Fraser,56
+2018,Pedestrian,Beaver Creek,18
+2018,Pedestrian,Little Gold Creek,13
+2018,Pedestrian,Pleasant Camp,32
+2023,Pedestrian,Beaver Creek,54
+2023,Pedestrian,Fraser,15
+2023,Pedestrian,Pleasant Camp,7
+2025,Pedestrian,Beaver Creek,28
+2025,Pedestrian,Fraser,42
+2025,Pedestrian,Pleasant Camp,1
 1974,Pedestrian,Little Gold Creek,3
 1974,Pedestrian,Beaver Creek,8
 1974,Pedestrian,Pleasant Camp,117
@@ -344,94 +432,6 @@ year,type,geo,count
 2022,Pedestrian,Fraser,15
 2022,Pedestrian,Little Gold Creek,5
 2022,Pedestrian,Pleasant Camp,30
-1977,Pedestrian,Beaver Creek,7
-1977,Pedestrian,Little Gold Creek,5
-1977,Pedestrian,Pleasant Camp,384
-1978,Pedestrian,Beaver Creek,11
-1978,Pedestrian,Fraser,1
-1978,Pedestrian,Pleasant Camp,99
-1979,Pedestrian,Little Gold Creek,6
-1979,Pedestrian,Fraser,1401
-1979,Pedestrian,Pleasant Camp,53
-1980,Pedestrian,Beaver Creek,71
-1980,Pedestrian,Fraser,574
-1980,Pedestrian,Little Gold Creek,3
-1980,Pedestrian,Pleasant Camp,236
-1993,Pedestrian,Little Gold Creek,6
-1993,Pedestrian,Fraser,137
-1993,Pedestrian,Beaver Creek,6
-1993,Pedestrian,Pleasant Camp,181
-1994,Pedestrian,Beaver Creek,2
-1994,Pedestrian,Fraser,465
-1994,Pedestrian,Pleasant Camp,160
-1995,Pedestrian,Pleasant Camp,288
-1995,Pedestrian,Fraser,40
-1995,Pedestrian,Little Gold Creek,4
-1996,Pedestrian,Beaver Creek,12
-1996,Pedestrian,Little Gold Creek,18
-1996,Pedestrian,Fraser,440
-1996,Pedestrian,Pleasant Camp,191
-1997,Pedestrian,Fraser,795
-1997,Pedestrian,Pleasant Camp,126
-2010,Pedestrian,Fraser,786
-2010,Pedestrian,Pleasant Camp,5
-2011,Pedestrian,Little Gold Creek,27
-2011,Pedestrian,Fraser,147
-2011,Pedestrian,Pleasant Camp,3
-2012,Pedestrian,Fraser,198
-2013,Pedestrian,Little Gold Creek,7
-2013,Pedestrian,Fraser,19
-2013,Pedestrian,Pleasant Camp,5
-1973,Pedestrian,Little Gold Creek,9
-1973,Pedestrian,Beaver Creek,21
-1973,Pedestrian,Pleasant Camp,281
-1975,Pedestrian,Beaver Creek,8
-1975,Pedestrian,Fraser,146
-1975,Pedestrian,Little Gold Creek,8
-1975,Pedestrian,Pleasant Camp,154
-1982,Pedestrian,Beaver Creek,222
-1982,Pedestrian,Little Gold Creek,21
-1982,Pedestrian,Fraser,20
-1982,Pedestrian,Pleasant Camp,55
-1984,Pedestrian,Fraser,18
-1984,Pedestrian,Beaver Creek,32
-1984,Pedestrian,Little Gold Creek,29
-1984,Pedestrian,Pleasant Camp,128
-1989,Pedestrian,Beaver Creek,12
-1989,Pedestrian,Little Gold Creek,5
-1989,Pedestrian,Fraser,184
-1989,Pedestrian,Pleasant Camp,271
-1991,Pedestrian,Little Gold Creek,22
-1991,Pedestrian,Beaver Creek,6
-1991,Pedestrian,Fraser,95
-1991,Pedestrian,Pleasant Camp,340
-1998,Pedestrian,Beaver Creek,2
-1998,Pedestrian,Fraser,459
-1998,Pedestrian,Pleasant Camp,71
-2000,Pedestrian,Fraser,1526
-2000,Pedestrian,Pleasant Camp,59
-2007,Pedestrian,Beaver Creek,2
-2007,Pedestrian,Fraser,2144
-2007,Pedestrian,Pleasant Camp,31
-2009,Pedestrian,Beaver Creek,5
-2009,Pedestrian,Fraser,2148
-2009,Pedestrian,Pleasant Camp,7
-2014,Pedestrian,Beaver Creek,1
-2014,Pedestrian,Fraser,3
-2014,Pedestrian,Pleasant Camp,14
-2016,Pedestrian,Little Gold Creek,8
-2016,Pedestrian,Fraser,1
-2016,Pedestrian,Pleasant Camp,3
-2018,Pedestrian,Fraser,56
-2018,Pedestrian,Beaver Creek,18
-2018,Pedestrian,Little Gold Creek,13
-2018,Pedestrian,Pleasant Camp,32
-2023,Pedestrian,Beaver Creek,54
-2023,Pedestrian,Fraser,15
-2023,Pedestrian,Pleasant Camp,7
-2025,Pedestrian,Beaver Creek,28
-2025,Pedestrian,Fraser,42
-2025,Pedestrian,Pleasant Camp,1
 1973,Bus,Little Gold Creek,690
 1973,Bus,Fraser,189
 1973,Bus,Beaver Creek,9704
@@ -492,6 +492,58 @@ year,type,geo,count
 2025,Bus,Fraser,210381
 2025,Bus,Little Gold Creek,115
 2025,Bus,Pleasant Camp,2045
+1974,Bus,Little Gold Creek,1299
+1974,Bus,Beaver Creek,11436
+1974,Bus,Fraser,258
+1974,Bus,Pleasant Camp,2443
+1976,Bus,Beaver Creek,10269
+1976,Bus,Fraser,28
+1976,Bus,Little Gold Creek,1014
+1976,Bus,Pleasant Camp,1260
+1981,Bus,Beaver Creek,19867
+1981,Bus,Little Gold Creek,1571
+1981,Bus,Fraser,13042
+1981,Bus,Pleasant Camp,1641
+1983,Bus,Little Gold Creek,1498
+1983,Bus,Beaver Creek,18699
+1983,Bus,Fraser,34807
+1983,Bus,Pleasant Camp,1646
+1990,Bus,Beaver Creek,14651
+1990,Bus,Little Gold Creek,1788
+1990,Bus,Fraser,25350
+1990,Bus,Pleasant Camp,2834
+1992,Bus,Beaver Creek,18456
+1992,Bus,Fraser,25842
+1992,Bus,Little Gold Creek,3155
+1992,Bus,Pleasant Camp,2761
+1999,Bus,Beaver Creek,9373
+1999,Bus,Little Gold Creek,2080
+1999,Bus,Fraser,45569
+1999,Bus,Pleasant Camp,1896
+2001,Bus,Beaver Creek,7160
+2001,Bus,Fraser,31564
+2001,Bus,Little Gold Creek,1338
+2001,Bus,Pleasant Camp,652
+2006,Bus,Beaver Creek,6231
+2006,Bus,Little Gold Creek,1001
+2006,Bus,Fraser,87325
+2006,Bus,Pleasant Camp,712
+2008,Bus,Beaver Creek,5551
+2008,Bus,Little Gold Creek,1326
+2008,Bus,Fraser,90450
+2008,Bus,Pleasant Camp,379
+2015,Bus,Beaver Creek,1865
+2015,Bus,Little Gold Creek,422
+2015,Bus,Fraser,109415
+2015,Bus,Pleasant Camp,955
+2017,Bus,Beaver Creek,2235
+2017,Bus,Fraser,114023
+2017,Bus,Little Gold Creek,345
+2017,Bus,Pleasant Camp,1256
+2024,Bus,Beaver Creek,1743
+2024,Bus,Little Gold Creek,65
+2024,Bus,Fraser,185428
+2024,Bus,Pleasant Camp,953
 1977,Bus,Beaver Creek,9587
 1977,Bus,Fraser,74
 1977,Bus,Little Gold Creek,1418
@@ -594,118 +646,56 @@ year,type,geo,count
 2022,Bus,Fraser,24997
 2022,Bus,Little Gold Creek,495
 2022,Bus,Pleasant Camp,941
-1974,Bus,Little Gold Creek,1299
-1974,Bus,Beaver Creek,11436
-1974,Bus,Fraser,258
-1974,Bus,Pleasant Camp,2443
-1976,Bus,Beaver Creek,10269
-1976,Bus,Fraser,28
-1976,Bus,Little Gold Creek,1014
-1976,Bus,Pleasant Camp,1260
-1981,Bus,Beaver Creek,19867
-1981,Bus,Little Gold Creek,1571
-1981,Bus,Fraser,13042
-1981,Bus,Pleasant Camp,1641
-1983,Bus,Little Gold Creek,1498
-1983,Bus,Beaver Creek,18699
-1983,Bus,Fraser,34807
-1983,Bus,Pleasant Camp,1646
-1990,Bus,Beaver Creek,14651
-1990,Bus,Little Gold Creek,1788
-1990,Bus,Fraser,25350
-1990,Bus,Pleasant Camp,2834
-1992,Bus,Beaver Creek,18456
-1992,Bus,Fraser,25842
-1992,Bus,Little Gold Creek,3155
-1992,Bus,Pleasant Camp,2761
-1999,Bus,Beaver Creek,9373
-1999,Bus,Little Gold Creek,2080
-1999,Bus,Fraser,45569
-1999,Bus,Pleasant Camp,1896
-2001,Bus,Beaver Creek,7160
-2001,Bus,Fraser,31564
-2001,Bus,Little Gold Creek,1338
-2001,Bus,Pleasant Camp,652
-2006,Bus,Beaver Creek,6231
-2006,Bus,Little Gold Creek,1001
-2006,Bus,Fraser,87325
-2006,Bus,Pleasant Camp,712
-2008,Bus,Beaver Creek,5551
-2008,Bus,Little Gold Creek,1326
-2008,Bus,Fraser,90450
-2008,Bus,Pleasant Camp,379
-2015,Bus,Beaver Creek,1865
-2015,Bus,Little Gold Creek,422
-2015,Bus,Fraser,109415
-2015,Bus,Pleasant Camp,955
-2017,Bus,Beaver Creek,2235
-2017,Bus,Fraser,114023
-2017,Bus,Little Gold Creek,345
-2017,Bus,Pleasant Camp,1256
-2024,Bus,Beaver Creek,1743
-2024,Bus,Little Gold Creek,65
-2024,Bus,Fraser,185428
-2024,Bus,Pleasant Camp,953
-1973,Automobile,Little Gold Creek,11713
-1973,Automobile,Fraser,1958
-1973,Automobile,Beaver Creek,73477
-1973,Automobile,Pleasant Camp,28680
-1975,Automobile,Beaver Creek,63215
-1975,Automobile,Fraser,1782
-1975,Automobile,Little Gold Creek,9845
-1975,Automobile,Pleasant Camp,38423
-1982,Automobile,Beaver Creek,66739
-1982,Automobile,Little Gold Creek,9929
-1982,Automobile,Fraser,32086
-1982,Automobile,Pleasant Camp,32833
-1984,Automobile,Fraser,36790
-1984,Automobile,Beaver Creek,91121
-1984,Automobile,Little Gold Creek,10296
-1984,Automobile,Pleasant Camp,33735
-1989,Automobile,Beaver Creek,95577
-1989,Automobile,Little Gold Creek,13334
-1989,Automobile,Fraser,58931
-1989,Automobile,Pleasant Camp,35426
-1991,Automobile,Little Gold Creek,13680
-1991,Automobile,Beaver Creek,91656
-1991,Automobile,Fraser,53694
-1991,Automobile,Pleasant Camp,39942
-1998,Automobile,Beaver Creek,101835
-1998,Automobile,Little Gold Creek,16370
-1998,Automobile,Fraser,89165
-1998,Automobile,Pleasant Camp,38251
-2000,Automobile,Beaver Creek,97393
-2000,Automobile,Fraser,80008
-2000,Automobile,Little Gold Creek,14263
-2000,Automobile,Pleasant Camp,37053
-2007,Automobile,Beaver Creek,79568
-2007,Automobile,Little Gold Creek,10419
-2007,Automobile,Fraser,62455
-2007,Automobile,Pleasant Camp,32046
-2009,Automobile,Beaver Creek,63202
-2009,Automobile,Fraser,70066
-2009,Automobile,Little Gold Creek,6806
-2009,Automobile,Pleasant Camp,25843
-2014,Automobile,Beaver Creek,57614
-2014,Automobile,Little Gold Creek,7236
-2014,Automobile,Fraser,83461
-2014,Automobile,Pleasant Camp,26310
-2016,Automobile,Beaver Creek,65188
-2016,Automobile,Little Gold Creek,9640
-2016,Automobile,Fraser,78955
-2016,Automobile,Pleasant Camp,33596
-2018,Automobile,Fraser,87548
-2018,Automobile,Beaver Creek,81504
-2018,Automobile,Little Gold Creek,12061
-2018,Automobile,Pleasant Camp,34154
-2023,Automobile,Beaver Creek,64216
-2023,Automobile,Little Gold Creek,9432
-2023,Automobile,Fraser,82613
-2023,Automobile,Pleasant Camp,31246
-2025,Automobile,Beaver Creek,62963
-2025,Automobile,Fraser,75479
-2025,Automobile,Little Gold Creek,9283
-2025,Automobile,Pleasant Camp,28241
+1972,Automobile,Little Gold Creek,9765
+1972,Automobile,Beaver Creek,67772
+1972,Automobile,Fraser,2209
+1972,Automobile,Pleasant Camp,26246
+1985,Automobile,Beaver Creek,99782
+1985,Automobile,Fraser,40856
+1985,Automobile,Little Gold Creek,11838
+1985,Automobile,Pleasant Camp,30126
+1986,Automobile,Little Gold Creek,13424
+1986,Automobile,Beaver Creek,104489
+1986,Automobile,Fraser,54141
+1986,Automobile,Pleasant Camp,29638
+1987,Automobile,Beaver Creek,104263
+1987,Automobile,Fraser,59387
+1987,Automobile,Little Gold Creek,14804
+1987,Automobile,Pleasant Camp,29708
+1988,Automobile,Beaver Creek,98898
+1988,Automobile,Fraser,57110
+1988,Automobile,Little Gold Creek,16686
+1988,Automobile,Pleasant Camp,32741
+2002,Automobile,Little Gold Creek,15236
+2002,Automobile,Fraser,89407
+2002,Automobile,Beaver Creek,98219
+2002,Automobile,Pleasant Camp,42110
+2003,Automobile,Little Gold Creek,11881
+2003,Automobile,Beaver Creek,90714
+2003,Automobile,Fraser,83569
+2003,Automobile,Pleasant Camp,39324
+2004,Automobile,Beaver Creek,89080
+2004,Automobile,Fraser,81162
+2004,Automobile,Little Gold Creek,8039
+2004,Automobile,Pleasant Camp,39417
+2005,Automobile,Beaver Creek,82761
+2005,Automobile,Fraser,77494
+2005,Automobile,Little Gold Creek,9521
+2005,Automobile,Pleasant Camp,38379
+2019,Automobile,Little Gold Creek,11497
+2019,Automobile,Beaver Creek,76181
+2019,Automobile,Fraser,94375
+2019,Automobile,Pleasant Camp,35016
+2020,Automobile,Fraser,3880
+2020,Automobile,Beaver Creek,22610
+2020,Automobile,Pleasant Camp,3472
+2021,Automobile,Beaver Creek,25375
+2021,Automobile,Fraser,3166
+2021,Automobile,Pleasant Camp,4070
+2022,Automobile,Beaver Creek,51237
+2022,Automobile,Fraser,51967
+2022,Automobile,Little Gold Creek,7409
+2022,Automobile,Pleasant Camp,23032
 1977,Automobile,Beaver Creek,57566
 1977,Automobile,Fraser,1642
 1977,Automobile,Little Gold Creek,9990
@@ -810,56 +800,66 @@ year,type,geo,count
 2024,Automobile,Little Gold Creek,4347
 2024,Automobile,Fraser,82640
 2024,Automobile,Pleasant Camp,21100
-1972,Automobile,Little Gold Creek,9765
-1972,Automobile,Beaver Creek,67772
-1972,Automobile,Fraser,2209
-1972,Automobile,Pleasant Camp,26246
-1985,Automobile,Beaver Creek,99782
-1985,Automobile,Fraser,40856
-1985,Automobile,Little Gold Creek,11838
-1985,Automobile,Pleasant Camp,30126
-1986,Automobile,Little Gold Creek,13424
-1986,Automobile,Beaver Creek,104489
-1986,Automobile,Fraser,54141
-1986,Automobile,Pleasant Camp,29638
-1987,Automobile,Beaver Creek,104263
-1987,Automobile,Fraser,59387
-1987,Automobile,Little Gold Creek,14804
-1987,Automobile,Pleasant Camp,29708
-1988,Automobile,Beaver Creek,98898
-1988,Automobile,Fraser,57110
-1988,Automobile,Little Gold Creek,16686
-1988,Automobile,Pleasant Camp,32741
-2002,Automobile,Little Gold Creek,15236
-2002,Automobile,Fraser,89407
-2002,Automobile,Beaver Creek,98219
-2002,Automobile,Pleasant Camp,42110
-2003,Automobile,Little Gold Creek,11881
-2003,Automobile,Beaver Creek,90714
-2003,Automobile,Fraser,83569
-2003,Automobile,Pleasant Camp,39324
-2004,Automobile,Beaver Creek,89080
-2004,Automobile,Fraser,81162
-2004,Automobile,Little Gold Creek,8039
-2004,Automobile,Pleasant Camp,39417
-2005,Automobile,Beaver Creek,82761
-2005,Automobile,Fraser,77494
-2005,Automobile,Little Gold Creek,9521
-2005,Automobile,Pleasant Camp,38379
-2019,Automobile,Little Gold Creek,11497
-2019,Automobile,Beaver Creek,76181
-2019,Automobile,Fraser,94375
-2019,Automobile,Pleasant Camp,35016
-2020,Automobile,Fraser,3880
-2020,Automobile,Beaver Creek,22610
-2020,Automobile,Pleasant Camp,3472
-2021,Automobile,Beaver Creek,25375
-2021,Automobile,Fraser,3166
-2021,Automobile,Pleasant Camp,4070
-2022,Automobile,Beaver Creek,51237
-2022,Automobile,Fraser,51967
-2022,Automobile,Little Gold Creek,7409
-2022,Automobile,Pleasant Camp,23032
+1973,Automobile,Little Gold Creek,11713
+1973,Automobile,Fraser,1958
+1973,Automobile,Beaver Creek,73477
+1973,Automobile,Pleasant Camp,28680
+1975,Automobile,Beaver Creek,63215
+1975,Automobile,Fraser,1782
+1975,Automobile,Little Gold Creek,9845
+1975,Automobile,Pleasant Camp,38423
+1982,Automobile,Beaver Creek,66739
+1982,Automobile,Little Gold Creek,9929
+1982,Automobile,Fraser,32086
+1982,Automobile,Pleasant Camp,32833
+1984,Automobile,Fraser,36790
+1984,Automobile,Beaver Creek,91121
+1984,Automobile,Little Gold Creek,10296
+1984,Automobile,Pleasant Camp,33735
+1989,Automobile,Beaver Creek,95577
+1989,Automobile,Little Gold Creek,13334
+1989,Automobile,Fraser,58931
+1989,Automobile,Pleasant Camp,35426
+1991,Automobile,Little Gold Creek,13680
+1991,Automobile,Beaver Creek,91656
+1991,Automobile,Fraser,53694
+1991,Automobile,Pleasant Camp,39942
+1998,Automobile,Beaver Creek,101835
+1998,Automobile,Little Gold Creek,16370
+1998,Automobile,Fraser,89165
+1998,Automobile,Pleasant Camp,38251
+2000,Automobile,Beaver Creek,97393
+2000,Automobile,Fraser,80008
+2000,Automobile,Little Gold Creek,14263
+2000,Automobile,Pleasant Camp,37053
+2007,Automobile,Beaver Creek,79568
+2007,Automobile,Little Gold Creek,10419
+2007,Automobile,Fraser,62455
+2007,Automobile,Pleasant Camp,32046
+2009,Automobile,Beaver Creek,63202
+2009,Automobile,Fraser,70066
+2009,Automobile,Little Gold Creek,6806
+2009,Automobile,Pleasant Camp,25843
+2014,Automobile,Beaver Creek,57614
+2014,Automobile,Little Gold Creek,7236
+2014,Automobile,Fraser,83461
+2014,Automobile,Pleasant Camp,26310
+2016,Automobile,Beaver Creek,65188
+2016,Automobile,Little Gold Creek,9640
+2016,Automobile,Fraser,78955
+2016,Automobile,Pleasant Camp,33596
+2018,Automobile,Fraser,87548
+2018,Automobile,Beaver Creek,81504
+2018,Automobile,Little Gold Creek,12061
+2018,Automobile,Pleasant Camp,34154
+2023,Automobile,Beaver Creek,64216
+2023,Automobile,Little Gold Creek,9432
+2023,Automobile,Fraser,82613
+2023,Automobile,Pleasant Camp,31246
+2025,Automobile,Beaver Creek,62963
+2025,Automobile,Fraser,75479
+2025,Automobile,Little Gold Creek,9283
+2025,Automobile,Pleasant Camp,28241
 1974,Air,Dawson,254
 1974,Air,Beaver Creek,82
 1974,Air,Old Crow,103
@@ -982,60 +982,6 @@ year,type,geo,count
 2025,Air,Dawson,6587
 2025,Air,Old Crow,35
 2025,Air,Whitehorse,597
-1972,Air,Dawson,161
-1972,Air,Beaver Creek,1
-1972,Air,Whitehorse,7263
-1972,Air,Old Crow,102
-1985,Air,Dawson,692
-1985,Air,Beaver Creek,412
-1985,Air,Pleasant Camp,40
-1985,Air,Old Crow,238
-1985,Air,Whitehorse,7221
-1986,Air,Beaver Creek,361
-1986,Air,Dawson,844
-1986,Air,Old Crow,301
-1986,Air,Pleasant Camp,13
-1986,Air,Whitehorse,5741
-1987,Air,Beaver Creek,358
-1987,Air,Dawson,1652
-1987,Air,Old Crow,250
-1987,Air,Whitehorse,4313
-1987,Air,Pleasant Camp,27
-1988,Air,Beaver Creek,273
-1988,Air,Dawson,1849
-1988,Air,Whitehorse,4527
-1988,Air,Old Crow,242
-1988,Air,Pleasant Camp,33
-2002,Air,Dawson,1940
-2002,Air,Beaver Creek,135
-2002,Air,Old Crow,155
-2002,Air,Whitehorse,7680
-2003,Air,Dawson,2062
-2003,Air,Beaver Creek,172
-2003,Air,Old Crow,31
-2003,Air,Whitehorse,7282
-2004,Air,Beaver Creek,131
-2004,Air,Dawson,1620
-2004,Air,Old Crow,23
-2004,Air,Whitehorse,7179
-2005,Air,Beaver Creek,105
-2005,Air,Dawson,1259
-2005,Air,Old Crow,34
-2005,Air,Whitehorse,6829
-2019,Air,Dawson,6728
-2019,Air,Beaver Creek,102
-2019,Air,Old Crow,1
-2019,Air,Whitehorse,4812
-2020,Air,Dawson,29
-2020,Air,Beaver Creek,1
-2020,Air,Whitehorse,321
-2021,Air,Beaver Creek,3
-2021,Air,Whitehorse,312
-2022,Air,Beaver Creek,82
-2022,Air,Fraser,8
-2022,Air,Dawson,4228
-2022,Air,Whitehorse,3564
-2022,Air,Old Crow,1
 1977,Air,Beaver Creek,88
 1977,Air,Dawson,532
 1977,Air,Whitehorse,7948
@@ -1091,26 +1037,60 @@ year,type,geo,count
 2013,Air,Dawson,222
 2013,Air,Old Crow,22
 2013,Air,Whitehorse,4767
-1977,Water,Old Crow,17
-1978,Water,Dawson,12
-1978,Water,Old Crow,24
-1979,Water,Old Crow,10
-1980,Water,Dawson,3
-1993,Water,Dawson,3681
-1993,Water,Old Crow,64
-1994,Water,Dawson,3228
-1994,Water,Old Crow,77
-1995,Water,Dawson,3369
-1995,Water,Old Crow,79
-1996,Water,Dawson,4020
-1996,Water,Old Crow,136
-1997,Water,Dawson,4480
-1997,Water,Old Crow,135
-2010,Water,Dawson,3337
-2011,Water,Dawson,2
-2012,Water,Dawson,19
-2012,Water,Old Crow,4
-2013,Water,Dawson,4
+1972,Air,Dawson,161
+1972,Air,Beaver Creek,1
+1972,Air,Whitehorse,7263
+1972,Air,Old Crow,102
+1985,Air,Dawson,692
+1985,Air,Beaver Creek,412
+1985,Air,Pleasant Camp,40
+1985,Air,Old Crow,238
+1985,Air,Whitehorse,7221
+1986,Air,Beaver Creek,361
+1986,Air,Dawson,844
+1986,Air,Old Crow,301
+1986,Air,Pleasant Camp,13
+1986,Air,Whitehorse,5741
+1987,Air,Beaver Creek,358
+1987,Air,Dawson,1652
+1987,Air,Old Crow,250
+1987,Air,Whitehorse,4313
+1987,Air,Pleasant Camp,27
+1988,Air,Beaver Creek,273
+1988,Air,Dawson,1849
+1988,Air,Whitehorse,4527
+1988,Air,Old Crow,242
+1988,Air,Pleasant Camp,33
+2002,Air,Dawson,1940
+2002,Air,Beaver Creek,135
+2002,Air,Old Crow,155
+2002,Air,Whitehorse,7680
+2003,Air,Dawson,2062
+2003,Air,Beaver Creek,172
+2003,Air,Old Crow,31
+2003,Air,Whitehorse,7282
+2004,Air,Beaver Creek,131
+2004,Air,Dawson,1620
+2004,Air,Old Crow,23
+2004,Air,Whitehorse,7179
+2005,Air,Beaver Creek,105
+2005,Air,Dawson,1259
+2005,Air,Old Crow,34
+2005,Air,Whitehorse,6829
+2019,Air,Dawson,6728
+2019,Air,Beaver Creek,102
+2019,Air,Old Crow,1
+2019,Air,Whitehorse,4812
+2020,Air,Dawson,29
+2020,Air,Beaver Creek,1
+2020,Air,Whitehorse,321
+2021,Air,Beaver Creek,3
+2021,Air,Whitehorse,312
+2022,Air,Beaver Creek,82
+2022,Air,Fraser,8
+2022,Air,Dawson,4228
+2022,Air,Whitehorse,3564
+2022,Air,Old Crow,1
 1974,Water,Dawson,4
 1981,Water,Dawson,4
 1981,Water,Old Crow,15
@@ -1143,6 +1123,26 @@ year,type,geo,count
 2000,Water,Old Crow,29
 2007,Water,Dawson,8199
 2009,Water,Dawson,3398
+1977,Water,Old Crow,17
+1978,Water,Dawson,12
+1978,Water,Old Crow,24
+1979,Water,Old Crow,10
+1980,Water,Dawson,3
+1993,Water,Dawson,3681
+1993,Water,Old Crow,64
+1994,Water,Dawson,3228
+1994,Water,Old Crow,77
+1995,Water,Dawson,3369
+1995,Water,Old Crow,79
+1996,Water,Dawson,4020
+1996,Water,Old Crow,136
+1997,Water,Dawson,4480
+1997,Water,Old Crow,135
+2010,Water,Dawson,3337
+2011,Water,Dawson,2
+2012,Water,Dawson,19
+2012,Water,Old Crow,4
+2013,Water,Dawson,4
 1972,Water,Dawson,12
 1972,Water,Old Crow,61
 1985,Water,Dawson,3096
